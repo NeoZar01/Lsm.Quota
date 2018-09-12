@@ -1,0 +1,288 @@
+﻿@*@model LimpEmisPortal.Models.RequisitionsViewModel
+@using PagedList.Mvc
+
+@{
+
+    ViewBag.RequisitionReference = Model.requisitionId;
+    ViewBag.Title = Model.requisitionId;
+
+    int rownum = 1;
+}
+
+
+   <div class="row"><br/>
+    <div class="col-md-12 text-right">
+        <span class="glyphicon glyphicon-shopping-cart" data-toggle="modal" data-target=".bs-example-modal-lg" style="cursor:pointer; color:#1ab394"></span>
+    </div>
+    <div class="col-md-12">
+        <div class="text-right"> 
+            <small>@(string.Concat(Model.Incumbent.Address , " " , " | " , " " , Model.Incumbent.RefName))</small>
+        </div>
+        <div class="text-right"> 
+            <small>@(string.Concat(Model.Incumbent.Phone_Number))</small>
+        </div>
+        <div><br/></div>
+    </div>
+
+    <div class="col-md-12 panel">
+        <!-- ==================== Basic Requisition Information ======================-->
+        <!-- Hold the main tab containing the requisition status and reference number -->
+        <!-- I additionally added the Requisition Reference Number -->
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a class="btn btn-link" href="#maintab" data-toggle="tab" style="font-size:10pt">
+                    <span style="@(string.Concat("color" , ":" , Model.Status.Equals("Confirmation Denied") ? "red" : "#555"));font-size:12px;font-weight:bold;line-height:1; text-shadow:0 1px 0 #ffffff; opacity:0.8; filter:alpha(opacity=80)">
+                        <img src="~/Content/Images/ajax-loader.gif" id="default-loading-icon-search" style="display:none;width:18px; height:18px" /> &nbsp;
+                        @(string.Concat("Requisition Status"))
+                    </span>
+                    <span style="color:#555"> &nbsp; | &nbsp; </span>
+                    <span style="color:#555">@(Model.Status)</span>
+                </a>
+            </li>
+            <li>
+                <a href="#bookmarkstab" data-toggle="tab"> <small><span class="glyphicon glyphicon-stats"></span> &nbsp;  Dashboard</small></a>
+            </li>
+            <li class="pull-right">
+                <ul class="nav nav-pills" role="tablist" style="float:right">
+                    <li>
+                        <h5 style="color:#f4f4f4">
+                            Requisition number <br />
+                            <sub style="color:#555">@(string.Concat("IM", Model.requisitionId))</sub>
+                        </h5>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div id="mainTabContent" class="tab-content">
+            <div class="tab-pane fade active in" id="maintab">
+                <br />
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                        <br />
+                    </div>
+                    <div class="col-md-6 ">
+                            @using (Ajax.BeginForm("EduCatalogueOPenRequisitionSearchAction", "Requisitions", new { reqId = Model.requisitionId },
+                                new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "books-hits-sheet", InsertionMode = InsertionMode.Replace, LoadingElementId = "default-loading-icon-search" } , htmlAttributes:  new { @style="clear:both" }))
+                            {
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <input type="text" class="form-control" name="searchKeyString" id="searchKeyString" placeholder="Search for Title, Isbn etc." data-autocomplete-source="@Url.Action("SearchSuggestionsPredictor", "Requisitions")" style="width:350px">
+                                        <button class="btn btn-primary" type="button"> <span class="glyphicon glyphicon-shopping-cart"></span></button>
+                                        <button class="btn btn-primary" type="submit"> Search &nbsp; <span class="glyphicon glyphicon-search"></span></button>
+                                </span>
+                                </div>
+                            }
+                        <br />
+                    </div>
+                </div>
+
+
+         <!-- Container uses the [id][books-hits-sheet] to load/reload searched book items   -->
+                <div class="col-md-12" id="books-hits-sheet" style="clear:both!important"></div>
+         <!-- ===========================================End=================================-->
+
+                <div class="col-md-12"><br/><br />
+                    <div class="col-md-12">
+@*
+    <table class="table-condensed table-hover table-responsive">
+        <tr class="border-bottom-lighter">
+            <th></th>
+            <th><small># &nbsp; Title</small></th>
+            <th><small>Isbn</small></th>
+            <th class="text-center"><small>Grade</small></th>
+            <th><small>Subject</small></th>
+            <th><small>Price</small></th>
+        </tr>
+        @foreach (var bookmarks in Model.GetBookmarks)
+        {
+            <tr>
+                <td>
+                    <small>
+                        @{ Html.RenderAction("AddToCardEFormChildAction", "Requisitions", new { id = bookmarks.id, avl = bookmarks.SubjEnrol, reqId = Model.requisitionId });} <!-- shopping card-->
+                                        </small>
+                                    </td>
+                                    <td class="text-capitalize"><small>@(rownum). &nbsp; @(bookmarks.ItemName)</small></td>
+                                    <td><small>@(bookmarks.ISBN)</small></td>
+                                    <td class="text-center"><small>@(bookmarks.Grade)</small></td>
+                                    <td><small>@(bookmarks.SubjectName)</small></td>
+                                    <td><small><strong>@(string.Concat("R", Math.Round(bookmarks.Price, 2, MidpointRounding.AwayFromZero)))</strong></small></td>
+                                </tr>
+                                                    rownum += 1;
+                           }
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="bookmarkstab">
+                <div style="clear:both!important">
+
+                    <div class="col-md-7">
+                        <div class="col-md-12">
+                            <div class="col-md-6">
+                                <br /><br />
+                                <p>@(Model.Incumbent.Address) <span style="float:right" class="smallest-text">  <ins class="text-primary"> @(Model.SchoolsPerCircuitTotal) </ins> &nbsp; &bull; &nbsp; Schools</span></p>
+                                <div style="border-top:1px solid #ecf0f1">
+                                    <br /><br />
+                                    <table class="table-condensed">
+                                        <tr class="text-center">
+                                            <td>
+                                                <div class="clearfix">
+                                                    <div class="c100 @(string.Concat("p", Model.OrdersPerCircuitPerSchoolContribution.ToString()))">
+                                                        <span>@(string.Concat( Model.OrdersPerCircuitPerSchoolContribution.ToString(), "%"))</span>
+                                                        <div class="slice">
+                                                            <div class="bar"></div>
+                                                            <div class="fill"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr style="border-top:1px solid #ecf0f1">
+                                            <td>
+                                                <h4> @(Model.SubcityCostsPerCircuit.BookYear) Requisitions <small>#@(Model.SubcityCostsPerCircuit.Requisitions)</small></h4>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6" style="border-left:1px solid #ecf0f1">
+                                <br /><br />
+                                <table>
+                                    <tr>
+                                        <td><h1>@(string.Concat("R", Math.Round(Model.TotalPrice, 2, MidpointRounding.AwayFromZero)))</h1></td>
+                                    </tr>
+                                    <tr class="faint-top-border">
+                                        <td class="text-center"><h5><small>@(Model.BookYear) Total Price</small></h5></td>
+                                    </tr>
+                                </table>
+                                <table class="table-condensed table-responsive">
+                                    <tr>
+                                        <td colspan="2"><h1>@(string.Concat("R", Math.Round(Model.ConfirmedRequisitionsSubcity, 2, MidpointRounding.AwayFromZero)))</h1></td>
+                                    </tr>
+                                    <tr class="faint-top-border">
+                                        <td class="text-center"><h4><small>@(Model.BookYear) &nbsp; Overall Subcity</small></h4></td>
+                                    </tr>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <!-- Nav tabs -->
+                        <br/>
+                        <ul class="nav nav-pills" role="tablist">
+                            <li role="presentation" class="active"><a href="#timeline" aria-controls="timeline" role="tab" data-toggle="tab"> <span class="glyphicon glyphicon-time"></span></a></li>
+                            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-envelope"></span></a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="timeline">
+                                <br /><br />
+                                    @foreach (var WFTimeLineItem in Model.RWFTimeline)
+                                    {
+                                        <div class="timeline-item" date-is=@(WFTimeLineItem.CreationDate)>
+                                            <p class="col-md-12">
+                                                @(WFTimeLineItem.Description)<br/>
+                                                <span style="float:right!important">@(WFTimeLineItem.FromDescription)</span>
+                                            </p>
+                                        </div>
+
+                                    }
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="messages">
+                                <div class="panel">
+                                    <br /><br />
+                                    @foreach (var WFMessages in Model.RWFMessages)
+                                    {
+                                        <div class="panel col-md-12">
+                                            <p class="text-primary text-right"><small><span> <span class="glyphicon glyphicon-time"></span> &nbsp; @WFMessages.CreationDate </span> </small> </p>
+                                            <p class="well"><small><span class="text-capitalize">@WFMessages.Message</span> </small></p>
+                                            <p><small><span class="text-primary">From : @WFMessages.FromDescription &nbsp; | &nbsp;  @(Model.Incumbent.Designation) </span> </small> </p>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            </div>
+        </div>
+
+  </div>
+
+    <!-- ============================== End  Basic Requisition Information========-->
+
+<!-- ==================== Shopping Card Modal Dialog =========================-->
+<!-- Hold the main tab containing the requisition status and reference number -->
+<div class="col-md-12" id="_bookMarkResponseValue">
+    <div class="modal bs-example-modal-lg " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg rd-modal-dialog-700pt" role="document" style="width:80%">
+            <div class="modal-content" id="rfs_Order_Summary">
+                <div class="modal-header" style="background-color:#f2f2f2;color:#585858">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title" id="myModalLabel">
+                        <span class="glyphicon"><img src="~/Content/Images/_438185.png" width="15" height="15" /></span>
+                        <span style="float:right;margin-right:8px; padding-top:0">
+                            @Ajax.ActionLink(" ", "RefreshShoppingCard",
+                                                  "Requisitions", new
+                                                  {
+                                                      ReqId = Model.requisitionId,
+                                                      ReqStatus = Model.Status
+                                                  }, new AjaxOptions
+                                                  {
+                                                      UpdateTargetId = "shopping-card-refresh-ajax-locator",
+                                                      InsertionMode = InsertionMode.Replace,
+                                                      HttpMethod = "GET",
+                                                      LoadingElementId = "orderSum_ajax_Loader"
+                                                  },
+                           htmlAttributes: new { @class = "glyphicon glyphicon-refresh", @style = "font-size:12px;font-weight:bold;line-height:1; color:#000000; text-shadow:0 1px 0 #ffffff; opacity:0.2; filter:alpha(opacity=20)" })
+                            &nbsp; <img src="~/Content/Images/ajax-loader.gif" id="orderSum_ajax_Loader" style="display:none; width:16px; height:16px " />
+                        </span>
+                        <span style="float:right;margin-right:8px; padding-top:0">
+                            @Ajax.ActionLink(" ", "RefreshShoppingCard",
+                                                  "Requisitions", new
+                                                  {
+                                                      ReqId = Model.requisitionId,
+                                                      ReqStatus = Model.Status
+                                                  }, new AjaxOptions
+                                                  {
+                                                      UpdateTargetId = "shopping-card-refresh-ajax-locator",
+                                                      InsertionMode = InsertionMode.Replace,
+                                                      HttpMethod = "GET",
+                                                      LoadingElementId = "orderSum_ajax_Loader"
+                                                  },
+                           htmlAttributes: new { @class = "glyphicon glyphicon-export", @style = "font-size:12px;font-weight:bold;line-height:1; color:#000000; text-shadow:0 1px 0 #ffffff; opacity:0.2; filter:alpha(opacity=20)" })
+                            &nbsp; <img src="~/Content/Images/ajax-loader.gif" id="orderSum_ajax_Loader" style="display:none; width:16px; height:16px " />
+                        </span>
+
+                    </h5>
+                </div>
+                <div class="modal-body" id="shopping-card-refresh-ajax-locator">
+                    @{ Html.RenderAction("ShoppingCardChildAction", "Requisitions", new { id = Model.requisitionId  , ReqStatus  = Model.Status});} <!-- shopping card-->
+                 </div>
+                </div>
+        </div>
+    </div>
+</div>
+<!-- ============================== End  Shopping Card Modal Dialog ==========-->
+
+@section scripts{
+   <link href="~/Content/circle.css" rel="stylesheet" />
+   @Scripts.Render("~/bundles/jqueryval")
+   <script>
+       $(document).ready(function() {
+            //#auto-complete template script.
+            $("input[data-autocomplete-source]").each(function () {
+                var target = $(this);
+                target.autocomplete({ source: target.attr("data-autocomplete-source") });
+            });
+        });
+    </script>
+}
+*@

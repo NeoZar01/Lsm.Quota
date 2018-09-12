@@ -1,0 +1,196 @@
+﻿@model LimpEmisPortal.Models.RequisitionHomeViewModel
+
+@using PagedList.Mvc;
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="col-md-10">
+            <br />
+            <br />
+            <br />
+            <h3>@Html.DisplayFor(c => Model.Item.ItemName)</h3>
+            <br />
+            <br />
+        </div>
+
+    </div>
+
+
+    <div class="col-md-7" style="background-color:#ecf0f1">
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <center>No Image Available for this book</center>
+        <br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </div>
+
+
+    <div class="col-md-5">
+        <div class="col-md-12">
+            <div class="col-md-3 panel panel-default">
+                <table class="table-condensed col-md-12">
+                    <tr style="border-top:1px solid #ecf0f1;color:#ff6a00">
+                        <td class="text-center">
+                            <h4>
+                                <span>Grade</span>
+                            </h4>
+                        </td>
+                    </tr>
+                    <tr class="text-center">
+                        <td>
+                            <h2>@Html.DisplayFor(c => Model.Item.Grade)</h2>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-8">
+                <br />
+                <br />
+                <br />
+                <br />
+                <h4> &nbsp; @Html.DisplayFor(c => Model.Item.SubjectName)</h4>
+                <hr />
+                <br />
+            </div>
+        </div>
+
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">General</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Publication</a></li>
+            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Subject</a></li>
+            <li role="presentation" id="submitFlag">
+                @if (!Model.Item.IsBookmarked)
+                {
+                    @Html.ActionLink(" ", "BookMarkFromCatalogueItemPage", "Requisitions",
+                                              new { id = Model.Item.id }, htmlAttributes: new { @type = "button", @class = "btn btn-link btn-sm  glyphicon glyphicon-star-empty" })
+                }
+                else
+                {
+                    @Html.ActionLink(" ", "RemoveFromBookmarkCatalogue", "Requisitions",
+                                              new { id = Model.Item.id }, htmlAttributes: new { @type = "button", @class = "btn btn-link btn-sm  glyphicon glyphicon-star", @style = "color:orange" })
+                }
+            </li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="home">
+                <div class="col-md-12">
+                    <br />
+                    <table class="table-condensed table-hover table-responsive col-md-12">
+                        <tr style="font-size:small">
+                            <td><strong>ISBN</strong></td>
+                            <td style="text-align:left"> @Html.DisplayFor(c => Model.Item.ISBN) </td>
+                        </tr>
+                        <tr style="font-size:small">
+                            <td><strong>Category</strong></td>
+                            <td style="text-align:left"> @Html.DisplayFor(c => Model.Item.Category) </td>
+                        </tr>
+                        <tr style="font-size:small">
+                            <td><strong>Price</strong></td>
+                            <td style="text-align:left">R @Html.DisplayFor(c => Model.Item.Price) </td>
+                        </tr>
+                        <tr style="font-size:small">
+                            <td><strong>Language</strong></td>
+                            <td style="text-align:left"> @Html.DisplayFor(c => Model.Item.Language) </td>
+                        </tr>
+                        <tr style="font-size:small">
+                            <td><strong>Creation Date</strong></td>
+                            <td style="text-align:left"> @Html.DisplayFor(c => Model.Item.CreationDate) </td>
+                        </tr>
+                        <tr style="font-size:small">
+                            <td><strong>Last Modified Date</strong></td>
+                            <td style="text-align:left"> @Html.DisplayFor(c => Model.Item.LastModifiedDate) </td>
+                        </tr>
+                        <tr style="font-size:small">
+                            <td><strong>Book Year</strong></td>
+                            <td style="text-align:left"> @Html.DisplayFor(c => Model.Item.BookYear) </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="profile">
+                <br />
+                <table class="table-condensed table-hover table-responsive col-md-12">
+                    <tr style="font-size:small">
+                        <td><strong>Publisher</strong></td>
+                        <td style="text-align:left"> @Html.DisplayFor(c => Model.Item.Publisher) </td>
+                    </tr>
+                    <tr style="font-size:small">
+                        <td><strong>Author(s)</strong></td>
+                        <td style="text-align:left"> @Html.DisplayFor(c => Model.Item.Author) </td>
+                    </tr>
+                </table>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="messages">
+                <br />
+                <table class="table-condensed table-hover col-md-12">
+                    <tr style="font-size:small">
+                        <td><strong>Subject Name</strong></td>
+                        <td>@Html.DisplayFor(c => Model.Item.SubjectName) </td>
+                    </tr>
+                    <tr style="font-size:small">
+                        <td><strong>Key</strong></td>
+                        <td> @Html.DisplayFor(c => Model.Item.Key) </td>
+                    </tr>
+                    <tr style="font-size:small">
+                        <td><strong>Language</strong></td>
+                        <td> @Html.DisplayFor(c => Model.Item.Language) </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Number of Teachers</strong></td>
+                        <td>@Html.DisplayFor(c => Model.Item.TeacherCount)</td>
+                    </tr>
+                    <tr style="font-size:small">
+                        <td><strong>Enrolment</strong></td>
+                        <td>@Html.DisplayFor(c => Model.Item.SubjEnrol) </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <div>
+        <br/>
+        <br />
+        <h4>Related Books</h4>
+        <hr />
+        <div class="panel-default panel-body">
+
+            @foreach (var i in Model.BooksSharingSimilarAttributes)
+            {
+
+                <div class="thumbnail col-md-4" style="margin:2px 2px; display:inline-block">
+                    <div style="text-align:right">
+                        <button type="button" class="btn btn-default btn-sm">
+                            @Html.ActionLink("Open",
+                                 "OpenCatalogueItem",
+                                      "Requisitions",
+                                   new { id = i.id },
+                                      htmlAttributes: new { @type = "button", @class = "", @target = "_blank" })
+                            &nbsp; &nbsp;  <span class="glyphicon glyphicon-book"></span>
+                        </button>
+                    </div>
+                    <div class="caption">
+                        <h4> @i.ItemName</h4>
+                        <div>@i.Author &nbsp;  | @i.Publisher</div>
+                        <span><a href="#"> Grade @i.Grade </a> &nbsp;  | &nbsp;  <strong> @i.Language</strong></span>
+                        <p>
+                            <small>@i.Category</small>
+                        </p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+@section scripts{
+    <script type="text/javascript">
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+}

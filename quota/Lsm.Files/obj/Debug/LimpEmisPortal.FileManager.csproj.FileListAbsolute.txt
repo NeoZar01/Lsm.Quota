@@ -1,0 +1,17 @@
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEmisPortal.FileManager\bin\Debug\LimpEmisPortal.FileManager.dll
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEmisPortal.FileManager\bin\Debug\LimpEmisPortal.FileManager.pdb
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEmisPortal.FileManager\obj\Debug\LimpEmisPortal.FileManager.dll
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEmisPortal.FileManager\obj\Debug\LimpEmisPortal.FileManager.pdb
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEmisPortal.FileManager\bin\Debug\LimpEmisPortal.FileManager.dll
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEmisPortal.FileManager\bin\Debug\LimpEmisPortal.FileManager.pdb
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEmisPortal.FileManager\obj\Debug\LimpEmisPortal.FileManager.dll
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEmisPortal.FileManager\obj\Debug\LimpEmisPortal.FileManager.pdb
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEmisPortal.FileManager\obj\Debug\LimpEmisPortal.FileManager.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.FileManager\bin\Debug\LimpEmisPortal.FileManager.dll
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.FileManager\bin\Debug\LimpEmisPortal.FileManager.pdb
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.FileManager\obj\Debug\LimpEmisPortal.FileManager.dll
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.FileManager\obj\Debug\LimpEmisPortal.FileManager.pdb
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.FileManager\bin\Debug\LimpEmisPortal.FileManager.dll
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.FileManager\bin\Debug\LimpEmisPortal.FileManager.pdb
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.FileManager\obj\Debug\LimpEmisPortal.FileManager.dll
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.FileManager\obj\Debug\LimpEmisPortal.FileManager.pdb

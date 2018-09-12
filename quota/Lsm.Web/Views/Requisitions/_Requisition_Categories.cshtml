@@ -1,0 +1,50 @@
+﻿@model LimpEmisPortal.Models.RequisitionHomeViewModel
+
+@{
+    
+    var rw_num = 1;
+}
+
+<div class="row">
+    <div style="padding-left:25px">
+        <table class="col-md-12 table-condensed table-hover table-responsive table-striped">
+            <tr>
+                <th><small># &nbsp; Requisition</small></th>
+                <th class="text-center"><small>Station</small></th>
+                <th><small><span class="glyphicon glyphicon-user"></span> &nbsp;  Incumbent</small></th>
+                <th><small><span class="glyphicon glyphicon-envelope"></span> &nbsp; <span class="glyphicon glyphicon-earphone"></span>  &nbsp;  Contact</small></th>
+                <th><small>Status</small></th>
+                <th><small>Last Modified Date</small></th>
+                <th><small></small></th>
+                <th><small>Price</small></th>
+            </tr>
+            @if (Model.WFRequisitions != null)
+            {
+
+                foreach (var WFItem in Model.WFRequisitions)
+                {
+                    <tr>
+                        <td><small>@(rw_num). &nbsp; @(WFItem.Ref)</small></td>
+                        <td><small>@(string.IsNullOrEmpty(WFItem.Address) ? "Not assigned yet" : WFItem.Address) </small></td>
+                        <td class="text-primary"><small>@( string.Concat(WFItem.ToDescription, ( string.IsNullOrEmpty(WFItem.ToDescription) && string.IsNullOrEmpty(WFItem.Position)) ? "Not assigned yet" : string.Concat("  |  " , WFItem.Position)))</small></td>
+                        <td class="text-primary"><small>@( string.Concat(WFItem.ToDescription, (string.IsNullOrEmpty(WFItem.PhoneNumber) && string.IsNullOrEmpty(WFItem.Email)) ? "Not assigned yet" : string.Concat("  |  ", WFItem.Position))) </small></td>
+                        <td><small>@(WFItem.Status)</small></td>
+                        <td  class="text-primary"><small>@(WFItem.LastModifiedDate)</small></td>
+                        <td>
+                            <small>
+                                @Html.ActionLink(" ", (WFItem.ReqStatus == 1) ? "op_rq" : "Rqinst_rq", "Requisitions", new { calendarId = 1, ReqID = WFItem.Ref },
+                            htmlAttributes: new { @class = "btn btn-link btn-sm glyphicon glyphicon-folder-open" })
+                        </small>
+                        </td>
+                        <td><small><strong>@(string.Concat("R ", Math.Round(WFItem.TotalPrice ?? 0M, 2, MidpointRounding.AwayFromZero)))</strong></small></td>
+                    </tr>
+                    rw_num += 1;
+                }
+                
+            }
+        </table>
+        @{ 
+            rw_num = 1;
+        }
+    </div>
+</div>

@@ -1,0 +1,52 @@
+C:\Users\Administrator\Desktop\bkvsProj.2017.05\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\EduDbRespositoryLayer.exe.config
+C:\Users\Administrator\Desktop\bkvsProj.2017.05\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\EduDbRespositoryLayer.exe
+C:\Users\Administrator\Desktop\bkvsProj.2017.05\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\EduDbRespositoryLayer.pdb
+C:\Users\Administrator\Desktop\bkvsProj.2017.05\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Desktop\bkvsProj.2017.05\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\bkvsProj.2017.05\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\PagedList.dll
+C:\Users\Administrator\Desktop\bkvsProj.2017.05\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\PagedList.Mvc.dll
+C:\Users\Administrator\Desktop\bkvsProj.2017.05\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Desktop\bkvsProj.2017.05\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Desktop\bkvsProj.2017.05\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\PagedList.xml
+C:\Users\Administrator\Desktop\bkvsProj.2017.05\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\PagedList.Mvc.xml
+C:\Users\Administrator\Desktop\bkvsProj.2017.05\LimpEmisPortal\EduDbRespositoryLayer\obj\Debug\EduDbRespositoryLayer.exe
+C:\Users\Administrator\Desktop\bkvsProj.2017.05\LimpEmisPortal\EduDbRespositoryLayer\obj\Debug\EduDbRespositoryLayer.pdb
+C:\Users\Administrator\Desktop\EMIS Portal Update\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\EduDbRespositoryLayer.exe.config
+C:\Users\Administrator\Desktop\EMIS Portal Update\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\EduDbRespositoryLayer.exe
+C:\Users\Administrator\Desktop\EMIS Portal Update\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\EduDbRespositoryLayer.pdb
+C:\Users\Administrator\Desktop\EMIS Portal Update\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Desktop\EMIS Portal Update\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\EMIS Portal Update\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\PagedList.dll
+C:\Users\Administrator\Desktop\EMIS Portal Update\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\PagedList.Mvc.dll
+C:\Users\Administrator\Desktop\EMIS Portal Update\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Desktop\EMIS Portal Update\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Desktop\EMIS Portal Update\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\PagedList.xml
+C:\Users\Administrator\Desktop\EMIS Portal Update\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\PagedList.Mvc.xml
+C:\Users\Administrator\Desktop\EMIS Portal Update\LimpEmisPortal\EduDbRespositoryLayer\obj\Debug\EduDbRespositoryLayer.exe
+C:\Users\Administrator\Desktop\EMIS Portal Update\LimpEmisPortal\EduDbRespositoryLayer\obj\Debug\EduDbRespositoryLayer.pdb
+C:\Users\Administrator\Desktop\Portal.v2\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\EduDbRespositoryLayer.exe.config
+C:\Users\Administrator\Desktop\Portal.v2\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\EduDbRespositoryLayer.exe
+C:\Users\Administrator\Desktop\Portal.v2\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\EduDbRespositoryLayer.pdb
+C:\Users\Administrator\Desktop\Portal.v2\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Desktop\Portal.v2\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\Portal.v2\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\PagedList.dll
+C:\Users\Administrator\Desktop\Portal.v2\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\PagedList.Mvc.dll
+C:\Users\Administrator\Desktop\Portal.v2\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Desktop\Portal.v2\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Desktop\Portal.v2\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\PagedList.xml
+C:\Users\Administrator\Desktop\Portal.v2\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\PagedList.Mvc.xml
+C:\Users\Administrator\Desktop\Portal.v2\LimpEmisPortal\EduDbRespositoryLayer\obj\Debug\EduDbRespositoryLayer.exe
+C:\Users\Administrator\Desktop\Portal.v2\LimpEmisPortal\EduDbRespositoryLayer\obj\Debug\EduDbRespositoryLayer.pdb
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\EduDbRespositoryLayer.exe.config
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\EduDbRespositoryLayer.exe
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\EduDbRespositoryLayer.pdb
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\PagedList.dll
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\PagedList.Mvc.dll
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\PagedList.xml
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\EduDbRespositoryLayer\bin\Debug\PagedList.Mvc.xml
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\EduDbRespositoryLayer\obj\Debug\EduDbRespositoryLayer.exe
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\EduDbRespositoryLayer\obj\Debug\EduDbRespositoryLayer.pdb

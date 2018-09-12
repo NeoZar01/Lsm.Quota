@@ -1,0 +1,5 @@
+C:\Personal Work Drive\Quota\LimpEmisPortal\LimpEmisPortal.Email\bin\Debug\DoE.WF.Email.dll.config
+C:\Personal Work Drive\Quota\LimpEmisPortal\LimpEmisPortal.Email\bin\Debug\DoE.WF.Email.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LimpEmisPortal.Email\bin\Debug\DoE.WF.Email.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LimpEmisPortal.Email\obj\Debug\DoE.WF.Email.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LimpEmisPortal.Email\obj\Debug\DoE.WF.Email.pdb

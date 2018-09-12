@@ -1,0 +1,61 @@
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\obj\Debug\LimpEmisPortal.Services.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEmisPortal.Services.dll.config
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEmisPortal.Services.dll
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEmisPortal.Services.pdb
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEmisPortal.Data.exe
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\PagedList.dll
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\PagedList.Mvc.dll
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEmisPortal.Logger.dll
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEmisPortal.FileManager.dll
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEmisPortal.Data.pdb
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\PagedList.xml
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\PagedList.Mvc.xml
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEmisPortal.Logger.pdb
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEmisPortal.FileManager.pdb
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\obj\Debug\LimpEmisPortal.Services.dll
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\obj\Debug\LimpEmisPortal.Services.pdb
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\obj\Debug\LimpEmisPortal.Services.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEmisPortal.Services.dll.config
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEmisPortal.Services.dll
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEmisPortal.Services.pdb
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEmisPortal.Data.exe
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\PagedList.dll
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\PagedList.Mvc.dll
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEmisPortal.Logger.dll
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEmisPortal.FileManager.dll
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEmisPortal.Data.pdb
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\PagedList.xml
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\PagedList.Mvc.xml
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEmisPortal.Logger.pdb
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEmisPortal.FileManager.pdb
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\obj\Debug\LimpEmisPortal.Services.dll
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\obj\Debug\LimpEmisPortal.Services.pdb
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEmisPortal.Services.dll.config
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEmisPortal.Services.dll
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEmisPortal.Services.pdb
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEmisPortal.Data.exe
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\PagedList.dll
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\PagedList.Mvc.dll
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEmisPortal.Logger.dll
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEmisPortal.FileManager.dll
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEmisPortal.Data.pdb
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\PagedList.xml
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\PagedList.Mvc.xml
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEmisPortal.Logger.pdb
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEmisPortal.FileManager.pdb
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\obj\Debug\LimpEmisPortal.Services.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\obj\Debug\LimpEmisPortal.Services.dll
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\obj\Debug\LimpEmisPortal.Services.pdb
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduPlugInApplications\obj\Debug\LimpEmisPortal.Services.csprojResolveAssemblyReference.cache

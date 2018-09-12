@@ -1,0 +1,31 @@
+﻿@model LimpEmisPortal.Models.RequisitionsViewModel
+
+<br />
+<div class="row">
+    <p class="col-md-12" >
+        @if (Model.IsError == 1)
+        {
+            <div class="alert alert-danger" role="alert">
+                Failed to add your item to the shopping card list.<br />
+                Please ensure that your quantity is not over the limited amount.        
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-success" role="alert">
+              <span class="glyphicon glyphicon-ok"></span>  Your Item was successfully added to the shopping card list.      
+            </div>
+        }
+        <div class="col-md-12">
+            @*<button type="button" class="btn btn-default"> 
+                <span class="glyphicon glyphicon-arrow-left"></span> &nbsp;
+                @Ajax.ActionLink(linkText: "Back", actionName: "RequisitionBookmarksAjaxAction", controllerName: "Requisitions", routeValues: new { reqId = Model.requisitionId },
+                              ajaxOptions: new AjaxOptions {
+                                  UpdateTargetId = "bookmark-modal-content",
+                                  InsertionMode = InsertionMode.Replace,
+                                  HttpMethod = "GET",
+                                  LoadingElementId = "orderTypes_ajax_Loader"})                
+            </button>*@
+        </div>
+     </p>
+</div>

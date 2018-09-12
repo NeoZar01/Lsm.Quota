@@ -1,0 +1,9 @@
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF.Utils\bin\Debug\WF.Utils.Items.dll.config
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF.Utils\bin\Debug\WF.Utils.Items.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF.Utils\bin\Debug\WF.Utils.Items.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF.Utils\bin\Debug\EntityFramework.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF.Utils\bin\Debug\EntityFramework.SqlServer.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF.Utils\bin\Debug\EntityFramework.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF.Utils\bin\Debug\EntityFramework.SqlServer.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF.Utils\obj\Debug\WF.Utils.Items.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF.Utils\obj\Debug\WF.Utils.Items.pdb

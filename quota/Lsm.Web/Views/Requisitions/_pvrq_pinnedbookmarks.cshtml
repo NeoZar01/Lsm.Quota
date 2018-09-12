@@ -1,0 +1,103 @@
+﻿@using PagedList.Mvc
+@using LimpEmisPortal.Models
+@using LimpEmisPortal.Utils.String
+@using LimpEmisPortal.Utils.DbArray
+
+@model RequisitionsViewModel
+
+@{ 
+    var length = 0;
+}
+
+    <div class="col-md-12" >  
+        <div id="collapseResultSheet" class="collapse show" >
+            <div class="dropdown col-md-12">
+                <small style="color:#282828"> @(Model.GetOrderedItems.TotalItemCount) books </small> &nbsp;
+                <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span class="glyphicon glyphicon-option-horizontal"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li class="text-center">
+                        <a class="btn btn-link btn-sm" data-toggle="collapse" data-target="#collapseResultSheet" aria-expanded="true" aria-controls="collapseResultSheet">
+                            Hide/Show Results Sheet
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card card-body">
+                <div class="col-md-12 " id="search-results-sheet">
+                    @foreach (var bm in Model.GetOrderedItems)
+                    {
+                        <!-- create an requisition book item -->
+                        <div class="col-md-3 " >
+                            <div style="margin:8px 4px">
+                                <div class="col-md-12" style="border:1px solid #ecf0f1">
+                                    <div class=" col-md-offset-10 btn-group btn-group-sm" role="group">
+                                        <div class="col-md-1">
+                                            <div class="dropdown" style="display:inline">
+                                                <button class="btn btn-link btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                    <span class="glyphicon glyphicon-option-vertical"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small style="clear:both;color:#337ab7;text-align:right">@(bm.Author)</small></a> </li>
+                                                    <li><a href="#"><span class="glyphicon glyphicon-book"></span> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<small style="color:#337ab7">@(bm.SubjectName)</small></a> </li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#"><span class="glyphicon glyphicon-education"></span> &nbsp; <small>Grade &nbsp; Class &nbsp; Subj </small></a></li>
+                                                    <li><a href="#" style="border-top:1px solid #f2f2f2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <small>@(bm.Grade) &nbsp; &nbsp; &nbsp;  @(bm.ClassEnrol) &nbsp; &nbsp; &nbsp;  @(bm.SubjEnrol)</small></a> </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h4 class="text-capitalize"><small>@bm.ISBN</small> <br/>@bm.ItemName</h4>
+                                        <div class="col-md-4 btn-group btn-group-sm btn-group-vertical" role="group">
+                                            <button class="btn btn-primary btn-sm" role="button">
+                                                <small>
+                                                    @if (!String.IsNullOrEmpty(bm.Requisitions))
+                                                    {
+                                                        length = (DbString.ConvertStringToArray(bm.Requisitions, ';').Length) - 1;
+                                                    }
+                                                    @length
+                                                </small>
+                                            </button>
+                                            <button class="btn btn-default btn-sm" role="button"><span class="glyphicon glyphicon-shopping-cart"></span></button>
+                                        </div>
+                                        <div class="col-md-1">
+                                        </div>
+                                        <div class="col-md-5">
+                                            <table>
+                                                <tr style="text-align:center;"><td><h4>@(bm.Available2)</h4></td></tr>
+                                                <tr style="text-align:center;color:#282828;border-top:1px solid #f4f4f4"><th><h5>@string.Concat("R", Math.Round((bm.Price), 2, MidpointRounding.AwayFromZero))</h5></th></tr>
+                                            </table>
+                                        </div>
+                                        <div class="col-md-2">
+                                        </div>
+                                               @if (!DbArray.IsAny(String.IsNullOrEmpty(bm.Requisitions) ? new string[] { "" } : bm.Requisitions.Split(';'), Model.requisitionId))
+                                               {
+                                                <div class="col-md-12" style="border-top:1px solid #f2f2f2">
+                                                    @{ Html.RenderAction("AddToCardEFormChildAction", "Requisitions", new { id = bm.id, avl = bm.Available2, reqId = Model.requisitionId });} <!-- shopping card-->
+                                                </div>
+                                               }
+                                </div>
+                            </div>
+                        </div>
+
+                                 }
+
+                    <!--  -<End Requisition Item Block>- -->
+
+                        <div class="col-md-12">
+                            Page @(Model.GetOrderedItems.PageCount < Model.GetOrderedItems.PageNumber ? 0 : Model.GetOrderedItems.PageNumber) of @Model.GetOrderedItems.PageCount
+                            @Html.PagedListPager(Model.GetOrderedItems, page => Url.Action("EduCatalogueOPenRequisitionSearchAction", "Requisitions", new { page, grdFilter = ViewBag.currentGrd, searchKeyString = ViewBag.keyword, reqId = Model.requisitionId }),
+    PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(new AjaxOptions()
+    {
+        HttpMethod = "GET",
+        LoadingElementId = "loading-animation-icon",
+        InsertionMode = InsertionMode.Replace,
+        UpdateTargetId = "books-hits-sheet"
+    }))
+                        </div>
+                </div>            
+            </div>
+        </div>
+    </div>

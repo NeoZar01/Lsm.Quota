@@ -1,0 +1,110 @@
+﻿@model  LimpEmisPortal.Models.IndexLtsmTabViewModel
+
+<div class="row">
+    <div class="panel" id="IDataAcceptanceAction">
+        <div class="panel-body">
+            <br/>
+            @if (!Model.Certificate.IsApproved) { 
+            <div class="col-md-12" data-spy="scroll" data-target="#navbar-example">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#declaration" aria-controls="declaration" role="tab" data-toggle="tab">Declaration</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="declaration">
+                        <div>
+                            <br /><br />
+                            @*I <ins><small> @String.Concat(@Model.SchoolGeneralInformation.FName, " ", @Model.SchoolGeneralInformation.SName) </small></ins>, principal  of  <ins> @Html.DisplayFor(c => Model.SchoolGeneralInformation.SchoolIdenityName)</ins>
+                            fully understand the provision made in the South African Schools Act No. 84 of 1996 (Section 59 (1) and (2) and Section 16A (2)(g)), which stipulates that every school <strong>must</strong>
+                            supply such information about the school as is reasonably required by the Head of Education.<br />*@
+
+                            <div>
+                                <br />
+                                <small>
+                                    I certify that the information provided on this form is to the best of my knowledge and belief correct and complete.
+                                </small>
+                            </div>
+
+                        </div>
+                        <div>
+                       @if ((bool)!Model.Certificate.IsDeclined)
+                       {
+             using (Html.BeginForm("SubmiteFormForDataCertification", "Manage", FormMethod.Post, htmlAttributes: new { @class = "col-md-12 panel"}))
+                            {
+                                @Html.AntiForgeryToken()
+                                @Html.ValidationSummary(true)
+                                <br />
+                                <div class=" col-md-12 panel-body form-group">
+
+                                    <div class="collapse" id="commenttarget">
+                                        <hr />
+                                        <div class="col-md-12">
+                                            <h6> Comment on any inaccurate figures reflecting the <quote>learner enrollment per subject</quote>  and/or Learner enrollment per grade</h6>
+                                            @Html.TextAreaFor(c => Model.Command, htmlAttributes: new { @rows = 3, @cols = 70, @placeholder = "", @spellchech = "true" })
+                                            @Html.ValidationMessageFor(c => Model.Command)
+                                            <div class="panel">
+                                                <br />
+                                                <button class="btn btn-primary btn-sm" type="submit">Post your Commend</button>
+                                                <br />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 panel panel-footer" style="padding-bottom:35px">
+                                    <button class="btn btn-primary btn-sm" style="float:right" type="submit">Accept</button>
+                                    <button class="btn btn-primary btn-sm" style="float:right; margin-right:15px" type="button" data-toggle="collapse" data-target="#commenttarget" aria-expanded="false" aria-controls="commenttarget">
+                                        Decline
+                                    </button>
+                                </div>
+                           }
+                       }
+                       else
+                       {
+                           <br/><br />
+                        <div class="col-md-12">                            
+                            <div class="col-md-12 alert alert-info" role="alert"> 
+                                You recently declined your learner enrolment or grade enrolment figures following an overreporting error from the department.
+                                Your query is currently being processed by the department.
+                                Kindly contact the above-mentioned incumbent on the inquiry section on the progress of your query.
+                            </div>
+                            <div class="col-md-12">
+                                <br/>
+                                <table class="table table-condensed table-hover table-responsive">
+                                    <tr style="text-align:center">
+                                        <th>Emis Number</th>
+                                        <th>&nbsp; Date</th>
+                                        <th>Reason</th>
+                                    </tr>
+                                    <tr>
+                                        <td><small>@Model.Certificate.EmisCode</small></td>
+                                        <td><small>@Model.Certificate.CreationDate</small></td>
+                                        <td><small>@Model.Certificate.Comment</small></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                       }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            }
+                else
+                {
+            <div class="col-md-12 alert alert-success" role="alert">
+                <button type="button" class="btn btn-link" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Data Date Version : @Model.Certificate.CreationDate">
+                        <span class="glyphicon glyphicon-certificate"></span>
+                    </button>
+                <span>
+                    &nbsp; Information regarding the provision of LTSM was approved on the
+                    <a href="#" class="alert-link">
+                            @Model.Certificate.CreationDate
+                        </a> by  <strong> @Model.Certificate.EmisCode</strong> in accordance with the South African Schools Act NO. 84 of 1996
+                </span>
+            </div>
+                   }
+        </div>
+    </div>
+</div>

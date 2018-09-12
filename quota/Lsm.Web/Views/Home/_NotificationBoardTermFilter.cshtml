@@ -1,0 +1,35 @@
+﻿@*@model LimpEmisPortal.Models.HomeViewModel
+
+<div class="col-md-12">
+    <center>
+        <img src="~/Content/Images/ajax-loader.gif" id="ajax_loading_notification_board_refresh" style="display:none; width:24px; height:24px " />
+    </center>
+</div>
+
+@foreach (var n in Model.BroadcastNotifications)
+{
+    <div class="col-md-12 panel panel-default">
+        <center> <small class="glyphicon glyphicon-pushpin" style="text-align:center"></small></center>
+        <div style="border-bottom:1px solid #ecf0f1">
+            <br />
+            <small>
+                <strong>Posted by:</strong>
+                &nbsp;  @n.AddressName &nbsp; | &nbsp; @n.Designation
+            </small>
+            <br />
+        </div>
+        <br />
+        <h4>@n.NotSubject</h4>
+        <div style="text-indent: 4px">
+            <p style="text-indent: 2px"> <span style="@string.Concat("display", n.ConfLev ? "inline" : "none");color:#428bca"> <small>Inq :</small></span>  &nbsp; <small style="color:#428bca">@( n.ConfLev ? n.Email : " ") </small><br /></p>
+            <p>
+                @n.Notification
+            </p>
+            <br />
+            <p style="text-align:right;color:#428bca;border-top:1px solid #ecf0f1">
+                <br />
+                <small>Pinned : </small> <small style="color:#428bca">@string.Concat(n.PublishDaysDur < 2 ? " " : n.PublishDaysDur.ToString(), n.PublishDaysDur > 0 ? n.PublishDaysDur == 1 ? "yesturday" : " days ago" : "today") &nbsp; | &nbsp;  Term @n.Term &nbsp; &copy; @n.DirCode </small>
+            </p>
+        </div>
+    </div>
+}*@

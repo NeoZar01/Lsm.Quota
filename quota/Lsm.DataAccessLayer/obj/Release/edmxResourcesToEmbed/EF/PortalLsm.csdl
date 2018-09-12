@@ -1,0 +1,673 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Portal.LsmModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Circuit">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="RowGuid" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RowGuid" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Manager" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ParentBranch" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDistrict" Type="Boolean" Nullable="false" />
+    <Property Name="IsCircuit" Type="Boolean" Nullable="false" />
+    <Property Name="LocationSpatial" Type="Geography" />
+    <Property Name="LocationSpatialText" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="StAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SchoolGrade">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="RowGuid" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RowGuid" Type="Guid" Nullable="false" />
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="BookYear" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MinGrade" Type="Int32" Nullable="false" />
+    <Property Name="MaxGrade" Type="Int32" Nullable="false" />
+    <Property Name="Phase" Type="Int32" Nullable="false" />
+    <Property Name="Grade1" Type="Boolean" Nullable="false" />
+    <Property Name="Grade2" Type="Boolean" Nullable="false" />
+    <Property Name="Grade3" Type="Boolean" Nullable="false" />
+    <Property Name="Grade4" Type="Boolean" Nullable="false" />
+    <Property Name="Grade5" Type="Boolean" Nullable="false" />
+    <Property Name="Grade6" Type="Boolean" Nullable="false" />
+    <Property Name="Grade7" Type="Boolean" Nullable="false" />
+    <Property Name="Grade8" Type="Boolean" Nullable="false" />
+    <Property Name="Grade9" Type="Boolean" Nullable="false" />
+    <Property Name="Grade10" Type="Boolean" Nullable="false" />
+    <Property Name="Grade11" Type="Boolean" Nullable="false" />
+    <Property Name="Grade12" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TeacherLearnerSubjectRatio">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="RowGuid" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RowGuid" Type="Guid" Nullable="false" />
+    <Property Name="Code" Type="Int32" Nullable="false" />
+    <Property Name="SubjectId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Teachers" Type="Int32" Nullable="false" />
+    <Property Name="Subj_Enr" Type="Int32" Nullable="false" />
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="Ratio" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="BookYear" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Bookmark">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RowGUID" Type="Guid" />
+    <Property Name="InventoryReferenceNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="BusinessRule">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="RowGuid" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RowGuid" Type="Guid" Nullable="false" />
+    <Property Name="BRRNO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BookYear" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SODate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ExprDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="BusinessYear" Type="Int32" Nullable="false" />
+    <Property Name="BusinessTerm" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="EmisCode" Type="Int32" />
+    <Property Name="Application" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Gr1" Type="Byte" Nullable="false" />
+    <Property Name="Gr2" Type="Byte" Nullable="false" />
+    <Property Name="Gr3" Type="Byte" Nullable="false" />
+    <Property Name="Gr4" Type="Byte" Nullable="false" />
+    <Property Name="Gr5" Type="Byte" Nullable="false" />
+    <Property Name="Gr6" Type="Byte" Nullable="false" />
+    <Property Name="Gr7" Type="Byte" Nullable="false" />
+    <Property Name="Gr8" Type="Byte" Nullable="false" />
+    <Property Name="Gr9" Type="Byte" Nullable="false" />
+    <Property Name="Gr10" Type="Byte" Nullable="false" />
+    <Property Name="Gr11" Type="Byte" Nullable="false" />
+    <Property Name="Gr12" Type="Byte" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Inventory">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="RowGuid" />
+      <PropertyRef Name="UCRID" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RowGuid" Type="Guid" Nullable="false" />
+    <Property Name="UCRID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Sub_Code" Type="Int32" Nullable="false" />
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="Class_Enr" Type="Int32" Nullable="false" />
+    <Property Name="Subj_Enr" Type="Int32" Nullable="false" />
+    <Property Name="Teacher_Enr" Type="Int32" Nullable="false" />
+    <Property Name="CategoryCD" Type="Int32" Nullable="false" />
+    <Property Name="TL_Ratio" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LastModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsBookmark" Type="Boolean" Nullable="false" />
+    <Property Name="OrderNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Price" Type="Decimal" Precision="10" Scale="4" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="Quota" Type="Int32" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="TotalPrice" Type="Decimal" Precision="10" Scale="4" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="BookYear" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="InventoryQuantity">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RowGUID" Type="Guid" />
+    <Property Name="ReqNO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="InventoryReferenceNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="CategoryCD" Type="Int32" Nullable="false" />
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LastModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Price" Type="Decimal" Precision="10" Scale="4" />
+    <Property Name="TotalPrice" Type="Decimal" Precision="10" Scale="4" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="WorkFlow">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ref" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LastModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="IsApproved" Type="Boolean" />
+    <Property Name="To" Type="Int32" />
+    <Property Name="ToDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="From" Type="Int32" />
+    <Property Name="FromDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="WorkFlowTimeLines" Relationship="Self.FK__WorkFlowT__WorkI__5CC74BF3" FromRole="WorkFlow" ToRole="WorkFlowTimeLine" />
+  </EntityType>
+  <EntityType Name="WorkFlowTicketMessage">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="Ticket" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ticket" Type="Int32" Nullable="false" />
+    <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LastModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="From" Type="Int32" Nullable="false" />
+    <Property Name="FromDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="To" Type="Int32" Nullable="false" />
+    <Property Name="ToDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IsRead" Type="Boolean" />
+    <NavigationProperty Name="WorkFlowTimeLine" Relationship="Self.FK__WorkFlowT__Ticke__71C268D9" FromRole="WorkFlowTicketMessage" ToRole="WorkFlowTimeLine" />
+  </EntityType>
+  <EntityType Name="WorkFlowTimeLine">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Task" Type="Int32" Nullable="false" />
+    <Property Name="Activity" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="WorkId" Type="Int32" Nullable="false" />
+    <Property Name="To" Type="Int32" />
+    <Property Name="ToDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="From" Type="Int32" />
+    <Property Name="FromDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="WorkFlow" Relationship="Self.FK__WorkFlowT__WorkI__5CC74BF3" FromRole="WorkFlowTimeLine" ToRole="WorkFlow" />
+    <NavigationProperty Name="WorkFlowTicketMessages" Relationship="Self.FK__WorkFlowT__Ticke__71C268D9" FromRole="WorkFlowTimeLine" ToRole="WorkFlowTicketMessage" />
+  </EntityType>
+  <EntityType Name="LearnerSubjectEnrolment">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="RowGuid" />
+      <PropertyRef Name="SubjectId" />
+      <PropertyRef Name="Sec_SubjectId" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Key" />
+      <PropertyRef Name="Code" />
+      <PropertyRef Name="Grade" />
+      <PropertyRef Name="Enr_Class" />
+      <PropertyRef Name="Enr_Sub" />
+      <PropertyRef Name="EmisCode" />
+      <PropertyRef Name="Term" />
+      <PropertyRef Name="Year" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RowGuid" Type="Guid" Nullable="false" />
+    <Property Name="SubjectId" Type="Int32" Nullable="false" />
+    <Property Name="Sec_SubjectId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="125" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Key" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Code" Type="Int32" Nullable="false" />
+    <Property Name="Grade" Type="Int32" Nullable="false" />
+    <Property Name="Enr_Class" Type="Int32" Nullable="false" />
+    <Property Name="Enr_Sub" Type="Int32" Nullable="false" />
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="Term" Type="Int32" Nullable="false" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vwRequisitionForReport">
+    <Key>
+      <PropertyRef Name="EMIS" />
+      <PropertyRef Name="BookYear" />
+      <PropertyRef Name="StatusDescription" />
+      <PropertyRef Name="ReqID" />
+    </Key>
+    <Property Name="School_Name_" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Name="EMIS" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BookYear" Type="String" MaxLength="9" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="StatusDescription" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ItemCount" Type="Int32" />
+    <Property Name="District5" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="TitleCount" Type="Int32" />
+    <Property Name="ReqID" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="GrFrom" Type="Byte" />
+    <Property Name="GrTo" Type="Byte" />
+    <Property Name="TotalPrice" Type="Decimal" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityType Name="vwW_PublisherTotals">
+    <Key>
+      <PropertyRef Name="PubID" />
+      <PropertyRef Name="Publisher" />
+      <PropertyRef Name="StationaryRequisition" />
+    </Key>
+    <Property Name="PubID" Type="Int32" Nullable="false" />
+    <Property Name="Publisher" Type="String" MaxLength="80" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TotalItems" Type="Int32" />
+    <Property Name="TotalPrice" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="StationaryRequisition" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vw_Inventory">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="EmisCode" />
+      <PropertyRef Name="BookName" />
+      <PropertyRef Name="ISBN" />
+      <PropertyRef Name="Publisher" />
+      <PropertyRef Name="Author" />
+      <PropertyRef Name="Language" />
+      <PropertyRef Name="Category" />
+      <PropertyRef Name="CategoryCD" />
+      <PropertyRef Name="Sub_Code" />
+      <PropertyRef Name="SubjectName" />
+      <PropertyRef Name="Key" />
+      <PropertyRef Name="Grade" />
+      <PropertyRef Name="Class_Enr" />
+      <PropertyRef Name="Subj_Enr" />
+      <PropertyRef Name="Price" />
+      <PropertyRef Name="CreationDate" />
+      <PropertyRef Name="LastModifiedDate" />
+      <PropertyRef Name="Teachers" />
+      <PropertyRef Name="BookYear" />
+      <PropertyRef Name="TLR" />
+      <PropertyRef Name="IsBookmarked" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="BookName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ISBN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Publisher" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Author" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Language" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Category" Type="String" MaxLength="80" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CategoryCD" Type="Int32" Nullable="false" />
+    <Property Name="Sub_Code" Type="Int32" Nullable="false" />
+    <Property Name="SubjectName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Key" Type="String" MaxLength="80" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Grade" Type="Int32" Nullable="false" />
+    <Property Name="Class_Enr" Type="Int32" Nullable="false" />
+    <Property Name="Subj_Enr" Type="Int32" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Precision="10" Scale="4" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LastModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TotalPrice" Type="Decimal" Precision="10" Scale="4" />
+    <Property Name="Teachers" Type="Int32" Nullable="false" />
+    <Property Name="BookYear" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TLR" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IsBookmarked" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vw_RequisitionOrderItems">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="ISBN" />
+      <PropertyRef Name="ItemName" />
+      <PropertyRef Name="Publisher" />
+      <PropertyRef Name="Author" />
+      <PropertyRef Name="Language" />
+      <PropertyRef Name="Category" />
+      <PropertyRef Name="SubjectName" />
+      <PropertyRef Name="Key" />
+      <PropertyRef Name="Code" />
+      <PropertyRef Name="Grade" />
+      <PropertyRef Name="Price" />
+      <PropertyRef Name="SubjCode" />
+      <PropertyRef Name="EmisCode" />
+      <PropertyRef Name="ClassEnrol" />
+      <PropertyRef Name="SubjEnrol" />
+      <PropertyRef Name="CreationDate" />
+      <PropertyRef Name="LastModifiedDate" />
+      <PropertyRef Name="IsBookmarked" />
+      <PropertyRef Name="TeacherCount" />
+      <PropertyRef Name="IsActive" />
+      <PropertyRef Name="CategoryCD" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="Requisitions" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ISBN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OrderQty" Type="Int32" />
+    <Property Name="ItemName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Publisher" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Author" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Language" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Category" Type="String" MaxLength="80" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SubjectName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Key" Type="String" MaxLength="80" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Code" Type="Int32" Nullable="false" />
+    <Property Name="Grade" Type="Int32" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Precision="10" Scale="4" Nullable="false" />
+    <Property Name="SubjCode" Type="Int32" Nullable="false" />
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="ClassEnrol" Type="Int32" Nullable="false" />
+    <Property Name="SubjEnrol" Type="Int32" Nullable="false" />
+    <Property Name="Qty" Type="Int32" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LastModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TotalPrice" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="IsBookmarked" Type="Boolean" Nullable="false" />
+    <Property Name="ItemId" Type="Int32" />
+    <Property Name="TeacherCount" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="BookYear" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CategoryCD" Type="Int32" Nullable="false" />
+    <Property Name="IsApproved" Type="Int32" />
+    <Property Name="Available" Type="Int32" />
+    <Property Name="Available2" Type="Int32" />
+  </EntityType>
+  <EntityType Name="vw_RequisitionsDashboard">
+    <Key>
+      <PropertyRef Name="EmisCode" />
+      <PropertyRef Name="BookYear" />
+    </Key>
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="BookYear" Type="String" MaxLength="9" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Submitted" Type="Int32" />
+    <Property Name="Sub_TotalPrice" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="InDrafts" Type="Int32" />
+    <Property Name="TotalP_InDrf" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Rejected" Type="Int32" />
+    <Property Name="TotalP_Reject" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Aprroved" Type="Int32" />
+    <Property Name="TotalP_Approved" Type="Decimal" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityType Name="vw_RequisitionsNorms">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="EmisCode" />
+      <PropertyRef Name="GrFrom" />
+      <PropertyRef Name="GrTo" />
+      <PropertyRef Name="DateFrom" />
+      <PropertyRef Name="DateTo" />
+      <PropertyRef Name="MinGrade" />
+      <PropertyRef Name="MaxGrade" />
+      <PropertyRef Name="BookYear" />
+      <PropertyRef Name="Term" />
+      <PropertyRef Name="Year" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GrFrom" Type="Byte" Nullable="false" />
+    <Property Name="GrTo" Type="Byte" Nullable="false" />
+    <Property Name="DateFrom" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DateTo" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="MinGrade" Type="Int32" Nullable="false" />
+    <Property Name="MaxGrade" Type="Int32" Nullable="false" />
+    <Property Name="BookYear" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Term" Type="Int32" Nullable="false" />
+    <Property Name="Year" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Rem_Days" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="vw_ShoppingCardItems">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="ISBN" />
+      <PropertyRef Name="ItemName" />
+      <PropertyRef Name="Publisher" />
+      <PropertyRef Name="Author" />
+      <PropertyRef Name="Language" />
+      <PropertyRef Name="Category" />
+      <PropertyRef Name="SubjectName" />
+      <PropertyRef Name="Key" />
+      <PropertyRef Name="Code" />
+      <PropertyRef Name="Grade" />
+      <PropertyRef Name="Price" />
+      <PropertyRef Name="SubjCode" />
+      <PropertyRef Name="EmisCode" />
+      <PropertyRef Name="ClassEnrol" />
+      <PropertyRef Name="SubjEnrol" />
+      <PropertyRef Name="CreationDate" />
+      <PropertyRef Name="LastModifiedDate" />
+      <PropertyRef Name="TotalPrice" />
+      <PropertyRef Name="IsBookmarked" />
+      <PropertyRef Name="TeacherCount" />
+      <PropertyRef Name="IsActive" />
+      <PropertyRef Name="CategoryCD" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="ReqId" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="ISBN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OrderQty" Type="Int32" />
+    <Property Name="ItemName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Publisher" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Author" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Language" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Category" Type="String" MaxLength="80" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SubjectName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Key" Type="String" MaxLength="80" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Code" Type="Int32" Nullable="false" />
+    <Property Name="Grade" Type="Int32" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Precision="10" Scale="4" Nullable="false" />
+    <Property Name="SubjCode" Type="Int32" Nullable="false" />
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="ClassEnrol" Type="Int32" Nullable="false" />
+    <Property Name="SubjEnrol" Type="Int32" Nullable="false" />
+    <Property Name="Qty" Type="Int32" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LastModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TotalPrice" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="IsBookmarked" Type="Boolean" Nullable="false" />
+    <Property Name="ItemId" Type="Int32" />
+    <Property Name="TeacherCount" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="BookYear" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CategoryCD" Type="Int32" Nullable="false" />
+    <Property Name="IsApproved" Type="Int32" />
+    <Property Name="Available" Type="Int32" />
+    <Property Name="Available2" Type="Int32" />
+  </EntityType>
+  <EntityType Name="vwTotalSubcityPerCircuit">
+    <Key>
+      <PropertyRef Name="EICircuit" />
+      <PropertyRef Name="BookYear" />
+    </Key>
+    <Property Name="CircuitCD" Type="Int32" />
+    <Property Name="EICircuit" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Schools" Type="Int64" />
+    <Property Name="Requisitions" Type="Int32" />
+    <Property Name="TotalPrice" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="BookYear" Type="String" MaxLength="9" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__WorkFlowT__WorkI__5CC74BF3">
+    <End Role="WorkFlow" Type="Self.WorkFlow" Multiplicity="1" />
+    <End Role="WorkFlowTimeLine" Type="Self.WorkFlowTimeLine" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WorkFlow">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="WorkFlowTimeLine">
+        <PropertyRef Name="WorkId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__WorkFlowT__Ticke__71C268D9">
+    <End Role="WorkFlowTimeLine" Type="Self.WorkFlowTimeLine" Multiplicity="1" />
+    <End Role="WorkFlowTicketMessage" Type="Self.WorkFlowTicketMessage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WorkFlowTimeLine">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="WorkFlowTicketMessage">
+        <PropertyRef Name="Ticket" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PortalLsm" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Circuits" EntityType="Self.Circuit" />
+    <EntitySet Name="SchoolGrades" EntityType="Self.SchoolGrade" />
+    <EntitySet Name="TeacherLearnerSubjectRatios" EntityType="Self.TeacherLearnerSubjectRatio" />
+    <EntitySet Name="Bookmarks" EntityType="Self.Bookmark" />
+    <EntitySet Name="BusinessRules" EntityType="Self.BusinessRule" />
+    <EntitySet Name="Inventories" EntityType="Self.Inventory" />
+    <EntitySet Name="InventoryQuantities" EntityType="Self.InventoryQuantity" />
+    <EntitySet Name="WorkFlows" EntityType="Self.WorkFlow" />
+    <EntitySet Name="WorkFlowTicketMessages" EntityType="Self.WorkFlowTicketMessage" />
+    <EntitySet Name="WorkFlowTimeLines" EntityType="Self.WorkFlowTimeLine" />
+    <EntitySet Name="LearnerSubjectEnrolments" EntityType="Self.LearnerSubjectEnrolment" />
+    <EntitySet Name="vwRequisitionForReports" EntityType="Self.vwRequisitionForReport" />
+    <EntitySet Name="vwW_PublisherTotals" EntityType="Self.vwW_PublisherTotals" />
+    <EntitySet Name="vw_Inventory" EntityType="Self.vw_Inventory" />
+    <EntitySet Name="vw_RequisitionOrderItems" EntityType="Self.vw_RequisitionOrderItems" />
+    <EntitySet Name="vw_RequisitionsDashboard" EntityType="Self.vw_RequisitionsDashboard" />
+    <EntitySet Name="vw_RequisitionsNorms" EntityType="Self.vw_RequisitionsNorms" />
+    <EntitySet Name="vw_ShoppingCardItems" EntityType="Self.vw_ShoppingCardItems" />
+    <EntitySet Name="vwTotalSubcityPerCircuits" EntityType="Self.vwTotalSubcityPerCircuit" />
+    <AssociationSet Name="FK__WorkFlowT__WorkI__5CC74BF3" Association="Self.FK__WorkFlowT__WorkI__5CC74BF3">
+      <End Role="WorkFlow" EntitySet="WorkFlows" />
+      <End Role="WorkFlowTimeLine" EntitySet="WorkFlowTimeLines" />
+    </AssociationSet>
+    <AssociationSet Name="FK__WorkFlowT__Ticke__71C268D9" Association="Self.FK__WorkFlowT__Ticke__71C268D9">
+      <End Role="WorkFlowTimeLine" EntitySet="WorkFlowTimeLines" />
+      <End Role="WorkFlowTicketMessage" EntitySet="WorkFlowTicketMessages" />
+    </AssociationSet>
+    <EntitySet Name="Requisitions" EntityType="Portal.LsmModel.Requisition" />
+    <EntitySet Name="Settings" EntityType="Portal.LsmModel.Setting" />
+    <EntitySet Name="req_vwRequisitionTotalPrice" EntityType="Portal.LsmModel.req_vwRequisitionTotalPrice" />
+    <EntitySet Name="req_vwOrderItems" EntityType="Portal.LsmModel.req_vwOrderItems" />
+    <EntitySet Name="Schools" EntityType="Portal.LsmModel.School" />
+    <EntitySet Name="vwRequistionTickets" EntityType="Portal.LsmModel.vwRequistionTicket" />
+  </EntityContainer>
+  <EntityType Name="Requisition">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="RowGUID" />
+      <PropertyRef Name="ReqID" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RowGUID" Type="Guid" Nullable="false" />
+    <Property Name="ReqID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="BookYear" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CreationDate" Type="DateTime" Precision="3" />
+    <Property Name="LastModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="GrFrom" Type="Byte" />
+    <Property Name="GrTo" Type="Byte" />
+    <Property Name="WFStage" Type="String" Nullable="false" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="Byte" Nullable="false" />
+    <Property Name="IsRedirected" Type="Boolean" Nullable="false" />
+    <Property Name="TotalPrice" Type="Decimal" Precision="19" Scale="4" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="IsStationary" Type="Boolean" Nullable="false" />
+    <Property Name="IsApproved" Type="Boolean" Nullable="false" />
+    <Property Name="OrderDate" Type="DateTime" Precision="3" />
+    <Property Name="DeliveryDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Setting">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RowGUID" Type="Guid" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Int32" Nullable="false" />
+    <Property Name="Key" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Rule" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="req_vwRequisitionTotalPrice">
+    <Key>
+      <PropertyRef Name="ReqId" />
+    </Key>
+    <Property Name="ReqId" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="EmisCode" Type="Int32" />
+    <Property Name="TotalPrice" Type="Decimal" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityType Name="req_vwOrderItems">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="ISBN" />
+      <PropertyRef Name="SubjCode" />
+      <PropertyRef Name="EmisCode" />
+      <PropertyRef Name="ItemName" />
+      <PropertyRef Name="SubjectName" />
+      <PropertyRef Name="Author" />
+      <PropertyRef Name="Grade" />
+      <PropertyRef Name="Price" />
+      <PropertyRef Name="ReqId" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="ISBN" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SubjCode" Type="Int32" Nullable="false" />
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="Enrolment" Type="Int32" />
+    <Property Name="Qty1" Type="Int32" />
+    <Property Name="Qty2" Type="Int32" />
+    <Property Name="ItemName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SubjectName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="BookYear" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Author" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Grade" Type="Int32" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+    <Property Name="TotalPrice" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="ReqId" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="Quota" Type="Int32" />
+  </EntityType>
+  <EntityType Name="School">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="RowGuid" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RowGuid" Type="Guid" Nullable="false" />
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Phase" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Sector" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Type" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Initials" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="PrincipalLastName" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PrincipalCellphone" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TownshipVillage" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Suburb" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Town" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Telephone" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Quintile" Type="Int32" />
+    <Property Name="EICircuit" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="EIDistrict" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Manucipality" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Term" Type="Int32" Nullable="false" />
+    <Property Name="DataYear" Type="String" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="LastModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CircuitCD" Type="Int32" />
+    <Property Name="PhaseDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="vwRequistionTicket">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="Ref" />
+      <PropertyRef Name="CreationDate" />
+      <PropertyRef Name="LastModifiedDate" />
+      <PropertyRef Name="ReqStatus" />
+      <PropertyRef Name="Task" />
+      <PropertyRef Name="BookYear" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="Ref" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LastModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="IsApproved" Type="Boolean" />
+    <Property Name="To" Type="Int32" />
+    <Property Name="ToDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="From" Type="Int32" />
+    <Property Name="FromDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ReqStatus" Type="Byte" Nullable="false" />
+    <Property Name="Task" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="GrFrom" Type="Byte" />
+    <Property Name="GrTo" Type="Byte" />
+    <Property Name="BookYear" Type="String" Nullable="false" MaxLength="9" FixedLength="false" Unicode="true" />
+    <Property Name="TotalPrice" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Address" Type="String" MaxLength="125" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Position" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

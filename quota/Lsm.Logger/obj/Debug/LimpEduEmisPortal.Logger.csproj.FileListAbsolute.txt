@@ -1,0 +1,5 @@
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduEmisPortal.Logger\bin\Debug\LimpEduEmisPortal.Logger.exe.config
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduEmisPortal.Logger\bin\Debug\LimpEduEmisPortal.Logger.exe
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduEmisPortal.Logger\bin\Debug\LimpEduEmisPortal.Logger.pdb
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduEmisPortal.Logger\obj\Debug\LimpEduEmisPortal.Logger.exe
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduEmisPortal.Logger\obj\Debug\LimpEduEmisPortal.Logger.pdb

@@ -1,0 +1,92 @@
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Notify\bin\Debug\LimpEmisPortal.Notify.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.Security.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Newtonsoft.Json.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Owin.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.Security.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Newtonsoft.Json.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Notify\obj\Debug\LimpEmisPortal.Notify.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Notify\bin\Debug\LimpEmisPortal.Notify.dll.config
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Notify\bin\Debug\LimpEmisPortal.Notify.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Notify\obj\Debug\LimpEmisPortal.Notify.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Notify\obj\Debug\Lsm.Mvc.Notify.csprojResolveAssemblyReference.cache
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\LimpEmisPortal.Notify.dll.config
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\LimpEmisPortal.Notify.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\LimpEmisPortal.Notify.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.Security.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Newtonsoft.Json.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Owin.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.Security.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Newtonsoft.Json.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\obj\Debug\LimpEmisPortal.Notify.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\obj\Debug\LimpEmisPortal.Notify.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\LimpEmisPortal.Notify.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\LimpEmisPortal.Notify.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\LimpEmisPortal.Notify.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Owin.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\obj\Debug\LimpEmisPortal.Notify.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Notify\obj\Debug\LimpEmisPortal.Notify.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Notify\bin\Debug\LimpEmisPortal.Notify.dll.config
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Notify\bin\Debug\LimpEmisPortal.Notify.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Notify\bin\Debug\LimpEmisPortal.Notify.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.Security.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Newtonsoft.Json.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Owin.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.Security.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Newtonsoft.Json.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Notify\obj\Debug\LimpEmisPortal.Notify.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Notify\obj\Debug\LimpEmisPortal.Notify.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Notify\obj\Debug\Lsm.Mvc.Notify.csprojResolveAssemblyReference.cache
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\LimpEmisPortal.Notify.dll.config
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\LimpEmisPortal.Notify.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\LimpEmisPortal.Notify.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.Security.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Newtonsoft.Json.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Owin.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.Security.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Newtonsoft.Json.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\obj\Debug\LimpEmisPortal.Notify.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\obj\Debug\LimpEmisPortal.Notify.pdb

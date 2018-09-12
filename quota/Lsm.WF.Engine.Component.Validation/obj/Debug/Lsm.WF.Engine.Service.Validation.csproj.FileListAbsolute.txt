@@ -1,0 +1,6 @@
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Validation\bin\Debug\WF.AddIn.PostVet.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Validation\obj\Debug\WF.AddIn.PostVet.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Validation\bin\Debug\WF.AddIn.PostVet.dll.config
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Validation\bin\Debug\WF.AddIn.PostVet.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Validation\obj\Debug\WF.AddIn.PostVet.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Validation\obj\Debug\Lsm.WF.Engine.Service.Validation.csprojResolveAssemblyReference.cache

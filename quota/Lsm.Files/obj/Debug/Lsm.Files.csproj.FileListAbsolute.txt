@@ -1,0 +1,64 @@
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Files\bin\Debug\DoE.Lsm.Files.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Files\bin\Debug\DoE.Lsm.Files.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Files\obj\Debug\DoE.Lsm.Files.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Files\obj\Debug\DoE.Lsm.Files.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Files\bin\Debug\DoE.Lsm.Files.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Files\bin\Debug\DoE.Lsm.Files.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Files\obj\Debug\DoE.Lsm.Files.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Files\obj\Debug\DoE.Lsm.Files.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Files\bin\Debug\DoE.Lsm.Files.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Files\bin\Debug\DoE.Lsm.Files.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Files\obj\Debug\Lsm.Files.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Files\obj\Debug\DoE.Lsm.Files.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Files\obj\Debug\DoE.Lsm.Files.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Files\bin\Debug\DoE.Lsm.Files.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Files\bin\Debug\DoE.Lsm.Files.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Files\obj\Debug\DoE.Lsm.Files.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Files\obj\Debug\DoE.Lsm.Files.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Files\bin\Debug\DoE.Lsm.Files.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Files\bin\Debug\DoE.Lsm.Files.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Files\obj\Debug\DoE.Lsm.Files.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Files\obj\Debug\DoE.Lsm.Files.pdb
+C:\Homework\Quota\QuotaPortal\LsmPortal.Files\bin\Debug\DoE.Lsm.Files.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.Files\bin\Debug\DoE.Lsm.Files.pdb
+C:\Homework\Quota\QuotaPortal\LsmPortal.Files\obj\Debug\DoE.Lsm.Files.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.Files\obj\Debug\DoE.Lsm.Files.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.Files\bin\Debug\DoE.Lsm.Files.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Files\bin\Debug\DoE.Lsm.Files.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.Files\bin\Debug\Newtonsoft.Json.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Files\bin\Debug\Newtonsoft.Json.xml
+C:\Homework\Quota\QuotaPortal\Lsm.Files\obj\Debug\DoE.Lsm.Files.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Files\obj\Debug\DoE.Lsm.Files.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Files\bin\Debug\DoE.Lsm.Files.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Files\bin\Debug\DoE.Lsm.Files.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Files\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Files\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Files\obj\Debug\DoE.Lsm.Files.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Files\obj\Debug\DoE.Lsm.Files.pdb
+F:\Development - Rest\QuotaPortal\Lsm.Files\bin\Debug\DoE.Lsm.Files.dll
+F:\Development - Rest\QuotaPortal\Lsm.Files\bin\Debug\DoE.Lsm.Files.pdb
+F:\Development - Rest\QuotaPortal\Lsm.Files\bin\Debug\Newtonsoft.Json.dll
+F:\Development - Rest\QuotaPortal\Lsm.Files\bin\Debug\Newtonsoft.Json.xml
+F:\Development - Rest\QuotaPortal\Lsm.Files\obj\Debug\DoE.Lsm.Files.dll
+F:\Development - Rest\QuotaPortal\Lsm.Files\obj\Debug\DoE.Lsm.Files.pdb
+F:\Development - Rest\QuotaPortal\Lsm.Files\obj\Debug\Lsm.Files.csprojResolveAssemblyReference.cache
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Files\bin\Debug\DoE.Lsm.Files.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Files\bin\Debug\DoE.Lsm.Files.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Files\bin\Debug\Newtonsoft.Json.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Files\bin\Debug\Newtonsoft.Json.xml
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Files\obj\Debug\DoE.Lsm.Files.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Files\obj\Debug\DoE.Lsm.Files.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Files\bin\Debug\DoE.Lsm.Files.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Files\bin\Debug\DoE.Lsm.Files.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Files\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Files\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Files\obj\Debug\DoE.Lsm.Files.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Files\obj\Debug\DoE.Lsm.Files.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Files\obj\Debug\Lsm.Files.csprojResolveAssemblyReference.cache
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Files\bin\Debug\DoE.Lsm.Files.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Files\bin\Debug\DoE.Lsm.Files.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Files\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Files\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Files\obj\Debug\DoE.Lsm.Files.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Files\obj\Debug\DoE.Lsm.Files.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Files\obj\Debug\Lsm.Files.csprojResolveAssemblyReference.cache

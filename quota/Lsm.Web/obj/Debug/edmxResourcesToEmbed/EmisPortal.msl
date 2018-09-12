@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EMISPortalModelStoreContainer" CdmEntityContainer="EMISPortalEntities">
+    <EntitySetMapping Name="LimSchoolTerms">
+      <EntityTypeMapping TypeName="EMISPortalModel.LimSchoolTerm">
+        <MappingFragment StoreEntitySet="LimSchoolTerms">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ImportStampDate" ColumnName="ImportStampDate" />
+          <ScalarProperty Name="Term" ColumnName="Term" />
+          <ScalarProperty Name="BookYear" ColumnName="BookYear" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="Quater" ColumnName="Quater" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_EmisPortalDownloads">
+      <EntityTypeMapping TypeName="EMISPortalModel.vw_EmisPortalDownloads">
+        <MappingFragment StoreEntitySet="vw_EmisPortalDownloads">
+          <ScalarProperty Name="FileExtension" ColumnName="FileExtension" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="NoOfDownloads" ColumnName="NoOfDownloads" />
+          <ScalarProperty Name="DownloadTimeStamp" ColumnName="DownloadTimeStamp" />
+          <ScalarProperty Name="SoftwareVersion" ColumnName="SoftwareVersion" />
+          <ScalarProperty Name="ProcessorType" ColumnName="ProcessorType" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SoftwareId" ColumnName="SoftwareId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

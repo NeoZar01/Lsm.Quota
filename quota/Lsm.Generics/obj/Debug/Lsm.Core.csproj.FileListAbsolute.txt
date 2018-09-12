@@ -1,0 +1,26 @@
+C:\Personal Work Drive\Quota\LimpEmisPortal\Lsm.Generics\bin\Debug\Lsm.Generics.exe.config
+C:\Personal Work Drive\Quota\LimpEmisPortal\Lsm.Generics\bin\Debug\Lsm.Generics.exe
+C:\Personal Work Drive\Quota\LimpEmisPortal\Lsm.Generics\bin\Debug\Lsm.Generics.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\Lsm.Generics\obj\Debug\Lsm.Generics.exe
+C:\Personal Work Drive\Quota\LimpEmisPortal\Lsm.Generics\obj\Debug\Lsm.Generics.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.Generics\bin\Debug\Lsm.Generics.dll.config
+C:\Homework\Quota\QuotaPortal\Lsm.Generics\bin\Debug\Lsm.Generics.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Generics\bin\Debug\Lsm.Generics.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.Generics\obj\Debug\Lsm.Generics.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Generics\obj\Debug\Lsm.Generics.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Generics\bin\Debug\Lsm.Generics.dll.config
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Generics\bin\Debug\Lsm.Generics.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Generics\bin\Debug\Lsm.Generics.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Generics\obj\Debug\Lsm.Generics.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Generics\obj\Debug\Lsm.Generics.pdb
+F:\Development - Rest\QuotaPortal\Lsm.Generics\bin\Debug\Lsm.Generics.dll.config
+F:\Development - Rest\QuotaPortal\Lsm.Generics\bin\Debug\Lsm.Generics.dll
+F:\Development - Rest\QuotaPortal\Lsm.Generics\bin\Debug\Lsm.Generics.pdb
+F:\Development - Rest\QuotaPortal\Lsm.Generics\obj\Debug\Lsm.Generics.dll
+F:\Development - Rest\QuotaPortal\Lsm.Generics\obj\Debug\Lsm.Generics.pdb
+F:\Development - Rest\QuotaPortal\Lsm.Generics\obj\Debug\Lsm.Core.csprojResolveAssemblyReference.cache
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Generics\bin\Debug\Lsm.Generics.dll.config
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Generics\bin\Debug\Lsm.Generics.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Generics\bin\Debug\Lsm.Generics.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Generics\obj\Debug\Lsm.Generics.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Generics\obj\Debug\Lsm.Generics.pdb

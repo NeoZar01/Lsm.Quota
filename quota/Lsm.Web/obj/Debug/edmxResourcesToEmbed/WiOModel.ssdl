@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="eWiWModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'eWiW.dbo.AspNetProfiles' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="AspNetProfiles">
+    <Key>
+      <PropertyRef Name="DepartID" />
+      <PropertyRef Name="ConfLev" />
+      <PropertyRef Name="rankName" />
+      <PropertyRef Name="Level" />
+      <PropertyRef Name="directorateName" />
+    </Key>
+    <Property Name="DepartID" Type="int" Nullable="false" />
+    <Property Name="Designation" Type="nvarchar" MaxLength="145" />
+    <Property Name="First_Name" Type="nvarchar" MaxLength="35" />
+    <Property Name="RefName" Type="nvarchar" MaxLength="115" />
+    <Property Name="Last_Name" Type="nvarchar" MaxLength="35" />
+    <Property Name="Address" Type="nvarchar" MaxLength="125" />
+    <Property Name="Email" Type="nvarchar" MaxLength="80" />
+    <Property Name="Phone_Number" Type="nvarchar" MaxLength="50" />
+    <Property Name="Telephone" Type="nvarchar" MaxLength="255" />
+    <Property Name="ConfLev" Type="bit" Nullable="false" />
+    <Property Name="OffPosition" Type="int" />
+    <Property Name="LocationFlag" Type="smallint" />
+    <Property Name="EIDistrict" Type="int" />
+    <Property Name="DstName" Type="nvarchar" MaxLength="250" />
+    <Property Name="EICircuit" Type="nvarchar" MaxLength="255" />
+    <Property Name="cActive" Type="int" />
+    <Property Name="Proxy" Type="int" />
+    <Property Name="CircuitName" Type="nvarchar" MaxLength="250" />
+    <Property Name="Proxy1" Type="int" />
+    <Property Name="rankCode" Type="int" />
+    <Property Name="rankName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Level" Type="int" Nullable="false" />
+    <Property Name="Position" Type="nvarchar" MaxLength="60" />
+    <Property Name="Directorate" Type="int" />
+    <Property Name="DirCode" Type="nvarchar" MaxLength="12" />
+    <Property Name="directorateName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="GIS_Long" Type="float" />
+    <Property Name="GIS_Lat" Type="float" />
+    <Property Name="GIS_ERROR" Type="nvarchar" MaxLength="255" />
+    <Property Name="GISSource" Type="nvarchar" MaxLength="255" />
+    <Property Name="Sector" Type="nvarchar" MaxLength="255" />
+    <Property Name="SectorId" Type="int" />
+    <Property Name="DoE_Status" Type="nvarchar" MaxLength="255" />
+    <Property Name="Phase_DoE" Type="nvarchar" MaxLength="255" />
+    <Property Name="meta" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'eWiW.dbo.vw_LmP_WiO_GAL' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityContainer Name="eWiWModelStoreContainer">
+    <EntitySet Name="AspNetProfiles" EntityType="Self.AspNetProfiles" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [AspNetProfiles].[DepartID] AS [DepartID], 
+    [AspNetProfiles].[Designation] AS [Designation], 
+    [AspNetProfiles].[First_Name] AS [First_Name], 
+    [AspNetProfiles].[RefName] AS [RefName], 
+    [AspNetProfiles].[Last_Name] AS [Last_Name], 
+    [AspNetProfiles].[Address] AS [Address], 
+    [AspNetProfiles].[Email] AS [Email], 
+    [AspNetProfiles].[Phone_Number] AS [Phone_Number], 
+    [AspNetProfiles].[Telephone] AS [Telephone], 
+    [AspNetProfiles].[ConfLev] AS [ConfLev], 
+    [AspNetProfiles].[OffPosition] AS [OffPosition], 
+    [AspNetProfiles].[LocationFlag] AS [LocationFlag], 
+    [AspNetProfiles].[EIDistrict] AS [EIDistrict], 
+    [AspNetProfiles].[DstName] AS [DstName], 
+    [AspNetProfiles].[EICircuit] AS [EICircuit], 
+    [AspNetProfiles].[cActive] AS [cActive], 
+    [AspNetProfiles].[Proxy] AS [Proxy], 
+    [AspNetProfiles].[CircuitName] AS [CircuitName], 
+    [AspNetProfiles].[Proxy1] AS [Proxy1], 
+    [AspNetProfiles].[rankCode] AS [rankCode], 
+    [AspNetProfiles].[rankName] AS [rankName], 
+    [AspNetProfiles].[Level] AS [Level], 
+    [AspNetProfiles].[Position] AS [Position], 
+    [AspNetProfiles].[Directorate] AS [Directorate], 
+    [AspNetProfiles].[DirCode] AS [DirCode], 
+    [AspNetProfiles].[directorateName] AS [directorateName], 
+    [AspNetProfiles].[GIS_Long] AS [GIS_Long], 
+    [AspNetProfiles].[GIS_Lat] AS [GIS_Lat], 
+    [AspNetProfiles].[GIS_ERROR] AS [GIS_ERROR], 
+    [AspNetProfiles].[GISSource] AS [GISSource], 
+    [AspNetProfiles].[Sector] AS [Sector], 
+    [AspNetProfiles].[SectorId] AS [SectorId], 
+    [AspNetProfiles].[DoE_Status] AS [DoE_Status], 
+    [AspNetProfiles].[Phase_DoE] AS [Phase_DoE], 
+    [AspNetProfiles].[meta] AS [meta]
+    FROM [dbo].[AspNetProfiles] AS [AspNetProfiles]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

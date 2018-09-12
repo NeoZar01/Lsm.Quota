@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="STATDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="statvw_WEP_s_SchoolLearners">
+    <Key>
+      <PropertyRef Name="Grade" />
+    </Key>
+    <Property Name="Grade" Type="Int32" Nullable="false" />
+    <Property Name="EmisCode" Type="Int32" />
+    <Property Name="TOTAL" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="STATDBContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="statvw_WEP_s_SchoolLearners" EntityType="Self.statvw_WEP_s_SchoolLearners" />
+    <EntitySet Name="statvw_WEP_s_ProvisionalSchoolLearners" EntityType="STATDBModel.statvw_WEP_s_ProvisionalSchoolLearners" />
+    <EntitySet Name="statvW_WEP_l_LeanerSubjectTeacherEnrollment" EntityType="STATDBModel.statvW_WEP_l_LeanerSubjectTeacherEnrollment" />
+    <EntitySet Name="statvw_WEP_lsm_LTSMSubmissionStatistics" EntityType="STATDBModel.statvw_WEP_lsm_LTSMSubmissionStatistics" />
+    <EntitySet Name="statvwLMEPD_l_SchoolLearnersSubjectEnrollment" EntityType="STATDBModel.statvwLMEPD_l_SchoolLearnersSubjectEnrollment" />
+  </EntityContainer>
+  <EntityType Name="statvw_WEP_s_ProvisionalSchoolLearners">
+    <Key>
+      <PropertyRef Name="Grade" />
+    </Key>
+    <Property Name="Grade" Type="Int32" Nullable="false" />
+    <Property Name="EmisCode" Type="Int32" />
+    <Property Name="TOTAL" Type="Int32" />
+  </EntityType>
+  <EntityType Name="statvW_WEP_l_LeanerSubjectTeacherEnrollment">
+    <Key>
+      <PropertyRef Name="SubjID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="SubjID" Type="Int32" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="TOTAL" Type="Int32" />
+    <Property Name="SubjName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="EmisCode" Type="Int32" />
+  </EntityType>
+  <EntityType Name="statvw_WEP_lsm_LTSMSubmissionStatistics">
+    <Key>
+      <PropertyRef Name="Importday" />
+      <PropertyRef Name="ImportyYr" />
+      <PropertyRef Name="ImportMon" />
+      <PropertyRef Name="Status" />
+    </Key>
+    <Property Name="EmisCode" Type="Int32" />
+    <Property Name="Quater" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="StartDate" Type="DateTime" Precision="3" />
+    <Property Name="EndDate" Type="DateTime" Precision="3" />
+    <Property Name="CurrentYear" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Term" Type="Int32" />
+    <Property Name="ImportYear" Type="Int32" />
+    <Property Name="ImportMonth" Type="Int32" />
+    <Property Name="Importday" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ImportyYr" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ImportMon" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="SubmissionFlag" Type="Int32" />
+    <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="statvwLMEPD_l_SchoolLearnersSubjectEnrollment">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Grade" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="EmisCode" Type="Int32" />
+    <Property Name="Grade" Type="Int32" Nullable="false" />
+    <Property Name="Unit" Type="Int32" />
+    <Property Name="TOTAL" Type="Int32" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ANNUALS_WHModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ANNUALS_WH.dbo.vwWEP_s_ConsolidatedTeacherInformation' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwWEP_s_ConsolidatedTeacherInformation">
+    <Key>
+      <PropertyRef Name="IDNumber" />
+      <PropertyRef Name="ActiveStatus" />
+    </Key>
+    <Property Name="subjectID" Type="int" />
+    <Property Name="CaptureCD" Type="int" />
+    <Property Name="Curriculum" Type="nvarchar" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="SubjectTypeCD" Type="int" />
+    <Property Name="Confidencelevel" Type="int" />
+    <Property Name="Teachingyrs" Type="int" />
+    <Property Name="IDNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="NatEmis" Type="float" />
+    <Property Name="ProvinceCD" Type="nvarchar" MaxLength="50" />
+    <Property Name="PersalNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Schoolname" Type="nvarchar" MaxLength="255" />
+    <Property Name="SACE" Type="nvarchar" MaxLength="50" />
+    <Property Name="Surname" Type="nvarchar" MaxLength="100" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" />
+    <Property Name="Initials" Type="nvarchar" MaxLength="50" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="50" />
+    <Property Name="Citizenship" Type="int" />
+    <Property Name="Passportno" Type="nvarchar" MaxLength="50" />
+    <Property Name="CountryofBirth" Type="nvarchar" MaxLength="50" />
+    <Property Name="Age" Type="nvarchar" MaxLength="50" />
+    <Property Name="Race" Type="nvarchar" MaxLength="50" />
+    <Property Name="HomeTelephone" Type="nvarchar" MaxLength="50" />
+    <Property Name="CellPhone" Type="nvarchar" MaxLength="50" />
+    <Property Name="Language" Type="nvarchar" MaxLength="50" />
+    <Property Name="Disability" Type="nvarchar" MaxLength="50" />
+    <Property Name="DisabilityOther" Type="nvarchar" MaxLength="50" />
+    <Property Name="ActualCategoryCD" Type="nvarchar" MaxLength="50" />
+    <Property Name="ActingCategoryCD" Type="nvarchar" MaxLength="50" />
+    <Property Name="ApointmentNature" Type="nvarchar" MaxLength="50" />
+    <Property Name="YearsExperience" Type="nvarchar" MaxLength="50" />
+    <Property Name="Duration" Type="nvarchar" MaxLength="50" />
+    <Property Name="TeachingLevel" Type="nvarchar" MaxLength="50" />
+    <Property Name="RemunerationCD" Type="nvarchar" MaxLength="50" />
+    <Property Name="ComputerUsage" Type="int" />
+    <Property Name="DataYear" Type="int" />
+    <Property Name="ActiveStatus" Type="bit" Nullable="false" />
+    <Property Name="EmployeeNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="ExpiryDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="MaritalStatus" Type="nvarchar" MaxLength="255" />
+    <Property Name="DateofBirth" Type="nvarchar" MaxLength="50" />
+    <Property Name="IncomeTaxNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="MedicalAidName" Type="nvarchar" MaxLength="50" />
+    <Property Name="MedicalAidNumber" Type="nvarchar" MaxLength="255" />
+    <Property Name="NextKinSurname" Type="nvarchar" MaxLength="255" />
+    <Property Name="NextKinName" Type="nvarchar" MaxLength="255" />
+    <Property Name="NextKinTelNumber" Type="nvarchar" MaxLength="255" />
+    <Property Name="PostalAddress" Type="nvarchar" MaxLength="255" />
+    <Property Name="SurburborTown" Type="nvarchar" MaxLength="255" />
+    <Property Name="CityorTown" Type="nvarchar" MaxLength="255" />
+    <Property Name="PostalCode" Type="nvarchar" MaxLength="255" />
+    <Property Name="StreetAddress" Type="nvarchar" MaxLength="255" />
+    <Property Name="ComplexName" Type="nvarchar" MaxLength="255" />
+    <Property Name="ComplexNumber" Type="nvarchar" MaxLength="255" />
+    <Property Name="PhysicalSurburb" Type="nvarchar" MaxLength="255" />
+    <Property Name="PhysicalTown" Type="nvarchar" MaxLength="255" />
+    <Property Name="PhysicalCode" Type="nvarchar" MaxLength="255" />
+    <Property Name="IQMSProcesses" Type="nvarchar" MaxLength="255" />
+    <Property Name="MedicaAidName" Type="nvarchar" MaxLength="50" />
+    <Property Name="MedicaAidNumber" Type="int" />
+    <Property Name="SurveyType" Type="nvarchar" MaxLength="150" />
+    <Property Name="Grade" Type="nvarchar" MaxLength="50" />
+    <Property Name="Postlevel" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="ANNUALS_WHModelStoreContainer">
+    <EntitySet Name="vwWEP_s_ConsolidatedTeacherInformation" EntityType="Self.vwWEP_s_ConsolidatedTeacherInformation" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwWEP_s_ConsolidatedTeacherInformation].[subjectID] AS [subjectID], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[CaptureCD] AS [CaptureCD], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[Curriculum] AS [Curriculum], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[Name] AS [Name], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[SubjectTypeCD] AS [SubjectTypeCD], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[Confidencelevel] AS [Confidencelevel], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[Teachingyrs] AS [Teachingyrs], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[IDNumber] AS [IDNumber], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[NatEmis] AS [NatEmis], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[ProvinceCD] AS [ProvinceCD], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[PersalNo] AS [PersalNo], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[Schoolname] AS [Schoolname], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[SACE] AS [SACE], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[Surname] AS [Surname], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[Title] AS [Title], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[Initials] AS [Initials], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[Gender] AS [Gender], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[Citizenship] AS [Citizenship], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[Passportno] AS [Passportno], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[CountryofBirth] AS [CountryofBirth], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[Age] AS [Age], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[Race] AS [Race], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[HomeTelephone] AS [HomeTelephone], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[CellPhone] AS [CellPhone], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[Language] AS [Language], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[Disability] AS [Disability], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[DisabilityOther] AS [DisabilityOther], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[ActualCategoryCD] AS [ActualCategoryCD], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[ActingCategoryCD] AS [ActingCategoryCD], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[ApointmentNature] AS [ApointmentNature], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[YearsExperience] AS [YearsExperience], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[Duration] AS [Duration], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[TeachingLevel] AS [TeachingLevel], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[RemunerationCD] AS [RemunerationCD], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[ComputerUsage] AS [ComputerUsage], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[DataYear] AS [DataYear], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[ActiveStatus] AS [ActiveStatus], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[EmployeeNumber] AS [EmployeeNumber], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[ExpiryDate] AS [ExpiryDate], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[MaritalStatus] AS [MaritalStatus], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[DateofBirth] AS [DateofBirth], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[IncomeTaxNumber] AS [IncomeTaxNumber], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[MedicalAidName] AS [MedicalAidName], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[MedicalAidNumber] AS [MedicalAidNumber], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[NextKinSurname] AS [NextKinSurname], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[NextKinName] AS [NextKinName], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[NextKinTelNumber] AS [NextKinTelNumber], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[PostalAddress] AS [PostalAddress], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[SurburborTown] AS [SurburborTown], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[CityorTown] AS [CityorTown], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[PostalCode] AS [PostalCode], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[StreetAddress] AS [StreetAddress], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[ComplexName] AS [ComplexName], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[ComplexNumber] AS [ComplexNumber], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[PhysicalSurburb] AS [PhysicalSurburb], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[PhysicalTown] AS [PhysicalTown], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[PhysicalCode] AS [PhysicalCode], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[IQMSProcesses] AS [IQMSProcesses], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[MedicaAidName] AS [MedicaAidName], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[MedicaAidNumber] AS [MedicaAidNumber], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[SurveyType] AS [SurveyType], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[Grade] AS [Grade], 
+    [vwWEP_s_ConsolidatedTeacherInformation].[Postlevel] AS [Postlevel]
+    FROM [dbo].[vwWEP_s_ConsolidatedTeacherInformation] AS [vwWEP_s_ConsolidatedTeacherInformation]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

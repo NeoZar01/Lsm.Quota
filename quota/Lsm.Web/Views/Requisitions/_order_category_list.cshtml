@@ -1,0 +1,89 @@
+﻿@model LimpEmisPortal.Models.RequisitionHomeViewModel
+
+@{
+    var rwi = 1;
+
+}
+
+<div class="row">
+    <div class="s-up-partial-content-with-w col-md-12">
+
+        <div class="col-md-12">
+            <span class="col-md-7">
+
+            </span>
+            <span class="col-md-5 btn-group btn-group-sm" role="group">
+                <button class="btn btn-primary btn-sm">
+                    Grades &nbsp; <img src="~/Content/Images/ajax-loader.gif" id="ajax_loading_get_for_ord_ct" style="display:none; width:18px; height:18px " />                     
+                </button>
+                <button class="btn btn-primary btn-sm" type="button">
+                    @Ajax.ActionLink(" ", "OrderPerGradeDashboardActionResult", "Requisitions",
+                                                new AjaxOptions
+                                                {
+                                                    UpdateTargetId = "requisition-order-per-grade",
+                                                    InsertionMode = InsertionMode.Replace,
+                                                    HttpMethod = "GET",
+                                                    LoadingElementId = "ajax_loading_get_for_ord_ct"
+                                                }, htmlAttributes: new { @class = "glyphicon glyphicon-dashboard", @style = "color:white" })
+                </button>
+
+                @foreach (var sg in Model.school_grade_list)
+                {
+                    @Ajax.ActionLink(sg.Grade.ToString(),
+                                           "Req_cat_OrdersPerGrade", "Requisitions", new { gr = sg.Grade },
+                                           new AjaxOptions { UpdateTargetId = "requisition-order-per-grade", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", LoadingElementId = "ajax_loading_get_for_ord_ct" }, htmlAttributes: new { @class="btn btn-default btn-sm"})
+                }
+            </span>
+            <br />
+            <hr/>
+            
+        </div>
+        <br />
+        <div class="col-md-12 s-right-partial-content-with-w">
+
+            <table class="col-md-12 table-condensed table-hover table-responsive">
+                <tr style="border-bottom: 1px solid #ecf0f1">
+                    <th> &nbsp; <small>Subject</small></th>
+                    <th style="text-align:center"><small>Grd</small></th>
+                    <th><small>Title</small></th>
+                    <th style="text-align:center"><small>Qty</small></th>
+                    <th style="text-align:center"><small>Price</small></th>
+                    <th></th>
+                </tr>
+                @foreach (var c in Model.school_order_list)
+                {
+
+                    <tr>
+                        <td><small> @rwi. &nbsp; @c.SubjectName</small></td>
+                        <td style="text-align:center"><small>@c.Grade</small></td>
+                        <td><small>@c.item</small></td>
+                        <td style="text-align:center"><small> @c.BookmarkQty</small></td>
+                        <td style="text-align:center"><small>@c.Price</small></td>
+                        <td style="text-align:center">
+                            <div class="progress">
+                                @{
+                    string styleVsn = string.Concat(Math.Round((decimal)(c.BookmarkQty / (decimal)c.DevEnr) * 100, 0, MidpointRounding.AwayFromZero).ToString(), "%");
+                                }
+                                <small>
+                                    <span class="progress-bar" role="progressbar" aria-valuenow=@(Math.Round((decimal)(c.BookmarkQty / (decimal)c.DevEnr) * 100, 0, MidpointRounding.AwayFromZero)) aria-valuemin="0" aria-valuemax="100" style="width: @styleVsn; text-align: center; background-color:#428bca; color: @(Math.Round((decimal)(c.BookmarkQty / (decimal)c.DevEnr) * 100, 0, MidpointRounding.AwayFromZero) < 50 ? "#428bca;" : "white") ">
+                                        @styleVsn
+                                    </span>
+                                </small>
+                            </div>
+                        </td>
+                    </tr>
+
+                    rwi += 1;
+
+                }
+
+            </table>
+        </div>
+
+    </div>
+
+    @{
+        rwi = 1;
+    }
+
+</div>

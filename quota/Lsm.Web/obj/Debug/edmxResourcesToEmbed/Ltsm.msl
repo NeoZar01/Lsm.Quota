@@ -1,0 +1,741 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LTSMModelStoreContainer" CdmEntityContainer="LTSM">
+    <EntitySetMapping Name="General_Comments">
+      <EntityTypeMapping TypeName="LTSMModel.General_Comments">
+        <MappingFragment StoreEntitySet="General_Comments">
+          <ScalarProperty Name="CommendId" ColumnName="CommendId" />
+          <ScalarProperty Name="DirectorateCode" ColumnName="DirectorateCode" />
+          <ScalarProperty Name="TimeSend" ColumnName="TimeSend" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Intelli_Req_Status_Tracer">
+      <EntityTypeMapping TypeName="LTSMModel.Intelli_Req_Status_Tracer">
+        <MappingFragment StoreEntitySet="Intelli_Req_Status_Tracer">
+          <ScalarProperty Name="TraceId" ColumnName="TraceId" />
+          <ScalarProperty Name="ReqId" ColumnName="ReqId" />
+          <ScalarProperty Name="ReqStatus" ColumnName="ReqStatus" />
+          <ScalarProperty Name="TraceDateTime" ColumnName="TraceDateTime" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="school_order_catalogue">
+      <EntityTypeMapping TypeName="LTSMModel.school_order_catalogue">
+        <MappingFragment StoreEntitySet="school_order_catalogue">
+          <ScalarProperty Name="ordercatId" ColumnName="ordercatId" />
+          <ScalarProperty Name="isbn" ColumnName="isbn" />
+          <ScalarProperty Name="approveFlag" ColumnName="approveFlag" />
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+          <ScalarProperty Name="ImportDate" ColumnName="ImportDate" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwLEPD_c_rqConsolidated">
+      <EntityTypeMapping TypeName="LTSMModel.vwLEPD_c_rqConsolidated">
+        <MappingFragment StoreEntitySet="vwLEPD_c_rqConsolidated">
+          <ScalarProperty Name="Rq_item_Id" ColumnName="Rq_item_Id" />
+          <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+          <ScalarProperty Name="BookmarkFlag" ColumnName="BookmarkFlag" />
+          <ScalarProperty Name="EMIS_Code" ColumnName="EMIS_Code" />
+          <ScalarProperty Name="BookYear" ColumnName="BookYear" />
+          <ScalarProperty Name="RequisitionId_" ColumnName="RequisitionId " />
+          <ScalarProperty Name="GradeID" ColumnName="GradeID" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="BatchID" ColumnName="BatchID" />
+          <ScalarProperty Name="Bookmark_Date" ColumnName="Bookmark_Date" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="ReqStatus" ColumnName="ReqStatus" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ReqDate" ColumnName="ReqDate" />
+          <ScalarProperty Name="PriceTag" ColumnName="PriceTag" />
+          <ScalarProperty Name="TransParFlag" ColumnName="TransParFlag" />
+          <ScalarProperty Name="wfTo" ColumnName="wfTo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwLMP_r_RequisitionsUnsaved">
+      <EntityTypeMapping TypeName="LTSMModel.vwLMP_r_RequisitionsUnsaved">
+        <MappingFragment StoreEntitySet="vwLMP_r_RequisitionsUnsaved">
+          <ScalarProperty Name="RequisitionId" ColumnName="RequisitionId" />
+          <ScalarProperty Name="Emis_Code" ColumnName="Emis_Code" />
+          <ScalarProperty Name="Number_of_Items" ColumnName="Number of Items" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwLmP_rq_orphaned_bmk">
+      <EntityTypeMapping TypeName="LTSMModel.vwLmP_rq_orphaned_bmk">
+        <MappingFragment StoreEntitySet="vwLmP_rq_orphaned_bmk">
+          <ScalarProperty Name="Rq_item_Id" ColumnName="Rq_item_Id" />
+          <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+          <ScalarProperty Name="BookmarkFlag" ColumnName="BookmarkFlag" />
+          <ScalarProperty Name="EMIS_Code" ColumnName="EMIS_Code" />
+          <ScalarProperty Name="RequisitionId_" ColumnName="RequisitionId " />
+          <ScalarProperty Name="GradeID" ColumnName="GradeID" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="BatchID" ColumnName="BatchID" />
+          <ScalarProperty Name="Bookmark_Date" ColumnName="Bookmark_Date" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="ccheQty" ColumnName="ccheQty" />
+          <ScalarProperty Name="Ordered" ColumnName="Ordered" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vws_ReqAccountingDates">
+      <EntityTypeMapping TypeName="LTSMModel.vws_ReqAccountingDates">
+        <MappingFragment StoreEntitySet="vws_ReqAccountingDates">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+          <ScalarProperty Name="CaptureType" ColumnName="CaptureType" />
+          <ScalarProperty Name="DateTo" ColumnName="DateTo" />
+          <ScalarProperty Name="DateFrom" ColumnName="DateFrom" />
+          <ScalarProperty Name="GrTo" ColumnName="GrTo" />
+          <ScalarProperty Name="GrFrom" ColumnName="GrFrom" />
+          <ScalarProperty Name="BookYear" ColumnName="BookYear" />
+          <ScalarProperty Name="SchoolGrTo" ColumnName="SchoolGrTo" />
+          <ScalarProperty Name="SchoolGrFrm" ColumnName="SchoolGrFrm" />
+          <ScalarProperty Name="OpenCaptureDateMark" ColumnName="OpenCaptureDateMark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Requisitions">
+      <EntityTypeMapping TypeName="LTSMModel.Requisition">
+        <MappingFragment StoreEntitySet="Requisitions">
+          <ScalarProperty Name="TransParFlag" ColumnName="TransParFlag" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="ApprovalFlag" ColumnName="ApprovalFlag" />
+          <ScalarProperty Name="NoThanks" ColumnName="NoThanks" />
+          <ScalarProperty Name="SMGD_Open" ColumnName="SMGD_Open" />
+          <ScalarProperty Name="Recall" ColumnName="Recall" />
+          <ScalarProperty Name="WareID" ColumnName="WareID" />
+          <ScalarProperty Name="Verified" ColumnName="Verified" />
+          <ScalarProperty Name="ReqStatus" ColumnName="ReqStatus" />
+          <ScalarProperty Name="StationaryRequisition" ColumnName="StationaryRequisition" />
+          <ScalarProperty Name="GrTo" ColumnName="GrTo" />
+          <ScalarProperty Name="GrFrom" ColumnName="GrFrom" />
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="ReqDate" ColumnName="ReqDate" />
+          <ScalarProperty Name="ChecklistDate" ColumnName="ChecklistDate" />
+          <ScalarProperty Name="DepartmentOfficial" ColumnName="DepartmentOfficial" />
+          <ScalarProperty Name="Official2ApproveDate" ColumnName="Official2ApproveDate" />
+          <ScalarProperty Name="SchoolOfficial2" ColumnName="SchoolOfficial2" />
+          <ScalarProperty Name="Official1ApproveDate" ColumnName="Official1ApproveDate" />
+          <ScalarProperty Name="SchoolOfficial1" ColumnName="SchoolOfficial1" />
+          <ScalarProperty Name="BookYear" ColumnName="BookYear" />
+          <ScalarProperty Name="EMIS" ColumnName="EMIS" />
+          <ScalarProperty Name="ReqID" ColumnName="ReqID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_rqLmP_Comms_Env">
+      <EntityTypeMapping TypeName="LTSMModel.vw_rqLmP_Comms_Env">
+        <MappingFragment StoreEntitySet="vw_rqLmP_Comms_Env">
+          <ScalarProperty Name="LastUpdateDays" ColumnName="LastUpdateDays" />
+          <ScalarProperty Name="Wf_DateTime" ColumnName="Wf_DateTime" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="AddressName" ColumnName="AddressName" />
+          <ScalarProperty Name="Req_Id" ColumnName="Req_Id" />
+          <ScalarProperty Name="wfFrom" ColumnName="wfFrom" />
+          <ScalarProperty Name="CircuitName" ColumnName="CircuitName" />
+          <ScalarProperty Name="Phone_Number" ColumnName="Phone_Number" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Addresse" ColumnName="Addresse" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="DepartID" ColumnName="DepartID" />
+          <ScalarProperty Name="wf_Id" ColumnName="wf_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_rqLmP_intelli_rq_hist">
+      <EntityTypeMapping TypeName="LTSMModel.vw_rqLmP_intelli_rq_hist">
+        <MappingFragment StoreEntitySet="vw_rqLmP_intelli_rq_hist">
+          <ScalarProperty Name="TracerDayGap" ColumnName="TracerDayGap" />
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="TraceDateTime" ColumnName="TraceDateTime" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ReqId" ColumnName="ReqId" />
+          <ScalarProperty Name="TraceId" ColumnName="TraceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Req_CachedItemQty">
+      <EntityTypeMapping TypeName="LTSMModel.Req_CachedItemQty">
+        <MappingFragment StoreEntitySet="Req_CachedItemQty">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="bookmarkDateTime" ColumnName="bookmarkDateTime" />
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+          <ScalarProperty Name="isbn" ColumnName="isbn" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="ReqId" ColumnName="ReqId" />
+          <ScalarProperty Name="CachedItemQtyId" ColumnName="CachedItemQtyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwLED_ai_ReqTraceLogs">
+      <EntityTypeMapping TypeName="LTSMModel.vwLED_ai_ReqTraceLogs">
+        <MappingFragment StoreEntitySet="vwLED_ai_ReqTraceLogs">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="daysDuration" ColumnName="daysDuration" />
+          <ScalarProperty Name="SchoolIdenityName" ColumnName="SchoolIdenityName" />
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+          <ScalarProperty Name="Log" ColumnName="Log" />
+          <ScalarProperty Name="TraceDateTime" ColumnName="TraceDateTime" />
+          <ScalarProperty Name="ReqStatus" ColumnName="ReqStatus" />
+          <ScalarProperty Name="ReqId" ColumnName="ReqId" />
+          <ScalarProperty Name="TraceId" ColumnName="TraceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwn_NotificationBoard">
+      <EntityTypeMapping TypeName="LTSMModel.vwn_NotificationBoard">
+        <MappingFragment StoreEntitySet="vwn_NotificationBoard">
+          <ScalarProperty Name="Attachment" ColumnName="Attachment" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Term" ColumnName="Term" />
+          <ScalarProperty Name="BookYear" ColumnName="BookYear" />
+          <ScalarProperty Name="audince" ColumnName="audince" />
+          <ScalarProperty Name="Notification" ColumnName="Notification" />
+          <ScalarProperty Name="NotedCount" ColumnName="NotedCount" />
+          <ScalarProperty Name="DirCode" ColumnName="DirCode" />
+          <ScalarProperty Name="Directorate" ColumnName="Directorate" />
+          <ScalarProperty Name="PublishDate" ColumnName="PublishDate" />
+          <ScalarProperty Name="ReceiverType" ColumnName="ReceiverType" />
+          <ScalarProperty Name="PublishDaysDur" ColumnName="PublishDaysDur" />
+          <ScalarProperty Name="NotType" ColumnName="NotType" />
+          <ScalarProperty Name="NotSubject" ColumnName="NotSubject" />
+          <ScalarProperty Name="ConfLev" ColumnName="ConfLev" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="AddressName" ColumnName="AddressName" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="Publisher" ColumnName="Publisher" />
+          <ScalarProperty Name="NotId" ColumnName="NotId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwem_circulars">
+      <EntityTypeMapping TypeName="LTSMModel.vwem_circulars">
+        <MappingFragment StoreEntitySet="vwem_circulars">
+          <ScalarProperty Name="daysPosted" ColumnName="daysPosted" />
+          <ScalarProperty Name="DirCode" ColumnName="DirCode" />
+          <ScalarProperty Name="cActive" ColumnName="cActive" />
+          <ScalarProperty Name="ConfLev" ColumnName="ConfLev" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="RefName" ColumnName="RefName" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="FRH" ColumnName="FRH" />
+          <ScalarProperty Name="circularsRef" ColumnName="circularsRef" />
+          <ScalarProperty Name="circularId" ColumnName="circularId" />
+          <ScalarProperty Name="Attachment" ColumnName="Attachment" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Term" ColumnName="Term" />
+          <ScalarProperty Name="BookYear" ColumnName="BookYear" />
+          <ScalarProperty Name="Notification" ColumnName="Notification" />
+          <ScalarProperty Name="NotedCount" ColumnName="NotedCount" />
+          <ScalarProperty Name="ReceiverType" ColumnName="ReceiverType" />
+          <ScalarProperty Name="PublishDate" ColumnName="PublishDate" />
+          <ScalarProperty Name="NotType" ColumnName="NotType" />
+          <ScalarProperty Name="NotSubject" ColumnName="NotSubject" />
+          <ScalarProperty Name="Publisher" ColumnName="Publisher" />
+          <ScalarProperty Name="NotId" ColumnName="NotId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwLEPD_Rq_SubjectPer_Ord">
+      <EntityTypeMapping TypeName="LTSMModel.vwLEPD_Rq_SubjectPer_Ord">
+        <MappingFragment StoreEntitySet="vwLEPD_Rq_SubjectPer_Ord">
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="CachedReq" ColumnName="CachedReq" />
+          <ScalarProperty Name="SumInCache" ColumnName="SumInCache" />
+          <ScalarProperty Name="AvlInCache" ColumnName="AvlInCache" />
+          <ScalarProperty Name="Sum" ColumnName="Sum" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ReqID" ColumnName="ReqID" />
+          <ScalarProperty Name="Avl" ColumnName="Avl" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="DevEnr" ColumnName="DevEnr" />
+          <ScalarProperty Name="grade" ColumnName="grade" />
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Publisher" ColumnName="Publisher" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="Item" ColumnName="Item" />
+          <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+          <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="CachedItemQtyId" ColumnName="CachedItemQtyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Req_tmp_bmkItems">
+      <EntityTypeMapping TypeName="LTSMModel.Req_tmp_bmkItems">
+        <MappingFragment StoreEntitySet="Req_tmp_bmkItems">
+          <ScalarProperty Name="Ordered" ColumnName="Ordered" />
+          <ScalarProperty Name="ccheQty" ColumnName="ccheQty" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Bookmark_Date" ColumnName="Bookmark_Date" />
+          <ScalarProperty Name="BatchID" ColumnName="BatchID" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="GradeID" ColumnName="GradeID" />
+          <ScalarProperty Name="RequisitionId_" ColumnName="RequisitionId " />
+          <ScalarProperty Name="EMIS_Code" ColumnName="EMIS_Code" />
+          <ScalarProperty Name="BookmarkFlag" ColumnName="BookmarkFlag" />
+          <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+          <ScalarProperty Name="Rq_item_Id" ColumnName="Rq_item_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_rqLmP_OrderItems">
+      <EntityTypeMapping TypeName="LTSMModel.vw_rqLmP_OrderItems">
+        <MappingFragment StoreEntitySet="vw_rqLmP_OrderItems">
+          <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="Ordered" ColumnName="Ordered" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="BookmarkQty" ColumnName="BookmarkQty" />
+          <ScalarProperty Name="DevEnr" ColumnName="DevEnr" />
+          <ScalarProperty Name="Emis_Code" ColumnName="Emis_Code" />
+          <ScalarProperty Name="circuitManager" ColumnName="circuitManager" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Publisher" ColumnName="Publisher" />
+          <ScalarProperty Name="warehouse_id" ColumnName="warehouse_id" />
+          <ScalarProperty Name="release_date" ColumnName="release_date" />
+          <ScalarProperty Name="last_modified_date" ColumnName="last_modified_date" />
+          <ScalarProperty Name="item" ColumnName="item" />
+          <ScalarProperty Name="creation_date" ColumnName="creation_date" />
+          <ScalarProperty Name="isbn" ColumnName="isbn" />
+          <ScalarProperty Name="order_Id" ColumnName="order_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwLmP_IsbnIsReadyOrderTrans">
+      <EntityTypeMapping TypeName="LTSMModel.vwLmP_IsbnIsReadyOrderTrans">
+        <MappingFragment StoreEntitySet="vwLmP_IsbnIsReadyOrderTrans">
+          <ScalarProperty Name="pubId" ColumnName="pubId" />
+          <ScalarProperty Name="circuitManager" ColumnName="circuitManager" />
+          <ScalarProperty Name="EICircuit" ColumnName="EICircuit" />
+          <ScalarProperty Name="Bookyear" ColumnName="Bookyear" />
+          <ScalarProperty Name="Ordered" ColumnName="Ordered" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Bookmark_Date" ColumnName="Bookmark_Date" />
+          <ScalarProperty Name="BatchID" ColumnName="BatchID" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="GradeID" ColumnName="GradeID" />
+          <ScalarProperty Name="RequisitionId_" ColumnName="RequisitionId " />
+          <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+          <ScalarProperty Name="ManagementPosition" ColumnName="ManagementPosition" />
+          <ScalarProperty Name="PersalNumber" ColumnName="PersalNumber" />
+          <ScalarProperty Name="SName" ColumnName="SName" />
+          <ScalarProperty Name="FName" ColumnName="FName" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="Telephone1" ColumnName="Telephone1" />
+          <ScalarProperty Name="EMail" ColumnName="EMail" />
+          <ScalarProperty Name="SchoolIdenityName" ColumnName="SchoolIdenityName" />
+          <ScalarProperty Name="District" ColumnName="District" />
+          <ScalarProperty Name="Circuit" ColumnName="Circuit" />
+          <ScalarProperty Name="NatEmis" ColumnName="NatEmis" />
+          <ScalarProperty Name="order_Id" ColumnName="order_Id" />
+          <ScalarProperty Name="Rq_item_Id" ColumnName="Rq_item_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwLmP_Ord_CountPrPublisher">
+      <EntityTypeMapping TypeName="LTSMModel.vwLmP_Ord_CountPrPublisher">
+        <MappingFragment StoreEntitySet="vwLmP_Ord_CountPrPublisher">
+          <ScalarProperty Name="consLrnEnrTotal" ColumnName="consLrnEnrTotal" />
+          <ScalarProperty Name="BookOrdQty" ColumnName="BookOrdQty" />
+          <ScalarProperty Name="LrnEnrTotal" ColumnName="LrnEnrTotal" />
+          <ScalarProperty Name="IsbnCnt" ColumnName="IsbnCnt" />
+          <ScalarProperty Name="ReqID" ColumnName="ReqID" />
+          <ScalarProperty Name="Manager" ColumnName="Manager" />
+          <ScalarProperty Name="EiCircuit" ColumnName="EiCircuit" />
+          <ScalarProperty Name="EmisSubId" ColumnName="EmisSubId" />
+          <ScalarProperty Name="Publisher" ColumnName="Publisher" />
+          <ScalarProperty Name="PubId" ColumnName="PubId" />
+          <ScalarProperty Name="item" ColumnName="item" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="crm_OrderRequest">
+      <EntityTypeMapping TypeName="LTSMModel.crm_OrderRequest">
+        <MappingFragment StoreEntitySet="crm_OrderRequest">
+          <ScalarProperty Name="BookYear" ColumnName="BookYear" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="Avl" ColumnName="Avl" />
+          <ScalarProperty Name="PublisherId" ColumnName="PublisherId" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Verify" ColumnName="Verify" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+          <ScalarProperty Name="OrderRequestNo" ColumnName="OrderRequestNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BatchCodes">
+      <EntityTypeMapping TypeName="LTSMModel.BatchCode">
+        <MappingFragment StoreEntitySet="BatchCodes">
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+          <ScalarProperty Name="Stationary" ColumnName="Stationary" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="BookYear" ColumnName="BookYear" />
+          <ScalarProperty Name="BatchDate" ColumnName="BatchDate" />
+          <ScalarProperty Name="BatchID" ColumnName="BatchID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Wf_Req_Envelop">
+      <EntityTypeMapping TypeName="LTSMModel.Wf_Req_Envelop">
+        <MappingFragment StoreEntitySet="Wf_Req_Envelop">
+          <ScalarProperty Name="For" ColumnName="For" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Wf_DateTime" ColumnName="Wf_DateTime" />
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="SubmissionIndex" ColumnName="SubmissionIndex" />
+          <ScalarProperty Name="PriceT" ColumnName="PriceT" />
+          <ScalarProperty Name="Req_Id" ColumnName="Req_Id" />
+          <ScalarProperty Name="wfTo" ColumnName="wfTo" />
+          <ScalarProperty Name="wfFrom" ColumnName="wfFrom" />
+          <ScalarProperty Name="wf_Id" ColumnName="wf_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwLEPD_rq_consd_Req">
+      <EntityTypeMapping TypeName="LTSMModel.vwLEPD_rq_consd_Req">
+        <MappingFragment StoreEntitySet="vwLEPD_rq_consd_Req">
+          <ScalarProperty Name="SubmissionIndex" ColumnName="SubmissionIndex" />
+          <ScalarProperty Name="TransParFlag" ColumnName="TransParFlag" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="ApprovalFlag" ColumnName="ApprovalFlag" />
+          <ScalarProperty Name="NoThanks" ColumnName="NoThanks" />
+          <ScalarProperty Name="SMGD_Open" ColumnName="SMGD_Open" />
+          <ScalarProperty Name="Recall" ColumnName="Recall" />
+          <ScalarProperty Name="WareID" ColumnName="WareID" />
+          <ScalarProperty Name="Verified" ColumnName="Verified" />
+          <ScalarProperty Name="Checklistdays" ColumnName="Checklistdays" />
+          <ScalarProperty Name="For" ColumnName="For" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ReqStatus" ColumnName="ReqStatus" />
+          <ScalarProperty Name="StationaryRequisition" ColumnName="StationaryRequisition" />
+          <ScalarProperty Name="GrTo" ColumnName="GrTo" />
+          <ScalarProperty Name="GrFrom" ColumnName="GrFrom" />
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="ReqDate" ColumnName="ReqDate" />
+          <ScalarProperty Name="ChecklistDate" ColumnName="ChecklistDate" />
+          <ScalarProperty Name="DepartmentOfficial" ColumnName="DepartmentOfficial" />
+          <ScalarProperty Name="Official1ApproveDate" ColumnName="Official1ApproveDate" />
+          <ScalarProperty Name="SchoolOfficial1" ColumnName="SchoolOfficial1" />
+          <ScalarProperty Name="EMIS" ColumnName="EMIS" />
+          <ScalarProperty Name="BookYear" ColumnName="BookYear" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+          <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+          <ScalarProperty Name="wfTo" ColumnName="wfTo" />
+          <ScalarProperty Name="wfFrom" ColumnName="wfFrom" />
+          <ScalarProperty Name="ReqID" ColumnName="ReqID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WfOrderEnvelopes">
+      <EntityTypeMapping TypeName="LTSMModel.WfOrderEnvelope">
+        <MappingFragment StoreEntitySet="WfOrderEnvelope">
+          <ScalarProperty Name="For" ColumnName="For" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Wf_DateTime" ColumnName="Wf_DateTime" />
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="SubmissionIndex" ColumnName="SubmissionIndex" />
+          <ScalarProperty Name="PriceT" ColumnName="PriceT" />
+          <ScalarProperty Name="crm_Ord_Id" ColumnName="crm_Ord_Id" />
+          <ScalarProperty Name="wfTo" ColumnName="wfTo" />
+          <ScalarProperty Name="wfFrom" ColumnName="wfFrom" />
+          <ScalarProperty Name="wf_Id" ColumnName="wf_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_wf_Requisitions">
+      <EntityTypeMapping TypeName="LTSMModel.vw_wf_Requisitions">
+        <MappingFragment StoreEntitySet="vw_wf_Requisitions">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="EmisOfficerOfficialName" ColumnName="EmisOfficerOfficialName" />
+          <ScalarProperty Name="EmisOfficerRefName" ColumnName="EmisOfficerRefName" />
+          <ScalarProperty Name="PrincipalFname" ColumnName="PrincipalFname" />
+          <ScalarProperty Name="PrincipalSname" ColumnName="PrincipalSname" />
+          <ScalarProperty Name="submittedDaysLeft" ColumnName="submittedDaysLeft" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="District" ColumnName="District" />
+          <ScalarProperty Name="EmisOfficer" ColumnName="EmisOfficer" />
+          <ScalarProperty Name="EMail" ColumnName="EMail" />
+          <ScalarProperty Name="PersalNumber" ColumnName="PersalNumber" />
+          <ScalarProperty Name="SName" ColumnName="SName" />
+          <ScalarProperty Name="FName" ColumnName="FName" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="EICircuit" ColumnName="EICircuit" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="SubmissionIndex" ColumnName="SubmissionIndex" />
+          <ScalarProperty Name="PriceT" ColumnName="PriceT" />
+          <ScalarProperty Name="TransParFlag" ColumnName="TransParFlag" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="ApprovalFlag" ColumnName="ApprovalFlag" />
+          <ScalarProperty Name="NoThanks" ColumnName="NoThanks" />
+          <ScalarProperty Name="SMGD_Open" ColumnName="SMGD_Open" />
+          <ScalarProperty Name="Recall" ColumnName="Recall" />
+          <ScalarProperty Name="WareID" ColumnName="WareID" />
+          <ScalarProperty Name="Verified" ColumnName="Verified" />
+          <ScalarProperty Name="ReqStatus" ColumnName="ReqStatus" />
+          <ScalarProperty Name="StationaryRequisition" ColumnName="StationaryRequisition" />
+          <ScalarProperty Name="wfTo" ColumnName="wfTo" />
+          <ScalarProperty Name="GrTo" ColumnName="GrTo" />
+          <ScalarProperty Name="GrFrom" ColumnName="GrFrom" />
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="ReqDate" ColumnName="ReqDate" />
+          <ScalarProperty Name="ChecklistDate" ColumnName="ChecklistDate" />
+          <ScalarProperty Name="DepartmentOfficial" ColumnName="DepartmentOfficial" />
+          <ScalarProperty Name="Official2ApproveDate" ColumnName="Official2ApproveDate" />
+          <ScalarProperty Name="SchoolOfficial2" ColumnName="SchoolOfficial2" />
+          <ScalarProperty Name="Official1ApproveDate" ColumnName="Official1ApproveDate" />
+          <ScalarProperty Name="SchoolOfficial1" ColumnName="SchoolOfficial1" />
+          <ScalarProperty Name="BookYear" ColumnName="BookYear" />
+          <ScalarProperty Name="SchoolIdenityName" ColumnName="SchoolIdenityName" />
+          <ScalarProperty Name="EMIS" ColumnName="EMIS" />
+          <ScalarProperty Name="ReqID" ColumnName="ReqID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwLmP_ord_PubWithOrd">
+      <EntityTypeMapping TypeName="LTSMModel.vwLmP_ord_PubWithOrd">
+        <MappingFragment StoreEntitySet="vwLmP_ord_PubWithOrd">
+          <ScalarProperty Name="NoOfItms" ColumnName="NoOfItms" />
+          <ScalarProperty Name="Manager" ColumnName="Manager" />
+          <ScalarProperty Name="EiCircuit" ColumnName="EiCircuit" />
+          <ScalarProperty Name="Publisher" ColumnName="Publisher" />
+          <ScalarProperty Name="PubId" ColumnName="PubId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwLmP_order_ProvOrderPerPub">
+      <EntityTypeMapping TypeName="LTSMModel.vwLmP_order_ProvOrderPerPub">
+        <MappingFragment StoreEntitySet="vwLmP_order_ProvOrderPerPub">
+          <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="Publisher" ColumnName="Publisher" />
+          <ScalarProperty Name="PubId" ColumnName="PubId" />
+          <ScalarProperty Name="BatchID" ColumnName="BatchID" />
+          <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+          <ScalarProperty Name="Ordered" ColumnName="Ordered" />
+          <ScalarProperty Name="ReqStatus" ColumnName="ReqStatus" />
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="ReqDate" ColumnName="ReqDate" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="Manager" ColumnName="Manager" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="ReqID" ColumnName="ReqID" />
+          <ScalarProperty Name="ManagementPosition" ColumnName="ManagementPosition" />
+          <ScalarProperty Name="PersalNumber" ColumnName="PersalNumber" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="EmisSubId" ColumnName="EmisSubId" />
+          <ScalarProperty Name="SName" ColumnName="SName" />
+          <ScalarProperty Name="FName" ColumnName="FName" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="EICircuit" ColumnName="EICircuit" />
+          <ScalarProperty Name="PostCode" ColumnName="PostCode" />
+          <ScalarProperty Name="PostAddress3" ColumnName="PostAddress3" />
+          <ScalarProperty Name="PostAddress2" ColumnName="PostAddress2" />
+          <ScalarProperty Name="PostAddress1" ColumnName="PostAddress1" />
+          <ScalarProperty Name="PostAddress0No" ColumnName="PostAddress0No" />
+          <ScalarProperty Name="PostAddress0" ColumnName="PostAddress0" />
+          <ScalarProperty Name="InternetAccess" ColumnName="InternetAccess" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Telephone1" ColumnName="Telephone1" />
+          <ScalarProperty Name="EMail" ColumnName="EMail" />
+          <ScalarProperty Name="SchoolIdenityName" ColumnName="SchoolIdenityName" />
+          <ScalarProperty Name="EmisOfficer" ColumnName="EmisOfficer" />
+          <ScalarProperty Name="District" ColumnName="District" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="LrnEnrUnit" ColumnName="LrnEnrUnit" />
+          <ScalarProperty Name="Item" ColumnName="Item" />
+          <ScalarProperty Name="NatEmis" ColumnName="NatEmis" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Circ_Req_Order">
+      <EntityTypeMapping TypeName="LTSMModel.Circ_Req_Order">
+        <MappingFragment StoreEntitySet="Circ_Req_Order">
+          <ScalarProperty Name="ReqItemId" ColumnName="ReqItemId" />
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="offcrmOrderId" ColumnName="offcrmOrderId" />
+          <ScalarProperty Name="Bookyear" ColumnName="Bookyear" />
+          <ScalarProperty Name="batchId" ColumnName="batchId" />
+          <ScalarProperty Name="circuitManager" ColumnName="circuitManager" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="unitPrice" ColumnName="unitPrice" />
+          <ScalarProperty Name="pubId" ColumnName="pubId" />
+          <ScalarProperty Name="warehouse_id" ColumnName="warehouse_id" />
+          <ScalarProperty Name="release_date" ColumnName="release_date" />
+          <ScalarProperty Name="last_modified_date" ColumnName="last_modified_date" />
+          <ScalarProperty Name="creation_date" ColumnName="creation_date" />
+          <ScalarProperty Name="isbn" ColumnName="isbn" />
+          <ScalarProperty Name="order_Id" ColumnName="order_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwo_OrdersPerPubPerDistrict">
+      <EntityTypeMapping TypeName="LTSMModel.vwo_OrdersPerPubPerDistrict">
+        <MappingFragment StoreEntitySet="vwo_OrdersPerPubPerDistrict">
+          <ScalarProperty Name="DistrictCD" ColumnName="DistrictCD" />
+          <ScalarProperty Name="RefName" ColumnName="RefName" />
+          <ScalarProperty Name="Manager" ColumnName="Manager" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BookYear" ColumnName="BookYear" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Available" ColumnName="Available" />
+          <ScalarProperty Name="GrantPrice" ColumnName="GrantPrice" />
+          <ScalarProperty Name="Publisher" ColumnName="Publisher" />
+          <ScalarProperty Name="PublisherId" ColumnName="PublisherId" />
+          <ScalarProperty Name="pushdate" ColumnName="pushdate" />
+          <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+          <ScalarProperty Name="OrderRequestNo" ColumnName="OrderRequestNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwclsb_FullyQualifyableOrderCatalogue">
+      <EntityTypeMapping TypeName="LTSMModel.vwclsb_FullyQualifyableOrderCatalogue">
+        <MappingFragment StoreEntitySet="vwclsb_FullyQualifyableOrderCatalogue">
+          <ScalarProperty Name="LastBookmrkDays" ColumnName="LastBookmrkDays" />
+          <ScalarProperty Name="Edition" ColumnName="Edition" />
+          <ScalarProperty Name="Bookmark_Date" ColumnName="Bookmark_Date" />
+          <ScalarProperty Name="Avl" ColumnName="Avl" />
+          <ScalarProperty Name="BookmarkQty" ColumnName="BookmarkQty" />
+          <ScalarProperty Name="DevEnr" ColumnName="DevEnr" />
+          <ScalarProperty Name="importDateGap" ColumnName="importDateGap" />
+          <ScalarProperty Name="Phase" ColumnName="Phase" />
+          <ScalarProperty Name="Group" ColumnName="Group" />
+          <ScalarProperty Name="RequisitionId_" ColumnName="RequisitionId " />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Key" ColumnName="Key" />
+          <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+          <ScalarProperty Name="ItemYear" ColumnName="ItemYear" />
+          <ScalarProperty Name="Publisher" ColumnName="Publisher" />
+          <ScalarProperty Name="PubID" ColumnName="PubID" />
+          <ScalarProperty Name="Item" ColumnName="Item" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+          <ScalarProperty Name="OfficialSubjectID" ColumnName="OfficialSubjectID" />
+          <ScalarProperty Name="EmisSubId" ColumnName="EmisSubId" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwlsbsc_BookOrderHistory">
+      <EntityTypeMapping TypeName="LTSMModel.vwlsbsc_BookOrderHistory">
+        <MappingFragment StoreEntitySet="vwlsbsc_BookOrderHistory">
+          <ScalarProperty Name="Ordered" ColumnName="Ordered" />
+          <ScalarProperty Name="EICircuit" ColumnName="EICircuit" />
+          <ScalarProperty Name="SchoolIdenityName" ColumnName="SchoolIdenityName" />
+          <ScalarProperty Name="LastBookmrkDays" ColumnName="LastBookmrkDays" />
+          <ScalarProperty Name="Bookmark_Date" ColumnName="Bookmark_Date" />
+          <ScalarProperty Name="Avl" ColumnName="Avl" />
+          <ScalarProperty Name="BookmarkQty" ColumnName="BookmarkQty" />
+          <ScalarProperty Name="DeviatedEnr" ColumnName="DeviatedEnr" />
+          <ScalarProperty Name="importDateGap" ColumnName="importDateGap" />
+          <ScalarProperty Name="Phase" ColumnName="Phase" />
+          <ScalarProperty Name="Group" ColumnName="Group" />
+          <ScalarProperty Name="RequisitionId_" ColumnName="RequisitionId " />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Key" ColumnName="Key" />
+          <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+          <ScalarProperty Name="ItemYear" ColumnName="ItemYear" />
+          <ScalarProperty Name="Publisher" ColumnName="Publisher" />
+          <ScalarProperty Name="PubID" ColumnName="PubID" />
+          <ScalarProperty Name="Item" ColumnName="Item" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+          <ScalarProperty Name="OfficialSubjectID" ColumnName="OfficialSubjectID" />
+          <ScalarProperty Name="EmisSubId" ColumnName="EmisSubId" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="Rq_item_Id" ColumnName="Rq_item_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwc_Catalogue">
+      <EntityTypeMapping TypeName="LTSMModel.vwc_Catalogue">
+        <MappingFragment StoreEntitySet="vwc_Catalogue">
+          <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Edition" ColumnName="Edition" />
+          <ScalarProperty Name="PriceU" ColumnName="PriceU" />
+          <ScalarProperty Name="UnitP" ColumnName="UnitP" />
+          <ScalarProperty Name="cons_activator" ColumnName="cons_activator" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="importDateGap" ColumnName="importDateGap" />
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+          <ScalarProperty Name="Group" ColumnName="Group" />
+          <ScalarProperty Name="ImportDate" ColumnName="ImportDate" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="Afrname" ColumnName="Afrname" />
+          <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+          <ScalarProperty Name="ItemYear" ColumnName="ItemYear" />
+          <ScalarProperty Name="Publisher" ColumnName="Publisher" />
+          <ScalarProperty Name="PubID" ColumnName="PubID" />
+          <ScalarProperty Name="Item" ColumnName="Item" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+          <ScalarProperty Name="OfficialSubjectID" ColumnName="OfficialSubjectID" />
+          <ScalarProperty Name="EmisSubId" ColumnName="EmisSubId" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

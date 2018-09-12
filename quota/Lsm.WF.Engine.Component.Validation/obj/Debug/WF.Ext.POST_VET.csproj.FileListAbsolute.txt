@@ -1,0 +1,10 @@
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\WF.Extension.PostVet\bin\Debug\WF.AddIn.PostVet.exe.config
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\WF.Extension.PostVet\bin\Debug\WF.AddIn.PostVet.exe
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\WF.Extension.PostVet\bin\Debug\WF.AddIn.PostVet.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\WF.Extension.PostVet\obj\Debug\WF.AddIn.PostVet.exe
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\WF.Extension.PostVet\obj\Debug\WF.AddIn.PostVet.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\WF.Extension.PostVet\bin\Debug\WF.AddIn.PostVet.exe.config
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\WF.Extension.PostVet\bin\Debug\WF.AddIn.PostVet.exe
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\WF.Extension.PostVet\bin\Debug\WF.AddIn.PostVet.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\WF.Extension.PostVet\obj\Debug\WF.AddIn.PostVet.exe
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\WF.Extension.PostVet\obj\Debug\WF.AddIn.PostVet.pdb

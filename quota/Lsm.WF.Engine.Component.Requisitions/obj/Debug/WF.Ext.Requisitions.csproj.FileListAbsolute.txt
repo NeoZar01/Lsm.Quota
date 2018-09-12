@@ -1,0 +1,66 @@
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\obj\Debug\WF.EXT.Requisitions.csprojResolveAssemblyReference.cache
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\WF.AddIn.Requisitions.dll.config
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\WF.AddIn.Requisitions.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\WF.AddIn.Requisitions.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\DoE.Data.Repository.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\EntityFramework.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\EntityFramework.SqlServer.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\WF.Utils.Items.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\PagedList.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\DoE.Lsm.Logger.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\DoE.Lsm.Files.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\DoE.Data.Repository.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\WF.Utils.Items.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\EntityFramework.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\EntityFramework.SqlServer.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\PagedList.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\DoE.Lsm.Logger.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\DoE.Lsm.Files.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\obj\Debug\WF.AddIn.Requisitions.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\obj\Debug\WF.AddIn.Requisitions.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\WF.AddIn.Requisitions.dll.config
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\WF.AddIn.Requisitions.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\WF.AddIn.Requisitions.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\DoE.Data.Repository.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\EntityFramework.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\EntityFramework.SqlServer.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\WF.Utils.Items.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\PagedList.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\DoE.Lsm.Logger.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\DoE.Lsm.Files.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\DoE.Data.Repository.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\WF.Utils.Items.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\EntityFramework.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\EntityFramework.SqlServer.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\PagedList.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\DoE.Lsm.Logger.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\DoE.Lsm.Files.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\obj\Debug\WF.Ext.Requisitions.csprojResolveAssemblyReference.cache
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\obj\Debug\WF.AddIn.Requisitions.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\obj\Debug\WF.AddIn.Requisitions.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\obj\Debug\WF.Ext.Requisitions.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\obj\Debug\WF.AddIn.Requisitions.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\obj\Debug\WF.AddIn.Requisitions.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\WF.AddIn.Requisitions.dll.config
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\WF.AddIn.Requisitions.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\WF.AddIn.Requisitions.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\DoE.Data.Repository.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\EntityFramework.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\EntityFramework.SqlServer.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\WF.Utils.Items.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\PagedList.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\DoE.Lsm.Logger.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\DoE.Lsm.Files.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\DoE.Data.Repository.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\WF.Utils.Items.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\EntityFramework.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\EntityFramework.SqlServer.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\PagedList.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\DoE.Lsm.Logger.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\bin\Debug\DoE.Lsm.Files.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\obj\Debug\WF.Ext.Requisitions.csprojResolveAssemblyReference.cache
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\obj\Debug\WF.AddIn.Requisitions.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\obj\Debug\WF.AddIn.Requisitions.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\obj\Debug\WF.Ext.Requisitions.csprojResolveAssemblyReference.cache
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\obj\Debug\WF.AddIn.Requisitions.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF.Engine.Module.Requisitions\obj\Debug\WF.AddIn.Requisitions.pdb

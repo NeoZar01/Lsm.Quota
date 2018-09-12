@@ -1,0 +1,149 @@
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\Education.Services.dll.config
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\Education.Services.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\Education.Services.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Data.Repository.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Lsm.Logger.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\EntityFramework.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\EntityFramework.SqlServer.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\PagedList.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\PagedList.Mvc.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\WF.AddIn.ShoppingCard.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\Lsm.Annotations.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\WF.Engine.Tools.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Lsm.Files.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Data.Repository.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Lsm.Logger.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\WF.AddIn.ShoppingCard.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\EntityFramework.xml
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\EntityFramework.SqlServer.xml
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\PagedList.xml
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\PagedList.Mvc.xml
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\Lsm.Annotations.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\WF.Engine.Tools.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Lsm.Files.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\obj\Debug\Lsm.App.ServiceCaller.csprojResolveAssemblyReference.cache
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\obj\Debug\Education.Services.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\obj\Debug\Education.Services.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\Education.Services.dll.config
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\Education.Services.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\Education.Services.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Data.Repository.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Lsm.Logger.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\PagedList.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\PagedList.Mvc.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\WF.AddIn.ShoppingCard.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\WF.Engine.Tools.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\Lsm.Annotations.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\PostSharp.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Lsm.Files.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Data.Repository.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Lsm.Logger.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\WF.AddIn.ShoppingCard.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\PagedList.xml
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\PagedList.Mvc.xml
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\WF.Engine.Tools.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\Lsm.Annotations.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\PostSharp.xml
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Lsm.Files.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Service.Client\obj\Debug\Lsm.App.ServiceCaller.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Service.Client\obj\Debug\Education.Services.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Service.Client\obj\Debug\Education.Services.pdb
+F:\Development - Rest\QuotaPortal\Lsm.Service.Client\obj\Debug\Lsm.App.ServiceCaller.csprojResolveAssemblyReference.cache
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\Education.Services.dll.config
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\Education.Services.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\Education.Services.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Lsm.Data.Repositories.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Lsm.Logger.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\EntityFramework.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\EntityFramework.SqlServer.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\PagedList.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\PagedList.Mvc.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\WF.AddIn.ShoppingCard.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Lsm.WF.Engine.Context.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\PostSharp.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Lsm.Annotations.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Lsm.Files.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Lsm.Data.Repositories.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Lsm.Logger.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\WF.AddIn.ShoppingCard.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\EntityFramework.xml
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\EntityFramework.SqlServer.xml
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\PagedList.xml
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\PagedList.Mvc.xml
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Lsm.WF.Engine.Context.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\PostSharp.xml
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Lsm.Annotations.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Lsm.Files.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Service.Client\obj\Debug\Lsm.App.ServiceCaller.csprojResolveAssemblyReference.cache
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Service.Client\obj\Debug\Education.Services.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Service.Client\obj\Debug\Education.Services.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Service.Client\obj\Debug\Lsm.App.ServiceCaller.csprojResolveAssemblyReference.cache
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Service.Client\bin\Debug\Education.Services.dll.config
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Service.Client\bin\Debug\Education.Services.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Service.Client\bin\Debug\Education.Services.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Lsm.Data.Repositories.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Lsm.Logger.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Service.Client\bin\Debug\EntityFramework.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Service.Client\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Service.Client\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Service.Client\bin\Debug\PagedList.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Service.Client\bin\Debug\PagedList.Mvc.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Service.Client\bin\Debug\WF.AddIn.ShoppingCard.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Lsm.WF.Engine.Context.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Service.Client\bin\Debug\PostSharp.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Lsm.Annotations.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Lsm.Files.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Lsm.Data.Repositories.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Lsm.Logger.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Service.Client\bin\Debug\WF.AddIn.ShoppingCard.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Service.Client\bin\Debug\EntityFramework.xml
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Service.Client\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Service.Client\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Service.Client\bin\Debug\PagedList.xml
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Service.Client\bin\Debug\PagedList.Mvc.xml
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Lsm.WF.Engine.Context.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Service.Client\bin\Debug\PostSharp.xml
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Lsm.Annotations.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Service.Client\bin\Debug\DoE.Lsm.Files.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Service.Client\obj\Debug\Education.Services.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Service.Client\obj\Debug\Education.Services.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\bin\Debug\Education.Services.dll.config
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\bin\Debug\Education.Services.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\bin\Debug\Education.Services.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\bin\Debug\DoE.Lsm.Data.Repositories.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\bin\Debug\DoE.Lsm.Logger.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\bin\Debug\EntityFramework.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\bin\Debug\PagedList.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\bin\Debug\PagedList.Mvc.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\bin\Debug\WF.AddIn.ShoppingCard.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\bin\Debug\DoE.Lsm.WF.Engine.Context.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\bin\Debug\PostSharp.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\bin\Debug\DoE.Lsm.Annotations.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\bin\Debug\DoE.Lsm.Files.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\bin\Debug\DoE.Lsm.Data.Repositories.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\bin\Debug\DoE.Lsm.Logger.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\bin\Debug\WF.AddIn.ShoppingCard.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\bin\Debug\EntityFramework.xml
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\bin\Debug\PagedList.xml
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\bin\Debug\PagedList.Mvc.xml
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\bin\Debug\DoE.Lsm.WF.Engine.Context.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\bin\Debug\PostSharp.xml
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\bin\Debug\DoE.Lsm.Annotations.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\bin\Debug\DoE.Lsm.Files.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\obj\Debug\Lsm.App.ServiceCaller.csprojResolveAssemblyReference.cache
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\obj\Debug\Education.Services.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\obj\Debug\Education.Services.pdb

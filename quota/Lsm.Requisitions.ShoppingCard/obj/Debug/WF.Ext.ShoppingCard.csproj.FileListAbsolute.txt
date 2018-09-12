@@ -1,0 +1,3 @@
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\WF.Extension.ShoppingCard\obj\Debug\WF.Ext.ShoppingCard.csprojResolveAssemblyReference.cache
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\WF.Extension.ShoppingCard\obj\Debug\WF.Ext.ShoppingCard.csprojResolveAssemblyReference.cache
+C:\Personal Work Drive\Quota\LimpEmisPortal\WF.Extension.ShoppingCard\obj\Debug\WF.Ext.ShoppingCard.csprojResolveAssemblyReference.cache

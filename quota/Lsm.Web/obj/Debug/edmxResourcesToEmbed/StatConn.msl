@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="STATDBModelStoreContainer" CdmEntityContainer="STATDBContext">
+    <EntitySetMapping Name="statvw_WEP_s_SchoolLearners">
+      <EntityTypeMapping TypeName="STATDBModel.statvw_WEP_s_SchoolLearners">
+        <MappingFragment StoreEntitySet="statvw_WEP_s_SchoolLearners">
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+          <ScalarProperty Name="TOTAL" ColumnName="TOTAL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="statvw_WEP_s_ProvisionalSchoolLearners">
+      <EntityTypeMapping TypeName="STATDBModel.statvw_WEP_s_ProvisionalSchoolLearners">
+        <MappingFragment StoreEntitySet="statvw_WEP_s_ProvisionalSchoolLearners">
+          <ScalarProperty Name="TOTAL" ColumnName="TOTAL" />
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="statvW_WEP_l_LeanerSubjectTeacherEnrollment">
+      <EntityTypeMapping TypeName="STATDBModel.statvW_WEP_l_LeanerSubjectTeacherEnrollment">
+        <MappingFragment StoreEntitySet="statvW_WEP_l_LeanerSubjectTeacherEnrollment">
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+          <ScalarProperty Name="SubjName" ColumnName="SubjName" />
+          <ScalarProperty Name="TOTAL" ColumnName="TOTAL" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SubjID" ColumnName="SubjID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="statvw_WEP_lsm_LTSMSubmissionStatistics">
+      <EntityTypeMapping TypeName="STATDBModel.statvw_WEP_lsm_LTSMSubmissionStatistics">
+        <MappingFragment StoreEntitySet="statvw_WEP_lsm_LTSMSubmissionStatistics">
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="SubmissionFlag" ColumnName="SubmissionFlag" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ImportMon" ColumnName="ImportMon" />
+          <ScalarProperty Name="ImportyYr" ColumnName="ImportyYr" />
+          <ScalarProperty Name="Importday" ColumnName="Importday" />
+          <ScalarProperty Name="ImportMonth" ColumnName="ImportMonth" />
+          <ScalarProperty Name="ImportYear" ColumnName="ImportYear" />
+          <ScalarProperty Name="Term" ColumnName="Term" />
+          <ScalarProperty Name="CurrentYear" ColumnName="CurrentYear" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="Quater" ColumnName="Quater" />
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="statvwLMEPD_l_SchoolLearnersSubjectEnrollment">
+      <EntityTypeMapping TypeName="STATDBModel.statvwLMEPD_l_SchoolLearnersSubjectEnrollment">
+        <MappingFragment StoreEntitySet="statvwLMEPD_l_SchoolLearnersSubjectEnrollment">
+          <ScalarProperty Name="TOTAL" ColumnName="TOTAL" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

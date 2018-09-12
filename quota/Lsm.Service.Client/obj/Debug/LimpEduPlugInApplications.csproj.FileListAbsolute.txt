@@ -1,0 +1,58 @@
+C:\Users\Administrator\Desktop\bkvsProj.2017.05\LimpEmisPortal\LimpEduPlugInApplications\obj\Debug\LimpEduPlugInApplications.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\bkvsProj.2017.05\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEduPlugInApplications.exe.config
+C:\Users\Administrator\Desktop\bkvsProj.2017.05\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEduPlugInApplications.exe
+C:\Users\Administrator\Desktop\bkvsProj.2017.05\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEduPlugInApplications.pdb
+C:\Users\Administrator\Desktop\bkvsProj.2017.05\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\EduDbRespositoryLayer.exe
+C:\Users\Administrator\Desktop\bkvsProj.2017.05\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Desktop\bkvsProj.2017.05\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\bkvsProj.2017.05\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\PagedList.dll
+C:\Users\Administrator\Desktop\bkvsProj.2017.05\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\PagedList.Mvc.dll
+C:\Users\Administrator\Desktop\bkvsProj.2017.05\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\EduDbRespositoryLayer.pdb
+C:\Users\Administrator\Desktop\bkvsProj.2017.05\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\PagedList.xml
+C:\Users\Administrator\Desktop\bkvsProj.2017.05\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\PagedList.Mvc.xml
+C:\Users\Administrator\Desktop\bkvsProj.2017.05\LimpEmisPortal\LimpEduPlugInApplications\obj\Debug\LimpEduPlugInApplications.exe
+C:\Users\Administrator\Desktop\bkvsProj.2017.05\LimpEmisPortal\LimpEduPlugInApplications\obj\Debug\LimpEduPlugInApplications.pdb
+C:\Users\Administrator\Desktop\EMIS Portal Update\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEduPlugInApplications.exe.config
+C:\Users\Administrator\Desktop\EMIS Portal Update\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEduPlugInApplications.exe
+C:\Users\Administrator\Desktop\EMIS Portal Update\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEduPlugInApplications.pdb
+C:\Users\Administrator\Desktop\EMIS Portal Update\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\EduDbRespositoryLayer.exe
+C:\Users\Administrator\Desktop\EMIS Portal Update\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Desktop\EMIS Portal Update\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\EMIS Portal Update\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\PagedList.dll
+C:\Users\Administrator\Desktop\EMIS Portal Update\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\PagedList.Mvc.dll
+C:\Users\Administrator\Desktop\EMIS Portal Update\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\EduDbRespositoryLayer.pdb
+C:\Users\Administrator\Desktop\EMIS Portal Update\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\PagedList.xml
+C:\Users\Administrator\Desktop\EMIS Portal Update\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\PagedList.Mvc.xml
+C:\Users\Administrator\Desktop\EMIS Portal Update\LimpEmisPortal\LimpEduPlugInApplications\obj\Debug\LimpEduPlugInApplications.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\EMIS Portal Update\LimpEmisPortal\LimpEduPlugInApplications\obj\Debug\LimpEduPlugInApplications.exe
+C:\Users\Administrator\Desktop\EMIS Portal Update\LimpEmisPortal\LimpEduPlugInApplications\obj\Debug\LimpEduPlugInApplications.pdb
+C:\Users\Administrator\Desktop\EMIS Portal Update\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Desktop\EMIS Portal Update\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Desktop\Portal.v2\LimpEmisPortal\LimpEduPlugInApplications\obj\Debug\LimpEduPlugInApplications.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Portal.v2\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEduPlugInApplications.exe.config
+C:\Users\Administrator\Desktop\Portal.v2\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEduPlugInApplications.exe
+C:\Users\Administrator\Desktop\Portal.v2\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEduPlugInApplications.pdb
+C:\Users\Administrator\Desktop\Portal.v2\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\EduDbRespositoryLayer.exe
+C:\Users\Administrator\Desktop\Portal.v2\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Desktop\Portal.v2\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\Portal.v2\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\PagedList.dll
+C:\Users\Administrator\Desktop\Portal.v2\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\PagedList.Mvc.dll
+C:\Users\Administrator\Desktop\Portal.v2\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\EduDbRespositoryLayer.pdb
+C:\Users\Administrator\Desktop\Portal.v2\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\PagedList.xml
+C:\Users\Administrator\Desktop\Portal.v2\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\PagedList.Mvc.xml
+C:\Users\Administrator\Desktop\Portal.v2\LimpEmisPortal\LimpEduPlugInApplications\obj\Debug\LimpEduPlugInApplications.exe
+C:\Users\Administrator\Desktop\Portal.v2\LimpEmisPortal\LimpEduPlugInApplications\obj\Debug\LimpEduPlugInApplications.pdb
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\obj\Debug\LimpEduPlugInApplications.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEduPlugInApplications.exe.config
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEduPlugInApplications.exe
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\LimpEduPlugInApplications.pdb
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\EduDbRespositoryLayer.exe
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\PagedList.dll
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\PagedList.Mvc.dll
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\EduDbRespositoryLayer.pdb
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\PagedList.xml
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\bin\Debug\PagedList.Mvc.xml
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\obj\Debug\LimpEduPlugInApplications.exe
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduPlugInApplications\obj\Debug\LimpEduPlugInApplications.pdb

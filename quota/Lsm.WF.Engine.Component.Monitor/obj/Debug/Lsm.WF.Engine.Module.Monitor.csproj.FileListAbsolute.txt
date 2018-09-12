@@ -1,0 +1,5 @@
+C:\Personal Work Drive\Quota\LimpEmisPortal\Lsm.WF.PI.PerfomanceMonitor\bin\Debug\Lsm.WF.PI.PerfomanceMonitor.exe.config
+C:\Personal Work Drive\Quota\LimpEmisPortal\Lsm.WF.PI.PerfomanceMonitor\bin\Debug\Lsm.WF.PI.PerfomanceMonitor.exe
+C:\Personal Work Drive\Quota\LimpEmisPortal\Lsm.WF.PI.PerfomanceMonitor\bin\Debug\Lsm.WF.PI.PerfomanceMonitor.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\Lsm.WF.PI.PerfomanceMonitor\obj\Debug\Lsm.WF.PI.PerfomanceMonitor.exe
+C:\Personal Work Drive\Quota\LimpEmisPortal\Lsm.WF.PI.PerfomanceMonitor\obj\Debug\Lsm.WF.PI.PerfomanceMonitor.pdb

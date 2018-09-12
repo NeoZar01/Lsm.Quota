@@ -1,0 +1,6 @@
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\WF.Extension.PostVet\bin\Debug\WF.Extension.PostVet.exe.config
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\WF.Extension.PostVet\bin\Debug\WF.Extension.PostVet.exe
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\WF.Extension.PostVet\bin\Debug\WF.Extension.PostVet.pdb
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\WF.Extension.PostVet\obj\Debug\WF.Extension.PostVet.exe
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\WF.Extension.PostVet\obj\Debug\WF.Extension.PostVet.pdb
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\WF.Extension.PostVet\obj\Debug\WF.Extension.PostVet.csprojResolveAssemblyReference.cache

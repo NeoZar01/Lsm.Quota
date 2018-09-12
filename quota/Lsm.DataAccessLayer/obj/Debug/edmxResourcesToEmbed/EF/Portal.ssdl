@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Portal.AuthModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Portal.Auth.dbo.AspNetProfiles' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="AspNetProfiles">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="RowGuid" />
+      <PropertyRef Name="EmisCode" />
+      <PropertyRef Name="IsActive" />
+      <PropertyRef Name="IsProfilePublic" />
+      <PropertyRef Name="RankName" />
+      <PropertyRef Name="Level" />
+      <PropertyRef Name="DirectorateName" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RowGuid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="First_Name" Type="nvarchar" MaxLength="35" />
+    <Property Name="Last_Name" Type="nvarchar" MaxLength="35" />
+    <Property Name="RefName" Type="nvarchar" MaxLength="115" />
+    <Property Name="Type" Type="nvarchar" MaxLength="145" />
+    <Property Name="Address" Type="nvarchar" MaxLength="125" />
+    <Property Name="Email" Type="nvarchar" MaxLength="80" />
+    <Property Name="Phone_Number" Type="nvarchar" MaxLength="50" />
+    <Property Name="Telephone" Type="nvarchar" MaxLength="255" />
+    <Property Name="LocationUID" Type="smallint" />
+    <Property Name="EIDistrict" Type="int" />
+    <Property Name="DistrictName" Type="nvarchar" MaxLength="250" />
+    <Property Name="EICircuit" Type="nvarchar" MaxLength="255" />
+    <Property Name="CircuitName" Type="nvarchar" MaxLength="250" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsProfilePublic" Type="bit" Nullable="false" />
+    <Property Name="Proxy" Type="int" />
+    <Property Name="Proxy1" Type="int" />
+    <Property Name="Rank" Type="int" />
+    <Property Name="RankName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Level" Type="int" Nullable="false" />
+    <Property Name="Position" Type="nvarchar" MaxLength="255" />
+    <Property Name="PositionCode" Type="int" />
+    <Property Name="Directorate" Type="int" />
+    <Property Name="DirectorateCode" Type="nvarchar" MaxLength="12" />
+    <Property Name="DirectorateName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="GIS_Long" Type="nvarchar" MaxLength="100" />
+    <Property Name="GIS_Lat" Type="nvarchar" MaxLength="100" />
+    <Property Name="GIS_ERROR" Type="nvarchar" MaxLength="255" />
+    <Property Name="GISSource" Type="nvarchar" MaxLength="255" />
+    <Property Name="Sector" Type="nvarchar" MaxLength="255" />
+    <Property Name="SectorId" Type="int" />
+    <Property Name="DoE_Status" Type="nvarchar" MaxLength="255" />
+    <Property Name="Phase_DoE" Type="nvarchar" MaxLength="255" />
+    <Property Name="meta" Type="nvarchar(max)" />
+    <Property Name="PhaseCD" Type="int" />
+    <Property Name="Role" Type="int" />
+  </EntityType>
+  <EntityType Name="Branches">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="RowGuid" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RowGuid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="LastModifiedDate" Type="datetime" Nullable="false" />
+    <Property Name="Manager" Type="nvarchar(max)" />
+    <Property Name="ParentBranch" Type="nvarchar(max)" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsDistrict" Type="bit" Nullable="false" />
+    <Property Name="IsCircuit" Type="bit" Nullable="false" />
+    <Property Name="LocationSpatial" Type="geography" />
+    <Property Name="LocationSpatialText" Type="nvarchar(max)" StoreGeneratedPattern="Computed" />
+    <Property Name="StAddress" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Directorate">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="RowGuid" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RowGuid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="Manager" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Address">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HomeAddress" Type="nvarchar(max)" />
+    <Property Name="Office" Type="nvarchar(max)" />
+    <Property Name="Person" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Contact">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="Email" Type="varchar(max)" />
+    <Property Name="PhoneNumber" Type="varchar(max)" />
+    <Property Name="Telephone" Type="varchar(max)" />
+    <Property Name="LastModifiedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Images">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RowGuId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="datetime" Nullable="false" />
+    <Property Name="Image" Type="varbinary" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Person">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="RowGuid" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RowGuid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="IdNo" Type="int" />
+    <Property Name="FirstName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MiddleName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Title" Type="varchar(max)" Nullable="false" />
+    <Property Name="MaidenName" Type="nvarchar(max)" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="Initials" Type="varchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Portal.Auth.dbo.vwMembersPerRole' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwMembersPerRole">
+    <Key>
+      <PropertyRef Name="RoleId" />
+      <PropertyRef Name="Role" />
+    </Key>
+    <Property Name="RoleId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Role" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="Total" Type="int" />
+    <Property Name="MemberTotal" Type="decimal" Precision="8" Scale="2" />
+    <Property Name="Percentage" Type="decimal" Precision="8" Scale="2" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Portal.Auth.Mail.vwMailbox' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwMailbox">
+    <Key>
+      <PropertyRef Name="RowGuid" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="GroupId" />
+      <PropertyRef Name="DirectorateManager" />
+      <PropertyRef Name="GroupName" />
+      <PropertyRef Name="GroupAdministrator" />
+      <PropertyRef Name="IsGroupActive" />
+      <PropertyRef Name="MailboxAdministrator" />
+      <PropertyRef Name="MailboxOwner" />
+      <PropertyRef Name="IsActive" />
+      <PropertyRef Name="ActiveUsers" />
+      <PropertyRef Name="NonActiveUsers" />
+    </Key>
+    <Property Name="RowGuid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DirectorateName" Type="nvarchar(max)" />
+    <Property Name="GroupId" Type="int" Nullable="false" />
+    <Property Name="DirectorateManager" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="GroupName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="GroupAdministrator" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IsGroupActive" Type="bit" Nullable="false" />
+    <Property Name="MailboxAdministrator" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MailboxOwner" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="ActiveUsers" Type="int" Nullable="false" />
+    <Property Name="NonActiveUsers" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Portal.Auth.Person.vwAccountSettings' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwAccountSettings">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="EmisCode" />
+      <PropertyRef Name="Person" />
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="IsPublic" />
+      <PropertyRef Name="LastModifiedDate" />
+      <PropertyRef Name="IsActive" />
+      <PropertyRef Name="Role" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="Person" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="IsPublic" Type="int" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="datetime" Nullable="false" />
+    <Property Name="IsActive" Type="int" Nullable="false" />
+    <Property Name="Role" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="RoleId" Type="nvarchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Portal.Auth.Person.vwAddressDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwAddressDetails">
+    <Key>
+      <PropertyRef Name="EmisCode" />
+      <PropertyRef Name="RowGuid" />
+      <PropertyRef Name="BranchName" />
+      <PropertyRef Name="ParentBranch" />
+    </Key>
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="RowGuid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="HomeAddress" Type="nvarchar(max)" />
+    <Property Name="BranchName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ParentBranch" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="StAddress" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Portal.Auth.Person.vwContacts' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwContacts">
+    <Key>
+      <PropertyRef Name="EmisCode" />
+    </Key>
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="Email" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Portal.Auth.Person.vwPersonalDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwPersonalDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="EmisCode" />
+      <PropertyRef Name="FirstName" />
+      <PropertyRef Name="MiddleName" />
+      <PropertyRef Name="LastName" />
+      <PropertyRef Name="Title" />
+      <PropertyRef Name="IsActive" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="IdNo" Type="int" />
+    <Property Name="FirstName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MiddleName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Title" Type="varchar(max)" Nullable="false" />
+    <Property Name="MaidenName" Type="nvarchar(max)" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="Initials" Type="varchar(max)" />
+    <Property Name="Position" Type="varchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Portal.Auth.Person.vwPositionDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwPositionDetails">
+    <Key>
+      <PropertyRef Name="EmisCode" />
+      <PropertyRef Name="Person" />
+      <PropertyRef Name="LastModifiedDate" />
+      <PropertyRef Name="Rank" />
+      <PropertyRef Name="RankFlag" />
+      <PropertyRef Name="Level" />
+    </Key>
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="Person" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="datetime" Nullable="false" />
+    <Property Name="Position" Type="varchar(max)" />
+    <Property Name="Rank" Type="int" Nullable="false" />
+    <Property Name="RankFlag" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="Level" Type="int" Nullable="false" />
+    <Property Name="Directorate" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6035: The relationship 'FK__Contact__EmisCod__29E1370A' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+        <Association Name="FK__Contact__EmisCod__29E1370A" />-->
+  <!--Errors Found During Generation:
+warning 6035: The relationship 'FK__Contact__EmisCod__2AD55B43' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+        <Association Name="FK__Contact__EmisCod__2AD55B43" />-->
+  <!--Errors Found During Generation:
+warning 6035: The relationship 'FK__Contact__EmisCod__2BC97F7C' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+        <Association Name="FK__Contact__EmisCod__2BC97F7C" />-->
+  <!--Errors Found During Generation:
+warning 6035: The relationship 'FK__Images__EmisCode__53D770D6' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+        <Association Name="FK__Images__EmisCode__53D770D6" />-->
+  <EntityContainer Name="PortalAuthModelStoreContainer">
+    <EntitySet Name="Branches" EntityType="Self.Branches" Schema="Department" store:Type="Tables" />
+    <EntitySet Name="Directorate" EntityType="Self.Directorate" Schema="Department" store:Type="Tables" />
+    <EntitySet Name="Address" EntityType="Self.Address" Schema="Person" store:Type="Tables" />
+    <EntitySet Name="Contact" EntityType="Self.Contact" Schema="Person" store:Type="Tables" />
+    <EntitySet Name="Images" EntityType="Self.Images" Schema="Person" store:Type="Tables" />
+    <EntitySet Name="Person" EntityType="Self.Person" Schema="Person" store:Type="Tables" />
+    <EntitySet Name="AspNetProfiles" EntityType="Self.AspNetProfiles" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [AspNetProfiles].[Id] AS [Id], 
+    [AspNetProfiles].[RowGuid] AS [RowGuid], 
+    [AspNetProfiles].[EmisCode] AS [EmisCode], 
+    [AspNetProfiles].[First_Name] AS [First_Name], 
+    [AspNetProfiles].[Last_Name] AS [Last_Name], 
+    [AspNetProfiles].[RefName] AS [RefName], 
+    [AspNetProfiles].[Type] AS [Type], 
+    [AspNetProfiles].[Address] AS [Address], 
+    [AspNetProfiles].[Email] AS [Email], 
+    [AspNetProfiles].[Phone_Number] AS [Phone_Number], 
+    [AspNetProfiles].[Telephone] AS [Telephone], 
+    [AspNetProfiles].[LocationUID] AS [LocationUID], 
+    [AspNetProfiles].[EIDistrict] AS [EIDistrict], 
+    [AspNetProfiles].[DistrictName] AS [DistrictName], 
+    [AspNetProfiles].[EICircuit] AS [EICircuit], 
+    [AspNetProfiles].[CircuitName] AS [CircuitName], 
+    [AspNetProfiles].[IsActive] AS [IsActive], 
+    [AspNetProfiles].[IsProfilePublic] AS [IsProfilePublic], 
+    [AspNetProfiles].[Proxy] AS [Proxy], 
+    [AspNetProfiles].[Proxy1] AS [Proxy1], 
+    [AspNetProfiles].[Rank] AS [Rank], 
+    [AspNetProfiles].[RankName] AS [RankName], 
+    [AspNetProfiles].[Level] AS [Level], 
+    [AspNetProfiles].[Position] AS [Position], 
+    [AspNetProfiles].[PositionCode] AS [PositionCode], 
+    [AspNetProfiles].[Directorate] AS [Directorate], 
+    [AspNetProfiles].[DirectorateCode] AS [DirectorateCode], 
+    [AspNetProfiles].[DirectorateName] AS [DirectorateName], 
+    [AspNetProfiles].[GIS_Long] AS [GIS_Long], 
+    [AspNetProfiles].[GIS_Lat] AS [GIS_Lat], 
+    [AspNetProfiles].[GIS_ERROR] AS [GIS_ERROR], 
+    [AspNetProfiles].[GISSource] AS [GISSource], 
+    [AspNetProfiles].[Sector] AS [Sector], 
+    [AspNetProfiles].[SectorId] AS [SectorId], 
+    [AspNetProfiles].[DoE_Status] AS [DoE_Status], 
+    [AspNetProfiles].[Phase_DoE] AS [Phase_DoE], 
+    [AspNetProfiles].[meta] AS [meta], 
+    [AspNetProfiles].[PhaseCD] AS [PhaseCD], 
+    [AspNetProfiles].[Role] AS [Role]
+    FROM [dbo].[AspNetProfiles] AS [AspNetProfiles]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwMembersPerRole" EntityType="Self.vwMembersPerRole" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwMembersPerRole].[RoleId] AS [RoleId], 
+    [vwMembersPerRole].[Role] AS [Role], 
+    [vwMembersPerRole].[Total] AS [Total], 
+    [vwMembersPerRole].[MemberTotal] AS [MemberTotal], 
+    [vwMembersPerRole].[Percentage] AS [Percentage]
+    FROM [dbo].[vwMembersPerRole] AS [vwMembersPerRole]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwMailbox" EntityType="Self.vwMailbox" store:Type="Views" store:Schema="Mail">
+      <DefiningQuery>SELECT 
+    [vwMailbox].[RowGuid] AS [RowGuid], 
+    [vwMailbox].[Name] AS [Name], 
+    [vwMailbox].[DirectorateName] AS [DirectorateName], 
+    [vwMailbox].[GroupId] AS [GroupId], 
+    [vwMailbox].[DirectorateManager] AS [DirectorateManager], 
+    [vwMailbox].[GroupName] AS [GroupName], 
+    [vwMailbox].[GroupAdministrator] AS [GroupAdministrator], 
+    [vwMailbox].[IsGroupActive] AS [IsGroupActive], 
+    [vwMailbox].[MailboxAdministrator] AS [MailboxAdministrator], 
+    [vwMailbox].[MailboxOwner] AS [MailboxOwner], 
+    [vwMailbox].[IsActive] AS [IsActive], 
+    [vwMailbox].[CreationDate] AS [CreationDate], 
+    [vwMailbox].[ActiveUsers] AS [ActiveUsers], 
+    [vwMailbox].[NonActiveUsers] AS [NonActiveUsers]
+    FROM [Mail].[vwMailbox] AS [vwMailbox]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwAccountSettings" EntityType="Self.vwAccountSettings" store:Type="Views" store:Schema="Person">
+      <DefiningQuery>SELECT 
+    [vwAccountSettings].[Id] AS [Id], 
+    [vwAccountSettings].[EmisCode] AS [EmisCode], 
+    [vwAccountSettings].[Person] AS [Person], 
+    [vwAccountSettings].[UserId] AS [UserId], 
+    [vwAccountSettings].[IsPublic] AS [IsPublic], 
+    [vwAccountSettings].[LastModifiedDate] AS [LastModifiedDate], 
+    [vwAccountSettings].[IsActive] AS [IsActive], 
+    [vwAccountSettings].[Role] AS [Role], 
+    [vwAccountSettings].[Email] AS [Email], 
+    [vwAccountSettings].[RoleId] AS [RoleId]
+    FROM [Person].[vwAccountSettings] AS [vwAccountSettings]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwAddressDetails" EntityType="Self.vwAddressDetails" store:Type="Views" store:Schema="Person">
+      <DefiningQuery>SELECT 
+    [vwAddressDetails].[EmisCode] AS [EmisCode], 
+    [vwAddressDetails].[RowGuid] AS [RowGuid], 
+    [vwAddressDetails].[HomeAddress] AS [HomeAddress], 
+    [vwAddressDetails].[BranchName] AS [BranchName], 
+    [vwAddressDetails].[ParentBranch] AS [ParentBranch], 
+    [vwAddressDetails].[StAddress] AS [StAddress]
+    FROM [Person].[vwAddressDetails] AS [vwAddressDetails]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwContacts" EntityType="Self.vwContacts" store:Type="Views" store:Schema="Person">
+      <DefiningQuery>SELECT 
+    [vwContacts].[EmisCode] AS [EmisCode], 
+    [vwContacts].[Email] AS [Email]
+    FROM [Person].[vwContacts] AS [vwContacts]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwPersonalDetails" EntityType="Self.vwPersonalDetails" store:Type="Views" store:Schema="Person">
+      <DefiningQuery>SELECT 
+    [vwPersonalDetails].[Id] AS [Id], 
+    [vwPersonalDetails].[EmisCode] AS [EmisCode], 
+    [vwPersonalDetails].[IdNo] AS [IdNo], 
+    [vwPersonalDetails].[FirstName] AS [FirstName], 
+    [vwPersonalDetails].[MiddleName] AS [MiddleName], 
+    [vwPersonalDetails].[LastName] AS [LastName], 
+    [vwPersonalDetails].[Title] AS [Title], 
+    [vwPersonalDetails].[MaidenName] AS [MaidenName], 
+    [vwPersonalDetails].[IsActive] AS [IsActive], 
+    [vwPersonalDetails].[CreationDate] AS [CreationDate], 
+    [vwPersonalDetails].[LastModifiedDate] AS [LastModifiedDate], 
+    [vwPersonalDetails].[Initials] AS [Initials], 
+    [vwPersonalDetails].[Position] AS [Position]
+    FROM [Person].[vwPersonalDetails] AS [vwPersonalDetails]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwPositionDetails" EntityType="Self.vwPositionDetails" store:Type="Views" store:Schema="Person">
+      <DefiningQuery>SELECT 
+    [vwPositionDetails].[EmisCode] AS [EmisCode], 
+    [vwPositionDetails].[Person] AS [Person], 
+    [vwPositionDetails].[LastModifiedDate] AS [LastModifiedDate], 
+    [vwPositionDetails].[Position] AS [Position], 
+    [vwPositionDetails].[Rank] AS [Rank], 
+    [vwPositionDetails].[RankFlag] AS [RankFlag], 
+    [vwPositionDetails].[Level] AS [Level], 
+    [vwPositionDetails].[Directorate] AS [Directorate]
+    FROM [Person].[vwPositionDetails] AS [vwPositionDetails]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

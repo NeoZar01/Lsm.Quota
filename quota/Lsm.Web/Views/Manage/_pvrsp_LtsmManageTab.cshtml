@@ -1,0 +1,89 @@
+﻿@model LimpEmisPortal.Models.IndexLtsmTabViewModel
+
+@{ 
+    var rownum = 1;
+}
+<div class="row">
+    <address dir="rtl">
+        <hr />
+        <small>Enq : &nbsp;  Mr. NI Lebese  &nbsp;  |  &nbsp; <span class="glyphicon glyphicon-phone-alt"></span> &nbsp;  015 290 7918, &nbsp; Mr. EM Letsoalo &nbsp; | &nbsp; <span class="glyphicon glyphicon-phone-alt"></span> &nbsp;  015 290 7794 </small>
+        <hr />
+    </address>
+    @*<address dir="ltr" style="padding-left:14px">
+        <small>@Model.SchoolGeneralInformation.NatEmis</small><br />
+        <small>@Model.SchoolGeneralInformation.SchoolIdenityName</small><br />
+        <small>@Model.SchoolGeneralInformation.FName , @Model.SchoolGeneralInformation.SName</small><br />
+        <small>@Model.SchoolGeneralInformation.PostAddress2, &nbsp; @Model.SchoolGeneralInformation.PostAddress0, @Model.SchoolGeneralInformation.PostAddress0No</small><br />
+        <small>@Model.SchoolGeneralInformation.PostAddress3</small><br />
+        <small>@Model.SchoolGeneralInformation.PostCode</small><br />
+        <span>
+            <span class=@( Model.SchoolGeneralInformation.Telephone.ToString().Length >= 10 ? "glyphicon glyphicon-phone-alt" : "")></span>  @if (Model.SchoolGeneralInformation.Telephone.ToString().Length >= 10)
+            { <span> &nbsp; </span> }  <small> @(Model.SchoolGeneralInformation.Telephone.ToString().Length >= 10 ? Model.SchoolGeneralInformation.Telephone : "Invalid Telephone Number") </small>  @if (Model.SchoolGeneralInformation.EMail.Contains("@"))
+            { <span> &nbsp; | &nbsp; </span> }   <small><span class="@(Model.SchoolGeneralInformation.EMail.Contains("@") ? "glyphicon glyphicon-envelope" : "")"></span> &nbsp; @(Model.SchoolGeneralInformation.EMail.Contains("@") ? Model.SchoolGeneralInformation.EMail : "")</small>
+        </span><br />
+    </address>
+    <p style="text-align:right">
+        <small> <strong>Circuit</strong> &nbsp; : @Model.SchoolGeneralInformation.Circuit &nbsp; | &nbsp; <strong> District </strong> &nbsp; : @Model.SchoolGeneralInformation.District</small>
+    </p>*@
+    <div class="col-md-12" style="background-color: #ecf0f1">
+        <div class="col-md-11">
+            <br /><br />
+            <p style="text-align:center"><strong> South African Schools Act NO. 84 of 1996 section 59 |1| and |2| states that: Every school must supply such information about the school as is reasonably required by the Head of Education, and any person, who without just cause, fails to comply , shall be guilty of an offence.</strong></p>
+        </div>
+        <br />
+        <div class="col-md-11">
+            <center> <img src=@Url.Content("~/Content/Images/_438185.png") width="58" alt="" style="border-bottom:1px solid #ecf0f1"></center>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="panel col-md-8">
+              @{ Html.RenderAction("ESignatureFormManager", "Manage");}
+    </div>
+    <div class="col-md-4" style="background-color: white">
+        <div class="col-md-12 btn-group btn-group-sm">
+            <br /><br />
+            <button class="btn btn-primary btn-sm">Grades</button>
+            @foreach (var k in Model.GetSchoolRegisteredGrades)
+                {
+                    @Ajax.ActionLink(k.ToString(), "SubjectEnrolmentPerGrade", "Manage", new { grd = k },
+                                                        new AjaxOptions
+                                                        {
+                                                            UpdateTargetId = "subject-enrolment-per-grade-ajax-id",
+                                                            InsertionMode = InsertionMode.Replace,
+                                                            HttpMethod = "GET",
+                                                            LoadingElementId = "_lrnPrSubjEnrol-ajax-loader"
+                                                        }, htmlAttributes: new { @class = "btn btn-default btn-sm" })
+                }
+            <br /><br />
+        </div>
+        <div id="subject-enrolment-per-grade-ajax-id">
+            <table class="table-condensed table-responsive table-hover" >
+                <tr style="border-bottom:1px solid #ecf0f1;border-top:1px solid #ecf0f1">
+                    <th>Subject Name</th>
+                    <th style="text-align:center">Grd</th>
+                    <th>Enr</th>
+                    <th>Avl</th>
+                    <th><img src="~/Content/Images/ajax-loader.gif" id="_lrnPrSubjEnrol-ajax-loader" style="display:none;width:18px; height:18px" /></th>
+                </tr>
+                @foreach (var s in Model.ViewSubjectEnrolmentPerGrade)
+                {
+                    <tr>
+                        <td><small> @rownum. &nbsp; @s.Name</small> </td>
+                        <td style="text-align:center"><small>@s.Grade</small></td>
+                        <td style="text-align:center"><small>@s.TOTAL</small></td>
+                        <td style="text-align:right">
+                            <small><strong>@s.Unit</strong></small>
+                        </td>
+                        <td></td>
+                    </tr>
+                    rownum += 1;
+                }
+            </table>
+        </div>
+        @{
+                    rownum = 1;
+         }
+    </div>
+</div>
+

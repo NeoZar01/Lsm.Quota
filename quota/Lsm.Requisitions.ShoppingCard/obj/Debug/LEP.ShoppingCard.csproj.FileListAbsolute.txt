@@ -1,0 +1,2 @@
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.ShoppingCard\obj\Debug\LEP.ShoppingCard.csprojResolveAssemblyReference.cache
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.ShoppingCard\obj\Debug\LEP.ShoppingCard.csprojResolveAssemblyReference.cache

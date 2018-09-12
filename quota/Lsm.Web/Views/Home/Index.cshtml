@@ -1,0 +1,9 @@
+﻿@model DashboardFactoryViewModel
+
+@{
+   ViewBag.Title = string.Concat("[ " ,  Model.BookYear , " ] Quota - ", "Requisitions Home " , " | ",User.Identity.GetUserName());
+}
+
+<div class="row">
+        @{ Html.RenderAction("BuildDashboard", "Home", new { model = Model });}
+</div>

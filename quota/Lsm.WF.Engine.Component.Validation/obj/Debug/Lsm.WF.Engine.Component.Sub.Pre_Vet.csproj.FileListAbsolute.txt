@@ -1,0 +1,5 @@
+C:\Personal Work Drive\Quota\LimpEmisPortal\WF.Extension.PostVet\bin\Debug\WF.AddIn.PostVet.exe.config
+C:\Personal Work Drive\Quota\LimpEmisPortal\WF.Extension.PostVet\bin\Debug\WF.AddIn.PostVet.exe
+C:\Personal Work Drive\Quota\LimpEmisPortal\WF.Extension.PostVet\bin\Debug\WF.AddIn.PostVet.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\WF.Extension.PostVet\obj\Debug\WF.AddIn.PostVet.exe
+C:\Personal Work Drive\Quota\LimpEmisPortal\WF.Extension.PostVet\obj\Debug\WF.AddIn.PostVet.pdb

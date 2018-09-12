@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SASAMSWarehouseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="WarehouseImportStatistics">
+    <Key>
+      <PropertyRef Name="ImportId" />
+    </Key>
+    <Property Name="ImportId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="ImportTime" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="DataYear" Type="nvarchar" MaxLength="8" />
+    <Property Name="PatchVersion" Type="nvarchar(max)" />
+    <Property Name="Term" Type="int" Nullable="false" />
+    <Property Name="CircuitId" Type="int" Nullable="false" />
+    <Property Name="DistrictId" Type="int" Nullable="false" />
+    <Property Name="Quintile" Type="int" Nullable="false" />
+    <Property Name="SurveyType" Type="int" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SASAMSWarehouse.Report.vwst_lsmOutstandingWarehouseUploads' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwst_lsmOutstandingWarehouseUploads">
+    <Key>
+      <PropertyRef Name="NatEmis" />
+      <PropertyRef Name="Quintile" />
+      <PropertyRef Name="EmisCode" />
+    </Key>
+    <Property Name="NatEmis" Type="int" Nullable="false" />
+    <Property Name="Institution_Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Sector" Type="nvarchar" MaxLength="255" />
+    <Property Name="Type_PED" Type="nvarchar" MaxLength="255" />
+    <Property Name="Phase_DoE" Type="nvarchar" MaxLength="255" />
+    <Property Name="EIDistrict" Type="nvarchar" MaxLength="255" />
+    <Property Name="EICircuit" Type="nvarchar" MaxLength="255" />
+    <Property Name="Addressee" Type="nvarchar" MaxLength="255" />
+    <Property Name="Township_Village" Type="nvarchar" MaxLength="255" />
+    <Property Name="Suburb" Type="nvarchar" MaxLength="255" />
+    <Property Name="Town_City" Type="nvarchar" MaxLength="255" />
+    <Property Name="StreetAddress" Type="nvarchar" MaxLength="255" />
+    <Property Name="Box_P_Bag" Type="nvarchar" MaxLength="255" />
+    <Property Name="Box_Bag_Postal_Code" Type="nvarchar" MaxLength="255" />
+    <Property Name="PostalAddress" Type="nvarchar" MaxLength="255" />
+    <Property Name="Telephone" Type="nvarchar" MaxLength="255" />
+    <Property Name="cellno" Type="nvarchar" MaxLength="255" />
+    <Property Name="PrincipalsCell" Type="nvarchar" MaxLength="255" />
+    <Property Name="E_Mail" Type="nvarchar" MaxLength="255" />
+    <Property Name="Quintile" Type="int" Nullable="false" />
+    <Property Name="DemarcationFrom" Type="nvarchar" MaxLength="255" />
+    <Property Name="DemarcationTo" Type="nvarchar" MaxLength="255" />
+    <Property Name="Municipality" Type="nvarchar" MaxLength="255" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="ImportYear" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SASAMSWarehouse.Report.vwst_ltsmWarehouseImports' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwst_ltsmWarehouseImports">
+    <Key>
+      <PropertyRef Name="ImportId" />
+      <PropertyRef Name="EmisCode" />
+      <PropertyRef Name="Importday" />
+      <PropertyRef Name="ImportyYr" />
+      <PropertyRef Name="ImportMon" />
+      <PropertyRef Name="Status" />
+      <PropertyRef Name="IsApproved" />
+      <PropertyRef Name="Incumbent" />
+      <PropertyRef Name="Approver" />
+      <PropertyRef Name="GrFrom" />
+      <PropertyRef Name="GrTo" />
+      <PropertyRef Name="DateFrom" />
+      <PropertyRef Name="DateTo" />
+    </Key>
+    <Property Name="ImportId" Type="int" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="Quater" Type="nvarchar" MaxLength="50" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="EndDate" Type="datetime" />
+    <Property Name="CurrentYear" Type="nvarchar" MaxLength="50" />
+    <Property Name="Term" Type="int" />
+    <Property Name="ImportYear" Type="int" />
+    <Property Name="ImportMonth" Type="int" />
+    <Property Name="Importday" Type="datetime" Nullable="false" />
+    <Property Name="ImportyYr" Type="datetime" Nullable="false" />
+    <Property Name="ImportMon" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="IsApproved" Type="bit" Nullable="false" />
+    <Property Name="Comment" Type="ntext" />
+    <Property Name="Incumbent" Type="nvarchar" MaxLength="71" Nullable="false" />
+    <Property Name="EIDistrict" Type="int" />
+    <Property Name="DstName" Type="nvarchar" MaxLength="250" />
+    <Property Name="LocationFlag" Type="smallint" />
+    <Property Name="EICircuit" Type="nvarchar" MaxLength="255" />
+    <Property Name="CircuitName" Type="nvarchar" MaxLength="250" />
+    <Property Name="EMail" Type="nvarchar" MaxLength="80" />
+    <Property Name="RefName" Type="nvarchar" MaxLength="115" />
+    <Property Name="First_Name" Type="nvarchar" MaxLength="35" />
+    <Property Name="Last_Name" Type="nvarchar" MaxLength="35" />
+    <Property Name="SurveyType" Type="nvarchar" MaxLength="150" />
+    <Property Name="SurveyTypeCD" Type="smallint" />
+    <Property Name="ImportPeriodInDays" Type="int" />
+    <Property Name="cpatchVersion" Type="nvarchar(max)" />
+    <Property Name="Datayear" Type="nvarchar" MaxLength="8" />
+    <Property Name="Approver" Type="int" Nullable="false" />
+    <Property Name="ApproverName" Type="nvarchar" MaxLength="115" />
+    <Property Name="GrFrom" Type="tinyint" Nullable="false" />
+    <Property Name="GrTo" Type="tinyint" Nullable="false" />
+    <Property Name="DateFrom" Type="smalldatetime" Nullable="false" />
+    <Property Name="DateTo" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="SASAMSWarehouseModelStoreContainer">
+    <EntitySet Name="WarehouseImportStatistics" EntityType="Self.WarehouseImportStatistics" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="vwst_lsmOutstandingWarehouseUploads" EntityType="Self.vwst_lsmOutstandingWarehouseUploads" store:Type="Views" store:Schema="Report">
+      <DefiningQuery>SELECT 
+    [vwst_lsmOutstandingWarehouseUploads].[NatEmis] AS [NatEmis], 
+    [vwst_lsmOutstandingWarehouseUploads].[Institution_Name] AS [Institution_Name], 
+    [vwst_lsmOutstandingWarehouseUploads].[Sector] AS [Sector], 
+    [vwst_lsmOutstandingWarehouseUploads].[Type_PED] AS [Type_PED], 
+    [vwst_lsmOutstandingWarehouseUploads].[Phase_DoE] AS [Phase_DoE], 
+    [vwst_lsmOutstandingWarehouseUploads].[EIDistrict] AS [EIDistrict], 
+    [vwst_lsmOutstandingWarehouseUploads].[EICircuit] AS [EICircuit], 
+    [vwst_lsmOutstandingWarehouseUploads].[Addressee] AS [Addressee], 
+    [vwst_lsmOutstandingWarehouseUploads].[Township_Village] AS [Township_Village], 
+    [vwst_lsmOutstandingWarehouseUploads].[Suburb] AS [Suburb], 
+    [vwst_lsmOutstandingWarehouseUploads].[Town_City] AS [Town_City], 
+    [vwst_lsmOutstandingWarehouseUploads].[StreetAddress] AS [StreetAddress], 
+    [vwst_lsmOutstandingWarehouseUploads].[Box_P_Bag] AS [Box_P_Bag], 
+    [vwst_lsmOutstandingWarehouseUploads].[Box_Bag_Postal_Code] AS [Box_Bag_Postal_Code], 
+    [vwst_lsmOutstandingWarehouseUploads].[PostalAddress] AS [PostalAddress], 
+    [vwst_lsmOutstandingWarehouseUploads].[Telephone] AS [Telephone], 
+    [vwst_lsmOutstandingWarehouseUploads].[cellno] AS [cellno], 
+    [vwst_lsmOutstandingWarehouseUploads].[PrincipalsCell] AS [PrincipalsCell], 
+    [vwst_lsmOutstandingWarehouseUploads].[E_Mail] AS [E_Mail], 
+    [vwst_lsmOutstandingWarehouseUploads].[Quintile] AS [Quintile], 
+    [vwst_lsmOutstandingWarehouseUploads].[DemarcationFrom] AS [DemarcationFrom], 
+    [vwst_lsmOutstandingWarehouseUploads].[DemarcationTo] AS [DemarcationTo], 
+    [vwst_lsmOutstandingWarehouseUploads].[Municipality] AS [Municipality], 
+    [vwst_lsmOutstandingWarehouseUploads].[EmisCode] AS [EmisCode], 
+    [vwst_lsmOutstandingWarehouseUploads].[ImportYear] AS [ImportYear]
+    FROM [Report].[vwst_lsmOutstandingWarehouseUploads] AS [vwst_lsmOutstandingWarehouseUploads]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwst_ltsmWarehouseImports" EntityType="Self.vwst_ltsmWarehouseImports" store:Type="Views" store:Schema="Report">
+      <DefiningQuery>SELECT 
+    [vwst_ltsmWarehouseImports].[ImportId] AS [ImportId], 
+    [vwst_ltsmWarehouseImports].[EmisCode] AS [EmisCode], 
+    [vwst_ltsmWarehouseImports].[Quater] AS [Quater], 
+    [vwst_ltsmWarehouseImports].[StartDate] AS [StartDate], 
+    [vwst_ltsmWarehouseImports].[EndDate] AS [EndDate], 
+    [vwst_ltsmWarehouseImports].[CurrentYear] AS [CurrentYear], 
+    [vwst_ltsmWarehouseImports].[Term] AS [Term], 
+    [vwst_ltsmWarehouseImports].[ImportYear] AS [ImportYear], 
+    [vwst_ltsmWarehouseImports].[ImportMonth] AS [ImportMonth], 
+    [vwst_ltsmWarehouseImports].[Importday] AS [Importday], 
+    [vwst_ltsmWarehouseImports].[ImportyYr] AS [ImportyYr], 
+    [vwst_ltsmWarehouseImports].[ImportMon] AS [ImportMon], 
+    [vwst_ltsmWarehouseImports].[Status] AS [Status], 
+    [vwst_ltsmWarehouseImports].[IsApproved] AS [IsApproved], 
+    [vwst_ltsmWarehouseImports].[Comment] AS [Comment], 
+    [vwst_ltsmWarehouseImports].[Incumbent] AS [Incumbent], 
+    [vwst_ltsmWarehouseImports].[EIDistrict] AS [EIDistrict], 
+    [vwst_ltsmWarehouseImports].[DstName] AS [DstName], 
+    [vwst_ltsmWarehouseImports].[LocationFlag] AS [LocationFlag], 
+    [vwst_ltsmWarehouseImports].[EICircuit] AS [EICircuit], 
+    [vwst_ltsmWarehouseImports].[CircuitName] AS [CircuitName], 
+    [vwst_ltsmWarehouseImports].[EMail] AS [EMail], 
+    [vwst_ltsmWarehouseImports].[RefName] AS [RefName], 
+    [vwst_ltsmWarehouseImports].[First_Name] AS [First_Name], 
+    [vwst_ltsmWarehouseImports].[Last_Name] AS [Last_Name], 
+    [vwst_ltsmWarehouseImports].[SurveyType] AS [SurveyType], 
+    [vwst_ltsmWarehouseImports].[SurveyTypeCD] AS [SurveyTypeCD], 
+    [vwst_ltsmWarehouseImports].[ImportPeriodInDays] AS [ImportPeriodInDays], 
+    [vwst_ltsmWarehouseImports].[cpatchVersion] AS [cpatchVersion], 
+    [vwst_ltsmWarehouseImports].[Datayear] AS [Datayear], 
+    [vwst_ltsmWarehouseImports].[Approver] AS [Approver], 
+    [vwst_ltsmWarehouseImports].[ApproverName] AS [ApproverName], 
+    [vwst_ltsmWarehouseImports].[GrFrom] AS [GrFrom], 
+    [vwst_ltsmWarehouseImports].[GrTo] AS [GrTo], 
+    [vwst_ltsmWarehouseImports].[DateFrom] AS [DateFrom], 
+    [vwst_ltsmWarehouseImports].[DateTo] AS [DateTo]
+    FROM [Report].[vwst_ltsmWarehouseImports] AS [vwst_ltsmWarehouseImports]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

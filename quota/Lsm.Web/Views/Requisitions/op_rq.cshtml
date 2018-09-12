@@ -1,0 +1,136 @@
+﻿@model  LimpEmisPortal.Models.RequisitionsViewModel
+
+@{
+    var rwi = 1;
+    ViewBag.Title = Model.requisitionId;
+}
+
+<div class="row">
+    <br />
+    <br />
+    <div class="row" style="border-bottom:1px solid #ecf0f1">
+        <address dir="rtl">
+            <table class="table-condensed table-hover table-responsive">
+                <tr>
+                    <td><small>@Model.School.EmisCode</small></td>
+                </tr>
+                <tr>
+                    <td class="text-capitalize"><small>@Model.School.Name</small></td>
+                </tr>
+                <tr>
+                    <td class="text-capitalize"><small>@Model.School.Initials, @Model.School.PrincipalLastName </small></td>
+                </tr>
+                <tr>
+                    <td><small>@Model.School.Email</small></td>
+                </tr>
+                <tr>
+                    <td>
+                            <span class=@( Model.School.Telephone.ToString().Length >= 10 ? "glyphicon glyphicon-phone-alt" : "")></span>  @if (Model.School.Telephone.ToString().Length >= 10)
+            { <span> &nbsp; </span> }  <small> @(Model.School.Telephone.ToString().Length >= 10 ? Model.School.Telephone : "Invalid Telephone Number") </small>  @if (Model.School.Email.Contains("@"))
+            { <span> &nbsp; | &nbsp; </span> }   <small><span class="@(Model.School.Email.Contains("@") ? "glyphicon glyphicon-envelope" : "")"></span> &nbsp; @(Model.School.Email.Contains("@") ? Model.School.Email : "")</small>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-capitalize"><small>@Model.School.EICircuit</small></td>
+                </tr>
+                <tr>
+                    <td class="text-capitalize"><small>@Model.School.EIDistrict</small></td>
+                </tr>
+            </table>
+        </address>
+    </div>
+    <div class="row" style="border-bottom:1px solid #ecf0f1"><br/>
+        <address>
+            <table class="table-condensed table-hover">
+                <tr><td><small> @(string.Concat(Model.Incumbent.RefName))</small></td></tr>
+                <tr><td><small> @(Model.Incumbent.Designation) &nbsp; | &nbsp; @(Model.Incumbent.Address)</small></td></tr>
+                <tr><td><small> @(Model.Incumbent.Phone_Number)</small></td></tr>
+                <tr><td><small> @(Model.Incumbent.Email)</small></td></tr>
+            </table>
+        </address>
+    </div>
+    <div class="row">
+        <br/>
+        <table class="col-md-10 table-condensed table-hover table-responsive" style="border:1px solid #ecf0f1">
+            <tr>
+
+                <td style="text-align:right" colspan="3">Status</td>
+                <td style="background-color:orange;text-align:center">@Model.Status</td>
+            </tr>
+            <tr>
+                <td><strong> Requisition Reference </strong></td>
+                <td><h4>@Model.Requisition.ReqID</h4></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>EMIS Number</strong></td>
+                <td colspan="3"><strong>@Model.Requisition.EMIS</strong></td>
+            </tr>
+        </table>
+        <div class="col-md-2">
+            <p style="text-indent:15px"><small>Book Year</small></p>
+            <p style="text-indent:15px"><strong><small>@Model.Requisition.BookYear</small></strong></p>
+            <p style="text-indent:15px"><small>Date Created</small></p>
+            <p style="text-indent:15px"><strong><small>@Model.Requisition.ReqDate</small></strong></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 s-right-partial-content-with-w">
+            <br /><br />
+            <table class="col-md-12 table  table-condensed table-hover table-responsive">
+                <tr>
+                    <th># &nbsp; Title</th>
+                    <th>ISBN</th>
+                    <th>Category</th>
+                    <th>Grade</th>
+                    <th>Subject</th>
+                    <th></th>
+                    <th>PUnit</th>
+                    <th>Avl</th>
+                    <th>Qty</th>
+                    <th></th>
+                    <th>Total Price</th>
+                </tr>
+                @foreach (var bm in Model.ShoppingCardList)
+                {
+                    <tr>
+                        <td><small>@rwi. &nbsp; @bm.ItemName</small></td>
+                        <td><small>@bm.ISBN</small></td>
+                        <td><small>@bm.Category</small></td>
+                        <td><small>@bm.Grade</small></td>
+                        <td><small>@bm.SubjectName</small></td>
+                        <td style="text-align:right"><small>R</small></td>
+                        <td><small>@(Math.Round((decimal)bm.Price , 2 , MidpointRounding.AwayFromZero))</small></td>
+                        <td><small>@((bm.CategoryCD == 21 || bm.CategoryCD == 22) ? bm.TeacherCount : bm.SubjEnrol)</small></td>
+                        <td><small>@bm.Qty</small></td>
+                        <td style="text-align:right; background-color:#ecf0f1"><strong><small>R</small></strong></td>
+                        <td style="background-color:#ecf0f1">
+                            <strong>
+                                <small>
+                                    @(string.Concat("", Math.Round((double)(bm.TotalPrice), 2, MidpointRounding.AwayFromZero).ToString()))
+                                </small>
+                            </strong>
+                        </td>
+                    </tr>
+                    rwi += 1;
+                }
+                <tr style="background-color: #ecf0f1">
+                    <td colspan="9"></td>
+                    <td style="text-align:right">
+                        <strong>R</strong>
+                    </td>
+                    <td>
+                           <strong>
+                                @(string.Concat("", Math.Round((decimal)(Model.TotalPrice), 2, MidpointRounding.AwayFromZero).ToString()))
+                            </strong>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+@{
+    rwi = 1;
+}

@@ -1,0 +1,37 @@
+﻿@model LimpEmisPortal.Models.RequisitionsViewModel
+
+
+<style>
+      .text-field-width {
+              max-width:50px;
+      }
+</style>
+@if (Model.Quantity > 0)
+{
+<div class="col-md-12">
+    <br/>
+    @using (Ajax.BeginForm("AddToCardMiniEFormSubmission", "Requisitions",
+                        new AjaxOptions { HttpMethod = "POST",
+                            UpdateTargetId = "books-hits-sheet",
+                            InsertionMode = InsertionMode.Replace,
+                            LoadingElementId = string.Concat(Model.ItemId, "_", "add_to_card_ajax_loader") }))
+    {
+
+        <div>
+            <div class="input-group input-group-sm">
+
+                <input type="text" class="form-control" aria-describedby="sizing-addon3" name="Quantity" id="Quantity" style="width:50px" placeholder="@(Model.Quantity)">
+            @Html.TextBoxFor( c => c.ItemId ,  new { @style="display:none" })
+            @Html.TextBoxFor(c => c.requisitionId, new { @style = "display:none" })
+
+                <span class="input-group-btn">
+                    <button class="btn btn-default btn-sm" type="submit"><span class="glyphicon glyphicon-shopping-cart"></span> <img src="~/Content/Images/ajax-loader.gif" id=@string.Concat(Model.ItemId,"_","add_to_card_ajax_loader") style="display:none;width:18px; height:18px" /> &nbsp; Add to Card</button>
+                </span>
+            </div><!-- /input-group -->
+
+        </div><!-- /.col-lg-6 -->
+
+    }
+    <br />
+</div>
+}

@@ -1,0 +1,48 @@
+﻿@*@model LimpEmisPortal.Models.MiniDashboardMetrics
+@using PagedList.Mvc
+
+<div class="s-right-partial-content-with-w col-md-12" id="div_learnerhits">
+    <p style="color:#f4f4f4; text-align:right">
+        <small> Found @Model._lnrReturnHits.TotalItemCount results</small>
+    </p>
+    <table class="table-condensed table-hover table-responsive col-md-12 ">
+
+        <tr style="border-bottom:1px solid #ecf0f1;border-top:1px solid #ecf0f1 ">
+            <th> Name</th>
+            <th style="text-align:center">  Registration</th>
+            <th style="text-align:center"> Grd</th>
+            <th style="text-align:right"> LURITS</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td style="text-align:center" colspan="4">
+                <img src="~/Content/Images/ajax-loader.gif" id="search_lnrPg_ajax_loading" style="display:none;width:18px; height:18px" />
+            </td>
+            <td></td>
+        </tr>
+        @foreach (var l in Model._lnrReturnHits)
+        {
+            <tr>
+                <td> <small> @string.Concat(l.SName, " ", l.FName)</small></td>
+                <td style="text-align:right"><small>Registered to <span> @l.SchoolName</span> since <ins style="color:#428bca"> @l.TheDate</ins></small></td>
+                <td style="text-align:center"><small>@l.Grade</small></td>
+                <td style="text-align:right"><small>@( l.LuritsNumber.ToString().Length > 8 ? l.LuritsNumber.ToString() : "Provisional Learner")</small></td>
+                <td><span class="@(l.LuritsNumber.ToString().Length > 8 ? " " : "glyphicon glyphicon-remove-circle")" style="color:red"  ></span></td>
+            </tr>
+        }
+
+    </table>
+    <br/><br />
+    <div class="col-md-12">
+        Page @(Model._lnrReturnHits.PageCount < Model._lnrReturnHits.PageNumber ? 0 : Model._lnrReturnHits.PageNumber) of @Model._lnrReturnHits.PageCount
+        @Html.PagedListPager(Model._lnrReturnHits,
+                          page => Url.Action("provLearnrSearch", "Home", new { page = page }),
+        PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(new AjaxOptions()
+        {
+            HttpMethod = "GET",
+            LoadingElementId = "search_lnrPg_ajax_loading",
+            InsertionMode = InsertionMode.Replace,
+            UpdateTargetId = "div_learnerhits"
+        }))
+    </div>
+</div>*@

@@ -1,0 +1,4 @@
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.TOD\bin\Debug\Dashboard.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.TOD\bin\Debug\Dashboard.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.TOD\obj\Debug\Dashboard.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.TOD\obj\Debug\Dashboard.pdb

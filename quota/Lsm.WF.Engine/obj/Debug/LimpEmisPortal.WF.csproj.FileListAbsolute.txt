@@ -1,0 +1,1 @@
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.WF\obj\Debug\LimpEmisPortal.WF.csprojResolveAssemblyReference.cache

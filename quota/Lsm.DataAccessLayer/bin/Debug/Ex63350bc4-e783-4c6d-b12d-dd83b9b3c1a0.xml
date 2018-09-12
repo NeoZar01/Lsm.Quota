@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExceptionEnvelop xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SeverityLevel>1</SeverityLevel>
+  <Entity />
+  <EntityKey xsi:type="xsd:int">0</EntityKey>
+  <Error>This is the error </Error>
+  <Exception>Object reference not set to an instance of an object.</Exception>
+  <Solution>This is a solution</Solution>
+  <LastModifiedDate>2017-11-05T03:54:03.423367+02:00</LastModifiedDate>
+  <CreationDate>2017-11-05T03:54:03.413367+02:00</CreationDate>
+</ExceptionEnvelop>

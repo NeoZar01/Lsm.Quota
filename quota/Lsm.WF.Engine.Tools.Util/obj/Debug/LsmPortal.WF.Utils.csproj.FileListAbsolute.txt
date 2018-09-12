@@ -1,0 +1,4 @@
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF.Utils\bin\Debug\LsmPortal.WF.Utils.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF.Utils\bin\Debug\LsmPortal.WF.Utils.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF.Utils\obj\Debug\LsmPortal.WF.Utils.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF.Utils\obj\Debug\LsmPortal.WF.Utils.pdb

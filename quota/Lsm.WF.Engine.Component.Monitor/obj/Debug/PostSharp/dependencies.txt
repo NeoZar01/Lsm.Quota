@@ -1,0 +1,2 @@
+C:\ProgramData\PostSharp\6.0.25\bin.Release\net471\PostSharp.Compiler.Engine.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Monitor\obj\Debug\PostSharp\postsharp.config

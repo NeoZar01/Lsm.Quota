@@ -1,0 +1,53 @@
+﻿@*@model LimpEmisPortal.Models.WebSearchViewModel
+
+
+@{ 
+    var rownum = 1;
+ }
+
+<br />
+<div class="row">
+    <hr />
+    <div class="col-md-12">
+        <div class="col-md-7">
+        </div>
+        <div class="col-md-5">
+        </div>
+
+    </div>
+    <div class="col-md-8">
+        <table class="table-condensed table-responsive col-md-12 bg-white">
+            @foreach (var searchHit in Model.WebSearch)
+            {
+
+                <tr style="border-bottom:1px solid #ecf0f1">
+                    <td>
+                        <h5>
+                            @(rownum). <span class="text-capitalize">@searchHit.Name</span><br />                            
+                        </h5>
+                    </td>
+                    <td>
+                <small> <p class="text-right" style="margin-right:10px"><sub>Category : School  <span style="margin-left:15px"><span class="text-capitalize">@searchHit.KeyHolder</span> &nbsp; <br /> @searchHit.KeyHolderEmail</span> </sub> </p>
+                        <span>@(string.Concat(@searchHit.Description.Substring( 0 , 1 ).ToUpper() , searchHit.Description.Substring( 1 , searchHit.Description.Length -1).ToLower()))</span> &nbsp;</small>
+                    <p>
+                        <small style="float:right;margin-right:10px"><button type="button" class="btn btn-default btn-sm">Preview</button></small>
+                        <small><sub class="glyphicon glyphicon-time"></sub>  &nbsp; @searchHit.LastModifiedDate</small>
+                    </p>
+                </td>
+                </tr>
+                                rownum += 1;
+             }
+        </table>
+
+    </div>
+    <div class="col-md-4 panel panel-default">
+        <p class="text-right"> @(Model.TopSearchHit == null ? " " : Model.TopSearchHit.Name)</p>
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br/>
+    </div>
+</div>
+@{ 
+    rownum = 1;
+ }*@
+
+

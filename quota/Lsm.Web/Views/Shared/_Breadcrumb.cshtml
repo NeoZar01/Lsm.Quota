@@ -1,0 +1,202 @@
+﻿@using DoE.Lsm.Web.Api
+
+<div class="col-md-3 left_col">
+    <div class="left_col scroll-view">
+
+            <div class="navbar nav_title" style="border: 0;">                
+                <a href="@Url.Action("Index","Home")" class="site_title"><i class="fa fa-book"></i> &nbsp; <span>Quota  <sup class="text-danger"> <small> &nbsp; @ApplicationInfo.Environment </small> </sup></span></a>
+            </div>
+
+            <div class="clearfix"></div>
+            <br/>
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                @if (Request.IsAuthenticated)
+                {
+         <!-- /sidebar menu -->
+
+                <!-- menu profile quick info -->
+                    <div class="profile clearfix">
+                        <div class="profile_pic">
+                            <img src="~/Content/Images/img.jpg" alt="..." class="img-circle profile_img">
+                        </div>
+                        <div class="profile_info">
+                            <span>EMIS Code,</span>
+                            <h2>@User.Identity.GetUserName() </h2>
+                        </div>
+                    </div>
+                <!-- /menu profile quick info -->
+
+                    <div class="menu_section">
+
+                        <ul class="nav side-menu">
+                            <li>
+                                <a><i class="fa fa-table"></i> Requisition <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a  href="@Url.Action("Index", "Home")" >Dashboard</a></li>
+                                    <li><a>Worksheet &nbsp;<span class="fa fa-chevron-down"></span></a>
+                                        <ul class="nav child_menu">
+                                            <li class="sub_menu">
+                                                <a href="level2.html">Inbox</a>
+                                            </li>
+                                            <li>
+                                                <a href="#level2_2">Drafts</a>
+                                            </li>
+                                            <li>
+                                                <a href="#level2_1">Outbox</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a><i class="fa fa-truck"></i> Orders <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="#level1_1">Dashboard</a>
+                                    <li><a> Deliveries  <span class="fa fa-chevron-down"></span></a>
+                                        <ul class="nav child_menu">
+                                            <li class="sub_menu">
+                                                <a href="level2.html">Warehouse</a>
+                                            </li>
+                                            <li>
+                                                <a href="#level2_1">In Transit</a>
+                                            </li>
+                                            <li>
+                                                <a href="#level2_2">Completed</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                }
+                @if (Request.IsAuthenticated && User.IsInRole("Administrators"))
+                {
+                    <div class="menu_section">
+                        <h3>Administration</h3>
+                        <ul class="nav side-menu">
+                            <li>
+                                <a><i class="fa fa-user-md"></i> User Management <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="page_403.html">Dashboard</a></li>
+                                    <li><a href="page_404.html">Accounts</a></li>
+                                    <li><a href="page_500.html">Page Manager</a></li>
+                                    <li>@Html.ActionLink("Impersonate", "Impersonate", "Account", routeValues: null, htmlAttributes: new { title = "Impersonate" })</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a><i class="fa fa-bug"></i> Toolbox <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="e_commerce.html">Dashboard</a></li>
+                                    <li><a> Workflow  <span class="fa fa-chevron-down"></span></a>
+                                        <ul class="nav child_menu">
+                                            <li class="sub_menu">
+                                                <a href="level2.html">Dashboard</a>
+                                            </li>
+                                            <li>
+                                                <a href="#level2_1">Development</a>
+                                            </li>
+                                            <li>
+                                                <a href="#level2_2">Errors</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a>Data Store <span class="fa fa-chevron-down"></span></a>
+                                        <ul class="nav child_menu">
+                                            <li><a href="#level1_1">Dashboard</a>
+                                            <li>
+                                                <a> Sync Jobs  <span class="fa fa-chevron-down"></span></a>
+                                                <ul class="nav child_menu">
+                                                    <li class="sub_menu">
+                                                        <a href="level2.html">Profile Sync</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#level2_1">Requisition Syncs</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#level2_2">Orders Syncs</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#level2_2">Warehouse</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+                }
+            </div> <!-- sidebar menu -->                        
+
+                    <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+                <a data-toggle="tooltip" data-placement="top" title="Settings">
+                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                </a>
+                <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                    <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                </a>
+                <a data-toggle="tooltip" data-placement="top" title="Lock">
+                    <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+                </a>
+                <a  data-placement="top" title="Logout" class="btn-sm pull-left" data-toggle="modal" data-target="#disclaimer-dialog">
+                        <span class="glyphicon glyphicon-info-sign text-dark" aria-hidden="true"></span>
+                </a>
+            </div>
+                <!-- /menu footer buttons -->
+            </div>
+        </div>
+
+
+<!-- Disclaimer information modal -->
+<div class="modal fade" id="disclaimer-dialog" tabindex="-1" role="dialog" aria-labelledby="disclaimer-dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Terms and Conditions</h5>
+                <button type="button" class="btn btn-success btn-sm pull-right" data-dismiss="modal" aria-label="Close">
+                    Close
+                </button>
+            </div>
+            <div class="modal-body">
+                <h2>WEBSITE TERMS AND CONDITIONS &nbsp; <br /> <small>MRL-TAC-IT-001 (v2.00)</small></h2>
+                <br />
+                <div class="mb-5">
+                    <section>
+                        <h2>Introduction and Acceptance</h2>
+                        <div>
+                            <p class="md-2">These terms and conditions govern your use of this website by using this website, you accept these terms and conditions in full.</p>
+                        </div>
+                    </section>
+                    <section>
+                        <p class="mb-2">
+                            Unless otherwise stated.The Company and/or its licensors own the intellectual property rights in the website and material on the website.
+                            Subject to the license below, all these intellectual property rights are reserved.
+                        </p>
+                        <p class="mb-2">
+                            You may view, download for caching purposes only, and print pages from the website for your own intellectual property rights in the website and material on the website.Subject to the license below, all these intellectial property rights are reserved.
+                        </p>
+                        <div class="mb-2">
+                            <p>You must not:</p>
+                            <ul>
+                                <li>republish material from this website( including republication on another website)</li>
+                                <li>sell, rent or sub-license material from the website</li>
+                                <li>reproduce, duplicate, copy or otherwise exploit material on this website for commercial purpose</li>
+                                <li>edit or otherwise modify any material on the website , or</li>
+                                <li>redistribute material from this website except for content specifically and expressly made available for redistribution by the Company. </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,93 @@
+C:\Personal Work Drive\Quota\LimpEmisPortal\Lsm.WF.PI.PerfomanceMonitor\bin\Debug\Lsm.WF.PI.PerfomanceMonitor.exe.config
+C:\Personal Work Drive\Quota\LimpEmisPortal\Lsm.WF.PI.PerfomanceMonitor\bin\Debug\Lsm.WF.PI.PerfomanceMonitor.exe
+C:\Personal Work Drive\Quota\LimpEmisPortal\Lsm.WF.PI.PerfomanceMonitor\bin\Debug\Lsm.WF.PI.PerfomanceMonitor.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\Lsm.WF.PI.PerfomanceMonitor\obj\Debug\Lsm.WF.PI.PerfomanceMonitor.exe
+C:\Personal Work Drive\Quota\LimpEmisPortal\Lsm.WF.PI.PerfomanceMonitor\obj\Debug\Lsm.WF.PI.PerfomanceMonitor.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.WF.PI.PerfomanceMonitor\bin\Debug\Lsm.WF.PI.PerfomanceMonitor.exe.config
+C:\Homework\Quota\QuotaPortal\Lsm.WF.PI.PerfomanceMonitor\bin\Debug\Lsm.WF.PI.PerfomanceMonitor.exe
+C:\Homework\Quota\QuotaPortal\Lsm.WF.PI.PerfomanceMonitor\bin\Debug\Lsm.WF.PI.PerfomanceMonitor.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.WF.PI.PerfomanceMonitor\obj\Debug\Lsm.WF.PI.PerfomanceMonitor.exe
+C:\Homework\Quota\QuotaPortal\Lsm.WF.PI.PerfomanceMonitor\obj\Debug\Lsm.WF.PI.PerfomanceMonitor.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\Lsm.WF.PI.PerfomanceMonitor.exe.config
+C:\Homework\Quota\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\Lsm.WF.PI.PerfomanceMonitor.exe
+C:\Homework\Quota\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\Lsm.WF.PI.PerfomanceMonitor.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.WF.Engine.Component.Monitor\obj\Debug\Lsm.WF.PI.PerfomanceMonitor.exe
+C:\Homework\Quota\QuotaPortal\Lsm.WF.Engine.Component.Monitor\obj\Debug\Lsm.WF.PI.PerfomanceMonitor.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\Lsm.WF.PI.PerfomanceMonitor.pssym
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\Lsm.WF.PI.PerfomanceMonitor.dll.config
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\Lsm.WF.PI.PerfomanceMonitor.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\Lsm.WF.PI.PerfomanceMonitor.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\PostSharp.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\PostSharp.xml
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\obj\Debug\PostSharp\touch
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\obj\Debug\PostSharp\dependencies.txt
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\obj\Debug\Lsm.WF.PI.PerfomanceMonitor.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\obj\Debug\Lsm.WF.PI.PerfomanceMonitor.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\obj\Debug\PostSharp\postsharp.app.config
+F:\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\obj\Debug\Lsm.WF.Engine.Component.Monitor.csprojResolveAssemblyReference.cache
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.WF.Engine.Component.Monitor.pssym
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.WF.Engine.Component.Monitor.dll.config
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.WF.Engine.Component.Monitor.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.WF.Engine.Component.Monitor.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.Annotations.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.WF.Engine.Context.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\PostSharp.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.Logger.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\EntityFramework.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.Files.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.Annotations.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.WF.Engine.Context.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\PostSharp.xml
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.Logger.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\EntityFramework.xml
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.Files.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\obj\Debug\Lsm.WF.Engine.Component.Monitor.csprojResolveAssemblyReference.cache
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\obj\Debug\PostSharp\touch
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\obj\Debug\PostSharp\dependencies.txt
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\obj\Debug\DoE.Lsm.WF.Engine.Component.Monitor.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\obj\Debug\DoE.Lsm.WF.Engine.Component.Monitor.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Monitor\obj\Debug\PostSharp\postsharp.app.config
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.WF.Engine.Component.Monitor.pssym
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.WF.Engine.Component.Monitor.dll.config
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.WF.Engine.Component.Monitor.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.WF.Engine.Component.Monitor.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.Annotations.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.WF.Engine.Context.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\PostSharp.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.Logger.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\EntityFramework.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.Files.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.Annotations.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.WF.Engine.Context.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\PostSharp.xml
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.Logger.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\EntityFramework.xml
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.Files.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Component.Monitor\obj\Debug\Lsm.WF.Engine.Component.Monitor.csprojResolveAssemblyReference.cache
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Component.Monitor\obj\Debug\PostSharp\touch
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Component.Monitor\obj\Debug\PostSharp\dependencies.txt
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Component.Monitor\obj\Debug\DoE.Lsm.WF.Engine.Component.Monitor.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Component.Monitor\obj\Debug\DoE.Lsm.WF.Engine.Component.Monitor.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Component.Monitor\obj\Debug\PostSharp\postsharp.app.config
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.WF.Engine.Component.Monitor.pssym
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.WF.Engine.Component.Monitor.dll.config
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.WF.Engine.Component.Monitor.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.WF.Engine.Component.Monitor.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.Annotations.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.WF.Engine.Context.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\PostSharp.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.Logger.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\EntityFramework.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.Files.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.Annotations.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.WF.Engine.Context.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\PostSharp.xml
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.Logger.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\EntityFramework.xml
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.Files.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Monitor\obj\Debug\Lsm.WF.Engine.Component.Monitor.csprojResolveAssemblyReference.cache
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Monitor\obj\Debug\PostSharp\touch
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Monitor\obj\Debug\PostSharp\dependencies.txt
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Monitor\obj\Debug\DoE.Lsm.WF.Engine.Component.Monitor.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Monitor\obj\Debug\DoE.Lsm.WF.Engine.Component.Monitor.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Monitor\obj\Debug\PostSharp\postsharp.app.config

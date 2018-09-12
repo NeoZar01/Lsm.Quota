@@ -1,0 +1,33 @@
+﻿@model LimpEmisPortal.Models.IndexLtsmTabViewModel
+
+@{    
+    
+   var slrwnum = 1;   
+}
+
+<table class="table-condensed table-responsive table-hover">
+    <tr style="border-bottom:1px solid #ecf0f1">
+        <td>Subject</td>
+        <th style="text-align:center">Grd</th>
+        <th>Enr</th>
+        <th>Avl</th>
+        <th><img src="~/Content/Images/ajax-loader.gif" id="_lrnPrSubjEnrol-ajax-loader" style="display:none;width:18px; height:18px" /></th>
+    </tr>
+    @foreach (var z in Model.ViewSubjectEnrolmentPerGrade)
+    {
+        <tr>
+            <td><small> @slrwnum. &nbsp; @z.Name</small> </td>
+            <td style="text-align:center"><small>@z.Grade</small></td>
+            <td style="text-align:center"><small>@z.TOTAL</small></td>
+            <td style ="text-align:right">
+                <small><strong>@z.Unit</strong></small></td>
+                <td></td>
+</tr>
+        slrwnum += 1;
+    }
+</table>
+
+@{
+    slrwnum = 1;
+}
+

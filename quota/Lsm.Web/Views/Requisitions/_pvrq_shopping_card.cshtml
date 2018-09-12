@@ -1,0 +1,168 @@
+﻿@model LimpEmisPortal.Models.ShoppingCardViewModel
+
+@{
+
+    var rwId = 1;
+
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <center>
+            <img src="~/Content/Images/_top_bar_logo.jpg" width="1000" height="150" />
+        </center>
+    </div>
+    <div class="col-md-12">
+        <div class="text-capitalize text-right"><small> @Model.School.EICircuit &nbsp; | &nbsp; @Model.School.EIDistrict </small></div>
+    </div>
+    <hr/>
+    <div class="col-md-12" style="border-top:1px solid #ecf0f1">
+        <h4 class="text-uppercase">Requisition Card To</h4>
+    </div><br/><br />
+    <div class="col-md-12">
+        <address dir="rtl" style="clear:both;margin-right:8px">
+            <div ><small> @Model.School.EmisCode </small></div>
+            <div class="text-capitalize"><small> @(string.Concat(Model.School.Name , " " , Model.School.PhaseDescription)) </small></div>
+            <div class="text-capitalize"><small> @Model.Address.PostalBox </small></div>
+            <div class="text-capitalize"><small> @Model.Address.PostalOffice </small></div>
+            <div class="text-capitalize"><small> @Model.Address.PostalCode </small></div>
+            <div class="text-capitalize"><small> @Model.School.Email </small></div>
+            <div>
+                <span class=@( Model.School.Telephone.ToString().Length >= 10 ? "glyphicon glyphicon-phone-alt" : "")></span>  @if (Model.School.Telephone.ToString().Length >= 10)
+            { <span> &nbsp; </span> }  <small> @(Model.School.Telephone.ToString().Length >= 10 ? Model.School.Telephone : "Invalid Telephone Number") </small> 
+              </div>
+            <div>
+                @if (Model.School.Email.Contains("@"))
+            { <span> &nbsp; | &nbsp; </span> }   <small><span class="@(Model.School.Email.Contains("@") ? "glyphicon glyphicon-envelope" : "")"></span> &nbsp; @(Model.School.Email.Contains("@") ? Model.School.Email : "")</small>
+           </div>
+            <div class="text-capitalize"><small> @(string.Concat(Model.Address.PostalBox, ", ", Model.Address.PostalOffice, ", ", Model.School.EICircuit, ", ", Model.Address.PostalCode)) </small></div>
+    </address>
+</div>
+<div class="col-md-12">
+    <div class="col-md-12">
+        <h4 > &nbsp; Requisition Number  &nbsp; : <small>IM</small> @Model.reqId</h4>
+    </div>
+    <div class="col-md-12" style="border-top:1px solid #ecf0f1">
+        <br/>
+        <address>
+            <div><small>@Model.Approver.CircuitName</small></div>
+            <small> Manager  &nbsp; :  &nbsp; &nbsp;@Model.Approver.First_Name &nbsp;  @Model.Approver.Last_Name</small><br />
+            <small> <span class="glyphicon glyphicon-earphone"></span>   &nbsp; @Model.Approver.Phone_Number </small><br />
+            <small> <span class="glyphicon glyphicon-envelope"></span>   &nbsp; @Model.Approver.Email</small>
+        </address>
+    </div>
+</div>
+    <br />
+    <div class="col-md-12">
+        <div class="col-md-12" style="border-bottom:1px solid #ecf0f1">
+            <h4 class="text-uppercase">Ordered Items</h4>
+        </div><br/>
+        <table class="table-condensed table-bordered table-hover table-responsive col-md-12 ">
+            <tr style="background-color: #f2f2f2">
+                <th><small>Book Name </small></th>
+                <th><small>ISBN</small></th>
+                <th><small>Category </small></th>
+                <th><small>Subject </small></th>
+                <th><small>Grade </small></th>
+                <th><small>Quota</small></th>
+                <th><small>Price</small></th>
+                <th style="text-align:center"><small>Qty</small></th>
+                <th><small>Total Price </small></th>
+               <th><small></small></th>
+            </tr>
+            
+            @foreach (var c in Model.ShoppingCardList)
+            {
+                <tr>
+                    <td class="text-capitalize"> <small>@(rwId). &nbsp; @c.ItemName</small></td>
+                    <td><small>@c.ISBN</small></td>
+                    <td><small>@c.Category</small></td>
+                    <td><small>@c.SubjectName</small></td>
+                    <td class="text-center"><small>@c.Grade</small></td>
+                    <td class="text-center"><small>@(c.Available2)</small></td>
+                    <td><small>@(string.Concat("R", Math.Round(c.Price , 2 , MidpointRounding.AwayFromZero).ToString()))</small></td>
+                    <td style="text-align:center"><small>@c.OrderQty</small></td>
+                    <td><small> <strong>@(string.Concat("R", Math.Round((decimal)c.TotalPrice, 2, MidpointRounding.AwayFromZero).ToString()))</strong></small></td>
+                    <td>
+                        <small>
+                            @Ajax.ActionLink(" ", "RefreshShoppingCard",
+                                                  "Requisitions", new
+                                                  {
+                                                      ReqId = Model.reqId,
+                                                  }, new AjaxOptions
+                                                  {
+                                                      UpdateTargetId = "shopping-card-refresh-ajax-locator",
+                                                      InsertionMode = InsertionMode.Replace,
+                                                      HttpMethod = "GET",
+                                                      LoadingElementId = "orderSum_ajax_Loader"
+                                                  },
+                           htmlAttributes: new { @class = "glyphicon glyphicon-edit", @style = "font-size:12px;font-weight:bold;line-height:1; color:#1ab394; text-shadow:0 1px 0 #ffffff; opacity:0.8; filter:alpha(opacity=80)" })
+
+                        </small>&nbsp;&nbsp;
+
+
+
+
+
+                        <small>
+                            @Ajax.ActionLink(" ", "RefreshShoppingCard",
+                                                  "Requisitions", new
+                                                  {
+                                                      ReqId = Model.reqId,
+                                                  }, new AjaxOptions
+                                                  {
+                                                      UpdateTargetId = "shopping-card-refresh-ajax-locator",
+                                                      InsertionMode = InsertionMode.Replace,
+                                                      HttpMethod = "GET",
+                                                      LoadingElementId = "orderSum_ajax_Loader"
+                                                  },
+                           htmlAttributes: new { @class = "glyphicon glyphicon-trash", @style = "font-size:12px;font-weight:bold;line-height:1; color:red; text-shadow:0 1px 0 #ffffff; opacity:0.8; filter:alpha(opacity=80)" })
+
+
+                        </small>
+                    </td> 
+                </tr>
+                rwId += 1;
+            }
+            
+            <tr><td colspan="8"></td><td><br /></td><td></td></tr>
+            <tr  style="background-color: #f2f2f2">
+                <td style="text-align:right" colspan="8"><strong>Total Amount</strong></td>
+                <td><strong>@(string.Concat("R", Math.Round((decimal)Model.TotalPrice, 2, MidpointRounding.AwayFromZero).ToString()))</strong></td>          
+                <td></td>
+            </tr>
+        </table>
+        @{
+
+            rwId = 1;
+
+        }
+    </div>
+
+    <div class="row" >
+        <div class="col-md-12">
+            <hr />
+        </div>
+        <div style="float:right;margin-right:25px">
+
+            @using (Html.BeginForm())
+            {
+                @Html.ActionLink("Save to Drafts",
+                             "SaveShopppingCardToDrafts",
+                             "Requisitions",
+                             new { reqId = Model.reqId },
+                             htmlAttributes: new { @class = "btn btn-default btn-sm" })
+
+
+                 if (Model.Status.Equals("Saved To Draft") || Model.Status.Equals("Confirmation Denied") || Model.Status.Equals("Open For Ordering") && Model.ShoppingCardList.Count() > 0)
+                {
+                    @Html.ActionLink("Submit to Manager",
+                                 "SendShoppingCardToApprover",
+                                 "Requisitions",
+                             new { reqId = Model.reqId },
+                             htmlAttributes: new { @class = "btn btn-primary btn-sm" })
+                }
+            }
+        </div>
+    </div>
+</div>

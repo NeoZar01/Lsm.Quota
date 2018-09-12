@@ -1,0 +1,80 @@
+﻿@*@model LimpEmisPortal.Models.ContactsViewModel
+
+<br />
+<br />
+<div class="panel panel-default">
+    <div class="panel-heading">
+
+        <h3 class="panel-title">
+            <span class="glyphicon glyphicon-user"></span> &nbsp; Limpopo Department of Education &nbsp; &bull; &nbsp; GAL &nbsp;
+            <span class="dropdown">
+                <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                     <span href="#">@ViewBag.CurrentDIR</span> <img src="~/Content/Images/ajax-loader.gif" id="ajax_loading_get_for_ord_ct" style="display:none; width:16px; height:16px " /> &nbsp;
+                    <sub class="glyphicon glyphicon-chevron-down"></sub>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li>
+                        @Ajax.ActionLink("LTSM", "select__DIR", "Home", new { directorateFlag = 1 },
+                                    new AjaxOptions
+                                    {
+                                        UpdateTargetId = "__catHeader",
+                                        InsertionMode = InsertionMode.Replace,
+                                        HttpMethod = "GET",
+                                        LoadingElementId = "ajax_loading_get_for_ord_ct"
+                                    }, htmlAttributes: null)                       
+                    </li>
+                    <li>
+                        @Ajax.ActionLink("EMIS", "select__DIR", "Home", new { directorateFlag = 0 },
+                                    new AjaxOptions
+                                    {
+                                        UpdateTargetId = "__catHeader",
+                                        InsertionMode = InsertionMode.Replace,
+                                        HttpMethod = "GET",
+                                        LoadingElementId = "ajax_loading_get_for_ord_ct"
+
+                                    }, htmlAttributes: null)
+                    </li>
+                </ul>
+            </span>
+            &nbsp;
+            <span class="dropdown">
+                <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Location &nbsp;
+                    <sub class="glyphicon glyphicon-chevron-down"></sub>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li>
+                        @Ajax.ActionLink("Head Office", "FindGALContact", "Home", new { locId = 0, rankFlag = ViewBag.Directorate },
+                                    new AjaxOptions
+                                    {
+                                        UpdateTargetId = "contPub",
+                                        InsertionMode = InsertionMode.Replace,
+                                        HttpMethod = "POST",
+                                        LoadingElementId = "ajax_loading_get_for_ord_ct"
+
+                                    }, htmlAttributes: null)
+                    </li>
+                    <li class="ui-icon-calculator"></li>
+                    @foreach (var d in Model.LimpopoDistricts)
+                    {
+                        <li>
+                            @Ajax.ActionLink(d.Name, "FindGALContact", "Home", new { locId = @d.EIDistrict, rankFlag = ViewBag.Directorate },
+                                    new AjaxOptions
+                                    {
+                                        UpdateTargetId = "contPub",
+                                        InsertionMode = InsertionMode.Replace,
+                                        HttpMethod = "POST",
+                                        LoadingElementId = "ajax_loading_get_for_ord_ct"
+
+                                    }, htmlAttributes: null)
+                        </li>
+                    }
+                </ul>
+            </span>
+        </h3>
+    </div>
+    <div class="panel-body" id="contPub">
+        @*    @{ Html.RenderAction("ContactProfiles", "Home", new  { directorate = ViewBag.currentDirectorate }); }
+    </div>
+</div>*@
+

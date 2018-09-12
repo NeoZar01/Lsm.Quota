@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="VisualizorPortalDATAModelStoreContainer" CdmEntityContainer="VisualizorPortalDATAEntities">
+    <EntitySetMapping Name="vw_WEP_s_ConsolidatedEMISCircuit">
+      <EntityTypeMapping TypeName="VisualizorPortalDATAModel.vw_WEP_s_ConsolidatedEMISCircuit">
+        <MappingFragment StoreEntitySet="vw_WEP_s_ConsolidatedEMISCircuit">
+          <ScalarProperty Name="EICircuit" ColumnName="EICircuit" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EIDistrict" ColumnName="EIDistrict" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_WEP_s_ConsolidatedEMISDistricts">
+      <EntityTypeMapping TypeName="VisualizorPortalDATAModel.vw_WEP_s_ConsolidatedEMISDistricts">
+        <MappingFragment StoreEntitySet="vw_WEP_s_ConsolidatedEMISDistricts">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ProvinceCD" ColumnName="ProvinceCD" />
+          <ScalarProperty Name="Manager" ColumnName="Manager" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_WEP_s_VisualizedEnrolLearners">
+      <EntityTypeMapping TypeName="VisualizorPortalDATAModel.vw_WEP_s_VisualizedEnrolLearners">
+        <MappingFragment StoreEntitySet="vw_WEP_s_VisualizedEnrolLearners">
+          <ScalarProperty Name="AccessionNo" ColumnName="AccessionNo" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwLIMQ_TotalNumberOfSchools">
+      <EntityTypeMapping TypeName="VisualizorPortalDATAModel.vwLIMQ_TotalNumberOfSchools">
+        <MappingFragment StoreEntitySet="vwLIMQ_TotalNumberOfSchools">
+          <ScalarProperty Name="NatEmis" ColumnName="NatEmis" />
+          <ScalarProperty Name="ROW_ID" ColumnName="ROW_ID" />
+          <ScalarProperty Name="Total_" ColumnName="Total " />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

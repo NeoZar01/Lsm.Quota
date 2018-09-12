@@ -1,0 +1,146 @@
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\LimpEmisPortal.Notify.dll.config
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\LimpEmisPortal.Notify.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\LimpEmisPortal.Notify.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.Security.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Newtonsoft.Json.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Owin.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.Security.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\bin\Debug\Newtonsoft.Json.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\obj\Debug\LimpEmisPortal.Notify.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Notify\obj\Debug\LimpEmisPortal.Notify.pdb
+C:\Homework\Quota\QuotaPortal\LsmPortal.Notify\bin\Debug\LimpEmisPortal.Notify.dll.config
+C:\Homework\Quota\QuotaPortal\LsmPortal.Notify\bin\Debug\LimpEmisPortal.Notify.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.Notify\bin\Debug\LimpEmisPortal.Notify.pdb
+C:\Homework\Quota\QuotaPortal\LsmPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.Security.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.Notify\bin\Debug\Newtonsoft.Json.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.Notify\bin\Debug\Owin.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+C:\Homework\Quota\QuotaPortal\LsmPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Homework\Quota\QuotaPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.xml
+C:\Homework\Quota\QuotaPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Homework\Quota\QuotaPortal\LsmPortal.Notify\bin\Debug\Microsoft.Owin.Security.xml
+C:\Homework\Quota\QuotaPortal\LsmPortal.Notify\bin\Debug\Newtonsoft.Json.xml
+C:\Homework\Quota\QuotaPortal\LsmPortal.Notify\obj\Debug\LimpEmisPortal.Notify.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.Notify\obj\Debug\LimpEmisPortal.Notify.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.Notify\bin\Debug\LimpEmisPortal.Notify.dll.config
+C:\Homework\Quota\QuotaPortal\Lsm.Notify\bin\Debug\LimpEmisPortal.Notify.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Notify\bin\Debug\LimpEmisPortal.Notify.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.Owin.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.Owin.Security.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Notify\bin\Debug\Newtonsoft.Json.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Notify\bin\Debug\Owin.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+C:\Homework\Quota\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Homework\Quota\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.Owin.xml
+C:\Homework\Quota\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Homework\Quota\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.Owin.Security.xml
+C:\Homework\Quota\QuotaPortal\Lsm.Notify\bin\Debug\Newtonsoft.Json.xml
+C:\Homework\Quota\QuotaPortal\Lsm.Notify\obj\Debug\LimpEmisPortal.Notify.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Notify\obj\Debug\LimpEmisPortal.Notify.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\LimpEmisPortal.Notify.dll.config
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\LimpEmisPortal.Notify.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\LimpEmisPortal.Notify.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.Owin.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Owin.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.Owin.xml
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Notify\obj\Debug\LimpEmisPortal.Notify.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Notify\obj\Debug\LimpEmisPortal.Notify.pdb
+F:\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\LimpEmisPortal.Notify.dll.config
+F:\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\LimpEmisPortal.Notify.dll
+F:\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\LimpEmisPortal.Notify.pdb
+F:\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+F:\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.dll
+F:\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.Owin.dll
+F:\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+F:\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.Owin.Security.dll
+F:\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Newtonsoft.Json.dll
+F:\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Owin.dll
+F:\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+F:\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.xml
+F:\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.Owin.xml
+F:\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+F:\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.Owin.Security.xml
+F:\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Newtonsoft.Json.xml
+F:\Development - Rest\QuotaPortal\Lsm.Notify\obj\Debug\LimpEmisPortal.Notify.dll
+F:\Development - Rest\QuotaPortal\Lsm.Notify\obj\Debug\LimpEmisPortal.Notify.pdb
+F:\Development - Rest\QuotaPortal\Lsm.Notify\obj\Debug\Lsm.Notify.csprojResolveAssemblyReference.cache
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\LimpEmisPortal.Notify.dll.config
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\LimpEmisPortal.Notify.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\LimpEmisPortal.Notify.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.Owin.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.Owin.Security.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Newtonsoft.Json.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Owin.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.Owin.xml
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.Owin.Security.xml
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Notify\bin\Debug\Newtonsoft.Json.xml
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Notify\obj\Debug\LimpEmisPortal.Notify.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Notify\obj\Debug\LimpEmisPortal.Notify.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Notify\bin\Debug\LimpEmisPortal.Notify.dll.config
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Notify\bin\Debug\LimpEmisPortal.Notify.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Notify\bin\Debug\LimpEmisPortal.Notify.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.Owin.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Notify\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Notify\bin\Debug\Owin.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.Owin.xml
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Notify\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Notify\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Notify\obj\Debug\LimpEmisPortal.Notify.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Notify\obj\Debug\LimpEmisPortal.Notify.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Notify\bin\Debug\LimpEmisPortal.Notify.dll.config
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Notify\bin\Debug\LimpEmisPortal.Notify.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Notify\bin\Debug\LimpEmisPortal.Notify.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Notify\bin\Debug\Microsoft.Owin.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Notify\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Notify\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Notify\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Notify\bin\Debug\Owin.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Notify\bin\Debug\Microsoft.Owin.xml
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Notify\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Notify\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Notify\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Notify\obj\Debug\LimpEmisPortal.Notify.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Notify\obj\Debug\LimpEmisPortal.Notify.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Notify\obj\Debug\Lsm.Notify.csprojResolveAssemblyReference.cache

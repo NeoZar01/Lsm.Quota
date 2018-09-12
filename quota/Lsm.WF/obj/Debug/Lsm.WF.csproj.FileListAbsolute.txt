@@ -1,0 +1,160 @@
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF\bin\Debug\LEP.WF.Engine.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF\bin\Debug\LEP.WF.Engine.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF\bin\Debug\LsmPortal.WF.Engine.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF\bin\Debug\DoE.Data.Repository.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF\bin\Debug\WF.Utils.Items.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF\bin\Debug\Microsoft.Practices.Unity.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF\bin\Debug\WF.AddIn.Requisitions.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF\bin\Debug\EntityFramework.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF\bin\Debug\PagedList.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF\bin\Debug\DoE.Lsm.Logger.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF\bin\Debug\DoE.Lsm.Files.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF\bin\Debug\LsmPortal.WF.Engine.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF\bin\Debug\DoE.Data.Repository.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF\bin\Debug\WF.Utils.Items.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF\bin\Debug\Microsoft.Practices.Unity.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF\bin\Debug\WF.AddIn.Requisitions.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF\bin\Debug\EntityFramework.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF\bin\Debug\PagedList.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF\bin\Debug\DoE.Lsm.Logger.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF\bin\Debug\DoE.Lsm.Files.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF\obj\Debug\Lsm.WF.csprojResolveAssemblyReference.cache
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF\obj\Debug\LEP.WF.Engine.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.WF\obj\Debug\LEP.WF.Engine.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\LEP.WF.Engine.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\LEP.WF.Engine.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\LsmPortal.WF.Engine.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\DoE.Data.Repository.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\WF.Utils.Items.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\Microsoft.Practices.Unity.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\WF.AddIn.Requisitions.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\EntityFramework.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\PagedList.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\DoE.Lsm.Logger.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\DoE.Lsm.Files.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\LsmPortal.WF.Engine.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\DoE.Data.Repository.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\WF.Utils.Items.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\Microsoft.Practices.Unity.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\WF.AddIn.Requisitions.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\EntityFramework.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\PagedList.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\DoE.Lsm.Logger.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\DoE.Lsm.Files.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\obj\Debug\Lsm.WF.csprojResolveAssemblyReference.cache
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\obj\Debug\LEP.WF.Engine.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\obj\Debug\LEP.WF.Engine.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\LEP.WF.Engine.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\LEP.WF.Engine.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\LsmPortal.WF.Engine.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\DoE.Data.Repository.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\WF.Utils.Items.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\WF.AddIn.Requisitions.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\PagedList.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\DoE.Lsm.Logger.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\DoE.Lsm.Files.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\LsmPortal.WF.Engine.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\DoE.Data.Repository.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\WF.Utils.Items.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\WF.AddIn.Requisitions.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\PagedList.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\DoE.Lsm.Logger.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\bin\Debug\DoE.Lsm.Files.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\obj\Debug\LEP.WF.Engine.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.WF\obj\Debug\LEP.WF.Engine.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF\bin\Debug\LEP.WF.Engine.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF\bin\Debug\LEP.WF.Engine.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF\bin\Debug\LsmPortal.WF.Engine.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF\bin\Debug\DoE.Data.Repository.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF\bin\Debug\WF.Utils.Items.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF\bin\Debug\Microsoft.Practices.Unity.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF\bin\Debug\WF.AddIn.Requisitions.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF\bin\Debug\EntityFramework.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF\bin\Debug\PagedList.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF\bin\Debug\DoE.Lsm.Logger.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF\bin\Debug\DoE.Lsm.Files.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF\bin\Debug\LsmPortal.WF.Engine.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF\bin\Debug\DoE.Data.Repository.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF\bin\Debug\WF.Utils.Items.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF\bin\Debug\Microsoft.Practices.Unity.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF\bin\Debug\WF.AddIn.Requisitions.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF\bin\Debug\EntityFramework.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF\bin\Debug\PagedList.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF\bin\Debug\DoE.Lsm.Logger.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF\bin\Debug\DoE.Lsm.Files.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF\obj\Debug\Lsm.WF.csprojResolveAssemblyReference.cache
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF\obj\Debug\LEP.WF.Engine.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.WF\obj\Debug\LEP.WF.Engine.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF\bin\Debug\LEP.WF.Engine.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF\bin\Debug\LEP.WF.Engine.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF\bin\Debug\LsmPortal.WF.Engine.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF\bin\Debug\DoE.Data.Repository.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF\bin\Debug\WF.Utils.Items.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF\bin\Debug\WF.AddIn.Requisitions.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF\bin\Debug\EntityFramework.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF\bin\Debug\PagedList.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF\bin\Debug\DoE.Lsm.Logger.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF\bin\Debug\DoE.Lsm.Files.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF\bin\Debug\LsmPortal.WF.Engine.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF\bin\Debug\DoE.Data.Repository.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF\bin\Debug\WF.Utils.Items.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF\bin\Debug\WF.AddIn.Requisitions.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF\bin\Debug\EntityFramework.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF\bin\Debug\PagedList.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF\bin\Debug\DoE.Lsm.Logger.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF\bin\Debug\DoE.Lsm.Files.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF\obj\Debug\Lsm.WF.csprojResolveAssemblyReference.cache
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF\obj\Debug\LEP.WF.Engine.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF\obj\Debug\LEP.WF.Engine.pdb
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF\bin\Debug\LEP.WF.Engine.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF\bin\Debug\LEP.WF.Engine.pdb
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF\bin\Debug\LsmPortal.WF.Engine.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF\bin\Debug\DoE.Data.Repository.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF\bin\Debug\WF.Utils.Items.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF\bin\Debug\WF.AddIn.Requisitions.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF\bin\Debug\EntityFramework.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF\bin\Debug\PagedList.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF\bin\Debug\DoE.Lsm.Logger.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF\bin\Debug\DoE.Lsm.Files.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF\bin\Debug\LsmPortal.WF.Engine.pdb
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF\bin\Debug\DoE.Data.Repository.pdb
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF\bin\Debug\WF.Utils.Items.pdb
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF\bin\Debug\WF.AddIn.Requisitions.pdb
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF\bin\Debug\EntityFramework.xml
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF\bin\Debug\PagedList.xml
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF\bin\Debug\DoE.Lsm.Logger.pdb
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF\bin\Debug\DoE.Lsm.Files.pdb
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF\obj\Debug\Lsm.WF.csprojResolveAssemblyReference.cache
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF\obj\Debug\LEP.WF.Engine.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF\obj\Debug\LEP.WF.Engine.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.WF\bin\Debug\LEP.WF.Engine.dll
+C:\Homework\Quota\QuotaPortal\Lsm.WF\bin\Debug\LEP.WF.Engine.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.WF\bin\Debug\LsmPortal.WF.Engine.dll
+C:\Homework\Quota\QuotaPortal\Lsm.WF\bin\Debug\DoE.Data.Repository.dll
+C:\Homework\Quota\QuotaPortal\Lsm.WF\bin\Debug\WF.Utils.Items.dll
+C:\Homework\Quota\QuotaPortal\Lsm.WF\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Homework\Quota\QuotaPortal\Lsm.WF\bin\Debug\WF.AddIn.Requisitions.dll
+C:\Homework\Quota\QuotaPortal\Lsm.WF\bin\Debug\EntityFramework.dll
+C:\Homework\Quota\QuotaPortal\Lsm.WF\bin\Debug\DoE.Lsm.Logger.dll
+C:\Homework\Quota\QuotaPortal\Lsm.WF\bin\Debug\PagedList.dll
+C:\Homework\Quota\QuotaPortal\Lsm.WF\bin\Debug\DoE.Lsm.Files.dll
+C:\Homework\Quota\QuotaPortal\Lsm.WF\bin\Debug\LsmPortal.WF.Engine.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.WF\bin\Debug\DoE.Data.Repository.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.WF\bin\Debug\WF.Utils.Items.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.WF\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Homework\Quota\QuotaPortal\Lsm.WF\bin\Debug\WF.AddIn.Requisitions.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.WF\bin\Debug\EntityFramework.xml
+C:\Homework\Quota\QuotaPortal\Lsm.WF\bin\Debug\DoE.Lsm.Logger.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.WF\bin\Debug\PagedList.xml
+C:\Homework\Quota\QuotaPortal\Lsm.WF\bin\Debug\DoE.Lsm.Files.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.WF\obj\Debug\Lsm.WF.csprojResolveAssemblyReference.cache
+C:\Homework\Quota\QuotaPortal\Lsm.WF\obj\Debug\LEP.WF.Engine.dll
+C:\Homework\Quota\QuotaPortal\Lsm.WF\obj\Debug\LEP.WF.Engine.pdb

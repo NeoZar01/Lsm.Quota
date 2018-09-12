@@ -1,0 +1,79 @@
+﻿@*@model LimpEmisPortal.Models.ContactsViewModel
+@using PagedList.Mvc
+
+@{
+    var i = 1;
+}
+
+<div id="" class="col-md-12">
+
+</div>
+<table class="col-md-12 table table-condensed table-hover table-responsive s-right-partial-content-with-w">
+    <tr style="border-bottom:1px solid #ecf0f1">
+        <th><small># &nbsp; Emis</small></th>
+        <th><small>Name</small></th>
+        <th><small>Phase</small></th>
+        <th><small>Sector</small></th>
+        <th><small>Principal</small></th>
+        <th style="text-align:right"><small>District</small></th>
+        <th style="text-align:right"><small>Telephone</small></th>
+        <th style="text-align:right"><small>Status</small></th>
+    </tr>
+
+    @foreach (var c in Model.Contacts)
+    {
+        <tr>
+            <td style="text-align:left"><small>@i. &nbsp; @c.DepartID</small></td>
+            <td style="text-align:left"><small>  @c.RefName </small></td>
+            <td><small>@c.Phase_DoE</small></td>
+            <td style="text-align:center"><small>@c.Sector</small></td>
+            <td style="text-align:left"><small>@string.Concat(c.First_Name, ", ", c.Last_Name)</small></td>
+
+            <td style="text-align:right">
+
+                <span class="dropdown">
+                    <button class="btn btn-link btn-sm dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">                        
+                        <span> @c.DstName &nbsp; <span class="glyphicon glyphicon-chevron-down"></span></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="clear:both;text-align:center">
+                        <li>
+                            <small>@c.CircuitName</small>
+                        </li>
+                    </ul>
+                </span>
+               
+            </td>
+            <td style="text-align:right">
+
+                <div class="dropdown">
+                    <small class="btn btn-link btn-sm  dropdown-toggle  " id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        @c.Phone_Number &nbsp; <span class="glyphicon glyphicon-chevron-down"></span> 
+                    </small>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li>
+                            <small> <span class="glyphicon glyphicon-phone-alt"></span> &nbsp; @c.Telephone</small>
+                        </li>
+                        <li>
+                            <small> <span class="glyphicon glyphicon-envelope"></span> &nbsp;  @c.Email</small>
+                        </li>
+                    </ul>
+                </div>
+
+            </td>
+            <td style="text-align:right"><small>@c.DoE_Status </small></td>
+        </tr>        
+                    i += 1;
+    }
+
+</table>
+
+@{
+    i = 1;
+}
+
+<div class="col-md-12">
+    
+    Page @(Model.Contacts.PageCount < Model.Contacts.PageNumber ? 0 : Model.Contacts.PageNumber) of @Model.Contacts.PageCount <span><img src="~/Content/Images/ajax-loader.gif" id="searchpg_ajax_loading" style="display:none; width:20px; height:20px " />
+</span>
+    @Html.PagedListPager(Model.Contacts, page => Url.Action("GlobalAdressSearch", "Home", new { pg = page }), PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(new AjaxOptions() { HttpMethod = "GET", UpdateTargetId = "contactPartialView", LoadingElementId = "searchpg_ajax_loading", InsertionMode = InsertionMode.Replace }))
+</div>*@

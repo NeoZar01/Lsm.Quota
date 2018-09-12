@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="STATDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'STATDB.dbo.statvw_circ_outstandingUploads' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'STATDB.dbo.statvw_circ_WarehouseUploads' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'STATDB.dbo.statvW_WEP_l_LeanerSubjectTeacherEnrollment' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="statvW_WEP_l_LeanerSubjectTeacherEnrollment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="learnerId" Type="int" />
+    <Property Name="Name" Type="nvarchar" MaxLength="200" />
+    <Property Name="EmisCode" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'STATDB.dbo.statvw_WEP_lsm_LTSMSubmissionStatistics' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'STATDB.dbo.statvw_WEP_s_ProvisionalSchoolLearners' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="statvw_WEP_s_ProvisionalSchoolLearners">
+    <Key>
+      <PropertyRef Name="Grade" />
+    </Key>
+    <Property Name="Grade" Type="int" Nullable="false" />
+    <Property Name="EmisCode" Type="int" />
+    <Property Name="TOTAL" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'STATDB.dbo.statvw_WEP_s_SchoolLearners' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="statvw_WEP_s_SchoolLearners">
+    <Key>
+      <PropertyRef Name="Grade" />
+    </Key>
+    <Property Name="Grade" Type="int" Nullable="false" />
+    <Property Name="EmisCode" Type="int" />
+    <Property Name="TOTAL" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'STATDB.dbo.statvwLMEPD_l_SchoolLearnersSubjectEnrollment' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityContainer Name="STATDBModelStoreContainer">
+    <EntitySet Name="statvW_WEP_l_LeanerSubjectTeacherEnrollment" EntityType="Self.statvW_WEP_l_LeanerSubjectTeacherEnrollment" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [statvW_WEP_l_LeanerSubjectTeacherEnrollment].[Id] AS [Id], 
+    [statvW_WEP_l_LeanerSubjectTeacherEnrollment].[learnerId] AS [learnerId], 
+    [statvW_WEP_l_LeanerSubjectTeacherEnrollment].[Name] AS [Name], 
+    [statvW_WEP_l_LeanerSubjectTeacherEnrollment].[EmisCode] AS [EmisCode]
+    FROM [dbo].[statvW_WEP_l_LeanerSubjectTeacherEnrollment] AS [statvW_WEP_l_LeanerSubjectTeacherEnrollment]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="statvw_WEP_s_ProvisionalSchoolLearners" EntityType="Self.statvw_WEP_s_ProvisionalSchoolLearners" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [statvw_WEP_s_ProvisionalSchoolLearners].[Grade] AS [Grade], 
+    [statvw_WEP_s_ProvisionalSchoolLearners].[EmisCode] AS [EmisCode], 
+    [statvw_WEP_s_ProvisionalSchoolLearners].[TOTAL] AS [TOTAL]
+    FROM [dbo].[statvw_WEP_s_ProvisionalSchoolLearners] AS [statvw_WEP_s_ProvisionalSchoolLearners]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="statvw_WEP_s_SchoolLearners" EntityType="Self.statvw_WEP_s_SchoolLearners" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [statvw_WEP_s_SchoolLearners].[Grade] AS [Grade], 
+    [statvw_WEP_s_SchoolLearners].[EmisCode] AS [EmisCode], 
+    [statvw_WEP_s_SchoolLearners].[TOTAL] AS [TOTAL]
+    FROM [dbo].[statvw_WEP_s_SchoolLearners] AS [statvw_WEP_s_SchoolLearners]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

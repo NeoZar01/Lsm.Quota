@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SASAMSWarehouseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SASAMSWarehouse.dbo.__Patches' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="__Patches">
+    <Key>
+      <PropertyRef Name="Patch_Buccessful" />
+      <PropertyRef Name="Importday" />
+      <PropertyRef Name="ImportyYr" />
+      <PropertyRef Name="ImportMon" />
+    </Key>
+    <Property Name="Patch_Ver" Type="nvarchar" MaxLength="15" />
+    <Property Name="Patch_Jobs" Type="nvarchar(max)" />
+    <Property Name="Patch_Buccessful" Type="bit" Nullable="false" />
+    <Property Name="Patch_DateTimeStart" Type="datetime" />
+    <Property Name="Patch_DateTimeEnd" Type="datetime" />
+    <Property Name="Patch_ExeVer" Type="nvarchar" MaxLength="25" />
+    <Property Name="EmisCode" Type="int" />
+    <Property Name="ImportYear" Type="int" />
+    <Property Name="ImportMonth" Type="int" />
+    <Property Name="Importday" Type="datetime" Nullable="false" />
+    <Property Name="ImportyYr" Type="datetime" Nullable="false" />
+    <Property Name="ImportMon" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SASAMSWarehouse.dbo.LuritsDatabaseDeployment' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="LuritsDatabaseDeployment">
+    <Key>
+      <PropertyRef Name="DeploymentId" />
+      <PropertyRef Name="Importday" />
+      <PropertyRef Name="ImportyYr" />
+      <PropertyRef Name="ImportMon" />
+    </Key>
+    <Property Name="DeploymentId" Type="int" Nullable="false" />
+    <Property Name="DeploymentCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="DeploymentDate" Type="datetime" />
+    <Property Name="EmisCode" Type="int" />
+    <Property Name="ImportYear" Type="int" />
+    <Property Name="ImportMonth" Type="int" />
+    <Property Name="Importday" Type="datetime" Nullable="false" />
+    <Property Name="ImportyYr" Type="datetime" Nullable="false" />
+    <Property Name="ImportMon" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SAMS_Patches">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Patch_Ver" Type="nvarchar" MaxLength="15" />
+    <Property Name="Patch_DateTimeStart" Type="datetime" />
+    <Property Name="Patch_DateTimeEnd" Type="datetime" />
+    <Property Name="ImportDateStamp" Type="datetime" Nullable="false" />
+    <Property Name="ArchievePath" Type="int" />
+  </EntityType>
+  <EntityType Name="SamsCommentsPorta">
+    <Key>
+      <PropertyRef Name="commentId" />
+    </Key>
+    <Property Name="commentId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="owner" Type="int" />
+    <Property Name="sams_version_Id" Type="int" />
+    <Property Name="comment" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="post_date" Type="datetime" Nullable="false" />
+    <Property Name="active" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SASAMSWarehouse.dbo.SchoolTerms' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="SchoolTerms">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="Importday" />
+      <PropertyRef Name="ImportyYr" />
+      <PropertyRef Name="ImportMon" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="Quater" Type="nvarchar" MaxLength="50" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="EndDate" Type="datetime" />
+    <Property Name="CurrentYear" Type="nvarchar" MaxLength="50" />
+    <Property Name="Term" Type="int" />
+    <Property Name="EmisCode" Type="int" />
+    <Property Name="ImportYear" Type="int" />
+    <Property Name="ImportMonth" Type="int" />
+    <Property Name="Importday" Type="datetime" Nullable="false" />
+    <Property Name="ImportyYr" Type="datetime" Nullable="false" />
+    <Property Name="ImportMon" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SASAMSWarehouse.dbo.vw_WEP_l_CurrentOpenTermPED' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vw_WEP_l_CurrentOpenTermPED">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="Quater" Type="nvarchar" MaxLength="50" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="EndDate" Type="datetime" />
+    <Property Name="CurrentYear" Type="nvarchar" MaxLength="50" />
+    <Property Name="Term" Type="int" />
+    <Property Name="EmisCode" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SASAMSWarehouse.dbo.vw_WEP_l_LearnerParentTeacherInfo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vw_WEP_l_LearnerParentTeacherInfo">
+    <Key>
+      <PropertyRef Name="SName" />
+      <PropertyRef Name="Grade" />
+      <PropertyRef Name="SchoolName" />
+      <PropertyRef Name="District" />
+      <PropertyRef Name="TheDate" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="LearnerFName" Type="nvarchar" MaxLength="70" />
+    <Property Name="LearnerSName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Relship" Type="nvarchar" MaxLength="50" />
+    <Property Name="FName" Type="nvarchar" MaxLength="70" />
+    <Property Name="SName" Type="nvarchar" MaxLength="70" Nullable="false" />
+    <Property Name="LuritsNumber" Type="float" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="20" />
+    <Property Name="Grade" Type="int" Nullable="false" />
+    <Property Name="SchoolName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Citizenship" Type="nvarchar" MaxLength="50" />
+    <Property Name="Circuit" Type="nvarchar" MaxLength="150" />
+    <Property Name="District" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="Race" Type="nvarchar" MaxLength="50" />
+    <Property Name="SecondName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Title" Type="nvarchar" MaxLength="10" />
+    <Property Name="Initials" Type="nvarchar" MaxLength="10" />
+    <Property Name="Address1" Type="nvarchar" MaxLength="70" />
+    <Property Name="PreviousSchool" Type="nvarchar" MaxLength="70" />
+    <Property Name="PreviousSchoolProvince" Type="nvarchar" MaxLength="50" />
+    <Property Name="TheDate" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="IDNo" Type="nvarchar" MaxLength="20" />
+    <Property Name="Status" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SASAMSWarehouse.dbo.vwlsb_SubjEnrolPrGradePrNatEmis' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwlsb_SubjEnrolPrGradePrNatEmis">
+    <Key>
+      <PropertyRef Name="EmisSubId" />
+      <PropertyRef Name="Grade" />
+    </Key>
+    <Property Name="EmisSubId" Type="int" Nullable="false" />
+    <Property Name="OfficialSubjectID" Type="int" />
+    <Property Name="Name" Type="nvarchar" MaxLength="200" />
+    <Property Name="Key" Type="nvarchar" MaxLength="50" />
+    <Property Name="Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="Group" Type="nvarchar" MaxLength="10" />
+    <Property Name="Phase" Type="int" />
+    <Property Name="Afrname" Type="nvarchar" MaxLength="200" />
+    <Property Name="Grade" Type="int" Nullable="false" />
+    <Property Name="TOTAL" Type="int" />
+    <Property Name="Unit" Type="int" />
+    <Property Name="EmisCode" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SASAMSWarehouse.dbo.vwsm_PatchJobs' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwsm_PatchJobs">
+    <Key>
+      <PropertyRef Name="ImportDateStamp" />
+      <PropertyRef Name="Patch_Buccessful" />
+    </Key>
+    <Property Name="Patch_Ver" Type="nvarchar" MaxLength="15" />
+    <Property Name="Patch_DateTimeStart" Type="datetime" />
+    <Property Name="Patch_DateTimeEnd" Type="datetime" />
+    <Property Name="ImportDateStamp" Type="datetime" Nullable="false" />
+    <Property Name="Patch_Buccessful" Type="bit" Nullable="false" />
+    <Property Name="EmisCode" Type="int" />
+    <Property Name="Achieved" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SASAMSWarehouse.dbo.vwsm_sams_vers_comm' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwsm_sams_vers_comm">
+    <Key>
+      <PropertyRef Name="commentId" />
+      <PropertyRef Name="comment" />
+      <PropertyRef Name="post_date" />
+    </Key>
+    <Property Name="commentId" Type="int" Nullable="false" />
+    <Property Name="owner" Type="int" />
+    <Property Name="sams_version_Id" Type="int" />
+    <Property Name="comment" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="post_date" Type="datetime" Nullable="false" />
+    <Property Name="date_gap" Type="int" />
+    <Property Name="active" Type="int" />
+    <Property Name="Patch_Ver" Type="nvarchar" MaxLength="15" />
+    <Property Name="RefName" Type="nvarchar" MaxLength="115" />
+    <Property Name="Designation" Type="nvarchar" MaxLength="145" />
+    <Property Name="CircuitName" Type="nvarchar" MaxLength="250" />
+    <Property Name="NoOfClicks" Type="int" />
+    <Property Name="FromUser" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SASAMSWarehouse.dbo.vwst_lsmOutstandingWarehouseUploads' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwst_lsmOutstandingWarehouseUploads">
+    <Key>
+      <PropertyRef Name="NatEmis" />
+      <PropertyRef Name="EmisCode" />
+    </Key>
+    <Property Name="NatEmis" Type="int" Nullable="false" />
+    <Property Name="Institution_Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Sector" Type="nvarchar" MaxLength="255" />
+    <Property Name="Type_PED" Type="nvarchar" MaxLength="255" />
+    <Property Name="Phase_DoE" Type="nvarchar" MaxLength="255" />
+    <Property Name="GIS_Long" Type="float" />
+    <Property Name="GIS_Lat" Type="float" />
+    <Property Name="EIDistrict" Type="nvarchar" MaxLength="255" />
+    <Property Name="EICircuit" Type="nvarchar" MaxLength="255" />
+    <Property Name="Addressee" Type="nvarchar" MaxLength="255" />
+    <Property Name="Township_Village" Type="nvarchar" MaxLength="255" />
+    <Property Name="Suburb" Type="nvarchar" MaxLength="255" />
+    <Property Name="Town_City" Type="nvarchar" MaxLength="255" />
+    <Property Name="StreetAddress" Type="nvarchar" MaxLength="255" />
+    <Property Name="Box_P_Bag" Type="nvarchar" MaxLength="255" />
+    <Property Name="Box_Bag_Postal_Code" Type="nvarchar" MaxLength="255" />
+    <Property Name="PostalAddress" Type="nvarchar" MaxLength="255" />
+    <Property Name="Telephone" Type="nvarchar" MaxLength="255" />
+    <Property Name="cellno" Type="nvarchar" MaxLength="255" />
+    <Property Name="PrincipalsCell" Type="nvarchar" MaxLength="255" />
+    <Property Name="E_Mail" Type="nvarchar" MaxLength="255" />
+    <Property Name="Quintile" Type="nvarchar" MaxLength="255" />
+    <Property Name="DemarcationFrom" Type="nvarchar" MaxLength="255" />
+    <Property Name="DemarcationTo" Type="nvarchar" MaxLength="255" />
+    <Property Name="Municipality" Type="nvarchar" MaxLength="255" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="ImportYear" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SASAMSWarehouse.dbo.vwst_ltsmWarehouseImports' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwst_ltsmWarehouseImports">
+    <Key>
+      <PropertyRef Name="ImportId" />
+      <PropertyRef Name="EmisCode" />
+      <PropertyRef Name="Importday" />
+      <PropertyRef Name="ImportyYr" />
+      <PropertyRef Name="ImportMon" />
+      <PropertyRef Name="Status" />
+      <PropertyRef Name="IsApproved" />
+      <PropertyRef Name="Occupation" />
+      <PropertyRef Name="Approver" />
+      <PropertyRef Name="GrFrom" />
+      <PropertyRef Name="GrTo" />
+      <PropertyRef Name="DateFrom" />
+      <PropertyRef Name="DateTo" />
+    </Key>
+    <Property Name="ImportId" Type="int" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="Quater" Type="nvarchar" MaxLength="50" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="EndDate" Type="datetime" />
+    <Property Name="CurrentYear" Type="nvarchar" MaxLength="50" />
+    <Property Name="Term" Type="int" />
+    <Property Name="ImportYear" Type="int" />
+    <Property Name="ImportMonth" Type="int" />
+    <Property Name="Importday" Type="datetime" Nullable="false" />
+    <Property Name="ImportyYr" Type="datetime" Nullable="false" />
+    <Property Name="ImportMon" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="IsApproved" Type="bit" Nullable="false" />
+    <Property Name="Comment" Type="ntext" />
+    <Property Name="Occupation" Type="nvarchar" MaxLength="71" Nullable="false" />
+    <Property Name="EIDistrict" Type="int" />
+    <Property Name="DstName" Type="nvarchar" MaxLength="250" />
+    <Property Name="LocationFlag" Type="smallint" />
+    <Property Name="EICircuit" Type="nvarchar" MaxLength="255" />
+    <Property Name="CircuitName" Type="nvarchar" MaxLength="250" />
+    <Property Name="EMail" Type="nvarchar" MaxLength="80" />
+    <Property Name="RefName" Type="nvarchar" MaxLength="115" />
+    <Property Name="First_Name" Type="nvarchar" MaxLength="35" />
+    <Property Name="Last_Name" Type="nvarchar" MaxLength="35" />
+    <Property Name="SurveyType" Type="nvarchar" MaxLength="150" />
+    <Property Name="SurveyTypeCD" Type="smallint" />
+    <Property Name="ImportPeriodInDays" Type="int" />
+    <Property Name="cpatchVersion" Type="nvarchar(max)" />
+    <Property Name="Datayear" Type="nvarchar" MaxLength="8" />
+    <Property Name="Approver" Type="int" Nullable="false" />
+    <Property Name="ApproverName" Type="nvarchar" MaxLength="115" />
+    <Property Name="GrFrom" Type="tinyint" Nullable="false" />
+    <Property Name="GrTo" Type="tinyint" Nullable="false" />
+    <Property Name="DateFrom" Type="smalldatetime" Nullable="false" />
+    <Property Name="DateTo" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="SASAMSWarehouseModelStoreContainer">
+    <EntitySet Name="SAMS_Patches" EntityType="Self.SAMS_Patches" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SamsCommentsPorta" EntityType="Self.SamsCommentsPorta" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="__Patches" EntityType="Self.__Patches" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [__Patches].[Patch_Ver] AS [Patch_Ver], 
+    [__Patches].[Patch_Jobs] AS [Patch_Jobs], 
+    [__Patches].[Patch_Buccessful] AS [Patch_Buccessful], 
+    [__Patches].[Patch_DateTimeStart] AS [Patch_DateTimeStart], 
+    [__Patches].[Patch_DateTimeEnd] AS [Patch_DateTimeEnd], 
+    [__Patches].[Patch_ExeVer] AS [Patch_ExeVer], 
+    [__Patches].[EmisCode] AS [EmisCode], 
+    [__Patches].[ImportYear] AS [ImportYear], 
+    [__Patches].[ImportMonth] AS [ImportMonth], 
+    [__Patches].[Importday] AS [Importday], 
+    [__Patches].[ImportyYr] AS [ImportyYr], 
+    [__Patches].[ImportMon] AS [ImportMon]
+    FROM [dbo].[__Patches] AS [__Patches]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="LuritsDatabaseDeployment" EntityType="Self.LuritsDatabaseDeployment" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [LuritsDatabaseDeployment].[DeploymentId] AS [DeploymentId], 
+    [LuritsDatabaseDeployment].[DeploymentCode] AS [DeploymentCode], 
+    [LuritsDatabaseDeployment].[DeploymentDate] AS [DeploymentDate], 
+    [LuritsDatabaseDeployment].[EmisCode] AS [EmisCode], 
+    [LuritsDatabaseDeployment].[ImportYear] AS [ImportYear], 
+    [LuritsDatabaseDeployment].[ImportMonth] AS [ImportMonth], 
+    [LuritsDatabaseDeployment].[Importday] AS [Importday], 
+    [LuritsDatabaseDeployment].[ImportyYr] AS [ImportyYr], 
+    [LuritsDatabaseDeployment].[ImportMon] AS [ImportMon]
+    FROM [dbo].[LuritsDatabaseDeployment] AS [LuritsDatabaseDeployment]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="SchoolTerms" EntityType="Self.SchoolTerms" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [SchoolTerms].[id] AS [id], 
+    [SchoolTerms].[Quater] AS [Quater], 
+    [SchoolTerms].[StartDate] AS [StartDate], 
+    [SchoolTerms].[EndDate] AS [EndDate], 
+    [SchoolTerms].[CurrentYear] AS [CurrentYear], 
+    [SchoolTerms].[Term] AS [Term], 
+    [SchoolTerms].[EmisCode] AS [EmisCode], 
+    [SchoolTerms].[ImportYear] AS [ImportYear], 
+    [SchoolTerms].[ImportMonth] AS [ImportMonth], 
+    [SchoolTerms].[Importday] AS [Importday], 
+    [SchoolTerms].[ImportyYr] AS [ImportyYr], 
+    [SchoolTerms].[ImportMon] AS [ImportMon]
+    FROM [dbo].[SchoolTerms] AS [SchoolTerms]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vw_WEP_l_CurrentOpenTermPED" EntityType="Self.vw_WEP_l_CurrentOpenTermPED" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vw_WEP_l_CurrentOpenTermPED].[id] AS [id], 
+    [vw_WEP_l_CurrentOpenTermPED].[Quater] AS [Quater], 
+    [vw_WEP_l_CurrentOpenTermPED].[StartDate] AS [StartDate], 
+    [vw_WEP_l_CurrentOpenTermPED].[EndDate] AS [EndDate], 
+    [vw_WEP_l_CurrentOpenTermPED].[CurrentYear] AS [CurrentYear], 
+    [vw_WEP_l_CurrentOpenTermPED].[Term] AS [Term], 
+    [vw_WEP_l_CurrentOpenTermPED].[EmisCode] AS [EmisCode]
+    FROM [dbo].[vw_WEP_l_CurrentOpenTermPED] AS [vw_WEP_l_CurrentOpenTermPED]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vw_WEP_l_LearnerParentTeacherInfo" EntityType="Self.vw_WEP_l_LearnerParentTeacherInfo" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vw_WEP_l_LearnerParentTeacherInfo].[LearnerFName] AS [LearnerFName], 
+    [vw_WEP_l_LearnerParentTeacherInfo].[LearnerSName] AS [LearnerSName], 
+    [vw_WEP_l_LearnerParentTeacherInfo].[Relship] AS [Relship], 
+    [vw_WEP_l_LearnerParentTeacherInfo].[FName] AS [FName], 
+    [vw_WEP_l_LearnerParentTeacherInfo].[SName] AS [SName], 
+    [vw_WEP_l_LearnerParentTeacherInfo].[LuritsNumber] AS [LuritsNumber], 
+    [vw_WEP_l_LearnerParentTeacherInfo].[Gender] AS [Gender], 
+    [vw_WEP_l_LearnerParentTeacherInfo].[Grade] AS [Grade], 
+    [vw_WEP_l_LearnerParentTeacherInfo].[SchoolName] AS [SchoolName], 
+    [vw_WEP_l_LearnerParentTeacherInfo].[Citizenship] AS [Citizenship], 
+    [vw_WEP_l_LearnerParentTeacherInfo].[Circuit] AS [Circuit], 
+    [vw_WEP_l_LearnerParentTeacherInfo].[District] AS [District], 
+    [vw_WEP_l_LearnerParentTeacherInfo].[Race] AS [Race], 
+    [vw_WEP_l_LearnerParentTeacherInfo].[SecondName] AS [SecondName], 
+    [vw_WEP_l_LearnerParentTeacherInfo].[Title] AS [Title], 
+    [vw_WEP_l_LearnerParentTeacherInfo].[Initials] AS [Initials], 
+    [vw_WEP_l_LearnerParentTeacherInfo].[Address1] AS [Address1], 
+    [vw_WEP_l_LearnerParentTeacherInfo].[PreviousSchool] AS [PreviousSchool], 
+    [vw_WEP_l_LearnerParentTeacherInfo].[PreviousSchoolProvince] AS [PreviousSchoolProvince], 
+    [vw_WEP_l_LearnerParentTeacherInfo].[TheDate] AS [TheDate], 
+    [vw_WEP_l_LearnerParentTeacherInfo].[ID] AS [ID], 
+    [vw_WEP_l_LearnerParentTeacherInfo].[IDNo] AS [IDNo], 
+    [vw_WEP_l_LearnerParentTeacherInfo].[Status] AS [Status]
+    FROM [dbo].[vw_WEP_l_LearnerParentTeacherInfo] AS [vw_WEP_l_LearnerParentTeacherInfo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwlsb_SubjEnrolPrGradePrNatEmis" EntityType="Self.vwlsb_SubjEnrolPrGradePrNatEmis" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwlsb_SubjEnrolPrGradePrNatEmis].[EmisSubId] AS [EmisSubId], 
+    [vwlsb_SubjEnrolPrGradePrNatEmis].[OfficialSubjectID] AS [OfficialSubjectID], 
+    [vwlsb_SubjEnrolPrGradePrNatEmis].[Name] AS [Name], 
+    [vwlsb_SubjEnrolPrGradePrNatEmis].[Key] AS [Key], 
+    [vwlsb_SubjEnrolPrGradePrNatEmis].[Code] AS [Code], 
+    [vwlsb_SubjEnrolPrGradePrNatEmis].[Group] AS [Group], 
+    [vwlsb_SubjEnrolPrGradePrNatEmis].[Phase] AS [Phase], 
+    [vwlsb_SubjEnrolPrGradePrNatEmis].[Afrname] AS [Afrname], 
+    [vwlsb_SubjEnrolPrGradePrNatEmis].[Grade] AS [Grade], 
+    [vwlsb_SubjEnrolPrGradePrNatEmis].[TOTAL] AS [TOTAL], 
+    [vwlsb_SubjEnrolPrGradePrNatEmis].[Unit] AS [Unit], 
+    [vwlsb_SubjEnrolPrGradePrNatEmis].[EmisCode] AS [EmisCode]
+    FROM [dbo].[vwlsb_SubjEnrolPrGradePrNatEmis] AS [vwlsb_SubjEnrolPrGradePrNatEmis]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwsm_PatchJobs" EntityType="Self.vwsm_PatchJobs" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwsm_PatchJobs].[Patch_Ver] AS [Patch_Ver], 
+    [vwsm_PatchJobs].[Patch_DateTimeStart] AS [Patch_DateTimeStart], 
+    [vwsm_PatchJobs].[Patch_DateTimeEnd] AS [Patch_DateTimeEnd], 
+    [vwsm_PatchJobs].[ImportDateStamp] AS [ImportDateStamp], 
+    [vwsm_PatchJobs].[Patch_Buccessful] AS [Patch_Buccessful], 
+    [vwsm_PatchJobs].[EmisCode] AS [EmisCode], 
+    [vwsm_PatchJobs].[Achieved] AS [Achieved]
+    FROM [dbo].[vwsm_PatchJobs] AS [vwsm_PatchJobs]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwsm_sams_vers_comm" EntityType="Self.vwsm_sams_vers_comm" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwsm_sams_vers_comm].[commentId] AS [commentId], 
+    [vwsm_sams_vers_comm].[owner] AS [owner], 
+    [vwsm_sams_vers_comm].[sams_version_Id] AS [sams_version_Id], 
+    [vwsm_sams_vers_comm].[comment] AS [comment], 
+    [vwsm_sams_vers_comm].[post_date] AS [post_date], 
+    [vwsm_sams_vers_comm].[date_gap] AS [date_gap], 
+    [vwsm_sams_vers_comm].[active] AS [active], 
+    [vwsm_sams_vers_comm].[Patch_Ver] AS [Patch_Ver], 
+    [vwsm_sams_vers_comm].[RefName] AS [RefName], 
+    [vwsm_sams_vers_comm].[Designation] AS [Designation], 
+    [vwsm_sams_vers_comm].[CircuitName] AS [CircuitName], 
+    [vwsm_sams_vers_comm].[NoOfClicks] AS [NoOfClicks], 
+    [vwsm_sams_vers_comm].[FromUser] AS [FromUser]
+    FROM [dbo].[vwsm_sams_vers_comm] AS [vwsm_sams_vers_comm]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwst_lsmOutstandingWarehouseUploads" EntityType="Self.vwst_lsmOutstandingWarehouseUploads" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwst_lsmOutstandingWarehouseUploads].[NatEmis] AS [NatEmis], 
+    [vwst_lsmOutstandingWarehouseUploads].[Institution_Name] AS [Institution_Name], 
+    [vwst_lsmOutstandingWarehouseUploads].[Sector] AS [Sector], 
+    [vwst_lsmOutstandingWarehouseUploads].[Type_PED] AS [Type_PED], 
+    [vwst_lsmOutstandingWarehouseUploads].[Phase_DoE] AS [Phase_DoE], 
+    [vwst_lsmOutstandingWarehouseUploads].[GIS_Long] AS [GIS_Long], 
+    [vwst_lsmOutstandingWarehouseUploads].[GIS_Lat] AS [GIS_Lat], 
+    [vwst_lsmOutstandingWarehouseUploads].[EIDistrict] AS [EIDistrict], 
+    [vwst_lsmOutstandingWarehouseUploads].[EICircuit] AS [EICircuit], 
+    [vwst_lsmOutstandingWarehouseUploads].[Addressee] AS [Addressee], 
+    [vwst_lsmOutstandingWarehouseUploads].[Township_Village] AS [Township_Village], 
+    [vwst_lsmOutstandingWarehouseUploads].[Suburb] AS [Suburb], 
+    [vwst_lsmOutstandingWarehouseUploads].[Town_City] AS [Town_City], 
+    [vwst_lsmOutstandingWarehouseUploads].[StreetAddress] AS [StreetAddress], 
+    [vwst_lsmOutstandingWarehouseUploads].[Box_P_Bag] AS [Box_P_Bag], 
+    [vwst_lsmOutstandingWarehouseUploads].[Box_Bag_Postal_Code] AS [Box_Bag_Postal_Code], 
+    [vwst_lsmOutstandingWarehouseUploads].[PostalAddress] AS [PostalAddress], 
+    [vwst_lsmOutstandingWarehouseUploads].[Telephone] AS [Telephone], 
+    [vwst_lsmOutstandingWarehouseUploads].[cellno] AS [cellno], 
+    [vwst_lsmOutstandingWarehouseUploads].[PrincipalsCell] AS [PrincipalsCell], 
+    [vwst_lsmOutstandingWarehouseUploads].[E_Mail] AS [E_Mail], 
+    [vwst_lsmOutstandingWarehouseUploads].[Quintile] AS [Quintile], 
+    [vwst_lsmOutstandingWarehouseUploads].[DemarcationFrom] AS [DemarcationFrom], 
+    [vwst_lsmOutstandingWarehouseUploads].[DemarcationTo] AS [DemarcationTo], 
+    [vwst_lsmOutstandingWarehouseUploads].[Municipality] AS [Municipality], 
+    [vwst_lsmOutstandingWarehouseUploads].[EmisCode] AS [EmisCode], 
+    [vwst_lsmOutstandingWarehouseUploads].[ImportYear] AS [ImportYear]
+    FROM [dbo].[vwst_lsmOutstandingWarehouseUploads] AS [vwst_lsmOutstandingWarehouseUploads]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwst_ltsmWarehouseImports" EntityType="Self.vwst_ltsmWarehouseImports" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwst_ltsmWarehouseImports].[ImportId] AS [ImportId], 
+    [vwst_ltsmWarehouseImports].[EmisCode] AS [EmisCode], 
+    [vwst_ltsmWarehouseImports].[Quater] AS [Quater], 
+    [vwst_ltsmWarehouseImports].[StartDate] AS [StartDate], 
+    [vwst_ltsmWarehouseImports].[EndDate] AS [EndDate], 
+    [vwst_ltsmWarehouseImports].[CurrentYear] AS [CurrentYear], 
+    [vwst_ltsmWarehouseImports].[Term] AS [Term], 
+    [vwst_ltsmWarehouseImports].[ImportYear] AS [ImportYear], 
+    [vwst_ltsmWarehouseImports].[ImportMonth] AS [ImportMonth], 
+    [vwst_ltsmWarehouseImports].[Importday] AS [Importday], 
+    [vwst_ltsmWarehouseImports].[ImportyYr] AS [ImportyYr], 
+    [vwst_ltsmWarehouseImports].[ImportMon] AS [ImportMon], 
+    [vwst_ltsmWarehouseImports].[Status] AS [Status], 
+    [vwst_ltsmWarehouseImports].[IsApproved] AS [IsApproved], 
+    [vwst_ltsmWarehouseImports].[Comment] AS [Comment], 
+    [vwst_ltsmWarehouseImports].[Occupation] AS [Occupation], 
+    [vwst_ltsmWarehouseImports].[EIDistrict] AS [EIDistrict], 
+    [vwst_ltsmWarehouseImports].[DstName] AS [DstName], 
+    [vwst_ltsmWarehouseImports].[LocationFlag] AS [LocationFlag], 
+    [vwst_ltsmWarehouseImports].[EICircuit] AS [EICircuit], 
+    [vwst_ltsmWarehouseImports].[CircuitName] AS [CircuitName], 
+    [vwst_ltsmWarehouseImports].[EMail] AS [EMail], 
+    [vwst_ltsmWarehouseImports].[RefName] AS [RefName], 
+    [vwst_ltsmWarehouseImports].[First_Name] AS [First_Name], 
+    [vwst_ltsmWarehouseImports].[Last_Name] AS [Last_Name], 
+    [vwst_ltsmWarehouseImports].[SurveyType] AS [SurveyType], 
+    [vwst_ltsmWarehouseImports].[SurveyTypeCD] AS [SurveyTypeCD], 
+    [vwst_ltsmWarehouseImports].[ImportPeriodInDays] AS [ImportPeriodInDays], 
+    [vwst_ltsmWarehouseImports].[cpatchVersion] AS [cpatchVersion], 
+    [vwst_ltsmWarehouseImports].[Datayear] AS [Datayear], 
+    [vwst_ltsmWarehouseImports].[Approver] AS [Approver], 
+    [vwst_ltsmWarehouseImports].[ApproverName] AS [ApproverName], 
+    [vwst_ltsmWarehouseImports].[GrFrom] AS [GrFrom], 
+    [vwst_ltsmWarehouseImports].[GrTo] AS [GrTo], 
+    [vwst_ltsmWarehouseImports].[DateFrom] AS [DateFrom], 
+    [vwst_ltsmWarehouseImports].[DateTo] AS [DateTo]
+    FROM [dbo].[vwst_ltsmWarehouseImports] AS [vwst_ltsmWarehouseImports]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

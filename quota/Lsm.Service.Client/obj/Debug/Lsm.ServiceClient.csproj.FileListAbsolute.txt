@@ -1,0 +1,55 @@
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\Education.Services.dll.config
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\Education.Services.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\Education.Services.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\Microsoft.Practices.Unity.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\PagedList.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\PagedList.Mvc.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\Microsoft.Practices.Unity.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\PagedList.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\PagedList.Mvc.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.ServiceClient\obj\Debug\Education.Services.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.ServiceClient\obj\Debug\Education.Services.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\Education.Services.dll.config
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\Education.Services.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\Education.Services.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\Microsoft.Practices.Unity.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\PagedList.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\PagedList.Mvc.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\Microsoft.Practices.Unity.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\PagedList.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\PagedList.Mvc.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.ServiceClient\obj\Debug\Education.Services.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.ServiceClient\obj\Debug\Education.Services.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\Education.Services.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\Education.Services.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\Education.Services.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\PagedList.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\PagedList.Mvc.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\PagedList.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\PagedList.Mvc.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.ServiceClient\obj\Debug\Education.Services.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.ServiceClient\obj\Debug\Education.Services.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\Education.Services.dll.config
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\Education.Services.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\Education.Services.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\Microsoft.Practices.Unity.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\PagedList.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\PagedList.Mvc.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\Microsoft.Practices.Unity.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\PagedList.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\PagedList.Mvc.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.ServiceClient\obj\Debug\Education.Services.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.ServiceClient\obj\Debug\Education.Services.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\Education.Services.dll.config
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\Education.Services.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\Education.Services.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\PagedList.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\PagedList.Mvc.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\PagedList.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\PagedList.Mvc.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.ServiceClient\obj\Debug\Education.Services.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.ServiceClient\obj\Debug\Education.Services.pdb

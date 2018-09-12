@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WebPortalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="FrequentQuestions">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="datetime" Nullable="false" />
+    <Property Name="Question" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="AddedById" Type="int" />
+    <Property Name="AddedBy" Type="nvarchar(max)" />
+    <Property Name="Area" Type="nvarchar(max)" />
+    <Property Name="Answer" Type="nvarchar(max)" />
+    <Property Name="AnsweredBy" Type="int" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="SuggestionBox">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="350" Nullable="false" />
+    <Property Name="User" Type="nvarchar" MaxLength="170" Nullable="false" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="SearchRepository">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Key" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Key" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UIK" Type="int" Nullable="false" />
+    <Property Name="Category" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="Meta" Type="varchar(max)" Nullable="false" />
+    <Property Name="Url" Type="nvarchar(max)" />
+    <Property Name="Parameter" Type="nvarchar(max)" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="RequiresAuthentication" Type="bit" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="KeyHolder" Type="varchar" MaxLength="55" />
+    <Property Name="KeyHolderEmail" Type="varchar" MaxLength="125" />
+    <Property Name="ShortName" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="SearchRepositoryCategory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CategoryCode" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CategoryName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ColumnConfig" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Source" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="WebPortalModelStoreContainer">
+    <EntitySet Name="FrequentQuestions" EntityType="Self.FrequentQuestions" Schema="faq" store:Type="Tables" />
+    <EntitySet Name="SuggestionBox" EntityType="Self.SuggestionBox" Schema="faq" store:Type="Tables" />
+    <EntitySet Name="SearchRepository" EntityType="Self.SearchRepository" Schema="Production" store:Type="Tables" />
+    <EntitySet Name="SearchRepositoryCategory" EntityType="Self.SearchRepositoryCategory" Schema="Production" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

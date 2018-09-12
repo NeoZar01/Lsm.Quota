@@ -1,0 +1,45 @@
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\Education.Services.dll.config
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\Education.Services.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\Education.Services.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\EntityFramework.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\EntityFramework.SqlServer.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\PagedList.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\PagedList.Mvc.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\EntityFramework.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\EntityFramework.SqlServer.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\PagedList.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.ServiceClient\bin\Debug\PagedList.Mvc.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.ServiceClient\obj\Debug\Education.Services.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.ServiceClient\obj\Debug\Education.Services.pdb
+C:\Homework\Quota\QuotaPortal\LsmPortal.ServiceClient\bin\Debug\Education.Services.dll.config
+C:\Homework\Quota\QuotaPortal\LsmPortal.ServiceClient\bin\Debug\Education.Services.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.ServiceClient\bin\Debug\Education.Services.pdb
+C:\Homework\Quota\QuotaPortal\LsmPortal.ServiceClient\bin\Debug\EntityFramework.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.ServiceClient\bin\Debug\EntityFramework.SqlServer.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.ServiceClient\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.ServiceClient\bin\Debug\PagedList.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.ServiceClient\bin\Debug\PagedList.Mvc.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.ServiceClient\bin\Debug\EntityFramework.xml
+C:\Homework\Quota\QuotaPortal\LsmPortal.ServiceClient\bin\Debug\EntityFramework.SqlServer.xml
+C:\Homework\Quota\QuotaPortal\LsmPortal.ServiceClient\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Homework\Quota\QuotaPortal\LsmPortal.ServiceClient\bin\Debug\PagedList.xml
+C:\Homework\Quota\QuotaPortal\LsmPortal.ServiceClient\bin\Debug\PagedList.Mvc.xml
+C:\Homework\Quota\QuotaPortal\LsmPortal.ServiceClient\obj\Debug\Education.Services.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.ServiceClient\obj\Debug\Education.Services.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\Education.Services.dll.config
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\Education.Services.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\Education.Services.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\EntityFramework.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\EntityFramework.SqlServer.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\PagedList.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\PagedList.Mvc.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\EntityFramework.xml
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\EntityFramework.SqlServer.xml
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\PagedList.xml
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\bin\Debug\PagedList.Mvc.xml
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\obj\Debug\Education.Services.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Service.Client\obj\Debug\Education.Services.pdb

@@ -1,0 +1,23 @@
+﻿@*@model  LimpEmisPortal.Models.ContactsViewModel
+
+@foreach (var contact in Model.ContactsGenericList)
+{
+    <div class="contact-box">
+            <div class="col-sm-5">
+                <div class="text-center">
+                    <img alt="image" 
+                         class="img-rounded m-t-xs img-responsive rounded-profile-circle-p150" src="~/Content/Images/9634082_orig.png">
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <h4 class="faint-text"><strong>@contact.RefName</strong></h4>
+                <h5>@contact.Designation</h5>
+                <p class="faint-bottom-border"><i class="fa fa-map-marker"></i> @contact.Address</p>
+                <address>
+                    <p><small><span class="glyphicon glyphicon-earphone"></span> &nbsp;  @contact.Phone_Number</small></p>
+                    <p><small><span class="glyphicon glyphicon-envelope"></span> &nbsp;  @contact.Email</small></p>
+                </address>
+            </div>
+            <div class="clearfix"></div>
+    </div>
+}*@

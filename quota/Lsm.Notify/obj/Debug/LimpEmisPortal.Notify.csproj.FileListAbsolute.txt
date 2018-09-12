@@ -1,0 +1,47 @@
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\LimpEmisPortal.Notify.exe.config
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\LimpEmisPortal.Notify.exe
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\LimpEmisPortal.Notify.pdb
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEmisPortal.Notify\obj\Debug\LimpEmisPortal.Notify.exe
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEmisPortal.Notify\obj\Debug\LimpEmisPortal.Notify.pdb
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\LimpEmisPortal.Data.exe
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\PagedList.dll
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\LimpEmisPortal.Logger.dll
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\LimpEmisPortal.FileManager.dll
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\LimpEmisPortal.Data.pdb
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\PagedList.xml
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\LimpEmisPortal.Logger.pdb
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\LimpEmisPortal.FileManager.pdb
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEmisPortal.Notify\obj\Debug\LimpEmisPortal.Notify.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\LimpEmisPortal.Notify.exe.config
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\LimpEmisPortal.Notify.exe
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\LimpEmisPortal.Notify.pdb
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\obj\Debug\LimpEmisPortal.Notify.exe
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\obj\Debug\LimpEmisPortal.Notify.pdb
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\LimpEmisPortal.Notify.exe.config
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\LimpEmisPortal.Notify.exe
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\LimpEmisPortal.Notify.pdb
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\obj\Debug\LimpEmisPortal.Notify.exe
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\obj\Debug\LimpEmisPortal.Notify.pdb
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\LimpEmisPortal.Notify.exe.config
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\LimpEmisPortal.Notify.exe
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\LimpEmisPortal.Notify.pdb
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\obj\Debug\LimpEmisPortal.Notify.exe
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\obj\Debug\LimpEmisPortal.Notify.pdb

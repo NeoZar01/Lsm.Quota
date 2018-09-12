@@ -1,0 +1,20 @@
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Email\bin\Debug\DoE.WF.Email.dll.config
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Email\bin\Debug\DoE.WF.Email.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Email\bin\Debug\DoE.WF.Email.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Email\obj\Debug\DoE.WF.Email.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Email\obj\Debug\DoE.WF.Email.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LimpEmisPortal.Email\bin\Debug\DoE.WF.Email.dll.config
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LimpEmisPortal.Email\bin\Debug\DoE.WF.Email.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LimpEmisPortal.Email\bin\Debug\DoE.WF.Email.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LimpEmisPortal.Email\obj\Debug\DoE.WF.Email.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LimpEmisPortal.Email\obj\Debug\DoE.WF.Email.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LimpEmisPortal.Email\bin\Debug\DoE.WF.Email.dll.config
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LimpEmisPortal.Email\bin\Debug\DoE.WF.Email.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LimpEmisPortal.Email\bin\Debug\DoE.WF.Email.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LimpEmisPortal.Email\obj\Debug\DoE.WF.Email.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LimpEmisPortal.Email\obj\Debug\DoE.WF.Email.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LimpEmisPortal.Email\bin\Debug\DoE.WF.Email.dll.config
+C:\Personal Work Drive\Quota\LimpEmisPortal\LimpEmisPortal.Email\bin\Debug\DoE.WF.Email.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LimpEmisPortal.Email\bin\Debug\DoE.WF.Email.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LimpEmisPortal.Email\obj\Debug\DoE.WF.Email.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LimpEmisPortal.Email\obj\Debug\DoE.WF.Email.pdb

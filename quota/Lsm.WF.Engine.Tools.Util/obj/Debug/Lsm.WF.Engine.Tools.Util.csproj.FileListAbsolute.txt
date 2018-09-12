@@ -1,0 +1,51 @@
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF.Utils\bin\Debug\WF.Utils.Items.dll.config
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF.Utils\bin\Debug\WF.Utils.Items.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF.Utils\bin\Debug\WF.Utils.Items.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF.Utils\bin\Debug\EntityFramework.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF.Utils\bin\Debug\EntityFramework.SqlServer.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF.Utils\bin\Debug\EntityFramework.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF.Utils\bin\Debug\EntityFramework.SqlServer.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF.Utils\obj\Debug\WF.Utils.Items.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.WF.Utils\obj\Debug\WF.Utils.Items.pdb
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF.Utils\bin\Debug\WF.Utils.Items.dll.config
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF.Utils\bin\Debug\WF.Utils.Items.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF.Utils\bin\Debug\WF.Utils.Items.pdb
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF.Utils\bin\Debug\EntityFramework.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF.Utils\bin\Debug\EntityFramework.SqlServer.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF.Utils\bin\Debug\EntityFramework.xml
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF.Utils\bin\Debug\EntityFramework.SqlServer.xml
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF.Utils\obj\Debug\WF.Utils.Items.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.WF.Utils\obj\Debug\WF.Utils.Items.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.WF.Engine.Tools.Util\bin\Debug\WF.Engine.Tools.dll.config
+C:\Homework\Quota\QuotaPortal\Lsm.WF.Engine.Tools.Util\bin\Debug\WF.Engine.Tools.dll
+C:\Homework\Quota\QuotaPortal\Lsm.WF.Engine.Tools.Util\bin\Debug\WF.Engine.Tools.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.WF.Engine.Tools.Util\bin\Debug\EntityFramework.dll
+C:\Homework\Quota\QuotaPortal\Lsm.WF.Engine.Tools.Util\bin\Debug\EntityFramework.SqlServer.dll
+C:\Homework\Quota\QuotaPortal\Lsm.WF.Engine.Tools.Util\bin\Debug\EntityFramework.xml
+C:\Homework\Quota\QuotaPortal\Lsm.WF.Engine.Tools.Util\bin\Debug\EntityFramework.SqlServer.xml
+C:\Homework\Quota\QuotaPortal\Lsm.WF.Engine.Tools.Util\obj\Debug\WF.Engine.Tools.State.resources
+C:\Homework\Quota\QuotaPortal\Lsm.WF.Engine.Tools.Util\obj\Debug\Lsm.WF.Engine.Tools.Util.csproj.GenerateResource.Cache
+C:\Homework\Quota\QuotaPortal\Lsm.WF.Engine.Tools.Util\obj\Debug\WF.Engine.Tools.dll
+C:\Homework\Quota\QuotaPortal\Lsm.WF.Engine.Tools.Util\obj\Debug\WF.Engine.Tools.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.WF.Engine.Tools.Util\bin\Debug\WF.Engine.Tools.dll.config
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.WF.Engine.Tools.Util\bin\Debug\WF.Engine.Tools.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.WF.Engine.Tools.Util\bin\Debug\WF.Engine.Tools.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.WF.Engine.Tools.Util\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.WF.Engine.Tools.Util\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.WF.Engine.Tools.Util\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.WF.Engine.Tools.Util\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.WF.Engine.Tools.Util\obj\Debug\WF.Engine.Tools.State.resources
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.WF.Engine.Tools.Util\obj\Debug\Lsm.WF.Engine.Tools.Util.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.WF.Engine.Tools.Util\obj\Debug\WF.Engine.Tools.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.WF.Engine.Tools.Util\obj\Debug\WF.Engine.Tools.pdb
+F:\Development - Rest\QuotaPortal\Lsm.WF.Engine.Tools.Util\bin\Debug\WF.Engine.Tools.dll.config
+F:\Development - Rest\QuotaPortal\Lsm.WF.Engine.Tools.Util\bin\Debug\WF.Engine.Tools.dll
+F:\Development - Rest\QuotaPortal\Lsm.WF.Engine.Tools.Util\bin\Debug\WF.Engine.Tools.pdb
+F:\Development - Rest\QuotaPortal\Lsm.WF.Engine.Tools.Util\bin\Debug\EntityFramework.dll
+F:\Development - Rest\QuotaPortal\Lsm.WF.Engine.Tools.Util\bin\Debug\EntityFramework.SqlServer.dll
+F:\Development - Rest\QuotaPortal\Lsm.WF.Engine.Tools.Util\bin\Debug\EntityFramework.xml
+F:\Development - Rest\QuotaPortal\Lsm.WF.Engine.Tools.Util\bin\Debug\EntityFramework.SqlServer.xml
+F:\Development - Rest\QuotaPortal\Lsm.WF.Engine.Tools.Util\obj\Debug\WF.Engine.Tools.State.resources
+F:\Development - Rest\QuotaPortal\Lsm.WF.Engine.Tools.Util\obj\Debug\Lsm.WF.Engine.Tools.Util.csproj.GenerateResource.Cache
+F:\Development - Rest\QuotaPortal\Lsm.WF.Engine.Tools.Util\obj\Debug\WF.Engine.Tools.dll
+F:\Development - Rest\QuotaPortal\Lsm.WF.Engine.Tools.Util\obj\Debug\WF.Engine.Tools.pdb

@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MasterDATAModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="EnrolmentPerClassPerSubject">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="EmisCode" />
+      <PropertyRef Name="SubjId" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="SubjId" Type="int" Nullable="false" />
+    <Property Name="OffSubId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Afrname" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Key" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Code" Type="int" Nullable="false" />
+    <Property Name="Group" Type="int" Nullable="false" />
+    <Property Name="Phase" Type="int" Nullable="false" />
+    <Property Name="Grade" Type="int" Nullable="false" />
+    <Property Name="SubjTotal" Type="int" Nullable="false" />
+    <Property Name="ClassTotal" Type="int" Nullable="false" />
+    <Property Name="Teachers" Type="int" Nullable="false" />
+    <Property Name="LER" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="Term" Type="int" Nullable="false" />
+    <Property Name="DataYear" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="SchoolsQuintile">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="Sector" Type="int" Nullable="false" />
+    <Property Name="Phase" Type="int" Nullable="false" />
+    <Property Name="ExamNo" Type="int" Nullable="false" />
+    <Property Name="ProvinceCD" Type="int" Nullable="false" />
+    <Property Name="OwnershipCD" Type="int" Nullable="false" />
+    <Property Name="FundingTypeCD" Type="int" Nullable="false" />
+    <Property Name="LevelCD" Type="int" Nullable="false" />
+    <Property Name="PlatoonEmis" Type="int" Nullable="false" />
+    <Property Name="Quintile" Type="int" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="datetime" Nullable="false" />
+    <Property Name="District" Type="int" Nullable="false" />
+    <Property Name="Circuit" Type="int" Nullable="false" />
+    <Property Name="DataYear" Type="nvarchar" MaxLength="8" Nullable="false" />
+    <Property Name="Term" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="School">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="RowGuid" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RowGuid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Phase" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Sector" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Type" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Initials" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="PrincipalLastName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PrincipalCellphone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TownshipVillage" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Suburb" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Town" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Telephone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Email" Type="nvarchar(max)" />
+    <Property Name="Quintile" Type="int" />
+    <Property Name="EICircuit" Type="varchar(max)" Nullable="false" />
+    <Property Name="EIDistrict" Type="varchar(max)" Nullable="false" />
+    <Property Name="Manucipality" Type="varchar(max)" />
+    <Property Name="Term" Type="int" Nullable="false" />
+    <Property Name="DataYear" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="datetime" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CircuitCD" Type="int" />
+    <Property Name="PhaseDescription" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="SchoolAddress">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="RowGuid" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RowGuid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="StreetAddress" Type="nvarchar(max)" />
+    <Property Name="TownshipVillage" Type="nvarchar(max)" />
+    <Property Name="City" Type="nvarchar(max)" />
+    <Property Name="Suburb" Type="nvarchar(max)" />
+    <Property Name="PostalBox" Type="nvarchar(max)" />
+    <Property Name="PostalOffice" Type="nvarchar(max)" />
+    <Property Name="PostalCode" Type="int" />
+    <Property Name="IsRural" Type="bit" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SchoolsPerCircuit">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CircuitCD" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DistrictCD" Type="int" Nullable="false" />
+    <Property Name="DistrictName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Phase" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SectorId" Type="int" Nullable="false" />
+    <Property Name="Sector" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Total" Type="int" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="Term" Type="int" Nullable="false" />
+    <Property Name="DataYear" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'MasterFile.Schools.dbo.vw_SubjEnrolPrGrade' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vw_SubjEnrolPrGrade">
+    <Key>
+      <PropertyRef Name="EmisSubId" />
+      <PropertyRef Name="Grade" />
+      <PropertyRef Name="NoOfTeachers" />
+    </Key>
+    <Property Name="EmisSubId" Type="int" Nullable="false" />
+    <Property Name="OfficialSubjectID" Type="int" />
+    <Property Name="Name" Type="nvarchar" MaxLength="200" />
+    <Property Name="Key" Type="nvarchar" MaxLength="50" />
+    <Property Name="Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="Group" Type="nvarchar" MaxLength="10" />
+    <Property Name="Phase" Type="int" />
+    <Property Name="Afrname" Type="nvarchar" MaxLength="200" />
+    <Property Name="Grade" Type="int" Nullable="false" />
+    <Property Name="TOTAL" Type="int" />
+    <Property Name="Unit" Type="int" />
+    <Property Name="EmisCode" Type="int" />
+    <Property Name="NoOfTeachers" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'MasterFile.Schools.dbo.vwl_LimpopoLearnersEnrlPrGrade' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwl_LimpopoLearnersEnrlPrGrade">
+    <Key>
+      <PropertyRef Name="Grade" />
+    </Key>
+    <Property Name="Grade" Type="int" Nullable="false" />
+    <Property Name="EmisCode" Type="int" />
+    <Property Name="TOTAL" Type="int" />
+  </EntityType>
+  <EntityContainer Name="MasterDATAModelStoreContainer">
+    <EntitySet Name="EnrolmentPerClassPerSubject" EntityType="Self.EnrolmentPerClassPerSubject" Schema="Classes" store:Type="Tables" />
+    <EntitySet Name="SchoolsQuintile" EntityType="Self.SchoolsQuintile" Schema="masterdata" store:Type="Tables" />
+    <EntitySet Name="School" EntityType="Self.School" Schema="School" store:Type="Tables" />
+    <EntitySet Name="SchoolAddress" EntityType="Self.SchoolAddress" Schema="School" store:Type="Tables" />
+    <EntitySet Name="SchoolsPerCircuit" EntityType="Self.SchoolsPerCircuit" Schema="Schools" store:Type="Tables" />
+    <EntitySet Name="vw_SubjEnrolPrGrade" EntityType="Self.vw_SubjEnrolPrGrade" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vw_SubjEnrolPrGrade].[EmisSubId] AS [EmisSubId], 
+    [vw_SubjEnrolPrGrade].[OfficialSubjectID] AS [OfficialSubjectID], 
+    [vw_SubjEnrolPrGrade].[Name] AS [Name], 
+    [vw_SubjEnrolPrGrade].[Key] AS [Key], 
+    [vw_SubjEnrolPrGrade].[Code] AS [Code], 
+    [vw_SubjEnrolPrGrade].[Group] AS [Group], 
+    [vw_SubjEnrolPrGrade].[Phase] AS [Phase], 
+    [vw_SubjEnrolPrGrade].[Afrname] AS [Afrname], 
+    [vw_SubjEnrolPrGrade].[Grade] AS [Grade], 
+    [vw_SubjEnrolPrGrade].[TOTAL] AS [TOTAL], 
+    [vw_SubjEnrolPrGrade].[Unit] AS [Unit], 
+    [vw_SubjEnrolPrGrade].[EmisCode] AS [EmisCode], 
+    [vw_SubjEnrolPrGrade].[NoOfTeachers] AS [NoOfTeachers]
+    FROM [dbo].[vw_SubjEnrolPrGrade] AS [vw_SubjEnrolPrGrade]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwl_LimpopoLearnersEnrlPrGrade" EntityType="Self.vwl_LimpopoLearnersEnrlPrGrade" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwl_LimpopoLearnersEnrlPrGrade].[Grade] AS [Grade], 
+    [vwl_LimpopoLearnersEnrlPrGrade].[EmisCode] AS [EmisCode], 
+    [vwl_LimpopoLearnersEnrlPrGrade].[TOTAL] AS [TOTAL]
+    FROM [dbo].[vwl_LimpopoLearnersEnrlPrGrade] AS [vwl_LimpopoLearnersEnrlPrGrade]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

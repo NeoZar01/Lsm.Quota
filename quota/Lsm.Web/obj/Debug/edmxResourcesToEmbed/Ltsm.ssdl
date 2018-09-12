@@ -1,0 +1,1431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LTSMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BatchCodes">
+    <Key>
+      <PropertyRef Name="BatchID" />
+    </Key>
+    <Property Name="BatchID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BatchDate" Type="datetime" Nullable="false" />
+    <Property Name="BookYear" Type="nvarchar" MaxLength="9" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" />
+    <Property Name="Stationary" Type="bit" Nullable="false" />
+    <Property Name="ISBN" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Qty" Type="int" Nullable="false" />
+    <Property Name="Owner" Type="int" Nullable="false" />
+    <Property Name="OrderNumber" Type="int" Nullable="false" />
+    <Property Name="UnitPrice" Type="smallmoney" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Circ_Req_Order">
+    <Key>
+      <PropertyRef Name="order_Id" />
+    </Key>
+    <Property Name="order_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="isbn" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="creation_date" Type="datetime" Nullable="false" />
+    <Property Name="last_modified_date" Type="datetime" Nullable="false" />
+    <Property Name="release_date" Type="datetime" />
+    <Property Name="warehouse_id" Type="int" />
+    <Property Name="pubId" Type="int" Nullable="false" />
+    <Property Name="unitPrice" Type="money" Nullable="false" />
+    <Property Name="qty" Type="int" Nullable="false" />
+    <Property Name="circuitManager" Type="int" Nullable="false" />
+    <Property Name="batchId" Type="int" />
+    <Property Name="Bookyear" Type="nvarchar" MaxLength="10" />
+    <Property Name="offcrmOrderId" Type="int" />
+    <Property Name="active" Type="int" />
+    <Property Name="ReqItemId" Type="int" />
+  </EntityType>
+  <EntityType Name="crm_OrderRequest">
+    <Key>
+      <PropertyRef Name="OrderRequestNo" />
+    </Key>
+    <Property Name="OrderRequestNo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RequestDate" Type="datetime" Nullable="false" />
+    <Property Name="TotalPrice" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Owner" Type="int" Nullable="false" />
+    <Property Name="Verify" Type="int" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="Active" Type="int" Nullable="false" />
+    <Property Name="PublisherId" Type="int" />
+    <Property Name="Avl" Type="int" />
+    <Property Name="Qty" Type="int" />
+    <Property Name="BookYear" Type="nvarchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="General_Comments">
+    <Key>
+      <PropertyRef Name="CommendId" />
+    </Key>
+    <Property Name="CommendId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DirectorateCode" Type="nvarchar" MaxLength="8" Nullable="false" />
+    <Property Name="TimeSend" Type="datetime" Nullable="false" />
+    <Property Name="Comment" Type="nvarchar" MaxLength="370" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Intelli_Req_Status_Tracer">
+    <Key>
+      <PropertyRef Name="TraceId" />
+    </Key>
+    <Property Name="TraceId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ReqId" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ReqStatus" Type="int" Nullable="false" />
+    <Property Name="TraceDateTime" Type="datetime" Nullable="false" />
+    <Property Name="Comment" Type="text" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Req_CachedItemQty">
+    <Key>
+      <PropertyRef Name="CachedItemQtyId" />
+    </Key>
+    <Property Name="CachedItemQtyId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ReqId" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="Qty" Type="int" Nullable="false" />
+    <Property Name="isbn" Type="nvarchar" MaxLength="35" Nullable="false" />
+    <Property Name="EmisCode" Type="int" />
+    <Property Name="bookmarkDateTime" Type="datetime" />
+    <Property Name="Active" Type="int" />
+  </EntityType>
+  <EntityType Name="Req_tmp_bmkItems">
+    <Key>
+      <PropertyRef Name="Rq_item_Id" />
+    </Key>
+    <Property Name="Rq_item_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ISBN" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="BookmarkFlag" Type="smallint" Nullable="false" />
+    <Property Name="EMIS_Code" Type="int" Nullable="false" />
+    <Property Name="RequisitionId " Type="nvarchar" MaxLength="35" Nullable="false" />
+    <Property Name="GradeID" Type="int" Nullable="false" />
+    <Property Name="Qty" Type="int" Nullable="false" />
+    <Property Name="BatchID" Type="int" />
+    <Property Name="Bookmark_Date" Type="datetime" />
+    <Property Name="Category" Type="nvarchar" MaxLength="30" />
+    <Property Name="ccheQty" Type="int" />
+    <Property Name="Ordered" Type="int" />
+  </EntityType>
+  <EntityType Name="Requisitions">
+    <Key>
+      <PropertyRef Name="ReqID" />
+    </Key>
+    <Property Name="ReqID" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="EMIS" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="BookYear" Type="nvarchar" MaxLength="9" Nullable="false" />
+    <Property Name="SchoolOfficial1" Type="int" />
+    <Property Name="Official1ApproveDate" Type="datetime" />
+    <Property Name="SchoolOfficial2" Type="int" />
+    <Property Name="Official2ApproveDate" Type="datetime" />
+    <Property Name="DepartmentOfficial" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ChecklistDate" Type="datetime" Nullable="false" />
+    <Property Name="ReqDate" Type="datetime" />
+    <Property Name="OrderDate" Type="datetime" />
+    <Property Name="DeliveryDate" Type="datetime" />
+    <Property Name="GrFrom" Type="tinyint" />
+    <Property Name="GrTo" Type="tinyint" />
+    <Property Name="StationaryRequisition" Type="bit" Nullable="false" />
+    <Property Name="ReqStatus" Type="tinyint" Nullable="false" />
+    <Property Name="Verified" Type="nchar" MaxLength="3" />
+    <Property Name="WareID" Type="tinyint" />
+    <Property Name="Recall" Type="bit" Nullable="false" />
+    <Property Name="SMGD_Open" Type="bit" />
+    <Property Name="NoThanks" Type="bit" />
+    <Property Name="ApprovalFlag" Type="int" />
+    <Property Name="TotalPrice" Type="smallmoney" />
+    <Property Name="TransParFlag" Type="int" />
+  </EntityType>
+  <EntityType Name="school_order_catalogue">
+    <Key>
+      <PropertyRef Name="ordercatId" />
+    </Key>
+    <Property Name="ordercatId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="isbn" Type="nvarchar" MaxLength="42" Nullable="false" />
+    <Property Name="approveFlag" Type="int" />
+    <Property Name="active" Type="int" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="ImportDate" Type="date" Nullable="false" />
+    <Property Name="Grade" Type="int" />
+  </EntityType>
+  <EntityType Name="Wf_Req_Envelop">
+    <Key>
+      <PropertyRef Name="wf_Id" />
+    </Key>
+    <Property Name="wf_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="wfFrom" Type="int" Nullable="false" />
+    <Property Name="wfTo" Type="int" Nullable="false" />
+    <Property Name="Req_Id" Type="nvarchar" MaxLength="40" />
+    <Property Name="PriceT" Type="smallmoney" Nullable="false" />
+    <Property Name="SubmissionIndex" Type="int" Nullable="false" />
+    <Property Name="Comment" Type="text" />
+    <Property Name="Action" Type="int" Nullable="false" />
+    <Property Name="EmisCode" Type="int" />
+    <Property Name="Wf_DateTime" Type="datetime" />
+    <Property Name="Active" Type="int" />
+    <Property Name="For" Type="int" />
+  </EntityType>
+  <EntityType Name="WfOrderEnvelope">
+    <Key>
+      <PropertyRef Name="wf_Id" />
+    </Key>
+    <Property Name="wf_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="wfFrom" Type="int" Nullable="false" />
+    <Property Name="wfTo" Type="int" Nullable="false" />
+    <Property Name="crm_Ord_Id" Type="int" Nullable="false" />
+    <Property Name="PriceT" Type="smallmoney" Nullable="false" />
+    <Property Name="SubmissionIndex" Type="int" Nullable="false" />
+    <Property Name="Comment" Type="text" />
+    <Property Name="Action" Type="int" Nullable="false" />
+    <Property Name="EmisCode" Type="int" />
+    <Property Name="Wf_DateTime" Type="datetime" />
+    <Property Name="Active" Type="int" />
+    <Property Name="For" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'LTSM.dbo.vw_rqLmP_Comms_Env' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vw_rqLmP_Comms_Env">
+    <Key>
+      <PropertyRef Name="wf_Id" />
+      <PropertyRef Name="DepartID" />
+      <PropertyRef Name="wfFrom" />
+    </Key>
+    <Property Name="wf_Id" Type="int" Nullable="false" />
+    <Property Name="DepartID" Type="int" Nullable="false" />
+    <Property Name="Designation" Type="nvarchar" MaxLength="145" />
+    <Property Name="Addresse" Type="nvarchar" MaxLength="115" />
+    <Property Name="Address" Type="nvarchar" MaxLength="125" />
+    <Property Name="Email" Type="nvarchar" MaxLength="80" />
+    <Property Name="Phone_Number" Type="nvarchar" MaxLength="50" />
+    <Property Name="CircuitName" Type="nvarchar" MaxLength="250" />
+    <Property Name="wfFrom" Type="int" Nullable="false" />
+    <Property Name="Req_Id" Type="nvarchar" MaxLength="40" />
+    <Property Name="AddressName" Type="nvarchar" MaxLength="115" />
+    <Property Name="Comment" Type="text" />
+    <Property Name="Wf_DateTime" Type="datetime" />
+    <Property Name="LastUpdateDays" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'LTSM.dbo.vw_rqLmP_intelli_rq_hist' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vw_rqLmP_intelli_rq_hist">
+    <Key>
+      <PropertyRef Name="TraceId" />
+      <PropertyRef Name="ReqId" />
+      <PropertyRef Name="TraceDateTime" />
+      <PropertyRef Name="Comment" />
+      <PropertyRef Name="EmisCode" />
+    </Key>
+    <Property Name="TraceId" Type="int" Nullable="false" />
+    <Property Name="ReqId" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="TraceDateTime" Type="datetime" Nullable="false" />
+    <Property Name="Comment" Type="text" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="TracerDayGap" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'LTSM.dbo.vw_rqLmP_OrderItems' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vw_rqLmP_OrderItems">
+    <Key>
+      <PropertyRef Name="order_Id" />
+      <PropertyRef Name="isbn" />
+      <PropertyRef Name="creation_date" />
+      <PropertyRef Name="last_modified_date" />
+      <PropertyRef Name="Price" />
+      <PropertyRef Name="qty" />
+      <PropertyRef Name="circuitManager" />
+      <PropertyRef Name="Emis_Code" />
+      <PropertyRef Name="Grade" />
+    </Key>
+    <Property Name="order_Id" Type="int" Nullable="false" />
+    <Property Name="isbn" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="creation_date" Type="datetime" Nullable="false" />
+    <Property Name="item" Type="nvarchar" MaxLength="255" />
+    <Property Name="last_modified_date" Type="datetime" Nullable="false" />
+    <Property Name="release_date" Type="datetime" />
+    <Property Name="warehouse_id" Type="int" />
+    <Property Name="Publisher" Type="nvarchar" MaxLength="255" />
+    <Property Name="Price" Type="nvarchar" MaxLength="33" Nullable="false" />
+    <Property Name="qty" Type="int" Nullable="false" />
+    <Property Name="circuitManager" Type="int" Nullable="false" />
+    <Property Name="Emis_Code" Type="int" Nullable="false" />
+    <Property Name="DevEnr" Type="int" />
+    <Property Name="BookmarkQty" Type="int" />
+    <Property Name="Category" Type="nvarchar" MaxLength="30" />
+    <Property Name="Ordered" Type="int" />
+    <Property Name="Grade" Type="int" Nullable="false" />
+    <Property Name="SubjectName" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'LTSM.dbo.vw_wf_Requisitions' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vw_wf_Requisitions">
+    <Key>
+      <PropertyRef Name="ReqID" />
+      <PropertyRef Name="EMIS" />
+      <PropertyRef Name="BookYear" />
+      <PropertyRef Name="DepartmentOfficial" />
+      <PropertyRef Name="ChecklistDate" />
+      <PropertyRef Name="wfTo" />
+      <PropertyRef Name="StationaryRequisition" />
+      <PropertyRef Name="ReqStatus" />
+      <PropertyRef Name="Recall" />
+      <PropertyRef Name="PriceT" />
+      <PropertyRef Name="SubmissionIndex" />
+      <PropertyRef Name="SName" />
+      <PropertyRef Name="PrincipalSname" />
+      <PropertyRef Name="EmisOfficerOfficialName" />
+    </Key>
+    <Property Name="ReqID" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="EMIS" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="SchoolIdenityName" Type="nvarchar" MaxLength="250" />
+    <Property Name="BookYear" Type="nvarchar" MaxLength="9" Nullable="false" />
+    <Property Name="SchoolOfficial1" Type="int" />
+    <Property Name="Official1ApproveDate" Type="datetime" />
+    <Property Name="SchoolOfficial2" Type="int" />
+    <Property Name="Official2ApproveDate" Type="datetime" />
+    <Property Name="DepartmentOfficial" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ChecklistDate" Type="datetime" Nullable="false" />
+    <Property Name="ReqDate" Type="datetime" />
+    <Property Name="OrderDate" Type="datetime" />
+    <Property Name="DeliveryDate" Type="datetime" />
+    <Property Name="GrFrom" Type="tinyint" />
+    <Property Name="GrTo" Type="tinyint" />
+    <Property Name="wfTo" Type="int" Nullable="false" />
+    <Property Name="StationaryRequisition" Type="bit" Nullable="false" />
+    <Property Name="ReqStatus" Type="tinyint" Nullable="false" />
+    <Property Name="Verified" Type="nchar" MaxLength="3" />
+    <Property Name="WareID" Type="tinyint" />
+    <Property Name="Recall" Type="bit" Nullable="false" />
+    <Property Name="SMGD_Open" Type="bit" />
+    <Property Name="NoThanks" Type="bit" />
+    <Property Name="ApprovalFlag" Type="int" />
+    <Property Name="TotalPrice" Type="smallmoney" />
+    <Property Name="TransParFlag" Type="int" />
+    <Property Name="PriceT" Type="smallmoney" Nullable="false" />
+    <Property Name="SubmissionIndex" Type="int" Nullable="false" />
+    <Property Name="Comment" Type="text" />
+    <Property Name="Active" Type="int" />
+    <Property Name="EICircuit" Type="nvarchar" MaxLength="255" />
+    <Property Name="Telephone" Type="nvarchar" MaxLength="255" />
+    <Property Name="FName" Type="nvarchar" MaxLength="60" />
+    <Property Name="SName" Type="nvarchar" MaxLength="70" Nullable="false" />
+    <Property Name="PersalNumber" Type="nvarchar" MaxLength="15" />
+    <Property Name="EMail" Type="nvarchar" MaxLength="210" />
+    <Property Name="EmisOfficer" Type="int" />
+    <Property Name="District" Type="nvarchar" MaxLength="250" />
+    <Property Name="Name" Type="nvarchar" MaxLength="250" />
+    <Property Name="submittedDaysLeft" Type="int" />
+    <Property Name="PrincipalSname" Type="nvarchar" MaxLength="70" Nullable="false" />
+    <Property Name="PrincipalFname" Type="nvarchar" MaxLength="60" />
+    <Property Name="EmisOfficerRefName" Type="nvarchar" MaxLength="115" />
+    <Property Name="EmisOfficerOfficialName" Type="nvarchar" MaxLength="71" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'LTSM.dbo.vwc_Catalogue' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwc_Catalogue">
+    <Key>
+      <PropertyRef Name="ItemID" />
+      <PropertyRef Name="EmisSubId" />
+      <PropertyRef Name="PubID" />
+      <PropertyRef Name="UnitP" />
+      <PropertyRef Name="PriceU" />
+      <PropertyRef Name="Edition" />
+      <PropertyRef Name="Price" />
+      <PropertyRef Name="UnitPrice" />
+    </Key>
+    <Property Name="ItemID" Type="int" Nullable="false" />
+    <Property Name="EmisSubId" Type="int" Nullable="false" />
+    <Property Name="OfficialSubjectID" Type="int" />
+    <Property Name="ISBN" Type="nvarchar" MaxLength="50" />
+    <Property Name="Category" Type="nvarchar" MaxLength="255" />
+    <Property Name="Author" Type="nvarchar" MaxLength="4000" />
+    <Property Name="Item" Type="nvarchar" MaxLength="255" />
+    <Property Name="PubID" Type="int" Nullable="false" />
+    <Property Name="Publisher" Type="nvarchar" MaxLength="255" />
+    <Property Name="ItemYear" Type="nvarchar" MaxLength="20" />
+    <Property Name="SubjectName" Type="nvarchar" MaxLength="200" />
+    <Property Name="Afrname" Type="nvarchar" MaxLength="200" />
+    <Property Name="Grade" Type="int" />
+    <Property Name="Language" Type="nvarchar" MaxLength="20" />
+    <Property Name="Area" Type="nvarchar" MaxLength="255" />
+    <Property Name="ImportDate" Type="date" />
+    <Property Name="Group" Type="nvarchar" MaxLength="255" />
+    <Property Name="EmisCode" Type="int" />
+    <Property Name="importDateGap" Type="int" />
+    <Property Name="Active" Type="int" />
+    <Property Name="cons_activator" Type="int" />
+    <Property Name="UnitP" Type="varchar" MaxLength="43" Nullable="false" />
+    <Property Name="PriceU" Type="smallmoney" Nullable="false" />
+    <Property Name="Edition" Type="int" Nullable="false" />
+    <Property Name="Price" Type="smallmoney" Nullable="false" />
+    <Property Name="UnitPrice" Type="nvarchar" MaxLength="33" Nullable="false" />
+    <Property Name="CurrencyCode" Type="char" MaxLength="3" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'LTSM.dbo.vwclsb_FullyQualifyableOrderCatalogue' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwclsb_FullyQualifyableOrderCatalogue">
+    <Key>
+      <PropertyRef Name="ItemID" />
+      <PropertyRef Name="EmisSubId" />
+      <PropertyRef Name="PubID" />
+      <PropertyRef Name="Grade" />
+      <PropertyRef Name="Price" />
+      <PropertyRef Name="UnitPrice" />
+      <PropertyRef Name="Edition" />
+    </Key>
+    <Property Name="ItemID" Type="int" Nullable="false" />
+    <Property Name="EmisSubId" Type="int" Nullable="false" />
+    <Property Name="OfficialSubjectID" Type="int" />
+    <Property Name="ISBN" Type="nvarchar" MaxLength="50" />
+    <Property Name="Category" Type="nvarchar" MaxLength="255" />
+    <Property Name="Author" Type="nvarchar" MaxLength="4000" />
+    <Property Name="Item" Type="nvarchar" MaxLength="255" />
+    <Property Name="PubID" Type="int" Nullable="false" />
+    <Property Name="Publisher" Type="nvarchar" MaxLength="255" />
+    <Property Name="ItemYear" Type="nvarchar" MaxLength="20" />
+    <Property Name="SubjectName" Type="nvarchar" MaxLength="200" />
+    <Property Name="Grade" Type="int" Nullable="false" />
+    <Property Name="Language" Type="nvarchar" MaxLength="20" />
+    <Property Name="Area" Type="nvarchar" MaxLength="255" />
+    <Property Name="EmisCode" Type="int" />
+    <Property Name="Active" Type="int" />
+    <Property Name="Price" Type="smallmoney" Nullable="false" />
+    <Property Name="UnitPrice" Type="nvarchar" MaxLength="33" Nullable="false" />
+    <Property Name="CurrencyCode" Type="char" MaxLength="3" />
+    <Property Name="Key" Type="nvarchar" MaxLength="50" />
+    <Property Name="Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="RequisitionId " Type="nvarchar" MaxLength="35" />
+    <Property Name="Group" Type="nvarchar" MaxLength="10" />
+    <Property Name="Phase" Type="int" />
+    <Property Name="importDateGap" Type="int" />
+    <Property Name="DevEnr" Type="int" />
+    <Property Name="BookmarkQty" Type="int" />
+    <Property Name="Avl" Type="int" />
+    <Property Name="Bookmark_Date" Type="datetime" />
+    <Property Name="Edition" Type="int" Nullable="false" />
+    <Property Name="LastBookmrkDays" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'LTSM.dbo.vwem_circulars' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwem_circulars">
+    <Key>
+      <PropertyRef Name="NotId" />
+      <PropertyRef Name="Publisher" />
+      <PropertyRef Name="NotSubject" />
+      <PropertyRef Name="NotType" />
+      <PropertyRef Name="PublishDate" />
+      <PropertyRef Name="ReceiverType" />
+      <PropertyRef Name="Notification" />
+      <PropertyRef Name="circularId" />
+      <PropertyRef Name="circularsRef" />
+      <PropertyRef Name="ConfLev" />
+    </Key>
+    <Property Name="NotId" Type="int" Nullable="false" />
+    <Property Name="Publisher" Type="int" Nullable="false" />
+    <Property Name="NotSubject" Type="nvarchar" MaxLength="145" Nullable="false" />
+    <Property Name="NotType" Type="int" Nullable="false" />
+    <Property Name="PublishDate" Type="date" Nullable="false" />
+    <Property Name="ReceiverType" Type="int" Nullable="false" />
+    <Property Name="NotedCount" Type="int" />
+    <Property Name="Notification" Type="nvarchar" MaxLength="600" Nullable="false" />
+    <Property Name="BookYear" Type="nvarchar" MaxLength="15" />
+    <Property Name="Term" Type="int" />
+    <Property Name="Active" Type="int" />
+    <Property Name="Attachment" Type="int" />
+    <Property Name="circularId" Type="int" Nullable="false" />
+    <Property Name="circularsRef" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="FRH" Type="nvarchar" MaxLength="800" />
+    <Property Name="Designation" Type="nvarchar" MaxLength="145" />
+    <Property Name="RefName" Type="nvarchar" MaxLength="115" />
+    <Property Name="Email" Type="nvarchar" MaxLength="80" />
+    <Property Name="ConfLev" Type="bit" Nullable="false" />
+    <Property Name="cActive" Type="int" />
+    <Property Name="DirCode" Type="nvarchar" MaxLength="12" />
+    <Property Name="daysPosted" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'LTSM.dbo.vwLED_ai_ReqTraceLogs' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwLED_ai_ReqTraceLogs">
+    <Key>
+      <PropertyRef Name="TraceId" />
+      <PropertyRef Name="ReqId" />
+      <PropertyRef Name="ReqStatus" />
+      <PropertyRef Name="TraceDateTime" />
+      <PropertyRef Name="Log" />
+      <PropertyRef Name="EmisCode" />
+    </Key>
+    <Property Name="TraceId" Type="int" Nullable="false" />
+    <Property Name="ReqId" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ReqStatus" Type="int" Nullable="false" />
+    <Property Name="TraceDateTime" Type="datetime" Nullable="false" />
+    <Property Name="Log" Type="text" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="SchoolIdenityName" Type="nvarchar" MaxLength="250" />
+    <Property Name="daysDuration" Type="int" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'LTSM.dbo.vwLEPD_c_rqConsolidated' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwLEPD_c_rqConsolidated">
+    <Key>
+      <PropertyRef Name="Rq_item_Id" />
+      <PropertyRef Name="EMIS_Code" />
+      <PropertyRef Name="BookYear" />
+      <PropertyRef Name="RequisitionId " />
+      <PropertyRef Name="GradeID" />
+      <PropertyRef Name="Qty" />
+      <PropertyRef Name="ReqStatus" />
+      <PropertyRef Name="PriceTag" />
+      <PropertyRef Name="wfTo" />
+    </Key>
+    <Property Name="Rq_item_Id" Type="int" Nullable="false" />
+    <Property Name="ISBN" Type="nvarchar" MaxLength="50" />
+    <Property Name="BookmarkFlag" Type="smallint" />
+    <Property Name="EMIS_Code" Type="int" Nullable="false" />
+    <Property Name="BookYear" Type="nvarchar" MaxLength="9" Nullable="false" />
+    <Property Name="RequisitionId " Type="nvarchar" MaxLength="35" Nullable="false" />
+    <Property Name="GradeID" Type="int" Nullable="false" />
+    <Property Name="Qty" Type="int" Nullable="false" />
+    <Property Name="BatchID" Type="int" />
+    <Property Name="Bookmark_Date" Type="datetime" />
+    <Property Name="Category" Type="nvarchar" MaxLength="255" />
+    <Property Name="TotalPrice" Type="smallmoney" />
+    <Property Name="ReqStatus" Type="tinyint" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="ReqDate" Type="datetime" />
+    <Property Name="PriceTag" Type="smallmoney" Nullable="false" />
+    <Property Name="TransParFlag" Type="int" />
+    <Property Name="wfTo" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'LTSM.dbo.vwLEPD_rq_consd_Req' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwLEPD_rq_consd_Req">
+    <Key>
+      <PropertyRef Name="ReqID" />
+      <PropertyRef Name="BookYear" />
+      <PropertyRef Name="EMIS" />
+      <PropertyRef Name="DepartmentOfficial" />
+      <PropertyRef Name="ChecklistDate" />
+      <PropertyRef Name="StationaryRequisition" />
+      <PropertyRef Name="ReqStatus" />
+      <PropertyRef Name="Recall" />
+    </Key>
+    <Property Name="ReqID" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="wfFrom" Type="int" />
+    <Property Name="wfTo" Type="int" />
+    <Property Name="First_Name" Type="nvarchar" MaxLength="35" />
+    <Property Name="Last_Name" Type="nvarchar" MaxLength="35" />
+    <Property Name="Email" Type="nvarchar" MaxLength="80" />
+    <Property Name="Designation" Type="nvarchar" MaxLength="145" />
+    <Property Name="BookYear" Type="nvarchar" MaxLength="9" Nullable="false" />
+    <Property Name="EMIS" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="SchoolOfficial1" Type="int" />
+    <Property Name="Official1ApproveDate" Type="datetime" />
+    <Property Name="DepartmentOfficial" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ChecklistDate" Type="datetime" Nullable="false" />
+    <Property Name="ReqDate" Type="datetime" />
+    <Property Name="OrderDate" Type="datetime" />
+    <Property Name="DeliveryDate" Type="datetime" />
+    <Property Name="GrFrom" Type="tinyint" />
+    <Property Name="GrTo" Type="tinyint" />
+    <Property Name="StationaryRequisition" Type="bit" Nullable="false" />
+    <Property Name="ReqStatus" Type="tinyint" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="For" Type="int" />
+    <Property Name="Checklistdays" Type="int" />
+    <Property Name="Verified" Type="nchar" MaxLength="3" />
+    <Property Name="WareID" Type="tinyint" />
+    <Property Name="Recall" Type="bit" Nullable="false" />
+    <Property Name="SMGD_Open" Type="bit" />
+    <Property Name="NoThanks" Type="bit" />
+    <Property Name="ApprovalFlag" Type="int" />
+    <Property Name="TotalPrice" Type="smallmoney" />
+    <Property Name="TransParFlag" Type="int" />
+    <Property Name="SubmissionIndex" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'LTSM.dbo.vwLEPD_Rq_SubjectPer_Ord' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwLEPD_Rq_SubjectPer_Ord">
+    <Key>
+      <PropertyRef Name="CachedItemQtyId" />
+      <PropertyRef Name="qty" />
+      <PropertyRef Name="grade" />
+      <PropertyRef Name="UnitPrice" />
+      <PropertyRef Name="id" />
+      <PropertyRef Name="AvlInCache" />
+      <PropertyRef Name="CachedReq" />
+      <PropertyRef Name="Price" />
+    </Key>
+    <Property Name="CachedItemQtyId" Type="int" Nullable="false" />
+    <Property Name="qty" Type="int" Nullable="false" />
+    <Property Name="ISBN" Type="nvarchar" MaxLength="50" />
+    <Property Name="SubjectName" Type="nvarchar" MaxLength="200" />
+    <Property Name="Item" Type="nvarchar" MaxLength="255" />
+    <Property Name="Author" Type="nvarchar" MaxLength="4000" />
+    <Property Name="Publisher" Type="nvarchar" MaxLength="255" />
+    <Property Name="Category" Type="nvarchar" MaxLength="255" />
+    <Property Name="Area" Type="nvarchar" MaxLength="255" />
+    <Property Name="EmisCode" Type="int" />
+    <Property Name="grade" Type="int" Nullable="false" />
+    <Property Name="DevEnr" Type="int" />
+    <Property Name="UnitPrice" Type="nvarchar" MaxLength="33" Nullable="false" />
+    <Property Name="Avl" Type="int" />
+    <Property Name="ReqID" Type="nvarchar" MaxLength="35" />
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="Sum" Type="smallmoney" />
+    <Property Name="AvlInCache" Type="int" Nullable="false" />
+    <Property Name="SumInCache" Type="smallmoney" />
+    <Property Name="CachedReq" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="Price" Type="smallmoney" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'LTSM.dbo.vwLmP_IsbnIsReadyOrderTrans' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwLmP_IsbnIsReadyOrderTrans">
+    <Key>
+      <PropertyRef Name="Rq_item_Id" />
+      <PropertyRef Name="order_Id" />
+      <PropertyRef Name="NatEmis" />
+      <PropertyRef Name="SName" />
+      <PropertyRef Name="ISBN" />
+      <PropertyRef Name="RequisitionId " />
+      <PropertyRef Name="GradeID" />
+      <PropertyRef Name="Qty" />
+      <PropertyRef Name="circuitManager" />
+      <PropertyRef Name="pubId" />
+    </Key>
+    <Property Name="Rq_item_Id" Type="int" Nullable="false" />
+    <Property Name="order_Id" Type="int" Nullable="false" />
+    <Property Name="NatEmis" Type="int" Nullable="false" />
+    <Property Name="Circuit" Type="nvarchar" MaxLength="150" />
+    <Property Name="District" Type="nvarchar" MaxLength="150" />
+    <Property Name="SchoolIdenityName" Type="nvarchar" MaxLength="250" />
+    <Property Name="EMail" Type="nvarchar" MaxLength="210" />
+    <Property Name="Telephone1" Type="nvarchar" MaxLength="25" />
+    <Property Name="Telephone" Type="nvarchar" MaxLength="255" />
+    <Property Name="FName" Type="nvarchar" MaxLength="60" />
+    <Property Name="SName" Type="nvarchar" MaxLength="70" Nullable="false" />
+    <Property Name="PersalNumber" Type="nvarchar" MaxLength="15" />
+    <Property Name="ManagementPosition" Type="nvarchar" MaxLength="40" />
+    <Property Name="ISBN" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="RequisitionId " Type="nvarchar" MaxLength="35" Nullable="false" />
+    <Property Name="GradeID" Type="int" Nullable="false" />
+    <Property Name="Qty" Type="int" Nullable="false" />
+    <Property Name="BatchID" Type="int" />
+    <Property Name="Bookmark_Date" Type="datetime" />
+    <Property Name="Category" Type="nvarchar" MaxLength="30" />
+    <Property Name="Ordered" Type="int" />
+    <Property Name="Bookyear" Type="nvarchar" MaxLength="10" />
+    <Property Name="EICircuit" Type="nvarchar" MaxLength="255" />
+    <Property Name="circuitManager" Type="int" Nullable="false" />
+    <Property Name="pubId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'LTSM.dbo.vwLmP_Ord_CountPrPublisher' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwLmP_Ord_CountPrPublisher">
+    <Key>
+      <PropertyRef Name="ISBN" />
+      <PropertyRef Name="UnitPrice" />
+      <PropertyRef Name="Price" />
+      <PropertyRef Name="PubId" />
+      <PropertyRef Name="EmisSubId" />
+      <PropertyRef Name="ReqID" />
+    </Key>
+    <Property Name="ISBN" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="UnitPrice" Type="nvarchar" MaxLength="33" Nullable="false" />
+    <Property Name="Price" Type="smallmoney" Nullable="false" />
+    <Property Name="item" Type="nvarchar" MaxLength="255" />
+    <Property Name="PubId" Type="int" Nullable="false" />
+    <Property Name="Publisher" Type="nvarchar" MaxLength="255" />
+    <Property Name="EmisSubId" Type="int" Nullable="false" />
+    <Property Name="EiCircuit" Type="nvarchar" MaxLength="255" />
+    <Property Name="Manager" Type="nvarchar" MaxLength="200" />
+    <Property Name="ReqID" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="IsbnCnt" Type="int" />
+    <Property Name="LrnEnrTotal" Type="int" />
+    <Property Name="BookOrdQty" Type="int" />
+    <Property Name="consLrnEnrTotal" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'LTSM.dbo.vwLmP_ord_PubWithOrd' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwLmP_ord_PubWithOrd">
+    <Key>
+      <PropertyRef Name="PubId" />
+    </Key>
+    <Property Name="PubId" Type="int" Nullable="false" />
+    <Property Name="Publisher" Type="nvarchar" MaxLength="255" />
+    <Property Name="EiCircuit" Type="nvarchar" MaxLength="255" />
+    <Property Name="Manager" Type="nvarchar" MaxLength="200" />
+    <Property Name="NoOfItms" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'LTSM.dbo.vwLmP_order_ProvOrderPerPub' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwLmP_order_ProvOrderPerPub">
+    <Key>
+      <PropertyRef Name="NatEmis" />
+      <PropertyRef Name="SName" />
+      <PropertyRef Name="EmisSubId" />
+      <PropertyRef Name="Qty" />
+      <PropertyRef Name="ReqID" />
+      <PropertyRef Name="Price" />
+      <PropertyRef Name="Grade" />
+      <PropertyRef Name="UnitPrice" />
+      <PropertyRef Name="ReqStatus" />
+      <PropertyRef Name="ISBN" />
+      <PropertyRef Name="PubId" />
+    </Key>
+    <Property Name="NatEmis" Type="int" Nullable="false" />
+    <Property Name="Item" Type="nvarchar" MaxLength="255" />
+    <Property Name="LrnEnrUnit" Type="int" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="District" Type="nvarchar" MaxLength="250" />
+    <Property Name="EmisOfficer" Type="int" />
+    <Property Name="SchoolIdenityName" Type="nvarchar" MaxLength="250" />
+    <Property Name="EMail" Type="nvarchar" MaxLength="210" />
+    <Property Name="Telephone1" Type="nvarchar" MaxLength="25" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="25" />
+    <Property Name="InternetAccess" Type="nvarchar" MaxLength="10" />
+    <Property Name="PostAddress0" Type="nvarchar" MaxLength="50" />
+    <Property Name="PostAddress0No" Type="nvarchar" MaxLength="10" />
+    <Property Name="PostAddress1" Type="nvarchar" MaxLength="200" />
+    <Property Name="PostAddress2" Type="nvarchar" MaxLength="200" />
+    <Property Name="PostAddress3" Type="nvarchar" MaxLength="200" />
+    <Property Name="PostCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="EICircuit" Type="nvarchar" MaxLength="255" />
+    <Property Name="Telephone" Type="nvarchar" MaxLength="255" />
+    <Property Name="FName" Type="nvarchar" MaxLength="60" />
+    <Property Name="SName" Type="nvarchar" MaxLength="70" Nullable="false" />
+    <Property Name="EmisSubId" Type="int" Nullable="false" />
+    <Property Name="Qty" Type="int" Nullable="false" />
+    <Property Name="PersalNumber" Type="nvarchar" MaxLength="15" />
+    <Property Name="ManagementPosition" Type="nvarchar" MaxLength="40" />
+    <Property Name="ReqID" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="TotalPrice" Type="smallmoney" />
+    <Property Name="Price" Type="smallmoney" Nullable="false" />
+    <Property Name="Manager" Type="nvarchar" MaxLength="200" />
+    <Property Name="Grade" Type="int" Nullable="false" />
+    <Property Name="UnitPrice" Type="nvarchar" MaxLength="33" Nullable="false" />
+    <Property Name="SubjectName" Type="nvarchar" MaxLength="200" />
+    <Property Name="ReqDate" Type="datetime" />
+    <Property Name="OrderDate" Type="datetime" />
+    <Property Name="DeliveryDate" Type="datetime" />
+    <Property Name="ReqStatus" Type="tinyint" Nullable="false" />
+    <Property Name="Ordered" Type="int" />
+    <Property Name="ISBN" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="BatchID" Type="int" />
+    <Property Name="PubId" Type="int" Nullable="false" />
+    <Property Name="Publisher" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'LTSM.dbo.vwLMP_r_RequisitionsUnsaved' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwLMP_r_RequisitionsUnsaved">
+    <Key>
+      <PropertyRef Name="RequisitionId" />
+      <PropertyRef Name="Emis_Code" />
+    </Key>
+    <Property Name="RequisitionId" Type="nvarchar" MaxLength="35" Nullable="false" />
+    <Property Name="Emis_Code" Type="int" Nullable="false" />
+    <Property Name="Number of Items" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'LTSM.dbo.vwLmP_rq_orphaned_bmk' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwLmP_rq_orphaned_bmk">
+    <Key>
+      <PropertyRef Name="Rq_item_Id" />
+      <PropertyRef Name="ISBN" />
+      <PropertyRef Name="BookmarkFlag" />
+      <PropertyRef Name="EMIS_Code" />
+      <PropertyRef Name="RequisitionId " />
+      <PropertyRef Name="GradeID" />
+      <PropertyRef Name="Qty" />
+    </Key>
+    <Property Name="Rq_item_Id" Type="int" Nullable="false" />
+    <Property Name="ISBN" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="BookmarkFlag" Type="smallint" Nullable="false" />
+    <Property Name="EMIS_Code" Type="int" Nullable="false" />
+    <Property Name="RequisitionId " Type="nvarchar" MaxLength="35" Nullable="false" />
+    <Property Name="GradeID" Type="int" Nullable="false" />
+    <Property Name="Qty" Type="int" Nullable="false" />
+    <Property Name="BatchID" Type="int" />
+    <Property Name="Bookmark_Date" Type="datetime" />
+    <Property Name="Category" Type="nvarchar" MaxLength="30" />
+    <Property Name="ccheQty" Type="int" />
+    <Property Name="Ordered" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'LTSM.dbo.vwlsbsc_BookOrderHistory' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwlsbsc_BookOrderHistory">
+    <Key>
+      <PropertyRef Name="Rq_item_Id" />
+      <PropertyRef Name="EmisSubId" />
+      <PropertyRef Name="Grade" />
+      <PropertyRef Name="RequisitionId " />
+      <PropertyRef Name="BookmarkQty" />
+    </Key>
+    <Property Name="Rq_item_Id" Type="int" Nullable="false" />
+    <Property Name="ItemID" Type="int" />
+    <Property Name="EmisSubId" Type="int" Nullable="false" />
+    <Property Name="OfficialSubjectID" Type="int" />
+    <Property Name="ISBN" Type="nvarchar" MaxLength="50" />
+    <Property Name="Category" Type="nvarchar" MaxLength="255" />
+    <Property Name="Author" Type="nvarchar" MaxLength="4000" />
+    <Property Name="Item" Type="nvarchar" MaxLength="255" />
+    <Property Name="PubID" Type="int" />
+    <Property Name="Publisher" Type="nvarchar" MaxLength="255" />
+    <Property Name="ItemYear" Type="nvarchar" MaxLength="20" />
+    <Property Name="SubjectName" Type="nvarchar" MaxLength="200" />
+    <Property Name="Grade" Type="int" Nullable="false" />
+    <Property Name="Language" Type="nvarchar" MaxLength="20" />
+    <Property Name="Area" Type="nvarchar" MaxLength="255" />
+    <Property Name="EmisCode" Type="int" />
+    <Property Name="Active" Type="int" />
+    <Property Name="Price" Type="smallmoney" />
+    <Property Name="UnitPrice" Type="nvarchar" MaxLength="33" />
+    <Property Name="CurrencyCode" Type="char" MaxLength="3" />
+    <Property Name="Key" Type="nvarchar" MaxLength="50" />
+    <Property Name="Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="RequisitionId " Type="nvarchar" MaxLength="35" Nullable="false" />
+    <Property Name="Group" Type="nvarchar" MaxLength="10" />
+    <Property Name="Phase" Type="int" />
+    <Property Name="importDateGap" Type="int" />
+    <Property Name="DeviatedEnr" Type="int" />
+    <Property Name="BookmarkQty" Type="int" Nullable="false" />
+    <Property Name="Avl" Type="int" />
+    <Property Name="Bookmark_Date" Type="datetime" />
+    <Property Name="LastBookmrkDays" Type="int" />
+    <Property Name="SchoolIdenityName" Type="nvarchar" MaxLength="250" />
+    <Property Name="EICircuit" Type="nvarchar" MaxLength="255" />
+    <Property Name="Ordered" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'LTSM.dbo.vwltsm_current_bookYr' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'LTSM.dbo.vwn_NotificationBoard' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwn_NotificationBoard">
+    <Key>
+      <PropertyRef Name="NotId" />
+      <PropertyRef Name="Publisher" />
+      <PropertyRef Name="ConfLev" />
+      <PropertyRef Name="NotSubject" />
+      <PropertyRef Name="NotType" />
+      <PropertyRef Name="ReceiverType" />
+      <PropertyRef Name="PublishDate" />
+      <PropertyRef Name="Directorate" />
+      <PropertyRef Name="Notification" />
+      <PropertyRef Name="audince" />
+    </Key>
+    <Property Name="NotId" Type="int" Nullable="false" />
+    <Property Name="Publisher" Type="int" Nullable="false" />
+    <Property Name="Designation" Type="nvarchar" MaxLength="145" />
+    <Property Name="AddressName" Type="nvarchar" MaxLength="115" />
+    <Property Name="Email" Type="nvarchar" MaxLength="80" />
+    <Property Name="DESCRIPTION" Type="nvarchar" MaxLength="155" />
+    <Property Name="ConfLev" Type="bit" Nullable="false" />
+    <Property Name="NotSubject" Type="nvarchar" MaxLength="145" Nullable="false" />
+    <Property Name="NotType" Type="int" Nullable="false" />
+    <Property Name="PublishDaysDur" Type="int" />
+    <Property Name="ReceiverType" Type="int" Nullable="false" />
+    <Property Name="PublishDate" Type="date" Nullable="false" />
+    <Property Name="Directorate" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DirCode" Type="nvarchar" MaxLength="12" />
+    <Property Name="NotedCount" Type="int" />
+    <Property Name="Notification" Type="nvarchar" MaxLength="600" Nullable="false" />
+    <Property Name="audince" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="BookYear" Type="nvarchar" MaxLength="15" />
+    <Property Name="Term" Type="int" />
+    <Property Name="Active" Type="int" />
+    <Property Name="Attachment" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'LTSM.dbo.vwo_OrdersPerPubPerDistrict' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwo_OrdersPerPubPerDistrict">
+    <Key>
+      <PropertyRef Name="OrderRequestNo" />
+      <PropertyRef Name="RequestDate" />
+      <PropertyRef Name="Owner" />
+    </Key>
+    <Property Name="OrderRequestNo" Type="int" Nullable="false" />
+    <Property Name="RequestDate" Type="datetime" Nullable="false" />
+    <Property Name="pushdate" Type="int" />
+    <Property Name="PublisherId" Type="int" />
+    <Property Name="Publisher" Type="nvarchar" MaxLength="255" />
+    <Property Name="GrantPrice" Type="decimal" Precision="38" Scale="2" />
+    <Property Name="Available" Type="int" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="Owner" Type="int" Nullable="false" />
+    <Property Name="BookYear" Type="nvarchar" MaxLength="15" />
+    <Property Name="Name" Type="nvarchar" MaxLength="250" />
+    <Property Name="Manager" Type="nvarchar" MaxLength="200" />
+    <Property Name="RefName" Type="nvarchar" MaxLength="115" />
+    <Property Name="DistrictCD" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'LTSM.dbo.vws_ReqAccountingDates' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vws_ReqAccountingDates">
+    <Key>
+      <PropertyRef Name="BookYear" />
+      <PropertyRef Name="GrFrom" />
+      <PropertyRef Name="GrTo" />
+      <PropertyRef Name="DateFrom" />
+      <PropertyRef Name="DateTo" />
+      <PropertyRef Name="CaptureType" />
+    </Key>
+    <Property Name="OpenCaptureDateMark" Type="int" />
+    <Property Name="SchoolGrFrm" Type="nvarchar" MaxLength="10" />
+    <Property Name="SchoolGrTo" Type="nvarchar" MaxLength="10" />
+    <Property Name="BookYear" Type="nvarchar" MaxLength="9" Nullable="false" />
+    <Property Name="GrFrom" Type="tinyint" Nullable="false" />
+    <Property Name="GrTo" Type="tinyint" Nullable="false" />
+    <Property Name="DateFrom" Type="smalldatetime" Nullable="false" />
+    <Property Name="DateTo" Type="smalldatetime" Nullable="false" />
+    <Property Name="CaptureType" Type="nchar" MaxLength="1" Nullable="false" />
+    <Property Name="EmisCode" Type="int" />
+    <Property Name="Active" Type="int" />
+  </EntityType>
+  <Association Name="FK__ltsm_wf_s__Req_I__3073C869">
+    <End Role="Requisitions" Type="Self.Requisitions" Multiplicity="0..1" />
+    <End Role="Wf_Req_Envelop" Type="Self.Wf_Req_Envelop" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Requisitions">
+        <PropertyRef Name="ReqID" />
+      </Principal>
+      <Dependent Role="Wf_Req_Envelop">
+        <PropertyRef Name="Req_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Requisitions_Requisitions">
+    <End Role="Requisitions" Type="Self.Requisitions" Multiplicity="1" />
+    <End Role="Requisitions1" Type="Self.Requisitions" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Requisitions">
+        <PropertyRef Name="ReqID" />
+      </Principal>
+      <Dependent Role="Requisitions1">
+        <PropertyRef Name="ReqID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="LTSMModelStoreContainer">
+    <EntitySet Name="BatchCodes" EntityType="Self.BatchCodes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Circ_Req_Order" EntityType="Self.Circ_Req_Order" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="crm_OrderRequest" EntityType="Self.crm_OrderRequest" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="General_Comments" EntityType="Self.General_Comments" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Intelli_Req_Status_Tracer" EntityType="Self.Intelli_Req_Status_Tracer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Req_CachedItemQty" EntityType="Self.Req_CachedItemQty" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Req_tmp_bmkItems" EntityType="Self.Req_tmp_bmkItems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Requisitions" EntityType="Self.Requisitions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="school_order_catalogue" EntityType="Self.school_order_catalogue" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Wf_Req_Envelop" EntityType="Self.Wf_Req_Envelop" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="WfOrderEnvelope" EntityType="Self.WfOrderEnvelope" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="vw_rqLmP_Comms_Env" EntityType="Self.vw_rqLmP_Comms_Env" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vw_rqLmP_Comms_Env].[wf_Id] AS [wf_Id], 
+    [vw_rqLmP_Comms_Env].[DepartID] AS [DepartID], 
+    [vw_rqLmP_Comms_Env].[Designation] AS [Designation], 
+    [vw_rqLmP_Comms_Env].[Addresse] AS [Addresse], 
+    [vw_rqLmP_Comms_Env].[Address] AS [Address], 
+    [vw_rqLmP_Comms_Env].[Email] AS [Email], 
+    [vw_rqLmP_Comms_Env].[Phone_Number] AS [Phone_Number], 
+    [vw_rqLmP_Comms_Env].[CircuitName] AS [CircuitName], 
+    [vw_rqLmP_Comms_Env].[wfFrom] AS [wfFrom], 
+    [vw_rqLmP_Comms_Env].[Req_Id] AS [Req_Id], 
+    [vw_rqLmP_Comms_Env].[AddressName] AS [AddressName], 
+    [vw_rqLmP_Comms_Env].[Comment] AS [Comment], 
+    [vw_rqLmP_Comms_Env].[Wf_DateTime] AS [Wf_DateTime], 
+    [vw_rqLmP_Comms_Env].[LastUpdateDays] AS [LastUpdateDays]
+    FROM [dbo].[vw_rqLmP_Comms_Env] AS [vw_rqLmP_Comms_Env]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vw_rqLmP_intelli_rq_hist" EntityType="Self.vw_rqLmP_intelli_rq_hist" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vw_rqLmP_intelli_rq_hist].[TraceId] AS [TraceId], 
+    [vw_rqLmP_intelli_rq_hist].[ReqId] AS [ReqId], 
+    [vw_rqLmP_intelli_rq_hist].[Description] AS [Description], 
+    [vw_rqLmP_intelli_rq_hist].[TraceDateTime] AS [TraceDateTime], 
+    [vw_rqLmP_intelli_rq_hist].[Comment] AS [Comment], 
+    [vw_rqLmP_intelli_rq_hist].[EmisCode] AS [EmisCode], 
+    [vw_rqLmP_intelli_rq_hist].[TracerDayGap] AS [TracerDayGap]
+    FROM [dbo].[vw_rqLmP_intelli_rq_hist] AS [vw_rqLmP_intelli_rq_hist]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vw_rqLmP_OrderItems" EntityType="Self.vw_rqLmP_OrderItems" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vw_rqLmP_OrderItems].[order_Id] AS [order_Id], 
+    [vw_rqLmP_OrderItems].[isbn] AS [isbn], 
+    [vw_rqLmP_OrderItems].[creation_date] AS [creation_date], 
+    [vw_rqLmP_OrderItems].[item] AS [item], 
+    [vw_rqLmP_OrderItems].[last_modified_date] AS [last_modified_date], 
+    [vw_rqLmP_OrderItems].[release_date] AS [release_date], 
+    [vw_rqLmP_OrderItems].[warehouse_id] AS [warehouse_id], 
+    [vw_rqLmP_OrderItems].[Publisher] AS [Publisher], 
+    [vw_rqLmP_OrderItems].[Price] AS [Price], 
+    [vw_rqLmP_OrderItems].[qty] AS [qty], 
+    [vw_rqLmP_OrderItems].[circuitManager] AS [circuitManager], 
+    [vw_rqLmP_OrderItems].[Emis_Code] AS [Emis_Code], 
+    [vw_rqLmP_OrderItems].[DevEnr] AS [DevEnr], 
+    [vw_rqLmP_OrderItems].[BookmarkQty] AS [BookmarkQty], 
+    [vw_rqLmP_OrderItems].[Category] AS [Category], 
+    [vw_rqLmP_OrderItems].[Ordered] AS [Ordered], 
+    [vw_rqLmP_OrderItems].[Grade] AS [Grade], 
+    [vw_rqLmP_OrderItems].[SubjectName] AS [SubjectName]
+    FROM [dbo].[vw_rqLmP_OrderItems] AS [vw_rqLmP_OrderItems]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vw_wf_Requisitions" EntityType="Self.vw_wf_Requisitions" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vw_wf_Requisitions].[ReqID] AS [ReqID], 
+    [vw_wf_Requisitions].[EMIS] AS [EMIS], 
+    [vw_wf_Requisitions].[SchoolIdenityName] AS [SchoolIdenityName], 
+    [vw_wf_Requisitions].[BookYear] AS [BookYear], 
+    [vw_wf_Requisitions].[SchoolOfficial1] AS [SchoolOfficial1], 
+    [vw_wf_Requisitions].[Official1ApproveDate] AS [Official1ApproveDate], 
+    [vw_wf_Requisitions].[SchoolOfficial2] AS [SchoolOfficial2], 
+    [vw_wf_Requisitions].[Official2ApproveDate] AS [Official2ApproveDate], 
+    [vw_wf_Requisitions].[DepartmentOfficial] AS [DepartmentOfficial], 
+    [vw_wf_Requisitions].[ChecklistDate] AS [ChecklistDate], 
+    [vw_wf_Requisitions].[ReqDate] AS [ReqDate], 
+    [vw_wf_Requisitions].[OrderDate] AS [OrderDate], 
+    [vw_wf_Requisitions].[DeliveryDate] AS [DeliveryDate], 
+    [vw_wf_Requisitions].[GrFrom] AS [GrFrom], 
+    [vw_wf_Requisitions].[GrTo] AS [GrTo], 
+    [vw_wf_Requisitions].[wfTo] AS [wfTo], 
+    [vw_wf_Requisitions].[StationaryRequisition] AS [StationaryRequisition], 
+    [vw_wf_Requisitions].[ReqStatus] AS [ReqStatus], 
+    [vw_wf_Requisitions].[Verified] AS [Verified], 
+    [vw_wf_Requisitions].[WareID] AS [WareID], 
+    [vw_wf_Requisitions].[Recall] AS [Recall], 
+    [vw_wf_Requisitions].[SMGD_Open] AS [SMGD_Open], 
+    [vw_wf_Requisitions].[NoThanks] AS [NoThanks], 
+    [vw_wf_Requisitions].[ApprovalFlag] AS [ApprovalFlag], 
+    [vw_wf_Requisitions].[TotalPrice] AS [TotalPrice], 
+    [vw_wf_Requisitions].[TransParFlag] AS [TransParFlag], 
+    [vw_wf_Requisitions].[PriceT] AS [PriceT], 
+    [vw_wf_Requisitions].[SubmissionIndex] AS [SubmissionIndex], 
+    [vw_wf_Requisitions].[Comment] AS [Comment], 
+    [vw_wf_Requisitions].[Active] AS [Active], 
+    [vw_wf_Requisitions].[EICircuit] AS [EICircuit], 
+    [vw_wf_Requisitions].[Telephone] AS [Telephone], 
+    [vw_wf_Requisitions].[FName] AS [FName], 
+    [vw_wf_Requisitions].[SName] AS [SName], 
+    [vw_wf_Requisitions].[PersalNumber] AS [PersalNumber], 
+    [vw_wf_Requisitions].[EMail] AS [EMail], 
+    [vw_wf_Requisitions].[EmisOfficer] AS [EmisOfficer], 
+    [vw_wf_Requisitions].[District] AS [District], 
+    [vw_wf_Requisitions].[Name] AS [Name], 
+    [vw_wf_Requisitions].[submittedDaysLeft] AS [submittedDaysLeft], 
+    [vw_wf_Requisitions].[PrincipalSname] AS [PrincipalSname], 
+    [vw_wf_Requisitions].[PrincipalFname] AS [PrincipalFname], 
+    [vw_wf_Requisitions].[EmisOfficerRefName] AS [EmisOfficerRefName], 
+    [vw_wf_Requisitions].[EmisOfficerOfficialName] AS [EmisOfficerOfficialName], 
+    [vw_wf_Requisitions].[Description] AS [Description]
+    FROM [dbo].[vw_wf_Requisitions] AS [vw_wf_Requisitions]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwc_Catalogue" EntityType="Self.vwc_Catalogue" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwc_Catalogue].[ItemID] AS [ItemID], 
+    [vwc_Catalogue].[EmisSubId] AS [EmisSubId], 
+    [vwc_Catalogue].[OfficialSubjectID] AS [OfficialSubjectID], 
+    [vwc_Catalogue].[ISBN] AS [ISBN], 
+    [vwc_Catalogue].[Category] AS [Category], 
+    [vwc_Catalogue].[Author] AS [Author], 
+    [vwc_Catalogue].[Item] AS [Item], 
+    [vwc_Catalogue].[PubID] AS [PubID], 
+    [vwc_Catalogue].[Publisher] AS [Publisher], 
+    [vwc_Catalogue].[ItemYear] AS [ItemYear], 
+    [vwc_Catalogue].[SubjectName] AS [SubjectName], 
+    [vwc_Catalogue].[Afrname] AS [Afrname], 
+    [vwc_Catalogue].[Grade] AS [Grade], 
+    [vwc_Catalogue].[Language] AS [Language], 
+    [vwc_Catalogue].[Area] AS [Area], 
+    [vwc_Catalogue].[ImportDate] AS [ImportDate], 
+    [vwc_Catalogue].[Group] AS [Group], 
+    [vwc_Catalogue].[EmisCode] AS [EmisCode], 
+    [vwc_Catalogue].[importDateGap] AS [importDateGap], 
+    [vwc_Catalogue].[Active] AS [Active], 
+    [vwc_Catalogue].[cons_activator] AS [cons_activator], 
+    [vwc_Catalogue].[UnitP] AS [UnitP], 
+    [vwc_Catalogue].[PriceU] AS [PriceU], 
+    [vwc_Catalogue].[Edition] AS [Edition], 
+    [vwc_Catalogue].[Price] AS [Price], 
+    [vwc_Catalogue].[UnitPrice] AS [UnitPrice], 
+    [vwc_Catalogue].[CurrencyCode] AS [CurrencyCode]
+    FROM [dbo].[vwc_Catalogue] AS [vwc_Catalogue]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwclsb_FullyQualifyableOrderCatalogue" EntityType="Self.vwclsb_FullyQualifyableOrderCatalogue" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwclsb_FullyQualifyableOrderCatalogue].[ItemID] AS [ItemID], 
+    [vwclsb_FullyQualifyableOrderCatalogue].[EmisSubId] AS [EmisSubId], 
+    [vwclsb_FullyQualifyableOrderCatalogue].[OfficialSubjectID] AS [OfficialSubjectID], 
+    [vwclsb_FullyQualifyableOrderCatalogue].[ISBN] AS [ISBN], 
+    [vwclsb_FullyQualifyableOrderCatalogue].[Category] AS [Category], 
+    [vwclsb_FullyQualifyableOrderCatalogue].[Author] AS [Author], 
+    [vwclsb_FullyQualifyableOrderCatalogue].[Item] AS [Item], 
+    [vwclsb_FullyQualifyableOrderCatalogue].[PubID] AS [PubID], 
+    [vwclsb_FullyQualifyableOrderCatalogue].[Publisher] AS [Publisher], 
+    [vwclsb_FullyQualifyableOrderCatalogue].[ItemYear] AS [ItemYear], 
+    [vwclsb_FullyQualifyableOrderCatalogue].[SubjectName] AS [SubjectName], 
+    [vwclsb_FullyQualifyableOrderCatalogue].[Grade] AS [Grade], 
+    [vwclsb_FullyQualifyableOrderCatalogue].[Language] AS [Language], 
+    [vwclsb_FullyQualifyableOrderCatalogue].[Area] AS [Area], 
+    [vwclsb_FullyQualifyableOrderCatalogue].[EmisCode] AS [EmisCode], 
+    [vwclsb_FullyQualifyableOrderCatalogue].[Active] AS [Active], 
+    [vwclsb_FullyQualifyableOrderCatalogue].[Price] AS [Price], 
+    [vwclsb_FullyQualifyableOrderCatalogue].[UnitPrice] AS [UnitPrice], 
+    [vwclsb_FullyQualifyableOrderCatalogue].[CurrencyCode] AS [CurrencyCode], 
+    [vwclsb_FullyQualifyableOrderCatalogue].[Key] AS [Key], 
+    [vwclsb_FullyQualifyableOrderCatalogue].[Code] AS [Code], 
+    [vwclsb_FullyQualifyableOrderCatalogue].[RequisitionId ] AS [RequisitionId ], 
+    [vwclsb_FullyQualifyableOrderCatalogue].[Group] AS [Group], 
+    [vwclsb_FullyQualifyableOrderCatalogue].[Phase] AS [Phase], 
+    [vwclsb_FullyQualifyableOrderCatalogue].[importDateGap] AS [importDateGap], 
+    [vwclsb_FullyQualifyableOrderCatalogue].[DevEnr] AS [DevEnr], 
+    [vwclsb_FullyQualifyableOrderCatalogue].[BookmarkQty] AS [BookmarkQty], 
+    [vwclsb_FullyQualifyableOrderCatalogue].[Avl] AS [Avl], 
+    [vwclsb_FullyQualifyableOrderCatalogue].[Bookmark_Date] AS [Bookmark_Date], 
+    [vwclsb_FullyQualifyableOrderCatalogue].[Edition] AS [Edition], 
+    [vwclsb_FullyQualifyableOrderCatalogue].[LastBookmrkDays] AS [LastBookmrkDays]
+    FROM [dbo].[vwclsb_FullyQualifyableOrderCatalogue] AS [vwclsb_FullyQualifyableOrderCatalogue]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwem_circulars" EntityType="Self.vwem_circulars" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwem_circulars].[NotId] AS [NotId], 
+    [vwem_circulars].[Publisher] AS [Publisher], 
+    [vwem_circulars].[NotSubject] AS [NotSubject], 
+    [vwem_circulars].[NotType] AS [NotType], 
+    [vwem_circulars].[PublishDate] AS [PublishDate], 
+    [vwem_circulars].[ReceiverType] AS [ReceiverType], 
+    [vwem_circulars].[NotedCount] AS [NotedCount], 
+    [vwem_circulars].[Notification] AS [Notification], 
+    [vwem_circulars].[BookYear] AS [BookYear], 
+    [vwem_circulars].[Term] AS [Term], 
+    [vwem_circulars].[Active] AS [Active], 
+    [vwem_circulars].[Attachment] AS [Attachment], 
+    [vwem_circulars].[circularId] AS [circularId], 
+    [vwem_circulars].[circularsRef] AS [circularsRef], 
+    [vwem_circulars].[FRH] AS [FRH], 
+    [vwem_circulars].[Designation] AS [Designation], 
+    [vwem_circulars].[RefName] AS [RefName], 
+    [vwem_circulars].[Email] AS [Email], 
+    [vwem_circulars].[ConfLev] AS [ConfLev], 
+    [vwem_circulars].[cActive] AS [cActive], 
+    [vwem_circulars].[DirCode] AS [DirCode], 
+    [vwem_circulars].[daysPosted] AS [daysPosted]
+    FROM [dbo].[vwem_circulars] AS [vwem_circulars]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwLED_ai_ReqTraceLogs" EntityType="Self.vwLED_ai_ReqTraceLogs" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwLED_ai_ReqTraceLogs].[TraceId] AS [TraceId], 
+    [vwLED_ai_ReqTraceLogs].[ReqId] AS [ReqId], 
+    [vwLED_ai_ReqTraceLogs].[ReqStatus] AS [ReqStatus], 
+    [vwLED_ai_ReqTraceLogs].[TraceDateTime] AS [TraceDateTime], 
+    [vwLED_ai_ReqTraceLogs].[Log] AS [Log], 
+    [vwLED_ai_ReqTraceLogs].[EmisCode] AS [EmisCode], 
+    [vwLED_ai_ReqTraceLogs].[SchoolIdenityName] AS [SchoolIdenityName], 
+    [vwLED_ai_ReqTraceLogs].[daysDuration] AS [daysDuration], 
+    [vwLED_ai_ReqTraceLogs].[Description] AS [Description]
+    FROM [dbo].[vwLED_ai_ReqTraceLogs] AS [vwLED_ai_ReqTraceLogs]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwLEPD_c_rqConsolidated" EntityType="Self.vwLEPD_c_rqConsolidated" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwLEPD_c_rqConsolidated].[Rq_item_Id] AS [Rq_item_Id], 
+    [vwLEPD_c_rqConsolidated].[ISBN] AS [ISBN], 
+    [vwLEPD_c_rqConsolidated].[BookmarkFlag] AS [BookmarkFlag], 
+    [vwLEPD_c_rqConsolidated].[EMIS_Code] AS [EMIS_Code], 
+    [vwLEPD_c_rqConsolidated].[BookYear] AS [BookYear], 
+    [vwLEPD_c_rqConsolidated].[RequisitionId ] AS [RequisitionId ], 
+    [vwLEPD_c_rqConsolidated].[GradeID] AS [GradeID], 
+    [vwLEPD_c_rqConsolidated].[Qty] AS [Qty], 
+    [vwLEPD_c_rqConsolidated].[BatchID] AS [BatchID], 
+    [vwLEPD_c_rqConsolidated].[Bookmark_Date] AS [Bookmark_Date], 
+    [vwLEPD_c_rqConsolidated].[Category] AS [Category], 
+    [vwLEPD_c_rqConsolidated].[TotalPrice] AS [TotalPrice], 
+    [vwLEPD_c_rqConsolidated].[ReqStatus] AS [ReqStatus], 
+    [vwLEPD_c_rqConsolidated].[Description] AS [Description], 
+    [vwLEPD_c_rqConsolidated].[ReqDate] AS [ReqDate], 
+    [vwLEPD_c_rqConsolidated].[PriceTag] AS [PriceTag], 
+    [vwLEPD_c_rqConsolidated].[TransParFlag] AS [TransParFlag], 
+    [vwLEPD_c_rqConsolidated].[wfTo] AS [wfTo]
+    FROM [dbo].[vwLEPD_c_rqConsolidated] AS [vwLEPD_c_rqConsolidated]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwLEPD_rq_consd_Req" EntityType="Self.vwLEPD_rq_consd_Req" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwLEPD_rq_consd_Req].[ReqID] AS [ReqID], 
+    [vwLEPD_rq_consd_Req].[wfFrom] AS [wfFrom], 
+    [vwLEPD_rq_consd_Req].[wfTo] AS [wfTo], 
+    [vwLEPD_rq_consd_Req].[First_Name] AS [First_Name], 
+    [vwLEPD_rq_consd_Req].[Last_Name] AS [Last_Name], 
+    [vwLEPD_rq_consd_Req].[Email] AS [Email], 
+    [vwLEPD_rq_consd_Req].[Designation] AS [Designation], 
+    [vwLEPD_rq_consd_Req].[BookYear] AS [BookYear], 
+    [vwLEPD_rq_consd_Req].[EMIS] AS [EMIS], 
+    [vwLEPD_rq_consd_Req].[SchoolOfficial1] AS [SchoolOfficial1], 
+    [vwLEPD_rq_consd_Req].[Official1ApproveDate] AS [Official1ApproveDate], 
+    [vwLEPD_rq_consd_Req].[DepartmentOfficial] AS [DepartmentOfficial], 
+    [vwLEPD_rq_consd_Req].[ChecklistDate] AS [ChecklistDate], 
+    [vwLEPD_rq_consd_Req].[ReqDate] AS [ReqDate], 
+    [vwLEPD_rq_consd_Req].[OrderDate] AS [OrderDate], 
+    [vwLEPD_rq_consd_Req].[DeliveryDate] AS [DeliveryDate], 
+    [vwLEPD_rq_consd_Req].[GrFrom] AS [GrFrom], 
+    [vwLEPD_rq_consd_Req].[GrTo] AS [GrTo], 
+    [vwLEPD_rq_consd_Req].[StationaryRequisition] AS [StationaryRequisition], 
+    [vwLEPD_rq_consd_Req].[ReqStatus] AS [ReqStatus], 
+    [vwLEPD_rq_consd_Req].[Description] AS [Description], 
+    [vwLEPD_rq_consd_Req].[For] AS [For], 
+    [vwLEPD_rq_consd_Req].[Checklistdays] AS [Checklistdays], 
+    [vwLEPD_rq_consd_Req].[Verified] AS [Verified], 
+    [vwLEPD_rq_consd_Req].[WareID] AS [WareID], 
+    [vwLEPD_rq_consd_Req].[Recall] AS [Recall], 
+    [vwLEPD_rq_consd_Req].[SMGD_Open] AS [SMGD_Open], 
+    [vwLEPD_rq_consd_Req].[NoThanks] AS [NoThanks], 
+    [vwLEPD_rq_consd_Req].[ApprovalFlag] AS [ApprovalFlag], 
+    [vwLEPD_rq_consd_Req].[TotalPrice] AS [TotalPrice], 
+    [vwLEPD_rq_consd_Req].[TransParFlag] AS [TransParFlag], 
+    [vwLEPD_rq_consd_Req].[SubmissionIndex] AS [SubmissionIndex]
+    FROM [dbo].[vwLEPD_rq_consd_Req] AS [vwLEPD_rq_consd_Req]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwLEPD_Rq_SubjectPer_Ord" EntityType="Self.vwLEPD_Rq_SubjectPer_Ord" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwLEPD_Rq_SubjectPer_Ord].[CachedItemQtyId] AS [CachedItemQtyId], 
+    [vwLEPD_Rq_SubjectPer_Ord].[qty] AS [qty], 
+    [vwLEPD_Rq_SubjectPer_Ord].[ISBN] AS [ISBN], 
+    [vwLEPD_Rq_SubjectPer_Ord].[SubjectName] AS [SubjectName], 
+    [vwLEPD_Rq_SubjectPer_Ord].[Item] AS [Item], 
+    [vwLEPD_Rq_SubjectPer_Ord].[Author] AS [Author], 
+    [vwLEPD_Rq_SubjectPer_Ord].[Publisher] AS [Publisher], 
+    [vwLEPD_Rq_SubjectPer_Ord].[Category] AS [Category], 
+    [vwLEPD_Rq_SubjectPer_Ord].[Area] AS [Area], 
+    [vwLEPD_Rq_SubjectPer_Ord].[EmisCode] AS [EmisCode], 
+    [vwLEPD_Rq_SubjectPer_Ord].[grade] AS [grade], 
+    [vwLEPD_Rq_SubjectPer_Ord].[DevEnr] AS [DevEnr], 
+    [vwLEPD_Rq_SubjectPer_Ord].[UnitPrice] AS [UnitPrice], 
+    [vwLEPD_Rq_SubjectPer_Ord].[Avl] AS [Avl], 
+    [vwLEPD_Rq_SubjectPer_Ord].[ReqID] AS [ReqID], 
+    [vwLEPD_Rq_SubjectPer_Ord].[id] AS [id], 
+    [vwLEPD_Rq_SubjectPer_Ord].[Sum] AS [Sum], 
+    [vwLEPD_Rq_SubjectPer_Ord].[AvlInCache] AS [AvlInCache], 
+    [vwLEPD_Rq_SubjectPer_Ord].[SumInCache] AS [SumInCache], 
+    [vwLEPD_Rq_SubjectPer_Ord].[CachedReq] AS [CachedReq], 
+    [vwLEPD_Rq_SubjectPer_Ord].[Price] AS [Price]
+    FROM [dbo].[vwLEPD_Rq_SubjectPer_Ord] AS [vwLEPD_Rq_SubjectPer_Ord]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwLmP_IsbnIsReadyOrderTrans" EntityType="Self.vwLmP_IsbnIsReadyOrderTrans" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwLmP_IsbnIsReadyOrderTrans].[Rq_item_Id] AS [Rq_item_Id], 
+    [vwLmP_IsbnIsReadyOrderTrans].[order_Id] AS [order_Id], 
+    [vwLmP_IsbnIsReadyOrderTrans].[NatEmis] AS [NatEmis], 
+    [vwLmP_IsbnIsReadyOrderTrans].[Circuit] AS [Circuit], 
+    [vwLmP_IsbnIsReadyOrderTrans].[District] AS [District], 
+    [vwLmP_IsbnIsReadyOrderTrans].[SchoolIdenityName] AS [SchoolIdenityName], 
+    [vwLmP_IsbnIsReadyOrderTrans].[EMail] AS [EMail], 
+    [vwLmP_IsbnIsReadyOrderTrans].[Telephone1] AS [Telephone1], 
+    [vwLmP_IsbnIsReadyOrderTrans].[Telephone] AS [Telephone], 
+    [vwLmP_IsbnIsReadyOrderTrans].[FName] AS [FName], 
+    [vwLmP_IsbnIsReadyOrderTrans].[SName] AS [SName], 
+    [vwLmP_IsbnIsReadyOrderTrans].[PersalNumber] AS [PersalNumber], 
+    [vwLmP_IsbnIsReadyOrderTrans].[ManagementPosition] AS [ManagementPosition], 
+    [vwLmP_IsbnIsReadyOrderTrans].[ISBN] AS [ISBN], 
+    [vwLmP_IsbnIsReadyOrderTrans].[RequisitionId ] AS [RequisitionId ], 
+    [vwLmP_IsbnIsReadyOrderTrans].[GradeID] AS [GradeID], 
+    [vwLmP_IsbnIsReadyOrderTrans].[Qty] AS [Qty], 
+    [vwLmP_IsbnIsReadyOrderTrans].[BatchID] AS [BatchID], 
+    [vwLmP_IsbnIsReadyOrderTrans].[Bookmark_Date] AS [Bookmark_Date], 
+    [vwLmP_IsbnIsReadyOrderTrans].[Category] AS [Category], 
+    [vwLmP_IsbnIsReadyOrderTrans].[Ordered] AS [Ordered], 
+    [vwLmP_IsbnIsReadyOrderTrans].[Bookyear] AS [Bookyear], 
+    [vwLmP_IsbnIsReadyOrderTrans].[EICircuit] AS [EICircuit], 
+    [vwLmP_IsbnIsReadyOrderTrans].[circuitManager] AS [circuitManager], 
+    [vwLmP_IsbnIsReadyOrderTrans].[pubId] AS [pubId]
+    FROM [dbo].[vwLmP_IsbnIsReadyOrderTrans] AS [vwLmP_IsbnIsReadyOrderTrans]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwLmP_Ord_CountPrPublisher" EntityType="Self.vwLmP_Ord_CountPrPublisher" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwLmP_Ord_CountPrPublisher].[ISBN] AS [ISBN], 
+    [vwLmP_Ord_CountPrPublisher].[UnitPrice] AS [UnitPrice], 
+    [vwLmP_Ord_CountPrPublisher].[Price] AS [Price], 
+    [vwLmP_Ord_CountPrPublisher].[item] AS [item], 
+    [vwLmP_Ord_CountPrPublisher].[PubId] AS [PubId], 
+    [vwLmP_Ord_CountPrPublisher].[Publisher] AS [Publisher], 
+    [vwLmP_Ord_CountPrPublisher].[EmisSubId] AS [EmisSubId], 
+    [vwLmP_Ord_CountPrPublisher].[EiCircuit] AS [EiCircuit], 
+    [vwLmP_Ord_CountPrPublisher].[Manager] AS [Manager], 
+    [vwLmP_Ord_CountPrPublisher].[ReqID] AS [ReqID], 
+    [vwLmP_Ord_CountPrPublisher].[IsbnCnt] AS [IsbnCnt], 
+    [vwLmP_Ord_CountPrPublisher].[LrnEnrTotal] AS [LrnEnrTotal], 
+    [vwLmP_Ord_CountPrPublisher].[BookOrdQty] AS [BookOrdQty], 
+    [vwLmP_Ord_CountPrPublisher].[consLrnEnrTotal] AS [consLrnEnrTotal]
+    FROM [dbo].[vwLmP_Ord_CountPrPublisher] AS [vwLmP_Ord_CountPrPublisher]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwLmP_ord_PubWithOrd" EntityType="Self.vwLmP_ord_PubWithOrd" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwLmP_ord_PubWithOrd].[PubId] AS [PubId], 
+    [vwLmP_ord_PubWithOrd].[Publisher] AS [Publisher], 
+    [vwLmP_ord_PubWithOrd].[EiCircuit] AS [EiCircuit], 
+    [vwLmP_ord_PubWithOrd].[Manager] AS [Manager], 
+    [vwLmP_ord_PubWithOrd].[NoOfItms] AS [NoOfItms]
+    FROM [dbo].[vwLmP_ord_PubWithOrd] AS [vwLmP_ord_PubWithOrd]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwLmP_order_ProvOrderPerPub" EntityType="Self.vwLmP_order_ProvOrderPerPub" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwLmP_order_ProvOrderPerPub].[NatEmis] AS [NatEmis], 
+    [vwLmP_order_ProvOrderPerPub].[Item] AS [Item], 
+    [vwLmP_order_ProvOrderPerPub].[LrnEnrUnit] AS [LrnEnrUnit], 
+    [vwLmP_order_ProvOrderPerPub].[Description] AS [Description], 
+    [vwLmP_order_ProvOrderPerPub].[District] AS [District], 
+    [vwLmP_order_ProvOrderPerPub].[EmisOfficer] AS [EmisOfficer], 
+    [vwLmP_order_ProvOrderPerPub].[SchoolIdenityName] AS [SchoolIdenityName], 
+    [vwLmP_order_ProvOrderPerPub].[EMail] AS [EMail], 
+    [vwLmP_order_ProvOrderPerPub].[Telephone1] AS [Telephone1], 
+    [vwLmP_order_ProvOrderPerPub].[Fax] AS [Fax], 
+    [vwLmP_order_ProvOrderPerPub].[InternetAccess] AS [InternetAccess], 
+    [vwLmP_order_ProvOrderPerPub].[PostAddress0] AS [PostAddress0], 
+    [vwLmP_order_ProvOrderPerPub].[PostAddress0No] AS [PostAddress0No], 
+    [vwLmP_order_ProvOrderPerPub].[PostAddress1] AS [PostAddress1], 
+    [vwLmP_order_ProvOrderPerPub].[PostAddress2] AS [PostAddress2], 
+    [vwLmP_order_ProvOrderPerPub].[PostAddress3] AS [PostAddress3], 
+    [vwLmP_order_ProvOrderPerPub].[PostCode] AS [PostCode], 
+    [vwLmP_order_ProvOrderPerPub].[EICircuit] AS [EICircuit], 
+    [vwLmP_order_ProvOrderPerPub].[Telephone] AS [Telephone], 
+    [vwLmP_order_ProvOrderPerPub].[FName] AS [FName], 
+    [vwLmP_order_ProvOrderPerPub].[SName] AS [SName], 
+    [vwLmP_order_ProvOrderPerPub].[EmisSubId] AS [EmisSubId], 
+    [vwLmP_order_ProvOrderPerPub].[Qty] AS [Qty], 
+    [vwLmP_order_ProvOrderPerPub].[PersalNumber] AS [PersalNumber], 
+    [vwLmP_order_ProvOrderPerPub].[ManagementPosition] AS [ManagementPosition], 
+    [vwLmP_order_ProvOrderPerPub].[ReqID] AS [ReqID], 
+    [vwLmP_order_ProvOrderPerPub].[TotalPrice] AS [TotalPrice], 
+    [vwLmP_order_ProvOrderPerPub].[Price] AS [Price], 
+    [vwLmP_order_ProvOrderPerPub].[Manager] AS [Manager], 
+    [vwLmP_order_ProvOrderPerPub].[Grade] AS [Grade], 
+    [vwLmP_order_ProvOrderPerPub].[UnitPrice] AS [UnitPrice], 
+    [vwLmP_order_ProvOrderPerPub].[SubjectName] AS [SubjectName], 
+    [vwLmP_order_ProvOrderPerPub].[ReqDate] AS [ReqDate], 
+    [vwLmP_order_ProvOrderPerPub].[OrderDate] AS [OrderDate], 
+    [vwLmP_order_ProvOrderPerPub].[DeliveryDate] AS [DeliveryDate], 
+    [vwLmP_order_ProvOrderPerPub].[ReqStatus] AS [ReqStatus], 
+    [vwLmP_order_ProvOrderPerPub].[Ordered] AS [Ordered], 
+    [vwLmP_order_ProvOrderPerPub].[ISBN] AS [ISBN], 
+    [vwLmP_order_ProvOrderPerPub].[BatchID] AS [BatchID], 
+    [vwLmP_order_ProvOrderPerPub].[PubId] AS [PubId], 
+    [vwLmP_order_ProvOrderPerPub].[Publisher] AS [Publisher]
+    FROM [dbo].[vwLmP_order_ProvOrderPerPub] AS [vwLmP_order_ProvOrderPerPub]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwLMP_r_RequisitionsUnsaved" EntityType="Self.vwLMP_r_RequisitionsUnsaved" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwLMP_r_RequisitionsUnsaved].[RequisitionId] AS [RequisitionId], 
+    [vwLMP_r_RequisitionsUnsaved].[Emis_Code] AS [Emis_Code], 
+    [vwLMP_r_RequisitionsUnsaved].[Number of Items] AS [Number of Items]
+    FROM [dbo].[vwLMP_r_RequisitionsUnsaved] AS [vwLMP_r_RequisitionsUnsaved]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwLmP_rq_orphaned_bmk" EntityType="Self.vwLmP_rq_orphaned_bmk" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwLmP_rq_orphaned_bmk].[Rq_item_Id] AS [Rq_item_Id], 
+    [vwLmP_rq_orphaned_bmk].[ISBN] AS [ISBN], 
+    [vwLmP_rq_orphaned_bmk].[BookmarkFlag] AS [BookmarkFlag], 
+    [vwLmP_rq_orphaned_bmk].[EMIS_Code] AS [EMIS_Code], 
+    [vwLmP_rq_orphaned_bmk].[RequisitionId ] AS [RequisitionId ], 
+    [vwLmP_rq_orphaned_bmk].[GradeID] AS [GradeID], 
+    [vwLmP_rq_orphaned_bmk].[Qty] AS [Qty], 
+    [vwLmP_rq_orphaned_bmk].[BatchID] AS [BatchID], 
+    [vwLmP_rq_orphaned_bmk].[Bookmark_Date] AS [Bookmark_Date], 
+    [vwLmP_rq_orphaned_bmk].[Category] AS [Category], 
+    [vwLmP_rq_orphaned_bmk].[ccheQty] AS [ccheQty], 
+    [vwLmP_rq_orphaned_bmk].[Ordered] AS [Ordered]
+    FROM [dbo].[vwLmP_rq_orphaned_bmk] AS [vwLmP_rq_orphaned_bmk]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwlsbsc_BookOrderHistory" EntityType="Self.vwlsbsc_BookOrderHistory" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwlsbsc_BookOrderHistory].[Rq_item_Id] AS [Rq_item_Id], 
+    [vwlsbsc_BookOrderHistory].[ItemID] AS [ItemID], 
+    [vwlsbsc_BookOrderHistory].[EmisSubId] AS [EmisSubId], 
+    [vwlsbsc_BookOrderHistory].[OfficialSubjectID] AS [OfficialSubjectID], 
+    [vwlsbsc_BookOrderHistory].[ISBN] AS [ISBN], 
+    [vwlsbsc_BookOrderHistory].[Category] AS [Category], 
+    [vwlsbsc_BookOrderHistory].[Author] AS [Author], 
+    [vwlsbsc_BookOrderHistory].[Item] AS [Item], 
+    [vwlsbsc_BookOrderHistory].[PubID] AS [PubID], 
+    [vwlsbsc_BookOrderHistory].[Publisher] AS [Publisher], 
+    [vwlsbsc_BookOrderHistory].[ItemYear] AS [ItemYear], 
+    [vwlsbsc_BookOrderHistory].[SubjectName] AS [SubjectName], 
+    [vwlsbsc_BookOrderHistory].[Grade] AS [Grade], 
+    [vwlsbsc_BookOrderHistory].[Language] AS [Language], 
+    [vwlsbsc_BookOrderHistory].[Area] AS [Area], 
+    [vwlsbsc_BookOrderHistory].[EmisCode] AS [EmisCode], 
+    [vwlsbsc_BookOrderHistory].[Active] AS [Active], 
+    [vwlsbsc_BookOrderHistory].[Price] AS [Price], 
+    [vwlsbsc_BookOrderHistory].[UnitPrice] AS [UnitPrice], 
+    [vwlsbsc_BookOrderHistory].[CurrencyCode] AS [CurrencyCode], 
+    [vwlsbsc_BookOrderHistory].[Key] AS [Key], 
+    [vwlsbsc_BookOrderHistory].[Code] AS [Code], 
+    [vwlsbsc_BookOrderHistory].[RequisitionId ] AS [RequisitionId ], 
+    [vwlsbsc_BookOrderHistory].[Group] AS [Group], 
+    [vwlsbsc_BookOrderHistory].[Phase] AS [Phase], 
+    [vwlsbsc_BookOrderHistory].[importDateGap] AS [importDateGap], 
+    [vwlsbsc_BookOrderHistory].[DeviatedEnr] AS [DeviatedEnr], 
+    [vwlsbsc_BookOrderHistory].[BookmarkQty] AS [BookmarkQty], 
+    [vwlsbsc_BookOrderHistory].[Avl] AS [Avl], 
+    [vwlsbsc_BookOrderHistory].[Bookmark_Date] AS [Bookmark_Date], 
+    [vwlsbsc_BookOrderHistory].[LastBookmrkDays] AS [LastBookmrkDays], 
+    [vwlsbsc_BookOrderHistory].[SchoolIdenityName] AS [SchoolIdenityName], 
+    [vwlsbsc_BookOrderHistory].[EICircuit] AS [EICircuit], 
+    [vwlsbsc_BookOrderHistory].[Ordered] AS [Ordered]
+    FROM [dbo].[vwlsbsc_BookOrderHistory] AS [vwlsbsc_BookOrderHistory]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwn_NotificationBoard" EntityType="Self.vwn_NotificationBoard" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwn_NotificationBoard].[NotId] AS [NotId], 
+    [vwn_NotificationBoard].[Publisher] AS [Publisher], 
+    [vwn_NotificationBoard].[Designation] AS [Designation], 
+    [vwn_NotificationBoard].[AddressName] AS [AddressName], 
+    [vwn_NotificationBoard].[Email] AS [Email], 
+    [vwn_NotificationBoard].[DESCRIPTION] AS [DESCRIPTION], 
+    [vwn_NotificationBoard].[ConfLev] AS [ConfLev], 
+    [vwn_NotificationBoard].[NotSubject] AS [NotSubject], 
+    [vwn_NotificationBoard].[NotType] AS [NotType], 
+    [vwn_NotificationBoard].[PublishDaysDur] AS [PublishDaysDur], 
+    [vwn_NotificationBoard].[ReceiverType] AS [ReceiverType], 
+    [vwn_NotificationBoard].[PublishDate] AS [PublishDate], 
+    [vwn_NotificationBoard].[Directorate] AS [Directorate], 
+    [vwn_NotificationBoard].[DirCode] AS [DirCode], 
+    [vwn_NotificationBoard].[NotedCount] AS [NotedCount], 
+    [vwn_NotificationBoard].[Notification] AS [Notification], 
+    [vwn_NotificationBoard].[audince] AS [audince], 
+    [vwn_NotificationBoard].[BookYear] AS [BookYear], 
+    [vwn_NotificationBoard].[Term] AS [Term], 
+    [vwn_NotificationBoard].[Active] AS [Active], 
+    [vwn_NotificationBoard].[Attachment] AS [Attachment]
+    FROM [dbo].[vwn_NotificationBoard] AS [vwn_NotificationBoard]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwo_OrdersPerPubPerDistrict" EntityType="Self.vwo_OrdersPerPubPerDistrict" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwo_OrdersPerPubPerDistrict].[OrderRequestNo] AS [OrderRequestNo], 
+    [vwo_OrdersPerPubPerDistrict].[RequestDate] AS [RequestDate], 
+    [vwo_OrdersPerPubPerDistrict].[pushdate] AS [pushdate], 
+    [vwo_OrdersPerPubPerDistrict].[PublisherId] AS [PublisherId], 
+    [vwo_OrdersPerPubPerDistrict].[Publisher] AS [Publisher], 
+    [vwo_OrdersPerPubPerDistrict].[GrantPrice] AS [GrantPrice], 
+    [vwo_OrdersPerPubPerDistrict].[Available] AS [Available], 
+    [vwo_OrdersPerPubPerDistrict].[Quantity] AS [Quantity], 
+    [vwo_OrdersPerPubPerDistrict].[Owner] AS [Owner], 
+    [vwo_OrdersPerPubPerDistrict].[BookYear] AS [BookYear], 
+    [vwo_OrdersPerPubPerDistrict].[Name] AS [Name], 
+    [vwo_OrdersPerPubPerDistrict].[Manager] AS [Manager], 
+    [vwo_OrdersPerPubPerDistrict].[RefName] AS [RefName], 
+    [vwo_OrdersPerPubPerDistrict].[DistrictCD] AS [DistrictCD]
+    FROM [dbo].[vwo_OrdersPerPubPerDistrict] AS [vwo_OrdersPerPubPerDistrict]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vws_ReqAccountingDates" EntityType="Self.vws_ReqAccountingDates" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vws_ReqAccountingDates].[OpenCaptureDateMark] AS [OpenCaptureDateMark], 
+    [vws_ReqAccountingDates].[SchoolGrFrm] AS [SchoolGrFrm], 
+    [vws_ReqAccountingDates].[SchoolGrTo] AS [SchoolGrTo], 
+    [vws_ReqAccountingDates].[BookYear] AS [BookYear], 
+    [vws_ReqAccountingDates].[GrFrom] AS [GrFrom], 
+    [vws_ReqAccountingDates].[GrTo] AS [GrTo], 
+    [vws_ReqAccountingDates].[DateFrom] AS [DateFrom], 
+    [vws_ReqAccountingDates].[DateTo] AS [DateTo], 
+    [vws_ReqAccountingDates].[CaptureType] AS [CaptureType], 
+    [vws_ReqAccountingDates].[EmisCode] AS [EmisCode], 
+    [vws_ReqAccountingDates].[Active] AS [Active]
+    FROM [dbo].[vws_ReqAccountingDates] AS [vws_ReqAccountingDates]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__ltsm_wf_s__Req_I__3073C869" Association="Self.FK__ltsm_wf_s__Req_I__3073C869">
+      <End Role="Requisitions" EntitySet="Requisitions" />
+      <End Role="Wf_Req_Envelop" EntitySet="Wf_Req_Envelop" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Requisitions_Requisitions" Association="Self.FK_Requisitions_Requisitions">
+      <End Role="Requisitions" EntitySet="Requisitions" />
+      <End Role="Requisitions1" EntitySet="Requisitions" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,67 @@
+﻿@model LimpEmisPortal.Models.RequisitionHomeViewModel
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="col-md-offset-8 btn-group btn-group-sm" role="group">
+            <button class="btn btn-primary btn-sm">
+                Grades &nbsp; <img src="~/Content/Images/ajax-loader.gif" id="ajax_loading_get_for_ord_ct" style="display:none; width:18px; height:18px " />
+            </button>
+            <button class="btn btn-primary btn-sm" type="button">
+                @Ajax.ActionLink(" ", "OrderPerGradeDashboardActionResult", "Requisitions",
+                                                new AjaxOptions
+                                                {
+                                                    UpdateTargetId = "requisition-order-per-grade",
+                                                    InsertionMode = InsertionMode.Replace,
+                                                    HttpMethod = "GET",
+                                                    LoadingElementId = "ajax_loading_get_for_ord_ct"
+                                                }, htmlAttributes: new { @class = "glyphicon glyphicon-dashboard" ,@style="color:white"})
+            </button>                   
+            @foreach (var grade in Model.RequisitionOrdersPerGrade)
+            {
+                @Ajax.ActionLink(grade.ToString(), "Req_cat_OrdersPerGrade", "Requisitions",
+           new { gr = grade }, new AjaxOptions { UpdateTargetId = "requisition-order-per-grade", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", LoadingElementId = "ajax_loading_get_for_ord_ct" }, htmlAttributes: new { @class = "btn btn-default btn-sm" })
+            }
+        </div>
+    </div>
+    <div class="col-md-12" style="border-bottom:1px solid #ecf0f1">
+        <h3>Order Dashboard</h3>
+    </div>
+    <hr/>
+    <div class="col-md-12">
+        <div class="col-md-1"></div>
+        <table class="table-condensed col-md-10" >
+            <tr style="text-align:center">
+
+@foreach (var m in Model.OrderPerGradeDashboard)
+{
+    <td>
+        <div class="col-md-12">
+            <table class="table-condensed table-responsive">
+                <tr>
+                    <td><h3><small>Grade</small><br />@(m.id)</h3></td>
+                </tr>
+            </table>
+        </div>
+        <div class="clearfix">
+            <div class="c100 @(string.Concat("p",m.OrderQtyPerGradePercentage.ToString())) small">
+                <span>@(m.OrderQtyPerGradePercentage)%</span>
+                <div class="slice">
+                    <div class="bar"></div>
+                    <div class="fill"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <table class="table-condensed table-responsive">
+                <tr style="text-align:center">
+                    <td><p class="lead" style="font-size:small">@(string.Concat("R ", m.OrderPricePerGrade.ToString()))</p></td>
+                </tr>
+            </table>
+        </div>
+    </td>
+}
+            </tr>
+        </table>
+        <div class="col-md-1"></div>
+        </div>
+    </div>

@@ -1,0 +1,8 @@
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduEmisPortal.Logger\bin\Debug\LEP.Logger.dll.config
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduEmisPortal.Logger\bin\Debug\LEP.Logger.dll
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduEmisPortal.Logger\bin\Debug\LEP.Logger.pdb
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduEmisPortal.Logger\bin\Debug\LimpEmisPortal.FileManager.dll
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduEmisPortal.Logger\bin\Debug\LimpEmisPortal.FileManager.pdb
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduEmisPortal.Logger\obj\Debug\LEP.Logger.csprojResolveAssemblyReference.cache
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduEmisPortal.Logger\obj\Debug\LEP.Logger.dll
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduEmisPortal.Logger\obj\Debug\LEP.Logger.pdb

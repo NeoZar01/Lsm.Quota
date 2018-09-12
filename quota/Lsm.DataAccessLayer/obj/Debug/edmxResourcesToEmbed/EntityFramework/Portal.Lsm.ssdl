@@ -1,0 +1,932 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Portal.DbContext.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Circuits">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="RowGuid" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RowGuid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="LastModifiedDate" Type="datetime" Nullable="false" />
+    <Property Name="Manager" Type="nvarchar(max)" />
+    <Property Name="ParentBranch" Type="nvarchar(max)" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsDistrict" Type="bit" Nullable="false" />
+    <Property Name="IsCircuit" Type="bit" Nullable="false" />
+    <Property Name="LocationSpatial" Type="geography" />
+    <Property Name="LocationSpatialText" Type="nvarchar(max)" StoreGeneratedPattern="Computed" />
+    <Property Name="StAddress" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Portal.Lsm.MasterFile.LearnerSubjectEnrolment' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="LearnerSubjectEnrolment">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="RowGuid" />
+      <PropertyRef Name="SubjectId" />
+      <PropertyRef Name="Sec_SubjectId" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Key" />
+      <PropertyRef Name="Code" />
+      <PropertyRef Name="Grade" />
+      <PropertyRef Name="Enr_Class" />
+      <PropertyRef Name="Enr_Sub" />
+      <PropertyRef Name="EmisCode" />
+      <PropertyRef Name="Term" />
+      <PropertyRef Name="Year" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RowGuid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SubjectId" Type="int" Nullable="false" />
+    <Property Name="Sec_SubjectId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="125" Nullable="false" />
+    <Property Name="Key" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="Code" Type="int" Nullable="false" />
+    <Property Name="Grade" Type="int" Nullable="false" />
+    <Property Name="Enr_Class" Type="int" Nullable="false" />
+    <Property Name="Enr_Sub" Type="int" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="Term" Type="int" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SchoolGrades">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="RowGuid" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RowGuid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="BookYear" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="MinGrade" Type="int" Nullable="false" />
+    <Property Name="MaxGrade" Type="int" Nullable="false" />
+    <Property Name="Phase" Type="int" Nullable="false" />
+    <Property Name="Grade1" Type="bit" Nullable="false" />
+    <Property Name="Grade2" Type="bit" Nullable="false" />
+    <Property Name="Grade3" Type="bit" Nullable="false" />
+    <Property Name="Grade4" Type="bit" Nullable="false" />
+    <Property Name="Grade5" Type="bit" Nullable="false" />
+    <Property Name="Grade6" Type="bit" Nullable="false" />
+    <Property Name="Grade7" Type="bit" Nullable="false" />
+    <Property Name="Grade8" Type="bit" Nullable="false" />
+    <Property Name="Grade9" Type="bit" Nullable="false" />
+    <Property Name="Grade10" Type="bit" Nullable="false" />
+    <Property Name="Grade11" Type="bit" Nullable="false" />
+    <Property Name="Grade12" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Schools">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="RowGuid" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RowGuid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Phase" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Sector" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Type" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Initials" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="PrincipalLastName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PrincipalCellphone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TownshipVillage" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Suburb" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Town" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Telephone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Email" Type="nvarchar(max)" />
+    <Property Name="Quintile" Type="int" />
+    <Property Name="EICircuit" Type="varchar(max)" Nullable="false" />
+    <Property Name="EIDistrict" Type="varchar(max)" Nullable="false" />
+    <Property Name="Manucipality" Type="varchar(max)" />
+    <Property Name="Term" Type="int" Nullable="false" />
+    <Property Name="DataYear" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="datetime" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CircuitCD" Type="int" />
+    <Property Name="PhaseDescription" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="TeacherLearnerSubjectRatio">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="RowGuid" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RowGuid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Code" Type="int" Nullable="false" />
+    <Property Name="SubjectId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Teachers" Type="int" Nullable="false" />
+    <Property Name="Subj_Enr" Type="int" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="Ratio" Type="varchar" MaxLength="25" StoreGeneratedPattern="Computed" Nullable="false" />
+    <Property Name="BookYear" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Bookmarks">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RowGUID" Type="uniqueidentifier" />
+    <Property Name="InventoryReferenceNo" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Catalogue">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RowGUID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ItemName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="ISBN" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Publisher" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Author" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Language" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Category" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="SubjectName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Key" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="Code" Type="int" Nullable="false" />
+    <Property Name="Grade" Type="int" Nullable="false" />
+    <Property Name="Price" Type="smallmoney" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="datetime" Nullable="false" />
+    <Property Name="Active" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Inventory">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="RowGuid" />
+      <PropertyRef Name="UCRID" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RowGuid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UCRID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Sub_Code" Type="int" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="Class_Enr" Type="int" Nullable="false" />
+    <Property Name="Subj_Enr" Type="int" Nullable="false" />
+    <Property Name="Teacher_Enr" Type="int" Nullable="false" />
+    <Property Name="CategoryCD" Type="int" Nullable="false" />
+    <Property Name="TL_Ratio" Type="varchar" MaxLength="25" StoreGeneratedPattern="Computed" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="datetime" Nullable="false" />
+    <Property Name="IsBookmark" Type="bit" Nullable="false" />
+    <Property Name="OrderNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Price" Type="smallmoney" Nullable="false" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="Quota" Type="int" StoreGeneratedPattern="Computed" />
+    <Property Name="TotalPrice" Type="smallmoney" StoreGeneratedPattern="Computed" />
+    <Property Name="BookYear" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="InventoryQuantity">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RowGUID" Type="uniqueidentifier" />
+    <Property Name="ReqNO" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InventoryReferenceNo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="CategoryCD" Type="int" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="datetime" Nullable="false" />
+    <Property Name="Price" Type="smallmoney" />
+    <Property Name="TotalPrice" Type="smallmoney" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ReqStatus">
+    <Key>
+      <PropertyRef Name="StatusID" />
+    </Key>
+    <Property Name="StatusID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StatusDescription" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="Editable" Type="bit" Nullable="false" />
+    <Property Name="Recallable" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Requisitions">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="RowGUID" />
+      <PropertyRef Name="ReqID" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RowGUID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ReqID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="EMIS" Type="int" Nullable="false" />
+    <Property Name="BookYear" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="GrFrom" Type="tinyint" />
+    <Property Name="GrTo" Type="tinyint" />
+    <Property Name="WFStage" Type="varchar" MaxLength="36" Nullable="false" />
+    <Property Name="Status" Type="tinyint" Nullable="false" />
+    <Property Name="IsRedirected" Type="bit" Nullable="false" />
+    <Property Name="TotalPrice" Type="money" Nullable="false" />
+    <Property Name="IsStationary" Type="bit" Nullable="false" />
+    <Property Name="IsApproved" Type="bit" Nullable="false" />
+    <Property Name="OrderDate" Type="datetime" />
+    <Property Name="DeliveryDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="RequisitionSubmissions">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RowGuid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ReqID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="WF" Type="int" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="datetime" Nullable="false" />
+    <Property Name="IsInCapturer" Type="bit" />
+    <Property Name="IsInCircuit" Type="bit" />
+    <Property Name="IsInDistrict" Type="bit" />
+    <Property Name="IsInCurriculum" Type="bit" />
+    <Property Name="IsInTreasury" Type="bit" />
+    <Property Name="IsCompleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="WorkFlow">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ref" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="datetime" Nullable="false" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="IsApproved" Type="bit" />
+    <Property Name="To" Type="int" />
+    <Property Name="ToDescription" Type="nvarchar(max)" />
+    <Property Name="From" Type="int" />
+    <Property Name="FromDescription" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="WorkFlowTicketMessage">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="Ticket" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ticket" Type="int" Nullable="false" />
+    <Property Name="Message" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="datetime" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="From" Type="int" Nullable="false" />
+    <Property Name="FromDescription" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="To" Type="int" Nullable="false" />
+    <Property Name="ToDescription" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IsRead" Type="bit" />
+  </EntityType>
+  <EntityType Name="WorkFlowTimeLine">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Task" Type="int" Nullable="false" />
+    <Property Name="Activity" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="WorkId" Type="int" Nullable="false" />
+    <Property Name="To" Type="int" />
+    <Property Name="ToDescription" Type="nvarchar(max)" />
+    <Property Name="From" Type="int" />
+    <Property Name="FromDescription" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Portal.Lsm.dbo.vw_rqLmP_OrderItems' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vw_rqLmP_OrderItems">
+    <Key>
+      <PropertyRef Name="ReqID" />
+      <PropertyRef Name="EMIS" />
+      <PropertyRef Name="BookYear" />
+      <PropertyRef Name="DepartmentOfficial" />
+      <PropertyRef Name="ChecklistDate" />
+      <PropertyRef Name="StationaryRequisition" />
+      <PropertyRef Name="ReqStatus" />
+      <PropertyRef Name="Recall" />
+    </Key>
+    <Property Name="ReqID" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="EMIS" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="BookYear" Type="nvarchar" MaxLength="9" Nullable="false" />
+    <Property Name="SchoolOfficial1" Type="int" />
+    <Property Name="Official1ApproveDate" Type="datetime" />
+    <Property Name="SchoolOfficial2" Type="int" />
+    <Property Name="Official2ApproveDate" Type="datetime" />
+    <Property Name="DepartmentOfficial" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ChecklistDate" Type="datetime" Nullable="false" />
+    <Property Name="ReqDate" Type="datetime" />
+    <Property Name="OrderDate" Type="datetime" />
+    <Property Name="DeliveryDate" Type="datetime" />
+    <Property Name="GrFrom" Type="tinyint" />
+    <Property Name="GrTo" Type="tinyint" />
+    <Property Name="StationaryRequisition" Type="bit" Nullable="false" />
+    <Property Name="ReqStatus" Type="tinyint" Nullable="false" />
+    <Property Name="Verified" Type="nchar" MaxLength="3" />
+    <Property Name="WareID" Type="tinyint" />
+    <Property Name="Recall" Type="bit" Nullable="false" />
+    <Property Name="SMGD_Open" Type="bit" />
+    <Property Name="NoThanks" Type="bit" />
+    <Property Name="ApprovalFlag" Type="int" />
+    <Property Name="TotalPrice" Type="smallmoney" />
+    <Property Name="TransParFlag" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Portal.Lsm.Production.req_vwOrderItems' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="req_vwOrderItems">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="ISBN" />
+      <PropertyRef Name="SubjCode" />
+      <PropertyRef Name="EmisCode" />
+      <PropertyRef Name="ItemName" />
+      <PropertyRef Name="SubjectName" />
+      <PropertyRef Name="Author" />
+      <PropertyRef Name="Grade" />
+      <PropertyRef Name="Price" />
+      <PropertyRef Name="ReqId" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="ISBN" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SubjCode" Type="int" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="Enrolment" Type="int" />
+    <Property Name="Qty1" Type="int" />
+    <Property Name="Qty2" Type="int" />
+    <Property Name="ItemName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="SubjectName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="BookYear" Type="nvarchar" MaxLength="20" />
+    <Property Name="Author" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Grade" Type="int" Nullable="false" />
+    <Property Name="Price" Type="smallmoney" Nullable="false" />
+    <Property Name="TotalPrice" Type="money" />
+    <Property Name="ReqId" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="Quota" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Portal.Lsm.Production.req_vwRequisitionTotalPrice' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="req_vwRequisitionTotalPrice">
+    <Key>
+      <PropertyRef Name="ReqId" />
+    </Key>
+    <Property Name="ReqId" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="EmisCode" Type="int" />
+    <Property Name="TotalPrice" Type="money" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Portal.Lsm.Production.vw_Inventory' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vw_Inventory">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="EmisCode" />
+      <PropertyRef Name="BookName" />
+      <PropertyRef Name="ISBN" />
+      <PropertyRef Name="Publisher" />
+      <PropertyRef Name="Author" />
+      <PropertyRef Name="Language" />
+      <PropertyRef Name="Category" />
+      <PropertyRef Name="CategoryCD" />
+      <PropertyRef Name="Sub_Code" />
+      <PropertyRef Name="SubjectName" />
+      <PropertyRef Name="Key" />
+      <PropertyRef Name="Grade" />
+      <PropertyRef Name="Class_Enr" />
+      <PropertyRef Name="Subj_Enr" />
+      <PropertyRef Name="Price" />
+      <PropertyRef Name="CreationDate" />
+      <PropertyRef Name="LastModifiedDate" />
+      <PropertyRef Name="Teachers" />
+      <PropertyRef Name="BookYear" />
+      <PropertyRef Name="TLR" />
+      <PropertyRef Name="IsBookmarked" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="BookName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="ISBN" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Publisher" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Author" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Language" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Category" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="CategoryCD" Type="int" Nullable="false" />
+    <Property Name="Sub_Code" Type="int" Nullable="false" />
+    <Property Name="SubjectName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Key" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="Grade" Type="int" Nullable="false" />
+    <Property Name="Class_Enr" Type="int" Nullable="false" />
+    <Property Name="Subj_Enr" Type="int" Nullable="false" />
+    <Property Name="Price" Type="smallmoney" Nullable="false" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="datetime" Nullable="false" />
+    <Property Name="TotalPrice" Type="smallmoney" />
+    <Property Name="Teachers" Type="int" Nullable="false" />
+    <Property Name="BookYear" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="TLR" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="IsBookmarked" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Portal.Lsm.Production.vw_RequisitionOrderItems' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vw_RequisitionOrderItems">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="ISBN" />
+      <PropertyRef Name="ItemName" />
+      <PropertyRef Name="Publisher" />
+      <PropertyRef Name="Author" />
+      <PropertyRef Name="Language" />
+      <PropertyRef Name="Category" />
+      <PropertyRef Name="SubjectName" />
+      <PropertyRef Name="Key" />
+      <PropertyRef Name="Code" />
+      <PropertyRef Name="Grade" />
+      <PropertyRef Name="Price" />
+      <PropertyRef Name="SubjCode" />
+      <PropertyRef Name="EmisCode" />
+      <PropertyRef Name="ClassEnrol" />
+      <PropertyRef Name="SubjEnrol" />
+      <PropertyRef Name="CreationDate" />
+      <PropertyRef Name="LastModifiedDate" />
+      <PropertyRef Name="IsBookmarked" />
+      <PropertyRef Name="TeacherCount" />
+      <PropertyRef Name="IsActive" />
+      <PropertyRef Name="CategoryCD" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="Requisitions" Type="nvarchar(max)" />
+    <Property Name="ISBN" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="OrderQty" Type="int" />
+    <Property Name="ItemName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Publisher" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Author" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Language" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Category" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="SubjectName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Key" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="Code" Type="int" Nullable="false" />
+    <Property Name="Grade" Type="int" Nullable="false" />
+    <Property Name="Price" Type="smallmoney" Nullable="false" />
+    <Property Name="SubjCode" Type="int" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="ClassEnrol" Type="int" Nullable="false" />
+    <Property Name="SubjEnrol" Type="int" Nullable="false" />
+    <Property Name="Qty" Type="int" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="datetime" Nullable="false" />
+    <Property Name="TotalPrice" Type="money" />
+    <Property Name="IsBookmarked" Type="bit" Nullable="false" />
+    <Property Name="ItemId" Type="int" />
+    <Property Name="TeacherCount" Type="int" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="BookYear" Type="nvarchar" MaxLength="20" />
+    <Property Name="CategoryCD" Type="int" Nullable="false" />
+    <Property Name="IsApproved" Type="int" />
+    <Property Name="Available" Type="int" />
+    <Property Name="Available2" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Portal.Lsm.Production.vw_RequisitionsDashboard' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vw_RequisitionsDashboard">
+    <Key>
+      <PropertyRef Name="EmisCode" />
+      <PropertyRef Name="BookYear" />
+    </Key>
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="BookYear" Type="nvarchar" MaxLength="9" Nullable="false" />
+    <Property Name="Submitted" Type="int" />
+    <Property Name="Sub_TotalPrice" Type="money" />
+    <Property Name="InDrafts" Type="int" />
+    <Property Name="TotalP_InDrf" Type="money" />
+    <Property Name="Rejected" Type="int" />
+    <Property Name="TotalP_Reject" Type="money" />
+    <Property Name="Aprroved" Type="int" />
+    <Property Name="TotalP_Approved" Type="money" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Portal.Lsm.Production.vw_RequisitionsNorms' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vw_RequisitionsNorms">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="EmisCode" />
+      <PropertyRef Name="GrFrom" />
+      <PropertyRef Name="GrTo" />
+      <PropertyRef Name="DateFrom" />
+      <PropertyRef Name="DateTo" />
+      <PropertyRef Name="MinGrade" />
+      <PropertyRef Name="MaxGrade" />
+      <PropertyRef Name="BookYear" />
+      <PropertyRef Name="Term" />
+      <PropertyRef Name="Year" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="GrFrom" Type="tinyint" Nullable="false" />
+    <Property Name="GrTo" Type="tinyint" Nullable="false" />
+    <Property Name="DateFrom" Type="datetime" Nullable="false" />
+    <Property Name="DateTo" Type="datetime" Nullable="false" />
+    <Property Name="MinGrade" Type="int" Nullable="false" />
+    <Property Name="MaxGrade" Type="int" Nullable="false" />
+    <Property Name="BookYear" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Term" Type="int" Nullable="false" />
+    <Property Name="Year" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Rem_Days" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Portal.Lsm.Production.vw_ShoppingCardItems' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vw_ShoppingCardItems">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="ISBN" />
+      <PropertyRef Name="ItemName" />
+      <PropertyRef Name="Publisher" />
+      <PropertyRef Name="Author" />
+      <PropertyRef Name="Language" />
+      <PropertyRef Name="Category" />
+      <PropertyRef Name="SubjectName" />
+      <PropertyRef Name="Key" />
+      <PropertyRef Name="Code" />
+      <PropertyRef Name="Grade" />
+      <PropertyRef Name="Price" />
+      <PropertyRef Name="SubjCode" />
+      <PropertyRef Name="EmisCode" />
+      <PropertyRef Name="ClassEnrol" />
+      <PropertyRef Name="SubjEnrol" />
+      <PropertyRef Name="CreationDate" />
+      <PropertyRef Name="LastModifiedDate" />
+      <PropertyRef Name="TotalPrice" />
+      <PropertyRef Name="IsBookmarked" />
+      <PropertyRef Name="TeacherCount" />
+      <PropertyRef Name="IsActive" />
+      <PropertyRef Name="CategoryCD" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="ReqId" Type="nvarchar" MaxLength="40" />
+    <Property Name="ISBN" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="OrderQty" Type="int" />
+    <Property Name="ItemName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Publisher" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Author" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Language" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Category" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="SubjectName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Key" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="Code" Type="int" Nullable="false" />
+    <Property Name="Grade" Type="int" Nullable="false" />
+    <Property Name="Price" Type="smallmoney" Nullable="false" />
+    <Property Name="SubjCode" Type="int" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="ClassEnrol" Type="int" Nullable="false" />
+    <Property Name="SubjEnrol" Type="int" Nullable="false" />
+    <Property Name="Qty" Type="int" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="datetime" Nullable="false" />
+    <Property Name="TotalPrice" Type="money" Nullable="false" />
+    <Property Name="IsBookmarked" Type="bit" Nullable="false" />
+    <Property Name="ItemId" Type="int" />
+    <Property Name="TeacherCount" Type="int" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="BookYear" Type="nvarchar" MaxLength="20" />
+    <Property Name="CategoryCD" Type="int" Nullable="false" />
+    <Property Name="IsApproved" Type="int" />
+    <Property Name="Available" Type="int" />
+    <Property Name="Available2" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Portal.Lsm.Production.vwTotalSubcityPerCircuit' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwTotalSubcityPerCircuit">
+    <Key>
+      <PropertyRef Name="EICircuit" />
+      <PropertyRef Name="BookYear" />
+    </Key>
+    <Property Name="CircuitCD" Type="int" />
+    <Property Name="EICircuit" Type="varchar(max)" Nullable="false" />
+    <Property Name="Schools" Type="bigint" />
+    <Property Name="Requisitions" Type="int" />
+    <Property Name="TotalPrice" Type="money" />
+    <Property Name="BookYear" Type="nvarchar" MaxLength="9" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Portal.Lsm.WF.vwRequistionTickets' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwRequistionTickets">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="Ref" />
+      <PropertyRef Name="CreationDate" />
+      <PropertyRef Name="LastModifiedDate" />
+      <PropertyRef Name="ReqStatus" />
+      <PropertyRef Name="Task" />
+      <PropertyRef Name="BookYear" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="Ref" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="datetime" Nullable="false" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="IsApproved" Type="bit" />
+    <Property Name="To" Type="int" />
+    <Property Name="ToDescription" Type="nvarchar(max)" />
+    <Property Name="From" Type="int" />
+    <Property Name="FromDescription" Type="nvarchar(max)" />
+    <Property Name="ReqStatus" Type="tinyint" Nullable="false" />
+    <Property Name="Task" Type="int" Nullable="false" />
+    <Property Name="Status" Type="nvarchar" MaxLength="40" />
+    <Property Name="GrFrom" Type="tinyint" />
+    <Property Name="GrTo" Type="tinyint" />
+    <Property Name="BookYear" Type="nvarchar" MaxLength="9" Nullable="false" />
+    <Property Name="TotalPrice" Type="money" />
+    <Property Name="Address" Type="nvarchar" MaxLength="125" />
+    <Property Name="Email" Type="nvarchar" MaxLength="80" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="Position" Type="nvarchar" MaxLength="60" />
+  </EntityType>
+  <Association Name="FK__WorkFlowT__Ticke__71C268D9">
+    <End Role="WorkFlowTimeLine" Type="Self.WorkFlowTimeLine" Multiplicity="1" />
+    <End Role="WorkFlowTicketMessage" Type="Self.WorkFlowTicketMessage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WorkFlowTimeLine">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="WorkFlowTicketMessage">
+        <PropertyRef Name="Ticket" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__WorkFlowT__WorkI__5CC74BF3">
+    <End Role="WorkFlow" Type="Self.WorkFlow" Multiplicity="1" />
+    <End Role="WorkFlowTimeLine" Type="Self.WorkFlowTimeLine" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WorkFlow">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="WorkFlowTimeLine">
+        <PropertyRef Name="WorkId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <!--Errors Found During Generation:
+warning 6035: The relationship 'FK_InventoryQuantity_ReqNO' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+        <Association Name="FK_InventoryQuantity_ReqNO" />-->
+  <!--Errors Found During Generation:
+warning 6035: The relationship 'FK_WFState_ReqID' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+        <Association Name="FK_WFState_ReqID" />-->
+  <EntityContainer Name="PortalDbContextStoreContainer">
+    <EntitySet Name="Circuits" EntityType="Self.Circuits" Schema="MasterFile" store:Type="Tables" />
+    <EntitySet Name="SchoolGrades" EntityType="Self.SchoolGrades" Schema="MasterFile" store:Type="Tables" />
+    <EntitySet Name="Schools" EntityType="Self.Schools" Schema="MasterFile" store:Type="Tables" />
+    <EntitySet Name="TeacherLearnerSubjectRatio" EntityType="Self.TeacherLearnerSubjectRatio" Schema="MasterFile" store:Type="Tables" />
+    <EntitySet Name="Bookmarks" EntityType="Self.Bookmarks" Schema="Production" store:Type="Tables" />
+    <EntitySet Name="Catalogue" EntityType="Self.Catalogue" Schema="Production" store:Type="Tables" />
+    <EntitySet Name="Inventory" EntityType="Self.Inventory" Schema="Production" store:Type="Tables" />
+    <EntitySet Name="InventoryQuantity" EntityType="Self.InventoryQuantity" Schema="Production" store:Type="Tables" />
+    <EntitySet Name="ReqStatus" EntityType="Self.ReqStatus" Schema="Production" store:Type="Tables" />
+    <EntitySet Name="Requisitions" EntityType="Self.Requisitions" Schema="Production" store:Type="Tables" />
+    <EntitySet Name="RequisitionSubmissions" EntityType="Self.RequisitionSubmissions" Schema="Production" store:Type="Tables" />
+    <EntitySet Name="WorkFlow" EntityType="Self.WorkFlow" Schema="WorkFlows" store:Type="Tables" />
+    <EntitySet Name="WorkFlowTicketMessage" EntityType="Self.WorkFlowTicketMessage" Schema="WorkFlows" store:Type="Tables" />
+    <EntitySet Name="WorkFlowTimeLine" EntityType="Self.WorkFlowTimeLine" Schema="WorkFlows" store:Type="Tables" />
+    <EntitySet Name="LearnerSubjectEnrolment" EntityType="Self.LearnerSubjectEnrolment" store:Type="Tables" store:Schema="MasterFile">
+      <DefiningQuery>SELECT 
+    [LearnerSubjectEnrolment].[Id] AS [Id], 
+    [LearnerSubjectEnrolment].[RowGuid] AS [RowGuid], 
+    [LearnerSubjectEnrolment].[SubjectId] AS [SubjectId], 
+    [LearnerSubjectEnrolment].[Sec_SubjectId] AS [Sec_SubjectId], 
+    [LearnerSubjectEnrolment].[Name] AS [Name], 
+    [LearnerSubjectEnrolment].[Key] AS [Key], 
+    [LearnerSubjectEnrolment].[Code] AS [Code], 
+    [LearnerSubjectEnrolment].[Grade] AS [Grade], 
+    [LearnerSubjectEnrolment].[Enr_Class] AS [Enr_Class], 
+    [LearnerSubjectEnrolment].[Enr_Sub] AS [Enr_Sub], 
+    [LearnerSubjectEnrolment].[EmisCode] AS [EmisCode], 
+    [LearnerSubjectEnrolment].[Term] AS [Term], 
+    [LearnerSubjectEnrolment].[Year] AS [Year]
+    FROM [MasterFile].[LearnerSubjectEnrolment] AS [LearnerSubjectEnrolment]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vw_rqLmP_OrderItems" EntityType="Self.vw_rqLmP_OrderItems" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vw_rqLmP_OrderItems].[ReqID] AS [ReqID], 
+    [vw_rqLmP_OrderItems].[EMIS] AS [EMIS], 
+    [vw_rqLmP_OrderItems].[BookYear] AS [BookYear], 
+    [vw_rqLmP_OrderItems].[SchoolOfficial1] AS [SchoolOfficial1], 
+    [vw_rqLmP_OrderItems].[Official1ApproveDate] AS [Official1ApproveDate], 
+    [vw_rqLmP_OrderItems].[SchoolOfficial2] AS [SchoolOfficial2], 
+    [vw_rqLmP_OrderItems].[Official2ApproveDate] AS [Official2ApproveDate], 
+    [vw_rqLmP_OrderItems].[DepartmentOfficial] AS [DepartmentOfficial], 
+    [vw_rqLmP_OrderItems].[ChecklistDate] AS [ChecklistDate], 
+    [vw_rqLmP_OrderItems].[ReqDate] AS [ReqDate], 
+    [vw_rqLmP_OrderItems].[OrderDate] AS [OrderDate], 
+    [vw_rqLmP_OrderItems].[DeliveryDate] AS [DeliveryDate], 
+    [vw_rqLmP_OrderItems].[GrFrom] AS [GrFrom], 
+    [vw_rqLmP_OrderItems].[GrTo] AS [GrTo], 
+    [vw_rqLmP_OrderItems].[StationaryRequisition] AS [StationaryRequisition], 
+    [vw_rqLmP_OrderItems].[ReqStatus] AS [ReqStatus], 
+    [vw_rqLmP_OrderItems].[Verified] AS [Verified], 
+    [vw_rqLmP_OrderItems].[WareID] AS [WareID], 
+    [vw_rqLmP_OrderItems].[Recall] AS [Recall], 
+    [vw_rqLmP_OrderItems].[SMGD_Open] AS [SMGD_Open], 
+    [vw_rqLmP_OrderItems].[NoThanks] AS [NoThanks], 
+    [vw_rqLmP_OrderItems].[ApprovalFlag] AS [ApprovalFlag], 
+    [vw_rqLmP_OrderItems].[TotalPrice] AS [TotalPrice], 
+    [vw_rqLmP_OrderItems].[TransParFlag] AS [TransParFlag]
+    FROM [dbo].[vw_rqLmP_OrderItems] AS [vw_rqLmP_OrderItems]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="req_vwOrderItems" EntityType="Self.req_vwOrderItems" store:Type="Views" store:Schema="Production">
+      <DefiningQuery>SELECT 
+    [req_vwOrderItems].[id] AS [id], 
+    [req_vwOrderItems].[ISBN] AS [ISBN], 
+    [req_vwOrderItems].[SubjCode] AS [SubjCode], 
+    [req_vwOrderItems].[EmisCode] AS [EmisCode], 
+    [req_vwOrderItems].[Enrolment] AS [Enrolment], 
+    [req_vwOrderItems].[Qty1] AS [Qty1], 
+    [req_vwOrderItems].[Qty2] AS [Qty2], 
+    [req_vwOrderItems].[ItemName] AS [ItemName], 
+    [req_vwOrderItems].[SubjectName] AS [SubjectName], 
+    [req_vwOrderItems].[BookYear] AS [BookYear], 
+    [req_vwOrderItems].[Author] AS [Author], 
+    [req_vwOrderItems].[Grade] AS [Grade], 
+    [req_vwOrderItems].[Price] AS [Price], 
+    [req_vwOrderItems].[TotalPrice] AS [TotalPrice], 
+    [req_vwOrderItems].[ReqId] AS [ReqId], 
+    [req_vwOrderItems].[Quota] AS [Quota]
+    FROM [Production].[req_vwOrderItems] AS [req_vwOrderItems]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="req_vwRequisitionTotalPrice" EntityType="Self.req_vwRequisitionTotalPrice" store:Type="Views" store:Schema="Production">
+      <DefiningQuery>SELECT 
+    [req_vwRequisitionTotalPrice].[ReqId] AS [ReqId], 
+    [req_vwRequisitionTotalPrice].[EmisCode] AS [EmisCode], 
+    [req_vwRequisitionTotalPrice].[TotalPrice] AS [TotalPrice]
+    FROM [Production].[req_vwRequisitionTotalPrice] AS [req_vwRequisitionTotalPrice]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vw_Inventory" EntityType="Self.vw_Inventory" store:Type="Views" store:Schema="Production">
+      <DefiningQuery>SELECT 
+    [vw_Inventory].[Id] AS [Id], 
+    [vw_Inventory].[EmisCode] AS [EmisCode], 
+    [vw_Inventory].[BookName] AS [BookName], 
+    [vw_Inventory].[ISBN] AS [ISBN], 
+    [vw_Inventory].[Publisher] AS [Publisher], 
+    [vw_Inventory].[Author] AS [Author], 
+    [vw_Inventory].[Language] AS [Language], 
+    [vw_Inventory].[Category] AS [Category], 
+    [vw_Inventory].[CategoryCD] AS [CategoryCD], 
+    [vw_Inventory].[Sub_Code] AS [Sub_Code], 
+    [vw_Inventory].[SubjectName] AS [SubjectName], 
+    [vw_Inventory].[Key] AS [Key], 
+    [vw_Inventory].[Grade] AS [Grade], 
+    [vw_Inventory].[Class_Enr] AS [Class_Enr], 
+    [vw_Inventory].[Subj_Enr] AS [Subj_Enr], 
+    [vw_Inventory].[Price] AS [Price], 
+    [vw_Inventory].[Quantity] AS [Quantity], 
+    [vw_Inventory].[CreationDate] AS [CreationDate], 
+    [vw_Inventory].[LastModifiedDate] AS [LastModifiedDate], 
+    [vw_Inventory].[TotalPrice] AS [TotalPrice], 
+    [vw_Inventory].[Teachers] AS [Teachers], 
+    [vw_Inventory].[BookYear] AS [BookYear], 
+    [vw_Inventory].[TLR] AS [TLR], 
+    [vw_Inventory].[IsBookmarked] AS [IsBookmarked]
+    FROM [Production].[vw_Inventory] AS [vw_Inventory]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vw_RequisitionOrderItems" EntityType="Self.vw_RequisitionOrderItems" store:Type="Views" store:Schema="Production">
+      <DefiningQuery>SELECT 
+    [vw_RequisitionOrderItems].[id] AS [id], 
+    [vw_RequisitionOrderItems].[Requisitions] AS [Requisitions], 
+    [vw_RequisitionOrderItems].[ISBN] AS [ISBN], 
+    [vw_RequisitionOrderItems].[OrderQty] AS [OrderQty], 
+    [vw_RequisitionOrderItems].[ItemName] AS [ItemName], 
+    [vw_RequisitionOrderItems].[Publisher] AS [Publisher], 
+    [vw_RequisitionOrderItems].[Author] AS [Author], 
+    [vw_RequisitionOrderItems].[Language] AS [Language], 
+    [vw_RequisitionOrderItems].[Category] AS [Category], 
+    [vw_RequisitionOrderItems].[SubjectName] AS [SubjectName], 
+    [vw_RequisitionOrderItems].[Key] AS [Key], 
+    [vw_RequisitionOrderItems].[Code] AS [Code], 
+    [vw_RequisitionOrderItems].[Grade] AS [Grade], 
+    [vw_RequisitionOrderItems].[Price] AS [Price], 
+    [vw_RequisitionOrderItems].[SubjCode] AS [SubjCode], 
+    [vw_RequisitionOrderItems].[EmisCode] AS [EmisCode], 
+    [vw_RequisitionOrderItems].[ClassEnrol] AS [ClassEnrol], 
+    [vw_RequisitionOrderItems].[SubjEnrol] AS [SubjEnrol], 
+    [vw_RequisitionOrderItems].[Qty] AS [Qty], 
+    [vw_RequisitionOrderItems].[CreationDate] AS [CreationDate], 
+    [vw_RequisitionOrderItems].[LastModifiedDate] AS [LastModifiedDate], 
+    [vw_RequisitionOrderItems].[TotalPrice] AS [TotalPrice], 
+    [vw_RequisitionOrderItems].[IsBookmarked] AS [IsBookmarked], 
+    [vw_RequisitionOrderItems].[ItemId] AS [ItemId], 
+    [vw_RequisitionOrderItems].[TeacherCount] AS [TeacherCount], 
+    [vw_RequisitionOrderItems].[IsActive] AS [IsActive], 
+    [vw_RequisitionOrderItems].[BookYear] AS [BookYear], 
+    [vw_RequisitionOrderItems].[CategoryCD] AS [CategoryCD], 
+    [vw_RequisitionOrderItems].[IsApproved] AS [IsApproved], 
+    [vw_RequisitionOrderItems].[Available] AS [Available], 
+    [vw_RequisitionOrderItems].[Available2] AS [Available2]
+    FROM [Production].[vw_RequisitionOrderItems] AS [vw_RequisitionOrderItems]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vw_RequisitionsDashboard" EntityType="Self.vw_RequisitionsDashboard" store:Type="Views" store:Schema="Production">
+      <DefiningQuery>SELECT 
+    [vw_RequisitionsDashboard].[EmisCode] AS [EmisCode], 
+    [vw_RequisitionsDashboard].[BookYear] AS [BookYear], 
+    [vw_RequisitionsDashboard].[Submitted] AS [Submitted], 
+    [vw_RequisitionsDashboard].[Sub_TotalPrice] AS [Sub_TotalPrice], 
+    [vw_RequisitionsDashboard].[InDrafts] AS [InDrafts], 
+    [vw_RequisitionsDashboard].[TotalP_InDrf] AS [TotalP_InDrf], 
+    [vw_RequisitionsDashboard].[Rejected] AS [Rejected], 
+    [vw_RequisitionsDashboard].[TotalP_Reject] AS [TotalP_Reject], 
+    [vw_RequisitionsDashboard].[Aprroved] AS [Aprroved], 
+    [vw_RequisitionsDashboard].[TotalP_Approved] AS [TotalP_Approved]
+    FROM [Production].[vw_RequisitionsDashboard] AS [vw_RequisitionsDashboard]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vw_RequisitionsNorms" EntityType="Self.vw_RequisitionsNorms" store:Type="Views" store:Schema="Production">
+      <DefiningQuery>SELECT 
+    [vw_RequisitionsNorms].[Id] AS [Id], 
+    [vw_RequisitionsNorms].[EmisCode] AS [EmisCode], 
+    [vw_RequisitionsNorms].[Description] AS [Description], 
+    [vw_RequisitionsNorms].[GrFrom] AS [GrFrom], 
+    [vw_RequisitionsNorms].[GrTo] AS [GrTo], 
+    [vw_RequisitionsNorms].[DateFrom] AS [DateFrom], 
+    [vw_RequisitionsNorms].[DateTo] AS [DateTo], 
+    [vw_RequisitionsNorms].[MinGrade] AS [MinGrade], 
+    [vw_RequisitionsNorms].[MaxGrade] AS [MaxGrade], 
+    [vw_RequisitionsNorms].[BookYear] AS [BookYear], 
+    [vw_RequisitionsNorms].[Term] AS [Term], 
+    [vw_RequisitionsNorms].[Year] AS [Year], 
+    [vw_RequisitionsNorms].[Rem_Days] AS [Rem_Days]
+    FROM [Production].[vw_RequisitionsNorms] AS [vw_RequisitionsNorms]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vw_ShoppingCardItems" EntityType="Self.vw_ShoppingCardItems" store:Type="Views" store:Schema="Production">
+      <DefiningQuery>SELECT 
+    [vw_ShoppingCardItems].[id] AS [id], 
+    [vw_ShoppingCardItems].[ReqId] AS [ReqId], 
+    [vw_ShoppingCardItems].[ISBN] AS [ISBN], 
+    [vw_ShoppingCardItems].[OrderQty] AS [OrderQty], 
+    [vw_ShoppingCardItems].[ItemName] AS [ItemName], 
+    [vw_ShoppingCardItems].[Publisher] AS [Publisher], 
+    [vw_ShoppingCardItems].[Author] AS [Author], 
+    [vw_ShoppingCardItems].[Language] AS [Language], 
+    [vw_ShoppingCardItems].[Category] AS [Category], 
+    [vw_ShoppingCardItems].[SubjectName] AS [SubjectName], 
+    [vw_ShoppingCardItems].[Key] AS [Key], 
+    [vw_ShoppingCardItems].[Code] AS [Code], 
+    [vw_ShoppingCardItems].[Grade] AS [Grade], 
+    [vw_ShoppingCardItems].[Price] AS [Price], 
+    [vw_ShoppingCardItems].[SubjCode] AS [SubjCode], 
+    [vw_ShoppingCardItems].[EmisCode] AS [EmisCode], 
+    [vw_ShoppingCardItems].[ClassEnrol] AS [ClassEnrol], 
+    [vw_ShoppingCardItems].[SubjEnrol] AS [SubjEnrol], 
+    [vw_ShoppingCardItems].[Qty] AS [Qty], 
+    [vw_ShoppingCardItems].[CreationDate] AS [CreationDate], 
+    [vw_ShoppingCardItems].[LastModifiedDate] AS [LastModifiedDate], 
+    [vw_ShoppingCardItems].[TotalPrice] AS [TotalPrice], 
+    [vw_ShoppingCardItems].[IsBookmarked] AS [IsBookmarked], 
+    [vw_ShoppingCardItems].[ItemId] AS [ItemId], 
+    [vw_ShoppingCardItems].[TeacherCount] AS [TeacherCount], 
+    [vw_ShoppingCardItems].[IsActive] AS [IsActive], 
+    [vw_ShoppingCardItems].[BookYear] AS [BookYear], 
+    [vw_ShoppingCardItems].[CategoryCD] AS [CategoryCD], 
+    [vw_ShoppingCardItems].[IsApproved] AS [IsApproved], 
+    [vw_ShoppingCardItems].[Available] AS [Available], 
+    [vw_ShoppingCardItems].[Available2] AS [Available2]
+    FROM [Production].[vw_ShoppingCardItems] AS [vw_ShoppingCardItems]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwTotalSubcityPerCircuit" EntityType="Self.vwTotalSubcityPerCircuit" store:Type="Views" store:Schema="Production">
+      <DefiningQuery>SELECT 
+    [vwTotalSubcityPerCircuit].[CircuitCD] AS [CircuitCD], 
+    [vwTotalSubcityPerCircuit].[EICircuit] AS [EICircuit], 
+    [vwTotalSubcityPerCircuit].[Schools] AS [Schools], 
+    [vwTotalSubcityPerCircuit].[Requisitions] AS [Requisitions], 
+    [vwTotalSubcityPerCircuit].[TotalPrice] AS [TotalPrice], 
+    [vwTotalSubcityPerCircuit].[BookYear] AS [BookYear]
+    FROM [Production].[vwTotalSubcityPerCircuit] AS [vwTotalSubcityPerCircuit]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwRequistionTickets" EntityType="Self.vwRequistionTickets" store:Type="Views" store:Schema="WF">
+      <DefiningQuery>SELECT 
+    [vwRequistionTickets].[id] AS [id], 
+    [vwRequistionTickets].[Ref] AS [Ref], 
+    [vwRequistionTickets].[CreationDate] AS [CreationDate], 
+    [vwRequistionTickets].[LastModifiedDate] AS [LastModifiedDate], 
+    [vwRequistionTickets].[IsActive] AS [IsActive], 
+    [vwRequistionTickets].[IsApproved] AS [IsApproved], 
+    [vwRequistionTickets].[To] AS [To], 
+    [vwRequistionTickets].[ToDescription] AS [ToDescription], 
+    [vwRequistionTickets].[From] AS [From], 
+    [vwRequistionTickets].[FromDescription] AS [FromDescription], 
+    [vwRequistionTickets].[ReqStatus] AS [ReqStatus], 
+    [vwRequistionTickets].[Task] AS [Task], 
+    [vwRequistionTickets].[Status] AS [Status], 
+    [vwRequistionTickets].[GrFrom] AS [GrFrom], 
+    [vwRequistionTickets].[GrTo] AS [GrTo], 
+    [vwRequistionTickets].[BookYear] AS [BookYear], 
+    [vwRequistionTickets].[TotalPrice] AS [TotalPrice], 
+    [vwRequistionTickets].[Address] AS [Address], 
+    [vwRequistionTickets].[Email] AS [Email], 
+    [vwRequistionTickets].[PhoneNumber] AS [PhoneNumber], 
+    [vwRequistionTickets].[Position] AS [Position]
+    FROM [WF].[vwRequistionTickets] AS [vwRequistionTickets]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__WorkFlowT__Ticke__71C268D9" Association="Self.FK__WorkFlowT__Ticke__71C268D9">
+      <End Role="WorkFlowTimeLine" EntitySet="WorkFlowTimeLine" />
+      <End Role="WorkFlowTicketMessage" EntitySet="WorkFlowTicketMessage" />
+    </AssociationSet>
+    <AssociationSet Name="FK__WorkFlowT__WorkI__5CC74BF3" Association="Self.FK__WorkFlowT__WorkI__5CC74BF3">
+      <End Role="WorkFlow" EntitySet="WorkFlow" />
+      <End Role="WorkFlowTimeLine" EntitySet="WorkFlowTimeLine" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

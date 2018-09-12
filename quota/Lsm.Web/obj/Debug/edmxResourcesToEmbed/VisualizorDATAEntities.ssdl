@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VisualizorPortalDATAModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'VisualizorPortalDATA.dbo.vw_WEP_s_ConsolidatedEMISCircuit' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vw_WEP_s_ConsolidatedEMISCircuit">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="EICircuit" Type="nvarchar" MaxLength="255" />
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="EIDistrict" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'VisualizorPortalDATA.dbo.vw_WEP_s_ConsolidatedEMISDistricts' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vw_WEP_s_ConsolidatedEMISDistricts">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="250" />
+    <Property Name="ProvinceCD" Type="int" />
+    <Property Name="Manager" Type="nvarchar" MaxLength="200" />
+    <Property Name="Telephone" Type="nvarchar" MaxLength="30" />
+    <Property Name="Active" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'VisualizorPortalDATA.dbo.vw_WEP_s_VisualizedEnrolLearners' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vw_WEP_s_VisualizedEnrolLearners">
+    <Key>
+      <PropertyRef Name="AccessionNo" />
+    </Key>
+    <Property Name="AccessionNo" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Total" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'VisualizorPortalDATA.dbo.vwLIMQ_TotalNumberOfSchools' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwLIMQ_TotalNumberOfSchools">
+    <Key>
+      <PropertyRef Name="NatEmis" />
+    </Key>
+    <Property Name="NatEmis" Type="int" Nullable="false" />
+    <Property Name="ROW_ID" Type="bigint" />
+    <Property Name="Total " Type="int" />
+  </EntityType>
+  <EntityContainer Name="VisualizorPortalDATAModelStoreContainer">
+    <EntitySet Name="vw_WEP_s_ConsolidatedEMISCircuit" EntityType="Self.vw_WEP_s_ConsolidatedEMISCircuit" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vw_WEP_s_ConsolidatedEMISCircuit].[EICircuit] AS [EICircuit], 
+    [vw_WEP_s_ConsolidatedEMISCircuit].[ID] AS [ID], 
+    [vw_WEP_s_ConsolidatedEMISCircuit].[EIDistrict] AS [EIDistrict]
+    FROM [dbo].[vw_WEP_s_ConsolidatedEMISCircuit] AS [vw_WEP_s_ConsolidatedEMISCircuit]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vw_WEP_s_ConsolidatedEMISDistricts" EntityType="Self.vw_WEP_s_ConsolidatedEMISDistricts" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vw_WEP_s_ConsolidatedEMISDistricts].[Id] AS [Id], 
+    [vw_WEP_s_ConsolidatedEMISDistricts].[Name] AS [Name], 
+    [vw_WEP_s_ConsolidatedEMISDistricts].[ProvinceCD] AS [ProvinceCD], 
+    [vw_WEP_s_ConsolidatedEMISDistricts].[Manager] AS [Manager], 
+    [vw_WEP_s_ConsolidatedEMISDistricts].[Telephone] AS [Telephone], 
+    [vw_WEP_s_ConsolidatedEMISDistricts].[Active] AS [Active]
+    FROM [dbo].[vw_WEP_s_ConsolidatedEMISDistricts] AS [vw_WEP_s_ConsolidatedEMISDistricts]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vw_WEP_s_VisualizedEnrolLearners" EntityType="Self.vw_WEP_s_VisualizedEnrolLearners" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vw_WEP_s_VisualizedEnrolLearners].[AccessionNo] AS [AccessionNo], 
+    [vw_WEP_s_VisualizedEnrolLearners].[Total] AS [Total]
+    FROM [dbo].[vw_WEP_s_VisualizedEnrolLearners] AS [vw_WEP_s_VisualizedEnrolLearners]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwLIMQ_TotalNumberOfSchools" EntityType="Self.vwLIMQ_TotalNumberOfSchools" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwLIMQ_TotalNumberOfSchools].[NatEmis] AS [NatEmis], 
+    [vwLIMQ_TotalNumberOfSchools].[ROW_ID] AS [ROW_ID], 
+    [vwLIMQ_TotalNumberOfSchools].[Total ] AS [Total ]
+    FROM [dbo].[vwLIMQ_TotalNumberOfSchools] AS [vwLIMQ_TotalNumberOfSchools]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

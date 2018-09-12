@@ -1,0 +1,3 @@
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.WF\obj\Debug\LEP.WF(Ngoako).csprojResolveAssemblyReference.cache
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.WF\obj\Debug\WF.dll
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.WF\obj\Debug\WF.pdb

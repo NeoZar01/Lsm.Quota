@@ -1,0 +1,4 @@
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\Dashboard\bin\Debug\Dashboard.dll
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\Dashboard\bin\Debug\Dashboard.pdb
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\Dashboard\obj\Debug\Dashboard.dll
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\Dashboard\obj\Debug\Dashboard.pdb

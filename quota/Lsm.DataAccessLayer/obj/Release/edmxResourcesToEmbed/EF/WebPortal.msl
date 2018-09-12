@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WebPortalModelStoreContainer" CdmEntityContainer="WebPortal">
+    <EntitySetMapping Name="FrequentQuestions">
+      <EntityTypeMapping TypeName="WebPortalModel.FrequentQuestion">
+        <MappingFragment StoreEntitySet="FrequentQuestions">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="AddedById" ColumnName="AddedById" />
+          <ScalarProperty Name="AddedBy" ColumnName="AddedBy" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+          <ScalarProperty Name="AnsweredBy" ColumnName="AnsweredBy" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SuggestionBoxes">
+      <EntityTypeMapping TypeName="WebPortalModel.SuggestionBox">
+        <MappingFragment StoreEntitySet="SuggestionBox">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="User" ColumnName="User" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SearchRepositories">
+      <EntityTypeMapping TypeName="WebPortalModel.SearchRepository">
+        <MappingFragment StoreEntitySet="SearchRepository">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Key" ColumnName="Key" />
+          <ScalarProperty Name="UIK" ColumnName="UIK" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Meta" ColumnName="Meta" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Parameter" ColumnName="Parameter" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="RequiresAuthentication" ColumnName="RequiresAuthentication" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="KeyHolder" ColumnName="KeyHolder" />
+          <ScalarProperty Name="KeyHolderEmail" ColumnName="KeyHolderEmail" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SearchRepositoryCategories">
+      <EntityTypeMapping TypeName="WebPortalModel.SearchRepositoryCategory">
+        <MappingFragment StoreEntitySet="SearchRepositoryCategory">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CategoryCode" ColumnName="CategoryCode" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="ColumnConfig" ColumnName="ColumnConfig" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

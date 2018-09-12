@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SASAMSWarehouseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="SASAMSWarehouseAnt" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="LuritsDatabaseDeployments" EntityType="SASAMSWarehouseModel.LuritsDatabaseDeployment" />
+    <EntitySet Name="SchoolTerms" EntityType="SASAMSWarehouseModel.SchoolTerm" />
+    <EntitySet Name="vw_WEP_l_CurrentOpenTermPED" EntityType="SASAMSWarehouseModel.vw_WEP_l_CurrentOpenTermPED" />
+    <EntitySet Name="vw_WEP_l_LearnerParentTeacherInfo" EntityType="SASAMSWarehouseModel.vw_WEP_l_LearnerParentTeacherInfo" />
+    <EntitySet Name="C__Patches" EntityType="SASAMSWarehouseModel.C__Patches" />
+    <EntitySet Name="vwlsb_SubjEnrolPrGradePrNatEmis" EntityType="SASAMSWarehouseModel.vwlsb_SubjEnrolPrGradePrNatEmis" />
+    <EntitySet Name="SAMS_Patches" EntityType="SASAMSWarehouseModel.SAMS_Patches" />
+    <EntitySet Name="vwsm_PatchJobs" EntityType="SASAMSWarehouseModel.vwsm_PatchJobs" />
+    <EntitySet Name="SamsCommentsPortas" EntityType="SASAMSWarehouseModel.SamsCommentsPorta" />
+    <EntitySet Name="vwsm_sams_vers_comm" EntityType="SASAMSWarehouseModel.vwsm_sams_vers_comm" />
+    <EntitySet Name="vwst_lsmOutstandingWarehouseUploads" EntityType="SASAMSWarehouseModel.vwst_lsmOutstandingWarehouseUploads" />
+    <EntitySet Name="vwst_ltsmWarehouseImports" EntityType="SASAMSWarehouseModel.vwst_ltsmWarehouseImports" />
+  </EntityContainer>
+  <EntityType Name="LuritsDatabaseDeployment">
+    <Key>
+      <PropertyRef Name="DeploymentId" />
+      <PropertyRef Name="Importday" />
+      <PropertyRef Name="ImportyYr" />
+      <PropertyRef Name="ImportMon" />
+    </Key>
+    <Property Name="DeploymentId" Type="Int32" Nullable="false" />
+    <Property Name="DeploymentCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DeploymentDate" Type="DateTime" Precision="3" />
+    <Property Name="EmisCode" Type="Int32" />
+    <Property Name="ImportYear" Type="Int32" />
+    <Property Name="ImportMonth" Type="Int32" />
+    <Property Name="Importday" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ImportyYr" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ImportMon" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="SchoolTerm">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="Importday" />
+      <PropertyRef Name="ImportyYr" />
+      <PropertyRef Name="ImportMon" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="Quater" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="StartDate" Type="DateTime" Precision="3" />
+    <Property Name="EndDate" Type="DateTime" Precision="3" />
+    <Property Name="CurrentYear" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Term" Type="Int32" />
+    <Property Name="EmisCode" Type="Int32" />
+    <Property Name="ImportYear" Type="Int32" />
+    <Property Name="ImportMonth" Type="Int32" />
+    <Property Name="Importday" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ImportyYr" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ImportMon" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="vw_WEP_l_CurrentOpenTermPED">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="Quater" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="StartDate" Type="DateTime" Precision="3" />
+    <Property Name="EndDate" Type="DateTime" Precision="3" />
+    <Property Name="CurrentYear" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Term" Type="Int32" />
+    <Property Name="EmisCode" Type="Int32" />
+  </EntityType>
+  <EntityType Name="vw_WEP_l_LearnerParentTeacherInfo">
+    <Key>
+      <PropertyRef Name="SName" />
+      <PropertyRef Name="Grade" />
+      <PropertyRef Name="SchoolName" />
+      <PropertyRef Name="District" />
+      <PropertyRef Name="TheDate" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="LearnerFName" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="LearnerSName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Relship" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FName" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="SName" Type="String" Nullable="false" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="LuritsNumber" Type="Double" />
+    <Property Name="Gender" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Grade" Type="Int32" Nullable="false" />
+    <Property Name="SchoolName" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Citizenship" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Circuit" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="District" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Race" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SecondName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Title" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Initials" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Address1" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="PreviousSchool" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="PreviousSchoolProvince" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TheDate" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="IDNo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="C__Patches">
+    <Key>
+      <PropertyRef Name="Patch_Buccessful" />
+      <PropertyRef Name="Importday" />
+      <PropertyRef Name="ImportyYr" />
+      <PropertyRef Name="ImportMon" />
+    </Key>
+    <Property Name="Patch_Ver" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="Patch_Jobs" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Patch_Buccessful" Type="Boolean" Nullable="false" />
+    <Property Name="Patch_DateTimeStart" Type="DateTime" Precision="3" />
+    <Property Name="Patch_DateTimeEnd" Type="DateTime" Precision="3" />
+    <Property Name="Patch_ExeVer" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="EmisCode" Type="Int32" />
+    <Property Name="ImportYear" Type="Int32" />
+    <Property Name="ImportMonth" Type="Int32" />
+    <Property Name="Importday" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ImportyYr" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ImportMon" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="vwlsb_SubjEnrolPrGradePrNatEmis">
+    <Key>
+      <PropertyRef Name="EmisSubId" />
+      <PropertyRef Name="Grade" />
+    </Key>
+    <Property Name="EmisSubId" Type="Int32" Nullable="false" />
+    <Property Name="OfficialSubjectID" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Key" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Group" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Phase" Type="Int32" />
+    <Property Name="Afrname" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Grade" Type="Int32" Nullable="false" />
+    <Property Name="TOTAL" Type="Int32" />
+    <Property Name="Unit" Type="Int32" />
+    <Property Name="EmisCode" Type="Int32" />
+  </EntityType>
+  <EntityType Name="SAMS_Patches">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Patch_Ver" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="Patch_DateTimeStart" Type="DateTime" Precision="3" />
+    <Property Name="Patch_DateTimeEnd" Type="DateTime" Precision="3" />
+    <Property Name="ImportDateStamp" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ArchievePath" Type="Int32" />
+  </EntityType>
+  <EntityType Name="vwsm_PatchJobs">
+    <Key>
+      <PropertyRef Name="ImportDateStamp" />
+      <PropertyRef Name="Patch_Buccessful" />
+    </Key>
+    <Property Name="Patch_Ver" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="Patch_DateTimeStart" Type="DateTime" Precision="3" />
+    <Property Name="Patch_DateTimeEnd" Type="DateTime" Precision="3" />
+    <Property Name="ImportDateStamp" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Patch_Buccessful" Type="Boolean" Nullable="false" />
+    <Property Name="EmisCode" Type="Int32" />
+    <Property Name="Achieved" Type="Int32" />
+  </EntityType>
+  <EntityType Name="SamsCommentsPorta">
+    <Key>
+      <PropertyRef Name="commentId" />
+    </Key>
+    <Property Name="commentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="owner" Type="Int32" />
+    <Property Name="sams_version_Id" Type="Int32" />
+    <Property Name="comment" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="post_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="active" Type="Int32" />
+  </EntityType>
+  <EntityType Name="vwsm_sams_vers_comm">
+    <Key>
+      <PropertyRef Name="commentId" />
+      <PropertyRef Name="comment" />
+      <PropertyRef Name="post_date" />
+    </Key>
+    <Property Name="commentId" Type="Int32" Nullable="false" />
+    <Property Name="owner" Type="Int32" />
+    <Property Name="sams_version_Id" Type="Int32" />
+    <Property Name="comment" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="post_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="date_gap" Type="Int32" />
+    <Property Name="active" Type="Int32" />
+    <Property Name="Patch_Ver" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="RefName" Type="String" MaxLength="115" FixedLength="false" Unicode="true" />
+    <Property Name="Designation" Type="String" MaxLength="145" FixedLength="false" Unicode="true" />
+    <Property Name="CircuitName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="NoOfClicks" Type="Int32" />
+    <Property Name="FromUser" Type="Int32" />
+  </EntityType>
+  <EntityType Name="vwst_lsmOutstandingWarehouseUploads">
+    <Key>
+      <PropertyRef Name="NatEmis" />
+      <PropertyRef Name="EmisCode" />
+    </Key>
+    <Property Name="NatEmis" Type="Int32" Nullable="false" />
+    <Property Name="Institution_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Sector" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Type_PED" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Phase_DoE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="GIS_Long" Type="Double" />
+    <Property Name="GIS_Lat" Type="Double" />
+    <Property Name="EIDistrict" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="EICircuit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Addressee" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Township_Village" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Suburb" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Town_City" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="StreetAddress" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Box_P_Bag" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Box_Bag_Postal_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="PostalAddress" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Telephone" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="cellno" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="PrincipalsCell" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="E_Mail" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Quintile" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="DemarcationFrom" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="DemarcationTo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Municipality" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="ImportYear" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="vwst_ltsmWarehouseImports">
+    <Key>
+      <PropertyRef Name="ImportId" />
+      <PropertyRef Name="EmisCode" />
+      <PropertyRef Name="Importday" />
+      <PropertyRef Name="ImportyYr" />
+      <PropertyRef Name="ImportMon" />
+      <PropertyRef Name="Status" />
+      <PropertyRef Name="IsApproved" />
+      <PropertyRef Name="Occupation" />
+      <PropertyRef Name="Approver" />
+      <PropertyRef Name="GrFrom" />
+      <PropertyRef Name="GrTo" />
+      <PropertyRef Name="DateFrom" />
+      <PropertyRef Name="DateTo" />
+    </Key>
+    <Property Name="ImportId" Type="Int32" Nullable="false" />
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="Quater" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="StartDate" Type="DateTime" Precision="3" />
+    <Property Name="EndDate" Type="DateTime" Precision="3" />
+    <Property Name="CurrentYear" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Term" Type="Int32" />
+    <Property Name="ImportYear" Type="Int32" />
+    <Property Name="ImportMonth" Type="Int32" />
+    <Property Name="Importday" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ImportyYr" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ImportMon" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="IsApproved" Type="Boolean" Nullable="false" />
+    <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Occupation" Type="String" Nullable="false" MaxLength="71" FixedLength="false" Unicode="true" />
+    <Property Name="EIDistrict" Type="Int32" />
+    <Property Name="DstName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="LocationFlag" Type="Int16" />
+    <Property Name="EICircuit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CircuitName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="EMail" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="RefName" Type="String" MaxLength="115" FixedLength="false" Unicode="true" />
+    <Property Name="First_Name" Type="String" MaxLength="35" FixedLength="false" Unicode="true" />
+    <Property Name="Last_Name" Type="String" MaxLength="35" FixedLength="false" Unicode="true" />
+    <Property Name="SurveyType" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="SurveyTypeCD" Type="Int16" />
+    <Property Name="ImportPeriodInDays" Type="Int32" />
+    <Property Name="cpatchVersion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Datayear" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="Approver" Type="Int32" Nullable="false" />
+    <Property Name="ApproverName" Type="String" MaxLength="115" FixedLength="false" Unicode="true" />
+    <Property Name="GrFrom" Type="Byte" Nullable="false" />
+    <Property Name="GrTo" Type="Byte" Nullable="false" />
+    <Property Name="DateFrom" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DateTo" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="STATDBModelStoreContainer" CdmEntityContainer="statistics">
+    <EntitySetMapping Name="statvW_WEP_l_LeanerSubjectTeacherEnrollment">
+      <EntityTypeMapping TypeName="STATDBModel.statvW_WEP_l_LeanerSubjectTeacherEnrollment">
+        <MappingFragment StoreEntitySet="statvW_WEP_l_LeanerSubjectTeacherEnrollment">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="learnerId" ColumnName="learnerId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="statvw_WEP_s_ProvisionalSchoolLearners">
+      <EntityTypeMapping TypeName="STATDBModel.statvw_WEP_s_ProvisionalSchoolLearners">
+        <MappingFragment StoreEntitySet="statvw_WEP_s_ProvisionalSchoolLearners">
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+          <ScalarProperty Name="TOTAL" ColumnName="TOTAL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="statvw_WEP_s_SchoolLearners">
+      <EntityTypeMapping TypeName="STATDBModel.statvw_WEP_s_SchoolLearners">
+        <MappingFragment StoreEntitySet="statvw_WEP_s_SchoolLearners">
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+          <ScalarProperty Name="TOTAL" ColumnName="TOTAL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

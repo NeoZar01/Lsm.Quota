@@ -1,0 +1,122 @@
+﻿@using LimpEmisPortal.Models
+@using PagedList.Mvc
+
+@model RequisitionHomeViewModel
+
+@{
+    var rownum = 1;
+}
+
+
+<div class="row">
+
+    <div class="col-md-12" style="border-top:1px solid #ecf0f1"><br/>
+        <table class="col-md-12 table-condensed table-hover">
+            <tr>
+                <th class="text-right" colspan="8">
+                        <span class="btn-group btn-group-sm" role="group">
+                            <button class="btn btn-link btn-sm">Rows Per Page &bull; 15</button>
+                        </span>
+                </th>
+            </tr>
+            <tr style="border-bottom:3px solid #ecf0f1">
+                <th><small># &nbsp; Isbn </small></th>
+                <th><small></small></th>
+                <th><small>Title</small></th>
+                <th><small>Type</small></th>
+                <th style="text-align:center"><small>Price</small></th>
+                <th class="tr-small-font-size text-center">
+                    <small >
+                        <span class="dropdown">
+                            <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <sub class="glyphicon glyphicon-filter"></sub>
+                                &nbsp; Grade
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                @foreach (var grade in Model.RequisitionOrdersPerGrade)
+                                {
+
+                                    <li class="text-center">
+                                        @Ajax.ActionLink(linkText: grade.ToString(), actionName: "sortableTableOrder", controllerName: "Requisitions", routeValues: new { searchKeyString = ViewBag.CurrentFilter, grdFilter = grade }, ajaxOptions: new AjaxOptions
+                               {
+                                   UpdateTargetId = "nscat",
+                                   InsertionMode = InsertionMode.Replace,
+                                   HttpMethod = "GET",
+                                   LoadingElementId = "ajax_loading_get"
+                               }, htmlAttributes: new { @style = "text-align:center" })
+                                    </li>
+                                }
+                            </ul>
+                        </span>
+                    </small>
+                </th>
+                <th><small>
+                    <span class="dropdown">
+    <button class="btn btn-link btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        &nbsp; <sub class="glyphicon glyphicon-filter"></sub>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        @foreach (var subject in Model.GetFilterableSubjectsPerKeySearch)
+        {
+
+            <li>
+                @Html.ActionLink(linkText: subject,
+                                               actionName: "OpenCatalogueItem",
+                                           controllerName: "Requisitions",
+                                              routeValues: new { id = subject }, htmlAttributes: new { @style = "text-align:left" })
+            </li>
+        }
+    </ul>
+</span>
+                    &nbsp; Subjects
+                    </small></th>
+                <th><small></small></th>
+            </tr>
+            @foreach (var b in Model.CatalogueResultSet)
+            {
+                <tr style="font-size:9pt">
+                    <td>@(rownum). &nbsp; @b.ISBN</td>
+                    <td>
+                        <span class="btn-group btn-group-sm">
+                            <button class="btn btn-link btn-sm @( b.IsBookmarked ? "glyphicon glyphicon-star" : "glyphicon glyphicon-star-empty")" style="@(string.Concat("color",":", b.IsBookmarked ? "orange" : "#337ab7"))"></button>
+                        </span>
+                    </td>
+                    <td>@b.ItemName </td>
+                    <td>@b.Category</td>
+                    <td  class="tr-small-font-size text-right"><span style="color:#337ab7">@(string.Concat("R", Math.Round((b.Price), 2, MidpointRounding.AwayFromZero)))</span></td>
+                    <td  class="tr-small-font-size text-center">@b.Grade</td>
+                    <td>@b.SubjectName</td>
+                    <td>
+                        <span class="btn-group btn-group-sm">
+                            <button class="btn btn-link btn-sm">
+                                @Html.ActionLink(" ", 
+                                 "OpenCatalogueItem", 
+                                      "Requisitions", 
+                                   new {  id = b.id},
+                                      htmlAttributes: new { @type = "button", @class = "glyphicon glyphicon-book", @target = "_blank" })
+                            </button>
+                        </span>
+                    </td>
+                </tr>
+
+                rownum++;
+            }
+
+        </table>
+    </div>
+
+    @{ 
+        rownum = 1;
+    }
+    <div class="col-md-12 " style="border-top:1px solid #ecf0f1"><br/>
+        Page @(Model.CatalogueResultSet.PageCount < Model.CatalogueResultSet.PageNumber ? 0 : Model.CatalogueResultSet.PageNumber) of @Model.CatalogueResultSet.PageCount
+        @Html.PagedListPager(Model.CatalogueResultSet, page => Url.Action("search", "Requisitions", new { page, grade = ViewBag.grade, searchKeyString = ViewBag.keyword }),
+        PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(new AjaxOptions()
+        {
+            HttpMethod = "GET",
+            LoadingElementId = "search_lnr_ajax_loading",
+            InsertionMode = InsertionMode.Replace,
+            UpdateTargetId = "edu-catalogue-ajax-panel"
+        }))
+    </div>
+</div>

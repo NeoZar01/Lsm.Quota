@@ -1,0 +1,4 @@
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Files\bin\Release\LimpEmisPortal.FileManager.dll
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Files\bin\Release\LimpEmisPortal.FileManager.pdb
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Files\obj\Release\LimpEmisPortal.FileManager.dll
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Files\obj\Release\LimpEmisPortal.FileManager.pdb

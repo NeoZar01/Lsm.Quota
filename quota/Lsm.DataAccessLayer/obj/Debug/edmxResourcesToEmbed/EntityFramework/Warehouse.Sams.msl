@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SASAMSWarehouseModelStoreContainer" CdmEntityContainer="WarehouseDbContext">
+    <EntitySetMapping Name="WarehouseImportStatistics">
+      <EntityTypeMapping TypeName="SASAMSWarehouseModel.WarehouseImportStatistic">
+        <MappingFragment StoreEntitySet="WarehouseImportStatistics">
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="SurveyType" ColumnName="SurveyType" />
+          <ScalarProperty Name="Quintile" ColumnName="Quintile" />
+          <ScalarProperty Name="DistrictId" ColumnName="DistrictId" />
+          <ScalarProperty Name="CircuitId" ColumnName="CircuitId" />
+          <ScalarProperty Name="Term" ColumnName="Term" />
+          <ScalarProperty Name="PatchVersion" ColumnName="PatchVersion" />
+          <ScalarProperty Name="DataYear" ColumnName="DataYear" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ImportTime" ColumnName="ImportTime" />
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+          <ScalarProperty Name="ImportId" ColumnName="ImportId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwst_lsmOutstandingWarehouseUploads">
+      <EntityTypeMapping TypeName="SASAMSWarehouseModel.vwst_lsmOutstandingWarehouseUploads">
+        <MappingFragment StoreEntitySet="vwst_lsmOutstandingWarehouseUploads">
+          <ScalarProperty Name="ImportYear" ColumnName="ImportYear" />
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+          <ScalarProperty Name="Municipality" ColumnName="Municipality" />
+          <ScalarProperty Name="DemarcationTo" ColumnName="DemarcationTo" />
+          <ScalarProperty Name="DemarcationFrom" ColumnName="DemarcationFrom" />
+          <ScalarProperty Name="Quintile" ColumnName="Quintile" />
+          <ScalarProperty Name="E_Mail" ColumnName="E_Mail" />
+          <ScalarProperty Name="PrincipalsCell" ColumnName="PrincipalsCell" />
+          <ScalarProperty Name="cellno" ColumnName="cellno" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="PostalAddress" ColumnName="PostalAddress" />
+          <ScalarProperty Name="Box_Bag_Postal_Code" ColumnName="Box_Bag_Postal_Code" />
+          <ScalarProperty Name="Box_P_Bag" ColumnName="Box_P_Bag" />
+          <ScalarProperty Name="StreetAddress" ColumnName="StreetAddress" />
+          <ScalarProperty Name="Town_City" ColumnName="Town_City" />
+          <ScalarProperty Name="Suburb" ColumnName="Suburb" />
+          <ScalarProperty Name="Township_Village" ColumnName="Township_Village" />
+          <ScalarProperty Name="Addressee" ColumnName="Addressee" />
+          <ScalarProperty Name="EICircuit" ColumnName="EICircuit" />
+          <ScalarProperty Name="EIDistrict" ColumnName="EIDistrict" />
+          <ScalarProperty Name="Phase_DoE" ColumnName="Phase_DoE" />
+          <ScalarProperty Name="Type_PED" ColumnName="Type_PED" />
+          <ScalarProperty Name="Sector" ColumnName="Sector" />
+          <ScalarProperty Name="Institution_Name" ColumnName="Institution_Name" />
+          <ScalarProperty Name="NatEmis" ColumnName="NatEmis" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwst_ltsmWarehouseImports">
+      <EntityTypeMapping TypeName="SASAMSWarehouseModel.vwst_ltsmWarehouseImports">
+        <MappingFragment StoreEntitySet="vwst_ltsmWarehouseImports">
+          <ScalarProperty Name="DateTo" ColumnName="DateTo" />
+          <ScalarProperty Name="DateFrom" ColumnName="DateFrom" />
+          <ScalarProperty Name="GrTo" ColumnName="GrTo" />
+          <ScalarProperty Name="GrFrom" ColumnName="GrFrom" />
+          <ScalarProperty Name="ApproverName" ColumnName="ApproverName" />
+          <ScalarProperty Name="Approver" ColumnName="Approver" />
+          <ScalarProperty Name="Datayear" ColumnName="Datayear" />
+          <ScalarProperty Name="cpatchVersion" ColumnName="cpatchVersion" />
+          <ScalarProperty Name="ImportPeriodInDays" ColumnName="ImportPeriodInDays" />
+          <ScalarProperty Name="SurveyTypeCD" ColumnName="SurveyTypeCD" />
+          <ScalarProperty Name="SurveyType" ColumnName="SurveyType" />
+          <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+          <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+          <ScalarProperty Name="RefName" ColumnName="RefName" />
+          <ScalarProperty Name="EMail" ColumnName="EMail" />
+          <ScalarProperty Name="CircuitName" ColumnName="CircuitName" />
+          <ScalarProperty Name="EICircuit" ColumnName="EICircuit" />
+          <ScalarProperty Name="LocationFlag" ColumnName="LocationFlag" />
+          <ScalarProperty Name="DstName" ColumnName="DstName" />
+          <ScalarProperty Name="EIDistrict" ColumnName="EIDistrict" />
+          <ScalarProperty Name="Incumbent" ColumnName="Incumbent" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ImportMon" ColumnName="ImportMon" />
+          <ScalarProperty Name="ImportyYr" ColumnName="ImportyYr" />
+          <ScalarProperty Name="Importday" ColumnName="Importday" />
+          <ScalarProperty Name="ImportMonth" ColumnName="ImportMonth" />
+          <ScalarProperty Name="ImportYear" ColumnName="ImportYear" />
+          <ScalarProperty Name="Term" ColumnName="Term" />
+          <ScalarProperty Name="CurrentYear" ColumnName="CurrentYear" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="Quater" ColumnName="Quater" />
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+          <ScalarProperty Name="ImportId" ColumnName="ImportId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,111 @@
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\Lsm.WF.Engine.Svc.dll.config
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\Lsm.WF.Engine.Svc.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\Lsm.WF.Engine.Svc.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\Dashboard.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\DoE.Lsm.Data.Repositories.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\DoE.Lsm.WF.Component.Requisitions.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\DoE.Lsm.WF.Engine.Component.Monitor.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\DoE.Lsm.WF.Engine.Context.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\Lsm.WF.Engine.Component.Calculations.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\Lsm.WF.Engine.Component.Orders.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\Unity.Abstractions.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\Unity.Container.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\Unity.Wcf.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\WF.AddIn.PostVet.exe
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\DoE.Lsm.Logger.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\EntityFramework.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\PagedList.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\PostSharp.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\DoE.Lsm.Annotations.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\DoE.Lsm.Files.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\DoE.Lsm.Data.Repositories.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\Lsm.WF.Engine.Component.Calculations.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\DoE.Lsm.WF.Engine.Component.Monitor.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\Lsm.WF.Engine.Component.Orders.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\Dashboard.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\DoE.Lsm.WF.Component.Requisitions.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\WF.AddIn.PostVet.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\DoE.Lsm.WF.Engine.Context.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\DoE.Lsm.Logger.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\EntityFramework.xml
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\PagedList.xml
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\PostSharp.xml
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\DoE.Lsm.Annotations.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\bin\DoE.Lsm.Files.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\obj\Debug\Lsm.WF.Engine.csprojResolveAssemblyReference.cache
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\obj\Debug\Lsm.WF.Engine.Svc.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Svc\obj\Debug\Lsm.WF.Engine.Svc.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\obj\Debug\Lsm.WF.Engine.csprojResolveAssemblyReference.cache
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\Lsm.WF.Engine.Svc.dll.config
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\Lsm.WF.Engine.Svc.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\Lsm.WF.Engine.Svc.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\Dashboard.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\DoE.Lsm.Data.Repositories.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\DoE.Lsm.WF.Component.Requisitions.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\DoE.Lsm.WF.Engine.Component.Monitor.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\DoE.Lsm.WF.Engine.Context.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\Lsm.WF.Engine.Component.Calculations.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\Lsm.WF.Engine.Component.Orders.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\Unity.Abstractions.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\Unity.Container.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\Unity.Wcf.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\WF.AddIn.PostVet.exe
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\DoE.Lsm.Logger.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\EntityFramework.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\PagedList.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\PostSharp.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\DoE.Lsm.Annotations.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\DoE.Lsm.Files.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\DoE.Lsm.Data.Repositories.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\Lsm.WF.Engine.Component.Calculations.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\DoE.Lsm.WF.Engine.Component.Monitor.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\Lsm.WF.Engine.Component.Orders.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\Dashboard.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\DoE.Lsm.WF.Component.Requisitions.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\WF.AddIn.PostVet.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\DoE.Lsm.WF.Engine.Context.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\DoE.Lsm.Logger.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\EntityFramework.xml
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\PagedList.xml
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\PostSharp.xml
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\DoE.Lsm.Annotations.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\bin\DoE.Lsm.Files.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\obj\Debug\Lsm.WF.Engine.Svc.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Svc\obj\Debug\Lsm.WF.Engine.Svc.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\Lsm.WF.Engine.Svc.dll.config
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\Lsm.WF.Engine.Svc.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\Lsm.WF.Engine.Svc.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\Dashboard.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\DoE.Lsm.Data.Repositories.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\DoE.Lsm.WF.Component.Requisitions.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\DoE.Lsm.WF.Engine.Component.Monitor.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\DoE.Lsm.WF.Engine.Context.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\Lsm.WF.Engine.Component.Calculations.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\Lsm.WF.Engine.Component.Orders.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\Unity.Abstractions.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\Unity.Container.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\Unity.Wcf.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\DoE.Lsm.Logger.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\EntityFramework.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\PagedList.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\PostSharp.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\DoE.Lsm.Annotations.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\DoE.Lsm.Files.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\DoE.Lsm.Data.Repositories.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\Lsm.WF.Engine.Component.Calculations.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\DoE.Lsm.WF.Engine.Component.Monitor.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\Lsm.WF.Engine.Component.Orders.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\Dashboard.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\DoE.Lsm.WF.Component.Requisitions.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\WF.AddIn.PostVet.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\DoE.Lsm.WF.Engine.Context.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\DoE.Lsm.Logger.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\EntityFramework.xml
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\PagedList.xml
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\PostSharp.xml
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\DoE.Lsm.Annotations.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\DoE.Lsm.Files.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\obj\Debug\Lsm.WF.Engine.csprojResolveAssemblyReference.cache
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\obj\Debug\Lsm.WF.Engine.Svc.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\obj\Debug\Lsm.WF.Engine.Svc.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Svc\bin\WF.AddIn.PostVet.dll

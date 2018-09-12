@@ -1,0 +1,22 @@
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.TOD\bin\Debug\Dashboard.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.TOD\bin\Debug\Dashboard.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.TOD\obj\Debug\Dashboard.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.TOD\obj\Debug\Dashboard.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.TOD\bin\Debug\Dashboard.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.TOD\bin\Debug\Dashboard.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.TOD\obj\Debug\Dashboard.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.TOD\obj\Debug\Dashboard.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.TOD\bin\Debug\Dashboard.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.TOD\bin\Debug\Dashboard.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.TOD\obj\Debug\Lsm.Reporting.EQR.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.TOD\obj\Debug\Dashboard.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.TOD\obj\Debug\Dashboard.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.TOD\bin\Debug\Dashboard.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.TOD\bin\Debug\Dashboard.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.TOD\obj\Debug\Dashboard.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.TOD\obj\Debug\Dashboard.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.TOD\bin\Debug\Dashboard.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.TOD\bin\Debug\Dashboard.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.TOD\obj\Debug\Dashboard.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.TOD\obj\Debug\Dashboard.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.TOD\obj\Debug\Lsm.Reporting.EQR.csprojResolveAssemblyReference.cache

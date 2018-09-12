@@ -1,0 +1,12 @@
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Orders\bin\Debug\Lsm.WF.Engine.Component.Orders.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Orders\bin\Debug\Lsm.WF.Engine.Component.Orders.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Orders\obj\Debug\Lsm.WF.Engine.Component.Orders.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Orders\obj\Debug\Lsm.WF.Engine.Component.Orders.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Component.Orders\bin\Debug\Lsm.WF.Engine.Component.Orders.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Component.Orders\bin\Debug\Lsm.WF.Engine.Component.Orders.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Component.Orders\obj\Debug\Lsm.WF.Engine.Component.Orders.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Component.Orders\obj\Debug\Lsm.WF.Engine.Component.Orders.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Orders\bin\Debug\Lsm.WF.Engine.Component.Orders.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Orders\bin\Debug\Lsm.WF.Engine.Component.Orders.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Orders\obj\Debug\Lsm.WF.Engine.Component.Orders.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Orders\obj\Debug\Lsm.WF.Engine.Component.Orders.pdb

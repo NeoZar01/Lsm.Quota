@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="eWiWModelStoreContainer" CdmEntityContainer="WhoIsOnline">
+    <EntitySetMapping Name="AspNetProfiles">
+      <EntityTypeMapping TypeName="eWiWModel.AspNetProfile">
+        <MappingFragment StoreEntitySet="AspNetProfiles">
+          <ScalarProperty Name="meta" ColumnName="meta" />
+          <ScalarProperty Name="Phase_DoE" ColumnName="Phase_DoE" />
+          <ScalarProperty Name="DoE_Status" ColumnName="DoE_Status" />
+          <ScalarProperty Name="SectorId" ColumnName="SectorId" />
+          <ScalarProperty Name="Sector" ColumnName="Sector" />
+          <ScalarProperty Name="GISSource" ColumnName="GISSource" />
+          <ScalarProperty Name="GIS_ERROR" ColumnName="GIS_ERROR" />
+          <ScalarProperty Name="GIS_Lat" ColumnName="GIS_Lat" />
+          <ScalarProperty Name="GIS_Long" ColumnName="GIS_Long" />
+          <ScalarProperty Name="directorateName" ColumnName="directorateName" />
+          <ScalarProperty Name="DirCode" ColumnName="DirCode" />
+          <ScalarProperty Name="Directorate" ColumnName="Directorate" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="rankName" ColumnName="rankName" />
+          <ScalarProperty Name="rankCode" ColumnName="rankCode" />
+          <ScalarProperty Name="Proxy1" ColumnName="Proxy1" />
+          <ScalarProperty Name="CircuitName" ColumnName="CircuitName" />
+          <ScalarProperty Name="Proxy" ColumnName="Proxy" />
+          <ScalarProperty Name="cActive" ColumnName="cActive" />
+          <ScalarProperty Name="EICircuit" ColumnName="EICircuit" />
+          <ScalarProperty Name="DstName" ColumnName="DstName" />
+          <ScalarProperty Name="EIDistrict" ColumnName="EIDistrict" />
+          <ScalarProperty Name="LocationFlag" ColumnName="LocationFlag" />
+          <ScalarProperty Name="OffPosition" ColumnName="OffPosition" />
+          <ScalarProperty Name="ConfLev" ColumnName="ConfLev" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="Phone_Number" ColumnName="Phone_Number" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+          <ScalarProperty Name="RefName" ColumnName="RefName" />
+          <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="DepartID" ColumnName="DepartID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

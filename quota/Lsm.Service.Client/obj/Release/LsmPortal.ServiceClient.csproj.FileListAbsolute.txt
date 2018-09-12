@@ -1,0 +1,11 @@
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LsmPortal.ServiceClient\bin\Release\Education.Services.dll.config
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LsmPortal.ServiceClient\bin\Release\Education.Services.dll
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LsmPortal.ServiceClient\bin\Release\Education.Services.pdb
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LsmPortal.ServiceClient\bin\Release\Microsoft.Practices.Unity.dll
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LsmPortal.ServiceClient\bin\Release\PagedList.dll
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LsmPortal.ServiceClient\bin\Release\PagedList.Mvc.dll
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LsmPortal.ServiceClient\bin\Release\Microsoft.Practices.Unity.xml
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LsmPortal.ServiceClient\bin\Release\PagedList.xml
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LsmPortal.ServiceClient\bin\Release\PagedList.Mvc.xml
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LsmPortal.ServiceClient\obj\Release\Education.Services.dll
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LsmPortal.ServiceClient\obj\Release\Education.Services.pdb

@@ -1,0 +1,21 @@
+﻿@*@model LimpEmisPortal.Models.HomeViewModel
+
+
+
+@foreach (var c in Model.DepartmentCirculars)
+{
+
+    <div class="panel panel-default panel-collapse col-md-12" style=" display: inline-block">     
+        <div class="col-md-12" >
+            <h5>By @c.RefName &nbsp; | &nbsp; @c.Designation</h5>
+        </div>
+        <div class="col-md-12" style="border-top:1px solid #ecf0f1">
+            <br/>
+            <h4>   @c.NotSubject</h4>
+            <small class="col-md-12"><a href="@(c.FRH)" style="float:right"><span class="glyphicon glyphicon-paperclip"></span></a></small>
+        </div>
+        <div class="col-md-12 panel panel-footer" style="padding:2px 2px;">
+            <small style="color:#428bca">@string.Concat(c.daysPosted < 2 ? " " : c.daysPosted.ToString(), c.daysPosted > 0 ? c.daysPosted == 1 ? "a day ago" : " days ago" : "less than a day ago")</small>
+        </div>
+    </div>
+}*@

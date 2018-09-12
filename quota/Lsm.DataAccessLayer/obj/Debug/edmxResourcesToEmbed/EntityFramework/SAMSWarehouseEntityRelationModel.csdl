@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SASAMSWarehouseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="WarehouseDbContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="WarehouseImportStatistics" EntityType="SASAMSWarehouseModel.WarehouseImportStatistic" />
+    <EntitySet Name="vwst_lsmOutstandingWarehouseUploads" EntityType="SASAMSWarehouseModel.vwst_lsmOutstandingWarehouseUploads" />
+    <EntitySet Name="vwst_ltsmWarehouseImports" EntityType="SASAMSWarehouseModel.vwst_ltsmWarehouseImports" />
+  </EntityContainer>
+  <EntityType Name="WarehouseImportStatistic">
+    <Key>
+      <PropertyRef Name="ImportId" />
+    </Key>
+    <Property Name="ImportId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="ImportTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="DataYear" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="PatchVersion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Term" Type="Int32" Nullable="false" />
+    <Property Name="CircuitId" Type="Int32" Nullable="false" />
+    <Property Name="DistrictId" Type="Int32" Nullable="false" />
+    <Property Name="Quintile" Type="Int32" Nullable="false" />
+    <Property Name="SurveyType" Type="Int32" Nullable="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LastModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="vwst_lsmOutstandingWarehouseUploads">
+    <Key>
+      <PropertyRef Name="NatEmis" />
+      <PropertyRef Name="Quintile" />
+      <PropertyRef Name="EmisCode" />
+    </Key>
+    <Property Name="NatEmis" Type="Int32" Nullable="false" />
+    <Property Name="Institution_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Sector" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Type_PED" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Phase_DoE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="EIDistrict" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="EICircuit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Addressee" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Township_Village" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Suburb" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Town_City" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="StreetAddress" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Box_P_Bag" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Box_Bag_Postal_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="PostalAddress" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Telephone" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="cellno" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="PrincipalsCell" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="E_Mail" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Quintile" Type="Int32" Nullable="false" />
+    <Property Name="DemarcationFrom" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="DemarcationTo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Municipality" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="ImportYear" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="vwst_ltsmWarehouseImports">
+    <Key>
+      <PropertyRef Name="ImportId" />
+      <PropertyRef Name="EmisCode" />
+      <PropertyRef Name="Importday" />
+      <PropertyRef Name="ImportyYr" />
+      <PropertyRef Name="ImportMon" />
+      <PropertyRef Name="Status" />
+      <PropertyRef Name="IsApproved" />
+      <PropertyRef Name="Incumbent" />
+      <PropertyRef Name="Approver" />
+      <PropertyRef Name="GrFrom" />
+      <PropertyRef Name="GrTo" />
+      <PropertyRef Name="DateFrom" />
+      <PropertyRef Name="DateTo" />
+    </Key>
+    <Property Name="ImportId" Type="Int32" Nullable="false" />
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="Quater" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="StartDate" Type="DateTime" Precision="3" />
+    <Property Name="EndDate" Type="DateTime" Precision="3" />
+    <Property Name="CurrentYear" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Term" Type="Int32" />
+    <Property Name="ImportYear" Type="Int32" />
+    <Property Name="ImportMonth" Type="Int32" />
+    <Property Name="Importday" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ImportyYr" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ImportMon" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="IsApproved" Type="Boolean" Nullable="false" />
+    <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Incumbent" Type="String" Nullable="false" MaxLength="71" FixedLength="false" Unicode="true" />
+    <Property Name="EIDistrict" Type="Int32" />
+    <Property Name="DstName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="LocationFlag" Type="Int16" />
+    <Property Name="EICircuit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CircuitName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="EMail" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="RefName" Type="String" MaxLength="115" FixedLength="false" Unicode="true" />
+    <Property Name="First_Name" Type="String" MaxLength="35" FixedLength="false" Unicode="true" />
+    <Property Name="Last_Name" Type="String" MaxLength="35" FixedLength="false" Unicode="true" />
+    <Property Name="SurveyType" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="SurveyTypeCD" Type="Int16" />
+    <Property Name="ImportPeriodInDays" Type="Int32" />
+    <Property Name="cpatchVersion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Datayear" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="Approver" Type="Int32" Nullable="false" />
+    <Property Name="ApproverName" Type="String" MaxLength="115" FixedLength="false" Unicode="true" />
+    <Property Name="GrFrom" Type="Byte" Nullable="false" />
+    <Property Name="GrTo" Type="Byte" Nullable="false" />
+    <Property Name="DateFrom" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DateTo" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+</Schema>

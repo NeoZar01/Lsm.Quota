@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="eWiWModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="eWiWDbContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AspNetProfiles" EntityType="eWiWModel.AspNetProfile" />
+    <EntitySet Name="Contacts" EntityType="eWiWModel.Contact" />
+    <EntitySet Name="Images" EntityType="eWiWModel.Image" />
+    <EntitySet Name="People" EntityType="eWiWModel.Person" />
+    <EntitySet Name="Positions" EntityType="eWiWModel.Position" />
+    <EntitySet Name="PositionDescriptions" EntityType="eWiWModel.PositionDescription" />
+    <EntitySet Name="vwPersonalDetails" EntityType="eWiWModel.vwPersonalDetail" />
+    <EntitySet Name="Addresses" EntityType="eWiWModel.Address" />
+    <EntitySet Name="Settings" EntityType="eWiWModel.Setting" />
+    <EntitySet Name="vwAddressDetails" EntityType="eWiWModel.vwAddressDetail" />
+    <EntitySet Name="vwPositionDetails" EntityType="eWiWModel.vwPositionDetail" />
+    <EntitySet Name="vwMembersPerRoles" EntityType="eWiWModel.vwMembersPerRole" />
+    <EntitySet Name="Groups" EntityType="eWiWModel.Group" />
+    <EntitySet Name="vwAccountSettings" EntityType="eWiWModel.vwAccountSetting" />
+    <EntitySet Name="vwMailboxes" EntityType="eWiWModel.vwMailbox" />
+  </EntityContainer>
+  <EntityType Name="AspNetProfile">
+    <Key>
+      <PropertyRef Name="DepartID" />
+      <PropertyRef Name="ConfLev" />
+      <PropertyRef Name="rankName" />
+      <PropertyRef Name="Level" />
+      <PropertyRef Name="directorateName" />
+    </Key>
+    <Property Name="DepartID" Type="Int32" Nullable="false" />
+    <Property Name="Designation" Type="String" MaxLength="145" FixedLength="false" Unicode="true" />
+    <Property Name="First_Name" Type="String" MaxLength="35" FixedLength="false" Unicode="true" />
+    <Property Name="RefName" Type="String" MaxLength="115" FixedLength="false" Unicode="true" />
+    <Property Name="Last_Name" Type="String" MaxLength="35" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="125" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="Phone_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Telephone" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ConfLev" Type="Boolean" Nullable="false" />
+    <Property Name="OffPosition" Type="Int32" />
+    <Property Name="LocationFlag" Type="Int16" />
+    <Property Name="EIDistrict" Type="Int32" />
+    <Property Name="DstName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="EICircuit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="cActive" Type="Int32" />
+    <Property Name="Proxy" Type="Int32" />
+    <Property Name="CircuitName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Proxy1" Type="Int32" />
+    <Property Name="rankCode" Type="Int32" />
+    <Property Name="rankName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Level" Type="Int32" Nullable="false" />
+    <Property Name="Position" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="Directorate" Type="Int32" />
+    <Property Name="DirCode" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="directorateName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GIS_Long" Type="Double" />
+    <Property Name="GIS_Lat" Type="Double" />
+    <Property Name="GIS_ERROR" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="GISSource" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Sector" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SectorId" Type="Int32" />
+    <Property Name="DoE_Status" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Phase_DoE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="meta" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhaseCD" Type="Int32" />
+    <Property Name="Role" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Contact">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Telephone" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="LastModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="Image">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RowGuId" Type="Guid" Nullable="false" />
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Image1" Type="Binary" Nullable="false" MaxLength="1" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Person">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="RowGuid" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RowGuid" Type="Guid" Nullable="false" />
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="IdNo" Type="Int32" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MiddleName" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="MaidenName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreationDate" Type="DateTime" Precision="3" />
+    <Property Name="LastModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="Initials" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Position">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Person" Type="Guid" Nullable="false" />
+    <Property Name="Position1" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="PositionDescription">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="RowGuid" />
+      <PropertyRef Name="Rank" />
+      <PropertyRef Name="RankFlag" />
+      <PropertyRef Name="Level" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RowGuid" Type="Guid" Nullable="false" />
+    <Property Name="Position" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Rank" Type="Int32" Nullable="false" />
+    <Property Name="RankFlag" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Level" Type="Int32" Nullable="false" />
+    <Property Name="Directorate" Type="Int32" />
+  </EntityType>
+  <EntityType Name="vwPersonalDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="EmisCode" />
+      <PropertyRef Name="FirstName" />
+      <PropertyRef Name="MiddleName" />
+      <PropertyRef Name="LastName" />
+      <PropertyRef Name="Title" />
+      <PropertyRef Name="IsActive" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="IdNo" Type="Int32" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MiddleName" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="MaidenName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreationDate" Type="DateTime" Precision="3" />
+    <Property Name="LastModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="Initials" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Position" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Address">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HomeAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Office" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Person" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="Setting">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Person" Type="Guid" Nullable="false" />
+    <Property Name="IsPublic" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Int32" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="vwAddressDetail">
+    <Key>
+      <PropertyRef Name="EmisCode" />
+      <PropertyRef Name="RowGuid" />
+      <PropertyRef Name="BranchName" />
+      <PropertyRef Name="ParentBranch" />
+    </Key>
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="RowGuid" Type="Guid" Nullable="false" />
+    <Property Name="HomeAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="BranchName" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ParentBranch" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="StAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="vwPositionDetail">
+    <Key>
+      <PropertyRef Name="EmisCode" />
+      <PropertyRef Name="Person" />
+      <PropertyRef Name="LastModifiedDate" />
+      <PropertyRef Name="Rank" />
+      <PropertyRef Name="RankFlag" />
+      <PropertyRef Name="Level" />
+    </Key>
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="Person" Type="Guid" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Position" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Rank" Type="Int32" Nullable="false" />
+    <Property Name="RankFlag" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Level" Type="Int32" Nullable="false" />
+    <Property Name="Directorate" Type="Int32" />
+  </EntityType>
+  <EntityType Name="vwMembersPerRole">
+    <Key>
+      <PropertyRef Name="RoleId" />
+      <PropertyRef Name="Role" />
+    </Key>
+    <Property Name="RoleId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Role" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Total" Type="Int32" />
+    <Property Name="MemberTotal" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="Percentage" Type="Decimal" Precision="8" Scale="2" />
+  </EntityType>
+  <EntityType Name="Group">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RowGuid" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Administrator" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreationDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="vwAccountSetting">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="EmisCode" />
+      <PropertyRef Name="Person" />
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="IsPublic" />
+      <PropertyRef Name="LastModifiedDate" />
+      <PropertyRef Name="IsActive" />
+      <PropertyRef Name="Role" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="Person" Type="Guid" Nullable="false" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="IsPublic" Type="Int32" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsActive" Type="Int32" Nullable="false" />
+    <Property Name="Role" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="RoleId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="vwMailbox">
+    <Key>
+      <PropertyRef Name="RowGuid" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="GroupId" />
+      <PropertyRef Name="DirectorateManager" />
+      <PropertyRef Name="GroupName" />
+      <PropertyRef Name="GroupAdministrator" />
+      <PropertyRef Name="IsGroupActive" />
+      <PropertyRef Name="MailboxAdministrator" />
+      <PropertyRef Name="MailboxOwner" />
+      <PropertyRef Name="IsActive" />
+      <PropertyRef Name="ActiveUsers" />
+      <PropertyRef Name="NonActiveUsers" />
+    </Key>
+    <Property Name="RowGuid" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DirectorateName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GroupId" Type="Int32" Nullable="false" />
+    <Property Name="DirectorateManager" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GroupName" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GroupAdministrator" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsGroupActive" Type="Boolean" Nullable="false" />
+    <Property Name="MailboxAdministrator" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MailboxOwner" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreationDate" Type="DateTime" Precision="3" />
+    <Property Name="ActiveUsers" Type="Int32" Nullable="false" />
+    <Property Name="NonActiveUsers" Type="Int32" Nullable="false" />
+  </EntityType>
+</Schema>

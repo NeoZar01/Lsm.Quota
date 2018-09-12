@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LTSMModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="LTSMOrderContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="school_isbn" EntityType="LTSMModel.school_isbn" />
+    <EntitySet Name="LTSM_submissionApprovalFlagger" EntityType="LTSMModel.LTSM_submissionApprovalFlagger" />
+    <EntitySet Name="Requisitions" EntityType="LTSMModel.Requisition" />
+    <AssociationSet Name="FK_Requisitions_Requisitions" Association="LTSMModel.FK_Requisitions_Requisitions">
+      <End Role="Requisition" EntitySet="Requisitions" />
+      <End Role="Requisition1" EntitySet="Requisitions" />
+    </AssociationSet>
+    <EntitySet Name="lst_BookMarkedItems" EntityType="LTSMModel.lst_BookMarkedItems" />
+    <EntitySet Name="lmdfReq_Items" EntityType="LTSMModel.lmdfReq_Items" />
+    <EntitySet Name="vwLMP_LEP_lsmOrdSchoolsList" EntityType="LTSMModel.vwLMP_LEP_lsmOrdSchoolsList" />
+    <EntitySet Name="vwLMP_s_GrantedOpenDatesForSchools" EntityType="LTSMModel.vwLMP_s_GrantedOpenDatesForSchools" />
+    <EntitySet Name="vwLMP_LED_LSM_NationalCatalogue" EntityType="LTSMModel.vwLMP_LED_LSM_NationalCatalogue" />
+    <EntitySet Name="vwLMP_s_SchoolCatalogue" EntityType="LTSMModel.vwLMP_s_SchoolCatalogue" />
+    <EntitySet Name="vwLEPD_lsm_LearnersItemPerSubjectEnr" EntityType="LTSMModel.vwLEPD_lsm_LearnersItemPerSubjectEnr" />
+  </EntityContainer>
+  <EntityType Name="school_isbn">
+    <Key>
+      <PropertyRef Name="itemID" />
+      <PropertyRef Name="isbn" />
+    </Key>
+    <Property Name="itemID" Type="Int32" Nullable="false" />
+    <Property Name="isbn" Type="String" Nullable="false" MaxLength="42" FixedLength="false" Unicode="true" />
+    <Property Name="approveFlag" Type="Int32" />
+    <Property Name="active" Type="Int32" Nullable="false" />
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="ImportDate" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="LTSM_submissionApprovalFlagger">
+    <Key>
+      <PropertyRef Name="SubmissionIndex" />
+    </Key>
+    <Property Name="SubmissionIndex" Type="Int32" Nullable="false" />
+    <Property Name="SurveyType" Type="Int32" Nullable="false" />
+    <Property Name="ApprovalFlag" Type="Int32" />
+    <Property Name="ApprovalDate" Type="DateTime" Precision="3" />
+    <Property Name="EmisCode" Type="Int32" />
+    <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Requisition">
+    <Key>
+      <PropertyRef Name="ReqID" />
+    </Key>
+    <Property Name="ReqID" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="EMIS" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="BookYear" Type="String" Nullable="false" MaxLength="9" FixedLength="false" Unicode="true" />
+    <Property Name="SchoolOfficial1" Type="Int32" />
+    <Property Name="Official1ApproveDate" Type="DateTime" Precision="3" />
+    <Property Name="SchoolOfficial2" Type="Int32" />
+    <Property Name="Official2ApproveDate" Type="DateTime" Precision="3" />
+    <Property Name="DepartmentOfficial" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ChecklistDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ReqDate" Type="DateTime" Precision="3" />
+    <Property Name="OrderDate" Type="DateTime" Precision="3" />
+    <Property Name="DeliveryDate" Type="DateTime" Precision="3" />
+    <Property Name="GrFrom" Type="Byte" />
+    <Property Name="GrTo" Type="Byte" />
+    <Property Name="StationaryRequisition" Type="Boolean" Nullable="false" />
+    <Property Name="ReqStatus" Type="Byte" Nullable="false" />
+    <Property Name="Verified" Type="String" MaxLength="3" FixedLength="true" Unicode="true" />
+    <Property Name="WareID" Type="Byte" />
+    <Property Name="Recall" Type="Boolean" Nullable="false" />
+    <Property Name="SMGD_Open" Type="Boolean" />
+    <Property Name="NoThanks" Type="Boolean" />
+    <Property Name="TotalPrice" Type="Decimal" Precision="19" Scale="4" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="ApprovalFlag" Type="Int32" />
+    <NavigationProperty Name="Requisitions1" Relationship="LTSMModel.FK_Requisitions_Requisitions" FromRole="Requisition" ToRole="Requisition1" />
+    <NavigationProperty Name="Requisition1" Relationship="LTSMModel.FK_Requisitions_Requisitions" FromRole="Requisition1" ToRole="Requisition" />
+  </EntityType>
+  <Association Name="FK_Requisitions_Requisitions">
+    <End Type="LTSMModel.Requisition" Role="Requisition" Multiplicity="1" />
+    <End Type="LTSMModel.Requisition" Role="Requisition1" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Requisition">
+        <PropertyRef Name="ReqID" />
+      </Principal>
+      <Dependent Role="Requisition1">
+        <PropertyRef Name="ReqID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="lst_BookMarkedItems">
+    <Key>
+      <PropertyRef Name="ISBN" />
+    </Key>
+    <Property Name="ISBN" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="BOOKMARKFLAG" Type="Int16" Nullable="false" />
+    <Property Name="EMIS_Code" Type="Int32" Nullable="false" />
+    <Property Name="RequisitionId_" Type="String" Nullable="false" MaxLength="35" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="lmdfReq_Items">
+    <Key>
+      <PropertyRef Name="ReqID" />
+      <PropertyRef Name="ISBN" />
+    </Key>
+    <Property Name="ReqID" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="ISBN" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="CatID" Type="Int32" Nullable="false" />
+    <Property Name="GradeID" Type="Int16" Nullable="false" />
+    <Property Name="Qty" Type="Int32" Nullable="false" />
+    <Property Name="QtyFrac" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="BatchID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="vwLMP_LEP_lsmOrdSchoolsList">
+    <Key>
+      <PropertyRef Name="NatEmis" />
+    </Key>
+    <Property Name="NatEmis" Type="Int32" Nullable="false" />
+    <Property Name="PhysicalAddress" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Circuit" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Town" Type="String" MaxLength="23" FixedLength="false" Unicode="false" />
+    <Property Name="TPrincipal" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="NearestTown" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CensusArea" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="District" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="EmisOfficer" Type="Int32" />
+    <Property Name="SchoolIdenityName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="GIS_Lat" Type="Double" />
+    <Property Name="GIS_Long" Type="Double" />
+    <Property Name="GIS_ERROR" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="GISSource" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Principal" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="EMail" Type="String" MaxLength="210" FixedLength="false" Unicode="true" />
+    <Property Name="Telephone1" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="Fax" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="InternetAccess" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PostAddress0" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PostAddress0No" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PostAddress1" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PostAddress2" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PostAddress3" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PostCode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Telephone" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="vwLMP_s_GrantedOpenDatesForSchools">
+    <Key>
+      <PropertyRef Name="BookYear" />
+      <PropertyRef Name="GrFrom" />
+      <PropertyRef Name="GrTo" />
+      <PropertyRef Name="DateFrom" />
+      <PropertyRef Name="DateTo" />
+      <PropertyRef Name="CaptureType" />
+    </Key>
+    <Property Name="BookYear" Type="String" Nullable="false" MaxLength="9" FixedLength="false" Unicode="true" />
+    <Property Name="GrFrom" Type="Byte" Nullable="false" />
+    <Property Name="GradeFrom" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="GrTo" Type="Byte" Nullable="false" />
+    <Property Name="GradeToShort" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DateFrom" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DateTo" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="CaptureType" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="EmisCode" Type="Int32" />
+    <Property Name="OpenCaptureDateMark" Type="Int32" />
+  </EntityType>
+  <EntityType Name="vwLMP_LED_LSM_NationalCatalogue">
+    <Key>
+      <PropertyRef Name="ItemID" />
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="ItemID" Type="Int32" Nullable="false" />
+    <Property Name="Category" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Author" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TypeNo" Type="Int32" />
+    <Property Name="Item" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ISBN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Publisher" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Manufacturer" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ItemYear" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Afrname" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="SubjectGrade" Type="Int32" />
+    <Property Name="Language" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Area" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Group" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="OffSubjID" Type="Int32" />
+    <Property Name="OfficialSubjectID" Type="Int32" />
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="EmisCode" Type="Int32" />
+    <Property Name="active" Type="Int32" />
+  </EntityType>
+  <EntityType Name="vwLMP_s_SchoolCatalogue">
+    <Key>
+      <PropertyRef Name="ItemID" />
+    </Key>
+    <Property Name="ItemID" Type="Int32" Nullable="false" />
+    <Property Name="Category" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Author" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TypeNo" Type="Int32" />
+    <Property Name="Item" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ISBN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Publisher" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Manufacturer" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ItemYear" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Afrname" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="SubjectGrade" Type="Int32" />
+    <Property Name="Language" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Area" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Group" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="OffSubjID" Type="Int32" />
+    <Property Name="OfficialSubjectID" Type="Int32" />
+    <Property Name="SchoolCode" Type="Int32" />
+    <Property Name="active" Type="Int32" />
+  </EntityType>
+  <EntityType Name="vwLEPD_lsm_LearnersItemPerSubjectEnr">
+    <Key>
+      <PropertyRef Name="grade" />
+      <PropertyRef Name="PriceTag" />
+    </Key>
+    <Property Name="ISBN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Item" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Author" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Publisher" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Category" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Area" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="EmisCode" Type="Int32" />
+    <Property Name="grade" Type="Int32" Nullable="false" />
+    <Property Name="Unit" Type="Int32" />
+    <Property Name="PriceTag" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+    <Property Name="TOTAL" Type="Int32" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="TotalPrice" Type="Int32" />
+    <Property Name="ReqID" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="BOOKMARKFLAG" Type="Int16" />
+  </EntityType>
+</Schema>

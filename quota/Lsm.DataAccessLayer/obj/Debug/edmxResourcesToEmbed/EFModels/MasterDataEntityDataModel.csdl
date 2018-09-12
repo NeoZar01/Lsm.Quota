@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MasterDATAModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="vwl_LimpopoLearnersEnrlPrGrade">
+    <Key>
+      <PropertyRef Name="Grade" />
+    </Key>
+    <Property Name="Grade" Type="Int32" Nullable="false" />
+    <Property Name="EmisCode" Type="Int32" />
+    <Property Name="TOTAL" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="MasterDataDbContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="vwl_LimpopoLearnersEnrlPrGrade" EntityType="Self.vwl_LimpopoLearnersEnrlPrGrade" />
+    <EntitySet Name="SchoolsPerCircuits" EntityType="MasterDATAModel.SchoolsPerCircuit" />
+    <EntitySet Name="EnrolmentPerClassPerSubjects" EntityType="MasterDATAModel.EnrolmentPerClassPerSubject" />
+    <EntitySet Name="SchoolsQuintiles" EntityType="MasterDATAModel.SchoolsQuintile" />
+    <EntitySet Name="vw_SubjEnrolPrGrade" EntityType="MasterDATAModel.vw_SubjEnrolPrGrade" />
+    <EntitySet Name="Schools" EntityType="MasterDATAModel.School" />
+    <EntitySet Name="SchoolAddresses" EntityType="MasterDATAModel.SchoolAddress" />
+  </EntityContainer>
+  <EntityType Name="SchoolsPerCircuit">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CircuitCD" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DistrictCD" Type="Int32" Nullable="false" />
+    <Property Name="DistrictName" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Phase" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SectorId" Type="Int32" Nullable="false" />
+    <Property Name="Sector" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Total" Type="Int32" Nullable="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Term" Type="Int32" Nullable="false" />
+    <Property Name="DataYear" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="EnrolmentPerClassPerSubject">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="EmisCode" />
+      <PropertyRef Name="SubjId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="SubjId" Type="Int32" Nullable="false" />
+    <Property Name="OffSubId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Afrname" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Key" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="Int32" Nullable="false" />
+    <Property Name="Group" Type="Int32" Nullable="false" />
+    <Property Name="Phase" Type="Int32" Nullable="false" />
+    <Property Name="Grade" Type="Int32" Nullable="false" />
+    <Property Name="SubjTotal" Type="Int32" Nullable="false" />
+    <Property Name="ClassTotal" Type="Int32" Nullable="false" />
+    <Property Name="Teachers" Type="Int32" Nullable="false" />
+    <Property Name="LER" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Term" Type="Int32" Nullable="false" />
+    <Property Name="DataYear" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SchoolsQuintile">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="Sector" Type="Int32" Nullable="false" />
+    <Property Name="Phase" Type="Int32" Nullable="false" />
+    <Property Name="ExamNo" Type="Int32" Nullable="false" />
+    <Property Name="ProvinceCD" Type="Int32" Nullable="false" />
+    <Property Name="OwnershipCD" Type="Int32" Nullable="false" />
+    <Property Name="FundingTypeCD" Type="Int32" Nullable="false" />
+    <Property Name="LevelCD" Type="Int32" Nullable="false" />
+    <Property Name="PlatoonEmis" Type="Int32" Nullable="false" />
+    <Property Name="Quintile" Type="Int32" Nullable="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LastModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="District" Type="Int32" Nullable="false" />
+    <Property Name="Circuit" Type="Int32" Nullable="false" />
+    <Property Name="DataYear" Type="String" Nullable="false" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="Term" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vw_SubjEnrolPrGrade">
+    <Key>
+      <PropertyRef Name="EmisSubId" />
+      <PropertyRef Name="Grade" />
+      <PropertyRef Name="NoOfTeachers" />
+    </Key>
+    <Property Name="EmisSubId" Type="Int32" Nullable="false" />
+    <Property Name="OfficialSubjectID" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Key" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Group" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Phase" Type="Int32" />
+    <Property Name="Afrname" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Grade" Type="Int32" Nullable="false" />
+    <Property Name="TOTAL" Type="Int32" />
+    <Property Name="Unit" Type="Int32" />
+    <Property Name="EmisCode" Type="Int32" />
+    <Property Name="NoOfTeachers" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="School">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="RowGuid" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RowGuid" Type="Guid" Nullable="false" />
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Phase" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Sector" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Type" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Initials" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="PrincipalLastName" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PrincipalCellphone" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TownshipVillage" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Suburb" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Town" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Telephone" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Quintile" Type="Int32" />
+    <Property Name="EICircuit" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="EIDistrict" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Manucipality" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Term" Type="Int32" Nullable="false" />
+    <Property Name="DataYear" Type="String" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="LastModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CircuitCD" Type="Int32" />
+    <Property Name="PhaseDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SchoolAddress">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="RowGuid" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RowGuid" Type="Guid" Nullable="false" />
+    <Property Name="EmisCode" Type="Int32" Nullable="false" />
+    <Property Name="StreetAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TownshipVillage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="City" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Suburb" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PostalBox" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PostalOffice" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PostalCode" Type="Int32" />
+    <Property Name="IsRural" Type="Boolean" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+</Schema>

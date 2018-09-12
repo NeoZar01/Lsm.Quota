@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EMISPortalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'EMISPortal.dbo.LimSchoolTerms' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="LimSchoolTerms">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="Quater" Type="nvarchar" MaxLength="50" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="EndDate" Type="datetime" />
+    <Property Name="BookYear" Type="nvarchar" MaxLength="50" />
+    <Property Name="Term" Type="int" />
+    <Property Name="ImportStampDate" Type="datetime" />
+    <Property Name="Active" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'EMISPortal.dbo.vw_EmisPortalDownloads' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vw_EmisPortalDownloads">
+    <Key>
+      <PropertyRef Name="SoftwareId" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="ProcessorType" />
+      <PropertyRef Name="SoftwareVersion" />
+    </Key>
+    <Property Name="SoftwareId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="ProcessorType" Type="nvarchar" MaxLength="8" Nullable="false" />
+    <Property Name="SoftwareVersion" Type="int" Nullable="false" />
+    <Property Name="DownloadTimeStamp" Type="datetime" />
+    <Property Name="NoOfDownloads" Type="int" />
+    <Property Name="Active" Type="int" />
+    <Property Name="FileExtension" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityContainer Name="EMISPortalModelStoreContainer">
+    <EntitySet Name="LimSchoolTerms" EntityType="Self.LimSchoolTerms" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [LimSchoolTerms].[id] AS [id], 
+    [LimSchoolTerms].[Quater] AS [Quater], 
+    [LimSchoolTerms].[StartDate] AS [StartDate], 
+    [LimSchoolTerms].[EndDate] AS [EndDate], 
+    [LimSchoolTerms].[BookYear] AS [BookYear], 
+    [LimSchoolTerms].[Term] AS [Term], 
+    [LimSchoolTerms].[ImportStampDate] AS [ImportStampDate], 
+    [LimSchoolTerms].[Active] AS [Active]
+    FROM [dbo].[LimSchoolTerms] AS [LimSchoolTerms]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vw_EmisPortalDownloads" EntityType="Self.vw_EmisPortalDownloads" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vw_EmisPortalDownloads].[SoftwareId] AS [SoftwareId], 
+    [vw_EmisPortalDownloads].[Name] AS [Name], 
+    [vw_EmisPortalDownloads].[ProcessorType] AS [ProcessorType], 
+    [vw_EmisPortalDownloads].[SoftwareVersion] AS [SoftwareVersion], 
+    [vw_EmisPortalDownloads].[DownloadTimeStamp] AS [DownloadTimeStamp], 
+    [vw_EmisPortalDownloads].[NoOfDownloads] AS [NoOfDownloads], 
+    [vw_EmisPortalDownloads].[Active] AS [Active], 
+    [vw_EmisPortalDownloads].[FileExtension] AS [FileExtension]
+    FROM [dbo].[vw_EmisPortalDownloads] AS [vw_EmisPortalDownloads]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

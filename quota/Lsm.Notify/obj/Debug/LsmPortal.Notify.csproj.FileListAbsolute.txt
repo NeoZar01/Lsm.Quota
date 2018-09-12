@@ -1,0 +1,7 @@
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\LimpEmisPortal.Notify.exe.config
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\LimpEmisPortal.Notify.exe
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\LimpEmisPortal.Notify.pdb
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\Newtonsoft.Json.dll
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\obj\Debug\LimpEmisPortal.Notify.exe
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\obj\Debug\LimpEmisPortal.Notify.pdb
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\obj\Debug\LsmPortal.Notify.csprojResolveAssemblyReference.cache

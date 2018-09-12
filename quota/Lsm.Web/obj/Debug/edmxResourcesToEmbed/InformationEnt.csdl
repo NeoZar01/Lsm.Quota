@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="InformationEntDContext" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="lst_CatagueUnitPrice">
+    <Key>
+      <PropertyRef Name="CatalogueId" />
+      <PropertyRef Name="Isbn" />
+      <PropertyRef Name="UnitPrice" />
+      <PropertyRef Name="ImportQuarter" />
+    </Key>
+    <Property Name="CatalogueId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Isbn" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UnitPrice" Type="Decimal" Precision="10" Scale="4" Nullable="false" />
+    <Property Name="ImportQuarter" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Currency" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="CurrencyCode" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="LinkedEntDataContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="lst_CatagueUnitPrice" EntityType="Self.lst_CatagueUnitPrice" />
+  </EntityContainer>
+</Schema>

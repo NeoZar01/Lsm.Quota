@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="eWiWModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="WhoIsOnline" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AspNetProfiles" EntityType="eWiWModel.AspNetProfile" />
+  </EntityContainer>
+  <EntityType Name="AspNetProfile">
+    <Key>
+      <PropertyRef Name="DepartID" />
+      <PropertyRef Name="ConfLev" />
+      <PropertyRef Name="rankName" />
+      <PropertyRef Name="Level" />
+      <PropertyRef Name="directorateName" />
+    </Key>
+    <Property Name="DepartID" Type="Int32" Nullable="false" />
+    <Property Name="Designation" Type="String" MaxLength="145" FixedLength="false" Unicode="true" />
+    <Property Name="First_Name" Type="String" MaxLength="35" FixedLength="false" Unicode="true" />
+    <Property Name="RefName" Type="String" MaxLength="115" FixedLength="false" Unicode="true" />
+    <Property Name="Last_Name" Type="String" MaxLength="35" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="125" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="Phone_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Telephone" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ConfLev" Type="Boolean" Nullable="false" />
+    <Property Name="OffPosition" Type="Int32" />
+    <Property Name="LocationFlag" Type="Int16" />
+    <Property Name="EIDistrict" Type="Int32" />
+    <Property Name="DstName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="EICircuit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="cActive" Type="Int32" />
+    <Property Name="Proxy" Type="Int32" />
+    <Property Name="CircuitName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Proxy1" Type="Int32" />
+    <Property Name="rankCode" Type="Int32" />
+    <Property Name="rankName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Level" Type="Int32" Nullable="false" />
+    <Property Name="Position" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="Directorate" Type="Int32" />
+    <Property Name="DirCode" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="directorateName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GIS_Long" Type="Double" />
+    <Property Name="GIS_Lat" Type="Double" />
+    <Property Name="GIS_ERROR" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="GISSource" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Sector" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SectorId" Type="Int32" />
+    <Property Name="DoE_Status" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Phase_DoE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="meta" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

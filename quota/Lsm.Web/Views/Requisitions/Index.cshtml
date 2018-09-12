@@ -1,0 +1,172 @@
+﻿@model LimpEmisPortal.Models.RequisitionHomeViewModel
+
+@{
+    ViewBag.Title = "Requisitions Home";
+    var rwnum = 1;
+}
+
+
+
+<h1>@Model.BookYear</h1>
+
+@*<div class="row">
+    <br />
+    <div class="col-md-12" style="clear:both">
+        <div class="col-md-7">
+            <table class="col-md-12 table-condensed table-hover table-responsive" style="border:1px solid #ecf0f1">
+                <tr style="border-bottom:1px solid #ecf0f1;border-top:1px solid #f2f2f2">
+                    <td class="text-center"><small>School</small></td>
+                    <td class="text-center"><small><span class="glyphicon glyphicon-calendar"></span> &nbsp; Open From</small></td>
+                    <td class="text-center"><small><span class="glyphicon glyphicon-calendar"></span> &nbsp; Closed At</small></td>
+                    <td class="text-center"><small># of Requisitions</small></td>
+                    <td></td>
+                </tr>
+                @foreach (var i in Model.AccountingDateForBookYear)
+                {
+                    <tr>
+                        <td class="text-center"><small><span class="glyphicon glyphicon-education"></span> &nbsp; @i.EmisCode</small></td>
+                        <td class="text-center"><small>@i.DateFrom</small></td>
+                        <td class="text-center"><small>@i.DateTo</small></td>
+                        <td class="text-center">
+                            <ins class="text-primary"> 
+                                <span tabindex="0" data-trigger="focus" data-placement="bottom"  class="btn btn-link btn-sm"      data-toggle="popover"      title="@(Model.BookYear)" data-content="This Indicates The Total Number Of Requisitions Made During The Course Of The @(Model.BookYear) Calendar.">
+                                        @(Model.TotalNumberOfRequisitions)
+                                </span>
+                            </ins></td>
+                        <td style="text-align:right">
+                            <button class="btn btn-default btn-sm" type="button">
+                                <span class="glyphicon glyphicon-shopping-cart"></span> &nbsp;
+                                @Html.ActionLink("Create", "Rqinst_rq", "Requisitions", new { calendarId = i.OpenCaptureDateMark }, htmlAttributes: new {})
+                            </button>
+                        </td>
+                    </tr>
+
+                    rwnum += 1;
+                }
+            </table>
+            @{
+                rwnum = 1;
+            }
+            <br />
+        </div>
+        <div class="col-md-1">
+
+        </div>
+
+        <div class="col-md-4 panel" style="border-left:3px solid #f2f2f2">
+            <div class="btn btn-group btn-group-sm" role="group">
+                <button type="button" class="btn btn-primary btn-sm">
+                    <span class="glyphicon glyphicon-th-list"></span> &nbsp; Options
+                </button>
+                <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal" style="color:#428bca">
+                    Catalogue
+                </button>
+                <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#school-order-catalogue" style="color:#428bca">
+                    Orders
+                </button>
+            </div>
+            <h4>@Model.BookYear <br/><sub><small>calendar</small></sub></h4>
+            <div class="col-md-12" style="border-top:1px solid #ecf0f1">
+                <table class="table-condensed table-responsive col-md-offset-7">
+                    <tr style="border-bottom:1px solid #ecf0f1;text-align:center"><td><small style="color:#ecf0f1">Amount</small></td></tr>
+                    <tr><td><h3 style="color:#337ab7"><small>R</small> @Model.RequistionTotalPricePerBookYear</h3></td></tr>
+                </table>
+            </div>
+            </div>
+        </div>
+
+    </div>
+<br />
+<div class="row">
+        <div  class="col-md-12">
+            <div class="col-md-12 panel panel-heading orange-bottom-border">
+                <h4 class="panel-title">Requistion Workflows</h4><br/>                
+                <div class="btn-group btn-group-sm col-md-11" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default btn-sm" style="text-align:left"><span class="glyphicon glyphicon-send"></span>   &nbsp;  @Ajax.ActionLink("Sent", "GetWFTicketsByStatus", "Requisitions", new { requisitionStatus = 1 }, new AjaxOptions { UpdateTargetId = "_rq_cat_fltr", InsertionMode = InsertionMode.Replace, HttpMethod = "POST", LoadingElementId = "orderTypes_ajax_Loader" })</button>
+                    <button type="button" class="btn btn-default btn-sm" style="text-align:left"><span class="glyphicon glyphicon-remove-circle"></span>   &nbsp;  @Ajax.ActionLink("Rejects", "GetWFTicketsByStatus", "Requisitions", new { requisitionStatus = 8 }, new AjaxOptions { UpdateTargetId = "_rq_cat_fltr", InsertionMode = InsertionMode.Replace, HttpMethod = "POST", LoadingElementId = "orderTypes_ajax_Loader" })</button>
+                    <button type="button" class="btn btn-default btn-sm" style="text-align:left"><span class="glyphicon glyphicon-file"></span>   &nbsp;  @Ajax.ActionLink("Drafts", "GetWFTicketsByStatus", "Requisitions", new { requisitionStatus = 0 }, new AjaxOptions { UpdateTargetId = "_rq_cat_fltr", InsertionMode = InsertionMode.Replace, HttpMethod = "POST", LoadingElementId = "orderTypes_ajax_Loader" })</button>
+                </div>
+                <div class="col-md-1">
+                </div>
+            </div>
+            <div>
+                <div id="_rq_cat_fltr" style="border-left:1px solid #ecf0f1">
+                    <center> <img src="~/Content/Images/ajax-loader.gif" id="orderTypes_ajax_Loader" style="display:none; width:18px; height:18px " /></center>
+                </div>
+            </div>
+        </div>
+</div>
+
+<!-- Modal dialog for Order-Per-Grade -->
+<div class="modal fade" id="school-order-catalogue" tabindex="-1" role="dialog" aria-labelledby="school-order-catalogue">
+    <div class="modal-dialog rd-modal-dialog-700pt" role="document" style="width:70%">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">                    
+                    <span class="btn-group btn-group-sm" role="group">
+                        <button type="button" class="btn btn-primary btn-sm"> <span class="glyphicon glyphicon-calendar"></span> &nbsp; Book Year</button>
+                        <button type="button" class="btn btn-default btn-sm">@(Model.BookYear) &nbsp; Orders Per Grade</button>
+                    </span> 
+                </h4>
+            </div>
+            <div class="modal-body" id="requisition-order-per-grade">
+                @{ Html.RenderAction("OrderPerGradeDashboardChildAction", "Requisitions");}
+        </div>
+    </div>
+</div>
+</div>
+<!-- End Order-Per-Dialog Modal Dialog -->
+<!-- Begin Catalogue Modal Dialog -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog rd-modal-dialog-700pt" role="document" style="width:90%">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">
+                    <span class="btn-group btn-group-sm" role="group">
+                        <button type="button" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-calendar"></span> &nbsp; Book Year &nbsp;  &bull; &nbsp; @(Model.BookYear)</button>
+                        <button type="button" class="btn btn-default btn-sm">Official Education Catalogue</button>
+                        <button class="btn btn-default btn-sm">Page Size</button>
+                        <button class="btn btn-primary btn-sm">15</button>
+                       </span>
+                </h4>
+            </div>
+            <div class="modal-body">
+                     <br />
+                  @using (Ajax.BeginForm("search", "Requisitions", new { sord = ViewBag.SubjectOrderFlag },
+                    new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "edu-catalogue-ajax-panel", InsertionMode = InsertionMode.Replace, LoadingElementId = "loading-animation-icon" }, new { @class = " col-md-offset-1" }))
+                        {
+                            <div class="col-md-offset-6">
+                                <div class="input-group">
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-book"></span></button>
+                                        <input type="text" class="form-control" name="searchKeyString" id="searchKeyString" placeholder="Search ..." style="width:370px">
+                                        <button class="btn btn-primary" type="submit">
+                                            <span class="glyphicon glyphicon-search"></span>&nbsp;
+                                            <img src="~/Content/Images/ajax-loader.gif" id="loading-animation-icon" style="display:none" width="18" height="18" />                                             
+                                            &nbsp;  Search
+                                        </button>                                         
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                <br />
+                    <div  id="edu-catalogue-ajax-panel">
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Catalogue Modal Dialogue-->
+
+@section Scripts {    
+        <link href="~/Content/circle.css" rel="stylesheet" />
+        <script>
+        $(function () {
+                $('[data-toggle="popover"]').popover()
+        })
+        </script>
+}*@
+

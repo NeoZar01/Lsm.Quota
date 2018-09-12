@@ -1,0 +1,1 @@
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\obj\Debug\Lsm.Mvc.Web.csprojResolveAssemblyReference.cache

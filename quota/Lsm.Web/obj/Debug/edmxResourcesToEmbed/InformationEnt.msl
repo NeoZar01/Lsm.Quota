@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="InformationEntDContextStoreContainer" CdmEntityContainer="LinkedEntDataContext">
+    <EntitySetMapping Name="lst_CatagueUnitPrice">
+      <EntityTypeMapping TypeName="InformationEntDContext.lst_CatagueUnitPrice">
+        <MappingFragment StoreEntitySet="lst_CatagueUnitPrice">
+          <ScalarProperty Name="CatalogueId" ColumnName="CatalogueId" />
+          <ScalarProperty Name="Isbn" ColumnName="Isbn" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="ImportQuarter" ColumnName="ImportQuarter" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

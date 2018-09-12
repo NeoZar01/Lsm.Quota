@@ -1,0 +1,17 @@
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\LimpEmisPortal.Notify.exe.config
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\LimpEmisPortal.Notify.exe
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\LimpEmisPortal.Notify.pdb
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\obj\Debug\LimpEmisPortal.Notify.exe
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\obj\Debug\LimpEmisPortal.Notify.pdb
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\obj\Debug\LEP.Notify.csprojResolveAssemblyReference.cache
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\LimpEmisPortal.Notify.exe.config
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\LimpEmisPortal.Notify.exe
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\LimpEmisPortal.Notify.pdb
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\bin\Debug\Newtonsoft.Json.dll
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\obj\Debug\LEP.Notify.csprojResolveAssemblyReference.cache
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\obj\Debug\LimpEmisPortal.Notify.exe
+C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Notify\obj\Debug\LimpEmisPortal.Notify.pdb

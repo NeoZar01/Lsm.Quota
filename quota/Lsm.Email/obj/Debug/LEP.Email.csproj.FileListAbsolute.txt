@@ -1,0 +1,5 @@
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Email\bin\Debug\LimpEmisPortal.Email.exe.config
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Email\bin\Debug\LimpEmisPortal.Email.exe
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Email\bin\Debug\LimpEmisPortal.Email.pdb
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Email\obj\Debug\LimpEmisPortal.Email.exe
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.Email\obj\Debug\LimpEmisPortal.Email.pdb

@@ -1,0 +1,25 @@
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduEmisPortal.Logger\bin\Debug\LimpEmisPortal.Logger.dll.config
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduEmisPortal.Logger\bin\Debug\LimpEmisPortal.Logger.dll
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduEmisPortal.Logger\bin\Debug\LimpEmisPortal.Logger.pdb
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduEmisPortal.Logger\bin\Debug\LimpEmisPortal.FileManager.dll
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduEmisPortal.Logger\bin\Debug\LimpEmisPortal.FileManager.pdb
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduEmisPortal.Logger\obj\Debug\LimpEmisPortal.Logger.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduEmisPortal.Logger\obj\Debug\LimpEmisPortal.Logger.dll
+C:\Users\Administrator\Desktop\Portal.dev\LimpEmisPortal\LimpEduEmisPortal.Logger\obj\Debug\LimpEmisPortal.Logger.pdb
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEduEmisPortal.Logger\bin\Debug\LimpEmisPortal.Logger.dll.config
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEduEmisPortal.Logger\bin\Debug\LimpEmisPortal.Logger.dll
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEduEmisPortal.Logger\bin\Debug\LimpEmisPortal.Logger.pdb
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEduEmisPortal.Logger\bin\Debug\LimpEmisPortal.FileManager.dll
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEduEmisPortal.Logger\bin\Debug\LimpEmisPortal.FileManager.pdb
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEduEmisPortal.Logger\obj\Debug\LimpEmisPortal.Logger.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEduEmisPortal.Logger\obj\Debug\LimpEmisPortal.Logger.dll
+C:\Users\Administrator\Desktop\Portal.dev\Source Codes\Live.Portal\LimpEmisPortal\LimpEduEmisPortal.Logger\obj\Debug\LimpEmisPortal.Logger.pdb
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduEmisPortal.Logger\bin\Debug\LimpEmisPortal.Logger.dll.config
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduEmisPortal.Logger\bin\Debug\LimpEmisPortal.Logger.dll
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduEmisPortal.Logger\bin\Debug\LimpEmisPortal.Logger.pdb
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduEmisPortal.Logger\bin\Debug\LimpEmisPortal.FileManager.dll
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduEmisPortal.Logger\bin\Debug\LimpEmisPortal.FileManager.pdb
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduEmisPortal.Logger\obj\Debug\LimpEmisPortal.Logger.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduEmisPortal.Logger\obj\Debug\LimpEmisPortal.Logger.dll
+C:\Users\Administrator\Desktop\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduEmisPortal.Logger\obj\Debug\LimpEmisPortal.Logger.pdb
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEduEmisPortal.Logger\obj\Debug\LimpEmisPortal.Logger.csprojResolveAssemblyReference.cache

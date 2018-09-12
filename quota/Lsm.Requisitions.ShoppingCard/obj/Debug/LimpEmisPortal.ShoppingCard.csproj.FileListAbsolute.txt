@@ -1,0 +1,5 @@
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.ShoppingCard\bin\Debug\LimpEmisPortal.ShoppingCard.dll
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.ShoppingCard\bin\Debug\LimpEmisPortal.ShoppingCard.pdb
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.ShoppingCard\obj\Debug\LimpEmisPortal.ShoppingCard.dll
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.ShoppingCard\obj\Debug\LimpEmisPortal.ShoppingCard.pdb
+C:\Portal.dev\src\Live.Portal\LimpEmisPortal\LimpEmisPortal.ShoppingCard\obj\Debug\LimpEmisPortal.ShoppingCard.csprojResolveAssemblyReference.cache

@@ -1,0 +1,24 @@
+C:\Homework\Quota\QuotaPortal\Lsm.WF.Engine.Component.Calculations\bin\Debug\Lsm.WF.Engine.Component.Calculations.dll
+C:\Homework\Quota\QuotaPortal\Lsm.WF.Engine.Component.Calculations\bin\Debug\Lsm.WF.Engine.Component.Calculations.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.WF.Engine.Component.Calculations\obj\Debug\Lsm.WF.Engine.Component.Calculations.dll
+C:\Homework\Quota\QuotaPortal\Lsm.WF.Engine.Component.Calculations\obj\Debug\Lsm.WF.Engine.Component.Calculations.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Calculations\bin\Debug\Lsm.WF.Engine.Component.Calculations.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Calculations\bin\Debug\Lsm.WF.Engine.Component.Calculations.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Calculations\obj\Debug\Lsm.WF.Engine.Component.Calculations.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Calculations\obj\Debug\Lsm.WF.Engine.Component.Calculations.pdb
+F:\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Calculations\bin\Debug\Lsm.WF.Engine.Component.Calculations.dll
+F:\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Calculations\bin\Debug\Lsm.WF.Engine.Component.Calculations.pdb
+F:\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Calculations\obj\Debug\Lsm.WF.Engine.Component.Calculations.dll
+F:\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Calculations\obj\Debug\Lsm.WF.Engine.Component.Calculations.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Calculations\bin\Debug\Lsm.WF.Engine.Component.Calculations.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Calculations\bin\Debug\Lsm.WF.Engine.Component.Calculations.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Calculations\obj\Debug\Lsm.WF.Engine.Component.Calculations.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.WF.Engine.Component.Calculations\obj\Debug\Lsm.WF.Engine.Component.Calculations.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Component.Calculations\bin\Debug\Lsm.WF.Engine.Component.Calculations.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Component.Calculations\bin\Debug\Lsm.WF.Engine.Component.Calculations.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Component.Calculations\obj\Debug\Lsm.WF.Engine.Component.Calculations.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.WF.Engine.Component.Calculations\obj\Debug\Lsm.WF.Engine.Component.Calculations.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Calculations\bin\Debug\Lsm.WF.Engine.Component.Calculations.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Calculations\bin\Debug\Lsm.WF.Engine.Component.Calculations.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Calculations\obj\Debug\Lsm.WF.Engine.Component.Calculations.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Calculations\obj\Debug\Lsm.WF.Engine.Component.Calculations.pdb

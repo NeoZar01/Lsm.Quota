@@ -1,0 +1,410 @@
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\DoE.Web.Mvc.dll.config
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\DoE.Web.Mvc.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\DoE.Web.Mvc.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Antlr3.Runtime.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\DoE.Data.Repository.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Education.Services.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\EntityFramework.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\EntityFramework.SqlServer.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.Identity.Core.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Cookies.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Facebook.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Google.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.OAuth.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Twitter.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.ServiceLocation.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.Unity.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Newtonsoft.Json.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Owin.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\PagedList.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\PagedList.Mvc.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Helpers.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Mvc.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Optimization.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Razor.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\System.Web.WebPages.Deployment.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\System.Web.WebPages.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\System.Web.WebPages.Razor.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\WebGrease.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\WF.Utils.Items.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\DoE.Lsm.Logger.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\DoE.Lsm.Files.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\DoE.Data.Repository.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Education.Services.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Antlr3.Runtime.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\EntityFramework.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\EntityFramework.SqlServer.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.ServiceLocation.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.Unity.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Newtonsoft.Json.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\PagedList.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\PagedList.Mvc.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Helpers.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Mvc.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Razor.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\System.Web.WebPages.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\System.Web.WebPages.Deployment.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\System.Web.WebPages.Razor.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Optimization.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.Identity.Core.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Facebook.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Cookies.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.OAuth.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Google.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Twitter.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\WF.Utils.Items.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\DoE.Lsm.Logger.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\bin\DoE.Lsm.Files.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\obj\Debug\Lsm.Web.MvC.csprojResolveAssemblyReference.cache
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\obj\Debug\DoE.Web.Mvc.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Web\obj\Debug\DoE.Web.Mvc.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\DoE.Web.Mvc.dll.config
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\DoE.Web.Mvc.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\DoE.Web.Mvc.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Antlr3.Runtime.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\DoE.Data.Repository.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Education.Services.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\EntityFramework.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\EntityFramework.SqlServer.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.Identity.Core.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Cookies.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Facebook.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Google.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.OAuth.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Twitter.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.ServiceLocation.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.Unity.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Newtonsoft.Json.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Owin.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\PagedList.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\PagedList.Mvc.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Helpers.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Mvc.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Optimization.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Razor.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\System.Web.WebPages.Deployment.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\System.Web.WebPages.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\System.Web.WebPages.Razor.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\WebGrease.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\WF.Utils.Items.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\DoE.Lsm.Logger.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\DoE.Lsm.Files.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\DoE.Data.Repository.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Education.Services.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Antlr3.Runtime.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\EntityFramework.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\EntityFramework.SqlServer.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.ServiceLocation.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.Unity.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Newtonsoft.Json.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\PagedList.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\PagedList.Mvc.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Helpers.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Mvc.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Razor.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\System.Web.WebPages.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\System.Web.WebPages.Deployment.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\System.Web.WebPages.Razor.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Optimization.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.Identity.Core.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Facebook.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Cookies.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.OAuth.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Google.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Twitter.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\WF.Utils.Items.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\DoE.Lsm.Logger.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\DoE.Lsm.Files.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\obj\Debug\Lsm.Web.MvC.csprojResolveAssemblyReference.cache
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\obj\Debug\DoE.Web.Mvc.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\obj\Debug\DoE.Web.Mvc.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\DoE.Web.Mvc.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\DoE.Web.Mvc.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\DoE.Web.Mvc.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Antlr3.Runtime.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\DoE.Data.Repository.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Education.Services.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\EntityFramework.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.Unity.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Owin.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\PagedList.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\PagedList.Mvc.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Optimization.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Razor.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\WebGrease.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\WF.Utils.Items.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\DoE.Lsm.Logger.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\DoE.Lsm.Files.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\DoE.Data.Repository.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Education.Services.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Antlr3.Runtime.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\EntityFramework.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.ServiceLocation.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.Unity.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\PagedList.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\PagedList.Mvc.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Razor.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Optimization.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\WF.Utils.Items.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\DoE.Lsm.Logger.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\bin\DoE.Lsm.Files.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\obj\Debug\Lsm.Web.MvC.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\obj\Debug\DoE.Web.Mvc.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Web\obj\Debug\DoE.Web.Mvc.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\DoE.Web.Mvc.dll.config
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\DoE.Web.Mvc.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\DoE.Web.Mvc.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Antlr3.Runtime.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\DoE.Data.Repository.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Education.Services.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\EntityFramework.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\EntityFramework.SqlServer.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.Identity.Core.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Cookies.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Facebook.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Google.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.OAuth.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Twitter.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.ServiceLocation.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.Unity.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Newtonsoft.Json.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Owin.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\PagedList.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\PagedList.Mvc.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Helpers.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Mvc.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Optimization.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Razor.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\System.Web.WebPages.Deployment.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\System.Web.WebPages.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\System.Web.WebPages.Razor.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\WebGrease.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\WF.Utils.Items.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\DoE.Lsm.Logger.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\DoE.Lsm.Files.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\DoE.Data.Repository.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Education.Services.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Antlr3.Runtime.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\EntityFramework.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\EntityFramework.SqlServer.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.ServiceLocation.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.Unity.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Newtonsoft.Json.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\PagedList.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\PagedList.Mvc.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Helpers.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Mvc.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Razor.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\System.Web.WebPages.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\System.Web.WebPages.Deployment.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\System.Web.WebPages.Razor.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Optimization.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.Identity.Core.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Facebook.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Cookies.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.OAuth.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Google.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Twitter.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\WF.Utils.Items.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\DoE.Lsm.Logger.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\bin\DoE.Lsm.Files.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\obj\Debug\Lsm.Web.MvC.csprojResolveAssemblyReference.cache
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\obj\Debug\DoE.Web.Mvc.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Web\obj\Debug\DoE.Web.Mvc.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\DoE.Web.Mvc.dll.config
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\DoE.Web.Mvc.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\DoE.Web.Mvc.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Antlr3.Runtime.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\DoE.Data.Repository.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Education.Services.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\EntityFramework.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\EntityFramework.SqlServer.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Google.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.Unity.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Newtonsoft.Json.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Owin.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\PagedList.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\PagedList.Mvc.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Helpers.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Mvc.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Optimization.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Razor.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\System.Web.WebPages.Deployment.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\System.Web.WebPages.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\System.Web.WebPages.Razor.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\WebGrease.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\WF.Utils.Items.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\DoE.Lsm.Logger.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\DoE.Lsm.Files.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\DoE.Data.Repository.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Education.Services.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Antlr3.Runtime.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\EntityFramework.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\EntityFramework.SqlServer.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.ServiceLocation.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.Unity.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Newtonsoft.Json.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\PagedList.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\PagedList.Mvc.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Helpers.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Mvc.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Razor.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\System.Web.WebPages.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\System.Web.WebPages.Deployment.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\System.Web.WebPages.Razor.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\System.Web.Optimization.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Google.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\WF.Utils.Items.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\DoE.Lsm.Logger.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\bin\DoE.Lsm.Files.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\obj\Debug\Lsm.Web.MvC.csprojResolveAssemblyReference.cache
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\obj\Debug\DoE.Web.Mvc.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Web\obj\Debug\DoE.Web.Mvc.pdb

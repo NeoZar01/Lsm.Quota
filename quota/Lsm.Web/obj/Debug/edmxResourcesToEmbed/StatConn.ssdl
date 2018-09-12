@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="STATDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'STATDB.dbo.statvW_WEP_l_LeanerSubjectTeacherEnrollment' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="statvW_WEP_l_LeanerSubjectTeacherEnrollment">
+    <Key>
+      <PropertyRef Name="SubjID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="SubjID" Type="int" Nullable="false" />
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="TOTAL" Type="int" />
+    <Property Name="SubjName" Type="nvarchar" MaxLength="200" />
+    <Property Name="EmisCode" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'STATDB.dbo.statvw_WEP_lsm_LTSMSubmissionStatistics' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="statvw_WEP_lsm_LTSMSubmissionStatistics">
+    <Key>
+      <PropertyRef Name="Importday" />
+      <PropertyRef Name="ImportyYr" />
+      <PropertyRef Name="ImportMon" />
+      <PropertyRef Name="Status" />
+    </Key>
+    <Property Name="EmisCode" Type="int" />
+    <Property Name="Quater" Type="nvarchar" MaxLength="50" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="EndDate" Type="datetime" />
+    <Property Name="CurrentYear" Type="nvarchar" MaxLength="50" />
+    <Property Name="Term" Type="int" />
+    <Property Name="ImportYear" Type="int" />
+    <Property Name="ImportMonth" Type="int" />
+    <Property Name="Importday" Type="datetime" Nullable="false" />
+    <Property Name="ImportyYr" Type="datetime" Nullable="false" />
+    <Property Name="ImportMon" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="SubmissionFlag" Type="int" />
+    <Property Name="Comment" Type="ntext" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'STATDB.dbo.statvw_WEP_s_ProvisionalSchoolLearners' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="statvw_WEP_s_ProvisionalSchoolLearners">
+    <Key>
+      <PropertyRef Name="Grade" />
+    </Key>
+    <Property Name="Grade" Type="int" Nullable="false" />
+    <Property Name="EmisCode" Type="int" />
+    <Property Name="TOTAL" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'STATDB.dbo.statvw_WEP_s_SchoolLearners' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="statvw_WEP_s_SchoolLearners">
+    <Key>
+      <PropertyRef Name="Grade" />
+    </Key>
+    <Property Name="Grade" Type="int" Nullable="false" />
+    <Property Name="EmisCode" Type="int" />
+    <Property Name="TOTAL" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'STATDB.dbo.statvwLMEPD_l_SchoolLearnersSubjectEnrollment' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="statvwLMEPD_l_SchoolLearnersSubjectEnrollment">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Grade" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="200" />
+    <Property Name="EmisCode" Type="int" />
+    <Property Name="Grade" Type="int" Nullable="false" />
+    <Property Name="Unit" Type="int" />
+    <Property Name="TOTAL" Type="int" />
+  </EntityType>
+  <EntityContainer Name="STATDBModelStoreContainer">
+    <EntitySet Name="statvW_WEP_l_LeanerSubjectTeacherEnrollment" EntityType="Self.statvW_WEP_l_LeanerSubjectTeacherEnrollment" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [statvW_WEP_l_LeanerSubjectTeacherEnrollment].[SubjID] AS [SubjID], 
+    [statvW_WEP_l_LeanerSubjectTeacherEnrollment].[ID] AS [ID], 
+    [statvW_WEP_l_LeanerSubjectTeacherEnrollment].[TOTAL] AS [TOTAL], 
+    [statvW_WEP_l_LeanerSubjectTeacherEnrollment].[SubjName] AS [SubjName], 
+    [statvW_WEP_l_LeanerSubjectTeacherEnrollment].[EmisCode] AS [EmisCode]
+    FROM [dbo].[statvW_WEP_l_LeanerSubjectTeacherEnrollment] AS [statvW_WEP_l_LeanerSubjectTeacherEnrollment]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="statvw_WEP_lsm_LTSMSubmissionStatistics" EntityType="Self.statvw_WEP_lsm_LTSMSubmissionStatistics" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [statvw_WEP_lsm_LTSMSubmissionStatistics].[EmisCode] AS [EmisCode], 
+    [statvw_WEP_lsm_LTSMSubmissionStatistics].[Quater] AS [Quater], 
+    [statvw_WEP_lsm_LTSMSubmissionStatistics].[StartDate] AS [StartDate], 
+    [statvw_WEP_lsm_LTSMSubmissionStatistics].[EndDate] AS [EndDate], 
+    [statvw_WEP_lsm_LTSMSubmissionStatistics].[CurrentYear] AS [CurrentYear], 
+    [statvw_WEP_lsm_LTSMSubmissionStatistics].[Term] AS [Term], 
+    [statvw_WEP_lsm_LTSMSubmissionStatistics].[ImportYear] AS [ImportYear], 
+    [statvw_WEP_lsm_LTSMSubmissionStatistics].[ImportMonth] AS [ImportMonth], 
+    [statvw_WEP_lsm_LTSMSubmissionStatistics].[Importday] AS [Importday], 
+    [statvw_WEP_lsm_LTSMSubmissionStatistics].[ImportyYr] AS [ImportyYr], 
+    [statvw_WEP_lsm_LTSMSubmissionStatistics].[ImportMon] AS [ImportMon], 
+    [statvw_WEP_lsm_LTSMSubmissionStatistics].[Status] AS [Status], 
+    [statvw_WEP_lsm_LTSMSubmissionStatistics].[SubmissionFlag] AS [SubmissionFlag], 
+    [statvw_WEP_lsm_LTSMSubmissionStatistics].[Comment] AS [Comment]
+    FROM [dbo].[statvw_WEP_lsm_LTSMSubmissionStatistics] AS [statvw_WEP_lsm_LTSMSubmissionStatistics]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="statvw_WEP_s_ProvisionalSchoolLearners" EntityType="Self.statvw_WEP_s_ProvisionalSchoolLearners" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [statvw_WEP_s_ProvisionalSchoolLearners].[Grade] AS [Grade], 
+    [statvw_WEP_s_ProvisionalSchoolLearners].[EmisCode] AS [EmisCode], 
+    [statvw_WEP_s_ProvisionalSchoolLearners].[TOTAL] AS [TOTAL]
+    FROM [dbo].[statvw_WEP_s_ProvisionalSchoolLearners] AS [statvw_WEP_s_ProvisionalSchoolLearners]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="statvw_WEP_s_SchoolLearners" EntityType="Self.statvw_WEP_s_SchoolLearners" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [statvw_WEP_s_SchoolLearners].[Grade] AS [Grade], 
+    [statvw_WEP_s_SchoolLearners].[EmisCode] AS [EmisCode], 
+    [statvw_WEP_s_SchoolLearners].[TOTAL] AS [TOTAL]
+    FROM [dbo].[statvw_WEP_s_SchoolLearners] AS [statvw_WEP_s_SchoolLearners]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="statvwLMEPD_l_SchoolLearnersSubjectEnrollment" EntityType="Self.statvwLMEPD_l_SchoolLearnersSubjectEnrollment" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [statvwLMEPD_l_SchoolLearnersSubjectEnrollment].[ID] AS [ID], 
+    [statvwLMEPD_l_SchoolLearnersSubjectEnrollment].[Name] AS [Name], 
+    [statvwLMEPD_l_SchoolLearnersSubjectEnrollment].[EmisCode] AS [EmisCode], 
+    [statvwLMEPD_l_SchoolLearnersSubjectEnrollment].[Grade] AS [Grade], 
+    [statvwLMEPD_l_SchoolLearnersSubjectEnrollment].[Unit] AS [Unit], 
+    [statvwLMEPD_l_SchoolLearnersSubjectEnrollment].[TOTAL] AS [TOTAL]
+    FROM [dbo].[statvwLMEPD_l_SchoolLearnersSubjectEnrollment] AS [statvwLMEPD_l_SchoolLearnersSubjectEnrollment]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

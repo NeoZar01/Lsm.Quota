@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ANNUALS_WHModelStoreContainer" CdmEntityContainer="ANNUALS_WHEntities">
+    <EntitySetMapping Name="vwWEP_s_ConsolidatedTeacherInformation">
+      <EntityTypeMapping TypeName="ANNUALS_WHModel.vwWEP_s_ConsolidatedTeacherInformation">
+        <MappingFragment StoreEntitySet="vwWEP_s_ConsolidatedTeacherInformation">
+          <ScalarProperty Name="Postlevel" ColumnName="Postlevel" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="SurveyType" ColumnName="SurveyType" />
+          <ScalarProperty Name="MedicaAidNumber" ColumnName="MedicaAidNumber" />
+          <ScalarProperty Name="MedicaAidName" ColumnName="MedicaAidName" />
+          <ScalarProperty Name="IQMSProcesses" ColumnName="IQMSProcesses" />
+          <ScalarProperty Name="PhysicalCode" ColumnName="PhysicalCode" />
+          <ScalarProperty Name="PhysicalTown" ColumnName="PhysicalTown" />
+          <ScalarProperty Name="PhysicalSurburb" ColumnName="PhysicalSurburb" />
+          <ScalarProperty Name="ComplexNumber" ColumnName="ComplexNumber" />
+          <ScalarProperty Name="ComplexName" ColumnName="ComplexName" />
+          <ScalarProperty Name="StreetAddress" ColumnName="StreetAddress" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="CityorTown" ColumnName="CityorTown" />
+          <ScalarProperty Name="SurburborTown" ColumnName="SurburborTown" />
+          <ScalarProperty Name="PostalAddress" ColumnName="PostalAddress" />
+          <ScalarProperty Name="NextKinTelNumber" ColumnName="NextKinTelNumber" />
+          <ScalarProperty Name="NextKinName" ColumnName="NextKinName" />
+          <ScalarProperty Name="NextKinSurname" ColumnName="NextKinSurname" />
+          <ScalarProperty Name="MedicalAidNumber" ColumnName="MedicalAidNumber" />
+          <ScalarProperty Name="MedicalAidName" ColumnName="MedicalAidName" />
+          <ScalarProperty Name="IncomeTaxNumber" ColumnName="IncomeTaxNumber" />
+          <ScalarProperty Name="DateofBirth" ColumnName="DateofBirth" />
+          <ScalarProperty Name="MaritalStatus" ColumnName="MaritalStatus" />
+          <ScalarProperty Name="ExpiryDate" ColumnName="ExpiryDate" />
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="ActiveStatus" ColumnName="ActiveStatus" />
+          <ScalarProperty Name="DataYear" ColumnName="DataYear" />
+          <ScalarProperty Name="ComputerUsage" ColumnName="ComputerUsage" />
+          <ScalarProperty Name="RemunerationCD" ColumnName="RemunerationCD" />
+          <ScalarProperty Name="TeachingLevel" ColumnName="TeachingLevel" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="YearsExperience" ColumnName="YearsExperience" />
+          <ScalarProperty Name="ApointmentNature" ColumnName="ApointmentNature" />
+          <ScalarProperty Name="ActingCategoryCD" ColumnName="ActingCategoryCD" />
+          <ScalarProperty Name="ActualCategoryCD" ColumnName="ActualCategoryCD" />
+          <ScalarProperty Name="DisabilityOther" ColumnName="DisabilityOther" />
+          <ScalarProperty Name="Disability" ColumnName="Disability" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
+          <ScalarProperty Name="CellPhone" ColumnName="CellPhone" />
+          <ScalarProperty Name="HomeTelephone" ColumnName="HomeTelephone" />
+          <ScalarProperty Name="Race" ColumnName="Race" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="CountryofBirth" ColumnName="CountryofBirth" />
+          <ScalarProperty Name="Passportno" ColumnName="Passportno" />
+          <ScalarProperty Name="Citizenship" ColumnName="Citizenship" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Initials" ColumnName="Initials" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="SACE" ColumnName="SACE" />
+          <ScalarProperty Name="Schoolname" ColumnName="Schoolname" />
+          <ScalarProperty Name="PersalNo" ColumnName="PersalNo" />
+          <ScalarProperty Name="ProvinceCD" ColumnName="ProvinceCD" />
+          <ScalarProperty Name="NatEmis" ColumnName="NatEmis" />
+          <ScalarProperty Name="IDNumber" ColumnName="IDNumber" />
+          <ScalarProperty Name="Teachingyrs" ColumnName="Teachingyrs" />
+          <ScalarProperty Name="Confidencelevel" ColumnName="Confidencelevel" />
+          <ScalarProperty Name="SubjectTypeCD" ColumnName="SubjectTypeCD" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Curriculum" ColumnName="Curriculum" />
+          <ScalarProperty Name="CaptureCD" ColumnName="CaptureCD" />
+          <ScalarProperty Name="subjectID" ColumnName="subjectID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
