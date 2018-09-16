@@ -24,7 +24,7 @@ namespace DoE.Lsm.WF.Component.Requisitions.Tasks
         ///<summary> 
         ///     Assigns classes per role asynchronously
         ///</summary>
-        public async static Task<JobInstance> RunTaskInstance(PayloadContext request, IRepositoryStore repositoryContext, global::DoE.Lsm.Data.Repositories.EF.Requisition requisitionEntity)
+        public async static Task<JobInstance> RunTaskInstance(PayloadContext request, IRepositoryStoreRegistry repositoryContext, global::DoE.Lsm.Data.Repositories.EF.Requisition requisitionEntity)
         {
 
             if (_instance != null) return _instance;
@@ -47,7 +47,7 @@ namespace DoE.Lsm.WF.Component.Requisitions.Tasks
         }
 
 
-        public async Task<CircuitManagerTasks> DiscardInstanceAsync(global::DoE.Lsm.Data.Repositories.EF.Requisition requisition, PayloadContext request, IRepositoryStore RepositoryContext)
+        public async Task<CircuitManagerTasks> DiscardInstanceAsync(global::DoE.Lsm.Data.Repositories.EF.Requisition requisition, PayloadContext request, IRepositoryStoreRegistry RepositoryContext)
         {
             using (var transaction = EntityStore.Database.BeginTransaction())  
             {

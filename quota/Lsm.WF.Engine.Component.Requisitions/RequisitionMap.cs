@@ -13,9 +13,9 @@ namespace DoE.Lsm.WF.Engine.Component.Requisition
     [FlowProcess(Name = "Quota.Requisitions")]
     public sealed class RequisitionMap : RouteFactory
     {
-        private readonly  IRepositoryStore _repositoryStore;
+        private readonly  IRepositoryStoreRegistry _repositoryStore;
 
-        public RequisitionMap(IRepositoryStore repositoryStore)
+        public RequisitionMap(IRepositoryStoreRegistry repositoryStore)
         { _repositoryStore = repositoryStore; }
 
 
@@ -34,7 +34,7 @@ namespace DoE.Lsm.WF.Engine.Component.Requisition
                 switch (payload.Role)
                 {
                    case Role.School:
-                        processOutcome = await SchoolTasks.RunTaskInstance(payload, _repositoryStore, entity);
+                        processOutcome = await SchoolJobs.RunTaskInstance(payload, _repositoryStore, entity);
                         break;
 
                     case Role.CircuitManager:

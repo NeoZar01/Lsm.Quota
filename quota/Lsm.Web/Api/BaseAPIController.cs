@@ -13,14 +13,14 @@ namespace DoE.Lsm.Web.Api
     public class BaseAPIController : ApiController
     {
         public readonly ILogger _logger;
-        public readonly IRepositoryStore _dataStore;
+        public readonly IRepositoryStoreRegistry _dataStore;
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="logger"></param>
         /// <param name="repositoryStore"></param>
-        public BaseAPIController(ILogger logger, IRepositoryStore repositoryStore)
+        public BaseAPIController(ILogger logger, IRepositoryStoreRegistry repositoryStore)
         {
                         this._logger = logger;
                         this._dataStore = repositoryStore;

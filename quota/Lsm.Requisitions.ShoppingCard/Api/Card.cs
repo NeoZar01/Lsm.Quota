@@ -19,11 +19,11 @@ namespace DoE.Lsm.ShoppingCard.Api
         private decimal price = 0.00M;
         private readonly string bookYear;
 
-        private readonly IRepositoryStore _databaseContextRepository;
+        private readonly IRepositoryStoreRegistry _databaseContextRepository;
         private readonly DbContext     _dbContext;     
         private readonly NormVettingInstance qtVettingInstance = new NormVettingInstance();
 
-        public Card(IRepositoryStore databaseContextRepository, DbContext dbContext)
+        public Card(IRepositoryStoreRegistry databaseContextRepository, DbContext dbContext)
         {
             this._databaseContextRepository = databaseContextRepository;
             this.bookYear                   = databaseContextRepository.Scales.BookYear;

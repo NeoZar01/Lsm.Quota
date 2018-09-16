@@ -16,6 +16,8 @@
     <EntitySet Name="WFProcesses" EntityType="Portal.LsmModel.WFProcess" />
     <EntitySet Name="WFProcessInstances" EntityType="Portal.LsmModel.WFProcessInstance" />
     <EntitySet Name="Requisitions" EntityType="Portal.LsmModel.Requisition" />
+    <EntitySet Name="C_Lock" EntityType="Portal.LsmModel.C_Lock" />
+    <FunctionImport Name="sp_BuildDisclaimer" ReturnType="Collection(Portal.LsmModel.sp_BuildDisclaimer_Result)" />
   </EntityContainer>
   <EntityType Name="WFProcessStepInstance">
     <Key>
@@ -426,4 +428,26 @@
     <Property Name="TotalPrice" Type="Decimal" Precision="19" Scale="4" annotation:StoreGeneratedPattern="Computed" />
     <Property Name="Package" Type="String" MaxLength="36" FixedLength="false" Unicode="true" />
   </EntityType>
+  <EntityType Name="C_Lock">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="EntityId" />
+      <PropertyRef Name="EntityType" />
+      <PropertyRef Name="LockedBy" />
+      <PropertyRef Name="LockedFrom" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="EntityId" Type="String" Nullable="false" MaxLength="36" FixedLength="false" Unicode="true" />
+    <Property Name="EntityType" Type="String" Nullable="false" MaxLength="36" FixedLength="false" Unicode="true" />
+    <Property Name="LockedBy" Type="String" Nullable="false" MaxLength="36" FixedLength="false" Unicode="true" />
+    <Property Name="LockedFrom" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ReleasedAt" Type="DateTime" Precision="3" />
+    <Property Name="ReleasedBy" Type="String" MaxLength="36" FixedLength="false" Unicode="true" />
+    <Property Name="IsLocked" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <ComplexType Name="sp_BuildDisclaimer_Result">
+    <Property Type="Guid" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Title" Nullable="false" />
+    <Property Type="String" Name="Paragraph" Nullable="false" />
+  </ComplexType>
 </Schema>

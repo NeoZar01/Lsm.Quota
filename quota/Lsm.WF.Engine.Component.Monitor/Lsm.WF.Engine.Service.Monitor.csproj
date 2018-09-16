@@ -54,7 +54,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Check.cs" />
+    <Compile Include="Api\Check.cs" />
+    <Compile Include="Api\Lock.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -65,6 +66,10 @@
     <ProjectReference Include="..\Lsm.Annotations\Lsm.Annotations.csproj">
       <Project>{ff0e45f2-1dc7-483d-89f8-09006c6b35ea}</Project>
       <Name>Lsm.Annotations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lsm.DataAccessLayer\Lsm.Service.DataRepository.csproj">
+      <Project>{7e8c0842-0fe6-47de-8f70-a9533a7c5c09}</Project>
+      <Name>Lsm.Service.DataRepository</Name>
     </ProjectReference>
     <ProjectReference Include="..\Lsm.WF.Engine.Tools.Util\Lsm.WF.Engine.Context.csproj">
       <Project>{da221c3e-0a0f-424c-ae98-48a5ad7380fd}</Project>

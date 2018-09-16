@@ -11,7 +11,7 @@ namespace DoE.Lsm.WF.Component.Requisition.Tasks
     public partial class DiscardContext : DiscardFactory
     {
 
-        public DiscardContext(Guid instanceId, IRepositoryStore store) : base(instanceId, store) {}
+        public DiscardContext(Guid instanceId, IRepositoryStoreRegistry store) : base(instanceId, store) {}
 
 
 

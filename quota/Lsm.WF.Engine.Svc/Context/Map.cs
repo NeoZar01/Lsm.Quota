@@ -29,7 +29,7 @@ namespace DoE.Lsm.WF.Engine.Context
     {                
         private Dictionary<Key, RouteFactory> _routeContext = new Dictionary<Key, RouteFactory>(); //Stores your routes
 
-        public Map(IRepositoryStore store)
+        public Map(IRepositoryStoreRegistry store)
         {
             _routeContext.Add(Key.Requisition, new RequisitionMap(store));  
         }

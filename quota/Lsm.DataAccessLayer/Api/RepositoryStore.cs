@@ -12,30 +12,43 @@ namespace DoE.Lsm.Data.Repositories
     using Workflow.Engine;
     using Subcity;
     using Profile;
+    using Lock;
 
-    public class RepositoryStore : IRepositoryStore
+    public class RepositoryStore : IRepositoryStoreRegistry
    {
-
-        private readonly PortalLsm     _LsmDbContext;
-        private readonly PortalAuth    AuthDbContext;
+        /// <summary>
+        /// 
+        /// </summary>
         private readonly ILogger _logger;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        private readonly PortalLsm     _ProductionDbContext;
+    
+        /// <summary>
+        /// 
+        /// </summary>
+        private readonly PortalAuth    _authenticationDbContext;
+        
         public RepositoryStore(ILogger logger)
         {
                         this._logger = logger;
 
-                        _LsmDbContext = new PortalLsm();
-                        AuthDbContext = new PortalAuth();
+                        _ProductionDbContext     = new PortalLsm();
+                        _authenticationDbContext = new PortalAuth();
 
-                        WFProcessStore         = new ProcessManagerRepository(_LsmDbContext, logger);
-                        InventoryStore          = new InventoryRepository(_LsmDbContext, logger);
-                        Scales                  = new NormsStandardsRepository(_LsmDbContext, logger);
-                        Requisitions            = new RequisitionRepository(_LsmDbContext, logger);
-                        Orders                  = new OrderRepository(_LsmDbContext, logger);
-                        RequisitionItem         = new InventoryRepository(_LsmDbContext, logger);
-                        Subcity                 = new RequisitionSubcityRepository(_LsmDbContext, logger);
-                        ProfileStore            = new ProfileRepository(AuthDbContext, logger);
-                        Person                  = new PersonRepository(AuthDbContext, logger);
-                        RequisitionOrderItems   = new RequisitionOrderItemsRepository(_LsmDbContext, logger);
+                        WFProcessStore         = new ProcessManagerRepository(_ProductionDbContext, logger);
+                        InventoryStore          = new InventoryRepository(_ProductionDbContext, logger);
+                        Scales                  = new NormsStandardsRepository(_ProductionDbContext, logger);
+                        Requisitions            = new RequisitionRepository(_ProductionDbContext, logger);
+                        Orders                  = new OrderRepository(_ProductionDbContext, logger);
+                        RequisitionItem         = new InventoryRepository(_ProductionDbContext, logger);
+                        Subcity                 = new RequisitionSubcityRepository(_ProductionDbContext, logger);
+                        ProfileStore            = new ProfileRepository(_authenticationDbContext, logger);
+                        Person                  = new PersonRepository(_authenticationDbContext, logger);
+                        RequisitionOrderItems   = new RequisitionOrderItemsRepository(_ProductionDbContext, logger);
+                        Locker                  = new LockerRepository(_ProductionDbContext, logger); 
         }
 
                 public InventoryRepository      InventoryStore
@@ -72,6 +85,9 @@ namespace DoE.Lsm.Data.Repositories
                 { set; get; }
 
 
+                public LockerRepository Locker
+                { get; set; }
+
         #region Gabbage Collection
         private bool _disposed = false;
         private static readonly object _syncLock = new object();
@@ -88,7 +104,7 @@ namespace DoE.Lsm.Data.Repositories
 
             if (disposing)
             {
-                _LsmDbContext.Dispose();
+                _ProductionDbContext.Dispose();
             }
         }
         #endregion

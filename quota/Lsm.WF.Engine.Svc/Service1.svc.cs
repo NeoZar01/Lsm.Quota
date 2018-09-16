@@ -13,8 +13,8 @@ namespace DoE.Lsm.WF.Engine
 
     public class WFEngineService : IWFEngineService
     {
-        public readonly IRepositoryStore _DbRepository;
-        public WFEngineService(IRepositoryStore DbRepository)
+        public readonly IRepositoryStoreRegistry _DbRepository;
+        public WFEngineService(IRepositoryStoreRegistry DbRepository)
         {this._DbRepository = DbRepository;}
     }
 }

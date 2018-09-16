@@ -9,13 +9,13 @@
     using System.Data.Entity;
     using DoE.Lsm.Logger;
 
-    public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
+    public class RepositoryFactory<TEntity> : IRepository<TEntity> where TEntity : class
     {
 
         protected readonly DbContext _DbContext;
         protected readonly ILogger _logger;
 
-        public Repository(DbContext context, ILogger logger)
+        public RepositoryFactory(DbContext context, ILogger logger)
         {
             this._DbContext = context;
             this._logger    = logger;

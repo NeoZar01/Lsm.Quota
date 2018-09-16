@@ -14,7 +14,7 @@ namespace DoE.Lsm.Data.Repositories.Workflow.Engine
     //     This repository will handle all the operations associated with managing the workflow engine.         
     //     <see cref="WF.Tools.ExecutionResult"> On Execution Results</see>
     //</summary>
-    public partial class ProcessManagerRepository : Repository<WFProcessInstance>, IProcessManager
+    public partial class ProcessManagerRepository : RepositoryFactory<WFProcessInstance>, IProcessManager
     {
         //constructor
         public ProcessManagerRepository(DbContext context, ILogger logger) : base(context, logger) {}

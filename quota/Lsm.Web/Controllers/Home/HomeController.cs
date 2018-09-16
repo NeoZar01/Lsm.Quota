@@ -20,7 +20,7 @@ namespace DoE.Lsm.Web.Controllers
         /// </summary>
         private readonly Dictionary<string, DashboardFactoryViewModel> _entityDashBoard = new Dictionary<string, DashboardFactoryViewModel>();
 
-        public HomeController(ILogger logger, IRepositoryStore dataStore) : base(logger, dataStore)
+        public HomeController(ILogger logger, IRepositoryStoreRegistry dataStore) : base(logger, dataStore)
         {
             _entityDashBoard.Add(EntityType.School ,        new SchoolDashboardViewModel());
             _entityDashBoard.Add(EntityType.CircuitManager, new CircuitDashboardViewModel());

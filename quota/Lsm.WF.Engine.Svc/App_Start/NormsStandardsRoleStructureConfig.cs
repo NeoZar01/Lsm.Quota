@@ -38,7 +38,7 @@ namespace DoE.Lsm.WF.Engines.Configurations
         ///<summary>
         ///     This will be thrown back to the caller as an instance.
         /// </summary>
-        public NormsStandardsRoleStructure Roles(IRepositoryStore dataStore)
+        public NormsStandardsRoleStructure Roles(IRepositoryStoreRegistry dataStore)
         {
             if (instance != null) return instance;            
 

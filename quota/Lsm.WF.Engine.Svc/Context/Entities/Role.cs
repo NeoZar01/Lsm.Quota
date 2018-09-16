@@ -11,9 +11,9 @@ namespace DoE.Lsm.WF.Engine.Context.Entities
     {
         public volatile int                  response = -1;
         public Role                         _successor;
-        public readonly IRepositoryStore    _repositoryStore;
+        public readonly IRepositoryStoreRegistry    _repositoryStore;
 
-        public Role(IRepositoryStore repositoryStore)
+        public Role(IRepositoryStoreRegistry repositoryStore)
         {   this._repositoryStore = repositoryStore;  }
 
 

@@ -23,7 +23,7 @@ namespace DoE.Lsm.Web.Models
         /// </summary>
         /// <param name="instanceId"></param>
         /// <returns></returns>
-        public override async Task<DashboardFactoryViewModel> TakeModel(string instanceId, IRepositoryStore dataSource)
+        public override async Task<DashboardFactoryViewModel> TakeModel(string instanceId, IRepositoryStoreRegistry dataSource)
         {        
             return await Task.FromResult( new SchoolDashboardViewModel {
                         Page     = "_mainpagedashboard_school",
@@ -44,7 +44,7 @@ namespace DoE.Lsm.Web.Models
         /// </summary>
         /// <param name="instanceId"></param>
         /// <returns></returns>
-        public override async Task<DashboardFactoryViewModel> TakeModel(string instanceId, IRepositoryStore dataSource)
+        public override async Task<DashboardFactoryViewModel> TakeModel(string instanceId, IRepositoryStoreRegistry dataSource)
         {
             return await Task.FromResult(new CircuitDashboardViewModel
             {
@@ -65,7 +65,7 @@ namespace DoE.Lsm.Web.Models
         /// </summary>
         /// <param name="instanceId"></param>
         /// <returns></returns>
-        public override async Task<DashboardFactoryViewModel> TakeModel(string instanceId, IRepositoryStore dataSource)
+        public override async Task<DashboardFactoryViewModel> TakeModel(string instanceId, IRepositoryStoreRegistry dataSource)
         {
             return await Task.FromResult(new AdministratorDashboardViewModel
             {   Page     = "_mainpagedashboard_administrator",
@@ -79,7 +79,7 @@ namespace DoE.Lsm.Web.Models
         public DashboardFactoryViewModel()
         {}
 
-        public virtual async Task<DashboardFactoryViewModel> TakeModel(string instanceId, IRepositoryStore dataStore)
+        public virtual async Task<DashboardFactoryViewModel> TakeModel(string instanceId, IRepositoryStoreRegistry dataStore)
         {return await Task.FromResult(this);}
 
 

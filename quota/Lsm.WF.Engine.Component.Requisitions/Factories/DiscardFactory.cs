@@ -17,9 +17,9 @@ namespace DoE.Lsm.WF.Component.Requisitions.Factories
         /// <summary>
         /// 
         /// </summary>
-        protected readonly IRepositoryStore _repositoryStore;
+        protected readonly IRepositoryStoreRegistry _repositoryStore;
 
-        public DiscardFactory(Guid instanceId, IRepositoryStore repositoryStore) : base(repositoryStore.Requisitions.DbContext, instanceId)
+        public DiscardFactory(Guid instanceId, IRepositoryStoreRegistry repositoryStore) : base(repositoryStore.Requisitions.DbContext, instanceId)
         {this._repositoryStore = repositoryStore;}
 
 

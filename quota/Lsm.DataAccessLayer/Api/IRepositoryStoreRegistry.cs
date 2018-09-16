@@ -9,8 +9,9 @@
     using Subcity;
     using Orders;
     using Profile;
+    using Lock;
 
-    public interface IRepositoryStore : IDisposable
+    public interface IRepositoryStoreRegistry : IDisposable
     {
 
         ///<summary>
@@ -57,6 +58,9 @@
         { get; set; }
 
         UIManagerRepository UI
+        { get; set; }
+
+        LockerRepository Locker
         { get; set; }
     }
 }

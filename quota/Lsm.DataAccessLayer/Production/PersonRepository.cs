@@ -12,7 +12,7 @@ namespace DoE.Lsm.Data.Repositories.Persons
     using Logger;
     using Annotations.Exceptions;
 
-    public class PersonRepository : Repository<Person> , IPersonRepository
+    public class PersonRepository : RepositoryFactory<Person> , IPersonRepository
     {
 
         private Guid _globalUserId;

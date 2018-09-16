@@ -15,7 +15,7 @@ namespace DoE.Lsm.Web.Requisitions.Controllers
     public class CaptureController : BaseController
     {
 
-        public CaptureController(ILogger logger, IRepositoryStore repositoryStore, IShoppingCard shoppingcard) : base(logger, repositoryStore) {}
+        public CaptureController(ILogger logger, IRepositoryStoreRegistry repositoryStore, IShoppingCard shoppingcard) : base(logger, repositoryStore) {}
 
         /// <summary>
         /// 

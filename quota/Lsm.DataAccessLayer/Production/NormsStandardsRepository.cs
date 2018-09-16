@@ -6,7 +6,7 @@ using DoE.Lsm.Data.Repository.Norms;
 namespace DoE.Lsm.Data.Repositories.Norms
 {
 
-    public class NormsStandardsRepository : Repository<vw_RequisitionsNorms>, INormsStandardsRepository
+    public class NormsStandardsRepository : RepositoryFactory<vw_RequisitionsNorms>, INormsStandardsRepository
     {
 
         public NormsStandardsRepository(PortalLsm dbContext, ILogger logger) : base(dbContext, logger) {}

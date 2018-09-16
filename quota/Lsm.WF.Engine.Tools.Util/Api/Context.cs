@@ -36,7 +36,7 @@ namespace DoE.Lsm.WF.Engine.Context
         /// <summary>
         ///         GEID of sender
         /// </summary>
-        public int Sender
+        public string  IdentityToken
         { get; set; }
 
         /// <summary>

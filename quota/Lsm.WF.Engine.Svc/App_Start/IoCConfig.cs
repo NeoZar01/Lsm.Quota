@@ -13,7 +13,7 @@ namespace DoE.Lsm.WF.Engine.Configurations
         /// <param name="container"></param>
         public static void ConfigureContainer(IUnityContainer container)
         {
-             container.RegisterType<IRepositoryStore, RepositoryStore>();
+             container.RegisterType<IRepositoryStoreRegistry, RepositoryStore>();
              container.RegisterType<IWFEngineService, WFEngineService>();
         }
     }

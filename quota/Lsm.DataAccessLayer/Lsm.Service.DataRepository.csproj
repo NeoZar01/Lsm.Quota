@@ -80,6 +80,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Api\Repository.ILock.cs" />
     <Compile Include="EF\Address.cs">
       <DependentUpon>Portal.tt</DependentUpon>
     </Compile>
@@ -91,6 +92,9 @@
     </Compile>
     <Compile Include="EF\Contact.cs">
       <DependentUpon>Portal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\C_Lock.cs">
+      <DependentUpon>PortalLsm.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\Directorate.cs">
       <DependentUpon>Portal.tt</DependentUpon>
@@ -149,6 +153,9 @@
     <Compile Include="EF\spMailbox_Result.cs">
       <DependentUpon>Portal.tt</DependentUpon>
     </Compile>
+    <Compile Include="EF\sp_BuildDisclaimer_Result.cs">
+      <DependentUpon>PortalLsm.tt</DependentUpon>
+    </Compile>
     <Compile Include="EF\vwAccountSetting.cs">
       <DependentUpon>Portal.tt</DependentUpon>
     </Compile>
@@ -200,9 +207,10 @@
     <Compile Include="EF\WFProcessStepInstance.cs">
       <DependentUpon>PortalLsm.tt</DependentUpon>
     </Compile>
+    <Compile Include="Production\LockerRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Api\IRepository.cs" />
-    <Compile Include="Api\Repository.cs" />
+    <Compile Include="Api\RepositoryFactory.cs" />
     <Compile Include="Api\Repository.IUI.cs" />
     <Compile Include="Production\UIManagerRepository.cs" />
     <Compile Include="Api\Repository.IRequisitionSubcity.cs" />
@@ -225,7 +233,7 @@
     <Compile Include="Api\Repository.IProfile.cs" />
     <Compile Include="Api\Repository.IPerson.cs" />
     <Compile Include="Production\PersonRepository.cs" />
-    <Compile Include="Api\IRepositoryStore.cs" />
+    <Compile Include="Api\IRepositoryStoreRegistry.cs" />
     <Compile Include="Api\RepositoryStore.cs" />
   </ItemGroup>
   <ItemGroup>

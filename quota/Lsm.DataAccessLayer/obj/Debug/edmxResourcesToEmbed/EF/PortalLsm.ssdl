@@ -1,5 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="Portal.LsmModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Portal.Lsm.Application._Lock' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="_Lock">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="EntityId" />
+      <PropertyRef Name="EntityType" />
+      <PropertyRef Name="LockedBy" />
+      <PropertyRef Name="LockedFrom" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="EntityId" Type="nvarchar" MaxLength="36" Nullable="false" />
+    <Property Name="EntityType" Type="nvarchar" MaxLength="36" Nullable="false" />
+    <Property Name="LockedBy" Type="nvarchar" MaxLength="36" Nullable="false" />
+    <Property Name="LockedFrom" Type="datetime" Nullable="false" />
+    <Property Name="ReleasedAt" Type="datetime" />
+    <Property Name="ReleasedBy" Type="nvarchar" MaxLength="36" />
+    <Property Name="IsLocked" Type="nvarchar(max)" StoreGeneratedPattern="Computed" />
+  </EntityType>
   <EntityType Name="WFProcess">
     <Key>
       <PropertyRef Name="id" />
@@ -425,6 +444,7 @@ warning 6002: The table/view 'Portal.Lsm.Production.vwTotalSubcityPerCircuit' do
     <Property Name="TotalPrice" Type="money" />
     <Property Name="BookYear" Type="nvarchar" MaxLength="9" Nullable="false" />
   </EntityType>
+  <Function Name="sp_BuildDisclaimer" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="Application" />
   <EntityContainer Name="PortalLsmModelStoreContainer">
     <EntitySet Name="WFProcess" EntityType="Self.WFProcess" Schema="Application" store:Type="Tables" />
     <EntitySet Name="WFProcessInstance" EntityType="Self.WFProcessInstance" Schema="Application" store:Type="Tables" />
@@ -433,6 +453,18 @@ warning 6002: The table/view 'Portal.Lsm.Production.vwTotalSubcityPerCircuit' do
     <EntitySet Name="Inventory" EntityType="Self.Inventory" Schema="Production" store:Type="Tables" />
     <EntitySet Name="InventoryRequest" EntityType="Self.InventoryRequest" Schema="Production" store:Type="Tables" />
     <EntitySet Name="Requisition" EntityType="Self.Requisition" Schema="Production" store:Type="Tables" />
+    <EntitySet Name="_Lock" EntityType="Self._Lock" store:Type="Tables" store:Schema="Application">
+      <DefiningQuery>SELECT 
+    [_Lock].[Id] AS [Id], 
+    [_Lock].[EntityId] AS [EntityId], 
+    [_Lock].[EntityType] AS [EntityType], 
+    [_Lock].[LockedBy] AS [LockedBy], 
+    [_Lock].[LockedFrom] AS [LockedFrom], 
+    [_Lock].[ReleasedAt] AS [ReleasedAt], 
+    [_Lock].[ReleasedBy] AS [ReleasedBy], 
+    [_Lock].[IsLocked] AS [IsLocked]
+    FROM [Application].[_Lock] AS [_Lock]</DefiningQuery>
+    </EntitySet>
     <EntitySet Name="req_vwOrderItems" EntityType="Self.req_vwOrderItems" store:Type="Views" store:Schema="Production">
       <DefiningQuery>SELECT 
     [req_vwOrderItems].[id] AS [id], 

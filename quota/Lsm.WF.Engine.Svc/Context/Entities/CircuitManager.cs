@@ -4,7 +4,7 @@
 
     public class CircuitManager :  Role
     {
-        public CircuitManager(IRepositoryStore DbContext) : base(DbContext) {}
+        public CircuitManager(IRepositoryStoreRegistry DbContext) : base(DbContext) {}
 
     }
 }

@@ -51,6 +51,7 @@
     <Compile Include="Api\InstanceEntityType.cs" />
     <Compile Include="Api\Exception.InvalidDatabaseOperation.cs" />
     <Compile Include="Api\Exception.FailedTransaction.cs" />
+    <Compile Include="Api\Exception.UI.cs" />
     <Compile Include="Api\Watch.cs" />
     <Compile Include="Api\FlowProcess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

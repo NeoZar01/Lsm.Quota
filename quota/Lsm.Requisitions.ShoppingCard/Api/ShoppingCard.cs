@@ -5,7 +5,7 @@
     public class ShoppingCard  : IShoppingCard
     {
 
-        public ShoppingCard(IRepositoryStore dataStore)
+        public ShoppingCard(IRepositoryStoreRegistry dataStore)
         {
             CardRepository = new Card(dataStore, dataStore.Requisitions.DbContext);
         }

@@ -11,7 +11,7 @@ namespace DoE.Lsm.Data.Repositories
     using WF.Engine.Context;
     using Annotations.Exceptions;
 
-    public class RequisitionRepository : Repository<Requisition>, IRequisitionsRepository
+    public class RequisitionRepository : RepositoryFactory<Requisition>, IRequisitionsRepository
     {
 
         private string _status;

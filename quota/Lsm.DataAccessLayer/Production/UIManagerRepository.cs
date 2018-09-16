@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DoE.Lsm.Data.Repositories.UI
 {
-    public class UIManagerRepository : Repository<object>, IUIRepository
+    public class UIManagerRepository : RepositoryFactory<object>, IUIRepository
     {
 
         public UIManagerRepository(DbContext context, ILogger logger) : base(context, logger){ }

@@ -12,9 +12,9 @@ namespace DoE.Lsm.Web.Api
     {
 
         public readonly ILogger _logger;
-        public readonly IRepositoryStore _dataStore;
+        public readonly IRepositoryStoreRegistry _dataStore;
 
-        public BaseController(ILogger logger, IRepositoryStore repositoryStore)
+        public BaseController(ILogger logger, IRepositoryStoreRegistry repositoryStore)
         {
                             this._logger           = logger;
                             this._dataStore = repositoryStore;

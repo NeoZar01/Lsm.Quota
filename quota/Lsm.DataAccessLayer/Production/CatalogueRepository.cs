@@ -8,7 +8,7 @@ using DoE.Lsm.Data.Repository.Catalogue;
 
 namespace DoE.Lsm.Data.Repositories.Catalogue
 {
-    public class CatalogueRepository : Repository<vw_Inventory> , ICatalogueRepository
+    public class CatalogueRepository : RepositoryFactory<vw_Inventory> , ICatalogueRepository
     {
 
         public CatalogueRepository(PortalLsm DbContext, ILogger logger) : base(DbContext, logger)

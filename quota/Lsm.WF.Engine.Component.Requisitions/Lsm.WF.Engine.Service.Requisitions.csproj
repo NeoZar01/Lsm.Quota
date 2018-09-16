@@ -82,7 +82,7 @@
     <Compile Include="TasksStore\DiscardContext.cs" />
     <Compile Include="Factories\RejectFactory.cs" />
     <Compile Include="TasksStore\RejectJob.cs" />
-    <Compile Include="Api\SchoolTasks.cs" />
+    <Compile Include="Api\SchoolJobs.cs" />
     <Compile Include="TasksStore\Submit.cs" />
     <Compile Include="Factories\SubmitFactory.cs" />
     <Compile Include="Api\Generator.New.cs" />

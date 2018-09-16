@@ -24,3 +24,29 @@ C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Requisitions.Shopping
 C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Requisitions.ShoppingCard\obj\Debug\Lsm.Service.ShoppingCard.csprojResolveAssemblyReference.cache
 C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Requisitions.ShoppingCard\obj\Debug\WF.AddIn.ShoppingCard.dll
 C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Requisitions.ShoppingCard\obj\Debug\WF.AddIn.ShoppingCard.pdb
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Requisitions.ShoppingCard\bin\Debug\WF.AddIn.ShoppingCard.dll.config
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Requisitions.ShoppingCard\bin\Debug\WF.AddIn.ShoppingCard.dll
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Requisitions.ShoppingCard\bin\Debug\WF.AddIn.ShoppingCard.pdb
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Requisitions.ShoppingCard\bin\Debug\DoE.Lsm.Annotations.dll
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Requisitions.ShoppingCard\bin\Debug\DoE.Lsm.Data.Repositories.dll
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Requisitions.ShoppingCard\bin\Debug\DoE.Lsm.WF.Engine.Context.dll
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Requisitions.ShoppingCard\bin\Debug\EntityFramework.dll
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Requisitions.ShoppingCard\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Requisitions.ShoppingCard\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Requisitions.ShoppingCard\bin\Debug\DoE.Lsm.Logger.dll
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Requisitions.ShoppingCard\bin\Debug\PostSharp.dll
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Requisitions.ShoppingCard\bin\Debug\PagedList.dll
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Requisitions.ShoppingCard\bin\Debug\DoE.Lsm.Files.dll
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Requisitions.ShoppingCard\bin\Debug\DoE.Lsm.Annotations.pdb
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Requisitions.ShoppingCard\bin\Debug\DoE.Lsm.Data.Repositories.pdb
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Requisitions.ShoppingCard\bin\Debug\DoE.Lsm.WF.Engine.Context.pdb
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Requisitions.ShoppingCard\bin\Debug\EntityFramework.xml
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Requisitions.ShoppingCard\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Requisitions.ShoppingCard\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Requisitions.ShoppingCard\bin\Debug\DoE.Lsm.Logger.pdb
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Requisitions.ShoppingCard\bin\Debug\PostSharp.xml
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Requisitions.ShoppingCard\bin\Debug\PagedList.xml
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Requisitions.ShoppingCard\bin\Debug\DoE.Lsm.Files.pdb
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Requisitions.ShoppingCard\obj\Debug\Lsm.Service.ShoppingCard.csprojResolveAssemblyReference.cache
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Requisitions.ShoppingCard\obj\Debug\WF.AddIn.ShoppingCard.dll
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Requisitions.ShoppingCard\obj\Debug\WF.AddIn.ShoppingCard.pdb

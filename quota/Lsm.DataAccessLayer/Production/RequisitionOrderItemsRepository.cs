@@ -4,7 +4,7 @@ using DoE.Lsm.Data.Repositories.Order;
 
 namespace DoE.Lsm.Data.Repositories.Orders
 {
-    public class RequisitionOrderItemsRepository : Repository<vw_RequisitionOrderItems>, IRequisitionOrderItemsRepository
+    public class RequisitionOrderItemsRepository : RepositoryFactory<vw_RequisitionOrderItems>, IRequisitionOrderItemsRepository
     {
         public RequisitionOrderItemsRepository(PortalLsm context, ILogger logger) : base(context, logger){}
 

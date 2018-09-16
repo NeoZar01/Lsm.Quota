@@ -7,7 +7,7 @@ using DoE.Lsm.Logger;
 namespace DoE.Lsm.Data.Repositories.Subcity
 {
 
-    public class RequisitionSubcityRepository : Repository<vw_RequisitionsDashboard>, IRequisitionSubcityRepository
+    public class RequisitionSubcityRepository : RepositoryFactory<vw_RequisitionsDashboard>, IRequisitionSubcityRepository
     {
 
         public RequisitionSubcityRepository(DbContext context, ILogger logger) : base(context, logger){}

@@ -8,7 +8,7 @@ namespace DoE.Lsm.Data.Repositories.Profile
     using Repositories;
     using Annotations.Exceptions;
 
-    public class ProfileRepository : Repository<AspNetProfile>, IProfileRepository
+    public class ProfileRepository : RepositoryFactory<AspNetProfile>, IProfileRepository
     {
 
         public ProfileRepository(DbContext WhoIsWhoDbContext, ILogger logger) : base(WhoIsWhoDbContext, logger){}

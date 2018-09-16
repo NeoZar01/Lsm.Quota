@@ -331,5 +331,28 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="C_Lock">
+      <EntityTypeMapping TypeName="Portal.LsmModel.C_Lock">
+        <MappingFragment StoreEntitySet="_Lock">
+          <ScalarProperty Name="IsLocked" ColumnName="IsLocked" />
+          <ScalarProperty Name="ReleasedBy" ColumnName="ReleasedBy" />
+          <ScalarProperty Name="ReleasedAt" ColumnName="ReleasedAt" />
+          <ScalarProperty Name="LockedFrom" ColumnName="LockedFrom" />
+          <ScalarProperty Name="LockedBy" ColumnName="LockedBy" />
+          <ScalarProperty Name="EntityType" ColumnName="EntityType" />
+          <ScalarProperty Name="EntityId" ColumnName="EntityId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_BuildDisclaimer" FunctionName="Portal.LsmModel.Store.sp_BuildDisclaimer">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Portal.LsmModel.sp_BuildDisclaimer_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Paragraph" ColumnName="Paragraph" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>

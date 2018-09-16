@@ -13,7 +13,7 @@ namespace DoE.Lsm.Data.Repository.Inventories
     using Repositories.EF;
     using WF.Engine.Context;
 
-    public class InventoryRepository : Repository<Inventory> , IInventoryRepository 
+    public class InventoryRepository : RepositoryFactory<Inventory> , IInventoryRepository 
     {
 
         public InventoryRepository(PortalLsm DbContext, ILogger logger) :base(DbContext, logger) {}

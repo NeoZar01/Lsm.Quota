@@ -10,9 +10,9 @@ namespace DoE.Lsm.WF.Component.Requisitions.Tasks
     public sealed class New
     {
 
-        private readonly IRepositoryStore _databaseContext;
+        private readonly IRepositoryStoreRegistry _databaseContext;
 
-        public New(IRepositoryStore databaseContext)
+        public New(IRepositoryStoreRegistry databaseContext)
         { this._databaseContext = databaseContext; }
 
 

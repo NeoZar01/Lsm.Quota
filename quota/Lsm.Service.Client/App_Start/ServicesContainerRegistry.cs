@@ -18,7 +18,7 @@ namespace DoE.Lsm.Services.Caller.IoC
         {
             container
                 .RegisterType<ILogger, ErrorLogger>()
-                .RegisterType<IRepositoryStore, RepositoryStore>()
+                .RegisterType<IRepositoryStoreRegistry, RepositoryStore>()
                 .RegisterType<ShoppingCardNs::IShoppingCard, ShoppingCardNs::ShoppingCard>()
                 .RegisterType<IServicesFactory, Caller>();
         }

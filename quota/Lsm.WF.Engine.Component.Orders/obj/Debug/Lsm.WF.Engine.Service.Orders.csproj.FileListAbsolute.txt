@@ -2,3 +2,7 @@ C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.O
 C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Orders\bin\Debug\Lsm.WF.Engine.Component.Orders.pdb
 C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Orders\obj\Debug\Lsm.WF.Engine.Component.Orders.dll
 C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Orders\obj\Debug\Lsm.WF.Engine.Component.Orders.pdb
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Orders\bin\Debug\Lsm.WF.Engine.Component.Orders.dll
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Orders\bin\Debug\Lsm.WF.Engine.Component.Orders.pdb
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Orders\obj\Debug\Lsm.WF.Engine.Component.Orders.dll
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Orders\obj\Debug\Lsm.WF.Engine.Component.Orders.pdb

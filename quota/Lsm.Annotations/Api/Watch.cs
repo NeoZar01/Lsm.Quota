@@ -5,6 +5,7 @@ using PostSharp.Serialization;
 
 namespace DoE.Lsm.Annotations.Exceptions
 {
+    using Api.Exceptions;
 
     /// <summary>
     ///     Swallows a technical exceptions and returns a user friendly exception message
@@ -39,7 +40,7 @@ namespace DoE.Lsm.Annotations.Exceptions
 
             if (args.Exception.GetType() == typeof(InvalidDatabaseOperationException))
             {
-                args.Exception = new global::System.Exception(string.Concat(_enduserMessage, " ", args.Instance));
+                args.Exception = new UIException(_enduserMessage);
 
                 //push to the logFile using log4net
 
@@ -47,7 +48,8 @@ namespace DoE.Lsm.Annotations.Exceptions
 
             }else if (args.Exception.GetType() == typeof(FailedTransactionException))
             {
-                args.Exception = new global::System.Exception(string.Concat(_enduserMessage, " ", args.Instance));
+            
+                args.Exception = new UIException(_enduserMessage);
 
                 //push to the logFile using log4net
 
