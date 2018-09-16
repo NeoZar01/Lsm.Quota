@@ -4,7 +4,7 @@
 {
     <li class="" role="presentation">
             <a class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                @User.Identity.GetReferenceName()  &nbsp;  <img src="@Url.Content("~/Content/Images/img.jpg")" alt="school-default-image">               
+                @User.Identity.GetName()  &nbsp;  <img src="@Url.Content("~/Content/Images/img.jpg")" alt="school-default-image">               
             </a>
             <ul class="dropdown-menu dropdown-usermenu pull-right">
                 <li>@Html.ActionLink("Profile", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })</li>

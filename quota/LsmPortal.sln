@@ -37,7 +37,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.Service.Container", "Ls
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.Service.ShoppingCard", "Lsm.Requisitions.ShoppingCard\Lsm.Service.ShoppingCard.csproj", "{78E704D4-B1BF-4189-88EA-1A54E5BA15E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.Web", "Lsm.Web\Lsm.Web.csproj", "{6DA356C9-5D1F-4018-9631-43AA0CDB6FCB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.Web.Quota", "Lsm.Web\Lsm.Web.Quota.csproj", "{6DA356C9-5D1F-4018-9631-43AA0CDB6FCB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.WF.Engine.Service.Monitor", "Lsm.WF.Engine.Component.Monitor\Lsm.WF.Engine.Service.Monitor.csproj", "{771B5229-3AA8-40E8-B2C0-2A4587C4CDBE}"
 EndProject
