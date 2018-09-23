@@ -39,7 +39,7 @@ namespace DoE.Lsm.Web.Controllers
             if (string.IsNullOrEmpty(User.Identity.GetRole()) && string.IsNullOrEmpty(User.Identity.GetToken()))
             return View();
 
-            return View(await _entityDashBoard[User.Identity.GetRole()].TakeModel(User.Identity.GetToken() , _dataStore));
+            return View(await _entityDashBoard[User.Identity.GetRole()].TakeModel(User.Identity.GetToken() , _repositoriesDataStore));
         }
 
 

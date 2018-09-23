@@ -138,17 +138,24 @@ namespace DoE.Lsm.Web.Api
         public async static Task<SignInStatus> ImpersonationSignInAsync(this ApplicationSignInManager signInManager, string impersonator, string impersonatee, ApplicationUserManager _userManager, HttpContext context)
         {
 
-            var impersonatedUser = await _userManager.FindByNameAsync(impersonatee);
+            try
+            {
+                var impersonatedUser = await _userManager.FindByNameAsync(impersonatee);
 
-            var impersonatedIdentity = await impersonatedUser.GenerateUserIdentityAsync(_userManager);
+                var impersonatedIdentity = await impersonatedUser.GenerateUserIdentityAsync(_userManager);
                 impersonatedIdentity.AddClaim(new Claim("UserImpersonation", "true"));
                 impersonatedIdentity.AddClaim(new Claim("impersonator", impersonator));
 
-            var authenticationManager = context.GetOwinContext().Authentication;
+                var authenticationManager = context.GetOwinContext().Authentication;
                 authenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
                 authenticationManager.SignIn(new AuthenticationProperties() { IsPersistent = false }, impersonatedIdentity);
 
-            return SignInStatus.Success;
+                return SignInStatus.Success;
+            }
+            catch
+            {
+                return SignInStatus.Failure;
+            }
         }
 
     }

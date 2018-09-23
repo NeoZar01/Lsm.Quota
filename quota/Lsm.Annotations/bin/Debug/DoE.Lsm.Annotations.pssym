@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Symbols LinesOfCode="85" PostSharpLinesOfCode="0" EnhancedTypesCount="1" SchemaVersion="1" PostSharpVersion="6.0.25.0" xmlns="http://schemas.postsharp.org/2.0/symbols">
   <Class Class="#1=T:[PostSharp]PostSharp.Serialization.PSerializableAttribute">
-    <Instance Declaration="#2=T:[DoE.Lsm.Annotations]DoE.Lsm.Annotations.Exceptions.Watch" Id="db81bbdb19c35344">
+    <Instance Declaration="#2=T:[DoE.Lsm.Annotations]DoE.Lsm.Annotations.Exceptions.Watch" Id="db81bbdb460859e9">
       <Target />
     </Instance>
   </Class>

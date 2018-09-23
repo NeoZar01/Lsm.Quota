@@ -15,6 +15,11 @@
         protected readonly DbContext _DbContext;
         protected readonly ILogger _logger;
 
+        /// <summary>
+        ///     This will default to [0] to prevent unwanted locking of entities.
+        /// </summary>
+        protected readonly bool requiresLock = false;
+
         public RepositoryFactory(DbContext context, ILogger logger)
         {
             this._DbContext = context;

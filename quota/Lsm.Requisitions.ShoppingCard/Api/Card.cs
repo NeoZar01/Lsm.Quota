@@ -26,7 +26,7 @@ namespace DoE.Lsm.ShoppingCard.Api
         public Card(IRepositoryStoreRegistry databaseContextRepository, DbContext dbContext)
         {
             this._databaseContextRepository = databaseContextRepository;
-            this.bookYear                   = databaseContextRepository.Scales.BookYear;
+            this.bookYear                   = databaseContextRepository.StandardsAndNorms.BookYear;
             this._dbContext                 = dbContext;
         }
 

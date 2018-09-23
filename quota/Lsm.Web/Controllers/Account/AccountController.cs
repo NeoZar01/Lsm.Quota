@@ -279,7 +279,7 @@ namespace DoE.Lsm.Web.Controllers
 
                 if(status == SignInStatus.Success) 
                 return RedirectToAction("Index", "Home");
-                return RedirectToAction("Index", "Account");
+                return RedirectToAction("Impersonate", "Account");
 
             }
             throw new ArgumentNullException(nameof(model));

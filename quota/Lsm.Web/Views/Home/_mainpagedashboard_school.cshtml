@@ -229,7 +229,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                @Html.ActionLink("Create New", "Index", "Capture", new { Area = "Requisitions" }, new { id = "" })
+                @Html.ActionLink("Create New", "Index", "Capture", new { Area = "Requisitions" }, new { id = "" , @class = "btn btn-success btn-sm pull-right"   })
                 <br/>
             </div>
             <div class="modal-body">
@@ -237,6 +237,8 @@
             </div>
             <div class="modal-footer">
 @*                <a role="button" class="btn btn-default btn-sm" href="@Url.Action("Index", "SchoolCapture", new { Area = "Requisitions" }, new {id=""})">Create New</a>*@
+
+                [Populate a list of in-memory items]
             </div>
         </div>
     </div>

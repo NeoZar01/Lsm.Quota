@@ -27,7 +27,7 @@ namespace DoE.Lsm.Web.Models
         {        
             return await Task.FromResult( new SchoolDashboardViewModel {
                         Page     = "_mainpagedashboard_school",
-                        BookYear = dataSource.Scales.BookYear
+                        BookYear = dataSource.StandardsAndNorms.BookYear
             });
         }
     }
@@ -48,7 +48,7 @@ namespace DoE.Lsm.Web.Models
         {
             return await Task.FromResult(new CircuitDashboardViewModel
             {
-                BookYear = dataSource.Scales.BookYear
+                BookYear = dataSource.StandardsAndNorms.BookYear
             });
         }
     }
@@ -69,7 +69,7 @@ namespace DoE.Lsm.Web.Models
         {
             return await Task.FromResult(new AdministratorDashboardViewModel
             {   Page     = "_mainpagedashboard_administrator",
-                BookYear = dataSource.Scales.BookYear
+                BookYear = dataSource.StandardsAndNorms.BookYear
             });
         }
     }

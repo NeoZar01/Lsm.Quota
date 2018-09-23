@@ -9,7 +9,7 @@ namespace DoE.Lsm.Web.Requisitions.Controllers
     using ShoppingCard.Api;
 
     [Authorize]
-  //  [RouteArea("Requisitions")]
+    [RouteArea("Test")]
     //[RoutePrefix("SchoolCapture")]
     //[Route("{action=index}")]   //setup default route template
     public class CaptureController : BaseController
@@ -26,7 +26,9 @@ namespace DoE.Lsm.Web.Requisitions.Controllers
         public ActionResult Index(string id)
         {
             var model = new CaptureRequisitionsViewModel
-            {};
+            {
+                Calendar = _repositoriesDataStore.StandardsAndNorms.BookYear
+            };
 
             return View(model);
         }

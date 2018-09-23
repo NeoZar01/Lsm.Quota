@@ -5,5 +5,19 @@ using System.Web;
 
 namespace DoE.Lsm.Web.Requisitions.Models
 {
-    public partial class CaptureRequisitionsViewModel {}
+
+    public partial class CaptureRequisitionsViewModel {
+
+
+        /// <summary>
+        ///   Get the current bookyear
+        /// </summary>
+        public string Calendar { get; set; }
+
+
+
+
+
+
+    }
 }

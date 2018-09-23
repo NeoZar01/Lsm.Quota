@@ -60,5 +60,6 @@ namespace DoE.Lsm.Data.Repositories
         /// <param name="Expression<Funct<TEntity,bool>>"> Lamdba expression</param>
         ///</summary
         IEnumerable<TEntity> ManyAsync(Expression<Func<TEntity, bool>> predicate);
+
     }
 }

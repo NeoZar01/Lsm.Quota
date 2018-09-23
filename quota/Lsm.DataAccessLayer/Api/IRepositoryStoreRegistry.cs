@@ -30,7 +30,7 @@
         ///     Handles scales and norms queries.
         ///   <remark> This should be a read-only class</remark>
         ///</summary>
-        NormsStandardsRepository Scales
+        NormsStandardsRepository StandardsAndNorms
         { get; set; }
 
         #region ProfileStore

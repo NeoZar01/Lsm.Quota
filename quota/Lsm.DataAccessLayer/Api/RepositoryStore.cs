@@ -40,7 +40,7 @@ namespace DoE.Lsm.Data.Repositories
 
                         WFProcessStore         = new ProcessManagerRepository(_ProductionDbContext, logger);
                         InventoryStore          = new InventoryRepository(_ProductionDbContext, logger);
-                        Scales                  = new NormsStandardsRepository(_ProductionDbContext, logger);
+                        StandardsAndNorms                  = new NormsStandardsRepository(_ProductionDbContext, logger);
                         Requisitions            = new RequisitionRepository(_ProductionDbContext, logger);
                         Orders                  = new OrderRepository(_ProductionDbContext, logger);
                         RequisitionItem         = new InventoryRepository(_ProductionDbContext, logger);
@@ -54,7 +54,7 @@ namespace DoE.Lsm.Data.Repositories
                 public InventoryRepository      InventoryStore
                 { get; set; }
 
-                public NormsStandardsRepository          Scales
+                public NormsStandardsRepository          StandardsAndNorms
                 { get; set; }
 
                 public ProfileRepository        ProfileStore

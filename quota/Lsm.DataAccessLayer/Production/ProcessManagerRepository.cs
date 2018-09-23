@@ -9,7 +9,8 @@ namespace DoE.Lsm.Data.Repositories.Workflow.Engine
     using Logger;
     using Annotations.Exceptions;
     using WF.Engine.Context;
-    
+    using System.Reflection;
+
     //<summary>
     //     This repository will handle all the operations associated with managing the workflow engine.         
     //     <see cref="WF.Tools.ExecutionResult"> On Execution Results</see>
@@ -70,7 +71,7 @@ namespace DoE.Lsm.Data.Repositories.Workflow.Engine
             catch(Exception e)
             {
                 //log this error as a high priority thread and throw is back to the caller.
-                throw new InvalidDatabaseOperationException(string.Concat("Failed to create a workflow instance. {", e.InnerException, "}"));
+                throw new InvalidDatabaseOperationException(e.StackTrace , MethodBase.GetCurrentMethod().DeclaringType.ToString());
             }
         }
 
@@ -154,30 +155,6 @@ namespace DoE.Lsm.Data.Repositories.Workflow.Engine
             }
 
         }
-
-
-        #region  Messaging--App
-
-        public string CreateMessage(string message, string stepId, string sender, string recepient)
-        {
-            throw new NotImplementedException();
-        }
-
-        public string Forward(string messageId, string recepient)
-        {
-            throw new NotImplementedException();
-        }
-
-        public string Reply(string parentMessageId, string message)
-        {
-            throw new NotImplementedException();
-        }
-
-        public string Archive(string messageId)
-        {
-            throw new NotImplementedException();
-        }
-        #endregion
 
         /// <summary>
         /// 
