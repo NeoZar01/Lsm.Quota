@@ -63,17 +63,18 @@ namespace DoE.Lsm.ShoppingCard.Api
 
                     string rqNo         = await _databaseContextRepository.Requisitions.MergeOnAsync(rqInstance, reqNo, school, minGrade, maxGrade, bookYear, stage, state);
 
-                    var updateInventory = await _databaseContextRepository.InventoryStore.UpdateAsync(item, qty, quota);
+                    var updateInventory = await _databaseContextRepository.InventoryStore.UpdateAsync(item, qty);
 
-                    var execr            = await _databaseContextRepository.InventoryStore.SaveListItemAsync(rqInstance.ToString(), item.RowGuid.ToString(), new InventoryRequest
-                                                                                                                                                        {
-                                                                                                                                                            CategoryCD         = item.CategoryCD,
-                                                                                                                                                            CreationDate       = DateTime.Now,
-                                                                                                                                                            EntityId           = school.RowGuid.ToString(),
-                                                                                                                                                            LastModifiedDate   = DateTime.Now,
-                                                                                                                                                            Price = bookPrice
-                                                                                                                                                        });
-
+                    var execr            = await _databaseContextRepository.InventoryStore.SaveListItemAsync(rqInstance.ToString(), 
+                                                                                                             item.RowGuid.ToString(), 
+                                                                                                             new InventoryRequest
+                                                                                                             {
+                                                                                                                 CategoryCD         = item.CategoryCD,
+                                                                                                                 CreationDate       = DateTime.Now,
+                                                                                                                 EntityId           = school.RowGuid.ToString(),
+                                                                                                                 LastModifiedDate   = DateTime.Now,
+                                                                                                                 Price = bookPrice
+                                                                                                             });
                      transaction.Commit();
                     return (int)execr;
                     case Policy.Failed:

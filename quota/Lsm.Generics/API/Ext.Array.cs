@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DoE.Lsm
+﻿namespace DoE.Lsm
 {
     public static class ArrayExtensions
     {
-
         /// <summary>
         /// 
         /// </summary>
@@ -23,7 +16,7 @@ namespace DoE.Lsm
                 {
                     return true;
                 }
-                continue;
+                    continue;
             }
             return false;
         }

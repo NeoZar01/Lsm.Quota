@@ -4,7 +4,7 @@ namespace DoE.Lsm.Services.Caller.IoC
 {
     using Logger;
     using Data.Repositories;
-    using ShoppingCardNs = ShoppingCard.Api;
+    using ShoppingCard.Api;
     using Api;
 
     public static class ServicesContainerRegistry<T>
@@ -19,7 +19,7 @@ namespace DoE.Lsm.Services.Caller.IoC
             container
                 .RegisterType<ILogger, ErrorLogger>()
                 .RegisterType<IRepositoryStoreRegistry, RepositoryStore>()
-                .RegisterType<ShoppingCardNs::IShoppingCard, ShoppingCardNs::ShoppingCard>()
+                .RegisterType<IShoppingCard, ShoppingCard>()
                 .RegisterType<IServicesFactory, Caller>();
         }
 

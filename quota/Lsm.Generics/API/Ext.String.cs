@@ -2,7 +2,7 @@
 {
 
     /// <summary>
-    /// 
+    ///   Creates methods that extends behavoirs of the datatype string
     /// </summary>
     public static class StringExtension
     {

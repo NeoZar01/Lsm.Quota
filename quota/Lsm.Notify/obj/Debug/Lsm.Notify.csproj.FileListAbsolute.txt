@@ -162,4 +162,3 @@ C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Notify\bin\Debug\Microsoft.Owi
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Notify\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Notify\obj\Debug\LimpEmisPortal.Notify.dll
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Notify\obj\Debug\LimpEmisPortal.Notify.pdb
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Notify\obj\Debug\Lsm.Notify.csprojResolveAssemblyReference.cache

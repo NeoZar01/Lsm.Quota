@@ -3,7 +3,7 @@
 namespace DoE.Lsm.Services.Api
 {
     using Logger;
-    using DefaultShoppingCardNS = ShoppingCard.Api;
+    using ShoppingCard.Api;
     /// <summary>
     /// 
     /// </summary>
@@ -14,7 +14,7 @@ namespace DoE.Lsm.Services.Api
         ///         constructor
         /// </summary>
         /// <param name="logger"></param>
-        public Caller(ILogger logger, DefaultShoppingCardNS::IShoppingCard shoppingcard)
+        public Caller(ILogger logger, IShoppingCard shoppingcard)
         {
 
             //newup the EventLogger from the container
@@ -28,7 +28,7 @@ namespace DoE.Lsm.Services.Api
         public ILogger Logger
         { get; set; }
 
-        public DefaultShoppingCardNS::IShoppingCard ShoppingCard
+        public IShoppingCard ShoppingCard
         { get; set; }
     }
 

@@ -12,14 +12,12 @@ namespace DoE.Lsm.Annotations
     {
         public Column() { }
 
-        public enum Fact
-        {IsRequired}
+        public enum Fact {IsRequired}
 
         ///<summary>
         ///      Quarterly reports   
         ///</summary>
         public Fact DynamicDateRange { get; set; }
-
 
         ///<summary>
         ///      Quarterly reports   
@@ -40,7 +38,5 @@ namespace DoE.Lsm.Annotations
         ///      Calendar
         ///</summary>
         public Fact Calendar { get; set; }
-
     }
-
 }

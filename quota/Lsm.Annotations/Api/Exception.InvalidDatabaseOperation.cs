@@ -27,7 +27,6 @@
         //
         //<param name="exception"></param>
         //</summary>
-        #warning I am in progress of replacing this constructor with the log4net framework
         public InvalidDatabaseOperationException(string stackTrace, string caller) 
             : base(stackTrace)
         {}

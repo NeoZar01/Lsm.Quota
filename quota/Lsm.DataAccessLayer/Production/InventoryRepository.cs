@@ -19,7 +19,7 @@ namespace DoE.Lsm.Data.Repository.Inventories
         public InventoryRepository(PortalLsm DbContext, ILogger logger) :base(DbContext, logger) {}
 
         #region Inventory List
-        public IEnumerable<string> InventoryItemsNames([Column(Calendar = Column.Fact.IsRequired)]int emisCode, string keyword, string bookYear)
+        public IEnumerable<string> Predict(int emisCode, string keyword, string bookYear)
         {
 
             var searchQuery = (from k in DbContext.vw_Inventory 
@@ -43,11 +43,10 @@ namespace DoE.Lsm.Data.Repository.Inventories
          // <summary>
          //
          // </summary>
-        public async Task<ExecutionResult> UpdateAsync(Inventory item, int qty, int quota)
+        public async Task<ExecutionResult> UpdateAsync(Inventory item, int qty)
         {
-
-            item.Quantity         = item.Quantity + (quota - qty);
-            item.LastModifiedDate = DateTime.Now;
+            Inventory entity = item;
+            entity.LastModifiedDate = DateTime.Now;
 
             var exec = await _DbContext.SaveChangesAsync();
 
@@ -62,7 +61,7 @@ namespace DoE.Lsm.Data.Repository.Inventories
         // <summary>
         //
         // </summary>
-        public IEnumerable<vw_Inventory> List([Column(Calendar = Column.Fact.IsRequired)]int emisCode, string keyword, string bookYear)
+        public IEnumerable<vw_Inventory> InventoryList([Column(Calendar = Column.Fact.IsRequired)]int emisCode, string keyword, string bookYear)
         {
 
             var searchQuery = (from k in DbContext.vw_Inventory

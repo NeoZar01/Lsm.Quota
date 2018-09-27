@@ -9,9 +9,10 @@ namespace DoE.Lsm.Data.Repository.Inventories
     using System.Threading.Tasks;
     using System.Collections.Generic;
 
-    using DoE.Lsm.WF.Engine.Context;
-    using DoE.Lsm.Data.Repositories;
+    using Repositories;
+    using WF.Engine.Context;
     using Repositories.EF;
+    using Annotations;
 
     public interface IInventoryRepository : IRepository<Inventory>
     {
@@ -21,7 +22,7 @@ namespace DoE.Lsm.Data.Repository.Inventories
         ///<summary>
         /// Gets the names of items in the inventory list.
         ///</summary>
-        IEnumerable<string>         InventoryItemsNames(int emisCode, string keyword, string bookYear);
+        IEnumerable<string>  Predict([Column(BookYear = Column.Fact.IsRequired )]int emisCode, string bookYear, string keyword);
 
         /**
          *  Gets an inventory list.
@@ -29,7 +30,7 @@ namespace DoE.Lsm.Data.Repository.Inventories
         ///<summary>
         /// Gets an inventory list.
         ///</summary>
-        IEnumerable<vw_Inventory>   List(int emisCode, string keyword, string bookYear);
+        IEnumerable<vw_Inventory>   InventoryList([Column(BookYear = Column.Fact.IsRequired )]int emisCode, string bookYear, string keyword );
 
         /**
          *   Updates an inventory item
@@ -37,7 +38,7 @@ namespace DoE.Lsm.Data.Repository.Inventories
         ///<summary>
         ///   Updates an inventory item
         ///</summary>
-        Task<ExecutionResult> UpdateAsync(Inventory inventory , int qty, int enr);
+        Task<ExecutionResult> UpdateAsync(Inventory inventory , int qty);
 
         /**
          *  Updates an inventory item
