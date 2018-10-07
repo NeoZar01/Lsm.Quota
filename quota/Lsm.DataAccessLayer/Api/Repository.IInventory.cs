@@ -14,6 +14,8 @@ namespace DoE.Lsm.Data.Repository.Inventories
     using Repositories.EF;
     using Annotations;
 
+    using static Annotations.DimensionsOptions;
+
     public interface IInventoryRepository : IRepository<Inventory>
     {
         /**
@@ -22,7 +24,7 @@ namespace DoE.Lsm.Data.Repository.Inventories
         ///<summary>
         /// Gets the names of items in the inventory list.
         ///</summary>
-        IEnumerable<string>  Predict([Column(BookYear = Column.Fact.IsRequired )]int emisCode, string bookYear, string keyword);
+        IEnumerable<string>  Predict([Dimensions(BookYear | Calendar )]int emisCode, string bookYear, string keyword);
 
         /**
          *  Gets an inventory list.
@@ -30,7 +32,7 @@ namespace DoE.Lsm.Data.Repository.Inventories
         ///<summary>
         /// Gets an inventory list.
         ///</summary>
-        IEnumerable<vw_Inventory>   InventoryList([Column(BookYear = Column.Fact.IsRequired )]int emisCode, string bookYear, string keyword );
+        IEnumerable<vw_Inventory>   InventoryList([Dimensions(BookYear | Calendar)] int emisCode, string bookYear, string keyword );
 
         /**
          *   Updates an inventory item

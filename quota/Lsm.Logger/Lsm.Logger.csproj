@@ -37,6 +37,10 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -49,20 +53,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Api\ILogger.cs" />
-    <Compile Include="Api\ErrorLogger.cs" />
+    <Compile Include="Api\AppLogger.cs" />
     <Compile Include="Api\IOnLog.cs" />
     <Compile Include="DefaultFolder.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DefaultFolder.resx</DependentUpon>
     </Compile>
-    <Compile Include="Severity.cs" />
     <Compile Include="Incident.cs" />
-    <Compile Include="Monitor.cs" />
+    <Compile Include="Appender.File.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="log4net.config" />
+    <None Include="packages.config" />
+    <None Include="postsharp.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Lsm.Files\Lsm.Files.csproj">

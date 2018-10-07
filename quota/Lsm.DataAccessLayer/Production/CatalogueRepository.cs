@@ -1,13 +1,17 @@
 ﻿
 using System.Collections.Generic;
 using System.Linq;
-using DoE.Lsm.Logger;
-using DoE.Lsm.Annotations;
-using DoE.Lsm.Data.Repositories.EF;
-using DoE.Lsm.Data.Repository.Catalogue;
+
 
 namespace DoE.Lsm.Data.Repositories.Catalogue
 {
+    using EF;
+    using Logger;
+    using Annotations;
+    using Repository.Catalogue;
+
+    using static Annotations.DimensionsOptions;
+
     public class CatalogueRepository : RepositoryFactory<vw_Inventory> , ICatalogueRepository
     {
 
@@ -15,7 +19,7 @@ namespace DoE.Lsm.Data.Repositories.Catalogue
         {}
 
 
-        public IEnumerable<string> GetBooks([Column(Calendar = Column.Fact.IsRequired)]int id, string keyword, string bookYear)
+        public IEnumerable<string> GetBooks([Dimensions( Calendar | BookYear )]int id, string keyword, string bookYear)
         {
 
             var searchQuery = (from k in Container.vw_Inventory

@@ -1,12 +1,14 @@
-﻿namespace DoE.Lsm.Data.Repositories  {
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
-    using System;
-    using System.Collections.Generic;
-    using System.Threading.Tasks;
+namespace DoE.Lsm.Data.Repositories  {
 
     using WF.Engine.Context;
     using Annotations;
     using EF;
+
+    using static Annotations.DimensionsOptions;
 
     public interface IRequisitionsRepository : IRepository<Requisition>
     {
@@ -43,28 +45,28 @@
         /// </summary>
         /// <param name="entityId"></param>
         /// <returns></returns>        
-        bool Exists([InstanceEntityType("REQUISITION")]Guid entityId);
+        bool Exists([InstanceType("REQUISITION")]Guid entityId);
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="entityId"></param>
         /// <returns></returns>
-        Task<bool> ExistsAsync([InstanceEntityType("REQUISITION")]Guid entityId);
+        Task<bool> ExistsAsync([InstanceType("REQUISITION")]Guid entityId);
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="entityId"></param>
         /// <returns></returns>
-        Requisition FindByInstanceId([InstanceEntityType("REQUISITION")]Guid entityId);
+        Requisition FindByInstanceId([InstanceType("REQUISITION")]Guid entityId);
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="requisitionNo"></param>
         /// <returns></returns>
-        Task<Requisition> GetRequisitionByEntityIdAsync([InstanceEntityType("REQUISITION")]Guid requisitionNo);
+        Task<Requisition> GetRequisitionByEntityIdAsync([InstanceType("REQUISITION")]Guid requisitionNo);
 
         /// <summary>
         /// 
@@ -72,7 +74,7 @@
         /// <param name="emisEntityId"></param>
         /// <param name="calendar"></param>
         /// <returns></returns>
-        int RequisitionsPerCalendar([Column(Calendar = Column.Fact.IsRequired)] string emisEntityId, string calendar);
+        int RequisitionsPerCalendar([Dimensions(BookYear | Calendar)] string emisEntityId, string calendar);
 
         /// <summary>
         /// 
@@ -81,7 +83,7 @@
         /// <param name="calendar"></param>
         /// <param name="status"></param>
         /// <returns></returns>
-        decimal TotalPricePerCalendar([Column(Calendar = Column.Fact.IsRequired)] string emisId, string calendar, string status);
+        decimal TotalPricePerCalendar([Dimensions(BookYear | Calendar)] string emisId, string calendar, string status);
 
         /// <summary>
         /// 
@@ -95,7 +97,7 @@
         /// <param name="stage"></param>
         /// <param name="state"></param>
         /// <returns></returns>
-        Task<string> MergeOnAsync([InstanceEntityType("REQUISITION")]Guid entityId, string reqNo, School s, byte minGrade, byte maxGrade, string calendar, string stage, string state);
+        Task<string> MergeOnAsync([InstanceType("REQUISITION")]Guid entityId, string reqNo, School s, byte minGrade, byte maxGrade, string calendar, string stage, string state);
 
         /// <summary>
         /// 

@@ -215,8 +215,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Api\AssemblyEnvironment.cs" />
-    <Compile Include="Api\ApplicationInfo.cs" />
+    <Compile Include="Api\ApplicationAssemblyInfo.cs" />
     <Compile Include="Api\EntityType.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

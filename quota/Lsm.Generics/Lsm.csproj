@@ -47,8 +47,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\AssemblyEnvironment.cs" />
     <Compile Include="API\Ext.Array.cs" />
     <Compile Include="API\Ext.String.cs" />
+    <Compile Include="API\ServiceComponent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

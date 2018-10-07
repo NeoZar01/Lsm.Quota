@@ -14,7 +14,7 @@ namespace DoE.Lsm.Web.Models
     /// <summary>
     ///     
     /// </summary>
-    [InstanceEntityType(nameof(EntityType.School), Description = "SCHOOL")]
+    [InstanceType(nameof(EntityType.School), "School")]
     public partial class SchoolDashboardViewModel : DashboardFactoryViewModel
     {
 
@@ -35,7 +35,7 @@ namespace DoE.Lsm.Web.Models
     /// <summary>
     ///     
     /// </summary>
-    [InstanceEntityType(nameof(EntityType.CircuitManager) , Description = "CIRCUIT_MANAGER")]
+    [InstanceType(nameof(EntityType.CircuitManager) , "CircuitManager")]
     public partial class CircuitDashboardViewModel : DashboardFactoryViewModel
     {
 
@@ -56,7 +56,7 @@ namespace DoE.Lsm.Web.Models
     /// <summary>
     ///     
     /// </summary>
-    [InstanceEntityType(nameof(EntityType.Administrator), Description = "ADMINISTRATOR")]
+    [InstanceType(nameof(EntityType.Administrator), "Administrator")]
     public partial class AdministratorDashboardViewModel : DashboardFactoryViewModel
     {
 

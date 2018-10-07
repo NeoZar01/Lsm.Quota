@@ -13,14 +13,14 @@ namespace DoE.Lsm.Data.Repositories.Profile
 
         public ProfileRepository(DbContext WhoIsWhoDbContext, ILogger logger) : base(WhoIsWhoDbContext, logger){}
 
-        public AspNetProfile GerUserProfileByRankAndStation(int emisCode, short station)
+        public AspNetProfile GerUserProfileByRankAndStation(string emisCode, short station)
         {
-            var user = WioDbContext.AspNetProfiles.Where(c => c.Role == emisCode && c.PositionCode == station).SingleOrDefault();
+            //var user = WioDbContext.AspNetProfiles.Where(c => c.Role == emisCode && c.PositionCode == station).SingleOrDefault();
 
-            if (user != null)
-            {
-                return user;
-            }
+            //if (user != null)
+            //{
+            //    return user;
+            //}
 
             // throw new InstanceNotFoundException("Location Was Not thrown from a try-catch block", "Unable To Find User Message ", "Ensure that user was registered.", WioDbContext.AspNetProfiles, emisCode, true, Severity.High.No);
             throw new InvalidDatabaseOperationException("Unable To Find User Message.");

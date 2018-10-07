@@ -12,7 +12,7 @@ namespace DoE.Lsm.WF.Component.Monitor.Annotations
     /// 
     /// </summary>
     [PSerializable]
-    public class Check : OnMethodBoundaryAspect
+    public class Trace : OnMethodBoundaryAspect
     {
 
         protected DateTime _estimatedMinutes;
@@ -23,7 +23,7 @@ namespace DoE.Lsm.WF.Component.Monitor.Annotations
         /// </summary>
         /// <param name="listener"></param>
         /// <param name="estimatedExecutionTimeInMinutes"></param>
-        public Check(string listener, int estimatedExecutionTimeInMinutes)
+        public Trace(string listener, int estimatedExecutionTimeInMinutes)
         {
                  _estimatedMinutes = DateTime.Now;
             this._estimatedMinutes = this._estimatedMinutes.AddMinutes(estimatedExecutionTimeInMinutes);
@@ -34,10 +34,11 @@ namespace DoE.Lsm.WF.Component.Monitor.Annotations
         /// 
         /// </summary>
         /// <param name="args"></param>
-        [InstanceEntityType(null, Name ="Time")]
+        [InstanceType(entities: "Time")]
         public override void OnEntry(MethodExecutionArgs args)
         {
-            args.MethodExecutionTag = new PayloadContext {   InstanceId =  Guid.NewGuid() , Entity = _estimatedMinutes , SubEntity = DateTime.Now};
+            // EntityType = _estimatedMinutes
+            args.MethodExecutionTag = new PayloadContext {   ComToken =  Guid.NewGuid()  , SubEntity = DateTime.Now};
             base.OnEntry(args);
         }
 

@@ -31,7 +31,7 @@ namespace DoE.Lsm.WF.Component.Requisitions.Tasks
 
             if (_instance == null)
             {
-                _instance = new SchoolJobs(repositoryContext.Requisitions.DbContext, payload.InstanceId);
+                _instance = new SchoolJobs(repositoryContext.Requisitions.DbContext, payload.ComToken);
 
                 switch (payload.Response)
                 {
@@ -54,7 +54,7 @@ namespace DoE.Lsm.WF.Component.Requisitions.Tasks
         /// <param name="dbStore"></param>
         /// <exception cref="ArgumentNullException">Handles null parameter values</exception>
         /// <returns></returns>
-        [Check(listener: "AsyncListener", estimatedExecutionTimeInMinutes: 2)]
+        [Trace(listener: "AsyncListener", estimatedExecutionTimeInMinutes: 2)]
         public async Task<JobInstance> PreambleRequisition(Requisition entity, PayloadContext payload, IRepositoryStoreRegistry dbStore)
         {
             if (entity    == null)      throw new ArgumentNullException(nameof(entity));

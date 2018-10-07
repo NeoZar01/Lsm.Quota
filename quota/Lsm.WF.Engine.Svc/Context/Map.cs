@@ -21,23 +21,24 @@ namespace DoE.Lsm.WF.Engine.Context
     ///              </para>
     ///          </para>
     ///
+    ///  <remark>This pattern can be replaced by using the ConstructorInfo class to invoke methods remotley in runtime</remark>
     ///  <see cref="WF.Tools.Request" />
     ///  <see cref="WF.Utils.Items.Utils.RequestRoute " />
     ///  <see cref="WF.Tools.Route" />
     /// </summary>
     public sealed class Map
     {                
-        private Dictionary<Key, RouteFactory> _routeContext = new Dictionary<Key, RouteFactory>(); //Stores your routes
+        private Dictionary<string, RouteFactory> _routeContext = new Dictionary<string, RouteFactory>(); //Stores your routes
 
         public Map(IRepositoryStoreRegistry store)
         {
-            _routeContext.Add(Key.Requisition, new RequisitionMap(store));  
+            _routeContext.Add(ApplicationAssemblyInfo.Requisitions, new RequisitionStore(store));  
         }
 
         ///<summary> 
         ///     Routes a request to its destinated component.   
         ///</summary>
-        public async Task<ExecutionResult> Turn(PayloadContext payload)
+        public async Task<ExecutionResult> Process(PayloadContext payload)
         {
               return await _routeContext[payload.Route].TakeAsync(payload);            
         }

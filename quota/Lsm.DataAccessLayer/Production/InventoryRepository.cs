@@ -13,6 +13,8 @@ namespace DoE.Lsm.Data.Repository.Inventories
     using Repositories.EF;
     using WF.Engine.Context;
 
+    using static Annotations.DimensionsOptions;
+
     public class InventoryRepository : RepositoryFactory<Inventory> , IInventoryRepository 
     {
 
@@ -61,7 +63,7 @@ namespace DoE.Lsm.Data.Repository.Inventories
         // <summary>
         //
         // </summary>
-        public IEnumerable<vw_Inventory> InventoryList([Column(Calendar = Column.Fact.IsRequired)]int emisCode, string keyword, string bookYear)
+        public IEnumerable<vw_Inventory> InventoryList([Dimensions(Calendar | BookYear )]int emisCode, string keyword, string bookYear)
         {
 
             var searchQuery = (from k in DbContext.vw_Inventory

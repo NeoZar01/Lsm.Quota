@@ -67,7 +67,7 @@ namespace DoE.Lsm.WF.Engines.Configurations
         }
 
 
-        #region  doCleanup
+        #region  GC
 
         private bool _disposed = false;
         private static readonly object _syncLock = new object();

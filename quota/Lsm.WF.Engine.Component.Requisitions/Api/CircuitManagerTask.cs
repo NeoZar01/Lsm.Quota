@@ -31,7 +31,7 @@ namespace DoE.Lsm.WF.Component.Requisitions.Tasks
 
                 if (_instance == null)
                 {
-                    _instance = new CircuitManagerTasks(repositoryContext.Requisitions.DbContext, request.InstanceId);
+                    _instance = new CircuitManagerTasks(repositoryContext.Requisitions.DbContext, request.ComToken);
 
                     switch (request.Response)
                     {

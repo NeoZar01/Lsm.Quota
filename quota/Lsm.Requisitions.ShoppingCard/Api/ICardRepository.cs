@@ -40,7 +40,7 @@ namespace DoE.Lsm.ShoppingCard.Api
         ///<summary>
         ///      Gets the total price of the card.
         ///</summary>
-        decimal GetTotalPrice<T>([InstanceEntityType(options: "REQUISITIONS, ORDERS")]string entityType, string entityId, int id) where T : class;
+        decimal GetTotalPrice<T>([InstanceType(entities: "REQUISITIONS, ORDERS")]string entityType, string entityId, int id) where T : class;
 
         /**
          * 
@@ -48,7 +48,7 @@ namespace DoE.Lsm.ShoppingCard.Api
         ///<summary>
        ///      Remove an item from the car list.
        ///</summary>
-        void RemoveItem([InstanceEntityType(options: "REQUISITIONS, ORDERS")]string entityType , string entityId , string itemId );
+        void RemoveItem([InstanceType(entities: "REQUISITIONS, ORDERS")]string entityType , string entityId , string itemId );
 
     }
 }

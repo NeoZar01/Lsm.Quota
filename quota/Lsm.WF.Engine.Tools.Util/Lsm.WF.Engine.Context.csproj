@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Api\PayloadProcessor.cs" />
     <Compile Include="Api\ProcessOutcome.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Api\RouteRequest.cs" />

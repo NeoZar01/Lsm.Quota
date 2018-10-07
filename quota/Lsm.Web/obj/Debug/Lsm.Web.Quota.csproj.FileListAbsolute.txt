@@ -46,7 +46,7 @@ C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Web\bin\System.Web.WebPages.Ra
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Web\bin\WebGrease.dll
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Web\bin\WF.AddIn.ShoppingCard.dll
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Web\bin\DoE.Lsm.WF.Engine.Context.dll
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Web\bin\DoE.Lsm.Files.dll
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Web\bin\log4net.dll
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Web\bin\DoE.Lsm.Annotations.pdb
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Web\bin\DoE.Lsm.Data.Repositories.pdb
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Web\bin\Lsm.Generics.pdb
@@ -89,7 +89,7 @@ C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Web\bin\Microsoft.Owin.Securit
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Web\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Web\bin\DoE.Lsm.WF.Engine.Context.pdb
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Web\bin\DoE.Lsm.Files.pdb
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Web\bin\log4net.xml
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Web\obj\Debug\Lsm.Web.Quota.csprojResolveAssemblyReference.cache
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Web\obj\Debug\DoE.Web.Mvc.Api.EntityType.resources
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Web\obj\Debug\DoE.Web.Mvc.Api.Resources.resources

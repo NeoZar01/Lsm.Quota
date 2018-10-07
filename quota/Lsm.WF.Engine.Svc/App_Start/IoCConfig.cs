@@ -14,7 +14,7 @@ namespace DoE.Lsm.WF.Engine.Configurations
         public static void ConfigureContainer(IUnityContainer container)
         {
              container.RegisterType<IRepositoryStoreRegistry, RepositoryStore>();
-             container.RegisterType<IWFEngineService, WFEngineService>();
+             container.RegisterType<IWorkFlow, WorkFlow>();
         }
     }
 }

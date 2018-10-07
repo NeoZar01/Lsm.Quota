@@ -25,7 +25,7 @@ namespace DoE.Lsm.Data.Repositories.Norms
         //    }
         //}
 
-        private PortalLsm DataSource { get { return this._DbContext as PortalLsm; } }
+        private PortalLsm Database { get { return this._DbContext as PortalLsm; } }
 
 
         public string BookYear
@@ -35,7 +35,7 @@ namespace DoE.Lsm.Data.Repositories.Norms
                 try
                 {
                     var bookYear =
-                                DataSource.vw_RequisitionsNorms
+                                Database.vw_RequisitionsNorms
                                           .Select(c => c.BookYear)
                                           .Single();
                     return bookYear;

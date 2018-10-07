@@ -1,4 +1,6 @@
-﻿namespace DoE.Lsm.Logger
+﻿using log4net;
+
+namespace DoE.Lsm.Logger
 {
     using Context;
 
@@ -15,17 +17,17 @@
        ///<summary>
        ///  Error Thread    
        ///</summary>
-        Incident Exception  {set;}
+        Error Exception  {set;}
 
         ///<summary>
         ///  Minor Error log 
         ///</summary>
-        ILogger Minor  {get;}
+        ILogger Record  {get;}
 
         ///<summary>
         ///  Critical Error log 
         ///</summary>
-        ILogger Critical  {get;}
+        ILogger Warn  {get;}
 
         ///<summary>
         ///  Register a new listerner
@@ -40,6 +42,6 @@
         ///<summary>
         ///  Broadcasts a error thread to all listerners.
         ///</summary>
-        void NotifyAll(Incident exceptionEnv);
+        void NotifyAll(Error exceptionEnv);
     }
 }

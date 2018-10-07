@@ -90,12 +90,12 @@ C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Annotations\bin\Debug\DoE.Lsm.
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Annotations\bin\Debug\DoE.Lsm.Logger.dll
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Annotations\bin\Debug\DoE.Lsm.WF.Engine.Context.dll
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Annotations\bin\Debug\PostSharp.dll
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Annotations\bin\Debug\DoE.Lsm.Files.dll
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Annotations\bin\Debug\log4net.dll
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Annotations\bin\Debug\EntityFramework.dll
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Annotations\bin\Debug\DoE.Lsm.Logger.pdb
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Annotations\bin\Debug\DoE.Lsm.WF.Engine.Context.pdb
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Annotations\bin\Debug\PostSharp.xml
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Annotations\bin\Debug\DoE.Lsm.Files.pdb
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Annotations\bin\Debug\log4net.xml
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Annotations\bin\Debug\EntityFramework.xml
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Annotations\obj\Debug\Lsm.Annotations.csprojResolveAssemblyReference.cache
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Annotations\obj\Debug\PostSharp\touch

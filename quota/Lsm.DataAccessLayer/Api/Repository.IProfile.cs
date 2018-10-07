@@ -7,7 +7,7 @@ namespace DoE.Lsm.Data.Repositories.Profile
     public interface IProfileRepository : IRepository<AspNetProfile>
     {
 
-        AspNetProfile GerUserProfileByRankAndStation(int emisCode, short station);
+        AspNetProfile GerUserProfileByRankAndStation(string emisCode, short station);
 
         //IEnumerable<AspNetProfile> GetProfileByMetaData(string keyword);
 

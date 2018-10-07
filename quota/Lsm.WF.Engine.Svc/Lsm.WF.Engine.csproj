@@ -75,24 +75,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Service1.svc" />
+    <Content Include="WorkFlow.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Api\ApplicationAssemblyInfo.cs" />
     <Compile Include="App_Start\IoCConfig.cs" />
     <Compile Include="App_Start\NormsStandardsRoleStructureConfig.cs" />
-    <Compile Include="Context\Entities\Administrator.cs" />
-    <Compile Include="Context\Entities\CircuitManager.cs" />
+    <Compile Include="Context\Entities\Role.Administrator.cs" />
+    <Compile Include="Context\Entities\Role.CircuitManager.cs" />
     <Compile Include="Context\Entities\Role.cs" />
-    <Compile Include="Context\Entities\School.cs" />
-    <Compile Include="Context\Entities\SubjectSpecialist.cs" />
-    <Compile Include="Context\Entities\Tickets.cs" />
+    <Compile Include="Context\Entities\Role.School.cs" />
+    <Compile Include="Context\Entities\Role.SubjectSpecialist.cs" />
+    <Compile Include="Context\Entities\Role.Tickets.cs" />
     <Compile Include="Context\Map.cs" />
-    <Compile Include="Api\EngineComponents.cs" />
-    <Compile Include="Service1.svc.cs">
-      <DependentUpon>Service1.svc</DependentUpon>
+    <Compile Include="Context\ProcessInvoker.cs" />
+    <Compile Include="WorkFlow.svc.cs">
+      <DependentUpon>WorkFlow.svc</DependentUpon>
     </Compile>
-    <Compile Include="Api\IWFEngineService.cs" />
+    <Compile Include="Api\Service.IWorkFlow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -111,6 +112,10 @@
     <ProjectReference Include="..\Lsm.DataAccessLayer\Lsm.Service.DataRepository.csproj">
       <Project>{7e8c0842-0fe6-47de-8f70-a9533a7c5c09}</Project>
       <Name>Lsm.Service.DataRepository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lsm.Generics\Lsm.csproj">
+      <Project>{664fa002-aec7-45c2-9033-66b197886719}</Project>
+      <Name>Lsm</Name>
     </ProjectReference>
     <ProjectReference Include="..\Lsm.WF.Engine.Component.Calculations\Lsm.WF.Engine.Service.Calculations.csproj">
       <Project>{9a53438b-efb5-4617-9eaa-3a1a0805e5ac}</Project>

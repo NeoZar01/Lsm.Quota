@@ -17,7 +17,7 @@ namespace DoE.Lsm.Services.Caller.IoC
         public static void Install(IUnityContainer container)
         {
             container
-                .RegisterType<ILogger, ErrorLogger>()
+                .RegisterType<ILogger, AppLogger>()
                 .RegisterType<IRepositoryStoreRegistry, RepositoryStore>()
                 .RegisterType<IShoppingCard, ShoppingCard>()
                 .RegisterType<IServicesFactory, Caller>();

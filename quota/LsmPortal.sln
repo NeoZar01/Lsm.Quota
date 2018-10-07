@@ -41,7 +41,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.Web.Quota", "Lsm.Web\Ls
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.WF.Engine.Service.Monitor", "Lsm.WF.Engine.Component.Monitor\Lsm.WF.Engine.Service.Monitor.csproj", "{771B5229-3AA8-40E8-B2C0-2A4587C4CDBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.Service.DataRepository.Tests", "Lsm.Tests\Lsm.Service.DataRepository.Tests.csproj", "{E5A5B02B-6C5A-4973-9354-F94EA28E109C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.Tests", "Lsm.Tests\Lsm.Tests.csproj", "{E5A5B02B-6C5A-4973-9354-F94EA28E109C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.WF.Engine.Service.Calculations", "Lsm.WF.Engine.Component.Calculations\Lsm.WF.Engine.Service.Calculations.csproj", "{9A53438B-EFB5-4617-9EAA-3A1A0805E5AC}"
 EndProject
@@ -85,6 +85,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.WF.Engine.Service.Orders", "Lsm.WF.Engine.Component.Orders\Lsm.WF.Engine.Service.Orders.csproj", "{BA7C79C7-4414-4AC2-A434-5713684AF921}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.WF.Engine", "Lsm.WF.Engine.Svc\Lsm.WF.Engine.csproj", "{EC31E6F3-E9DD-4F6E-AB12-7BC94A3D0682}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.Tests.Console", "Lsm.Tests.Console\Lsm.Tests.Console.csproj", "{148FAAA3-0B69-46A1-AEAA-A0CFB7CF70F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -168,6 +170,10 @@ Global
 		{EC31E6F3-E9DD-4F6E-AB12-7BC94A3D0682}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC31E6F3-E9DD-4F6E-AB12-7BC94A3D0682}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC31E6F3-E9DD-4F6E-AB12-7BC94A3D0682}.Release|Any CPU.Build.0 = Release|Any CPU
+		{148FAAA3-0B69-46A1-AEAA-A0CFB7CF70F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{148FAAA3-0B69-46A1-AEAA-A0CFB7CF70F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{148FAAA3-0B69-46A1-AEAA-A0CFB7CF70F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{148FAAA3-0B69-46A1-AEAA-A0CFB7CF70F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -193,5 +199,6 @@ Global
 		{2EF317CF-5ADC-4B84-8704-A11C3AC4BAAE} = {65C333A3-8A1A-4018-AE6D-471181C3B11D}
 		{BA7C79C7-4414-4AC2-A434-5713684AF921} = {BB1F53C4-5F1E-4886-A3DF-902F933FC50B}
 		{EC31E6F3-E9DD-4F6E-AB12-7BC94A3D0682} = {BB1F53C4-5F1E-4886-A3DF-902F933FC50B}
+		{148FAAA3-0B69-46A1-AEAA-A0CFB7CF70F6} = {87E89F4A-C1CD-4734-928E-DB4263D7B3AD}
 	EndGlobalSection
 EndGlobal

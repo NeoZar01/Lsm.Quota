@@ -1,4 +1,4 @@
-﻿using DoE.Lsm.WF.Engine.Api;
+﻿using DoE.Lsm;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -36,5 +36,6 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
 
-//Workflow Engine Components
-[assembly: EngineComponents("Requisitions, Orders")]
+//Assembles service components
+//This names must be unique for every service
+[assembly: ServiceComponent( "0", "Requisitions" , "1" , "Reports" , "2" , "Validations")]

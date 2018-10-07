@@ -58,8 +58,6 @@ namespace DoE.Lsm.Data.Repositories.Lock
         {
             try
             {
-
-
                 var entity = Db.C_Lock
                  .Where( c => c.EntityType.Equals(entityType))
                  .Where( c => c.EntityId.Equals(entityId))

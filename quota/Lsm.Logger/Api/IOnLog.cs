@@ -12,13 +12,13 @@
         ///       Used for logging  
         /// </summary>
         /// <param name="log"></param>
-        void Log(Incident log);
+        void Log(Error log);
 
         /// <summary>
         ///         Used for debugging - Prints the actual code instead of the errors spit by the application.
         /// </summary>
         /// <param name="incident"></param>
-        void Debug(Incident incident);
+        void Debug(Error incident);
                 
     }
 }

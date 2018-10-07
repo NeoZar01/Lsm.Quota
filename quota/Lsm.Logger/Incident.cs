@@ -2,10 +2,14 @@
 
 namespace DoE.Lsm.Logger.Context
 {
+
+    public enum Level
+    { High, Low }
+
     /// <summary>
     /// 
     /// </summary>
-    public class Incident
+    public class Error
     {
         /// <summary>
         /// 
@@ -22,25 +26,13 @@ namespace DoE.Lsm.Logger.Context
         /// <summary>
         /// 
         /// </summary>
+        public string ErrorType
+        { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public string StackTrace 
-        { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public string Message 
-        { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public string Source 
-        { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public string Solution 
         { get; set; }
 
         /// <summary>
@@ -52,7 +44,13 @@ namespace DoE.Lsm.Logger.Context
         /// <summary>
         /// 
         /// </summary>
-        public int Level
+        public string AttemptedAction
+        { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public int Code
         { get; set; }
 
 

@@ -12,19 +12,39 @@ namespace DoE.Lsm.WF.Engine.Context
         /// <summary>
         ///     Initial Instance Id of the EntityType thrown
         /// </summary>
-        public Guid InstanceId
+        public Guid ComToken
         { get; set; }
 
         /// <summary>
-        ///         Used for routing
+        ///     Initial Instance Id of the EntityType thrown
         /// </summary>
-        public Key Route
+        public string RequestTokenType
+        { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string Status
+        { get; set; }
+
+        /// <summary>
+        ///         Any Entity type passed with the payload
+        /// </summary>
+        public string EntityType
         { get; set; }
 
         /// <summary>
         ///         Assigned Role
         /// </summary>
-        public Role Role
+        public string Role
+        { get; set; }
+
+
+
+        /// <summary>
+        ///         Used for routing
+        /// </summary>
+        public string Route
         { get; set; }
 
         /// <summary>
@@ -42,13 +62,13 @@ namespace DoE.Lsm.WF.Engine.Context
         /// <summary>
         ///         Name of sender
         /// </summary>
-        public string SenderName
+        public string User
         { get; set; }
 
         /// <summary>
         ///         Payload receiver
         /// </summary>
-        public int Receiver
+        public string DestinationUser
         { get; set; }
 
         /// <summary>
@@ -57,11 +77,6 @@ namespace DoE.Lsm.WF.Engine.Context
         public string ReceiverName
         { get; set; }
 
-        /// <summary>
-        ///         Any Entity type passed with the payload
-        /// </summary>
-        public object Entity
-        { get; set; }
 
         /// <summary>
         ///         SubEntity inheriting from the above entity
@@ -71,26 +86,8 @@ namespace DoE.Lsm.WF.Engine.Context
 
     }
 
-
-
-
-
     public enum Token
     { }
-
-    ///<summary>
-    ///  <remark> 
-    ///      To include a plugin that will be re-routed via the workflow engine the application path needs to be added to this enum.  
-    ///  </remark>
-    ///</summary>    
-    public enum Key
-    { Requisition , Orders , Distribution };
-
-    /// <summary>
-    ///   Handles role templates in the WorkFlow.
-    ///</summary>     
-    public enum Role : int 
-    { Administrator = 0, School = 1, CircuitManager = 2, SubjectSpecialist = 3 }
 
 
     ///<summary>

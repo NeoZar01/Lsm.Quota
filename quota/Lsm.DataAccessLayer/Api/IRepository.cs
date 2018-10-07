@@ -2,10 +2,10 @@
 
 ///<summary>
 ///  This class will create signatures for all the mandatory methods that needs to be implemented in every repository class.
-///  <remark cref=""> TEntity Represents a table for a particular type in the underlying database </remark>
-///  <see cref="https://msdn.microsoft.com/en-us/library/bb358844(v=vs.110).aspx#Inheritance%20Hierarchy"> For more info on using <Table> object </see>
-///  <seealso cref="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/where-generic-type-constraint"> For more info about setting constraints on generics implementations.</seealso>
-///</summary
+///  <remark    cref=""> TEntity Represents a table for a particular type in the underlying database </remark>
+///  <see       cref="https://msdn.microsoft.com/en-us/library/bb358844(v=vs.110).aspx#Inheritance%20Hierarchy"> For more info on using <Table> object </see>
+///  <seealso   cref="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/where-generic-type-constraint"> For more info about setting constraints on generics implementations.</seealso>
+///</summary>
 namespace DoE.Lsm.Data.Repositories
 {
     using System;
@@ -60,6 +60,5 @@ namespace DoE.Lsm.Data.Repositories
         /// <param name="Expression<Funct<TEntity,bool>>"> Lamdba expression</param>
         ///</summary
         IEnumerable<TEntity> ManyAsync(Expression<Func<TEntity, bool>> predicate);
-
     }
 }

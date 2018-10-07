@@ -17,7 +17,7 @@
         /// <param name="createdby"></param>
         /// <param name="state"></param>
         /// <returns></returns>
-        string CreateFlowInstance<T>([InstanceEntityType("QUOTA.REQUISITION")]string entityType, string entityId, string createdby, string completionDateVariable, string completionDateSubVariable, string state, string outcome) where T : class;
+        string CreateFlowInstance<T>([InstanceType("QUOTA.REQUISITION")]string entityType, string entityId, string createdby, string completionDateVariable, string completionDateSubVariable, string state, string outcome) where T : class;
 
         /// <summary>
         /// 
@@ -28,7 +28,7 @@
         /// <param name="createdby"></param>
         /// <param name="state"></param>
         /// <returns></returns>
-        Task<string> CreateFlowInstanceAsync<T>([InstanceEntityType("QUOTA.REQUISITION")]string entityType, string entityId, string createdby, string completionDateVariable, string completionDateSubVariable, string state, string outcome) where T : class;
+        Task<string> CreateFlowInstanceAsync<T>([InstanceType("QUOTA.REQUISITION")]string entityType, string entityId, string createdby, string completionDateVariable, string completionDateSubVariable, string state, string outcome) where T : class;
 
         /// <summary>
         /// 
@@ -40,7 +40,7 @@
         /// <param name="recepient"></param>
         /// <param name="state"></param>
         /// <returns></returns>
-        string CreateStepInstance([InstanceEntityType("QUOTA.REQUISITION")]string flowId, string entityType, string entityId, string creator, string recepient ,  string completionDateVariable, string completionDateSubVariable, string state, string outcome);
+        string CreateStepInstance([InstanceType("QUOTA.REQUISITION")]string flowId, string entityType, string entityId, string creator, string recepient ,  string completionDateVariable, string completionDateSubVariable, string state, string outcome);
 
         /// <summary>
         /// 
@@ -52,6 +52,6 @@
         /// <param name="recepient"></param>
         /// <param name="state"></param>
         /// <returns></returns>
-        Task<string> CreateStepInstanceAsync([InstanceEntityType("QUOTA.REQUISITION")]string flowId, string entityType, string entityId, string creator, string recepient, string completionDateVariable, string completionDateSubVariable, string state, string outcome);
+        Task<string> CreateStepInstanceAsync([InstanceType("QUOTA.REQUISITION")]string flowId, string entityType, string entityId, string creator, string recepient, string completionDateVariable, string completionDateSubVariable, string state, string outcome);
     }
 }

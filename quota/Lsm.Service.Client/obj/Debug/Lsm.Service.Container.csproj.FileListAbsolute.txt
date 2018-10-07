@@ -42,7 +42,7 @@ C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Service.Client\bin\Debug\WF.Ad
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Service.Client\bin\Debug\DoE.Lsm.WF.Engine.Context.dll
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Service.Client\bin\Debug\PostSharp.dll
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Service.Client\bin\Debug\DoE.Lsm.Annotations.dll
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Service.Client\bin\Debug\DoE.Lsm.Files.dll
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Service.Client\bin\Debug\log4net.dll
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Service.Client\bin\Debug\DoE.Lsm.Data.Repositories.pdb
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Service.Client\bin\Debug\DoE.Lsm.Logger.pdb
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Service.Client\bin\Debug\WF.AddIn.ShoppingCard.pdb
@@ -54,7 +54,7 @@ C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Service.Client\bin\Debug\Paged
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Service.Client\bin\Debug\DoE.Lsm.WF.Engine.Context.pdb
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Service.Client\bin\Debug\PostSharp.xml
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Service.Client\bin\Debug\DoE.Lsm.Annotations.pdb
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Service.Client\bin\Debug\DoE.Lsm.Files.pdb
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Service.Client\bin\Debug\log4net.xml
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Service.Client\obj\Debug\Lsm.Service.Container.csprojResolveAssemblyReference.cache
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Service.Client\obj\Debug\Education.Services.dll
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Service.Client\obj\Debug\Education.Services.pdb

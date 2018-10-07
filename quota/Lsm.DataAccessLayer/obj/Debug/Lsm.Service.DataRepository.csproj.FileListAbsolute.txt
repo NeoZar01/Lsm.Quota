@@ -38,7 +38,7 @@ C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.DataAccessLayer\bin\Debug\Enti
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.DataAccessLayer\bin\Debug\PagedList.dll
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.DataAccessLayer\bin\Debug\PagedList.Mvc.dll
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.DataAccessLayer\bin\Debug\PostSharp.dll
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.DataAccessLayer\bin\Debug\DoE.Lsm.Files.dll
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.DataAccessLayer\bin\Debug\log4net.dll
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.DataAccessLayer\bin\Debug\DoE.Lsm.Annotations.pdb
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.DataAccessLayer\bin\Debug\DoE.Lsm.Logger.pdb
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.DataAccessLayer\bin\Debug\DoE.Lsm.WF.Engine.Context.pdb
@@ -47,7 +47,7 @@ C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.DataAccessLayer\bin\Debug\Enti
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.DataAccessLayer\bin\Debug\PagedList.xml
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.DataAccessLayer\bin\Debug\PagedList.Mvc.xml
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.DataAccessLayer\bin\Debug\PostSharp.xml
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.DataAccessLayer\bin\Debug\DoE.Lsm.Files.pdb
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.DataAccessLayer\bin\Debug\log4net.xml
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.DataAccessLayer\obj\Debug\Lsm.Service.DataRepository.csprojResolveAssemblyReference.cache
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.DataAccessLayer\obj\Debug\PostSharp\touch
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.DataAccessLayer\obj\Debug\PostSharp\dependencies.txt
