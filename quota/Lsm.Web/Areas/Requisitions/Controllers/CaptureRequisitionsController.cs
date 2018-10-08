@@ -6,7 +6,6 @@ namespace DoE.Lsm.Web.Requisitions.Controllers
     using Data.Repositories;
     using Logger;
     using Models;
-    using ShoppingCard.Api;
 
     [Authorize]
     [RouteArea("Test")]
@@ -15,7 +14,7 @@ namespace DoE.Lsm.Web.Requisitions.Controllers
     public class CaptureController : BaseController
     {
 
-        public CaptureController(ILogger logger, IRepositoryStoreRegistry repositoryStore, IShoppingCard shoppingcard) : base(logger, repositoryStore) {}
+        public CaptureController(ILogger logger, IRepositoryStoreRegistry repositoryStore) : base(logger, repositoryStore) {}
 
         /// <summary>
         /// 
@@ -27,7 +26,7 @@ namespace DoE.Lsm.Web.Requisitions.Controllers
         {
             var model = new CaptureRequisitionsViewModel
             {
-                Calendar = _repositoriesDataStore.StandardsAndNorms.BookYear
+              //  Calendar = _repositoriesDataStore.StandardsAndNorms.BookYear
             };
 
             return View(model);

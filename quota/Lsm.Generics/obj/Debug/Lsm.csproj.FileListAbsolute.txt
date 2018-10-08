@@ -14,8 +14,9 @@ C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Generics\bin\Debug\Ls
 C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Generics\obj\Debug\Lsm.Generics.dll
 C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Generics\obj\Debug\Lsm.Generics.pdb
 C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Generics\obj\Debug\Lsm.csprojResolveAssemblyReference.cache
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Generics\bin\Debug\Lsm.Generics.dll.config
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Generics\bin\Debug\Lsm.Generics.dll
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Generics\bin\Debug\Lsm.Generics.pdb
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Generics\obj\Debug\Lsm.Generics.dll
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Generics\obj\Debug\Lsm.Generics.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Generics\bin\Debug\Lsm.Generics.dll.config
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Generics\bin\Debug\Lsm.Generics.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Generics\bin\Debug\Lsm.Generics.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Generics\obj\Debug\Lsm.Generics.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Generics\obj\Debug\Lsm.Generics.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Generics\obj\Debug\Lsm.csprojResolveAssemblyReference.cache

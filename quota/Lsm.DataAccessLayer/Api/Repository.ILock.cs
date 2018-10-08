@@ -1,14 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DoE.Lsm.Data.Repositories.Api
+﻿namespace DoE.Lsm.Data.Repositories.Lock
 {
-    using EF;
-
-    public interface ILockRepository : IRepository<C_Lock>
+    public interface ILockRepository
     {
 
         /// <summary>
@@ -16,14 +8,17 @@ namespace DoE.Lsm.Data.Repositories.Api
         /// </summary>
         /// <param name="entityType"></param>
         /// <param name="entityId"></param>
+        /// <param name="token"></param>
         void Lock(string entityType, string entityId, string token);
-
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="entityType"></param>
         /// <param name="entityId"></param>
+        /// <param name="creatorToken"></param>
+        /// <param name="releaserToken"></param>
         void UnLock(string entityType, string entityId, string creatorToken, string releaserToken);
+
     }
 }

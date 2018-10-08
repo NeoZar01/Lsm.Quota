@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Portal.AuthModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Person">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="RowGuid" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RowGuid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="IdNo" Type="int" />
+    <Property Name="FirstName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MiddleName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Title" Type="varchar(max)" Nullable="false" />
+    <Property Name="MaidenName" Type="nvarchar(max)" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="Initials" Type="varchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Portal.Auth.Person.vwAddressDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwAddressDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="EmisCode" />
+      <PropertyRef Name="BranchName" />
+      <PropertyRef Name="ParentBranch" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="HomeAddress" Type="nvarchar(max)" />
+    <Property Name="BranchName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ParentBranch" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="StAddress" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityContainer Name="PortalAuthModelStoreContainer">
+    <EntitySet Name="Person" EntityType="Self.Person" Schema="Person" store:Type="Tables" />
+    <EntitySet Name="vwAddressDetails" EntityType="Self.vwAddressDetails" store:Type="Views" store:Schema="Person">
+      <DefiningQuery>SELECT 
+    [vwAddressDetails].[Id] AS [Id], 
+    [vwAddressDetails].[EmisCode] AS [EmisCode], 
+    [vwAddressDetails].[HomeAddress] AS [HomeAddress], 
+    [vwAddressDetails].[BranchName] AS [BranchName], 
+    [vwAddressDetails].[ParentBranch] AS [ParentBranch], 
+    [vwAddressDetails].[StAddress] AS [StAddress]
+    FROM [Person].[vwAddressDetails] AS [vwAddressDetails]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

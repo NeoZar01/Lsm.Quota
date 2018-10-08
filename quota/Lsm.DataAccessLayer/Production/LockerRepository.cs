@@ -8,7 +8,6 @@ using System.Reflection;
 
 namespace DoE.Lsm.Data.Repositories.Lock
 {
-    using Api;
     using EF;
     using Logger;
     using Annotations.Exceptions;
@@ -77,7 +76,7 @@ namespace DoE.Lsm.Data.Repositories.Lock
 
         }
 
-        protected PortalLsm Db { get { return this._DbContext as PortalLsm; } }
+        protected ApplicationsNormsStandards Db { get { return this._DbContext as ApplicationsNormsStandards; } }
 
     }
 }

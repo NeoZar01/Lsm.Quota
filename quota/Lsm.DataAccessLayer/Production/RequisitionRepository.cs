@@ -6,6 +6,7 @@ using System.Collections.Generic;
 
 namespace DoE.Lsm.Data.Repositories
 {
+
     using EF;
     using Logger;
     using WF.Engine.Context;
@@ -20,7 +21,7 @@ namespace DoE.Lsm.Data.Repositories
         private delegate ExecutionResult WorkTask(int e);
 
         public RequisitionRepository(PortalLsm dbContext, ILogger logger) : base(dbContext, logger)
-        {}
+        { }
 
 
 
@@ -33,7 +34,6 @@ namespace DoE.Lsm.Data.Repositories
         {
             requisition.LastModifiedDate = DateTime.Now;
             requisition.State = state;
-            requisition.Stage = stage;
 
             try
             {
@@ -82,8 +82,7 @@ namespace DoE.Lsm.Data.Repositories
         {
             requisition.LastModifiedDate = DateTime.Now;
             requisition.State = state;
-            requisition.Stage = stage;
-
+ 
             try
             {
                 return await DbContext.SaveChangesAsync() == 1 ? ExecutionResult.Success : ExecutionResult.Failed;
@@ -104,7 +103,7 @@ namespace DoE.Lsm.Data.Repositories
 
             set
             {
-                var requisitionLinq = DbContext.Requisitions.Where(c => (c.InstanceId.Equals( new Guid(value)))).SingleOrDefault();
+                var requisitionLinq = DbContext.Requisitions.Where(c => (c.InstanceId.Equals(new Guid(value)))).SingleOrDefault();
 
                 _status = requisitionLinq == null ? "INVALID" : requisitionLinq.State;
             }
@@ -121,7 +120,7 @@ namespace DoE.Lsm.Data.Repositories
             {
 
                 var requisition = DbContext.Requisitions
-                                           .Where(c => c.EmisEntityId.Equals(value) && c.Stage.Equals("PREAMBLE") && c.State.Equals("IN_MEMORY"))  //make sure it was never send to the drafts or denied
+                                           .Where(c => c.EmisToken.Equals(value) && c.State.Equals("IN_MEMORY"))  //make sure it was never send to the drafts or denied
                                            .OrderByDescending((c) => c.LastModifiedDate) //order the last updated requisition
                                            .Take(1)           //take the first on the list
                                            .FirstOrDefault();  //just to be sure.     
@@ -137,11 +136,11 @@ namespace DoE.Lsm.Data.Repositories
             {
 
                 var requisitionQuery = await DbContext.Requisitions
-                                                                .Where(c => c.ReqNO.Equals(reqNo) && c.EmisEntityId.Equals(emisId))
+                                                                .Where(c => c.ReqNO.Equals(reqNo) && c.EmisToken.Equals(emisId))
                                                                 .FirstOrDefaultAsync();
 
                 if (requisitionQuery != null)
-                return true;
+                    return true;
                 return false;
             }
             catch
@@ -157,41 +156,39 @@ namespace DoE.Lsm.Data.Repositories
             try
             {
 
-            Requisition requisition;
+                Requisition requisition;
 
-            if (await ExistsAsync(entityId))
-            {
-                requisition = DbContext.Requisitions
-                                       .Where(c => c.InstanceId.Equals(entityId) && c.EmisEntityId.Equals(s.RowGuid.ToString()) && c.Calendar.Equals(calendar))
-                                       .SingleOrDefault();
-
-                requisition.LastModifiedDate    = DateTime.Now;
-                requisition.Stage               = stage;
-                requisition.State               = state;
-
-            }
-            else
-            {
-
-                requisition = new Requisition
+                if (await ExistsAsync(entityId))
                 {
-                    Calendar            = calendar,
-                    EmisEntityId        = s.RowGuid.ToString(),
-                    ReqNO               = reqNo,
-                    GrFrom              = minGrade,
-                    GrTo                = maxGrade,
-                    CreationDate        = DateTime.Now,
-                    LastModifiedDate    = DateTime.Now,
-                    Stage               = stage,
-                    State               = state
-                };
+                    requisition = DbContext.Requisitions
+                                           .Where(c => c.InstanceId.Equals(entityId) && c.EmisToken.Equals(s.RowGuid.ToString()) && c.Calendar.Equals(calendar))
+                                           .SingleOrDefault();
 
-                DbContext.Requisitions.Add(requisition);
-            }
+                    requisition.LastModifiedDate = DateTime.Now;
+                    requisition.State = state;
 
-                 var task = await DbContext.SaveChangesAsync();
+                }
+                else
+                {
 
-                return (ExecutionResult)task == ExecutionResult.Success ? requisition.ReqNO : null ;
+                    requisition = new Requisition
+                    {
+                        Calendar = calendar,
+                        EmisToken = s.RowGuid.ToString(),
+                        ReqNO = reqNo,
+                        GrFrom = minGrade,
+                        GrTo = maxGrade,
+                        CreationDate = DateTime.Now,
+                        LastModifiedDate = DateTime.Now,
+                        State = state
+                    };
+
+                    DbContext.Requisitions.Add(requisition);
+                }
+
+                var task = await DbContext.SaveChangesAsync();
+
+                return (ExecutionResult)task == ExecutionResult.Success ? requisition.ReqNO : null;
             }
             catch
             {
@@ -202,7 +199,7 @@ namespace DoE.Lsm.Data.Repositories
         public IEnumerable<Requisition> GetRequisitionsByState(string emisId, string stage, string state)
         {
             return DbContext.Requisitions
-                                      .Where(c => c.EmisEntityId.Equals(emisId) && c.Stage.Equals(stage) && c.State.Equals(state))
+                                      .Where(c => c.EmisToken.Equals(emisId)  && c.State.Equals(state))
                                       .OrderByDescending(c => c.CreationDate);
         }
 
@@ -210,8 +207,8 @@ namespace DoE.Lsm.Data.Repositories
         {
             try
             {
-                return  DbContext.Requisitions
-                                           .Where(c => c.EmisEntityId == emisEntityId && (c.Calendar.Equals(calendar)))
+                return DbContext.Requisitions
+                                           .Where(c => c.EmisToken == emisEntityId && (c.Calendar.Equals(calendar)))
                                            .Count();
             }
             catch
@@ -227,10 +224,10 @@ namespace DoE.Lsm.Data.Repositories
             try
             {
                 var sumLinq = DbContext.Requisitions
-                                                .Where(c => c.EmisEntityId == emisId && c.Calendar.Equals(calendar) && c.State == state)
+                                                .Where(c => c.EmisToken.Equals(emisId) && c.Calendar.Equals(calendar) && c.State == state)
                                                 .Sum(c => c.TotalPrice);
 
-                return sumLinq != null ?  Math.Round(sumLinq ?? 0, 2, MidpointRounding.AwayFromZero) : 0M;
+                return sumLinq != null ? Math.Round(sumLinq ?? 0, 2, MidpointRounding.AwayFromZero) : 0M;
             }
             catch
             {
@@ -244,7 +241,7 @@ namespace DoE.Lsm.Data.Repositories
             try
             {
 
-                var requisition =  DbContext.Requisitions
+                var requisition = DbContext.Requisitions
                                                            .Where(c => c.InstanceId.Equals(entityId))
                                                            .SingleOrDefaultAsync();
 
@@ -262,11 +259,11 @@ namespace DoE.Lsm.Data.Repositories
             try
             {
 
-            var requisition = await DbContext.Requisitions
-                                                       .Where(c => c.InstanceId.Equals(entityId))
-                                                       .SingleOrDefaultAsync();
+                var requisition = await DbContext.Requisitions
+                                                           .Where(c => c.InstanceId.Equals(entityId))
+                                                           .SingleOrDefaultAsync();
 
-            return requisition != null;
+                return requisition != null;
             }
             catch
             {

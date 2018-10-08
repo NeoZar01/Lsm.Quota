@@ -99,15 +99,15 @@ C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Logger\obj\Debug\DoE.
 C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Logger\obj\Debug\Lsm.Logger.csproj.GenerateResource.Cache
 C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Logger\obj\Debug\DoE.Lsm.Logger.dll
 C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Logger\obj\Debug\DoE.Lsm.Logger.pdb
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Logger\bin\Debug\DoE.Lsm.Logger.dll.config
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Logger\bin\Debug\DoE.Lsm.Logger.dll
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Logger\bin\Debug\DoE.Lsm.Logger.pdb
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Logger\bin\Debug\DoE.Lsm.Files.dll
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Logger\bin\Debug\log4net.dll
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Logger\bin\Debug\DoE.Lsm.Files.pdb
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Logger\bin\Debug\log4net.xml
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Logger\obj\Debug\Lsm.Logger.csprojResolveAssemblyReference.cache
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Logger\obj\Debug\DoE.Lsm.Logger.DefaultFolder.resources
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Logger\obj\Debug\Lsm.Logger.csproj.GenerateResource.Cache
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Logger\obj\Debug\DoE.Lsm.Logger.dll
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Logger\obj\Debug\DoE.Lsm.Logger.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Logger\bin\Debug\DoE.Lsm.Logger.dll.config
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Logger\bin\Debug\DoE.Lsm.Logger.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Logger\bin\Debug\DoE.Lsm.Logger.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Logger\bin\Debug\DoE.Lsm.Files.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Logger\bin\Debug\log4net.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Logger\bin\Debug\DoE.Lsm.Files.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Logger\bin\Debug\log4net.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Logger\obj\Debug\Lsm.Logger.csprojResolveAssemblyReference.cache
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Logger\obj\Debug\DoE.Lsm.Logger.DefaultFolder.resources
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Logger\obj\Debug\Lsm.Logger.csproj.GenerateResource.Cache
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Logger\obj\Debug\DoE.Lsm.Logger.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Logger\obj\Debug\DoE.Lsm.Logger.pdb

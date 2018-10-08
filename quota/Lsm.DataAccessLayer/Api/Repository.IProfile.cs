@@ -4,10 +4,10 @@ using DoE.Lsm.Data.Repositories.EF;
 namespace DoE.Lsm.Data.Repositories.Profile
 {
 
-    public interface IProfileRepository : IRepository<AspNetProfile>
+    public interface IProfileRepository : IRepository<object>
     {
 
-        AspNetProfile GerUserProfileByRankAndStation(string emisCode, short station);
+        object GerUserProfileByRankAndStation(string emisCode, short station);
 
         //IEnumerable<AspNetProfile> GetProfileByMetaData(string keyword);
 

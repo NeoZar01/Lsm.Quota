@@ -39,8 +39,8 @@ C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Email\bin\Debug\DoE.W
 C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Email\bin\Debug\DoE.WF.Email.pdb
 C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Email\obj\Debug\DoE.WF.Email.dll
 C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Email\obj\Debug\DoE.WF.Email.pdb
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Email\bin\Debug\DoE.WF.Email.dll.config
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Email\bin\Debug\DoE.WF.Email.dll
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Email\bin\Debug\DoE.WF.Email.pdb
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Email\obj\Debug\DoE.WF.Email.dll
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Email\obj\Debug\DoE.WF.Email.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Email\bin\Debug\DoE.WF.Email.dll.config
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Email\bin\Debug\DoE.WF.Email.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Email\bin\Debug\DoE.WF.Email.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Email\obj\Debug\DoE.WF.Email.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Email\obj\Debug\DoE.WF.Email.pdb

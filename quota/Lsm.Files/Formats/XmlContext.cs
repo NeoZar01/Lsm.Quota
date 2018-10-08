@@ -1,10 +1,7 @@
 ﻿namespace DoE.Lsm.Context
 {
-    using Files.Formats.Abstracts;
     using System.Xml;
     using System.Xml.Serialization;
-
-
 
     ///<summary>
     ///      

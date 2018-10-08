@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PortalAuthModelStoreContainer" CdmEntityContainer="PortalAuth">
+    <EntitySetMapping Name="C__MigrationHistory">
+      <EntityTypeMapping TypeName="Portal.AuthModel.C__MigrationHistory">
+        <MappingFragment StoreEntitySet="__MigrationHistory">
+          <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+          <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetRoles">
+      <EntityTypeMapping TypeName="Portal.AuthModel.AspNetRole">
+        <MappingFragment StoreEntitySet="AspNetRoles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserClaims">
+      <EntityTypeMapping TypeName="Portal.AuthModel.AspNetUserClaim">
+        <MappingFragment StoreEntitySet="AspNetUserClaims">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
+          <ScalarProperty Name="ClaimValue" ColumnName="ClaimValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserLogins">
+      <EntityTypeMapping TypeName="Portal.AuthModel.AspNetUserLogin">
+        <MappingFragment StoreEntitySet="AspNetUserLogins">
+          <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
+          <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUsers">
+      <EntityTypeMapping TypeName="Portal.AuthModel.AspNetUser">
+        <MappingFragment StoreEntitySet="AspNetUsers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="EntityType" ColumnName="EntityType" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Token" ColumnName="Token" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="Portal.AuthModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Branches">
+      <EntityTypeMapping TypeName="Portal.AuthModel.Branch">
+        <MappingFragment StoreEntitySet="Branches">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="RowGuid" ColumnName="RowGuid" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="Manager" ColumnName="Manager" />
+          <ScalarProperty Name="ParentBranch" ColumnName="ParentBranch" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDistrict" ColumnName="IsDistrict" />
+          <ScalarProperty Name="IsCircuit" ColumnName="IsCircuit" />
+          <ScalarProperty Name="LocationSpatial" ColumnName="LocationSpatial" />
+          <ScalarProperty Name="LocationSpatialText" ColumnName="LocationSpatialText" />
+          <ScalarProperty Name="StAddress" ColumnName="StAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Directorates">
+      <EntityTypeMapping TypeName="Portal.AuthModel.Directorate">
+        <MappingFragment StoreEntitySet="Directorate">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="RowGuid" ColumnName="RowGuid" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Manager" ColumnName="Manager" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Groups">
+      <EntityTypeMapping TypeName="Portal.AuthModel.Group">
+        <MappingFragment StoreEntitySet="Group">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RowGuid" ColumnName="RowGuid" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Administrator" ColumnName="Administrator" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Mailboxes">
+      <EntityTypeMapping TypeName="Portal.AuthModel.Mailbox">
+        <MappingFragment StoreEntitySet="Mailbox">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RowGuid" ColumnName="RowGuid" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Directorate" ColumnName="Directorate" />
+          <ScalarProperty Name="Group" ColumnName="Group" />
+          <ScalarProperty Name="Administrator" ColumnName="Administrator" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Recepients">
+      <EntityTypeMapping TypeName="Portal.AuthModel.Recepient">
+        <MappingFragment StoreEntitySet="Recepient">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RowGuid" ColumnName="RowGuid" />
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="MailGroup" ColumnName="MailGroup" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Addresses">
+      <EntityTypeMapping TypeName="Portal.AuthModel.Address">
+        <MappingFragment StoreEntitySet="Address">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="HomeAddress" ColumnName="HomeAddress" />
+          <ScalarProperty Name="Office" ColumnName="Office" />
+          <ScalarProperty Name="Person" ColumnName="Person" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contacts">
+      <EntityTypeMapping TypeName="Portal.AuthModel.Contact">
+        <MappingFragment StoreEntitySet="Contact">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Images">
+      <EntityTypeMapping TypeName="Portal.AuthModel.Image">
+        <MappingFragment StoreEntitySet="Images">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RowGuId" ColumnName="RowGuId" />
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="Image1" ColumnName="Image" />
+          <ScalarProperty Name="Image128px" ColumnName="Image128px" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="People">
+      <EntityTypeMapping TypeName="Portal.AuthModel.Person">
+        <MappingFragment StoreEntitySet="Person">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RowGuid" ColumnName="RowGuid" />
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+          <ScalarProperty Name="IdNo" ColumnName="IdNo" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="MaidenName" ColumnName="MaidenName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="Initials" ColumnName="Initials" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Positions">
+      <EntityTypeMapping TypeName="Portal.AuthModel.Position">
+        <MappingFragment StoreEntitySet="Position">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Person" ColumnName="Person" />
+          <ScalarProperty Name="Position1" ColumnName="Position" />
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Settings">
+      <EntityTypeMapping TypeName="Portal.AuthModel.Setting">
+        <MappingFragment StoreEntitySet="Settings">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Person" ColumnName="Person" />
+          <ScalarProperty Name="IsPublic" ColumnName="IsPublic" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PositionLookups">
+      <EntityTypeMapping TypeName="Portal.AuthModel.PositionLookup">
+        <MappingFragment StoreEntitySet="PositionLookup">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="RowGuid" ColumnName="RowGuid" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Rank" ColumnName="Rank" />
+          <ScalarProperty Name="RankFlag" ColumnName="RankFlag" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Directorate" ColumnName="Directorate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwMembersPerRoles">
+      <EntityTypeMapping TypeName="Portal.AuthModel.vwMembersPerRole">
+        <MappingFragment StoreEntitySet="vwMembersPerRole">
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="MemberTotal" ColumnName="MemberTotal" />
+          <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwMailboxes">
+      <EntityTypeMapping TypeName="Portal.AuthModel.vwMailbox">
+        <MappingFragment StoreEntitySet="vwMailbox">
+          <ScalarProperty Name="RowGuid" ColumnName="RowGuid" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DirectorateName" ColumnName="DirectorateName" />
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="DirectorateManager" ColumnName="DirectorateManager" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="GroupAdministrator" ColumnName="GroupAdministrator" />
+          <ScalarProperty Name="IsGroupActive" ColumnName="IsGroupActive" />
+          <ScalarProperty Name="MailboxAdministrator" ColumnName="MailboxAdministrator" />
+          <ScalarProperty Name="MailboxOwner" ColumnName="MailboxOwner" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ActiveUsers" ColumnName="ActiveUsers" />
+          <ScalarProperty Name="NonActiveUsers" ColumnName="NonActiveUsers" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwAccountSettings">
+      <EntityTypeMapping TypeName="Portal.AuthModel.vwAccountSetting">
+        <MappingFragment StoreEntitySet="vwAccountSettings">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+          <ScalarProperty Name="Person" ColumnName="Person" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IsPublic" ColumnName="IsPublic" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwAddressDetails">
+      <EntityTypeMapping TypeName="Portal.AuthModel.vwAddressDetail">
+        <MappingFragment StoreEntitySet="vwAddressDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+          <ScalarProperty Name="HomeAddress" ColumnName="HomeAddress" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="ParentBranch" ColumnName="ParentBranch" />
+          <ScalarProperty Name="StAddress" ColumnName="StAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwContacts">
+      <EntityTypeMapping TypeName="Portal.AuthModel.vwContact">
+        <MappingFragment StoreEntitySet="vwContacts">
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwPersonalDetails">
+      <EntityTypeMapping TypeName="Portal.AuthModel.vwPersonalDetail">
+        <MappingFragment StoreEntitySet="vwPersonalDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+          <ScalarProperty Name="IdNo" ColumnName="IdNo" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="MaidenName" ColumnName="MaidenName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="Initials" ColumnName="Initials" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwPositionDetails">
+      <EntityTypeMapping TypeName="Portal.AuthModel.vwPositionDetail">
+        <MappingFragment StoreEntitySet="vwPositionDetails">
+          <ScalarProperty Name="EmisCode" ColumnName="EmisCode" />
+          <ScalarProperty Name="Person" ColumnName="Person" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Rank" ColumnName="Rank" />
+          <ScalarProperty Name="RankFlag" ColumnName="RankFlag" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Directorate" ColumnName="Directorate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AspNetUserRoles" TypeName="Portal.AuthModel.AspNetUserRoles" StoreEntitySet="AspNetUserRoles">
+      <EndProperty Name="AspNetRoles">
+        <ScalarProperty Name="Id" ColumnName="RoleId" />
+      </EndProperty>
+      <EndProperty Name="AspNetUsers">
+        <ScalarProperty Name="Id" ColumnName="UserId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="Portal.AuthModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="Portal.AuthModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="Portal.AuthModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="Portal.AuthModel.Store.sp_helpdiagramdefinition" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="Portal.AuthModel.Store.sp_helpdiagrams" />
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="Portal.AuthModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="Portal.AuthModel.Store.sp_upgraddiagrams" />
+    <FunctionImportMapping FunctionImportName="spMailbox" FunctionName="Portal.AuthModel.Store.spMailbox">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Portal.AuthModel.spMailbox_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RowGuid" ColumnName="RowGuid" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Directorate" ColumnName="Directorate" />
+          <ScalarProperty Name="Group" ColumnName="Group" />
+          <ScalarProperty Name="Administrator" ColumnName="Administrator" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="Recepients" ColumnName="Recepients" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

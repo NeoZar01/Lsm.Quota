@@ -80,51 +80,82 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Api\IRequisitionsRepository.cs" />
     <Compile Include="Api\Repository.ILock.cs" />
     <Compile Include="EF\Address.cs">
-      <DependentUpon>Portal.tt</DependentUpon>
+      <DependentUpon>Auth.tt</DependentUpon>
     </Compile>
-    <Compile Include="EF\AspNetProfile.cs">
-      <DependentUpon>Portal.tt</DependentUpon>
+    <Compile Include="EF\Applications.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Applications.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\Applications.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Applications.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\Applications.NormsStandards.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Applications.NormsStandards.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="EF\AspNetRole.cs">
+      <DependentUpon>Auth.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\AspNetUser.cs">
+      <DependentUpon>Auth.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\AspNetUserClaim.cs">
+      <DependentUpon>Auth.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\AspNetUserLogin.cs">
+      <DependentUpon>Auth.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\Auth.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Auth.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\Auth.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Auth.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\Auth.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Auth.edmx</DependentUpon>
     </Compile>
     <Compile Include="EF\Branch.cs">
-      <DependentUpon>Portal.tt</DependentUpon>
+      <DependentUpon>Auth.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\Contact.cs">
-      <DependentUpon>Portal.tt</DependentUpon>
+      <DependentUpon>Auth.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\C_Error.cs">
+      <DependentUpon>Applications.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\C_Lock.cs">
-      <DependentUpon>PortalLsm.tt</DependentUpon>
+      <DependentUpon>Applications.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\C__MigrationHistory.cs">
+      <DependentUpon>Auth.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\Directorate.cs">
-      <DependentUpon>Portal.tt</DependentUpon>
+      <DependentUpon>Auth.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\Group.cs">
+      <DependentUpon>Auth.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\Image.cs">
-      <DependentUpon>Portal.tt</DependentUpon>
+      <DependentUpon>Auth.tt</DependentUpon>
     </Compile>
-    <Compile Include="EF\Inventory.cs">
-      <DependentUpon>PortalLsm.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EF\InventoryRequest.cs">
-      <DependentUpon>PortalLsm.tt</DependentUpon>
+    <Compile Include="EF\Mailbox.cs">
+      <DependentUpon>Auth.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\Person.cs">
-      <DependentUpon>Portal.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EF\Portal.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Portal.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EF\Portal.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Portal.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EF\Portal.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Portal.edmx</DependentUpon>
+      <DependentUpon>Auth.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\PortalLsm.Context.cs">
       <AutoGen>True</AutoGen>
@@ -141,95 +172,78 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PortalLsm.edmx</DependentUpon>
     </Compile>
-    <Compile Include="EF\Requisition.cs">
-      <DependentUpon>PortalLsm.tt</DependentUpon>
+    <Compile Include="EF\Position.cs">
+      <DependentUpon>Auth.tt</DependentUpon>
     </Compile>
-    <Compile Include="EF\req_vwOrderItems.cs">
+    <Compile Include="EF\PositionLookup.cs">
+      <DependentUpon>Auth.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\Recepient.cs">
+      <DependentUpon>Auth.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\Requisition.cs">
       <DependentUpon>PortalLsm.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\School.cs">
       <DependentUpon>PortalLsm.tt</DependentUpon>
     </Compile>
-    <Compile Include="EF\spMailbox_Result.cs">
-      <DependentUpon>Portal.tt</DependentUpon>
+    <Compile Include="EF\Setting.cs">
+      <DependentUpon>Auth.tt</DependentUpon>
     </Compile>
-    <Compile Include="EF\sp_BuildDisclaimer_Result.cs">
-      <DependentUpon>PortalLsm.tt</DependentUpon>
+    <Compile Include="EF\spMailbox_Result.cs">
+      <DependentUpon>Auth.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\sysdiagram.cs">
+      <DependentUpon>Auth.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\vwAccountSetting.cs">
-      <DependentUpon>Portal.tt</DependentUpon>
+      <DependentUpon>Auth.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\vwAddressDetail.cs">
-      <DependentUpon>Portal.tt</DependentUpon>
+      <DependentUpon>Auth.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\vwContact.cs">
-      <DependentUpon>Portal.tt</DependentUpon>
+      <DependentUpon>Auth.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\vwMailbox.cs">
-      <DependentUpon>Portal.tt</DependentUpon>
+      <DependentUpon>Auth.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\vwMembersPerRole.cs">
-      <DependentUpon>Portal.tt</DependentUpon>
+      <DependentUpon>Auth.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\vwPersonalDetail.cs">
-      <DependentUpon>Portal.tt</DependentUpon>
+      <DependentUpon>Auth.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\vwPositionDetail.cs">
-      <DependentUpon>Portal.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EF\vwTotalSubcityPerCircuit.cs">
-      <DependentUpon>PortalLsm.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EF\vw_Inventory.cs">
-      <DependentUpon>PortalLsm.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EF\vw_RequisitionEntityTotalPrice.cs">
-      <DependentUpon>PortalLsm.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EF\vw_RequisitionOrderItems.cs">
-      <DependentUpon>PortalLsm.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EF\vw_RequisitionsDashboard.cs">
-      <DependentUpon>PortalLsm.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EF\vw_RequisitionsNorms.cs">
-      <DependentUpon>PortalLsm.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EF\vw_ShoppingCardItems.cs">
-      <DependentUpon>PortalLsm.tt</DependentUpon>
+      <DependentUpon>Auth.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\WFProcess.cs">
-      <DependentUpon>PortalLsm.tt</DependentUpon>
+      <DependentUpon>Applications.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\WFProcessInstance.cs">
-      <DependentUpon>PortalLsm.tt</DependentUpon>
+      <DependentUpon>Applications.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\WFProcessInstanceParking_Log.cs">
+      <DependentUpon>Applications.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\WFProcessStep.cs">
+      <DependentUpon>Applications.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\WFProcessStepInstance.cs">
-      <DependentUpon>PortalLsm.tt</DependentUpon>
+      <DependentUpon>Applications.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\WFPStepOutcomeLookup.cs">
+      <DependentUpon>Applications.tt</DependentUpon>
     </Compile>
     <Compile Include="Production\LockerRepository.cs" />
+    <Compile Include="Production\RequisitionRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Api\IRepository.cs" />
     <Compile Include="Api\RepositoryFactory.cs" />
     <Compile Include="Api\Repository.IUI.cs" />
     <Compile Include="Production\UIManagerRepository.cs" />
-    <Compile Include="Api\Repository.IRequisitionSubcity.cs" />
-    <Compile Include="Production\RequisitionSubcityRepository.cs" />
-    <Compile Include="Production\NormsStandardsRepository.cs" />
-    <Compile Include="Api\Repository.INormsStandards.cs" />
-    <Compile Include="Production\CatalogueRepository.cs" />
-    <Compile Include="Api\Repository.ICatalogue.cs" />
-    <Compile Include="Api\Repository.IOrder.cs" />
-    <Compile Include="Production\OrderRepository.cs" />
-    <Compile Include="Api\Repository.IRequisitionOrderItems.cs" />
-    <Compile Include="Production\RequisitionOrderItemsRepository.cs" />
-    <Compile Include="Api\Repository.IInventory.cs" />
-    <Compile Include="Production\InventoryRepository.cs" />
-    <Compile Include="Api\Repository.IRequisitions.cs" />
-    <Compile Include="Production\RequisitionRepository.cs" />
     <Compile Include="Api\Repository.IProcessManager.cs" />
     <Compile Include="Production\ProcessManagerRepository.cs" />
-    <Compile Include="Production\ProfileRepository.cs" />
     <Compile Include="Api\Repository.IProfile.cs" />
     <Compile Include="Api\Repository.IPerson.cs" />
     <Compile Include="Production\PersonRepository.cs" />
@@ -240,32 +254,49 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <EntityDeploy Include="EF\Portal.edmx">
+    <EntityDeploy Include="EF\Applications.NormsStandards.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Portal.Designer.cs</LastGenOutput>
+      <LastGenOutput>Applications.NormsStandards.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="EF\Portal.edmx.diagram">
-      <DependentUpon>Portal.edmx</DependentUpon>
+    <None Include="EF\Applications.NormsStandards.edmx.diagram">
+      <DependentUpon>Applications.NormsStandards.edmx</DependentUpon>
     </None>
     <EntityDeploy Include="EF\PortalLsm.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>PortalLsm.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <EntityDeploy Include="EF\Auth.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Auth.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="EF\Auth.edmx.diagram">
+      <DependentUpon>Auth.edmx</DependentUpon>
+    </None>
     <None Include="EF\PortalLsm.edmx.diagram">
       <DependentUpon>PortalLsm.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="EF\Portal.Context.tt">
+    <Content Include="EF\Applications.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Portal.edmx</DependentUpon>
-      <LastGenOutput>Portal.Context.cs</LastGenOutput>
+      <DependentUpon>Applications.NormsStandards.edmx</DependentUpon>
+      <LastGenOutput>Applications.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="EF\Portal.tt">
+    <Content Include="EF\Applications.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Portal.edmx</DependentUpon>
-      <LastGenOutput>Portal.cs</LastGenOutput>
+      <DependentUpon>Applications.NormsStandards.edmx</DependentUpon>
+      <LastGenOutput>Applications.cs</LastGenOutput>
+    </Content>
+    <Content Include="EF\Auth.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Auth.edmx</DependentUpon>
+      <LastGenOutput>Auth.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="EF\Auth.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Auth.edmx</DependentUpon>
+      <LastGenOutput>Auth.cs</LastGenOutput>
     </Content>
     <Content Include="EF\PortalLsm.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

@@ -14,8 +14,8 @@ namespace DoE.Lsm.Data.Repositories.EF
     
     public partial class vwAddressDetail
     {
+        public System.Guid Id { get; set; }
         public int EmisCode { get; set; }
-        public System.Guid RowGuid { get; set; }
         public string HomeAddress { get; set; }
         public string BranchName { get; set; }
         public string ParentBranch { get; set; }

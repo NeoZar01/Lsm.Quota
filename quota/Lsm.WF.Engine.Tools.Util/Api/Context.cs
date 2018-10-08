@@ -96,12 +96,6 @@ namespace DoE.Lsm.WF.Engine.Context
     public enum Response : int 
     { Discard = 0, Submit = 1, Deny = 2, Approve = 3 }
 
-   /**
-    *  Lost here 
-    */
-    public enum Type : int
-    {  Requisition = 1 }
-
 
     /// <summary>
     ///     Dirty Read Transaction options  

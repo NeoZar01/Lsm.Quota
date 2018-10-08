@@ -19,5 +19,6 @@ namespace DoE.Lsm.Data.Repositories.EF
         public int EmisCode { get; set; }
         public System.DateTime LastModifiedDate { get; set; }
         public byte[] Image1 { get; set; }
+        public byte[] Image128px { get; set; }
     }
 }

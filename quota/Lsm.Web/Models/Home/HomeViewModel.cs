@@ -26,8 +26,7 @@ namespace DoE.Lsm.Web.Models
         public override async Task<DashboardFactoryViewModel> TakeModel(string instanceId, IRepositoryStoreRegistry dataSource)
         {        
             return await Task.FromResult( new SchoolDashboardViewModel {
-                        Page     = "_mainpagedashboard_school",
-                        BookYear = dataSource.StandardsAndNorms.BookYear
+                        Page     = "_mainpagedashboard_school"
             });
         }
     }
@@ -48,7 +47,6 @@ namespace DoE.Lsm.Web.Models
         {
             return await Task.FromResult(new CircuitDashboardViewModel
             {
-                BookYear = dataSource.StandardsAndNorms.BookYear
             });
         }
     }
@@ -68,8 +66,7 @@ namespace DoE.Lsm.Web.Models
         public override async Task<DashboardFactoryViewModel> TakeModel(string instanceId, IRepositoryStoreRegistry dataSource)
         {
             return await Task.FromResult(new AdministratorDashboardViewModel
-            {   Page     = "_mainpagedashboard_administrator",
-                BookYear = dataSource.StandardsAndNorms.BookYear
+            {   Page     = "_mainpagedashboard_administrator"
             });
         }
     }

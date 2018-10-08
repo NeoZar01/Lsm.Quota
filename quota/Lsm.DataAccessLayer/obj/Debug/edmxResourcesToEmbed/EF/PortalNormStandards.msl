@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PortalLsmModelStoreContainer" CdmEntityContainer="PortalLsm">
+    <EntitySetMapping Name="WFProcesses">
+      <EntityTypeMapping TypeName="Portal.LsmModel.WFProcess">
+        <MappingFragment StoreEntitySet="WFProcess">
+          <ScalarProperty Name="ParentProcessId" ColumnName="ParentProcessId" />
+          <ScalarProperty Name="ExpectedCompletionDays" ColumnName="ExpectedCompletionDays" />
+          <ScalarProperty Name="EntityTypeCompletionDaysVariable" ColumnName="EntityTypeCompletionDaysVariable" />
+          <ScalarProperty Name="EntityType" ColumnName="EntityType" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="InstanceId" ColumnName="InstanceId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WFProcessInstances">
+      <EntityTypeMapping TypeName="Portal.LsmModel.WFProcessInstance">
+        <MappingFragment StoreEntitySet="WFProcessInstance">
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Outcome" ColumnName="Outcome" />
+          <ScalarProperty Name="LastEditedBy" ColumnName="LastEditedBy" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ExpectedCompletionDate" ColumnName="ExpectedCompletionDate" />
+          <ScalarProperty Name="ExceptedCompletionDateSubVariable" ColumnName="ExceptedCompletionDateSubVariable" />
+          <ScalarProperty Name="ExceptedCompletionDateVariable" ColumnName="ExceptedCompletionDateVariable" />
+          <ScalarProperty Name="CompletionDate" ColumnName="CompletionDate" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="EntityId" ColumnName="EntityId" />
+          <ScalarProperty Name="FlowId" ColumnName="FlowId" />
+          <ScalarProperty Name="InstanceId" ColumnName="InstanceId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WFProcessInstanceParking_Log">
+      <EntityTypeMapping TypeName="Portal.LsmModel.WFProcessInstanceParking_Log">
+        <MappingFragment StoreEntitySet="WFProcessInstanceParking_Log">
+          <ScalarProperty Name="Outcome" ColumnName="Outcome" />
+          <ScalarProperty Name="On" ColumnName="On" />
+          <ScalarProperty Name="At" ColumnName="At" />
+          <ScalarProperty Name="By" ColumnName="By" />
+          <ScalarProperty Name="EntityId" ColumnName="EntityId" />
+          <ScalarProperty Name="EntityType" ColumnName="EntityType" />
+          <ScalarProperty Name="StepInstanceId" ColumnName="StepInstanceId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WFProcessSteps">
+      <EntityTypeMapping TypeName="Portal.LsmModel.WFProcessStep">
+        <MappingFragment StoreEntitySet="WFProcessStep">
+          <ScalarProperty Name="SortBy" ColumnName="SortBy" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ProcessId" ColumnName="ProcessId" />
+          <ScalarProperty Name="InstanceId" ColumnName="InstanceId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WFProcessStepInstances">
+      <EntityTypeMapping TypeName="Portal.LsmModel.WFProcessStepInstance">
+        <MappingFragment StoreEntitySet="WFProcessStepInstance">
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Outcome" ColumnName="Outcome" />
+          <ScalarProperty Name="Heritor" ColumnName="Heritor" />
+          <ScalarProperty Name="PreviousHeritor" ColumnName="PreviousHeritor" />
+          <ScalarProperty Name="ExpectedCompletionDate" ColumnName="ExpectedCompletionDate" />
+          <ScalarProperty Name="ExceptedCompletionDateSubVariable" ColumnName="ExceptedCompletionDateSubVariable" />
+          <ScalarProperty Name="ExceptedCompletionDateVariable" ColumnName="ExceptedCompletionDateVariable" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="EntityType" ColumnName="EntityType" />
+          <ScalarProperty Name="EntityId" ColumnName="EntityId" />
+          <ScalarProperty Name="StepId" ColumnName="StepId" />
+          <ScalarProperty Name="ProcessId" ColumnName="ProcessId" />
+          <ScalarProperty Name="InstanceId" ColumnName="InstanceId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WFPStepOutcomeLookups">
+      <EntityTypeMapping TypeName="Portal.LsmModel.WFPStepOutcomeLookup">
+        <MappingFragment StoreEntitySet="WFPStepOutcomeLookup">
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_Error">
+      <EntityTypeMapping TypeName="Portal.LsmModel.C_Error">
+        <MappingFragment StoreEntitySet="_Error">
+          <ScalarProperty Name="ReportDate" ColumnName="ReportDate" />
+          <ScalarProperty Name="StackTrace" ColumnName="StackTrace" />
+          <ScalarProperty Name="EntityType" ColumnName="EntityType" />
+          <ScalarProperty Name="Entity" ColumnName="Entity" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_Lock">
+      <EntityTypeMapping TypeName="Portal.LsmModel.C_Lock">
+        <MappingFragment StoreEntitySet="_Lock">
+          <ScalarProperty Name="IsLocked" ColumnName="IsLocked" />
+          <ScalarProperty Name="ReleasedBy" ColumnName="ReleasedBy" />
+          <ScalarProperty Name="ReleasedAt" ColumnName="ReleasedAt" />
+          <ScalarProperty Name="LockedFrom" ColumnName="LockedFrom" />
+          <ScalarProperty Name="LockedBy" ColumnName="LockedBy" />
+          <ScalarProperty Name="EntityType" ColumnName="EntityType" />
+          <ScalarProperty Name="EntityId" ColumnName="EntityId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

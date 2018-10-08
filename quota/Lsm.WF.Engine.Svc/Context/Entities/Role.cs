@@ -45,15 +45,5 @@ namespace DoE.Lsm.WF.Engine.Context.Entities
             var routeMapper = new Map(_repositoryStore);
             return routeMapper.Process(request);
         }
-
-        ///  <summary>    
-        ///      Use station and rank to get profile data.
-        ///  </summary>
-        [Obsolete("I changed the model structure of this table <c>AspNetProfile</c> by breaking some columns into tables individually.", false)]
-        public AspNetProfile GetAccountDetails(string role, short station)
-        {
-             return _repositoryStore.ProfileStore.GerUserProfileByRankAndStation(role , station);
-        }
-
     }
 }

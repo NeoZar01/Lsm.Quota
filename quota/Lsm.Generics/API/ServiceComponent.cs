@@ -21,9 +21,9 @@ namespace DoE.Lsm
             {
                 if (s % 2 != 0)
                 {
-                    if (string.IsNullOrEmpty(components[((s == 0) ? 0 : (s - 1))]))
+                    if (string.IsNullOrEmpty(components[((s==0) ? 0 : (s-1))]))
                     {
-                        components[s - 1] = services[s];
+                        components[s-1] = services[s];
                     }
                     else
                     {

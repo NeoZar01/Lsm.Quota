@@ -91,10 +91,6 @@
       <Project>{b68fa39f-01a8-4382-b3f6-37307186d92a}</Project>
       <Name>Lsm.Logger</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Lsm.Requisitions.ShoppingCard\Lsm.Service.ShoppingCard.csproj">
-      <Project>{78e704d4-b1bf-4189-88ea-1a54e5ba15e7}</Project>
-      <Name>Lsm.Service.ShoppingCard</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

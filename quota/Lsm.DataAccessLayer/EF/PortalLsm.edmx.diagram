@@ -4,23 +4,9 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="f0da0b2943044c2e81ea0bf972286909" Name="Diagram1" ZoomLevel="72">
-        <EntityTypeShape EntityType="Portal.LsmModel.WFProcessStepInstance" Width="1.5" PointX="0.75" PointY="3.375" IsExpanded="false" />
-        <EntityTypeShape EntityType="Portal.LsmModel.Inventory" Width="1.5" PointX="3" PointY="0.75" IsExpanded="false" />
-        <EntityTypeShape EntityType="Portal.LsmModel.InventoryRequest" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="false" />
-        <EntityTypeShape EntityType="Portal.LsmModel.vw_Inventory" Width="1.5" PointX="3" PointY="1.25" IsExpanded="false" />
-        <EntityTypeShape EntityType="Portal.LsmModel.vw_RequisitionEntityTotalPrice" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="false" />
-        <EntityTypeShape EntityType="Portal.LsmModel.vw_RequisitionOrderItems" Width="1.5" PointX="5.75" PointY="2.75" IsExpanded="false" />
-        <EntityTypeShape EntityType="Portal.LsmModel.vw_RequisitionsDashboard" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="false" />
-        <EntityTypeShape EntityType="Portal.LsmModel.vw_RequisitionsNorms" Width="1.5" PointX="7.75" PointY="2.75" IsExpanded="false" />
-        <EntityTypeShape EntityType="Portal.LsmModel.vw_ShoppingCardItems" Width="1.5" PointX="5.125" PointY="2.125" IsExpanded="false" />
-        <EntityTypeShape EntityType="Portal.LsmModel.vwTotalSubcityPerCircuit" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="false" />
-        <EntityTypeShape EntityType="Portal.LsmModel.req_vwOrderItems" Width="1.5" PointX="3.375" PointY="4.75" IsExpanded="false" />
-        <EntityTypeShape EntityType="Portal.LsmModel.School" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="false" />
-        <EntityTypeShape EntityType="Portal.LsmModel.WFProcess" Width="1.5" PointX="3.5" PointY="2.125" IsExpanded="false" />
-        <EntityTypeShape EntityType="Portal.LsmModel.WFProcessInstance" Width="1.5" PointX="5.5" PointY="7.5" IsExpanded="false" />
-        <EntityTypeShape EntityType="Portal.LsmModel.Requisition" Width="1.5" PointX="7.375" PointY="9.75" IsExpanded="false" />
-        <EntityTypeShape EntityType="Portal.LsmModel.C_Lock" Width="1.5" PointX="5.375" PointY="4.75" IsExpanded="false" />
+      <Diagram DiagramId="bdb4352f5b4941e98476c57dd7e00e17" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="Portal.LsmModel.School" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="Portal.LsmModel.Requisition" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

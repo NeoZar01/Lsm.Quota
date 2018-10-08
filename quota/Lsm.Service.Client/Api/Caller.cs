@@ -2,8 +2,8 @@
 
 namespace DoE.Lsm.Services.Api
 {
+    using Data.Repositories;
     using Logger;
-    using ShoppingCard.Api;
     /// <summary>
     /// 
     /// </summary>
@@ -14,22 +14,25 @@ namespace DoE.Lsm.Services.Api
         ///         constructor
         /// </summary>
         /// <param name="logger"></param>
-        public Caller(ILogger logger, IShoppingCard shoppingcard)
+        public Caller(ILogger logger)
         {
 
             //newup the EventLogger from the container
             Logger       = logger;
-
-            //newup the shoppingcard from the container
-            ShoppingCard = shoppingcard;
-
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public ILogger Logger
         { get; set; }
 
-        public IShoppingCard ShoppingCard
+        /// <summary>
+        /// 
+        /// </summary>
+        public RepositoryStore RepositoryStoreService
         { get; set; }
+
     }
 
 }

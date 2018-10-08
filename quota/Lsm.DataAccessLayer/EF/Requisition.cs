@@ -17,15 +17,14 @@ namespace DoE.Lsm.Data.Repositories.EF
         public int Id { get; set; }
         public System.Guid InstanceId { get; set; }
         public string ReqNO { get; set; }
-        public string EmisEntityId { get; set; }
+        public string EmisToken { get; set; }
         public string Calendar { get; set; }
         public Nullable<System.DateTime> CreationDate { get; set; }
         public Nullable<System.DateTime> LastModifiedDate { get; set; }
         public Nullable<byte> GrFrom { get; set; }
         public Nullable<byte> GrTo { get; set; }
-        public string Stage { get; set; }
         public string State { get; set; }
         public Nullable<decimal> TotalPrice { get; set; }
-        public string Package { get; set; }
+        public string WINumber { get; set; }
     }
 }

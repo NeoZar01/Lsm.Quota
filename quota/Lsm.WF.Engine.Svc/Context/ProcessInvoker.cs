@@ -6,11 +6,11 @@ using static System.Reflection.BindingFlags;
 
 namespace DoE.Lsm.WF.Engine.Svc.Context
 {
-    using cns = global::DoE.Lsm.WF.Engine.Context;
+    using Engine.Context;
 
     public static class ProcessInvoker
     {
-        public static cns::PayloadContext Call(cns::PayloadContext context)
+        public static PayloadContext Call(PayloadContext context)
         {
             try
             {
@@ -22,12 +22,12 @@ namespace DoE.Lsm.WF.Engine.Svc.Context
 
 
             }
-            catch(Exception e)
+            catch
             {
-                 return new cns.PayloadContext {Status = "ERROR"};
+                 return new PayloadContext {Status = "ERROR"};
             }
 
-                return new cns.PayloadContext { Status = "SUCCESS" };
+                return new PayloadContext { Status = "SUCCESS" };
         }
     }
 }

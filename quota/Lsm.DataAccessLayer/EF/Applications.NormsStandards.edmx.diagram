@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0f1d226322fa40ec819b956862b476e1" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="Applications.NormsStandardsModel.WFProcess" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="Applications.NormsStandardsModel.WFProcessInstance" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="Applications.NormsStandardsModel.WFProcessInstanceParking_Log" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="Applications.NormsStandardsModel.WFProcessStep" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="false" />
+        <EntityTypeShape EntityType="Applications.NormsStandardsModel.WFProcessStepInstance" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="false" />
+        <EntityTypeShape EntityType="Applications.NormsStandardsModel.WFPStepOutcomeLookup" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="Applications.NormsStandardsModel.C_Error" Width="1.5" PointX="0.75" PointY="2.375" IsExpanded="false" />
+        <EntityTypeShape EntityType="Applications.NormsStandardsModel.C_Lock" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -32,9 +32,6 @@ namespace DoE.Lsm.WF.Engines.Configurations
         /// </summary>
         public SubjectAnalyst SubjectAnalyst { get; set; }
 
-        #warning Deprecated Code
-        public Tickets Tickets { get; set; }
-
         ///<summary>
         ///     This will be thrown back to the caller as an instance.
         /// </summary>
@@ -47,7 +44,6 @@ namespace DoE.Lsm.WF.Engines.Configurations
                 CircuitManager      = new CircuitManager(dataStore);
                 SubjectAnalyst      = new SubjectAnalyst(dataStore);
                 School              = new School(dataStore);
-                Tickets             = new Tickets(dataStore);
 
                 // We should figure out a dynamic way for one role to have multiple report structures.
                 ReportsTo<School, SubjectAnalyst>(School, SubjectAnalyst);                 //Configures school to only report to the subject advisor

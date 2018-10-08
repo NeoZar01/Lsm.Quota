@@ -12,8 +12,6 @@ namespace DoE.Lsm.Data.Repositories.EF
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    using System.Data.Entity.Core.Objects;
-    using System.Linq;
     
     public partial class PortalLsm : DbContext
     {
@@ -27,26 +25,7 @@ namespace DoE.Lsm.Data.Repositories.EF
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<WFProcessStepInstance> WFProcessStepInstances { get; set; }
-        public virtual DbSet<Inventory> Inventories { get; set; }
-        public virtual DbSet<InventoryRequest> InventoryRequests { get; set; }
-        public virtual DbSet<vw_Inventory> vw_Inventory { get; set; }
-        public virtual DbSet<vw_RequisitionEntityTotalPrice> vw_RequisitionEntityTotalPrice { get; set; }
-        public virtual DbSet<vw_RequisitionOrderItems> vw_RequisitionOrderItems { get; set; }
-        public virtual DbSet<vw_RequisitionsDashboard> vw_RequisitionsDashboard { get; set; }
-        public virtual DbSet<vw_RequisitionsNorms> vw_RequisitionsNorms { get; set; }
-        public virtual DbSet<vw_ShoppingCardItems> vw_ShoppingCardItems { get; set; }
-        public virtual DbSet<vwTotalSubcityPerCircuit> vwTotalSubcityPerCircuits { get; set; }
-        public virtual DbSet<req_vwOrderItems> req_vwOrderItems { get; set; }
         public virtual DbSet<School> Schools { get; set; }
-        public virtual DbSet<WFProcess> WFProcesses { get; set; }
-        public virtual DbSet<WFProcessInstance> WFProcessInstances { get; set; }
         public virtual DbSet<Requisition> Requisitions { get; set; }
-        public virtual DbSet<C_Lock> C_Lock { get; set; }
-    
-        public virtual ObjectResult<sp_BuildDisclaimer_Result> sp_BuildDisclaimer()
-        {
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_BuildDisclaimer_Result>("sp_BuildDisclaimer");
-        }
     }
 }

@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Portal.LsmModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Applications.NormsStandards.Application._Error' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="_Error">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="ReportDate" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Entity" Type="nvarchar" MaxLength="36" />
+    <Property Name="EntityType" Type="nvarchar" MaxLength="36" />
+    <Property Name="StackTrace" Type="nvarchar" MaxLength="36" />
+    <Property Name="ReportDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Applications.NormsStandards.Application._Lock' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="_Lock">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="EntityId" />
+      <PropertyRef Name="EntityType" />
+      <PropertyRef Name="LockedBy" />
+      <PropertyRef Name="LockedFrom" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="EntityId" Type="nvarchar" MaxLength="36" Nullable="false" />
+    <Property Name="EntityType" Type="nvarchar" MaxLength="36" Nullable="false" />
+    <Property Name="LockedBy" Type="nvarchar" MaxLength="36" Nullable="false" />
+    <Property Name="LockedFrom" Type="datetime" Nullable="false" />
+    <Property Name="ReleasedAt" Type="datetime" />
+    <Property Name="ReleasedBy" Type="nvarchar" MaxLength="36" />
+    <Property Name="IsLocked" Type="nvarchar(max)" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="WFProcess">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="InstanceId" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="InstanceId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="36" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="36" Nullable="false" />
+    <Property Name="EntityType" Type="nvarchar" MaxLength="36" Nullable="false" />
+    <Property Name="EntityTypeCompletionDaysVariable" Type="nvarchar" MaxLength="36" Nullable="false" />
+    <Property Name="ExpectedCompletionDays" Type="varchar" MaxLength="255" StoreGeneratedPattern="Computed" />
+    <Property Name="ParentProcessId" Type="varchar" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="WFProcessInstance">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="InstanceId" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="InstanceId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="FlowId" Type="nvarchar" MaxLength="36" Nullable="false" />
+    <Property Name="EntityId" Type="nvarchar" MaxLength="36" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="CompletionDate" Type="datetime" />
+    <Property Name="ExceptedCompletionDateVariable" Type="nvarchar" MaxLength="150" />
+    <Property Name="ExceptedCompletionDateSubVariable" Type="nvarchar" MaxLength="150" />
+    <Property Name="ExpectedCompletionDate" Type="datetime" StoreGeneratedPattern="Computed" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="36" Nullable="false" />
+    <Property Name="LastEditedBy" Type="nvarchar" MaxLength="36" Nullable="false" />
+    <Property Name="Outcome" Type="nvarchar" MaxLength="36" />
+    <Property Name="State" Type="nvarchar" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="WFProcessInstanceParking_Log">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="StepInstanceId" Type="nvarchar" MaxLength="36" Nullable="false" />
+    <Property Name="EntityType" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="EntityId" Type="nvarchar" MaxLength="36" Nullable="false" />
+    <Property Name="By" Type="nvarchar" MaxLength="36" Nullable="false" />
+    <Property Name="At" Type="nvarchar" MaxLength="36" Nullable="false" />
+    <Property Name="On" Type="datetime" Nullable="false" />
+    <Property Name="Outcome" Type="nvarchar" MaxLength="150" Nullable="false" />
+  </EntityType>
+  <EntityType Name="WFProcessStep">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="InstanceId" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="InstanceId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ProcessId" Type="nvarchar" MaxLength="36" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="175" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="175" Nullable="false" />
+    <Property Name="SortBy" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="WFProcessStepInstance">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="InstanceId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ProcessId" Type="nvarchar" MaxLength="36" Nullable="false" />
+    <Property Name="StepId" Type="nvarchar" MaxLength="36" Nullable="false" />
+    <Property Name="EntityId" Type="nvarchar" MaxLength="36" Nullable="false" />
+    <Property Name="EntityType" Type="nvarchar" MaxLength="36" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="ExceptedCompletionDateVariable" Type="nvarchar" MaxLength="150" />
+    <Property Name="ExceptedCompletionDateSubVariable" Type="nvarchar" MaxLength="150" />
+    <Property Name="ExpectedCompletionDate" Type="datetime" StoreGeneratedPattern="Computed" />
+    <Property Name="PreviousHeritor" Type="nvarchar" MaxLength="36" Nullable="false" />
+    <Property Name="Heritor" Type="nvarchar" MaxLength="36" Nullable="false" />
+    <Property Name="Outcome" Type="nvarchar" MaxLength="36" />
+    <Property Name="State" Type="nvarchar" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="WFPStepOutcomeLookup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Value" Type="varchar" MaxLength="150" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="PortalLsmModelStoreContainer">
+    <EntitySet Name="WFProcess" EntityType="Self.WFProcess" Schema="Application" store:Type="Tables" />
+    <EntitySet Name="WFProcessInstance" EntityType="Self.WFProcessInstance" Schema="Application" store:Type="Tables" />
+    <EntitySet Name="WFProcessInstanceParking_Log" EntityType="Self.WFProcessInstanceParking_Log" Schema="Application" store:Type="Tables" />
+    <EntitySet Name="WFProcessStep" EntityType="Self.WFProcessStep" Schema="Application" store:Type="Tables" />
+    <EntitySet Name="WFProcessStepInstance" EntityType="Self.WFProcessStepInstance" Schema="Application" store:Type="Tables" />
+    <EntitySet Name="WFPStepOutcomeLookup" EntityType="Self.WFPStepOutcomeLookup" Schema="Application" store:Type="Tables" />
+    <EntitySet Name="_Error" EntityType="Self._Error" store:Type="Tables" store:Schema="Application">
+      <DefiningQuery>SELECT 
+    [_Error].[Id] AS [Id], 
+    [_Error].[Entity] AS [Entity], 
+    [_Error].[EntityType] AS [EntityType], 
+    [_Error].[StackTrace] AS [StackTrace], 
+    [_Error].[ReportDate] AS [ReportDate]
+    FROM [Application].[_Error] AS [_Error]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="_Lock" EntityType="Self._Lock" store:Type="Tables" store:Schema="Application">
+      <DefiningQuery>SELECT 
+    [_Lock].[Id] AS [Id], 
+    [_Lock].[EntityId] AS [EntityId], 
+    [_Lock].[EntityType] AS [EntityType], 
+    [_Lock].[LockedBy] AS [LockedBy], 
+    [_Lock].[LockedFrom] AS [LockedFrom], 
+    [_Lock].[ReleasedAt] AS [ReleasedAt], 
+    [_Lock].[ReleasedBy] AS [ReleasedBy], 
+    [_Lock].[IsLocked] AS [IsLocked]
+    FROM [Application].[_Lock] AS [_Lock]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
