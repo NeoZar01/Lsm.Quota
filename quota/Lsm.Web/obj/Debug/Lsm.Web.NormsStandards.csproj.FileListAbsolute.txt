@@ -1,7 +1,3 @@
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Web\obj\Debug\Lsm.Web.NormsStandards.csprojResolveAssemblyReference.cache
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Web\obj\Debug\DoE.Web.Mvc.Api.EntityType.resources
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Web\obj\Debug\DoE.Web.Mvc.Api.Resources.resources
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Web\obj\Debug\Lsm.Web.NormsStandards.csproj.GenerateResource.Cache
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Web\bin\DoE.Lsm.Web.Mvc.dll.config
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Web\bin\DoE.Lsm.Web.Mvc.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Web\bin\DoE.Lsm.Web.Mvc.pdb
@@ -92,5 +88,9 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Web\bin\Microsoft.Owin.Securit
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Web\bin\DoE.Lsm.WF.Engine.Context.pdb
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Web\bin\log4net.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Web\obj\Debug\Lsm.Web.NormsStandards.csprojResolveAssemblyReference.cache
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Web\obj\Debug\DoE.Web.Mvc.Api.EntityType.resources
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Web\obj\Debug\DoE.Web.Mvc.Api.Resources.resources
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Web\obj\Debug\Lsm.Web.NormsStandards.csproj.GenerateResource.Cache
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Web\obj\Debug\DoE.Lsm.Web.Mvc.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Web\obj\Debug\DoE.Lsm.Web.Mvc.pdb

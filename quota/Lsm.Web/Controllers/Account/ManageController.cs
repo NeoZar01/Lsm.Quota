@@ -22,9 +22,9 @@ namespace DoE.Lsm.Web.Controllers
         private ApplicationUserManager _userManager;
 
 
-        public ManageController(ILogger logger, IRepositoryStoreRegistry repositoryStore) : base(logger, repositoryStore) { }
+        public ManageController(ILogger logger, IRepositoryStoreManager repositoryStore) : base(logger, repositoryStore) { }
 
-        public ManageController(ILogger logger, IRepositoryStoreRegistry repositoryStore, ApplicationUserManager userManager, ApplicationSignInManager signInManager) : base(logger, repositoryStore)
+        public ManageController(ILogger logger, IRepositoryStoreManager repositoryStore, ApplicationUserManager userManager, ApplicationSignInManager signInManager) : base(logger, repositoryStore)
         {
             UserManager = userManager;
             SignInManager = signInManager;

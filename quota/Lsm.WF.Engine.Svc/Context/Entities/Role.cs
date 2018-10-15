@@ -11,9 +11,9 @@ namespace DoE.Lsm.WF.Engine.Context.Entities
     {
         public volatile int response = 0;
         public Role        _successor;
-        public readonly IRepositoryStoreRegistry    _repositoryStore;
+        public readonly IRepositoryStoreManager    _repositoryStore;
 
-        public Role(IRepositoryStoreRegistry repositoryStore)
+        public Role(IRepositoryStoreManager repositoryStore)
         {   this._repositoryStore = repositoryStore;  }
 
 
@@ -29,9 +29,9 @@ namespace DoE.Lsm.WF.Engine.Context.Entities
         ///      <para> <see cref="Lsm.WF.Engine.RouteMapContext.Context" /> on how requests are dynamically routed using a stragety pattern. /> </para>  
         ///      <return> Determines whether process job was successfuly or not. <return>
         /// </summary>
-        public virtual async Task<ExecutionResult> ProcessRequestAsync<T>(T WFObject, PayloadContext payload) where T : class
+        public virtual async Task<ExecutionResult> ProcessRequestAsync<T>(T WFObject, ProcessCase payload) where T : class
         {
-            var map = new Map(_repositoryStore);
+            var map = new Filter(_repositoryStore);
             return  await map.Process(payload);
         }
 
@@ -40,9 +40,9 @@ namespace DoE.Lsm.WF.Engine.Context.Entities
         ///      <para> <see cref="Lsm.WF.Engine.RouteMapContext.Context" /> on how requests are dynamically routed using a stragety pattern. /> </para>  
         ///      <return> Determines whether process job was successfuly or not. <return>
         /// </summary>
-        public virtual Task<ExecutionResult> ProcessRequest<T>(T token, PayloadContext request) where T : class
+        public virtual Task<ExecutionResult> ProcessRequest<T>(T token, ProcessCase request) where T : class
         {
-            var routeMapper = new Map(_repositoryStore);
+            var routeMapper = new Filter(_repositoryStore);
             return routeMapper.Process(request);
         }
     }

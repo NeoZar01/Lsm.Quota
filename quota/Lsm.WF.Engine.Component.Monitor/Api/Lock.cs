@@ -11,7 +11,7 @@ namespace DoE.Lsm.WF.Engine.Component.Monitor.Api
     public class Lock : IDisposable
     {
 
-        public IRepositoryStoreRegistry _dbStore;
+        public IRepositoryStoreManager _dbStore;
         public string _entityType;
         public string _entityId;
         public string _creatorToken;
@@ -19,10 +19,10 @@ namespace DoE.Lsm.WF.Engine.Component.Monitor.Api
         ///   Allows to only throw a kill command 
         /// </summary>
         /// <param name="dbStore"></param>
-        public Lock(IRepositoryStoreRegistry dbStore)
+        public Lock(IRepositoryStoreManager dbStore)
         { this._dbStore = dbStore; }
 
-        public Lock(IRepositoryStoreRegistry dbStore, string entityType, string entityId, string userToken)
+        public Lock(IRepositoryStoreManager dbStore, string entityType, string entityId, string userToken)
         {
             this._dbStore       = dbStore;
             this._entityType    = entityType;

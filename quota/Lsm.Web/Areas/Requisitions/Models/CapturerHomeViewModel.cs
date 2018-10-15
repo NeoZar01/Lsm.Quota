@@ -12,12 +12,7 @@ namespace DoE.Lsm.Web.Requisitions.Models
         /// <summary>
         ///   Get the current bookyear
         /// </summary>
-        public string Calendar { get; set; }
-
-
-
-
-
-
+        public string Calendar
+        { get; set; }
     }
 }

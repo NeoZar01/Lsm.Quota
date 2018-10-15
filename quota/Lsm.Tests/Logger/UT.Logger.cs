@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using DoE.Lsm.Logger.Context;
 using DoE.Lsm.Logger;
+using DoE.Lsm.Logger.Api;
 
 namespace Logger.Tests
 {
@@ -20,8 +21,8 @@ namespace Logger.Tests
                                 Code = 1050
                             };
 
-            var fileAppender = new FileAppender(this);
-                fileAppender.Log(moqError);
+            var fileAppender = new FileAppenderHub(this);
+                fileAppender.Log(moqError.ToString());
 
             Assert.IsInstanceOfType(moqError, typeof(Error));
         }

@@ -5,15 +5,11 @@ namespace DoE.Lsm.WF.Engine.Context
     ///<summary> 
     ///    Re-routes Requests via the <c>HttpPayload </c> class
     ///</summary>
-    public abstract class RouteFactory
-    {
-       
-        protected JobInstance processOutcome;
-
+    public interface RouteFactory
+    {       
         /// <summary>  
         ///      Takes the request to the designated module.
         /// </summary>
-        public abstract Task<ExecutionResult> TakeAsync(PayloadContext payload);
-
+        Task<ExecutionResult> Initiate(ProcessCase payload);
     }
 }

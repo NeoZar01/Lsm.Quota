@@ -17,7 +17,7 @@ namespace DoE.Lsm.Tests
         {
             var loggerMock = new Moq.Mock<ILogger>();
 
-            var datarepository = new RepositoryStore(loggerMock.Object.Record);
+            var datarepository = new RepositoryStoreManager(loggerMock.Object.InitiateWarningInstace);
 
             var flowInstanceId = string.Empty;// datarepository.WFProcessStore.CreateFlowInstance<Requisition>(flowId, entityId, createdby, state);
 
@@ -31,7 +31,7 @@ namespace DoE.Lsm.Tests
         {
             var loggerMock = new Moq.Mock<ILogger>();
 
-            var datarepository = new RepositoryStore(loggerMock.Object.Record);
+            var datarepository = new RepositoryStoreManager(loggerMock.Object.InitiateWarningInstace);
 
             var flowInstanceId = "";// datarepository.WFProcessStore.CreateFlowInstanceAsync<Requisition>(flowId, entityId, createdby, state);
 

@@ -61,20 +61,20 @@ namespace DoE.Lsm.WF.Component.Requisitions {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CircuitManager.
+        ///   Looks up a localized string similar to Custodian.
         /// </summary>
-        public static string CircuitManager {
+        public static string CTDN {
             get {
-                return ResourceManager.GetString("CircuitManager", resourceCulture);
+                return ResourceManager.GetString("CTDN", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to School.
         /// </summary>
-        public static string School {
+        public static string SHL {
             get {
-                return ResourceManager.GetString("School", resourceCulture);
+                return ResourceManager.GetString("SHL", resourceCulture);
             }
         }
     }

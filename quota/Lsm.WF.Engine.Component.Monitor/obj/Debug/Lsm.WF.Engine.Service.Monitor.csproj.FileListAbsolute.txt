@@ -20,7 +20,6 @@ C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.M
 C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Monitor\obj\Debug\DoE.Lsm.WF.Engine.Component.Monitor.dll
 C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Monitor\obj\Debug\DoE.Lsm.WF.Engine.Component.Monitor.pdb
 C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.WF.Engine.Component.Monitor\obj\Debug\PostSharp\postsharp.app.config
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\obj\Debug\Lsm.WF.Engine.Service.Monitor.csprojResolveAssemblyReference.cache
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.WF.Engine.Component.Monitor.pssym
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.WF.Engine.Component.Monitor.dll.config
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.WF.Engine.Component.Monitor.dll
@@ -41,6 +40,7 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\bi
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\EntityFramework.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\PagedList.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\log4net.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\obj\Debug\Lsm.WF.Engine.Service.Monitor.csprojResolveAssemblyReference.cache
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\obj\Debug\PostSharp\touch
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\obj\Debug\PostSharp\dependencies.txt
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\obj\Debug\DoE.Lsm.WF.Engine.Component.Monitor.dll

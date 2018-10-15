@@ -30,7 +30,7 @@ namespace DoE.Lsm.Services.Api
         /// <summary>
         /// 
         /// </summary>
-        public RepositoryStore RepositoryStoreService
+        public RepositoryStoreManager RepositoryStoreService
         { get; set; }
 
     }

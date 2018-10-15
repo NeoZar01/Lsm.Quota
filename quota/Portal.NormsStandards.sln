@@ -13,37 +13,37 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{3C6771
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm", "Lsm.Generics\Lsm.csproj", "{664FA002-AEC7-45C2-9033-66B197886719}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ns", "Lsm.Generics\Ns.csproj", "{664FA002-AEC7-45C2-9033-66B197886719}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.Service.DataRepository", "Lsm.DataAccessLayer\Lsm.Service.DataRepository.csproj", "{7E8C0842-0FE6-47DE-8F70-A9533A7C5C09}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ns.Service.DataRepository", "Lsm.DataAccessLayer\Ns.Service.DataRepository.csproj", "{7E8C0842-0FE6-47DE-8F70-A9533A7C5C09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.Email", "Lsm.Email\Lsm.Email.csproj", "{B0220895-DAB0-4C53-A1AE-77CA47F57970}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ns.Email", "Lsm.Email\Ns.Email.csproj", "{B0220895-DAB0-4C53-A1AE-77CA47F57970}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.Files", "Lsm.Files\Lsm.Files.csproj", "{2AC6C8D2-11A0-41AC-A2A2-B8604D8D12C0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ns.Files", "Lsm.Files\Ns.Files.csproj", "{2AC6C8D2-11A0-41AC-A2A2-B8604D8D12C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.WF.Engine.Context", "Lsm.WF.Engine.Tools.Util\Lsm.WF.Engine.Context.csproj", "{DA221C3E-0A0F-424C-AE98-48A5AD7380FD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ns.WF.Engine.Context", "Lsm.WF.Engine.Tools.Util\Ns.WF.Engine.Context.csproj", "{DA221C3E-0A0F-424C-AE98-48A5AD7380FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.WF.Engine.Service.Validation", "Lsm.WF.Engine.Component.Validation\Lsm.WF.Engine.Service.Validation.csproj", "{99FC2389-0425-4BA2-BBA4-7CBFA3059B51}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ns.WF.Engine.Service.Validation", "Lsm.WF.Engine.Component.Validation\Ns.WF.Engine.Service.Validation.csproj", "{99FC2389-0425-4BA2-BBA4-7CBFA3059B51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.WF.Engine.Service.Requisitions", "Lsm.WF.Engine.Component.Requisitions\Lsm.WF.Engine.Service.Requisitions.csproj", "{A331DB1E-E1EE-41A5-8D9C-079F98C50FCC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ns.WF.Engine.Service.Requisitions", "Lsm.WF.Engine.Component.Requisitions\Ns.WF.Engine.Service.Requisitions.csproj", "{A331DB1E-E1EE-41A5-8D9C-079F98C50FCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.WF.Engine.Service.Reports", "Lsm.WF.Engine.Component.Reports\Lsm.WF.Engine.Service.Reports.csproj", "{18AFAAF7-0DEA-49F3-935D-4047D32ED0B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ns.WF.Engine.Service.Reports", "Lsm.WF.Engine.Component.Reports\Ns.WF.Engine.Service.Reports.csproj", "{18AFAAF7-0DEA-49F3-935D-4047D32ED0B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.Logger", "Lsm.Logger\Lsm.Logger.csproj", "{B68FA39F-01A8-4382-B3F6-37307186D92A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ns.Logger", "Lsm.Logger\Ns.Logger.csproj", "{B68FA39F-01A8-4382-B3F6-37307186D92A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.Notify", "Lsm.Notify\Lsm.Notify.csproj", "{332DC461-5F5F-404D-8909-F96590E6B66F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ns.Notify", "Lsm.Notify\Ns.Notify.csproj", "{332DC461-5F5F-404D-8909-F96590E6B66F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.Service.Container", "Lsm.Service.Client\Lsm.Service.Container.csproj", "{B5556090-2CF0-4731-ACF9-595E887EEDE6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ns.Service.Container", "Lsm.Service.Client\Ns.Service.Container.csproj", "{B5556090-2CF0-4731-ACF9-595E887EEDE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.Web.NormsStandards", "Lsm.Web\Lsm.Web.NormsStandards.csproj", "{6DA356C9-5D1F-4018-9631-43AA0CDB6FCB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ns.Web", "Lsm.Web\Ns.Web.csproj", "{6DA356C9-5D1F-4018-9631-43AA0CDB6FCB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.WF.Engine.Service.Monitor", "Lsm.WF.Engine.Component.Monitor\Lsm.WF.Engine.Service.Monitor.csproj", "{771B5229-3AA8-40E8-B2C0-2A4587C4CDBE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ns.WF.Engine.Service.Monitor", "Lsm.WF.Engine.Component.Monitor\Ns.WF.Engine.Service.Monitor.csproj", "{771B5229-3AA8-40E8-B2C0-2A4587C4CDBE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.Tests", "Lsm.Tests\Lsm.Tests.csproj", "{E5A5B02B-6C5A-4973-9354-F94EA28E109C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.WF.Engine.Service.Calculations", "Lsm.WF.Engine.Component.Calculations\Lsm.WF.Engine.Service.Calculations.csproj", "{9A53438B-EFB5-4617-9EAA-3A1A0805E5AC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ns.WF.Engine.Service.Calculations", "Lsm.WF.Engine.Component.Calculations\Ns.WF.Engine.Service.Calculations.csproj", "{9A53438B-EFB5-4617-9EAA-3A1A0805E5AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.Annotations", "Lsm.Annotations\Lsm.Annotations.csproj", "{FF0E45F2-1DC7-483D-89F8-09006C6B35EA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ns.Annotations", "Lsm.Annotations\Ns.Annotations.csproj", "{FF0E45F2-1DC7-483D-89F8-09006C6B35EA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BB1F53C4-5F1E-4886-A3DF-902F933FC50B}"
 EndProject
@@ -80,9 +80,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Views", "Views", "{2EF317CF
 		Lsm.Web\Views\Requisitions\Rqinst_rq.cshtml = Lsm.Web\Views\Requisitions\Rqinst_rq.cshtml
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.WF.Engine.Service.Orders", "Lsm.WF.Engine.Component.Orders\Lsm.WF.Engine.Service.Orders.csproj", "{BA7C79C7-4414-4AC2-A434-5713684AF921}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ns.WF.Engine.Service.Orders", "Lsm.WF.Engine.Component.Orders\Ns.WF.Engine.Service.Orders.csproj", "{BA7C79C7-4414-4AC2-A434-5713684AF921}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.WF.Engine", "Lsm.WF.Engine.Svc\Lsm.WF.Engine.csproj", "{EC31E6F3-E9DD-4F6E-AB12-7BC94A3D0682}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ns.WF.Engine", "Lsm.WF.Engine.Svc\Ns.WF.Engine.csproj", "{EC31E6F3-E9DD-4F6E-AB12-7BC94A3D0682}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.Tests.Console", "Lsm.Tests.Console\Lsm.Tests.Console.csproj", "{148FAAA3-0B69-46A1-AEAA-A0CFB7CF70F6}"
 EndProject

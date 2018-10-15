@@ -51,9 +51,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Lsm.Generics\Lsm.csproj">
+    <ProjectReference Include="..\Lsm.Generics\Ns.csproj">
       <Project>{664fa002-aec7-45c2-9033-66b197886719}</Project>
-      <Name>Lsm</Name>
+      <Name>Ns</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

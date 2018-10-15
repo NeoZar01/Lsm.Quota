@@ -28,7 +28,6 @@ C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\bin\De
 C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\obj\Debug\Lsm.Service.Container.csprojResolveAssemblyReference.cache
 C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\obj\Debug\Education.Services.dll
 C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Service.Client\obj\Debug\Education.Services.pdb
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Service.Client\obj\Debug\Lsm.Service.Container.csprojResolveAssemblyReference.cache
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Service.Client\bin\Debug\Education.Services.dll.config
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Service.Client\bin\Debug\Education.Services.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Service.Client\bin\Debug\Education.Services.pdb
@@ -54,5 +53,6 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Service.Client\bin\Debug\DoE.L
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Service.Client\bin\Debug\PostSharp.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Service.Client\bin\Debug\DoE.Lsm.Annotations.pdb
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Service.Client\bin\Debug\log4net.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Service.Client\obj\Debug\Lsm.Service.Container.csprojResolveAssemblyReference.cache
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Service.Client\obj\Debug\Education.Services.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Service.Client\obj\Debug\Education.Services.pdb

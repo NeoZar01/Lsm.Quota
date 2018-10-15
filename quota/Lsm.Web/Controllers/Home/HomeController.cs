@@ -12,34 +12,30 @@ namespace DoE.Lsm.Web.Controllers
     using Data.Repositories;
     using DoE.Web.Mvc.Api;
 
-    [Authorize]
+    [Authorize(Roles ="")]
     public class HomeController : BaseController
     {
         /// <summary>
         /// 
         /// </summary>
-        private readonly Dictionary<string, DashboardFactoryViewModel> _entityDashBoard = new Dictionary<string, DashboardFactoryViewModel>();
+        private readonly Dictionary<string, DashboardFactoryViewModel> _dashboardModels = new Dictionary<string, DashboardFactoryViewModel>();
 
-        public HomeController(ILogger logger, IRepositoryStoreRegistry dataStore) : base(logger, dataStore)
+        public HomeController(ILogger logger, IRepositoryStoreManager dataStore) : base(logger, dataStore)
         {
-            _entityDashBoard.Add(EntityType.School ,        new SchoolDashboardViewModel());
-            _entityDashBoard.Add(EntityType.CircuitManager, new CircuitDashboardViewModel());
-            _entityDashBoard.Add(EntityType.Administrator, new AdministratorDashboardViewModel());
+            _dashboardModels.Add(EntityType.CircuitManager, new CircuitDashboardViewModel());
+            _dashboardModels.Add(EntityType.Administrator,  new AdministratorDashboardViewModel());
         }
 
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="GIT"></param>
-        /// <param name="entityType"></param>
-        /// <returns></returns>
         [HttpGet]
         public async Task<ActionResult> Index()
         {
             if (string.IsNullOrEmpty(User.Identity.GetRole()) && string.IsNullOrEmpty(User.Identity.GetToken()))
             return View();
 
-            return View(await _entityDashBoard[User.Identity.GetRole()].TakeModel(User.Identity.GetToken() , _repositoriesDataStore));
+            return View(await _dashboardModels[User.Identity.GetRole()].Return(User.Identity.GetToken() , _repositoriesDataStore));
         }
 
 

@@ -8,7 +8,7 @@ namespace DoE.Lsm.WF.Engine.Context
     /// <summary>
     ///    Every tasks should inherit this class.This will enabled a dynamic carryover of your EF DbContexts.And in turn enables dirty read transactions.
     /// </summary>
-    public abstract class JobInstance
+    public abstract class ProcessInstance
    {
 
         protected DbContext _dataContext; //For Transactions
@@ -46,7 +46,7 @@ namespace DoE.Lsm.WF.Engine.Context
         public int job = -1;
 
 
-        public JobInstance(DbContext dataContext, Guid instanceId)
+        public ProcessInstance(DbContext dataContext, Guid instanceId)
         {
             this._dataContext = dataContext;
             this._instanceId  = instanceId;

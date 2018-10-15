@@ -51,4 +51,3 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Tools.Util\bin\Debug
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Tools.Util\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Tools.Util\obj\Debug\DoE.Lsm.WF.Engine.Context.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Tools.Util\obj\Debug\DoE.Lsm.WF.Engine.Context.pdb
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Tools.Util\obj\Debug\Lsm.WF.Engine.Context.csprojResolveAssemblyReference.cache

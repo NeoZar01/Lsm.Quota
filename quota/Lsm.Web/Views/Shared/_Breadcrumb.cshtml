@@ -1,58 +1,60 @@
 ﻿@using DoE.Lsm.Web.Api
+@using DoE.Web.Mvc.Api
 
 <div class="col-md-3 left_col">
     <div class="left_col scroll-view">
-
             <div class="navbar nav_title" style="border: 0;">                
-                <a href="@Url.Action("Index","Home")" class="site_title"><i class="fa fa-book"></i> &nbsp; <span>Quota  <sup class="text-danger"> <small> &nbsp; @ApplicationAssemblyInfo.Environment </small> </sup></span></a>
+                <a href="@Url.Action("Index","Home")" class="site_title"><i class="fa fa-book"></i> &nbsp; <span>Nrm-S <sup class="text-danger"> <small> &nbsp; @ApplicationAssemblyInfo.Environment </small> </sup></span></a>
             </div>
-
             <div class="clearfix"></div>
-            <br/>
             <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
                 @if (Request.IsAuthenticated)
                 {
-         <!-- /sidebar menu -->
-
-                <!-- menu profile quick info -->
-                    <div class="profile clearfix">
-                        <div class="profile_pic">
-                            <img src="~/Content/Images/img.jpg" alt="..." class="img-circle profile_img">
-                        </div>
-                        <div class="profile_info">
-                            <span>EMIS Code,</span>
-                            <h2>@User.Identity.GetUserName() </h2>
-                        </div>
-                    </div>
-                <!-- /menu profile quick info -->
+                        <!-- /sidebar menu -->
+                        <!-- menu profile quick info -->
+                            <div class="profile clearfix">
+                                <div class="profile_pic">
+                                    <img src="~/Content/Images/img.jpg" alt="..." class="img-circle profile_img">
+                                </div>
+                                <div class="profile_info">
+                                    <span>EMIS Code,</span>
+                                    <h2>@User.Identity.GetUserName() </h2>
+                                </div>
+                            </div>
+                        <!-- /menu profile quick info -->
+                }
+                @if (Request.IsAuthenticated && User.IsInRole(Resources.Administrators))
+                {
 
                     <div class="menu_section">
 
                         <ul class="nav side-menu">
                             <li>
-                                <a><i class="fa fa-table"></i> Requisition <span class="fa fa-chevron-down"></span></a>
+                                <a><i class="fa fa-table"></i> Workflow<span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a  href="@Url.Action("Index", "Home")" >Dashboard</a></li>
-                                    <li><a>Worksheet &nbsp;<span class="fa fa-chevron-down"></span></a>
+                                    <li><a href="@Url.Action("Index", "Home")">Dashboard</a></li>
+                                    <li>
+                                        <a>Environment &nbsp;<span class="fa fa-chevron-down"></span></a>
                                         <ul class="nav child_menu">
+                                            <li>
+                                                <a href="#level2_1">Environment</a>
+                                            </li>
                                             <li class="sub_menu">
-                                                <a href="level2.html">Inbox</a>
+                                                <a href="#level2">Logs</a>
                                             </li>
                                             <li>
-                                                <a href="#level2_2">Drafts</a>
-                                            </li>
-                                            <li>
-                                                <a href="#level2_1">Outbox</a>
+                                                <a href="#level2_2">Design</a>
                                             </li>
                                         </ul>
                                     </li>
                                 </ul>
                             </li>
-                            <li>
+                            @*<li>
                                 <a><i class="fa fa-truck"></i> Orders <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
                                     <li><a href="#level1_1">Dashboard</a>
-                                    <li><a> Deliveries  <span class="fa fa-chevron-down"></span></a>
+                                    <li>
+                                        <a> Deliveries  <span class="fa fa-chevron-down"></span></a>
                                         <ul class="nav child_menu">
                                             <li class="sub_menu">
                                                 <a href="level2.html">Warehouse</a>
@@ -66,14 +68,10 @@
                                         </ul>
                                     </li>
                                 </ul>
-                            </li>
+                            </li>*@
                         </ul>
 
                     </div>
-
-                }
-                @if (Request.IsAuthenticated && User.IsInRole("Administrators"))
-                {
                     <div class="menu_section">
                         <h3>Administration</h3>
                         <ul class="nav side-menu">

@@ -8,9 +8,9 @@ namespace DoE.Lsm.WF.Engine.Svc.Context
 {
     using Engine.Context;
 
-    public static class ProcessInvoker
+    public static class Remote
     {
-        public static PayloadContext Call(PayloadContext context)
+        public static ProcessCase CallMemberAsync(ProcessCase context)
         {
             try
             {
@@ -24,10 +24,10 @@ namespace DoE.Lsm.WF.Engine.Svc.Context
             }
             catch
             {
-                 return new PayloadContext {Status = "ERROR"};
+                 return new ProcessCase {Status = "ERROR"};
             }
 
-                return new PayloadContext { Status = "SUCCESS" };
+                return new ProcessCase { Status = "SUCCESS" };
         }
     }
 }

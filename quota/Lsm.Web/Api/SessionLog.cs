@@ -19,17 +19,10 @@ namespace DoE.Lsm.Web.Api.Filters
 
             if (HttpContext.Current.Session["SessionID"] == null)
             {
-
-
-                
-
-
-                filterContext.HttpContext.Session.Add("SessionID", this.Log = filterContext.HttpContext.Request.RequestContext.RouteData.DataTokens["UserIdToken"].ToString());
-
+                  filterContext.HttpContext.Session.Add("SessionID", this.Log = filterContext.HttpContext.Request.RequestContext.RouteData.DataTokens["UserIdToken"].ToString());
 //                filterContext.Result = new RedirectToRouteResult(new RouteValueDictionary(new { area = ConfigurationManager.AppSettings["RedirectURI:Area"], controller = ConfigurationManager.AppSettings["RedirectURI:Controller"], action = ConfigurationManager.AppSettings["RedirectURI:Action"] }));
                 return;
             }
-
             base.OnResultExecuted(filterContext);
         }
 

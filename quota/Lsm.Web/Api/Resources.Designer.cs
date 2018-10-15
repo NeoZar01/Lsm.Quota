@@ -61,6 +61,15 @@ namespace DoE.Web.Mvc.Api {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Administrators.
+        /// </summary>
+        public static string Administrators {
+            get {
+                return ResourceManager.GetString("Administrators", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ~/Content/Images/photo-1491841550275-ad7854e35ca6.jpg.
         /// </summary>
         public static string SilhouttePupil {

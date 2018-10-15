@@ -3,6 +3,7 @@
 namespace DoE.Lsm.WF.Engine.Configurations
 {
     using Api;
+    using Logger;
     using Data.Repositories;
 
     public class IoCConfig
@@ -13,8 +14,9 @@ namespace DoE.Lsm.WF.Engine.Configurations
         /// <param name="container"></param>
         public static void ConfigureContainer(IUnityContainer container)
         {
-             container.RegisterType<IRepositoryStoreRegistry, RepositoryStore>();
-             container.RegisterType<IWorkFlow, WorkFlow>();
+             container.RegisterType<ILogger, GenericLogger>();
+             container.RegisterType<IRepositoryStoreManager, RepositoryStoreManager>();
+             container.RegisterType<IProcessFlowManager, ProcessFlowManager>();
         }
     }
 }

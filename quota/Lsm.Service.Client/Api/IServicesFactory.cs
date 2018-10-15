@@ -12,7 +12,7 @@
         /// <summary>
         /// 
         /// </summary>
-       RepositoryStore RepositoryStoreService { get; set; }
+       RepositoryStoreManager RepositoryStoreService { get; set; }
 
         /// <summary>
         /// 

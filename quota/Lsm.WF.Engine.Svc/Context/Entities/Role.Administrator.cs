@@ -4,7 +4,7 @@
 
     public class Administrator : Role
    {
-        public Administrator(IRepositoryStoreRegistry dataStore) : base(dataStore)
+        public Administrator(IRepositoryStoreManager dataStore) : base(dataStore)
         {}
     }
 }

@@ -17,31 +17,17 @@ namespace DoE.Lsm.Logger
        ///<summary>
        ///  Error Thread    
        ///</summary>
-        Error Exception  {set;}
+        string Report  {set;}
 
         ///<summary>
         ///  Minor Error log 
         ///</summary>
-        ILogger Record  {get;}
+        ILogger InitiateWarningInstace  {get;}
 
         ///<summary>
         ///  Critical Error log 
         ///</summary>
-        ILogger Warn  {get;}
+        ILogger InitiateAlertInstance  {get;}
 
-        ///<summary>
-        ///  Register a new listerner
-        ///</summary>
-        void Register(IOnLog observer);
-
-        ///<summary>
-        ///  Revoke a registered listener
-        ///</summary>
-        void UnRegister(IOnLog observer);
-
-        ///<summary>
-        ///  Broadcasts a error thread to all listerners.
-        ///</summary>
-        void NotifyAll(Error exceptionEnv);
     }
 }

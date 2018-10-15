@@ -14,7 +14,7 @@ namespace DoE.Lsm.WF.Engine.Context
         /// <param name="jobInstance"></param>
         /// <param name="outcome"></param>
         /// <returns></returns>
-        public static JobInstance From(JobInstance jobInstance, string outcome)
+        public static ProcessInstance From(ProcessInstance jobInstance, string outcome)
         {
             jobInstance.outcome = outcome;
             return jobInstance;

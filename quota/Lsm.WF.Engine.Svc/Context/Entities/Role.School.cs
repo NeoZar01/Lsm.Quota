@@ -4,7 +4,7 @@
 
     public class School : Role
     {
-        public School(IRepositoryStoreRegistry DbRepository) : base(DbRepository){}
+        public School(IRepositoryStoreManager DbRepository) : base(DbRepository){}
 
     }
 }

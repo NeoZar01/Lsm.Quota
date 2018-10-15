@@ -40,7 +40,7 @@ namespace DoE.Lsm.Web
         ///     loads the container
         /// </summary>
         /// <returns></returns>
-        public static IUnityContainer LoadContainer ()
+        public static IUnityContainer LoadContainer()
         {
             return container.Value;
         }

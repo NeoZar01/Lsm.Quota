@@ -4,6 +4,6 @@
 
     public class SubjectAnalyst :  Role
     {         
-        public SubjectAnalyst(IRepositoryStoreRegistry DbContext) : base(DbContext) {}            
+        public SubjectAnalyst(IRepositoryStoreManager DbContext) : base(DbContext) {}            
     }
 }

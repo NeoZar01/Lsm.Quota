@@ -4,6 +4,7 @@ namespace DoE.Lsm.Annotations.Exceptions
 {
     using Logger;
     using Logger.Context;
+    using System.Text;
 
     [Serializable] public class FailedTransactionException : Exception
     {
@@ -34,10 +35,17 @@ namespace DoE.Lsm.Annotations.Exceptions
             {
                 if (value == null) throw new ArgumentNullException(nameof(value));
 
+                StringBuilder record = new StringBuilder();
+                              record.Append(string.Concat(value.Code, "------ ", value.AttemptedAction, ": ", string.Concat(" [", value.LogTime, "] ")));
+                              record.Append(string.Concat("Entity: ", value.Entity));
+                              record.Append(string.Concat("EntityType: ", value.ErrorType));
+                              record.Append(string.Concat("StackTrace: ", value.StackTrace, " "));
+
+
                 if (_hasToLog == true)
                 {
-                    var thread = _logger.Warn;
-                        thread.Exception = value;
+                    var thread = _logger.InitiateAlertInstance;
+                        thread.Report = record.ToString();
                 }
                 _error = value;  //throw a user friendly error message to the end user.
             }

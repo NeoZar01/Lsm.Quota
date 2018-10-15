@@ -1,4 +1,5 @@
-﻿using System.Web.Http;
+﻿
+using System.Web.Http;
 using Microsoft.AspNet.Identity;
 
 namespace DoE.Lsm.Web.Api
@@ -13,14 +14,14 @@ namespace DoE.Lsm.Web.Api
     public class BaseAPIController : ApiController
     {
         public readonly ILogger _logger;
-        public readonly IRepositoryStoreRegistry _dataStore;
+        public readonly IRepositoryStoreManager _dataStore;
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="logger"></param>
         /// <param name="repositoryStore"></param>
-        public BaseAPIController(ILogger logger, IRepositoryStoreRegistry repositoryStore)
+        public BaseAPIController(ILogger logger, IRepositoryStoreManager repositoryStore)
         {
                         this._logger = logger;
                         this._dataStore = repositoryStore;

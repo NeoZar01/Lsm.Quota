@@ -38,7 +38,7 @@ namespace DoE.Lsm.WF.Component.Monitor.Annotations
         public override void OnEntry(MethodExecutionArgs args)
         {
             // EntityType = _estimatedMinutes
-            args.MethodExecutionTag = new PayloadContext {   ComToken =  Guid.NewGuid()  , SubEntity = DateTime.Now};
+            args.MethodExecutionTag = new ProcessCase {   CaseToken =  Guid.NewGuid().ToString()  , SubEntity = DateTime.Now};
             base.OnEntry(args);
         }
 
@@ -49,7 +49,7 @@ namespace DoE.Lsm.WF.Component.Monitor.Annotations
         public override void OnExit(MethodExecutionArgs args)
         {
 
-           var finalExecutionTime = (PayloadContext)args.MethodExecutionTag;
+           var finalExecutionTime = (ProcessCase)args.MethodExecutionTag;
 
             base.OnExit(args);
         }

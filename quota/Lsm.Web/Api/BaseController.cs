@@ -12,9 +12,9 @@ namespace DoE.Lsm.Web.Api
     {
 
         public readonly ILogger _logger;
-        public readonly IRepositoryStoreRegistry _repositoriesDataStore;
+        public readonly IRepositoryStoreManager _repositoriesDataStore;
 
-        public BaseController(ILogger logger, IRepositoryStoreRegistry repositoryStore)
+        public BaseController(ILogger logger, IRepositoryStoreManager repositoryStore)
         {
                             this._logger           = logger;
                             this._repositoriesDataStore = repositoryStore;
@@ -26,27 +26,6 @@ namespace DoE.Lsm.Web.Api
             get
             { return User.Identity.GetUserName().ToInt(); }
         }
-
-
-
-
-
-
-        //public virtual Guid GERID
-        //{
-        //    get
-        //    {
-        //        return db_connection.Person.GlobalId = new Guid(User.Identity.GetUserName());
-        //    }
-        //}
-
-        //public virtual string PortalEmisId
-        //{
-        //    get
-        //    {
-        //        return GERID.ToString();
-        //    }
-        //}
 
     }
 }
