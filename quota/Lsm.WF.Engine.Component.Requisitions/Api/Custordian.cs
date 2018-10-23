@@ -10,6 +10,7 @@ namespace DoE.Lsm.WF.Component.Requisitions.Tasks
     using Data.Repositories.EF;
     using Annotations.Exceptions;
     using Requisition.Steps;
+    using Engine.WI.Tools;
 
     public class Custordian : ProcessInstance, IDisposable
     {
@@ -24,14 +25,14 @@ namespace DoE.Lsm.WF.Component.Requisitions.Tasks
         ///<summary> 
         ///     Assigns classes per role asynchronously
         ///</summary>
-        public async static Task<ProcessInstance> RunTaskInstance(ProcessCase request, IRepositoryStoreManager repositoryContext, global::DoE.Lsm.Data.Repositories.EF.Requisition requisitionEntity)
+        public async static Task<ProcessInstance> RunTaskInstance(ProcessWorkItem request, IRepositoryStoreManager repositoryContext, global::DoE.Lsm.Data.Repositories.EF.Requisition requisitionEntity)
         {
 
             if (_instance != null) return _instance;
 
                 if (_instance == null)
                 {
-                    _instance = new Custordian(repositoryContext.Requisitions.DbContext, new Guid(request.CaseToken));
+                    _instance = new Custordian(repositoryContext.Requisitions.DbContext, new Guid(request.ProcessInstanceToken));
 
                     switch (request.Response)
                     {
@@ -47,7 +48,7 @@ namespace DoE.Lsm.WF.Component.Requisitions.Tasks
         }
 
 
-        public async Task<Custordian> DiscardInstanceAsync(global::DoE.Lsm.Data.Repositories.EF.Requisition requisition, ProcessCase request, IRepositoryStoreManager RepositoryContext)
+        public async Task<Custordian> DiscardInstanceAsync(global::DoE.Lsm.Data.Repositories.EF.Requisition requisition, ProcessWorkItem request, IRepositoryStoreManager RepositoryContext)
         {
             using (var transaction = EntityStore.Database.BeginTransaction())  
             {

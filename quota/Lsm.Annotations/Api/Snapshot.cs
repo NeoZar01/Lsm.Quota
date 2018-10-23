@@ -10,7 +10,12 @@ namespace DoE.Lsm.Annotations.Api
 {
 
     [PSerializable]
-    public class CreateSnapshot : OnMethodBoundaryAspect
+    public class Snapshot : OnMethodBoundaryAspect
     {
+        public override void OnEntry(MethodExecutionArgs args)
+        {
+            base.OnEntry(args);
+        }
+
     }
 }

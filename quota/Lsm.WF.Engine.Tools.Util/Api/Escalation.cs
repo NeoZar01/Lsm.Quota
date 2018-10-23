@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DoE.Lsm.WF.Engine.Context.Api
 {
-    public class Escalation : IGlobalConfigurationOption
+    public class Escalation //: IGlobalConfigurationOption
     {
         public void OnConfigureStep()
         {

@@ -11,6 +11,7 @@ namespace DoE.Lsm.WF.Component.Requisitions.Tasks
     using Engine.Component.Monitor.Api;
     using Annotations.Api.Exceptions;
     using Requisition.Steps;
+    using Engine.WI.Tools;
 
     public sealed class Servicer : ProcessInstance, IDisposable
     {
@@ -23,14 +24,14 @@ namespace DoE.Lsm.WF.Component.Requisitions.Tasks
         /// <param name="repositoryContext"></param>
         /// <param name="entity"></param>
         /// <returns></returns>
-        public async static Task<ProcessInstance> RunTaskInstance(ProcessCase payload, IRepositoryStoreManager repositoryContext, global::DoE.Lsm.Data.Repositories.EF.Requisition entity)
+        public async static Task<ProcessInstance> RunTaskInstance(ProcessWorkItem payload, IRepositoryStoreManager repositoryContext, global::DoE.Lsm.Data.Repositories.EF.Requisition entity)
         {
 
             if (_instance != null) return await Task.FromResult(_instance);
 
             if (_instance == null)
             {
-                _instance = new Servicer(repositoryContext.Requisitions.DbContext, new Guid(payload.CaseToken));
+                _instance = new Servicer(repositoryContext.Requisitions.DbContext, new Guid(payload.ProcessInstanceToken));
 
                 switch (payload.Response)
                 {
@@ -54,7 +55,7 @@ namespace DoE.Lsm.WF.Component.Requisitions.Tasks
         /// <exception cref="ArgumentNullException">Handles null parameter values</exception>
         /// <returns></returns>
         [Trace(listener: "AsyncListener", estimatedExecutionTimeInMinutes: 2)]
-        public async Task<ProcessInstance> PreambleRequisition(Requisition entity, ProcessCase payload, IRepositoryStoreManager dbStore)
+        public async Task<ProcessInstance> PreambleRequisition(Requisition entity, ProcessWorkItem payload, IRepositoryStoreManager dbStore)
         {
             if (entity    == null)      throw new ArgumentNullException(nameof(entity));
             if (payload   == null)      throw new ArgumentNullException(nameof(payload));

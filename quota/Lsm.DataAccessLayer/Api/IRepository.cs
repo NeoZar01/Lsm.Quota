@@ -19,7 +19,7 @@ namespace DoE.Lsm.Data.Repositories
         ///<summary>
         ///   Adds a new row to your table
         ///</summary
-        void Create(TEntity entity);
+        void Push(TEntity entity);
 
         ///<summary>
         /// Adds a range of values to your table 

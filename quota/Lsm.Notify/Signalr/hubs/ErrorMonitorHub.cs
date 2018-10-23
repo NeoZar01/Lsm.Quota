@@ -3,13 +3,12 @@ using Microsoft.AspNet.SignalR.Hubs;
 
 namespace DoE.Notify.Hubs
 {
-    [HubName("SystemHealthMonitorHub")]
-    public class SystemHealthMonitorHub : Hub
+    [HubName("LoggingFactorHub")]
+    public class LoggingFactorHub : Hub
     {
         public void Annotate(string error)
         {
-            this.Clients.Caller.onCriticalExceptionThrown(error);
+            this.Clients.Caller.onNotifyInvoked(error);
         }
-
     }
 }

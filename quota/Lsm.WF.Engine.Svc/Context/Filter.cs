@@ -30,17 +30,17 @@ namespace DoE.Lsm.WF.Engine.Context
     {                
         private Dictionary<string, RouteFactory> _routeContext = new Dictionary<string, RouteFactory>(); //Stores your routes
 
-        public Filter(IRepositoryStoreManager store)
+        public Filter(IRepositoryStoreManager dataStore)
         {
-            _routeContext.Add(ApplicationAssemblyInfo.Requisitions, new RequisitionsProcess(store));  
+            _routeContext.Add(ApplicationAssemblyInfo.Requisitions, new RequisitionsProcess(dataStore));  
         }
 
         ///<summary> 
         ///     Routes a request to its destinated component.   
         ///</summary>
-        public async Task<ExecutionResult> Process(ProcessCase payload)
+        public async Task<ExecutionResult> Process(ProcessWorkItem payload)
         {
-              return await _routeContext[payload.Route].Initiate(payload);            
+              return await _routeContext[payload.Route].InitiateStepInstance(payload);            
         }
     }
 }

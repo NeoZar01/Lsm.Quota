@@ -21,46 +21,79 @@
         protected readonly bool requiresLock = false;
 
         public RepositoryFactory(DbContext context, ILogger logger)
-        {
-            this._DbContext = context;
-            this._logger    = logger;
-        }
+        {this._DbContext = context; this._logger    = logger;}
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public virtual TEntity Single(int id)
         {
             return _DbContext.Set<TEntity>().Find(id);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public async virtual Task<TEntity> SingleAsync(int id)
         {
             return await _DbContext.Set<TEntity>().FindAsync(id);
         }
 
-        public virtual void Create(TEntity entity)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="entity"></param>
+        public virtual void Push(TEntity entity)
         {
             _DbContext.Set<TEntity>().Add(entity);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="entities"></param>
         public virtual void AddRange(IEnumerable<TEntity> entities)
         {
             _DbContext.Set<TEntity>().AddRange(entities);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="predicate"></param>
+        /// <returns></returns>
         public virtual IEnumerable<TEntity> ManyAsync(Expression<Func<TEntity , bool>> predicate)
         {
             return _DbContext.Set<TEntity>().Where(predicate);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="entity"></param>
         public virtual void Remove(TEntity entity)
         {
             _DbContext.Set<TEntity>().Remove(entity);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="entities"></param>
         public virtual void RemoveRange(IEnumerable<TEntity> entities)
         {
             _DbContext.Set<TEntity>().RemoveRange(entities);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="predicate"></param>
+        /// <returns></returns>
         public IEnumerable<TEntity> Many(Expression<Func<TEntity, bool>> predicate)
         {
             return _DbContext.Set<TEntity>().Where(predicate);

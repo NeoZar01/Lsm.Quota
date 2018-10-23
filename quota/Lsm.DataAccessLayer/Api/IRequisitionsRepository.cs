@@ -11,7 +11,7 @@ namespace DoE.Lsm.Data.Repositories
     using Annotations;
     using EF;
 
-    using static Annotations.DimensionsOptions;
+    using static Annotations.Flavours;
 
     public interface IRequisitionsRepository : IRepository<Requisition>
     {

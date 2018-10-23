@@ -3,7 +3,7 @@
 namespace DoE.Lsm.Annotations
 {
     [Flags]
-    public enum  DimensionsOptions {
+    public enum  Flavours {
         Fact                = 0x01,
         DynamicDateRange    = 0x02,
         BookYear            = 0x03,
@@ -21,6 +21,6 @@ namespace DoE.Lsm.Annotations
     [AttributeUsage(AttributeTargets.All, AllowMultiple = true)]
     public class Dimensions : Attribute
     {
-        public Dimensions(DimensionsOptions dimensionOptions) { }        
+        public Dimensions(Flavours dimensionOptions) { }        
     }
 }

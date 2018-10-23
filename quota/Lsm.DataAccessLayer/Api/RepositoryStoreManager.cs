@@ -12,51 +12,44 @@ namespace DoE.Lsm.Data.Repositories
 
     public class RepositoryStoreManager : IRepositoryStoreManager
    {
-        /// <summary>
-        /// 
-        /// </summary>
+
         private readonly ILogger _logger;
 
-        /// <summary>
-        /// 
-        /// </summary>
         private readonly PortalLsm     _ProductionDbContext;
-    
-        /// <summary>
-        /// 
-        /// </summary>
         private readonly PortalAuth    _authenticationDbContext;
-        
+        private readonly PortalSnE     _applicationSnEDbContext;
+
         public RepositoryStoreManager(ILogger logger)
         {
                         this._logger = logger;
 
                         _ProductionDbContext     = new PortalLsm();
                         _authenticationDbContext = new PortalAuth();
+                        _applicationSnEDbContext = new PortalSnE();
 
-                        WFProcessStore = new ProcessManagerRepository(_ProductionDbContext, logger);
                         Identity = new PersonRepository(_authenticationDbContext, logger);
+                        WI = new ProcessManagerRepository(_applicationSnEDbContext, logger);
+
                         Locker = new LockerRepository(_ProductionDbContext, logger);
                         Requisitions = new RequisitionRepository(_ProductionDbContext, logger);
         }
 
-                public ProcessManagerRepository WFProcessStore
-                { get; set; }
+        public ProcessManagerRepository WI
+        { get; set; }
 
-                public PersonRepository Identity
-                { get; set; }
+        public PersonRepository Identity
+        { get; set; }
 
-                public UIManagerRepository UI
-                { set; get; }
+        public UIManagerRepository UI
+        { set; get; }
 
+        public LockerRepository Locker
+        { get; set; }
 
-                public LockerRepository Locker
-                { get; set; }
+        public RequisitionRepository Requisitions
+        { get; set; }
 
-                public RequisitionRepository Requisitions
-                { get; set; }
-
-        #region Gabbage Collection
+        #region GC
         private bool _disposed = false;
         private static readonly object _syncLock = new object();
 
@@ -77,4 +70,4 @@ namespace DoE.Lsm.Data.Repositories
         }
         #endregion
     }
-    }
+}

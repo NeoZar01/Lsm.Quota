@@ -19,8 +19,8 @@ namespace DoE.Lsm.Logger.Api
 
         public void Log(string error)
         {
-            var context = GlobalHost.ConnectionManager.GetHubContext<SystemHealthMonitorHub>();
-                context.Clients.All.Annotate(error);
+            var context = GlobalHost.ConnectionManager.GetHubContext<LoggingFactorHub>();
+                context.Clients.All.onNotifyInvoked(error);
         }
     }
 }

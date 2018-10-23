@@ -5,7 +5,7 @@
     using System.Collections.Generic;
     using System.Threading.Tasks;
 
-    public interface IProcessManager : IRepository<WFProcessInstance>
+    public interface IProcessManager : IRepository<WIProcessInstance>
     {
 
         /// <summary>
@@ -17,7 +17,7 @@
         /// <param name="createdby"></param>
         /// <param name="state"></param>
         /// <returns></returns>
-        string CreateFlowInstance<T>([InstanceType("QUOTA.REQUISITION")]string entityType, string entityId, string createdby, string completionDateVariable, string completionDateSubVariable, string state, string outcome) where T : class;
+        string CreateProcessInstance<T>([InstanceType("SNE_REQUISITION")]string entityType, string entityId, string createdby, string completionDateVariable, string completionDateSubVariable, string state, string outcome) where T : class;
 
         /// <summary>
         /// 
@@ -28,7 +28,7 @@
         /// <param name="createdby"></param>
         /// <param name="state"></param>
         /// <returns></returns>
-        Task<string> CreateFlowInstanceAsync<T>([InstanceType("QUOTA.REQUISITION")]string entityType, string entityId, string createdby, string completionDateVariable, string completionDateSubVariable, string state, string outcome) where T : class;
+        Task<string> CreateProcessInstanceAsync<T>([InstanceType("SNE_REQUISITION")]string entityType, string entityId, string createdby, string completionDateVariable, string completionDateSubVariable, string state, string outcome) where T : class;
 
         /// <summary>
         /// 
@@ -40,7 +40,7 @@
         /// <param name="recepient"></param>
         /// <param name="state"></param>
         /// <returns></returns>
-        string CreateStepInstance([InstanceType("QUOTA.REQUISITION")]string flowId, string entityType, string entityId, string creator, string recepient ,  string completionDateVariable, string completionDateSubVariable, string state, string outcome);
+        string CreateStepInstance([InstanceType("SNE_REQUISITION")]string flowId, string entityType, string entityId, string creator, string recepient ,  string completionDateVariable, string completionDateSubVariable, string state, string outcome);
 
         /// <summary>
         /// 
@@ -52,6 +52,36 @@
         /// <param name="recepient"></param>
         /// <param name="state"></param>
         /// <returns></returns>
-        Task<string> CreateStepInstanceAsync([InstanceType("QUOTA.REQUISITION")]string flowId, string entityType, string entityId, string creator, string recepient, string completionDateVariable, string completionDateSubVariable, string state, string outcome);
+        Task<string> CreateStepInstanceAsync([InstanceType("SNE_REQUISITION")]string flowId, string entityType, string entityId, string creator, string recepient, string completionDateVariable, string completionDateSubVariable, string state, string outcome);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="instanceCaseId"></param>
+        /// <param name="precedingStepId"></param>
+        /// <param name="precedingStepInstanceId"></param>
+        void ProcessInstanceParkingStep(string instanceCaseId ,out string precedingStepId ,out string precedingStepInstanceId);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="precedingStepId"></param>
+        /// <param name="precedingStepInstanceId"></param>
+        void ConfigureInstancePreceedingStep(string precedingStepId, out string precedingStepInstanceId);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="payload"></param>
+        /// <param name="currentStepInstanceId"></param>
+        /// <param name="preceedingStepId"></param>
+        /// <param name="preceedingStepInstanceId"></param>
+        /// <param name="UserToken"></param>
+        /// <param name="InstanceCaseId"></param>
+        /// <param name="instanceEntityType"></param>
+        /// <param name="parameters"> This can only be up to 10 at the moment</param>
+        void CreateInstanceSnapShot<T>(T payload, string currentStepInstanceId, string preceedingStepId, string preceedingStepInstanceId, string UserToken, string InstanceCaseId, string instanceEntityType , params string[] parameters) where T : class;
+
     }
 }

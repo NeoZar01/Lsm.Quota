@@ -24,10 +24,38 @@ namespace DoE.Lsm.WF.Engine.Api
                    BodyStyle      = WebMessageBodyStyle.Bare,
                    RequestFormat  = WebMessageFormat.Json,
                    ResponseFormat = WebMessageFormat.Json,
-                   UriTemplate    = "/ProcessRequest")]
+                   UriTemplate    = "/ProcessRequest/json/{payload}")]
         [RequestTokenHandler]
-        IAsyncResult BeginProcessRequest(ProcessCase context, AsyncCallback callback, object state);
+        IAsyncResult BeginProcessRequestJson(ProcessWorkItem payload, AsyncCallback callback, object state);
 
-        ProcessCase EndProcessRequest(ProcessCase context);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="context"></param>
+        /// <returns></returns>
+        [OperationContract(AsyncPattern = true)]
+        [WebInvoke(Method = "POST",
+                   BodyStyle = WebMessageBodyStyle.Bare,
+                   RequestFormat = WebMessageFormat.Xml,
+                   ResponseFormat = WebMessageFormat.Xml,
+                   UriTemplate = "/ProcessRequest/xml/{payload}")]
+        [RequestTokenHandler]
+        IAsyncResult BeginProcessRequestXml(ProcessWorkItem payload, AsyncCallback callback, object state);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="payload"></param>
+        /// <returns></returns>
+        ProcessWorkItem EndProcessRequestXml(ProcessWorkItem payload);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="payload"></param>
+        /// <returns></returns>
+        ProcessWorkItem EndProcessRequestJson(ProcessWorkItem payload);
+
     }
 }

@@ -41,7 +41,6 @@ namespace DoE.Lsm.Annotations.Exceptions
                               record.Append(string.Concat("EntityType: ", value.ErrorType));
                               record.Append(string.Concat("StackTrace: ", value.StackTrace, " "));
 
-
                 if (_hasToLog == true)
                 {
                     var thread = _logger.InitiateAlertInstance;

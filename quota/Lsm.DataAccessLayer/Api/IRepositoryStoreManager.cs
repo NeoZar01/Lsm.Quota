@@ -14,7 +14,7 @@ namespace DoE.Lsm.Data.Repositories
         ///<summary>
         ///      Create a reference store to the workflow namespace
         ///</summary>
-        ProcessManagerRepository WFProcessStore
+        ProcessManagerRepository WI
         { get; set; }
 
         #region ProfileStore

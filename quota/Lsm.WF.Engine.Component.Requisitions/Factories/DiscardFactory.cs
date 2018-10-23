@@ -6,6 +6,7 @@ namespace DoE.Lsm.WF.Component.Requisitions.Factories
 
     using Data.Repositories;
     using Engine.Context;
+    using Engine.WI.Tools;
 
     /// <summary>
     ///     Handles drafts and readonly requisitions
@@ -47,7 +48,7 @@ namespace DoE.Lsm.WF.Component.Requisitions.Factories
         /// <param name="payload"></param>
         /// <param name="readType"></param>
         /// <returns></returns>
-        public abstract DiscardFactory      CreateFlowInstance(ProcessCase payload, ReadMode readType);
+        public abstract DiscardFactory      CreateFlowInstance(ProcessWorkItem payload, ReadMode readType);
 
         /// <summary>
         /// 
@@ -55,7 +56,7 @@ namespace DoE.Lsm.WF.Component.Requisitions.Factories
         /// <param name="payload"></param>
         /// <param name="readType"></param>
         /// <returns></returns>
-        public abstract Task<ProcessInstance>   CreateFlowInstanceAsync(ProcessCase payload, ReadMode readType);
+        public abstract Task<ProcessInstance>   CreateFlowInstanceAsync(ProcessWorkItem payload, ReadMode readType);
 
         /// <summary>
         /// 
@@ -63,7 +64,7 @@ namespace DoE.Lsm.WF.Component.Requisitions.Factories
         /// <param name="payload"></param>
         /// <param name="readType"></param>
         /// <returns></returns>
-        public abstract DiscardFactory      CreateStepInstance(ProcessCase payload, ReadMode readType);
+        public abstract DiscardFactory      CreateStepInstance(ProcessWorkItem payload, ReadMode readType);
 
         /// <summary>
         /// 
@@ -71,7 +72,7 @@ namespace DoE.Lsm.WF.Component.Requisitions.Factories
         /// <param name="payload"></param>
         /// <param name="readType"></param>
         /// <returns></returns>
-        public abstract Task<ProcessInstance>   CreateStepInstanceAsync(ProcessCase payload, ReadMode readType);
+        public abstract Task<ProcessInstance>   CreateStepInstanceAsync(ProcessWorkItem payload, ReadMode readType);
 
         /// <summary>
         /// 
@@ -79,7 +80,7 @@ namespace DoE.Lsm.WF.Component.Requisitions.Factories
         /// <param name="payload"></param>
         /// <param name="TransactionRead"></param>
         /// <returns></returns>
-        public abstract DiscardFactory Start(ProcessCase payload, ReadMode TransactionRead);
+        public abstract DiscardFactory Start(ProcessWorkItem payload, ReadMode TransactionRead);
 
     }
 }

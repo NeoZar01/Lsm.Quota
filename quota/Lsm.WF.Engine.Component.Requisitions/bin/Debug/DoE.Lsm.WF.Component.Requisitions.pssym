@@ -1,13 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Symbols LinesOfCode="99" PostSharpLinesOfCode="0" EnhancedTypesCount="1" SchemaVersion="1" PostSharpVersion="6.0.25.0" xmlns="http://schemas.postsharp.org/2.0/symbols">
-  <Evolution Source="#1=M:[DoE.Lsm.WF.Component.Requisitions]DoE.Lsm.WF.Component.Requisitions.Tasks.Servicer::PreambleRequisition(DoE.Lsm.Data.Repositories.EF.Requisition, DoE.Lsm.WF.Engine.Context.ProcessCase, DoE.Lsm.Data.Repositories.IRepositoryStoreManager)" Target="#2=M:[DoE.Lsm.WF.Component.Requisitions]DoE.Lsm.WF.Component.Requisitions.Tasks.Servicer+&lt;PreambleRequisition&gt;d__2::MoveNext()" />
-  <Class Class="#3=T:[DoE.Lsm.WF.Engine.Component.Monitor]DoE.Lsm.WF.Component.Monitor.Annotations.Trace">
-    <Instance Declaration="#1" Id="11d2439edf1ec8cd">
-      <Target LinesAvoided="4">
-        <JoinPoint Advised="#2" Advising="#3" Description="#4=Wrapped by advice(s) OnEntry, OnExit" Ordinal="0" />
+<Symbols LinesOfCode="100" PostSharpLinesOfCode="0" EnhancedTypesCount="2" SchemaVersion="1" PostSharpVersion="6.0.25.0" xmlns="http://schemas.postsharp.org/2.0/symbols">
+  <Evolution Source="#1=M:[DoE.Lsm.WF.Component.Requisitions]DoE.Lsm.WF.Engine.Component.Requisition.RequisitionsProcess::InitiateStepInstance(DoE.Lsm.WF.Engine.Context.ProcessWorkItem)" Target="#2=M:[DoE.Lsm.WF.Component.Requisitions]DoE.Lsm.WF.Engine.Component.Requisition.RequisitionsProcess+&lt;InitiateStepInstance&gt;d__3::MoveNext()" />
+  <Evolution Source="#3=M:[DoE.Lsm.WF.Component.Requisitions]DoE.Lsm.WF.Component.Requisitions.Tasks.Servicer::PreambleRequisition(DoE.Lsm.Data.Repositories.EF.Requisition, DoE.Lsm.WF.Engine.Context.ProcessWorkItem, DoE.Lsm.Data.Repositories.IRepositoryStoreManager)" Target="#4=M:[DoE.Lsm.WF.Component.Requisitions]DoE.Lsm.WF.Component.Requisitions.Tasks.Servicer+&lt;PreambleRequisition&gt;d__2::MoveNext()" />
+  <Class Class="#5=T:[DoE.Lsm.Annotations]DoE.Lsm.Annotations.Exceptions.Watch">
+    <Instance Declaration="#1" Id="11d2439eeea85074">
+      <Target LinesAvoided="2">
+        <JoinPoint Advised="#2" Advising="#5" Description="#6=Wrapped by advice(s) OnException" Ordinal="0" />
       </Target>
     </Instance>
   </Class>
-  <Annotation Target="#5=M:[DoE.Lsm.WF.Engine.Component.Monitor]DoE.Lsm.WF.Component.Monitor.Annotations.Trace::OnEntry(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#6=2" Description="#7=PostSharp estimates that 2 line(s) of code are saved every time this advice is applied. Use the [LinesOfCodeAvoided] attribute on the aspect or specify the LinesOfCodeAvoided property on the advice attribute to override this value." />
-  <Annotation Target="#8=M:[DoE.Lsm.WF.Engine.Component.Monitor]DoE.Lsm.WF.Component.Monitor.Annotations.Trace::OnExit(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#6" Description="#7" />
+  <Class Class="#7=T:[DoE.Lsm.WF.Engine.Component.Monitor]DoE.Lsm.WF.Component.Monitor.Annotations.Trace">
+    <Instance Declaration="#3" Id="11d2439e3ee758dc">
+      <Target LinesAvoided="4">
+        <JoinPoint Advised="#4" Advising="#7" Description="#8=Wrapped by advice(s) OnEntry, OnExit" />
+      </Target>
+    </Instance>
+  </Class>
+  <Annotation Target="#9=M:[DoE.Lsm.Annotations]DoE.Lsm.Annotations.Exceptions.Watch::OnException(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#10=2" Description="#11=PostSharp estimates that 2 line(s) of code are saved every time this advice is applied. Use the [LinesOfCodeAvoided] attribute on the aspect or specify the LinesOfCodeAvoided property on the advice attribute to override this value." />
+  <Annotation Target="#12=M:[DoE.Lsm.WF.Engine.Component.Monitor]DoE.Lsm.WF.Component.Monitor.Annotations.Trace::OnEntry(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#10" Description="#11" />
+  <Annotation Target="#13=M:[DoE.Lsm.WF.Engine.Component.Monitor]DoE.Lsm.WF.Component.Monitor.Annotations.Trace::OnExit(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#10" Description="#11" />
 </Symbols>

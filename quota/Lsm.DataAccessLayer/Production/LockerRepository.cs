@@ -12,7 +12,7 @@ namespace DoE.Lsm.Data.Repositories.Lock
     using Logger;
     using Annotations.Exceptions;
 
-    public class LockerRepository : RepositoryFactory<C_Lock> , ILockRepository
+    public class LockerRepository : RepositoryFactory<C_WILock> , ILockRepository
     {
         public LockerRepository(DbContext context, ILogger logger)  : base(context, logger) {}
 
@@ -27,7 +27,8 @@ namespace DoE.Lsm.Data.Repositories.Lock
             try
             {
 
-            var entity = new C_Lock {
+            var entity = new C_WILock
+            {
                  EntityType     = entityType,
                  EntityId       = entityId,
                  LockedBy       = token,
@@ -36,7 +37,7 @@ namespace DoE.Lsm.Data.Repositories.Lock
                  ReleasedBy     = null 
             };
 
-            Db.C_Lock.Add( entity);
+            Db.C_WILock.Add( entity);
 
             Db.SaveChanges();
 
@@ -57,7 +58,7 @@ namespace DoE.Lsm.Data.Repositories.Lock
         {
             try
             {
-                var entity = Db.C_Lock
+                var entity = Db.C_WILock
                  .Where( c => c.EntityType.Equals(entityType))
                  .Where( c => c.EntityId.Equals(entityId))
                  .Where( c => c.LockedBy.Equals(creatorToken))
@@ -76,7 +77,7 @@ namespace DoE.Lsm.Data.Repositories.Lock
 
         }
 
-        protected ApplicationsNormsStandards Db { get { return this._DbContext as ApplicationsNormsStandards; } }
+        protected PortalSnE Db { get { return this._DbContext as PortalSnE; } }
 
     }
 }

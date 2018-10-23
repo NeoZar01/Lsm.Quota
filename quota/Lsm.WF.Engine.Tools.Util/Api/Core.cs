@@ -8,20 +8,46 @@ namespace DoE.Lsm.WF.Engine.Context
     ///     This will be the envelop that wraps all the requests to the Workflow engine. 
     ///  <remark> Similar to <c>HttpContext</c> </remark>
     /// </summary>
-    public class ProcessCase
+    public class ProcessWorkItem
     {
         /// <summary>
         ///     Initial Instance Id of the EntityType thrown
         /// </summary>
         [Key]
-        public string CaseToken
+        public string ProcessInstanceToken
         { get; set; }
 
         /// <summary>
         ///     Initial Instance Id of the EntityType thrown
         /// </summary>
-        public string RequestTokenType
+        public string InstanceEntityType
         { get; set; }
+
+        /// <summary>
+        ///         Any Entity type passed with the payload
+        /// </summary>
+        public string ProcessInstanceId
+        { get; set; }
+
+        public string param_001 { get; set; }
+
+        public string param_002 { get; set; }
+
+        public string param_003 { get; set; }
+
+        public string param_004 { get; set; }
+
+        public string param_005 { get; set; }
+
+        public string param_006 { get; set; }
+
+        public string param_007 { get; set; }
+
+        public string param_008 { get; set; }
+
+        public string param_009 { get; set; }
+
+        public string param_0010 { get; set; }
 
         /// <summary>
         /// 
@@ -29,11 +55,6 @@ namespace DoE.Lsm.WF.Engine.Context
         public string Status
         { get; set; }
 
-        /// <summary>
-        ///         Any Entity type passed with the payload
-        /// </summary>
-        public string EntityType
-        { get; set; }
 
         /// <summary>
         ///         Assigned Role

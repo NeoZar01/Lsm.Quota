@@ -8,7 +8,7 @@ namespace DoE.Lsm.WF.Component.Requisitions.Steps
 {
     using Engine.Context;
 
-    public class Start 
+    public class Start  
     {
         private Start instance;
     }

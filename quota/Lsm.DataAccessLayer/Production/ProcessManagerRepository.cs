@@ -15,7 +15,7 @@ namespace DoE.Lsm.Data.Repositories.Workflow.Engine
     //     This repository will handle all the operations associated with managing the workflow engine.         
     //     <see cref="WF.Tools.ExecutionResult"> On Execution Results</see>
     //</summary>
-    public partial class ProcessManagerRepository : RepositoryFactory<WFProcessInstance>, IProcessManager
+    public partial class ProcessManagerRepository : RepositoryFactory<WIProcessInstance>, IProcessManager
     {
         //constructor
         public ProcessManagerRepository(DbContext context, ILogger logger) : base(context, logger) {}
@@ -24,7 +24,7 @@ namespace DoE.Lsm.Data.Repositories.Workflow.Engine
         ///     Gets the <c>PortalLsm</c> data context as a data source 
         /// <value>  This property will recieve <c>DataContext</c> as as value and convert it to its derived class PortalLsm  </value>
         ///</summary>
-        public PortalLsm WorkFlowStore { get { return this._DbContext as PortalLsm; } }
+        public PortalSnE WorkFlowStore { get { return this._DbContext as PortalSnE; } }
 
         ///<summary>
         ///    Creates a new Workflow Instance
@@ -35,7 +35,7 @@ namespace DoE.Lsm.Data.Repositories.Workflow.Engine
         /// <exception cref="DoE.DataServices.Exceptions.InvalidDatabaseOperationException.cs"></exception>
         ///</summary>
         [Watch( For: typeof(InvalidDatabaseOperationException) , code : 1055, exception: "There was an error creating a workflow instance.Please contact technical support for this issue.")]
-        public string CreateFlowInstance<T>(string flowId, string entityId, string createdby, string completionDateVariable, string completionDateSubVariable, string state, string outcome) where T : class
+        public string CreateProcessInstance<T>(string flowId, string entityId, string createdby, string completionDateVariable, string completionDateSubVariable, string state, string outcome) where T : class
         {
             
             if (string.IsNullOrEmpty(flowId)    || string.IsNullOrWhiteSpace(flowId))    throw new ArgumentNullException("flowId"); //avoid data loss by checking for mandatory parameters
@@ -47,7 +47,7 @@ namespace DoE.Lsm.Data.Repositories.Workflow.Engine
 
             try
             {
-                var entity = new WFProcessInstance
+                var entity = new WIProcessInstance
                 {                     
                     InstanceId                          = instanceId,
                     FlowId                              = flowId,
@@ -84,7 +84,7 @@ namespace DoE.Lsm.Data.Repositories.Workflow.Engine
         /// <exception cref="DoE.DataServices.Exceptions.InvalidDatabaseOperationException.cs"></exception>
         ///</summary>       
         [Watch(For: typeof(InvalidDatabaseOperationException) , code: 1055, exception: "There was an error creating a workflow instance.Please contact technical support for this issue.")]
-        public async Task<string> CreateFlowInstanceAsync<T>(string flowId, string entityId, string createdby, string completionDateVariable, string completionDateSubVariable, string state, string outcome) where T : class
+        public async Task<string> CreateProcessInstanceAsync<T>(string flowId, string entityId, string createdby, string completionDateVariable, string completionDateSubVariable, string state, string outcome) where T : class
         {
 
             if (entityId == null || flowId == null) throw new ArgumentNullException("entityType");  //avoid data loss by checking for mandatory parameters
@@ -93,7 +93,7 @@ namespace DoE.Lsm.Data.Repositories.Workflow.Engine
 
             try
             {
-                var entity = new WFProcessInstance
+                var entity = new WIProcessInstance
                 {
                     //RowGUID         = instanceId,
                     //FlowId          = flowId,
@@ -132,7 +132,7 @@ namespace DoE.Lsm.Data.Repositories.Workflow.Engine
             try
             {
 
-            var entity = new WFProcessInstance
+            var entity = new WIProcessInstance
             {
                  //RowGUID        = instanceId,
                  //ArrivalDate    = DateTime.Now,
@@ -174,7 +174,7 @@ namespace DoE.Lsm.Data.Repositories.Workflow.Engine
             try
             {
 
-                var entity = new WFProcessInstance
+                var entity = new WIProcessInstance
                 {
                     //RowGUID         = instanceId,
                     //ArrivalDate     = DateTime.Now,
@@ -197,5 +197,30 @@ namespace DoE.Lsm.Data.Repositories.Workflow.Engine
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="instanceCaseId"></param>
+        /// <param name="precedingStepId"></param>
+        /// <param name="precedingStepInstanceId"></param>
+        public void ProcessInstanceParkingStep(string instanceCaseId, out string precedingStepId, out string precedingStepInstanceId)
+        {
+            throw new NotImplementedException();
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="precedingStepId"></param>
+        /// <param name="precedingStepInstanceId"></param>
+        public void ConfigureInstancePreceedingStep(string precedingStepId, out string precedingStepInstanceId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void CreateInstanceSnapShot<T>(T payload, string currentStepInstanceId, string preceedingStepId, string preceedingStepInstanceId, string UserToken, string InstanceCaseId, string instanceEntityType, params string[] parameters) where T : class
+        {
+            throw new NotImplementedException();
+        }
     }
 }

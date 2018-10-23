@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="Applications.NormsStandardsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <!--Errors Found During Generation:
-warning 6002: The table/view 'Applications.NormsStandards.Application._Error' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'Portal.NormsStandards.Application._Error' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="_Error">
     <Key>
       <PropertyRef Name="Id" />
@@ -14,8 +14,8 @@ warning 6002: The table/view 'Applications.NormsStandards.Application._Error' do
     <Property Name="ReportDate" Type="datetime" Nullable="false" />
   </EntityType>
   <!--Errors Found During Generation:
-warning 6002: The table/view 'Applications.NormsStandards.Application._Lock' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-  <EntityType Name="_Lock">
+warning 6002: The table/view 'Portal.NormsStandards.Application._WILock' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="_WILock">
     <Key>
       <PropertyRef Name="Id" />
       <PropertyRef Name="EntityId" />
@@ -32,7 +32,16 @@ warning 6002: The table/view 'Applications.NormsStandards.Application._Lock' doe
     <Property Name="ReleasedBy" Type="nvarchar" MaxLength="36" />
     <Property Name="IsLocked" Type="nvarchar(max)" StoreGeneratedPattern="Computed" />
   </EntityType>
-  <EntityType Name="WFProcess">
+  <EntityType Name="WIOutcome_Lookup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Value" Type="varchar" MaxLength="150" Nullable="false" />
+  </EntityType>
+  <EntityType Name="WIProcess">
     <Key>
       <PropertyRef Name="id" />
       <PropertyRef Name="InstanceId" />
@@ -46,7 +55,7 @@ warning 6002: The table/view 'Applications.NormsStandards.Application._Lock' doe
     <Property Name="ExpectedCompletionDays" Type="varchar" MaxLength="255" StoreGeneratedPattern="Computed" />
     <Property Name="ParentProcessId" Type="varchar" MaxLength="36" />
   </EntityType>
-  <EntityType Name="WFProcessInstance">
+  <EntityType Name="WIProcessInstance">
     <Key>
       <PropertyRef Name="id" />
       <PropertyRef Name="InstanceId" />
@@ -55,6 +64,7 @@ warning 6002: The table/view 'Applications.NormsStandards.Application._Lock' doe
     <Property Name="InstanceId" Type="uniqueidentifier" Nullable="false" />
     <Property Name="FlowId" Type="nvarchar" MaxLength="36" Nullable="false" />
     <Property Name="EntityId" Type="nvarchar" MaxLength="36" Nullable="false" />
+    <Property Name="SurveyKey" Type="nvarchar" MaxLength="36" Nullable="false" />
     <Property Name="CreatedDate" Type="datetime" Nullable="false" />
     <Property Name="LastModifiedDate" Type="datetime" />
     <Property Name="CompletionDate" Type="datetime" />
@@ -66,7 +76,7 @@ warning 6002: The table/view 'Applications.NormsStandards.Application._Lock' doe
     <Property Name="Outcome" Type="nvarchar" MaxLength="36" />
     <Property Name="State" Type="nvarchar" MaxLength="36" />
   </EntityType>
-  <EntityType Name="WFProcessInstanceParking_Log">
+  <EntityType Name="WIProcessInstanceParking_Log">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
@@ -79,7 +89,7 @@ warning 6002: The table/view 'Applications.NormsStandards.Application._Lock' doe
     <Property Name="On" Type="datetime" Nullable="false" />
     <Property Name="Outcome" Type="nvarchar" MaxLength="150" Nullable="false" />
   </EntityType>
-  <EntityType Name="WFProcessStep">
+  <EntityType Name="WIProcessStep">
     <Key>
       <PropertyRef Name="id" />
       <PropertyRef Name="InstanceId" />
@@ -91,7 +101,7 @@ warning 6002: The table/view 'Applications.NormsStandards.Application._Lock' doe
     <Property Name="Description" Type="nvarchar" MaxLength="175" Nullable="false" />
     <Property Name="SortBy" Type="int" Nullable="false" />
   </EntityType>
-  <EntityType Name="WFProcessStepInstance">
+  <EntityType Name="WIProcessStepInstance">
     <Key>
       <PropertyRef Name="id" />
     </Key>
@@ -111,22 +121,13 @@ warning 6002: The table/view 'Applications.NormsStandards.Application._Lock' doe
     <Property Name="Outcome" Type="nvarchar" MaxLength="36" />
     <Property Name="State" Type="nvarchar" MaxLength="36" />
   </EntityType>
-  <EntityType Name="WFPStepOutcomeLookup">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
-    <Property Name="Name" Type="varchar" MaxLength="60" Nullable="false" />
-    <Property Name="Description" Type="varchar" MaxLength="200" Nullable="false" />
-    <Property Name="Value" Type="varchar" MaxLength="150" Nullable="false" />
-  </EntityType>
   <EntityContainer Name="ApplicationsNormsStandardsModelStoreContainer">
-    <EntitySet Name="WFProcess" EntityType="Self.WFProcess" Schema="Application" store:Type="Tables" />
-    <EntitySet Name="WFProcessInstance" EntityType="Self.WFProcessInstance" Schema="Application" store:Type="Tables" />
-    <EntitySet Name="WFProcessInstanceParking_Log" EntityType="Self.WFProcessInstanceParking_Log" Schema="Application" store:Type="Tables" />
-    <EntitySet Name="WFProcessStep" EntityType="Self.WFProcessStep" Schema="Application" store:Type="Tables" />
-    <EntitySet Name="WFProcessStepInstance" EntityType="Self.WFProcessStepInstance" Schema="Application" store:Type="Tables" />
-    <EntitySet Name="WFPStepOutcomeLookup" EntityType="Self.WFPStepOutcomeLookup" Schema="Application" store:Type="Tables" />
+    <EntitySet Name="WIOutcome_Lookup" EntityType="Self.WIOutcome_Lookup" Schema="Application" store:Type="Tables" />
+    <EntitySet Name="WIProcess" EntityType="Self.WIProcess" Schema="Application" store:Type="Tables" />
+    <EntitySet Name="WIProcessInstance" EntityType="Self.WIProcessInstance" Schema="Application" store:Type="Tables" />
+    <EntitySet Name="WIProcessInstanceParking_Log" EntityType="Self.WIProcessInstanceParking_Log" Schema="Application" store:Type="Tables" />
+    <EntitySet Name="WIProcessStep" EntityType="Self.WIProcessStep" Schema="Application" store:Type="Tables" />
+    <EntitySet Name="WIProcessStepInstance" EntityType="Self.WIProcessStepInstance" Schema="Application" store:Type="Tables" />
     <EntitySet Name="_Error" EntityType="Self._Error" store:Type="Tables" store:Schema="Application">
       <DefiningQuery>SELECT 
     [_Error].[Id] AS [Id], 
@@ -136,17 +137,17 @@ warning 6002: The table/view 'Applications.NormsStandards.Application._Lock' doe
     [_Error].[ReportDate] AS [ReportDate]
     FROM [Application].[_Error] AS [_Error]</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="_Lock" EntityType="Self._Lock" store:Type="Tables" store:Schema="Application">
+    <EntitySet Name="_WILock" EntityType="Self._WILock" store:Type="Tables" store:Schema="Application">
       <DefiningQuery>SELECT 
-    [_Lock].[Id] AS [Id], 
-    [_Lock].[EntityId] AS [EntityId], 
-    [_Lock].[EntityType] AS [EntityType], 
-    [_Lock].[LockedBy] AS [LockedBy], 
-    [_Lock].[LockedFrom] AS [LockedFrom], 
-    [_Lock].[ReleasedAt] AS [ReleasedAt], 
-    [_Lock].[ReleasedBy] AS [ReleasedBy], 
-    [_Lock].[IsLocked] AS [IsLocked]
-    FROM [Application].[_Lock] AS [_Lock]</DefiningQuery>
+    [_WILock].[Id] AS [Id], 
+    [_WILock].[EntityId] AS [EntityId], 
+    [_WILock].[EntityType] AS [EntityType], 
+    [_WILock].[LockedBy] AS [LockedBy], 
+    [_WILock].[LockedFrom] AS [LockedFrom], 
+    [_WILock].[ReleasedAt] AS [ReleasedAt], 
+    [_WILock].[ReleasedBy] AS [ReleasedBy], 
+    [_WILock].[IsLocked] AS [IsLocked]
+    FROM [Application].[_WILock] AS [_WILock]</DefiningQuery>
     </EntitySet>
   </EntityContainer>
 </Schema>

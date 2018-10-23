@@ -7,10 +7,10 @@ namespace DoE.Lsm.WF.Engine.Context.Entities
     using Data.Repositories;
     using Data.Repositories.EF;
 
-    public abstract class Role
+    public abstract class Role : IRole
     {
         public volatile int response = 0;
-        public Role        _successor;
+        public IRole        _successor;
         public readonly IRepositoryStoreManager    _repositoryStore;
 
         public Role(IRepositoryStoreManager repositoryStore)
@@ -20,7 +20,7 @@ namespace DoE.Lsm.WF.Engine.Context.Entities
         /// <summary>
         ///      Dynamically sets successor for a role.
         /// </summary>
-        public virtual void SetSuccessor(Role succesor)
+        public virtual void SetSuccessor(IRole succesor)
         {   this._successor = succesor;   }
 
 
@@ -29,7 +29,7 @@ namespace DoE.Lsm.WF.Engine.Context.Entities
         ///      <para> <see cref="Lsm.WF.Engine.RouteMapContext.Context" /> on how requests are dynamically routed using a stragety pattern. /> </para>  
         ///      <return> Determines whether process job was successfuly or not. <return>
         /// </summary>
-        public virtual async Task<ExecutionResult> ProcessRequestAsync<T>(T WFObject, ProcessCase payload) where T : class
+        public virtual async Task<ExecutionResult> ProcessRequestAsync<T>(T WFObject, ProcessWorkItem payload) where T : class
         {
             var map = new Filter(_repositoryStore);
             return  await map.Process(payload);
@@ -40,7 +40,7 @@ namespace DoE.Lsm.WF.Engine.Context.Entities
         ///      <para> <see cref="Lsm.WF.Engine.RouteMapContext.Context" /> on how requests are dynamically routed using a stragety pattern. /> </para>  
         ///      <return> Determines whether process job was successfuly or not. <return>
         /// </summary>
-        public virtual Task<ExecutionResult> ProcessRequest<T>(T token, ProcessCase request) where T : class
+        public virtual Task<ExecutionResult> ProcessRequest<T>(T token, ProcessWorkItem request) where T : class
         {
             var routeMapper = new Filter(_repositoryStore);
             return routeMapper.Process(request);

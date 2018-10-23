@@ -6,7 +6,6 @@ namespace DoE.Lsm.WF.Engine
     using Api;
     using Logger;
     using Context;
-    using Svc.Context;
     using Data.Repositories;
 
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
@@ -20,23 +19,25 @@ namespace DoE.Lsm.WF.Engine
             this._dataStoreManager  = dataStoreManager;
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="payload"></param>
-        /// <returns></returns>
-        //public string BeginProcessRequest(CaseToken payload)
-        //{
-        //    return Remote.CallMemberAsync(payload).Status;
-        //}
-
-        public IAsyncResult BeginProcessRequest(ProcessCase context, AsyncCallback callback, object state)
+        public IAsyncResult BeginProcessRequestXml(ProcessWorkItem payload, AsyncCallback callback, object state)
         {
-//            return new CompletedAsyncResult<CaseToken>(context);
+            var processOutcome  = RemoteProcessInvoker.Method(payload).Status;
+
+            //            return new CompletedAsyncResult<CaseToken>(context);
             throw new Exception();
         }
 
-        public ProcessCase EndProcessRequest(ProcessCase context)
+        public ProcessWorkItem EndProcessRequestXml(ProcessWorkItem context)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IAsyncResult BeginProcessRequestJson(ProcessWorkItem payload, AsyncCallback callback, object state)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ProcessWorkItem EndProcessRequestJson(ProcessWorkItem context)
         {
             throw new NotImplementedException();
         }
