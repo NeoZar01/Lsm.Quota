@@ -245,8 +245,8 @@
     <Compile Include="Api\Repository.IProcessManager.cs" />
     <Compile Include="Production\ProcessManagerRepository.cs" />
     <Compile Include="Api\Repository.IProfile.cs" />
-    <Compile Include="Api\Repository.IPerson.cs" />
-    <Compile Include="Production\PersonRepository.cs" />
+    <Compile Include="Api\Repository.IIdentityAuth.cs" />
+    <Compile Include="Production\IdentityAuthRepository.cs" />
     <Compile Include="Api\IRepositoryStoreManager.cs" />
     <Compile Include="Api\RepositoryStoreManager.cs" />
   </ItemGroup>

@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace DoE.Lsm.WF.Engine.WI.Tools
@@ -27,9 +24,8 @@ namespace DoE.Lsm.WF.Engine.WI.Tools
         /// </summary>
         public string currentStepInstanceId = "";
 
-
         /// <summary>
-        ///     This method should does the following
+        ///     This method does the following
         ///     * Get the current step which the item is residing....
        ///      * Prepares the preceeding step - <c>initialise preceedingStepId</c> with the thrown Id and returns the ProcessStepFactory
         /// </summary>
@@ -41,9 +37,9 @@ namespace DoE.Lsm.WF.Engine.WI.Tools
         {
 
             if (string.IsNullOrEmpty(instanceCaseId)) throw new ArgumentNullException(nameof(instanceCaseId));
-            if (dataStoreManager == null) throw new ArgumentNullException(nameof(dataStoreManager));
+            if (dataStoreManager == null)             throw new ArgumentNullException(nameof(dataStoreManager));
 
-                dataStoreManager.WI.ProcessInstanceParkingStep(instanceCaseId, out preceedingStepId, out preceedingStepInstanceId);
+               dataStoreManager.WI.ProcessInstanceParkingStep(instanceCaseId, out preceedingStepId, out preceedingStepInstanceId);
 
             if(preceedingStepId.Equals("") || preceedingStepInstanceId.Equals(""))
             {

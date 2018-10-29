@@ -1,15 +1,15 @@
 ﻿using System;
 
-namespace DoE.Lsm.WF.Engines.Configurations
+namespace DoE.Lsm.WF.Engine.Configurations
 {
-    using Engine.Context.Entities;
+    using Api;
+    using Context.Entities;
     using Data.Repositories;
-
     ///<summary>
     /// This can cause overheads when is loaded on every request.It should be loaded during start-up.(Currently its loaded by the Dependancy Injection container).
     ///<remark>This increases start-up time.</remark>
     ///</summary>
-    public class WorkflowConfig : IDisposable
+    public class WorkflowConfig : IWorkflowConfig
     {
 
         /// <summary>
@@ -35,9 +35,9 @@ namespace DoE.Lsm.WF.Engines.Configurations
         ///<summary>
         ///     This will be thrown back to the caller as an instance.
         /// </summary>
-        public WorkflowConfig Roles(IRepositoryStoreManager dataStore)
+        public WorkflowConfig(IRepositoryStoreManager dataStore)
         {
-            if (instance != null) return instance;            
+            if (dataStore == null) throw new ArgumentNullException(nameof(dataStore));
 
             lock (_syncLock)
             {
@@ -49,8 +49,6 @@ namespace DoE.Lsm.WF.Engines.Configurations
                 ReportsTo<School, SubjectAnalyst>(School, SubjectAnalyst);                 //Configures school to only report to the subject advisor
                 
                 ReportsTo<SubjectAnalyst, CircuitManager>(SubjectAnalyst, CircuitManager); //Configures subject advisor to report to the CircuitManager
-
-                return instance;
             }
         }
 
@@ -86,6 +84,5 @@ namespace DoE.Lsm.WF.Engines.Configurations
             }
         }
         #endregion
-
     }
 }

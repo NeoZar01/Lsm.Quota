@@ -1,8 +1,3 @@
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\obj\Debug\DoE.Lsm.WF.Component.Requisitions.Role.resources
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\obj\Debug\DoE.Lsm.WF.Component.Requisitions.State.resources
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\obj\Debug\DoE.Lsm.WF.Component.Requisitions.Station.resources
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\obj\Debug\SnE.WF.Engine.Service.Requisitions.csproj.GenerateResource.Cache
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\obj\Debug\SnE.WF.Engine.Service.Requisitions.csprojResolveAssemblyReference.cache
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\bin\Debug\DoE.Lsm.WF.Component.Requisitions.pssym
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\bin\Debug\DoE.Lsm.WF.Component.Requisitions.dll.config
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\bin\Debug\DoE.Lsm.WF.Component.Requisitions.dll
@@ -40,6 +35,11 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitio
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\bin\Debug\Microsoft.Owin.Security.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\bin\Debug\Microsoft.Owin.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\obj\Debug\SnE.WF.Engine.Service.Requisitions.csprojResolveAssemblyReference.cache
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\obj\Debug\DoE.Lsm.WF.Component.Requisitions.Role.resources
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\obj\Debug\DoE.Lsm.WF.Component.Requisitions.State.resources
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\obj\Debug\DoE.Lsm.WF.Component.Requisitions.Station.resources
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\obj\Debug\SnE.WF.Engine.Service.Requisitions.csproj.GenerateResource.Cache
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\obj\Debug\PostSharp\touch
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\obj\Debug\PostSharp\dependencies.txt
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\obj\Debug\DoE.Lsm.WF.Component.Requisitions.dll

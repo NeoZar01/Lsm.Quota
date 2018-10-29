@@ -1,4 +1,3 @@
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\obj\Debug\SnE.WF.Engine.Service.Monitor.csprojResolveAssemblyReference.cache
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.WF.Engine.Component.Monitor.pssym
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.WF.Engine.Component.Monitor.dll.config
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.Lsm.WF.Engine.Component.Monitor.dll
@@ -30,6 +29,7 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\bi
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\Microsoft.Owin.Security.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\Microsoft.Owin.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\obj\Debug\SnE.WF.Engine.Service.Monitor.csprojResolveAssemblyReference.cache
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\obj\Debug\PostSharp\touch
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\obj\Debug\PostSharp\dependencies.txt
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\obj\Debug\DoE.Lsm.WF.Engine.Component.Monitor.dll

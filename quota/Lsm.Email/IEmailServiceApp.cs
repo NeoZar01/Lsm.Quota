@@ -12,6 +12,4 @@ namespace DoE.Email
         SmtpClient Smtp
         { get; set; }
     }
-
-
 }

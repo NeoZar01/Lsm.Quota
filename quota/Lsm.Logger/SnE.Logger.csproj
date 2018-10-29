@@ -83,7 +83,7 @@
     <Compile Include="Api\Appender.Database.cs" />
     <Compile Include="Api\Appender.Web.cs" />
     <Compile Include="Api\ILogger.cs" />
-    <Compile Include="Api\GenericLogger.cs" />
+    <Compile Include="Api\BaseLogger.cs" />
     <Compile Include="Api\IAppender.cs" />
     <Compile Include="DefaultFolder.Designer.cs">
       <AutoGen>True</AutoGen>

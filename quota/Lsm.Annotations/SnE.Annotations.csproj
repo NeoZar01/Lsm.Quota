@@ -52,7 +52,6 @@
     <Compile Include="Api\Exception.InvalidDatabaseOperation.cs" />
     <Compile Include="Api\Exception.FailedTransaction.cs" />
     <Compile Include="Api\Exception.UI.cs" />
-    <Compile Include="Api\Snapshot.cs" />
     <Compile Include="Api\ValidationCaseToken.cs" />
     <Compile Include="Api\Watch.cs" />
     <Compile Include="Api\FlowProcess.cs" />

@@ -218,9 +218,22 @@ namespace DoE.Lsm.Data.Repositories.Workflow.Engine
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="payload"></param>
+        /// <param name="currentStepInstanceId"></param>
+        /// <param name="preceedingStepId"></param>
+        /// <param name="preceedingStepInstanceId"></param>
+        /// <param name="UserToken"></param>
+        /// <param name="InstanceCaseId"></param>
+        /// <param name="instanceEntityType"></param>
+        /// <param name="parameters"></param>
         public void CreateInstanceSnapShot<T>(T payload, string currentStepInstanceId, string preceedingStepId, string preceedingStepInstanceId, string UserToken, string InstanceCaseId, string instanceEntityType, params string[] parameters) where T : class
         {
             throw new NotImplementedException();
         }
+
     }
 }

@@ -3,3 +3,10 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Email\bin\Debug\DoE.WF.Email.d
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Email\bin\Debug\DoE.WF.Email.pdb
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Email\obj\Debug\DoE.WF.Email.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Email\obj\Debug\DoE.WF.Email.pdb
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Email\bin\Debug\Microsoft.Exchange.WebServices.Auth.dll
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Email\bin\Debug\Microsoft.Exchange.WebServices.dll
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Email\bin\Debug\Microsoft.Exchange.WebServices.pdb
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Email\bin\Debug\Microsoft.Exchange.WebServices.xml
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Email\bin\Debug\Microsoft.Exchange.WebServices.Auth.pdb
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Email\bin\Debug\Microsoft.Exchange.WebServices.Auth.xml
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Email\obj\Debug\SnE.Email.csprojResolveAssemblyReference.cache

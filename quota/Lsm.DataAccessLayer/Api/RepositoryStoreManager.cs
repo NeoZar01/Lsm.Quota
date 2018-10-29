@@ -27,7 +27,7 @@ namespace DoE.Lsm.Data.Repositories
                         _authenticationDbContext = new PortalAuth();
                         _applicationSnEDbContext = new PortalSnE();
 
-                        Identity = new PersonRepository(_authenticationDbContext, logger);
+                        IdentityManager = new IdentityAuthRepository(_authenticationDbContext, logger);
                         WI = new ProcessManagerRepository(_applicationSnEDbContext, logger);
 
                         Locker = new LockerRepository(_ProductionDbContext, logger);
@@ -37,7 +37,7 @@ namespace DoE.Lsm.Data.Repositories
         public ProcessManagerRepository WI
         { get; set; }
 
-        public PersonRepository Identity
+        public IdentityAuthRepository IdentityManager
         { get; set; }
 
         public UIManagerRepository UI

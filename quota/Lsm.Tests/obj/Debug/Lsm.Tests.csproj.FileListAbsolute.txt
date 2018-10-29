@@ -157,7 +157,6 @@ C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Lsm.Annotations.pdb
 C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Lsm.Files.pdb
 C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\obj\Debug\Lsm.Tests.dll
 C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\obj\Debug\Lsm.Tests.pdb
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\obj\Debug\Lsm.Tests.csprojResolveAssemblyReference.cache
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
@@ -182,7 +181,8 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\DoE.Lsm.Annota
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\log4net.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\LimpEmisPortal.Notify.dll
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Unity.Abstractions.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Castle.Windsor.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Castle.Facilities.WcfIntegration.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\DoE.Lsm.WF.Component.Requisitions.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Owin.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Microsoft.Owin.Security.dll
@@ -211,11 +211,14 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\DoE.Lsm.Annota
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\log4net.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\LimpEmisPortal.Notify.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Castle.Windsor.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Castle.Facilities.WcfIntegration.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\DoE.Lsm.WF.Component.Requisitions.pdb
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Microsoft.Owin.Security.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Microsoft.Owin.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\DoE.Lsm.WF.Engine.Service.WorkItem.pdb
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\DoE.Lsm.WF.Engine.Component.Monitor.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\obj\Debug\Lsm.Tests.csprojResolveAssemblyReference.cache
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\obj\Debug\Lsm.Tests.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\obj\Debug\Lsm.Tests.pdb

@@ -1,13 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Symbols LinesOfCode="90" PostSharpLinesOfCode="0" EnhancedTypesCount="3" SchemaVersion="1" PostSharpVersion="6.0.25.0" xmlns="http://schemas.postsharp.org/2.0/symbols">
+<Symbols LinesOfCode="87" PostSharpLinesOfCode="0" EnhancedTypesCount="2" SchemaVersion="1" PostSharpVersion="6.0.25.0" xmlns="http://schemas.postsharp.org/2.0/symbols">
   <Class Class="#1=T:[PostSharp]PostSharp.Serialization.PSerializableAttribute">
-    <Instance Declaration="#2=T:[DoE.Lsm.Annotations]DoE.Lsm.Annotations.Api.Snapshot" Id="db81bbdbb1f5279f">
+    <Instance Declaration="#2=T:[DoE.Lsm.Annotations]DoE.Lsm.Annotations.Api.RequestTokenHandler" Id="db81bbdb821e4c2b">
       <Target />
     </Instance>
-    <Instance Declaration="#3=T:[DoE.Lsm.Annotations]DoE.Lsm.Annotations.Api.RequestTokenHandler" Id="db81bbdbb7e59774">
-      <Target />
-    </Instance>
-    <Instance Declaration="#4=T:[DoE.Lsm.Annotations]DoE.Lsm.Annotations.Exceptions.Watch" Id="db81bbdb2de84cf2">
+    <Instance Declaration="#3=T:[DoE.Lsm.Annotations]DoE.Lsm.Annotations.Exceptions.Watch" Id="db81bbdb07d062f9">
       <Target />
     </Instance>
   </Class>

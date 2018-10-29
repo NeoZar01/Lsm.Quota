@@ -21,8 +21,8 @@ namespace DoE.Lsm.WF.Engine.Component.Requisition
 
         protected readonly IRepositoryStoreManager   _dataStoreManager;
 
-        public RequisitionsProcess(IRepositoryStoreManager repositoryStore)
-        { _dataStoreManager = repositoryStore; }
+        public RequisitionsProcess(IRepositoryStoreManager dataStoreManager)
+        { _dataStoreManager = dataStoreManager; }
 
         [Watch(For: typeof(InvalidDatabaseOperationException), code: 1055, exception: "There was an error processing your workflow step instance.Please contact technical support for this issue.")]
         public async Task<ExecutionResult> InitiateStepInstance(ProcessWorkItem payload)

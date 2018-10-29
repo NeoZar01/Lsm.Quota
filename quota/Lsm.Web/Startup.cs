@@ -29,6 +29,9 @@ namespace DoE.Lsm.Web
 
                 var configRole = new AuthConfig(UserManager, roleManager)
                     .ConfigureRole("Administrators")
+                    .ConfigureRole("System")
+                    .ConfigureRole("Consortium Tier1")
+                    .ConfigureRole("Consortium Tier2")
                     .ConfigureRole("Subject Specialist")
                     .ConfigureRole("Circuit Manager")
                     .ConfigureRole("Warehouse Manager")
@@ -36,7 +39,7 @@ namespace DoE.Lsm.Web
                     .ConfigureRole("EMIS Officer")
                     .ConfigureRole("School");
 
-            }
+        }
         }
     
 }

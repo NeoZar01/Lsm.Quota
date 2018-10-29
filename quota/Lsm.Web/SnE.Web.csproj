@@ -246,6 +246,7 @@
     <Compile Include="Api\IAuthConfig.cs" />
     <Compile Include="Api\BaseAPIController.cs" />
     <Compile Include="Api\DependancyResolver.cs" />
+    <Compile Include="Areas\Surveys\SurveysAreaRegistration.cs" />
     <Compile Include="Controllers\Account\AccountController.cs" />
     <Compile Include="Api\BaseController.cs" />
     <Compile Include="Controllers\Home\HomeController.cs" />
@@ -1130,6 +1131,7 @@
     <Content Include="Areas\ProcessManager\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\ProcessManager\Views\Shared\Error.cshtml" />
     <Content Include="Areas\ProcessManager\Views\Shared\Lockout.cshtml" />
+    <Content Include="Areas\Surveys\Views\web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -5564,6 +5566,9 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\ProcessManager\Models\" />
     <Folder Include="Areas\Requisitions\Views\Capturer\" />
+    <Folder Include="Areas\Surveys\Controllers\" />
+    <Folder Include="Areas\Surveys\Models\" />
+    <Folder Include="Areas\Surveys\Views\Shared\" />
     <Folder Include="build\" />
     <Folder Include="src\" />
   </ItemGroup>

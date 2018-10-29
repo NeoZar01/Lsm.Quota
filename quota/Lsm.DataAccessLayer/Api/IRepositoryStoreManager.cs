@@ -17,17 +17,13 @@ namespace DoE.Lsm.Data.Repositories
         ProcessManagerRepository WI
         { get; set; }
 
-        #region ProfileStore
         ///<summary>
         ///    Handles profile related queries.
         ///    The <c>ASPNETProfile entity should no longer be used since we split it into </c>
         ///    <see> <c>IPrinciple</c> class and how we can extend its methods to add more custom queries.All methods in this class should be moved to this customization. </see>
         ///</summary>
-
-        PersonRepository Identity
+        IdentityAuthRepository IdentityManager
         { get; set; }
-
-        #endregion
 
         /// <summary>
         /// 
@@ -41,13 +37,10 @@ namespace DoE.Lsm.Data.Repositories
         LockerRepository Locker
         { get; set; }
 
-
         /// <summary>
         /// 
         /// </summary>
         RequisitionRepository Requisitions
         { get; set; }
-
-
     }
 }

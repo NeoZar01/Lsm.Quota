@@ -20,7 +20,7 @@ namespace DoE.Lsm.Web
         private static Lazy<IUnityContainer> container = new Lazy<IUnityContainer>( () => 
         {
                 var container = new UnityContainer();
-                    Register(container);
+                  //  Register(container);
                 return container;
         });
 
@@ -28,7 +28,7 @@ namespace DoE.Lsm.Web
         ///      Add dependant containers
         /// </summary>
         /// <param name="container"></param>
-        public static void Register(IUnityContainer container)
+        public static void Install(IUnityContainer container)
         {
             ServicesContainerRegistry<IUnityContainer>.Install(container);
             container.RegisterType<BaseController>();

@@ -2,6 +2,9 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\obj\Debug\SnE.WF
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\bin\Lsm.WF.Engine.Svc.dll.config
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\bin\Lsm.WF.Engine.Svc.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\bin\Lsm.WF.Engine.Svc.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\bin\Castle.Core.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\bin\Castle.Facilities.WcfIntegration.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\bin\Castle.Windsor.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\bin\Dashboard.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\bin\DoE.Lsm.Annotations.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\bin\DoE.Lsm.Data.Repositories.dll
@@ -15,7 +18,6 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\bin\Lsm.WF.Engin
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\bin\Lsm.WF.Engine.Component.Orders.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\bin\Unity.Abstractions.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\bin\Unity.Container.dll
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\bin\Unity.Wcf.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\bin\EntityFramework.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\bin\PagedList.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\bin\log4net.dll
@@ -36,6 +38,8 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\bin\Dashboard.pd
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\bin\DoE.Lsm.WF.Component.Requisitions.pdb
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\bin\DoE.Lsm.WF.Engine.Service.WorkItem.pdb
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\bin\DoE.Lsm.WF.Engine.Context.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\bin\Castle.Facilities.WcfIntegration.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\bin\Castle.Windsor.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\bin\EntityFramework.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\bin\PagedList.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\bin\log4net.xml
