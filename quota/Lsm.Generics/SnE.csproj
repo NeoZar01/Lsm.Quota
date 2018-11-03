@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Api\AssemblyEnvironment.cs" />
+    <Compile Include="Api\Command.cs" />
     <Compile Include="Api\Extention.Array.cs" />
     <Compile Include="Api\Extention.String.cs" />
     <Compile Include="Api\ServiceComponent.cs" />

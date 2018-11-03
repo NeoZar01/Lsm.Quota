@@ -1,4 +1,6 @@
-﻿namespace DoE.Lsm
+﻿using System.Text.RegularExpressions;
+
+namespace DoE.Lsm
 {
 
     /// <summary>
@@ -116,6 +118,23 @@
                 return replacement;
             }
             return original;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="command"></param>
+        /// <param name="pattern"></param>
+        /// <param name="token"></param>
+        /// <returns></returns>
+        public static string Match(this string generic, string command, string pattern, string token)
+        {
+            Match result = Regex.Match(command, pattern);
+            if (result.Success)
+            {
+                return result.Value.Replace(string.Concat(token, ":"), "").Replace(';', ' ').Trim();
+            }
+            return "0";
         }
     }
 }

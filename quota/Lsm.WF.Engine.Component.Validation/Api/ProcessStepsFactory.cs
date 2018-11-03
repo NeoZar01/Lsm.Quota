@@ -12,17 +12,22 @@ namespace DoE.Lsm.WF.Engine.WI.Tools
 
     public abstract class ProcessStepsFactory
     {
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <returns></returns>
-        public abstract ProcessStepsFactory Start(ProcessWorkItem payload, IRepositoryStoreManager dataStoreManager);
+        protected readonly IRepositoryStoreManager _dataStoreManager;
+        public ProcessStepsFactory(IRepositoryStoreManager dataStoreManager) {
+              this._dataStoreManager = dataStoreManager;
+        }
 
         /// <summary>
         /// 
         /// </summary>
         /// <returns></returns>
-        public abstract ProcessStepsFactory PreConfig(string instanceCaseId, IRepositoryStoreManager dataStoreManager, params object[] object_0001);
+        public abstract ProcessStepsFactory Start(ProcessWorkItem payload);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public abstract ProcessStepsFactory Config(string instanceCaseId , params string[] commands);
 
         /// <summary>
         /// 

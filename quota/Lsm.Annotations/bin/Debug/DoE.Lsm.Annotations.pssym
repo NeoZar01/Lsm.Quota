@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Symbols LinesOfCode="87" PostSharpLinesOfCode="0" EnhancedTypesCount="2" SchemaVersion="1" PostSharpVersion="6.0.25.0" xmlns="http://schemas.postsharp.org/2.0/symbols">
   <Class Class="#1=T:[PostSharp]PostSharp.Serialization.PSerializableAttribute">
-    <Instance Declaration="#2=T:[DoE.Lsm.Annotations]DoE.Lsm.Annotations.Api.RequestTokenHandler" Id="db81bbdb821e4c2b">
+    <Instance Declaration="#2=T:[DoE.Lsm.Annotations]DoE.Lsm.Annotations.Api.RequestTokenHandler" Id="db81bbdb0b367753">
       <Target />
     </Instance>
-    <Instance Declaration="#3=T:[DoE.Lsm.Annotations]DoE.Lsm.Annotations.Exceptions.Watch" Id="db81bbdb07d062f9">
+    <Instance Declaration="#3=T:[DoE.Lsm.Annotations]DoE.Lsm.Annotations.Exceptions.Watch" Id="db81bbdbb0fbda2f">
       <Target />
     </Instance>
   </Class>

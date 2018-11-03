@@ -13,8 +13,6 @@ namespace DoE.Lsm.Web.Api
         /// </summary>
         public static string Environment { get { return AssemblyInfo<AssemblyEnvironment>(a => a.Value); }}
 
-
-
         /// <summary>
         ///     Gets info an assembly
         /// </summary>

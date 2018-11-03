@@ -20,7 +20,6 @@ namespace DoE.Lsm.Web.Api
                             this._repositoriesDataStore = repositoryStore;
         }
 
-
         public virtual int EmisCode
         {
             get

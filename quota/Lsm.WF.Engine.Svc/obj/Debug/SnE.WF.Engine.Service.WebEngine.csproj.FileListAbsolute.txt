@@ -50,3 +50,4 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\bin\Newtonsoft.J
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\bin\Microsoft.Owin.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\obj\Debug\Lsm.WF.Engine.Svc.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\obj\Debug\Lsm.WF.Engine.Svc.pdb
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\bin\PostSharp.xml

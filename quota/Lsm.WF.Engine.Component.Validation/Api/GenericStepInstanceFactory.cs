@@ -25,21 +25,28 @@ namespace DoE.Lsm.WF.Engine.WI.Tools
         public string currentStepInstanceId = "";
 
         /// <summary>
+        /// 
+        /// </summary>
+        protected ProcessInstance processOutcome;
+
+        public GenericStepInstanceFactory(IRepositoryStoreManager dataStoreManager) : base(dataStoreManager){}
+
+        /// <summary>
         ///     This method does the following
         ///     * Get the current step which the item is residing....
-       ///      * Prepares the preceeding step - <c>initialise preceedingStepId</c> with the thrown Id and returns the ProcessStepFactory
+        ///      * Prepares the preceeding step - <c>initialise preceedingStepId</c> with the thrown Id and returns the ProcessStepFactory
         /// </summary>
         /// <param name="instanceCaseId"></param>
         /// <param name="dataStoreManager"></param>
         /// <param name="depndObject_0001"></param>
         /// <returns></returns>
-        public override ProcessStepsFactory PreConfig(string instanceCaseId, IRepositoryStoreManager dataStoreManager, params object[] dp_objects)
+        public override ProcessStepsFactory Config(string instanceCaseId, params string[] commands)
         {
 
-            if (string.IsNullOrEmpty(instanceCaseId)) throw new ArgumentNullException(nameof(instanceCaseId));
-            if (dataStoreManager == null)             throw new ArgumentNullException(nameof(dataStoreManager));
+            if (string.IsNullOrEmpty(instanceCaseId))  throw new ArgumentNullException(nameof(instanceCaseId));
+            if (_dataStoreManager == null)             throw new ArgumentNullException(nameof(_dataStoreManager));
 
-               dataStoreManager.WI.ProcessInstanceParkingStep(instanceCaseId, out preceedingStepId, out preceedingStepInstanceId);
+                _dataStoreManager.WI.ProcessInstanceParkingStep(instanceCaseId, out preceedingStepId, out preceedingStepInstanceId);
 
             if(preceedingStepId.Equals("") || preceedingStepInstanceId.Equals(""))
             {
@@ -52,12 +59,12 @@ namespace DoE.Lsm.WF.Engine.WI.Tools
         ///     Creates a snapshot of the payload
         /// </summary>
         /// <returns></returns>        
-        public override ProcessStepsFactory Start(ProcessWorkItem payload, IRepositoryStoreManager dataStoreManager)
+        public override ProcessStepsFactory Start(ProcessWorkItem payload)
         {
             if (payload == null) throw new ArgumentNullException(nameof(payload));
-            if (dataStoreManager == null) throw new ArgumentNullException(nameof(dataStoreManager));
+            if (_dataStoreManager == null) throw new ArgumentNullException(nameof(_dataStoreManager));
 
-            dataStoreManager.WI.CreateInstanceSnapShot<ProcessWorkItem>(payload, currentStepInstanceId, preceedingStepId, preceedingStepInstanceId, payload.IdentityToken, payload.ProcessInstanceId, payload.InstanceEntityType,
+            _dataStoreManager.WI.CreateInstanceSnapShot<ProcessWorkItem>(payload, currentStepInstanceId, preceedingStepId, preceedingStepInstanceId, payload.IdentityToken, payload.ProcessInstanceId, payload.InstanceEntityType,
                                     payload.param_001, payload.param_002, payload.param_003, payload.param_004, payload.param_005, payload.param_006, payload.param_007, payload.param_008, payload.param_009, payload.param_0010);
             return this;
         }

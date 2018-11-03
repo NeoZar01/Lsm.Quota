@@ -17,20 +17,17 @@ namespace DoE.Lsm.WF.Engine.Component.Requisition
     [FlowProcess(Name = "SNE.Lsm.Requisitions")]
     public class RequisitionsProcess : GenericStepInstanceFactory , RouteFactory
     {
-        protected ProcessInstance processOutcome;
 
-        protected readonly IRepositoryStoreManager   _dataStoreManager;
-
-        public RequisitionsProcess(IRepositoryStoreManager dataStoreManager)
-        { _dataStoreManager = dataStoreManager; }
+        public RequisitionsProcess(IRepositoryStoreManager dataStoreManager) : base(dataStoreManager)
+        {}
 
         [Watch(For: typeof(InvalidDatabaseOperationException), code: 1055, exception: "There was an error processing your workflow step instance.Please contact technical support for this issue.")]
         public async Task<ExecutionResult> InitiateStepInstance(ProcessWorkItem payload)
         {
             try
             {
-                var outcome = await PreConfig(payload.ProcessInstanceId, this._dataStoreManager, null)
-                                   .Start(payload, this._dataStoreManager)
+                var outcome = await Config(payload.ProcessInstanceId, null)
+                                   .Start(payload)
                                    .Instantiate()                                        
                                    .End();                            
             }

@@ -1,6 +1,6 @@
 ﻿@model DashboardFactoryViewModel
 
-@{ViewBag.Title = string.Concat("(", User.Identity.GetUserName(), ")", " Nrm-S ", " - ",  "Main Dashboard Page");}
+@{ViewBag.Title = string.Concat(" SNE-Surveys ", "  |   ", User.Identity.GetUserName() );}
 
 <div class="row">
         @{ Html.RenderAction("BuildDashboard", "Home", new { model = Model });}

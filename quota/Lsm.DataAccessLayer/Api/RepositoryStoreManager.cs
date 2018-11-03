@@ -2,20 +2,19 @@
 
 namespace DoE.Lsm.Data.Repositories
 {
-    using Logger;
-    using UI;
-    using Persons;
     using EF;
-    using Workflow.Engine;
-    using Profile;
+    using UI;
     using Lock;
+    using Logger;
+    using Persons;
+    using Workflow.Engine;
 
     public class RepositoryStoreManager : IRepositoryStoreManager
    {
 
         private readonly ILogger _logger;
 
-        private readonly PortalLsm     _ProductionDbContext;
+        private readonly PortalLsm     _productionDbContext;
         private readonly PortalAuth    _authenticationDbContext;
         private readonly PortalSnE     _applicationSnEDbContext;
 
@@ -23,15 +22,15 @@ namespace DoE.Lsm.Data.Repositories
         {
                         this._logger = logger;
 
-                        _ProductionDbContext     = new PortalLsm();
+                        _productionDbContext     = new PortalLsm();
                         _authenticationDbContext = new PortalAuth();
                         _applicationSnEDbContext = new PortalSnE();
 
                         IdentityManager = new IdentityAuthRepository(_authenticationDbContext, logger);
                         WI = new ProcessManagerRepository(_applicationSnEDbContext, logger);
 
-                        Locker = new LockerRepository(_ProductionDbContext, logger);
-                        Requisitions = new RequisitionRepository(_ProductionDbContext, logger);
+                        Locker = new LockerRepository(_productionDbContext, logger);
+                        Requisitions = new RequisitionRepository(_productionDbContext, logger);
         }
 
         public ProcessManagerRepository WI
@@ -65,7 +64,7 @@ namespace DoE.Lsm.Data.Repositories
 
             if (disposing)
             {
-                _ProductionDbContext.Dispose();
+                _productionDbContext.Dispose();
             }
         }
         #endregion

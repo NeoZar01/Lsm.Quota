@@ -20,7 +20,7 @@ namespace DoE.Lsm.Web
         private static Lazy<IUnityContainer> container = new Lazy<IUnityContainer>( () => 
         {
                 var container = new UnityContainer();
-                  //  Register(container);
+                    Install(container);
                 return container;
         });
 

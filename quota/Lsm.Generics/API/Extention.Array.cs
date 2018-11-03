@@ -1,4 +1,6 @@
-﻿namespace DoE.Lsm
+﻿using System.Text.RegularExpressions;
+
+namespace DoE.Lsm
 {
     public static class ArrayExtensions
     {
@@ -20,5 +22,9 @@
             }
             return false;
         }
+
+
+
+
     }
 }
