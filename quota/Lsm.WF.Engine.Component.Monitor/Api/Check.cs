@@ -5,8 +5,10 @@ using PostSharp.Serialization;
 
 namespace DoE.Lsm.WF.Component.Monitor.Annotations
 {
+    using Core;
     using Engine.Context;
     using Lsm.Annotations;
+    using WI.Models;
 
     /// <summary>
     /// 
@@ -21,13 +23,13 @@ namespace DoE.Lsm.WF.Component.Monitor.Annotations
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="listener"></param>
-        /// <param name="estimatedExecutionTimeInMinutes"></param>
-        public Trace(string listener, int estimatedExecutionTimeInMinutes)
+        /// <param name="request"></param>
+        /// <param name="estimate"></param>
+        public Trace(string request, int estimate)
         {
                  _estimatedMinutes = DateTime.Now;
-            this._estimatedMinutes = this._estimatedMinutes.AddMinutes(estimatedExecutionTimeInMinutes);
-            this._type = listener;
+            this._estimatedMinutes = this._estimatedMinutes.AddMinutes(estimate);
+            this._type = request;
         }
 
         /// <summary>
@@ -38,7 +40,7 @@ namespace DoE.Lsm.WF.Component.Monitor.Annotations
         public override void OnEntry(MethodExecutionArgs args)
         {
             // EntityType = _estimatedMinutes
-            args.MethodExecutionTag = new ProcessWorkItem {   ProcessInstanceToken =  Guid.NewGuid().ToString()  , SubEntity = DateTime.Now};
+            args.MethodExecutionTag = new WorkItemInstance {   WIToken =  Guid.NewGuid().ToString()  , SubEntity = DateTime.Now};
             base.OnEntry(args);
         }
 
@@ -49,7 +51,7 @@ namespace DoE.Lsm.WF.Component.Monitor.Annotations
         public override void OnExit(MethodExecutionArgs args)
         {
 
-           var finalExecutionTime = (ProcessWorkItem)args.MethodExecutionTag;
+           var finalExecutionTime = (WorkItemInstance)args.MethodExecutionTag;
 
             base.OnExit(args);
         }

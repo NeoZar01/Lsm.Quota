@@ -6,7 +6,7 @@ namespace DoE.Lsm
     /// <summary>
     ///         This is only used for simplifying debugging versions
     /// </summary>
-    public static class ApplicationAssemblyInfo
+    public static class AssemblyEngineComponent
     {
         /// <summary>
         ///  <value type="string"></value>

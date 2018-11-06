@@ -6,28 +6,26 @@ using static System.Reflection.BindingFlags;
 
 namespace DoE.Lsm.WF.Engine.Context
 {
-    using Entities;
-    using WI.Context.Entities;
 
     public static class RemoteProcessWorker
     {
-        public static ProcessWorkItem Method(ProcessWorkItem context)
-        {
-            try
-            {
-                Type rmi = Type.GetType(context.DestinationUser);
+        //public static WorkInstance Method(WorkInstance context)
+        //{
+        //    try
+        //    {
+        //        Type rmi = Type.GetType(context.DestinationUser);
 
-                IRole instance = (IRole)Activator.CreateInstance(rmi);
+        //        IRole instance = (IRole)Activator.CreateInstance(rmi);
 
-                var outcome = rmi.InvokeMember(context.InstanceEntityType.Equals("Async") ? "ProcessRequestAsync" : "ProcessRequest", InvokeMethod, null, instance, new object[] { });
+        //        var outcome = rmi.InvokeMember(context.RequestType.Equals("Async") ? "ProcessRequestAsync" : "ProcessRequest", InvokeMethod, null, instance, new object[] { });
 
-            }
-            catch
-            {
-                 return new ProcessWorkItem {Status = "ERROR"};
-            }
+        //    }
+        //    catch
+        //    {
+        //         return new WorkInstance {Status = "ERROR"};
+        //    }
 
-                return new ProcessWorkItem { Status = "SUCCESS" };
-        }
+        //        return new WorkInstance { Status = "SUCCESS" };
+        //}
     }
 }

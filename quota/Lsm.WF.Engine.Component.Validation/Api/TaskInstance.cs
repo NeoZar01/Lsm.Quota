@@ -2,7 +2,7 @@
 using System.Data.Entity;
 using System;
 
-namespace DoE.Lsm.WF.Engine.WI.Tools
+namespace DoE.Lsm.WF.WI.Tools
 {
 
     /// <summary>

@@ -10,6 +10,7 @@ namespace DoE.Lsm.Data.Repositories.Workflow.Engine
     using Annotations.Exceptions;
     using WF.Engine.Context;
     using System.Reflection;
+    using WF.Core;
 
     //<summary>
     //     This repository will handle all the operations associated with managing the workflow engine.         

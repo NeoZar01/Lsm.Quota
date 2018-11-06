@@ -29,7 +29,7 @@ namespace DoE.Lsm.WF.Component.Requisitions {
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        public Role() {
+        internal Role() {
         }
         
         /// <summary>
@@ -63,18 +63,18 @@ namespace DoE.Lsm.WF.Component.Requisitions {
         /// <summary>
         ///   Looks up a localized string similar to Custodian.
         /// </summary>
-        public static string CTDN {
+        public static string ctdn {
             get {
-                return ResourceManager.GetString("CTDN", resourceCulture);
+                return ResourceManager.GetString("ctdn", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to School.
         /// </summary>
-        public static string SHL {
+        public static string shl {
             get {
-                return ResourceManager.GetString("SHL", resourceCulture);
+                return ResourceManager.GetString("shl", resourceCulture);
             }
         }
     }

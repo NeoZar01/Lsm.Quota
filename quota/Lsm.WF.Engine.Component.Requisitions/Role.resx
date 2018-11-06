@@ -117,11 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="CTDN" xml:space="preserve">
+  <data name="ctdn" xml:space="preserve">
     <value>Custodian</value>
     <comment>Curator of the requisition</comment>
   </data>
-  <data name="SHL" xml:space="preserve">
+  <data name="shl" xml:space="preserve">
     <value>School</value>
   </data>
 </root>

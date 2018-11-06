@@ -1,0 +1,1 @@
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\obj\Debug\SnE.WF.Service.WITools.csprojResolveAssemblyReference.cache

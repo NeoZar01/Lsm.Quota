@@ -1,80 +1,61 @@
-﻿using System;
-using System.Threading.Tasks;
-/// <summary>  
-///     The requisition route will allow Schools to make requisitions, and other entities such as Subject Advisors to 
-///     re-route requsitions and circuit managers to approve them.
+﻿/// <summary>  
+///    The requisition route will allow Schools to make requisitions, and other entities such as Subject Advisors to re-route requsitions and circuit managers to approve them.
 /// </summary>
-namespace DoE.Lsm.WF.Engine.Component.Requisition
+using System.Threading.Tasks;
+
+namespace DoE.Lsm.WF.Component.Requisition
 {
+    using Core;
     using Logger;
-    using Context;
+    using WI.Api;
     using WI.Tools;
     using Annotations;
+    using WI.Context.Norms;
     using Data.Repositories;
+    using Monitor.Annotations;
     using Annotations.Exceptions;
 
     using static WF.Component.Requisitions.Role;
-    
+    using System;
+    using WI.Models;
+
     [FlowProcess(Name = "SNE.Lsm.Requisitions")]
-    public class RequisitionsProcess : StepInstanceFactory , RouteFactory
+    public class RequisitionsProcess : StepInstanceFactory , NormProcess
     {
 
-        public RequisitionsProcess(ILogger logger, IRepositoryStoreManager dataStoreManager) : base(logger, dataStoreManager)
-        {}
+        protected readonly IActionTaskFactory      _actionFactory;
 
+        public override ProcessStepsFactory Action(INormInstanceHandler niHandler)
+        {
+                niHandler.School.ProcessRequestItem();
+                return this;
+        }
+
+        [Trace(request: "async", estimate: 2)]
         [Watch(For: typeof(InvalidDatabaseOperationException), code: 1055, exception: "There was an error processing your workflow step instance.Please contact technical support for this issue.")]
-        public async Task<ExecutionResult> ExecuteStep(ProcessWorkItem payload)
+        public async Task<WorkItemInstance> Activate(Norm payload, INormInstanceHandler niHandler)
         {
             try
             {
-                var outcome = await Config("SNE.Lsm.Requisitions", payload.ProcessInstanceId, "enableEscalation:0;escalationPeriod:0;")
-                                   .PreStart(payload)
-                                   .Start()
-                                   .ExecuteAction()                                        
-                                   .End();                            
+                var stepProcess = await Config(payload.ProcessEntityType, payload.Token, "enableEscalation:0;escalationPeriod:0;")
+                                       .Start(payload)
+                                       .PreAction()
+                                       .Action(niHandler)
+                                       .End();
+                return stepProcess;
             }
             catch
             {
                 throw;
             }
-            return ExecutionResult.Success;                      
-       }
+        }
+
+
+
+        public RequisitionsProcess(ILogger logger, IRepositoryStoreManager repositoryManager, IActionTaskFactory actionFactory) : base(logger, repositoryManager)
+        {
+            this._actionFactory     = actionFactory;  
+        }
+
     }
 }
-
-
-///<summary>  Go to <code> WF.Utils.Items.Utils.RequestRoute.Initiate </code> for more info on how this method works.
-///
-/// <Exception> Any exception thrown from this methods will return as an Exec entry </Exception>
-///</summary>        
-///
-
-//public override StepFactory Run(InstanceCase payload)
-////{
-////     try
-////    {
-////        object obj = payload.EntityType;
-////        var entity = obj as Requisition;
-
-////        if (payload.Role.Equals(SHL))
-////        {
-////            processOutcome = await Servicer.RunTaskInstance(payload, _repositoryStore, entity);
-////        }
-////        else if (payload.Role.Equals(CTDN))
-////        {
-////            processOutcome = await Custordian.RunTaskInstance(payload, _repositoryStore, entity);
-////        }
-////        else
-////        {
-////            processOutcome = await Custordian.RunTaskInstance(payload, _repositoryStore, entity);
-////            return ExecutionResult.Idle;
-////        }
-////        return ExecutionResult.Success;
-////    }
-////    catch
-////    {
-////        return ExecutionResult.Failed;
-////    }
-
-//    return base.Run(payload);
-//}

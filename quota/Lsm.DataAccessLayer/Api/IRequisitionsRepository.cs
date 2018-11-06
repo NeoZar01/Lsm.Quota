@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace DoE.Lsm.Data.Repositories
 {
-
-    using WF.Engine.Context;
-    using Annotations;
     using EF;
+    using WF.Core;
+    using Annotations;
 
     using static Annotations.Flavours;
+
 
     public interface IRequisitionsRepository : IRepository<Requisition>
     {

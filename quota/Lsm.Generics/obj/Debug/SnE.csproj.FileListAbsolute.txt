@@ -3,4 +3,3 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Generics\bin\Debug\Lsm.Generic
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Generics\bin\Debug\Lsm.Generics.pdb
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Generics\obj\Debug\Lsm.Generics.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Generics\obj\Debug\Lsm.Generics.pdb
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Generics\obj\Debug\SnE.csprojResolveAssemblyReference.cache

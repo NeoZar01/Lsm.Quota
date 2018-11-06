@@ -11,6 +11,7 @@ namespace DoE.Lsm.Data.Repositories
     using Logger;
     using WF.Engine.Context;
     using Annotations.Exceptions;
+    using WF.Core;
 
     public class RequisitionRepository : RepositoryFactory<Requisition>, IRequisitionsRepository
     {
