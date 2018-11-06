@@ -107,6 +107,14 @@
       <Project>{7e8c0842-0fe6-47de-8f70-a9533a7c5c09}</Project>
       <Name>SnE.Service.DataRepository</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Lsm.Generics\SnE.csproj">
+      <Project>{664fa002-aec7-45c2-9033-66b197886719}</Project>
+      <Name>SnE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lsm.Logger\SnE.Logger.csproj">
+      <Project>{b68fa39f-01a8-4382-b3f6-37307186d92a}</Project>
+      <Name>SnE.Logger</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Lsm.WF.Engine.Component.Monitor\SnE.WF.Engine.Service.Monitor.csproj">
       <Project>{771b5229-3aa8-40e8-b2c0-2a4587c4cdbe}</Project>
       <Name>SnE.WF.Engine.Service.Monitor</Name>

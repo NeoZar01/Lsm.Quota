@@ -5,6 +5,9 @@ namespace DoE.Lsm.WF.Engine.Configurations
     using Api;
     using Context.Entities;
     using Data.Repositories;
+    using Logger;
+    using WI.Context.Entities;
+
     ///<summary>
     /// This can cause overheads when is loaded on every request.It should be loaded during start-up.(Currently its loaded by the Dependancy Injection container).
     ///<remark>This increases start-up time.</remark>
@@ -35,15 +38,15 @@ namespace DoE.Lsm.WF.Engine.Configurations
         ///<summary>
         ///     This will be thrown back to the caller as an instance.
         /// </summary>
-        public WorkflowConfig(IRepositoryStoreManager dataStore)
+        public WorkflowConfig(ILogger logger, IRepositoryStoreManager dataStore)
         {
             if (dataStore == null) throw new ArgumentNullException(nameof(dataStore));
 
             lock (_syncLock)
             {
-                CircuitManager      = new CircuitManager(dataStore);
-                SubjectAnalyst      = new SubjectAnalyst(dataStore);
-                School              = new School(dataStore);
+                CircuitManager      = new CircuitManager(logger, dataStore);
+                SubjectAnalyst      = new SubjectAnalyst(logger, dataStore);
+                School              = new School(logger, dataStore);
 
                 // We should figure out a dynamic way for one role to have multiple report structures.
                 ReportsTo<School, SubjectAnalyst>(School, SubjectAnalyst);                 //Configures school to only report to the subject advisor

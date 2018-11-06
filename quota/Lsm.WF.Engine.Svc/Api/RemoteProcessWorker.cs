@@ -7,6 +7,7 @@ using static System.Reflection.BindingFlags;
 namespace DoE.Lsm.WF.Engine.Context
 {
     using Entities;
+    using WI.Context.Entities;
 
     public static class RemoteProcessWorker
     {

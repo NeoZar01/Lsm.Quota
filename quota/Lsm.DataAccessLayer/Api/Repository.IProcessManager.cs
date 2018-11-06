@@ -83,5 +83,11 @@
         /// <param name="parameters"> This can only be up to 10 at the moment</param>
         void CreateInstanceSnapShot<T>(T payload, string currentStepInstanceId, string preceedingStepId, string preceedingStepInstanceId, string UserToken, string InstanceCaseId, string instanceEntityType , params string[] parameters) where T : class;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="entityType"></param>
+        /// <param name="settings"></param>
+        void InstallRules(string entityType, int[] settings);
     }
 }

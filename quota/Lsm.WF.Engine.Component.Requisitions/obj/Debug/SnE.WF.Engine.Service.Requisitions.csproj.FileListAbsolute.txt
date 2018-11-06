@@ -45,3 +45,5 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitio
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\obj\Debug\DoE.Lsm.WF.Component.Requisitions.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\obj\Debug\DoE.Lsm.WF.Component.Requisitions.pdb
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\obj\Debug\PostSharp\postsharp.app.config
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\bin\Debug\Lsm.Generics.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\bin\Debug\Lsm.Generics.pdb

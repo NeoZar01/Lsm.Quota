@@ -3,8 +3,9 @@ using System.Threading.Tasks;
 
 namespace DoE.Lsm.WF.Engine.Context
 {
-    using Data.Repositories;
     using Component.Requisition;
+    using Data.Repositories;
+    using Logger;
 
     /// <summary> Auto-switchboard for re-routing requests  
     ///          <para>The constructor configures routes into a <c> Dictionary<WF.Tools.Route, WF.Utils.Items.Utils.RequestRoute> </c> allowing the Workflow engine to throw key in order to re-route requests </para>
@@ -30,9 +31,9 @@ namespace DoE.Lsm.WF.Engine.Context
     {                
         private Dictionary<string, RouteFactory> _routeContext = new Dictionary<string, RouteFactory>(); //Stores your routes
 
-        public Filter(IRepositoryStoreManager dataStore)
+        public Filter(ILogger logger, IRepositoryStoreManager dataStore)
         {
-            _routeContext.Add(ApplicationAssemblyInfo.Requisitions, new RequisitionsProcess(dataStore));  
+            _routeContext.Add(ApplicationAssemblyInfo.Requisitions, new RequisitionsProcess(logger, dataStore));  
         }
 
         ///<summary> 
@@ -40,7 +41,7 @@ namespace DoE.Lsm.WF.Engine.Context
         ///</summary>
         public async Task<ExecutionResult> Process(ProcessWorkItem payload)
         {
-              return await _routeContext[payload.Route].InitiateStepInstance(payload);            
+              return await _routeContext[payload.Route].ExecuteStep(payload);            
         }
     }
 }

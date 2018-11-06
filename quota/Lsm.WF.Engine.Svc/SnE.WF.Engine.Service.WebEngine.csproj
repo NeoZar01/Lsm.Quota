@@ -96,17 +96,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Api\ApplicationAssemblyInfo.cs" />
+    <Compile Include="Api\Filter.cs" />
     <Compile Include="Api\RemoteProcessWorker.cs" />
     <Compile Include="Api\IWorkflowConfig.cs" />
     <Compile Include="App_Start\WorkflowConfig.cs" />
-    <Compile Include="Context\Entities\IRole.cs" />
     <Compile Include="Context\Entities\Role.Administrator.cs" />
     <Compile Include="Context\Entities\Role.CircuitManager.cs" />
     <Compile Include="Context\Entities\Role.cs" />
     <Compile Include="Context\Entities\Role.School.cs" />
     <Compile Include="Context\Entities\Role.SubjectSpecialist.cs" />
     <Compile Include="Context\Entities\Role.Tickets.cs" />
-    <Compile Include="Context\Filter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

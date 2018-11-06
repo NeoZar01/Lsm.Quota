@@ -37,3 +37,5 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\obj\Debug\DoE.Lsm.WF.Engine.Service.WorkItem.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\obj\Debug\DoE.Lsm.WF.Engine.Service.WorkItem.pdb
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\obj\Debug\PostSharp\postsharp.app.config
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\bin\Debug\Lsm.Generics.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\bin\Debug\Lsm.Generics.pdb

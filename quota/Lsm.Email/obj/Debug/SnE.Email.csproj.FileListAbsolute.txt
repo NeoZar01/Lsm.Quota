@@ -9,4 +9,4 @@ C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Email\bin\Debug\Microsoft.Exch
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Email\bin\Debug\Microsoft.Exchange.WebServices.xml
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Email\bin\Debug\Microsoft.Exchange.WebServices.Auth.pdb
 C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Email\bin\Debug\Microsoft.Exchange.WebServices.Auth.xml
-C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Lsm.Email\obj\Debug\SnE.Email.csprojResolveAssemblyReference.cache
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Email\obj\Debug\SnE.Email.csprojResolveAssemblyReference.cache

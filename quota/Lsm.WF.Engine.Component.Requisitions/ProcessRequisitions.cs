@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 /// </summary>
 namespace DoE.Lsm.WF.Engine.Component.Requisition
 {
+    using Logger;
     using Context;
     using WI.Tools;
     using Annotations;
@@ -13,22 +14,23 @@ namespace DoE.Lsm.WF.Engine.Component.Requisition
     using Annotations.Exceptions;
 
     using static WF.Component.Requisitions.Role;
-
+    
     [FlowProcess(Name = "SNE.Lsm.Requisitions")]
-    public class RequisitionsProcess : GenericStepInstanceFactory , RouteFactory
+    public class RequisitionsProcess : StepInstanceFactory , RouteFactory
     {
 
-        public RequisitionsProcess(IRepositoryStoreManager dataStoreManager) : base(dataStoreManager)
+        public RequisitionsProcess(ILogger logger, IRepositoryStoreManager dataStoreManager) : base(logger, dataStoreManager)
         {}
 
         [Watch(For: typeof(InvalidDatabaseOperationException), code: 1055, exception: "There was an error processing your workflow step instance.Please contact technical support for this issue.")]
-        public async Task<ExecutionResult> InitiateStepInstance(ProcessWorkItem payload)
+        public async Task<ExecutionResult> ExecuteStep(ProcessWorkItem payload)
         {
             try
             {
-                var outcome = await Config(payload.ProcessInstanceId, null)
-                                   .Start(payload)
-                                   .Instantiate()                                        
+                var outcome = await Config("SNE.Lsm.Requisitions", payload.ProcessInstanceId, "enableEscalation:0;escalationPeriod:0;")
+                                   .PreStart(payload)
+                                   .Start()
+                                   .ExecuteAction()                                        
                                    .End();                            
             }
             catch

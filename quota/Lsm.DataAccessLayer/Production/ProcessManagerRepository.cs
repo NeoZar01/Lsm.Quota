@@ -235,5 +235,9 @@ namespace DoE.Lsm.Data.Repositories.Workflow.Engine
             throw new NotImplementedException();
         }
 
+        public void InstallRules(string entityType, int[] settings)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

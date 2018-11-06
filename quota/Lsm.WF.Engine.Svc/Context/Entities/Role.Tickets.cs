@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DoE.Lsm.WF.Engine.Context.Entities
+namespace DoE.Lsm.WF.Engine.WI.Context.Entities
 {
     using Data.Repositories;
 

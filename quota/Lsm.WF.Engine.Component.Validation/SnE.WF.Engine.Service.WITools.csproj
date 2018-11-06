@@ -63,11 +63,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Api\GenericStepInstanceFactory.cs" />
+    <Compile Include="Api\IRole.cs" />
+    <Compile Include="Api\StepInstanceFactory.cs" />
     <Compile Include="Api\IGlobalConfigurationOption.cs" />
     <Compile Include="Api\Process.cs" />
     <Compile Include="Api\ProcessStepsFactory.cs" />
+    <Compile Include="Api\StepRuleInstallationWorker.cs" />
     <Compile Include="Api\StepInstance.cs" />
+    <Compile Include="Api\StepInstanceRule.cs" />
     <Compile Include="Api\TaskInstance.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -83,6 +86,14 @@
     <ProjectReference Include="..\Lsm.DataAccessLayer\SnE.Service.DataRepository.csproj">
       <Project>{7e8c0842-0fe6-47de-8f70-a9533a7c5c09}</Project>
       <Name>SnE.Service.DataRepository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lsm.Generics\SnE.csproj">
+      <Project>{664fa002-aec7-45c2-9033-66b197886719}</Project>
+      <Name>SnE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lsm.Logger\SnE.Logger.csproj">
+      <Project>{B68FA39F-01A8-4382-B3F6-37307186D92A}</Project>
+      <Name>SnE.Logger</Name>
     </ProjectReference>
     <ProjectReference Include="..\Lsm.WF.Engine.Tools.Util\SnE.WF.Engine.Context.csproj">
       <Project>{da221c3e-0a0f-424c-ae98-48a5ad7380fd}</Project>

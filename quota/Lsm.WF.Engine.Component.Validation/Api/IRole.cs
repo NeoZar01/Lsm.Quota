@@ -4,8 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 
-namespace DoE.Lsm.WF.Engine.Context.Entities
+namespace DoE.Lsm.WF.Engine.WI.Context.Entities
 {
+    using Engine.Context;
+
     public interface IRole
     {
 

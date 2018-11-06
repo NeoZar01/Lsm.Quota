@@ -11,6 +11,6 @@ namespace DoE.Lsm.WF.Engine.Context
         /// <summary>  
         ///      Takes the request to the designated module.
         /// </summary>
-        Task<ExecutionResult> InitiateStepInstance(ProcessWorkItem payload);
+        Task<ExecutionResult> ExecuteStep(ProcessWorkItem payload);
     }
 }

@@ -16,7 +16,7 @@ namespace DoE.Lsm
         /// <param name="pattern">([1-9][0-9]{0,2})</param>
         /// <param name="tokens"></param>
         /// <returns></returns>
-        public static int[] ResolveCommandsExpressions( string command, string pattern, params string[] tokens )
+        public static int[] ResolveCommandExpressions( string pattern, string command, params string[] tokens )
         {
 
             int[] arry = new int[tokens.Length];

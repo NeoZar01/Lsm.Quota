@@ -6,15 +6,22 @@ namespace DoE.Lsm.WF.Engine.Context.Entities
 
     using Data.Repositories;
     using Data.Repositories.EF;
+    using Engine.Context;
+    using Logger;
+    using WI.Context.Entities;
 
     public abstract class Role : IRole
     {
         public volatile int response = 0;
         public IRole        _successor;
-        public readonly IRepositoryStoreManager    _repositoryStore;
 
-        public Role(IRepositoryStoreManager repositoryStore)
-        {   this._repositoryStore = repositoryStore;  }
+        protected readonly IRepositoryStoreManager    _repositoryStore;
+        protected readonly ILogger _logger;
+        public Role(ILogger logger, IRepositoryStoreManager repositoryStore)
+        {   this._repositoryStore = repositoryStore;
+            this._logger = logger;
+
+        }
 
 
         /// <summary>
@@ -31,7 +38,7 @@ namespace DoE.Lsm.WF.Engine.Context.Entities
         /// </summary>
         public virtual async Task<ExecutionResult> ProcessRequestAsync<T>(T WFObject, ProcessWorkItem payload) where T : class
         {
-            var map = new Filter(_repositoryStore);
+            var map = new Filter(_logger, _repositoryStore);
             return  await map.Process(payload);
         }
 
@@ -42,7 +49,7 @@ namespace DoE.Lsm.WF.Engine.Context.Entities
         /// </summary>
         public virtual Task<ExecutionResult> ProcessRequest<T>(T token, ProcessWorkItem request) where T : class
         {
-            var routeMapper = new Filter(_repositoryStore);
+            var routeMapper = new Filter(_logger, _repositoryStore);
             return routeMapper.Process(request);
         }
     }
