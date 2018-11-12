@@ -89,5 +89,13 @@
         /// <param name="entityType"></param>
         /// <param name="settings"></param>
         void InstallRules(string entityType, int[] settings);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="processHash"></param>
+        /// <param name="processInstanceHash"></param>
+        /// <returns></returns>
+        string ResolveProcessInstance(string processInstanceInputHash , out string processInstanceOutputHash);
     }
 }

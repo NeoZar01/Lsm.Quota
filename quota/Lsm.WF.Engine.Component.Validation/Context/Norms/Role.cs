@@ -13,7 +13,7 @@ namespace DoE.Lsm.WF.WI.Context.Norms
     public class Role : Norm
     {
         public volatile int response = 0;
-        public INormInstanceHandler _successor;
+        public Role _successor;
 
         protected readonly IRepositoryStoreManager    _repositoryStore;
         protected readonly ILogger _logger;
@@ -22,9 +22,14 @@ namespace DoE.Lsm.WF.WI.Context.Norms
         {
             this._repositoryStore = repositoryStore;
             this._logger = logger;
+
         }
 
-        public void SetSuccessor(INormInstanceHandler succesor)
+        /// <summary>
+        ///     Setup successor for the previous role.
+        /// </summary>
+        /// <param name="succesor"></param>
+        public void SetSuccessor(Role succesor)
         {
             this._successor = succesor;
         }

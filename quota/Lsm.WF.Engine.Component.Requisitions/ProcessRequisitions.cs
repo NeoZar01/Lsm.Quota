@@ -33,7 +33,7 @@ namespace DoE.Lsm.WF.Component.Requisition
 
         [Trace(request: "async", estimate: 2)]
         [Watch(For: typeof(InvalidDatabaseOperationException), code: 1055, exception: "There was an error processing your workflow step instance.Please contact technical support for this issue.")]
-        public async Task<WorkItemInstance> Activate(Norm payload, INormInstanceHandler niHandler)
+        public async Task<WorkItemInstance> Process(Norm payload, INormInstanceHandler niHandler)
         {
             try
             {

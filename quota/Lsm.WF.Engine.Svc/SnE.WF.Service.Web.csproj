@@ -97,7 +97,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Api\ApplicationAssemblyInfo.cs" />
-    <Compile Include="Api\RemoteProcessWorker.cs" />
     <Compile Include="App_Start\PayloadTrafficer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

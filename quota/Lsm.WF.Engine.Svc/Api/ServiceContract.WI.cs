@@ -14,7 +14,6 @@ namespace DoE.Lsm.WF.Api
     [ServiceContract(Namespace ="")]
     public interface IWI
     {
-
         /// <summary>
         /// 
         /// </summary>

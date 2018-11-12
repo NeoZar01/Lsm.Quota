@@ -13,6 +13,6 @@ namespace DoE.Lsm.WF.WI.Api
         /// <param name="payload"></param>
         /// <param name="NIHandler"></param>
         /// <returns></returns>
-       Task<WorkItemInstance> Activate(Norm payload, INormInstanceHandler NIHandler);
+       Task<WorkItemInstance> Process(Norm payload, INormInstanceHandler NIHandler);
     }
 }

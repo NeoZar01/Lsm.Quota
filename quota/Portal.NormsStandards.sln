@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE", "Lsm.Generics\SnE.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.Service.DataRepository", "Lsm.DataAccessLayer\SnE.Service.DataRepository.csproj", "{7E8C0842-0FE6-47DE-8F70-A9533A7C5C09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.Email", "Lsm.Email\SnE.Email.csproj", "{B0220895-DAB0-4C53-A1AE-77CA47F57970}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.WF.Service.Email", "Lsm.Email\SnE.WF.Service.Email.csproj", "{B0220895-DAB0-4C53-A1AE-77CA47F57970}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.Files", "Lsm.Files\SnE.Files.csproj", "{2AC6C8D2-11A0-41AC-A2A2-B8604D8D12C0}"
 EndProject
@@ -82,7 +82,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Views", "Views", "{2EF317CF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.WF.Service.Orders", "Lsm.WF.Engine.Component.Orders\SnE.WF.Service.Orders.csproj", "{BA7C79C7-4414-4AC2-A434-5713684AF921}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.WF.Norms.Ws", "Lsm.WF.Engine.Svc\SnE.WF.Norms.Ws.csproj", "{EC31E6F3-E9DD-4F6E-AB12-7BC94A3D0682}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.WF.Service.Web", "Lsm.WF.Engine.Svc\SnE.WF.Service.Web.csproj", "{EC31E6F3-E9DD-4F6E-AB12-7BC94A3D0682}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.Tests.Console", "Lsm.Tests.Console\Lsm.Tests.Console.csproj", "{148FAAA3-0B69-46A1-AEAA-A0CFB7CF70F6}"
 EndProject

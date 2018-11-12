@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using System;
+using System.Text.RegularExpressions;
 
 namespace DoE.Lsm
 {
@@ -8,6 +9,11 @@ namespace DoE.Lsm
     /// </summary>
     public static class StringExtension
     {
+
+
+        public enum Flavor {
+            Null
+        }
 
         /// <summary>
         /// 
@@ -97,7 +103,7 @@ namespace DoE.Lsm
         /// <param name="text"></param>
         /// <param name="separator"></param>
         /// <returns></returns>
-        public static string[] ConvertStringToArray(string text, char separator)
+        public static string[] ConvertStringToArray(this string text, char separator)
         {
             var arry = text.Split(separator);
             return arry;
@@ -106,18 +112,18 @@ namespace DoE.Lsm
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="original"></param>
+        /// <param name="source"></param>
         /// <param name="replacement"></param>
         /// <returns></returns>
-        public static string IsNullReplaceWith(this string original, string replacement) {
+        public static string IsNullReplaceWith(this string source, string replacement) {
 
-            if (original == null) return replacement;
+            if (source == null) return replacement;
 
-            if(string.IsNullOrEmpty(original.Trim()) || string.IsNullOrWhiteSpace(original)  || original.Trim() == "")
+            if(string.IsNullOrEmpty(source.Trim()) || string.IsNullOrWhiteSpace(source)  || source.Trim() == "")
             {
                 return replacement;
             }
-            return original;
+            return source;
         }
 
         /// <summary>
@@ -127,7 +133,7 @@ namespace DoE.Lsm
         /// <param name="pattern"></param>
         /// <param name="token"></param>
         /// <returns></returns>
-        public static string Match(this string generic, string command, string pattern, string token)
+        public static string Match(this string source, string command, string pattern, string token)
         {
             Match result = Regex.Match(command, pattern);
             if (result.Success)
@@ -136,5 +142,24 @@ namespace DoE.Lsm
             }
             return "0";
         }
+
+
+        public static string CheckPropertyMerge(this string source , Flavor flavor)
+        {
+            switch (flavor)
+            {
+                case Flavor.Null:
+                if (string.IsNullOrEmpty(source) || string.IsNullOrEmpty(source))
+                {
+                    throw new InvalidCastException("Failed to Merge Property [" + source + "] ");
+                }
+                    break;
+                default:
+                        throw new InvalidCastException("Failed to Merge Property [" + source + "] ");
+            }
+            return source;
+        }
+
+
     }
 }

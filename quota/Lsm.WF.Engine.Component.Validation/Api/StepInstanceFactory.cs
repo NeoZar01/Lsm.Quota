@@ -67,6 +67,10 @@ namespace DoE.Lsm.WF.WI.Tools
             return this;
         }
 
+        public override ProcessStepsFactory Action(INormInstanceHandler niHandler)
+        {
+            return action.Invoke;
+        }
 
         public override ProcessStepsFactory PreAction() {
                  action = new Action(_repositoryManager).GetWorker(this.StepName, this.preceedingStepId, this.preceedingStepInstanceId, this.currentStepInstanceId);

@@ -1,11 +1,13 @@
 ﻿using System;
-using System.Runtime;
+using System.ServiceModel;
+using System.ServiceModel.Web;
+using System.Threading.Tasks;
+
 using System.ServiceModel.Activation;
 
 namespace DoE.Lsm.WF.Engine
 {
     using Api;
-    using Core;
     using Logger;
     using WI.Api;
     using WI.Context.Norms;
@@ -24,7 +26,7 @@ namespace DoE.Lsm.WF.Engine
 
         public WINorm(ILogger genericLogger ,  IRepositoryStoreManager dataStoreManager , INormInstanceHandler WIHandler, IPayloadTrafficer payloadTrafficer, IActionTaskFactory actionManager)
         {
-            this._logger     = genericLogger.InitiateAlertInstance;
+            this._logger            = genericLogger.InitiateAlertInstance;
             this._dataStoreManager  = dataStoreManager;
             this._WIHandler         = WIHandler;
             this._payloadTrafficer  = payloadTrafficer;
@@ -40,8 +42,7 @@ namespace DoE.Lsm.WF.Engine
         /// <returns></returns>
         public IAsyncResult BeginProcessRequest(WorkItemInstance payload, AsyncCallback callback, object state)
         {
-    //            return new CompletedAsyncResult<WorkItemInstance>(_WIHandler.ConvertToNormProcess<Norm>(payload)); //Determines which process the token belongs to and returns a norm
-                throw new ApplicationException();
+           return new CompletedAsyncResult<Norm>(_WIHandler.ConvertToNormProcess<Norm>(payload)); //Determines which process the token belongs to and returns a norm
         }
 
         /// <summary>

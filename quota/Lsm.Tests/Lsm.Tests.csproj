@@ -87,6 +87,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -102,9 +103,9 @@
       <Project>{b68fa39f-01a8-4382-b3f6-37307186d92a}</Project>
       <Name>SnE.Logger</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Lsm.WF.Engine.Svc\SnE.WF.Norms.Ws.csproj">
+    <ProjectReference Include="..\Lsm.WF.Engine.Svc\SnE.WF.Service.Web.csproj">
       <Project>{ec31e6f3-e9dd-4f6e-ab12-7bc94a3d0682}</Project>
-      <Name>SnE.WF.Norms.Ws</Name>
+      <Name>SnE.WF.Service.Web</Name>
     </ProjectReference>
     <ProjectReference Include="..\Lsm.WF.Engine.Tools.Util\SnE.WF.Core.csproj">
       <Project>{da221c3e-0a0f-424c-ae98-48a5ad7380fd}</Project>

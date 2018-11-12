@@ -8,7 +8,6 @@ namespace DoE.Lsm.Data.Repositories.Workflow.Engine
     using EF;
     using Logger;
     using Annotations.Exceptions;
-    using WF.Engine.Context;
     using System.Reflection;
     using WF.Core;
 
@@ -62,7 +61,6 @@ namespace DoE.Lsm.Data.Repositories.Workflow.Engine
                     ExceptedCompletionDateVariable      = completionDateVariable,
                     ExceptedCompletionDateSubVariable   = completionDateSubVariable,
                     Outcome                             = outcome
-
                 };
 
                 var job = (ExecutionResult) WorkFlowStore.SaveChanges();
@@ -236,7 +234,23 @@ namespace DoE.Lsm.Data.Repositories.Workflow.Engine
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="entityType"></param>
+        /// <param name="settings"></param>
         public void InstallRules(string entityType, int[] settings)
+        {
+            throw new NotImplementedException();
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="processInstanceInputHash"></param>
+        /// <param name="processInstanceOutputHash"></param>
+        /// <returns></returns>
+        public string ResolveProcessInstance(string processInstanceInputHash, out string processInstanceOutputHash)
         {
             throw new NotImplementedException();
         }

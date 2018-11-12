@@ -19,7 +19,7 @@ namespace DoE.Lsm.WF.Configurations
 
         public PayloadTrafficer(ILogger logger, IRepositoryStoreManager dataStoreRepository,  IActionTaskFactory actionManager)
         {
-            processManager.Add("SNE.Requisitions.Lsm", new RequisitionsProcess(logger, dataStoreRepository, actionManager));
+            processManager.Add("Lsm.Requisitions", new RequisitionsProcess(logger, dataStoreRepository, actionManager));
         }
 
         /// <summary>
@@ -29,7 +29,7 @@ namespace DoE.Lsm.WF.Configurations
         /// <returns></returns>
         public async Task<WorkItemInstance> Queue(Norm payload, INormInstanceHandler NIHandler)
         {
-            return await processManager[payload.Process].Activate(payload, NIHandler); //starts the process
+            return await processManager[payload.Process].Process(payload, NIHandler); //starts the process
         }
 
     }

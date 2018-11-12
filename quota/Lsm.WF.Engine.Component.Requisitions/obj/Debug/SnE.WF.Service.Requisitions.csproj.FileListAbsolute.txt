@@ -47,3 +47,14 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitio
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\obj\Debug\DoE.Lsm.WF.Component.Requisitions.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\obj\Debug\DoE.Lsm.WF.Component.Requisitions.pdb
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\obj\Debug\PostSharp\postsharp.app.config
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\bin\Debug\System.Web.Mvc.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\bin\Debug\System.Web.WebPages.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\bin\Debug\System.Web.Razor.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\bin\Debug\System.Web.Mvc.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\bin\Debug\System.Web.WebPages.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\bin\Debug\System.Web.Razor.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Requisitions\bin\Debug\System.Web.WebPages.Deployment.xml

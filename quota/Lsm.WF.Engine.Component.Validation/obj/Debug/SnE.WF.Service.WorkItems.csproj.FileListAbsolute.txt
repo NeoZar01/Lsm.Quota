@@ -39,3 +39,16 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\obj\Debug\DoE.Lsm.WF.Engine.Service.WorkItem.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\obj\Debug\DoE.Lsm.WF.Engine.Service.WorkItem.pdb
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\obj\Debug\PostSharp\postsharp.app.config
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\bin\Debug\System.Web.Helpers.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\bin\Debug\System.Web.Mvc.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\bin\Debug\System.Web.Razor.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\bin\Debug\System.Web.WebPages.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\bin\Debug\System.Web.Helpers.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\bin\Debug\System.Web.Mvc.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\bin\Debug\System.Web.Razor.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\bin\Debug\System.Web.WebPages.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\bin\Debug\System.Web.WebPages.Razor.xml

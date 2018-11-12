@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Symbols LinesOfCode="21" PostSharpLinesOfCode="0" EnhancedTypesCount="1" SchemaVersion="1" PostSharpVersion="6.0.25.0" xmlns="http://schemas.postsharp.org/2.0/symbols">
-  <Evolution Source="#1=M:[DoE.Lsm.WF.Component.Requisitions]DoE.Lsm.WF.Component.Requisition.RequisitionsProcess::Activate(DoE.Lsm.WF.WI.Context.Norms.Norm, DoE.Lsm.WF.WI.Api.INormInstanceHandler)" Target="#2=M:[DoE.Lsm.WF.Component.Requisitions]DoE.Lsm.WF.Component.Requisition.RequisitionsProcess+&lt;Activate&gt;d__2::MoveNext()" />
+  <Evolution Source="#1=M:[DoE.Lsm.WF.Component.Requisitions]DoE.Lsm.WF.Component.Requisition.RequisitionsProcess::Process(DoE.Lsm.WF.WI.Context.Norms.Norm, DoE.Lsm.WF.WI.Api.INormInstanceHandler)" Target="#2=M:[DoE.Lsm.WF.Component.Requisitions]DoE.Lsm.WF.Component.Requisition.RequisitionsProcess+&lt;Process&gt;d__2::MoveNext()" />
   <Class Class="#3=T:[DoE.Lsm.WF.Engine.Component.Monitor]DoE.Lsm.WF.Component.Monitor.Annotations.Trace">
-    <Instance Declaration="#1" Id="11d2439e8b7c1b92">
+    <Instance Declaration="#1" Id="11d2439e887d4b36">
       <Target LinesAvoided="4">
         <JoinPoint Advised="#2" Advising="#3" Description="#4=Wrapped by advice(s) OnEntry, OnExit" />
       </Target>
     </Instance>
   </Class>
   <Class Class="#5=T:[DoE.Lsm.Annotations]DoE.Lsm.Annotations.Exceptions.Watch">
-    <Instance Declaration="#1" Id="11d2439e446c04a6">
+    <Instance Declaration="#1" Id="11d2439eb36d8e9a">
       <Target LinesAvoided="2">
         <JoinPoint Advised="#2" Advising="#5" Description="#6=Wrapped by advice(s) OnException" Ordinal="0" />
       </Target>

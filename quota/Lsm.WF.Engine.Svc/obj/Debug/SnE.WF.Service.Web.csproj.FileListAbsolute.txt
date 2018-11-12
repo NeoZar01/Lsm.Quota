@@ -1,0 +1,3 @@
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\obj\Debug\SnE.WF.Service.Web.csprojResolveAssemblyReference.cache
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\obj\Debug\Lsm.WF.Engine.Svc.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Svc\obj\Debug\Lsm.WF.Engine.Svc.pdb

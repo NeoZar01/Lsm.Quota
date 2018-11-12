@@ -17,8 +17,11 @@ namespace DoE.Lsm.WF.WI.Config
     public class NormInstanceHandler : INormInstanceHandler
     {
 
+        protected readonly IRepositoryStoreManager _repositoryManager;
+
         public NormInstanceHandler(ILogger logger, IRepositoryStoreManager repositoryManager)
         {
+                this._repositoryManager = repositoryManager;
 
                 CircuitManager = new CircuitHandler(logger, repositoryManager);
                 SubjectAnalyst = new SubjectAnalystHandler(logger, repositoryManager);
@@ -33,14 +36,60 @@ namespace DoE.Lsm.WF.WI.Config
         public SchoolHandler         School         { get; set; }
         public SubjectAnalystHandler SubjectAnalyst { get; set; }
 
-        public void SetSuccessor<T, T1>(Role predecessor, Role successor)  {   SetSuccessor<T, T1>(predecessor, successor); }
+        public void SetSuccessor<T, T1>(Role predecessor, Role successor)
+        {
+                predecessor.SetSuccessor(successor);
+        }
 
+        /// <summary>
+        ///   Uses conversion operators to convert the WorkItemInstance into a norm object.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="payload"></param>
+        /// <returns></returns>
         public Norm ConvertToNormProcess<T>(WorkItemInstance payload) where T : class
-        {return null;}
+        {
+            string wiToken = string.Empty;
 
+            _repositoryManager.WI.ResolveProcessInstance(payload.WIToken , out wiToken);
+             payload.WIToken = wiToken;
+
+            return (Norm)payload;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="payload"></param>
+        /// <param name="payloadTrafficer"></param>
+        /// <param name="logger"></param>
+        /// <param name="repositoryManager"></param>
+        /// <param name="actionManager"></param>
+        /// <returns></returns>
         public async Task<WorkItemInstance> ProcessNormInstanceRequest(Norm payload, IPayloadTrafficer payloadTrafficer, ILogger logger, IRepositoryStoreManager repositoryManager, IActionTaskFactory actionManager)
         {
-          return await payloadTrafficer.Queue(payload, null);
+          return await payloadTrafficer.Queue(payload, this);
         }
+
+
+        //public Role ResolveRoleToken(string token)
+        //{
+        //    if (string.IsNullOrEmpty(token)) throw new ArgumentNullException(nameof(token));
+
+        //    Role instance = null;
+        //    try
+        //    {
+        //        Type type = Type.GetType(token);
+        //        instance = (Role)Activator.CreateInstance(type);
+        //        var outcome = rmi.InvokeMember(context.RequestType.Equals("Async") ? "ProcessRequestAsync" : "ProcessRequest", InvokeMethod, null, instance, new object[] { });
+        //        return instance;
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        string excep = e.StackTrace;
+        //    }
+
+        //    return instance;
+        //}
     }
 }
