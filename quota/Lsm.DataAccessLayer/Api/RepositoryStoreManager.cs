@@ -27,13 +27,13 @@ namespace DoE.Lsm.Data.Repositories
                         _applicationSnEDbContext = new PortalSnE();
 
                         IdentityManager = new IdentityAuthRepository(_authenticationDbContext, logger);
-                        WI = new ProcessManagerRepository(_applicationSnEDbContext, logger);
+                        Processes = new ProcessManagerRepository(_applicationSnEDbContext, logger);
 
                         Locker = new LockerRepository(_productionDbContext, logger);
                         Requisitions = new RequisitionRepository(_productionDbContext, logger);
         }
 
-        public ProcessManagerRepository WI
+        public ProcessManagerRepository Processes
         { get; set; }
 
         public IdentityAuthRepository IdentityManager

@@ -23,40 +23,6 @@
     <Property Name="ExpectedCompletionDays" Type="String" MaxLength="255" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
     <Property Name="ParentProcessId" Type="String" MaxLength="36" FixedLength="false" Unicode="false" />
   </EntityType>
-  <EntityType Name="WIProcessInstance">
-    <Key>
-      <PropertyRef Name="id" />
-      <PropertyRef Name="InstanceId" />
-    </Key>
-    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="InstanceId" Type="Guid" Nullable="false" />
-    <Property Name="FlowId" Type="String" MaxLength="36" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="EntityId" Type="String" MaxLength="36" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="SurveyKey" Type="String" MaxLength="36" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
-    <Property Name="LastModifiedDate" Type="DateTime" Precision="3" />
-    <Property Name="CompletionDate" Type="DateTime" Precision="3" />
-    <Property Name="ExceptedCompletionDateVariable" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
-    <Property Name="ExceptedCompletionDateSubVariable" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
-    <Property Name="ExpectedCompletionDate" Type="DateTime" annotation:StoreGeneratedPattern="Computed" Precision="3" />
-    <Property Name="CreatedBy" Type="String" MaxLength="36" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="LastEditedBy" Type="String" MaxLength="36" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Outcome" Type="String" MaxLength="36" FixedLength="false" Unicode="true" />
-    <Property Name="State" Type="String" MaxLength="36" FixedLength="false" Unicode="true" />
-  </EntityType>
-  <EntityType Name="WIProcessInstanceParking_Log">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="Guid" Nullable="false" />
-    <Property Name="StepInstanceId" Type="String" MaxLength="36" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="EntityType" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="EntityId" Type="String" MaxLength="36" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="By" Type="String" MaxLength="36" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="At" Type="String" MaxLength="36" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="On" Type="DateTime" Nullable="false" Precision="3" />
-    <Property Name="Outcome" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
-  </EntityType>
   <EntityType Name="WIProcessStep">
     <Key>
       <PropertyRef Name="id" />
@@ -120,11 +86,26 @@
   <EntityContainer Name="PortalSnE" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="WIOutcome_Lookup" EntityType="Self.WIOutcome_Lookup" />
     <EntitySet Name="WIProcesses" EntityType="Self.WIProcess" />
-    <EntitySet Name="WIProcessInstances" EntityType="Self.WIProcessInstance" />
-    <EntitySet Name="WIProcessInstanceParking_Log" EntityType="Self.WIProcessInstanceParking_Log" />
     <EntitySet Name="WIProcessSteps" EntityType="Self.WIProcessStep" />
     <EntitySet Name="WIProcessStepInstances" EntityType="Self.WIProcessStepInstance" />
     <EntitySet Name="C_Error" EntityType="Self.C_Error" />
     <EntitySet Name="C_WILock" EntityType="Self.C_WILock" />
+    <EntitySet Name="WIProcessInstances" EntityType="Portal.NormsStandardsModel.WIProcessInstance" />
   </EntityContainer>
+  <EntityType Name="WIProcessInstance">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="ProcessInstanceId" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProcessInstanceId" Type="Guid" Nullable="false" />
+    <Property Name="ProcessToken" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimsIdentity" Type="String" Nullable="false" MaxLength="36" FixedLength="false" Unicode="true" />
+    <Property Name="FlowId" Type="String" Nullable="false" MaxLength="36" FixedLength="false" Unicode="true" />
+    <Property Name="SurveyKey" Type="String" Nullable="false" MaxLength="36" FixedLength="false" Unicode="true" />
+    <Property Name="InterfaceKey" Type="String" Nullable="false" MaxLength="36" FixedLength="false" Unicode="true" />
+    <Property Name="CommencementDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LastModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="ExpiryDate" Type="DateTime" Precision="3" />
+  </EntityType>
 </Schema>

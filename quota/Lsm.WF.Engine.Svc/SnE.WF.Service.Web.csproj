@@ -97,14 +97,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Api\ApplicationAssemblyInfo.cs" />
-    <Compile Include="App_Start\PayloadTrafficer.cs" />
+    <Compile Include="IoC\ProcessRequestQueueManager.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Model.ProcessRequest.cs" />
+    <Compile Include="Models\Model.TokenProvisioner.cs" />
     <Compile Include="SNE.svc.cs">
       <DependentUpon>SNE.svc</DependentUpon>
     </Compile>
-    <Compile Include="Api\ServiceContract.WI.cs" />
+    <Compile Include="Contracts\ServiceContract.WI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -136,33 +138,33 @@
       <Project>{b68fa39f-01a8-4382-b3f6-37307186d92a}</Project>
       <Name>SnE.Logger</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Lsm.WF.Engine.Component.Calculations\SnE.WF.Service.Calculations.csproj">
+    <ProjectReference Include="..\Lsm.WF.Engine.Component.Calculations\SnE.WF.Service.Validation.csproj">
       <Project>{9a53438b-efb5-4617-9eaa-3a1a0805e5ac}</Project>
-      <Name>SnE.WF.Service.Calculations</Name>
+      <Name>SnE.WF.Service.Validation</Name>
     </ProjectReference>
     <ProjectReference Include="..\Lsm.WF.Engine.Component.Monitor\SnE.WF.Service.Monitor.csproj">
       <Project>{771b5229-3aa8-40e8-b2c0-2a4587c4cdbe}</Project>
       <Name>SnE.WF.Service.Monitor</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Lsm.WF.Engine.Component.Orders\SnE.WF.Service.Orders.csproj">
+    <ProjectReference Include="..\Lsm.WF.Engine.Component.Orders\SnE.WF.Component.Billing.csproj">
       <Project>{ba7c79c7-4414-4ac2-a434-5713684af921}</Project>
-      <Name>SnE.WF.Service.Orders</Name>
+      <Name>SnE.WF.Component.Billing</Name>
     </ProjectReference>
     <ProjectReference Include="..\Lsm.WF.Engine.Component.Reports\SnE.WF.Service.Reports.csproj">
       <Project>{18afaaf7-0dea-49f3-935d-4047d32ed0b7}</Project>
       <Name>SnE.WF.Service.Reports</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Lsm.WF.Engine.Component.Requisitions\SnE.WF.Service.Requisitions.csproj">
+    <ProjectReference Include="..\Lsm.WF.Engine.Component.Requisitions\SnE.WF.Component.Requisitions.csproj">
       <Project>{a331db1e-e1ee-41a5-8d9c-079f98c50fcc}</Project>
-      <Name>SnE.WF.Service.Requisitions</Name>
+      <Name>SnE.WF.Component.Requisitions</Name>
     </ProjectReference>
     <ProjectReference Include="..\Lsm.WF.Engine.Component.Validation\SnE.WF.Service.WorkItems.csproj">
       <Project>{99fc2389-0425-4ba2-bba4-7cbfa3059b51}</Project>
       <Name>SnE.WF.Service.WorkItems</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Lsm.WF.Engine.Tools.Util\SnE.WF.Core.csproj">
+    <ProjectReference Include="..\Lsm.WF.Engine.Tools.Util\SnE.WF.Service.Core.csproj">
       <Project>{da221c3e-0a0f-424c-ae98-48a5ad7380fd}</Project>
-      <Name>SnE.WF.Core</Name>
+      <Name>SnE.WF.Service.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -4,15 +4,14 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="77ba7513113344868d56057297ffe02a" Name="Diagram1" ZoomLevel="55">
+      <Diagram DiagramId="77ba7513113344868d56057297ffe02a" Name="Diagram1" ZoomLevel="72">
         <EntityTypeShape EntityType="Portal.NormsStandardsModel.WIOutcome_Lookup" Width="2.375" PointX="0.75" PointY="0.75" IsExpanded="false" />
-        <EntityTypeShape EntityType="Portal.NormsStandardsModel.WIProcess" Width="1.5" PointX="0.75" PointY="2.25" IsExpanded="false" />
-        <EntityTypeShape EntityType="Portal.NormsStandardsModel.WIProcessInstance" Width="2.625" PointX="2.625" PointY="1.5" IsExpanded="false" />
-        <EntityTypeShape EntityType="Portal.NormsStandardsModel.WIProcessInstanceParking_Log" Width="3" PointX="0.75" PointY="3.5" IsExpanded="false" />
-        <EntityTypeShape EntityType="Portal.NormsStandardsModel.WIProcessStep" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="false" />
-        <EntityTypeShape EntityType="Portal.NormsStandardsModel.WIProcessStepInstance" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="false" />
-        <EntityTypeShape EntityType="Portal.NormsStandardsModel.C_Error" Width="1.5" PointX="2.625" PointY="2.125" IsExpanded="false" />
-        <EntityTypeShape EntityType="Portal.NormsStandardsModel.C_WILock" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="false" />
+        <EntityTypeShape EntityType="Portal.NormsStandardsModel.WIProcess" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="false" />
+        <EntityTypeShape EntityType="Portal.NormsStandardsModel.WIProcessStep" Width="1.5" PointX="6.25" PointY="0.875" IsExpanded="false" />
+        <EntityTypeShape EntityType="Portal.NormsStandardsModel.WIProcessStepInstance" Width="2.125" PointX="6.25" PointY="1.875" IsExpanded="false" />
+        <EntityTypeShape EntityType="Portal.NormsStandardsModel.C_Error" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="false" />
+        <EntityTypeShape EntityType="Portal.NormsStandardsModel.C_WILock" Width="1.5" PointX="6.25" PointY="1.375" IsExpanded="false" />
+        <EntityTypeShape EntityType="Portal.NormsStandardsModel.WIProcessInstance" Width="2.25" PointX="0.75" PointY="3.125" IsExpanded="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

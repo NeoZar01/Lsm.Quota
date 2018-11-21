@@ -75,9 +75,9 @@
       <Project>{99fc2389-0425-4ba2-bba4-7cbfa3059b51}</Project>
       <Name>SnE.WF.Service.WorkItems</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Lsm.WF.Engine.Tools.Util\SnE.WF.Core.csproj">
+    <ProjectReference Include="..\Lsm.WF.Engine.Tools.Util\SnE.WF.Service.Core.csproj">
       <Project>{da221c3e-0a0f-424c-ae98-48a5ad7380fd}</Project>
-      <Name>SnE.WF.Core</Name>
+      <Name>SnE.WF.Service.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

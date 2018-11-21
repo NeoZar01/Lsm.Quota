@@ -52,3 +52,5 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\bin\Debug\System.Web.WebPages.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\bin\Debug\DoE.SnE.WF.Service.Security.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\bin\Debug\DoE.SnE.WF.Service.Security.pdb

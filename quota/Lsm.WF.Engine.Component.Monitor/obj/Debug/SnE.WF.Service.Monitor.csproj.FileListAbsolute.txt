@@ -39,14 +39,5 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\ob
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\obj\Debug\DoE.Lsm.WF.Engine.Component.Monitor.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\obj\Debug\DoE.Lsm.WF.Engine.Component.Monitor.pdb
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\obj\Debug\PostSharp\postsharp.app.config
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\System.Web.Mvc.dll
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\System.Web.WebPages.dll
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\System.Web.WebPages.Razor.dll
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\System.Web.Razor.dll
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\Microsoft.Web.Infrastructure.dll
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\System.Web.WebPages.Deployment.dll
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\System.Web.Mvc.xml
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\System.Web.WebPages.xml
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\System.Web.WebPages.Razor.xml
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\System.Web.Razor.xml
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.SnE.WF.Service.Security.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Monitor\bin\Debug\DoE.SnE.WF.Service.Security.pdb

@@ -21,7 +21,7 @@ namespace DoE.Lsm.Data.Repositories.Lock
         /// </summary>
         /// <param name="entityType"></param>
         /// <param name="entityId"></param>
-        [Watch(For: typeof(InvalidDatabaseOperationException), code: 1055, exception: "There was an error locking your item.Please contact technical support for any assistance")]
+        [WatchException(For: typeof(InvalidDatabaseOperationException), code: 1055, exception: "There was an error locking your item.Please contact technical support for any assistance")]
         public void Lock(string entityType, string entityId, string token)
         {
             try
@@ -53,7 +53,7 @@ namespace DoE.Lsm.Data.Repositories.Lock
         /// </summary>
         /// <param name="entityType"></param>
         /// <param name="entityId"></param>
-        [Watch(For: typeof(InvalidDatabaseOperationException), code: 1055, exception: "There was an error unlocking your item.Please contact technical support for any assistance")]
+        [WatchException(For: typeof(InvalidDatabaseOperationException), code: 1055, exception: "There was an error unlocking your item.Please contact technical support for any assistance")]
         public void UnLock(string entityType, string entityId, string creatorToken, string releaserToken)
         {
             try

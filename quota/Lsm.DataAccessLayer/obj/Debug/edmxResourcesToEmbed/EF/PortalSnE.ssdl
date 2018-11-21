@@ -58,36 +58,18 @@ warning 6002: The table/view 'Portal.NormsStandards.Application._WILock' does no
   <EntityType Name="WIProcessInstance">
     <Key>
       <PropertyRef Name="id" />
-      <PropertyRef Name="InstanceId" />
+      <PropertyRef Name="ProcessInstanceId" />
     </Key>
     <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="InstanceId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ProcessInstanceId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ProcessToken" Type="nvarchar" MaxLength="256" />
+    <Property Name="ClaimsIdentity" Type="nvarchar" MaxLength="36" Nullable="false" />
     <Property Name="FlowId" Type="nvarchar" MaxLength="36" Nullable="false" />
-    <Property Name="EntityId" Type="nvarchar" MaxLength="36" Nullable="false" />
     <Property Name="SurveyKey" Type="nvarchar" MaxLength="36" Nullable="false" />
-    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="InterfaceKey" Type="nvarchar" MaxLength="36" Nullable="false" />
+    <Property Name="CommencementDate" Type="datetime" Nullable="false" />
     <Property Name="LastModifiedDate" Type="datetime" />
-    <Property Name="CompletionDate" Type="datetime" />
-    <Property Name="ExceptedCompletionDateVariable" Type="nvarchar" MaxLength="150" />
-    <Property Name="ExceptedCompletionDateSubVariable" Type="nvarchar" MaxLength="150" />
-    <Property Name="ExpectedCompletionDate" Type="datetime" StoreGeneratedPattern="Computed" />
-    <Property Name="CreatedBy" Type="nvarchar" MaxLength="36" Nullable="false" />
-    <Property Name="LastEditedBy" Type="nvarchar" MaxLength="36" Nullable="false" />
-    <Property Name="Outcome" Type="nvarchar" MaxLength="36" />
-    <Property Name="State" Type="nvarchar" MaxLength="36" />
-  </EntityType>
-  <EntityType Name="WIProcessInstanceParking_Log">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
-    <Property Name="StepInstanceId" Type="nvarchar" MaxLength="36" Nullable="false" />
-    <Property Name="EntityType" Type="nvarchar" MaxLength="150" Nullable="false" />
-    <Property Name="EntityId" Type="nvarchar" MaxLength="36" Nullable="false" />
-    <Property Name="By" Type="nvarchar" MaxLength="36" Nullable="false" />
-    <Property Name="At" Type="nvarchar" MaxLength="36" Nullable="false" />
-    <Property Name="On" Type="datetime" Nullable="false" />
-    <Property Name="Outcome" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="ExpiryDate" Type="datetime" />
   </EntityType>
   <EntityType Name="WIProcessStep">
     <Key>
@@ -121,11 +103,15 @@ warning 6002: The table/view 'Portal.NormsStandards.Application._WILock' does no
     <Property Name="Outcome" Type="nvarchar" MaxLength="36" />
     <Property Name="State" Type="nvarchar" MaxLength="36" />
   </EntityType>
+  <Function Name="FN_InterfaceVariables" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+    <Parameter Name="Key" Type="varchar" Mode="In" />
+    <Parameter Name="InterfaceKey" Type="varchar" Mode="In" />
+    <Parameter Name="SurveyKey" Type="varchar" Mode="In" />
+  </Function>
   <EntityContainer Name="PortalNormsStandardsModelStoreContainer">
     <EntitySet Name="WIOutcome_Lookup" EntityType="Self.WIOutcome_Lookup" Schema="Application" store:Type="Tables" />
     <EntitySet Name="WIProcess" EntityType="Self.WIProcess" Schema="Application" store:Type="Tables" />
     <EntitySet Name="WIProcessInstance" EntityType="Self.WIProcessInstance" Schema="Application" store:Type="Tables" />
-    <EntitySet Name="WIProcessInstanceParking_Log" EntityType="Self.WIProcessInstanceParking_Log" Schema="Application" store:Type="Tables" />
     <EntitySet Name="WIProcessStep" EntityType="Self.WIProcessStep" Schema="Application" store:Type="Tables" />
     <EntitySet Name="WIProcessStepInstance" EntityType="Self.WIProcessStepInstance" Schema="Application" store:Type="Tables" />
     <EntitySet Name="_Error" EntityType="Self._Error" store:Type="Tables" store:Schema="Application">

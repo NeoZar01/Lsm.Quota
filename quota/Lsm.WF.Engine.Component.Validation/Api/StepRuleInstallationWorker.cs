@@ -20,7 +20,7 @@ namespace DoE.Lsm.WF.WI.Api
 
         public IStepInstanceRule EscationRules(int[] settings)
         {
-            _dataStore.WI.InstallRules(_entityType, settings);
+            _dataStore.Processes.InstallRules(_entityType, settings);
             return this;
         }
     }

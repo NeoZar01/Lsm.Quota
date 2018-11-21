@@ -14,7 +14,7 @@ namespace DoE.Lsm.Data.Repositories
         ///<summary>
         ///      Create a reference store to the workflow namespace
         ///</summary>
-        ProcessManagerRepository WI
+        ProcessManagerRepository Processes
         { get; set; }
 
         ///<summary>

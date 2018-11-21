@@ -7,13 +7,12 @@ namespace DoE.Lsm.Annotations
     /// 
     /// </summary>
     [AttributeUsage(AttributeTargets.All, AllowMultiple = true)]
-    public class FlowProcess : Attribute
+    public class Interface : Attribute
     {
+        public Interface() {}
 
-        public FlowProcess() {}
-        /// <summary>
-        /// 
-        /// </summary>
+        public string Key { get; set; }
+
         public string Name { get; set; }
 
     }

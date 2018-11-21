@@ -21,11 +21,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.WF.Service.Email", "Lsm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.Files", "Lsm.Files\SnE.Files.csproj", "{2AC6C8D2-11A0-41AC-A2A2-B8604D8D12C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.WF.Core", "Lsm.WF.Engine.Tools.Util\SnE.WF.Core.csproj", "{DA221C3E-0A0F-424C-AE98-48A5AD7380FD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.WF.Service.Core", "Lsm.WF.Engine.Tools.Util\SnE.WF.Service.Core.csproj", "{DA221C3E-0A0F-424C-AE98-48A5AD7380FD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.WF.Service.WorkItems", "Lsm.WF.Engine.Component.Validation\SnE.WF.Service.WorkItems.csproj", "{99FC2389-0425-4BA2-BBA4-7CBFA3059B51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.WF.Service.Requisitions", "Lsm.WF.Engine.Component.Requisitions\SnE.WF.Service.Requisitions.csproj", "{A331DB1E-E1EE-41A5-8D9C-079F98C50FCC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.WF.Component.Requisitions", "Lsm.WF.Engine.Component.Requisitions\SnE.WF.Component.Requisitions.csproj", "{A331DB1E-E1EE-41A5-8D9C-079F98C50FCC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.WF.Service.Reports", "Lsm.WF.Engine.Component.Reports\SnE.WF.Service.Reports.csproj", "{18AFAAF7-0DEA-49F3-935D-4047D32ED0B7}"
 EndProject
@@ -41,7 +41,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.WF.Service.Monitor", "L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lsm.Tests", "Lsm.Tests\Lsm.Tests.csproj", "{E5A5B02B-6C5A-4973-9354-F94EA28E109C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.WF.Service.Calculations", "Lsm.WF.Engine.Component.Calculations\SnE.WF.Service.Calculations.csproj", "{9A53438B-EFB5-4617-9EAA-3A1A0805E5AC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.WF.Service.Validation", "Lsm.WF.Engine.Component.Calculations\SnE.WF.Service.Validation.csproj", "{9A53438B-EFB5-4617-9EAA-3A1A0805E5AC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.Annotations", "Lsm.Annotations\SnE.Annotations.csproj", "{FF0E45F2-1DC7-483D-89F8-09006C6B35EA}"
 EndProject
@@ -80,7 +80,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Views", "Views", "{2EF317CF
 		Lsm.Web\Views\Requisitions\Rqinst_rq.cshtml = Lsm.Web\Views\Requisitions\Rqinst_rq.cshtml
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.WF.Service.Orders", "Lsm.WF.Engine.Component.Orders\SnE.WF.Service.Orders.csproj", "{BA7C79C7-4414-4AC2-A434-5713684AF921}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.WF.Component.Billing", "Lsm.WF.Engine.Component.Orders\SnE.WF.Component.Billing.csproj", "{BA7C79C7-4414-4AC2-A434-5713684AF921}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.WF.Service.Web", "Lsm.WF.Engine.Svc\SnE.WF.Service.Web.csproj", "{EC31E6F3-E9DD-4F6E-AB12-7BC94A3D0682}"
 EndProject

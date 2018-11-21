@@ -15,19 +15,14 @@ namespace DoE.Lsm.Data.Repositories.EF
     public partial class WIProcessInstance
     {
         public int id { get; set; }
-        public System.Guid InstanceId { get; set; }
+        public System.Guid ProcessInstanceId { get; set; }
+        public string ProcessToken { get; set; }
+        public string ClaimsIdentity { get; set; }
         public string FlowId { get; set; }
-        public string EntityId { get; set; }
         public string SurveyKey { get; set; }
-        public System.DateTime CreatedDate { get; set; }
+        public string InterfaceKey { get; set; }
+        public System.DateTime CommencementDate { get; set; }
         public Nullable<System.DateTime> LastModifiedDate { get; set; }
-        public Nullable<System.DateTime> CompletionDate { get; set; }
-        public string ExceptedCompletionDateVariable { get; set; }
-        public string ExceptedCompletionDateSubVariable { get; set; }
-        public Nullable<System.DateTime> ExpectedCompletionDate { get; set; }
-        public string CreatedBy { get; set; }
-        public string LastEditedBy { get; set; }
-        public string Outcome { get; set; }
-        public string State { get; set; }
+        public Nullable<System.DateTime> ExpiryDate { get; set; }
     }
 }

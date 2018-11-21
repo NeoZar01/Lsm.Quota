@@ -93,8 +93,8 @@
   <ItemGroup>
     <Compile Include="Api\Action.cs" />
     <Compile Include="Api\IActionTaskFactory.cs" />
-    <Compile Include="Api\IPayloadTrafficer.cs" />
-    <Compile Include="Api\IWorkInstanceHandler.cs" />
+    <Compile Include="Api\IProcessRequestQueueManager.cs" />
+    <Compile Include="Api\INormsStandardManager.cs" />
     <Compile Include="Api\Norm.cs" />
     <Compile Include="Api\NormProcess.cs" />
     <Compile Include="Api\StepInstanceFactory.cs" />
@@ -104,13 +104,16 @@
     <Compile Include="Api\StepInstance.cs" />
     <Compile Include="Api\StepInstanceRule.cs" />
     <Compile Include="Api\TaskInstance.cs" />
-    <Compile Include="App_Start\NormInstanceHandler.cs" />
+    <Compile Include="App_Start\NormsStandardManager.cs" />
     <Compile Include="Context\Norms\Role.Administrator.cs" />
     <Compile Include="Context\Norms\Role.CircuitManager.cs" />
     <Compile Include="Context\Norms\Role.SubjectAnalyst.cs" />
     <Compile Include="Context\Norms\Role.cs" />
     <Compile Include="Context\Norms\Role.School.cs" />
-    <Compile Include="Models\WorkItemInstance.cs" />
+    <Compile Include="Proxies\ProcessRequestModelFactory.cs" />
+    <Compile Include="Proxies\ProcessRequestModelProxy.cs" />
+    <Compile Include="Proxies\TokenProvisionerModelFactory.cs" />
+    <Compile Include="Proxies\TokenProvisionerModelProxy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -134,11 +137,16 @@
       <Project>{B68FA39F-01A8-4382-B3F6-37307186D92A}</Project>
       <Name>SnE.Logger</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Lsm.WF.Engine.Tools.Util\SnE.WF.Core.csproj">
+    <ProjectReference Include="..\Lsm.WF.Engine.Component.Calculations\SnE.WF.Service.Validation.csproj">
+      <Project>{9a53438b-efb5-4617-9eaa-3a1a0805e5ac}</Project>
+      <Name>SnE.WF.Service.Validation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lsm.WF.Engine.Tools.Util\SnE.WF.Service.Core.csproj">
       <Project>{da221c3e-0a0f-424c-ae98-48a5ad7380fd}</Project>
-      <Name>SnE.WF.Core</Name>
+      <Name>SnE.WF.Service.Core</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="DoE.Lsm.WF.Engine.Svc.Global" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="DoE.Lsm.WF.Services.Global" Language="C#" %>

@@ -107,9 +107,9 @@
       <Project>{ec31e6f3-e9dd-4f6e-ab12-7bc94a3d0682}</Project>
       <Name>SnE.WF.Service.Web</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Lsm.WF.Engine.Tools.Util\SnE.WF.Core.csproj">
+    <ProjectReference Include="..\Lsm.WF.Engine.Tools.Util\SnE.WF.Service.Core.csproj">
       <Project>{da221c3e-0a0f-424c-ae98-48a5ad7380fd}</Project>
-      <Name>SnE.WF.Core</Name>
+      <Name>SnE.WF.Service.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

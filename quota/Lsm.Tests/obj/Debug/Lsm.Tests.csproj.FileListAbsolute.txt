@@ -223,9 +223,5 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\DoE.Lsm.WF.Eng
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\obj\Debug\Lsm.Tests.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\obj\Debug\Lsm.Tests.pdb
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Lsm.Tests.dll.config
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\System.Web.Mvc.dll
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\System.Web.WebPages.dll
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\System.Web.WebPages.Razor.dll
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\System.Web.Razor.dll
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\DoE.SnE.WF.Service.Security.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\DoE.SnE.WF.Service.Security.pdb

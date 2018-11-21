@@ -5,54 +5,81 @@ using System.Threading.Tasks;
 
 using System.ServiceModel.Activation;
 
-namespace DoE.Lsm.WF.Engine
+namespace DoE.Lsm.WF.Service.Web
 {
-    using Api;
     using Logger;
-    using WI.Api;
-    using WI.Context.Norms;
     using Data.Repositories;
-    using System.Threading.Tasks;
-    using WI.Models;
+    using WF.Web.Models;
+    using WF.WI.Api;
+    using Contracts;
+    using Models;
+    using WI.Proxies;
+    using SnE.WF.Service.Validation.Api;
 
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
     public class WINorm : IWI
     {
-        protected readonly ILogger                   _logger;
-        protected readonly IRepositoryStoreManager   _dataStoreManager;
-        protected readonly INormInstanceHandler      _WIHandler;
-        protected readonly IPayloadTrafficer         _payloadTrafficer;
-        protected readonly IActionTaskFactory        _actionManager;
+        protected readonly ILogger                      _loggerHandler;
+        protected readonly IRepositoryStoreManager      _repositoryManagerHandler;
+        protected readonly INormsStandardManager        _normsStandardsHandler;
+        protected readonly IProcessQueueWorker          _processQueueWorker;
+        protected readonly IActionWorker                _actionTasksHandler;
+        protected readonly IValidationCallbacksContainer _validationCallbacksContainerHandler;
 
-        public WINorm(ILogger genericLogger ,  IRepositoryStoreManager dataStoreManager , INormInstanceHandler WIHandler, IPayloadTrafficer payloadTrafficer, IActionTaskFactory actionManager)
+        public WINorm(ILogger loggerHandler ,  IRepositoryStoreManager repositoryManagerHandler , INormsStandardManager normsStandardsHandler, IProcessQueueWorker processQueueWorker, IActionWorker taskActionsHandler, IValidationCallbacksContainer validationCallbacksContainer)
         {
-            this._logger            = genericLogger.InitiateAlertInstance;
-            this._dataStoreManager  = dataStoreManager;
-            this._WIHandler         = WIHandler;
-            this._payloadTrafficer  = payloadTrafficer;
-            this._actionManager     = actionManager;    
+            this._loggerHandler                         = loggerHandler.InitiateAlertInstance;
+            this._repositoryManagerHandler              = repositoryManagerHandler;
+            this._normsStandardsHandler                 = normsStandardsHandler;
+            this._processQueueWorker                    = processQueueWorker;
+            this._actionTasksHandler                    = taskActionsHandler;
+            this._validationCallbacksContainerHandler   = validationCallbacksContainer;
         }
 
-        /// <summary>
-        ///         Handles the Process Request Token and returns 
-        /// </summary>
-        /// <param name="payload"></param>
-        /// <param name="callback"></param>
-        /// <param name="state"></param>
-        /// <returns></returns>
-        public IAsyncResult BeginProcessRequest(WorkItemInstance payload, AsyncCallback callback, object state)
+        public TokenProvisionerModel Register(TokenProvisionerModel payload)
         {
-           return new CompletedAsyncResult<Norm>(_WIHandler.ConvertToNormProcess<Norm>(payload)); //Determines which process the token belongs to and returns a norm
+            try
+            {
+               return (TokenProvisionerModel)_normsStandardsHandler.RegisterProcess(processEntityType: payload.ProcessEntityType, processSurveyKey: payload.ProcessSuveryKey, claimsIdentity: payload.ClaimsIdentity, interfaceKey: payload.InterfaceKey, norm: payload.Norm);
+            }
+            catch(TimeoutException e)
+            {
+                throw new TimeoutException("Time out error occured while waiting to complete your request. Please try again , or use asynchronous call to consume our services.");
+            }
+            catch (Exception e)
+            {
+                throw new FaultException<TokenProvisionerModel>( new TokenProvisionerModel { StatusCode = "412", ErrorMessage = "There was an error processing your request", ErrorStackTrace = e.StackTrace,ClaimsIdentity = payload.ClaimsIdentity, InterfaceKey = payload.InterfaceKey,  Norm = payload.Norm });
+            }
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="result"></param>
-        /// <returns></returns>
-        public async Task<WorkItemInstance> EndProcessRequest(Norm payload, IAsyncResult result)
+
+        public async Task<ProcessRequestModel> RequestAsync(ProcessRequestModel payload)
         {
-            return await _WIHandler.ProcessNormInstanceRequest(payload , _payloadTrafficer, _logger, _dataStoreManager, _actionManager);
+            try
+            {
+                return (ProcessRequestModel) await _normsStandardsHandler.ValidateProcessTokenAsync(payload.RequestToken, (ProcessRequestModelProxy)payload, _processQueueWorker);
+            } 
+            catch (TimeoutException e)
+            {
+                throw new TimeoutException("Time out error occured while waiting to complete your request. Please try again , or use asynchronous call to consume our services.");
+            }
+            catch (Exception e)
+            {
+                throw new FaultException<TokenProvisionerModel>(new TokenProvisionerModel { StatusCode = "412", ErrorMessage = "There was an error processing your request", ErrorStackTrace = e.StackTrace, ClaimsIdentity = payload.ClaimsIdentityId, InterfaceKey = payload.InterfaceKey, Norm = payload.Norm });
+            }
         }
+
+        
+        //public IAsyncResult BeginProcessRequest(WorkItemInstance payload, AsyncCallback callback, object state)
+        //{
+        //    return new CompletedAsyncResult<Norm>(_WIHandler.ConvertToNormProcess<Norm>(payload)); //Determines which process the token belongs to and returns a norm
+        //}
+        //public async Task<WorkItemInstance> EndProcessRequest(Norm payload, IAsyncResult result)
+        //{
+        //    return await _WIHandler.ProcessNormInstanceRequest(payload, _payloadTrafficer, _logger, _dataStoreManager, _actionManager);
+        //}
+
     }
 }
+//WebOperationContext.Current.OutgoingResponse.StatusCode         = System.Net.HttpStatusCode.InternalServerError;
+//WebOperationContext.Current.OutgoingResponse.StatusDescription  = e.StackTrace;

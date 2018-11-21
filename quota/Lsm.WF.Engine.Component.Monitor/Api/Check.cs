@@ -6,9 +6,8 @@ using PostSharp.Serialization;
 namespace DoE.Lsm.WF.Component.Monitor.Annotations
 {
     using Core;
-    using Engine.Context;
     using Lsm.Annotations;
-    using WI.Models;
+    using Service.WI.Proxies;
 
     /// <summary>
     /// 
@@ -40,7 +39,7 @@ namespace DoE.Lsm.WF.Component.Monitor.Annotations
         public override void OnEntry(MethodExecutionArgs args)
         {
             // EntityType = _estimatedMinutes
-            args.MethodExecutionTag = new WorkItemInstance {   WIToken =  Guid.NewGuid().ToString()  , SubEntity = DateTime.Now};
+            args.MethodExecutionTag = new TokenProvisionerModelProxy {   ProcessInstanceToken =  Guid.NewGuid().ToString()};
             base.OnEntry(args);
         }
 
@@ -51,7 +50,7 @@ namespace DoE.Lsm.WF.Component.Monitor.Annotations
         public override void OnExit(MethodExecutionArgs args)
         {
 
-           var finalExecutionTime = (WorkItemInstance)args.MethodExecutionTag;
+           var finalExecutionTime = (TokenProvisionerModelProxy)args.MethodExecutionTag;
 
             base.OnExit(args);
         }

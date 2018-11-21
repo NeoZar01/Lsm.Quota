@@ -52,7 +52,7 @@
     <Compile Include="Api\Exception.InvalidDatabaseOperation.cs" />
     <Compile Include="Api\Exception.FailedTransaction.cs" />
     <Compile Include="Api\Exception.UI.cs" />
-    <Compile Include="Api\Watch.cs" />
+    <Compile Include="Api\WatchException.cs" />
     <Compile Include="Api\FlowProcess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Api\Dimensions.cs" />
@@ -62,9 +62,9 @@
       <Project>{b68fa39f-01a8-4382-b3f6-37307186d92a}</Project>
       <Name>SnE.Logger</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Lsm.WF.Engine.Tools.Util\SnE.WF.Core.csproj">
+    <ProjectReference Include="..\Lsm.WF.Engine.Tools.Util\SnE.WF.Service.Core.csproj">
       <Project>{da221c3e-0a0f-424c-ae98-48a5ad7380fd}</Project>
-      <Name>SnE.WF.Core</Name>
+      <Name>SnE.WF.Service.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

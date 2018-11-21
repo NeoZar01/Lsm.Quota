@@ -8,7 +8,7 @@ namespace DoE.Lsm.WF.WI.Api
 {
     using Data.Repositories;
 
-    public interface IActionTaskFactory
+    public interface IActionWorker
     {
 
         /// <summary>

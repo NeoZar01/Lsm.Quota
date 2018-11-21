@@ -10,7 +10,7 @@ namespace DoE.Lsm.WF.WI.Tools
     using Engine.Service.WorkItem.Api;
     using Data.Repositories;
     using Context.Norms;
-    using Models;
+    using Service.WI.Proxies;
 
     public abstract class StepInstanceFactory : ProcessStepsFactory
     {
@@ -18,68 +18,64 @@ namespace DoE.Lsm.WF.WI.Tools
         public string preceedingStepId          = "";
         public string preceedingStepInstanceId  = "";
         public string currentStepInstanceId     = "";
-        public string StepName                  = "";
+        public string stepName                  = "";
+        public string outcome                   = "";
 
         protected ProcessInstance   processOutcome;
         protected IStepInstanceRule escalationRule;
 
-        public Norm _payload;
+        public ProcessRequestModelProxy payload;
 
-        /// <summary>
-        ///     This method does the following
-        ///     > Get the current step which the item is residing....
-        ///     > Prepares the preceeding step - <c>initialise preceedingStepId</c> with the thrown Id and returns the ProcessStepFactory
-        /// </summary>
-        /// <param name="entityType"></param>
-        /// <param name="instanceCaseId"></param>
-        /// <param name="command"></param>
-        /// <returns></returns>
-        public override ProcessStepsFactory Config(string entityType, string instanceCaseId, string command)
+
+        public override ProcessStepsFactory Config(ProcessRequestModelProxy model, string command)
         {
-            if (string.IsNullOrEmpty(instanceCaseId))  throw new ArgumentNullException(nameof(instanceCaseId));
+             escalationRule = new StepRuleInstallationWorker(model.InterfaceEntityType, _repositoryManager).EscationRules(Command.ResolveCommandExpressions(@"([1-9][0-9]{0,2});", command, "enableEscalation", "escalationPeriod"));
 
-            escalationRule = new StepRuleInstallationWorker(entityType, _repositoryManager).EscationRules(Command.ResolveCommandExpressions(@"([1-9][0-9]{0,2});", command, "enableEscalation", "escalationPeriod"));
-
-            _repositoryManager.WI.ProcessInstanceParkingStep(instanceCaseId, out preceedingStepId, out preceedingStepInstanceId);
+            _repositoryManager.Processes.SetupProcessStep(model.ProcessInstanceId, out preceedingStepId, out preceedingStepInstanceId);
 
             if(preceedingStepId.Equals("") || preceedingStepInstanceId.Equals(""))
             {
                 throw new FailedTransactionException("Failed to initialise global variables for the preceeding step");
             }
+
+            _repositoryManager.Processes.CreateInstanceSnapShot<ProcessRequestModelProxy>(model, currentStepInstanceId, preceedingStepId, preceedingStepInstanceId, model.ClaimsIdentityId, model.InterfaceEntityId, model.InterfaceEntityType,
+                        model.param_001, model.param_002, model.param_003, model.param_004, model.param_005, model.param_006, model.param_007, model.param_008, model.param_009, model.param_0010);
+
+            payload = model;
+
             return this;
         }
 
-
-        /// <summary>
-        ///     Creates a snapshot of the payload
-        /// </summary>
-        /// <returns></returns>        
-        public override ProcessStepsFactory Start(Norm payload)
+        public override ProcessStepsFactory Start
         {
-            if (payload == null) throw new ArgumentNullException(nameof(payload));
-            if (_repositoryManager == null) throw new ArgumentNullException(nameof(_repositoryManager));
+            get
+            {
 
-            _repositoryManager.WI.CreateInstanceSnapShot<Norm>(payload, currentStepInstanceId, preceedingStepId, preceedingStepInstanceId, payload.ClaimsToken, payload.ProcessEntityId, payload.ProcessEntityType,
-                                    payload.param_001, payload.param_002, payload.param_003, payload.param_004, payload.param_005, payload.param_006, payload.param_007, payload.param_008, payload.param_009, payload.param_0010);
-
-            _payload = payload;
-
-            return this;
+                return this;
+            }
         }
 
-        public override ProcessStepsFactory Action(INormInstanceHandler niHandler)
+        public override Task<ProcessRequestModelProxy> Stop
+        {
+            get
+            {
+                return null;    
+            }
+        }
+
+        public override ProcessStepsFactory BeginAction(INormsStandardManager niHandler)
         {
             return action.Invoke;
         }
 
         public override ProcessStepsFactory PreAction() {
-                 action = new Action(_repositoryManager).GetWorker(this.StepName, this.preceedingStepId, this.preceedingStepInstanceId, this.currentStepInstanceId);
+                 action = new Action(_repositoryManager).GetWorker(this.stepName, this.preceedingStepId, this.preceedingStepInstanceId, this.currentStepInstanceId);
             return this;
         }
 
-        public override Task<WorkItemInstance> End()
+        public override ProcessStepsFactory  PostAction()
         {
-            return null;
+            return this;
         }
 
         public StepInstanceFactory(ILogger logger, IRepositoryStoreManager repositoryManager) : base(logger, repositoryManager){}

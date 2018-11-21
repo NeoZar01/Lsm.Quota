@@ -27,11 +27,10 @@ namespace DoE.Lsm.Data.Repositories.EF
     
         public virtual DbSet<WIOutcome_Lookup> WIOutcome_Lookup { get; set; }
         public virtual DbSet<WIProcess> WIProcesses { get; set; }
-        public virtual DbSet<WIProcessInstance> WIProcessInstances { get; set; }
-        public virtual DbSet<WIProcessInstanceParking_Log> WIProcessInstanceParking_Log { get; set; }
         public virtual DbSet<WIProcessStep> WIProcessSteps { get; set; }
         public virtual DbSet<WIProcessStepInstance> WIProcessStepInstances { get; set; }
         public virtual DbSet<C_Error> C_Error { get; set; }
         public virtual DbSet<C_WILock> C_WILock { get; set; }
+        public virtual DbSet<WIProcessInstance> WIProcessInstances { get; set; }
     }
 }

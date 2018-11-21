@@ -3,6 +3,9 @@ using System.Threading.Tasks;
 using System.Linq;
 using System.Data.Entity;
 
+using System.Data.Entity.Core.Objects.DataClasses;
+
+
 namespace DoE.Lsm.Data.Repositories.Workflow.Engine
 {
     using EF;
@@ -11,248 +14,236 @@ namespace DoE.Lsm.Data.Repositories.Workflow.Engine
     using System.Reflection;
     using WF.Core;
 
-    //<summary>
-    //     This repository will handle all the operations associated with managing the workflow engine.         
-    //     <see cref="WF.Tools.ExecutionResult"> On Execution Results</see>
-    //</summary>
+    using static WF.Core.ExecutionResult;
+
     public partial class ProcessManagerRepository : RepositoryFactory<WIProcessInstance>, IProcessManager
     {
-        //constructor
-        public ProcessManagerRepository(DbContext context, ILogger logger) : base(context, logger) {}
-        
-        ///<summary>
-        ///     Gets the <c>PortalLsm</c> data context as a data source 
-        /// <value>  This property will recieve <c>DataContext</c> as as value and convert it to its derived class PortalLsm  </value>
-        ///</summary>
-        public PortalSnE WorkFlowStore { get { return this._DbContext as PortalSnE; } }
+        [WatchException(typeof(InvalidDatabaseOperationException) , 1055, "An error occured while registering a new process.Please contact technical support for this issue.")]
+        public void CreateProcessInstance<T>(string entityType, string claimsIdentity, string surveyKey, string interfaceKey, string normVariable, out DateTime expiryDate, out string processInstanceId) where T : class
+        {            
 
-        ///<summary>
-        ///    Creates a new Workflow Instance
-        /// <param name="entityType"> Type of Entity</param>
-        /// <param name="entityId"> Id of entity</param>
-        /// <param name="createdby"> creator</param>
-        /// <param name="state">Current state of the item in the workflow chain</param>
-        /// <exception cref="DoE.DataServices.Exceptions.InvalidDatabaseOperationException.cs"></exception>
-        ///</summary>
-        [Watch( For: typeof(InvalidDatabaseOperationException) , code : 1055, exception: "There was an error creating a workflow instance.Please contact technical support for this issue.")]
-        public string CreateProcessInstance<T>(string flowId, string entityId, string createdby, string completionDateVariable, string completionDateSubVariable, string state, string outcome) where T : class
-        {
-            
-            if (string.IsNullOrEmpty(flowId)    || string.IsNullOrWhiteSpace(flowId))    throw new ArgumentNullException("flowId"); //avoid data loss by checking for mandatory parameters
-            if (string.IsNullOrEmpty(entityId)  || string.IsNullOrWhiteSpace(entityId))  throw new ArgumentNullException("entityId"); //avoid data loss by checking for mandatory parameters
-            if (string.IsNullOrEmpty(createdby) || string.IsNullOrWhiteSpace(createdby)) throw new ArgumentNullException("createdby"); //avoid data loss by checking for mandatory parameters
-            if (string.IsNullOrEmpty(state)     || string.IsNullOrWhiteSpace(state))     throw new ArgumentNullException("state"); //avoid data loss by checking for mandatory parameters
+            var instanceId  =  Guid.NewGuid();   
 
-            var instanceId      =    Guid.NewGuid();  //generates a new instanceId
+            processInstanceId = null;
+            expiryDate        = DateTime.Now;   //expires the process within the specific instance.
+
+            ConfigureExpiryDate(normVariable, interfaceKey, surveyKey, out expiryDate);
 
             try
             {
                 var entity = new WIProcessInstance
                 {                     
-                    InstanceId                          = instanceId,
-                    FlowId                              = flowId,
-                    EntityId                            = entityId,
-                    CreatedDate                         = DateTime.Now,
+                    ProcessInstanceId                   = instanceId,
+                    ExpiryDate                          = expiryDate,
                     LastModifiedDate                    = DateTime.Now,
-                    CreatedBy                           = createdby,
-                    LastEditedBy                        = createdby,
-                    State                               = state,
-                    CompletionDate                      = null,
-                    ExceptedCompletionDateVariable      = completionDateVariable,
-                    ExceptedCompletionDateSubVariable   = completionDateSubVariable,
-                    Outcome                             = outcome
+                    CommencementDate                    = DateTime.Now,
+                    ClaimsIdentity                      = claimsIdentity,
+                    InterfaceKey                        = interfaceKey,
+                    SurveyKey                           = surveyKey                         
                 };
 
-                var job = (ExecutionResult) WorkFlowStore.SaveChanges();
+                var job = (ExecutionResult) db.SaveChanges();
 
-                return job == ExecutionResult.Success ? instanceId.ToString() : null;           //returns null if ExecutionResult is a failed execution                         
+                if(job == Success)
+                {
+                    processInstanceId   =  instanceId.ToString();
+                }
             }
             catch(Exception e)
             {
-                //log this error as a high priority thread and throw is back to the caller.
                 throw new InvalidDatabaseOperationException(e.StackTrace , MethodBase.GetCurrentMethod().DeclaringType.ToString());
             }
         }
 
-        ///<summary>
-        ///    Creates a new Workflow Instance asynchronously
-        /// <param name="entityType"> Type of Entity</param>
-        /// <param name="entityId"> Id of entity</param>
-        /// <param name="createdby"> creator</param>
-        /// <param name="state">Current state of the item in the workflow chain</param>
-        /// <exception cref="DoE.DataServices.Exceptions.InvalidDatabaseOperationException.cs"></exception>
-        ///</summary>       
-        [Watch(For: typeof(InvalidDatabaseOperationException) , code: 1055, exception: "There was an error creating a workflow instance.Please contact technical support for this issue.")]
-        public async Task<string> CreateProcessInstanceAsync<T>(string flowId, string entityId, string createdby, string completionDateVariable, string completionDateSubVariable, string state, string outcome) where T : class
+
+
+        [WatchException(typeof(InvalidDatabaseOperationException), 1055, "An error occured while registering your process token.Please contact technical support for this issue.")]
+        public void UpdateProcessToken<T>(Guid processInstanceId, string token) where T : class
         {
+            var processInstance = db.WIProcessInstances.Where(c => c.ProcessInstanceId.Equals(processInstanceId)).SingleOrDefault();
 
-            if (entityId == null || flowId == null) throw new ArgumentNullException("entityType");  //avoid data loss by checking for mandatory parameters
-
-            var instanceId = Guid.NewGuid();
-
-            try
+            if(processInstance != null )
             {
-                var entity = new WIProcessInstance
+                processInstance.ProcessToken = token;
+
+                try
                 {
-                    //RowGUID         = instanceId,
-                    //FlowId          = flowId,
-                    //EntityId        = entityId,
-                    //ArrivalDate     = DateTime.Now,
-                    //CreatedBy       = createdby,
-                    //OnTakeState     = state,
-                };
-
-                var job    = (ExecutionResult) await WorkFlowStore.SaveChangesAsync();
-                return job == ExecutionResult.Success ? instanceId.ToString() : null;           //returns null if ExecutionResult is a failed execution                         
-            }
-            catch (Exception e)
-            {
-                //log this error as a high priority thread and throw is back to the caller.
-                throw new InvalidDatabaseOperationException(string.Concat("Failed to create a workflow instance. {", e.InnerException, "}")); ;
-            }
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="flowId"></param>
-        /// <param name="entityType"></param>
-        /// <param name="entityId"></param>
-        /// <param name="sender"></param>
-        /// <param name="recepient"></param>
-        /// <param name="state"></param>
-        /// <returns></returns>
-        [Watch(For: typeof(InvalidDatabaseOperationException), code: 1055, exception:"There was an error creating a workflow step.Please contact your administrator about this issue.")]
-        public string CreateStepInstance(string flowId, string entityType, string entityId, string sender, string recepient, string completionDateVariable, string completionDateSubVariable, string state, string outcome)
-        {
-
-            var instanceId = Guid.NewGuid();
-
-            try
-            {
-
-            var entity = new WIProcessInstance
-            {
-                 //RowGUID        = instanceId,
-                 //ArrivalDate    = DateTime.Now,
-                 //EntityId       = entityId,
-                 //EntityType     = entityType,
-                 //FlowId         = flowId,
-                 //Recepient      = recepient,
-                 //Sender         = sender,
-                 //State          = state,
-                 //TakeOffDate    = DateTime.Now
-            };
-
-            var job = (ExecutionResult)WorkFlowStore.SaveChanges();
-
-            return job == ExecutionResult.Success ? instanceId.ToString() : null;
-            } 
-            catch
-            {
-                throw new InvalidDatabaseOperationException("Failed to create a step instance item.");
-            }
-
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="flowId"></param>
-        /// <param name="entityType"></param>
-        /// <param name="entityId"></param>
-        /// <param name="creator"></param>
-        /// <param name="recepient"></param>
-        /// <param name="state"></param>
-        /// <returns></returns>
-        [Watch(For: typeof(InvalidDatabaseOperationException), code: 1055, exception: "There was an error creating a workflow step.Please contact your administrator about this issue.")]
-        public async Task<string> CreateStepInstanceAsync(string flowId, string entityType, string entityId, string creator, string recepient, string completionDateVariable, string completionDateSubVariable, string state, string outcome)
-        {
-            var instanceId = Guid.NewGuid();
-
-            try
-            {
-
-                var entity = new WIProcessInstance
+                    db.SaveChanges();
+                }
+                catch (Exception e)
                 {
-                    //RowGUID         = instanceId,
-                    //ArrivalDate     = DateTime.Now,
-                    //EntityId        = entityId,
-                    //EntityType      = entityType,
-                    //FlowId          = flowId,
-                    //Recepient       = recepient,
-                    //Sender          = creator,
-                    //State           = state,
-                    //TakeOffDate     = DateTime.Now
-                };
-
-                var job =  (ExecutionResult) await WorkFlowStore.SaveChangesAsync();
-
-                return job == ExecutionResult.Success ? instanceId.ToString() : null;
+                    throw new InvalidDatabaseOperationException(e.StackTrace, MethodBase.GetCurrentMethod().DeclaringType.ToString());
+                }
             }
-            catch
-            {
-                throw;
-            }
+            throw new InvalidDatabaseOperationException("Process Instance Not Found", MethodBase.GetCurrentMethod().DeclaringType.ToString());
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="instanceCaseId"></param>
-        /// <param name="precedingStepId"></param>
-        /// <param name="precedingStepInstanceId"></param>
-        public void ProcessInstanceParkingStep(string instanceCaseId, out string precedingStepId, out string precedingStepInstanceId)
-        {
-            throw new NotImplementedException();
-        }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="precedingStepId"></param>
-        /// <param name="precedingStepInstanceId"></param>
-        public void ConfigureInstancePreceedingStep(string precedingStepId, out string precedingStepInstanceId)
-        {
-            throw new NotImplementedException();
-        }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="payload"></param>
-        /// <param name="currentStepInstanceId"></param>
-        /// <param name="preceedingStepId"></param>
-        /// <param name="preceedingStepInstanceId"></param>
-        /// <param name="UserToken"></param>
-        /// <param name="InstanceCaseId"></param>
-        /// <param name="instanceEntityType"></param>
-        /// <param name="parameters"></param>
+        [WatchException(typeof(InvalidDatabaseOperationException), 1055, "An error occured while registering your process token.Please contact technical support for this issue.")]
         public void CreateInstanceSnapShot<T>(T payload, string currentStepInstanceId, string preceedingStepId, string preceedingStepInstanceId, string UserToken, string InstanceCaseId, string instanceEntityType, params string[] parameters) where T : class
         {
             throw new NotImplementedException();
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="entityType"></param>
-        /// <param name="settings"></param>
+
+
+        [WatchException(typeof(InvalidDatabaseOperationException), 1055, "An error occured while registering your process token.Please contact technical support for this issue.")]
         public void InstallRules(string entityType, int[] settings)
         {
             throw new NotImplementedException();
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="processInstanceInputHash"></param>
-        /// <param name="processInstanceOutputHash"></param>
-        /// <returns></returns>
+
+
+        [WatchException(typeof(InvalidDatabaseOperationException), 1055, "An error occured while registering your process token.Please contact technical support for this issue.")]
         public string ResolveProcessInstance(string processInstanceInputHash, out string processInstanceOutputHash)
         {
             throw new NotImplementedException();
         }
+
+
+        [WatchException(typeof(InvalidDatabaseOperationException), 1055, "An error occured while registering your process token.Please contact technical support for this issue.")]
+        public string CheckProcessToken(string requestToken)
+        {
+            throw new NotImplementedException();
+        }
+
+
+        [WatchException(typeof(InvalidDatabaseOperationException), 1055, "An error occured while registering your process token.Please contact technical support for this issue.")]
+        public void SetupProcessStep(string instanceCaseId, out string precedingStepId, out string precedingStepInstanceId)
+        {
+            throw new NotImplementedException();
+        }
+
     }
+
+
+
+    #region Helpers 
+    public partial class ProcessManagerRepository : RepositoryFactory<WIProcessInstance>, IProcessManager
+    {
+
+        [DbFunction("Portal.NormsStandardsModel.Store", "FN_InterfaceVariables")]
+        public static string InterfaceVariables(string key, string interfaceKey, string surveryKey)
+        {
+            throw new NotSupportedException("Direct calls are not supported.");
+        }
+
+        public void ConfigureExpiryDate(string expiryDateKey, string interfaceKey, string surveyKey, out DateTime expiryDate)
+        {
+                int days;
+
+                int.TryParse(InterfaceVariables(expiryDateKey, interfaceKey, surveyKey), out days);
+
+                days = days > -1 ? days : 0;
+
+                var thisInstance = DateTime.Now;
+                expiryDate = thisInstance.AddDays(days);
+        }
+
+        public PortalSnE db { get { return this._DbContext as PortalSnE; } }
+
+        public ProcessManagerRepository(DbContext context, ILogger logger)
+        : base(context, logger) { }
+    }
+    #endregion
+
+
+    #region EDM/Db Functions 
+    public partial class ProcessManagerRepository : RepositoryFactory<WIProcessInstance>, IProcessManager
+    {
+
+        //[Watch(For: typeof(InvalidDatabaseOperationException), code: 1055, exception:"There was an error creating a workflow step.Please contact your administrator about this issue.")]
+        //public string CreateStepInstance(string flowId, string entityType, string entityId, string sender, string recepient, string completionDateVariable, string completionDateSubVariable, string state, string outcome)
+        //{
+
+        //    var instanceId = Guid.NewGuid();
+
+        //    try
+        //    {
+
+        //    var entity = new WIProcessInstance
+        //    {
+        //         //RowGUID        = instanceId,
+        //         //ArrivalDate    = DateTime.Now,
+        //         //EntityId       = entityId,
+        //         //EntityType     = entityType,
+        //         //FlowId         = flowId,
+        //         //Recepient      = recepient,
+        //         //Sender         = sender,
+        //         //State          = state,
+        //         //TakeOffDate    = DateTime.Now
+        //    };
+
+        //    var job = (ExecutionResult)WorkFlowStore.SaveChanges();
+
+        //    return job == ExecutionResult.Success ? instanceId.ToString() : null;
+        //    } 
+        //    catch
+        //    {
+        //        throw new InvalidDatabaseOperationException("Failed to create a step instance item.");
+        //    }
+
+        //}
+
+        ///// <summary>
+        ///// 
+        ///// </summary>
+        ///// <param name="flowId"></param>
+        ///// <param name="entityType"></param>
+        ///// <param name="entityId"></param>
+        ///// <param name="creator"></param>
+        ///// <param name="recepient"></param>
+        ///// <param name="state"></param>
+        ///// <returns></returns>
+        //[Watch(For: typeof(InvalidDatabaseOperationException), code: 1055, exception: "There was an error creating a workflow step.Please contact your administrator about this issue.")]
+        //public async Task<string> CreateStepInstanceAsync(string flowId, string entityType, string entityId, string creator, string recepient, string completionDateVariable, string completionDateSubVariable, string state, string outcome)
+        //{
+        //    var instanceId = Guid.NewGuid();
+
+        //    try
+        //    {
+
+        //        var entity = new WIProcessInstance
+        //        {
+        //            //RowGUID         = instanceId,
+        //            //ArrivalDate     = DateTime.Now,
+        //            //EntityId        = entityId,
+        //            //EntityType      = entityType,
+        //            //FlowId          = flowId,
+        //            //Recepient       = recepient,
+        //            //Sender          = creator,
+        //            //State           = state,
+        //            //TakeOffDate     = DateTime.Now
+        //        };
+
+        //        var job =  (ExecutionResult) await WorkFlowStore.SaveChangesAsync();
+
+        //        return job == ExecutionResult.Success ? instanceId.ToString() : null;
+        //    }
+        //    catch
+        //    {
+        //        throw;
+        //    }
+        //}
+
+
+
+        ///// <summary>
+        ///// 
+        ///// </summary>
+        ///// <param name="precedingStepId"></param>
+        ///// <param name="precedingStepInstanceId"></param>
+        //public void ConfigureInstancePreceedingStep(string precedingStepId, out string precedingStepInstanceId)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+
+
+    }
+    #endregion
+
 }
+

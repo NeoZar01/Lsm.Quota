@@ -3,16 +3,16 @@
 namespace DoE.Lsm.WF.WI.Api
 {
     using Context.Norms;
-    using Models;
+    using Service.WI.Proxies;
 
     public interface NormProcess
     {
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="payload"></param>
+        /// <param name="processModel"></param>
         /// <param name="NIHandler"></param>
         /// <returns></returns>
-       Task<WorkItemInstance> Process(Norm payload, INormInstanceHandler NIHandler);
+       Task<ProcessRequestModelProxy> ExecuteStep(ProcessRequestModelProxy processModel, INormsStandardManager NIHandler);
     }
 }

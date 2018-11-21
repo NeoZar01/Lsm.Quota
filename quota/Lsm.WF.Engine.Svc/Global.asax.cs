@@ -4,15 +4,17 @@ using Castle.Windsor;
 using Castle.MicroKernel.Registration;
 using Castle.Facilities.WcfIntegration;
 
-namespace DoE.Lsm.WF
+namespace DoE.Lsm.WF.Services
 {
-    using Api;
     using Logger;
-    using Engine;
     using WI.Api;
     using WI.Config;
-    using Data.Repositories;
+    using Service.Web;
+    using Service.Web.Contracts;
+
     using Configurations;
+    using Data.Repositories;
+    using SnE.WF.Service.Validation.Api;
 
     public class Global : System.Web.HttpApplication
     {
@@ -26,8 +28,9 @@ namespace DoE.Lsm.WF
                         Castle.MicroKernel.Registration.Component.For<IWI>().ImplementedBy<WINorm>(),
                         Castle.MicroKernel.Registration.Component.For<ILogger>().ImplementedBy<BaseLogger>(),
                         Castle.MicroKernel.Registration.Component.For<IRepositoryStoreManager>().ImplementedBy<RepositoryStoreManager>(),
-                        Castle.MicroKernel.Registration.Component.For<INormInstanceHandler>().ImplementedBy<NormInstanceHandler>());
-                        Castle.MicroKernel.Registration.Component.For<IPayloadTrafficer>().ImplementedBy<PayloadTrafficer>();
+                        Castle.MicroKernel.Registration.Component.For<IValidationCallbacksContainer>().ImplementedBy<ValidationCallbacksContainer>(),
+                        Castle.MicroKernel.Registration.Component.For<INormsStandardManager>().ImplementedBy<NormsStandardManager>(),
+                        Castle.MicroKernel.Registration.Component.For<IProcessQueueWorker>().ImplementedBy<ProcessRequestQueueManager>());
         }
     }
 }
