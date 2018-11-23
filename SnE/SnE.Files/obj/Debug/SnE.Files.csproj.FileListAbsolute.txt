@@ -1,0 +1,13 @@
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Files\bin\Debug\DoE.Lsm.Files.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Files\bin\Debug\DoE.Lsm.Files.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Files\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Files\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Files\obj\Debug\DoE.Lsm.Files.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Files\obj\Debug\DoE.Lsm.Files.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Files\obj\Debug\SnE.Files.csprojResolveAssemblyReference.cache
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Files\bin\Debug\DoE.Lsm.Files.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Files\bin\Debug\DoE.Lsm.Files.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Files\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Files\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Files\obj\Debug\DoE.Lsm.Files.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Files\obj\Debug\DoE.Lsm.Files.pdb

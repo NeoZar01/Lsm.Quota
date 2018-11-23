@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Portal.DocumentsMirrorModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Mirror">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="RowGuid" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RowGuid" Type="Guid" Nullable="false" />
+    <Property Name="Curator" Type="Int32" Nullable="false" />
+    <Property Name="DocumentToken" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OriginalName" Type="String" MaxLength="800" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Extension" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DocumentBytes" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="DocumentEntityType" Type="String" MaxLength="112" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Interface" Type="String" MaxLength="112" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="DocumentMirror" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Mirrors" EntityType="Self.Mirror" />
+  </EntityContainer>
+</Schema>

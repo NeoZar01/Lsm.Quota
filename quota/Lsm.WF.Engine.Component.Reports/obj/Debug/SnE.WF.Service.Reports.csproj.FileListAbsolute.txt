@@ -1,5 +1,0 @@
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Reports\bin\Debug\Dashboard.dll
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Reports\bin\Debug\Dashboard.pdb
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Reports\obj\Debug\Dashboard.dll
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Reports\obj\Debug\Dashboard.pdb
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Reports\obj\Debug\SnE.WF.Service.Reports.csprojResolveAssemblyReference.cache

@@ -1,0 +1,230 @@
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\Lsm.Tests.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\Lsm.Tests.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\Castle.Core.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Data.Repository.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Lsm.Logger.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\Moq.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\nunit.framework.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\System.ValueTuple.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\WF.Engine.Tools.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\EntityFramework.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\Lsm.Annotations.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\PagedList.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Lsm.Files.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Data.Repository.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Lsm.Logger.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\WF.Engine.Tools.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\Castle.Core.xml
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\Moq.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\Moq.xml
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\nunit.framework.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\nunit.framework.xml
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\System.ValueTuple.xml
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\EntityFramework.xml
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\Lsm.Annotations.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\PagedList.xml
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Lsm.Files.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\obj\Debug\Lsm.Tests.csprojResolveAssemblyReference.cache
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\obj\Debug\Lsm.Tests.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Tests\obj\Debug\Lsm.Tests.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\Lsm.Tests.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\Lsm.Tests.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\Castle.Core.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Data.Repository.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Lsm.Logger.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\Moq.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\nunit.framework.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\System.ValueTuple.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\WF.Engine.Tools.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\PagedList.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\Lsm.Annotations.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\PostSharp.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Lsm.Files.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Data.Repository.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Lsm.Logger.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\WF.Engine.Tools.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\Castle.Core.xml
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\Moq.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\Moq.xml
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\nunit.framework.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\nunit.framework.xml
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\System.ValueTuple.xml
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\PagedList.xml
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\Lsm.Annotations.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\PostSharp.xml
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Lsm.Files.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\obj\Debug\Lsm.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\obj\Debug\Lsm.Tests.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Tests\obj\Debug\Lsm.Tests.pdb
+F:\Development - Rest\QuotaPortal\Lsm.Tests\obj\Debug\Lsm.Tests.csprojResolveAssemblyReference.cache
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\Lsm.Tests.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\Lsm.Tests.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\Castle.Core.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Lsm.Data.Repositories.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Lsm.Logger.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Lsm.WF.Engine.Context.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\Moq.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\nunit.framework.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\System.ValueTuple.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\EntityFramework.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\PagedList.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\PostSharp.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Lsm.Annotations.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Lsm.Files.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Lsm.Data.Repositories.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Lsm.Logger.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Lsm.WF.Engine.Context.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\Castle.Core.xml
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\Moq.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\Moq.xml
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\nunit.framework.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\nunit.framework.xml
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\System.ValueTuple.xml
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\EntityFramework.xml
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\PagedList.xml
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\PostSharp.xml
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Lsm.Annotations.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Lsm.Files.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\obj\Debug\Lsm.Tests.csprojResolveAssemblyReference.cache
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\obj\Debug\Lsm.Tests.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Tests\obj\Debug\Lsm.Tests.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\obj\Debug\Lsm.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\Lsm.Tests.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\Lsm.Tests.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\Castle.Core.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Lsm.Data.Repositories.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Lsm.Logger.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Lsm.WF.Engine.Context.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\Moq.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\nunit.framework.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\System.ValueTuple.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\EntityFramework.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\PagedList.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\PostSharp.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Lsm.Annotations.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Lsm.Files.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Lsm.Data.Repositories.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Lsm.Logger.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Lsm.WF.Engine.Context.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\Castle.Core.xml
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\Moq.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\Moq.xml
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\nunit.framework.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\nunit.framework.xml
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\System.ValueTuple.xml
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\EntityFramework.xml
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\PagedList.xml
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\PostSharp.xml
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Lsm.Annotations.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\bin\Debug\DoE.Lsm.Files.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\obj\Debug\Lsm.Tests.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Tests\obj\Debug\Lsm.Tests.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\obj\Debug\Lsm.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Lsm.Tests.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Lsm.Tests.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Castle.Core.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\DoE.Lsm.Data.Repositories.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\DoE.Lsm.Logger.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\DoE.Lsm.WF.Engine.Context.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Lsm.Generics.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Lsm.WF.Engine.Svc.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Moq.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\nunit.framework.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\System.ValueTuple.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\EntityFramework.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\PagedList.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\PostSharp.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\DoE.Lsm.Annotations.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\log4net.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\LimpEmisPortal.Notify.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Castle.Windsor.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\DoE.Lsm.WF.Engine.Service.WorkItem.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Castle.Facilities.WcfIntegration.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\DoE.Lsm.WF.Component.Requisitions.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Owin.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Microsoft.Owin.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\DoE.Lsm.WF.Engine.Component.Monitor.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\DoE.Lsm.Data.Repositories.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Lsm.Generics.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\DoE.Lsm.Logger.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Lsm.WF.Engine.Svc.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\DoE.Lsm.WF.Engine.Context.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Castle.Core.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Moq.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Moq.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\nunit.framework.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\nunit.framework.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\System.ValueTuple.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\EntityFramework.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\PagedList.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\PostSharp.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\DoE.Lsm.Annotations.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\log4net.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\LimpEmisPortal.Notify.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Castle.Windsor.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\DoE.Lsm.WF.Engine.Service.WorkItem.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Castle.Facilities.WcfIntegration.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\DoE.Lsm.WF.Component.Requisitions.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Microsoft.Owin.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\DoE.Lsm.WF.Engine.Component.Monitor.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\obj\Debug\Lsm.Tests.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\obj\Debug\Lsm.Tests.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\Lsm.Tests.dll.config
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\DoE.SnE.WF.Service.Security.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests\bin\Debug\DoE.SnE.WF.Service.Security.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\Lsm.Tests\obj\Debug\Lsm.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\Lsm.Tests\obj\Debug\Lsm.Tests.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\Lsm.Tests\obj\Debug\Lsm.Tests.pdb

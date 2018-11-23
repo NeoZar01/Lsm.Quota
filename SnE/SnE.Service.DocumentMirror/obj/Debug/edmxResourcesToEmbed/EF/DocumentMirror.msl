@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PortalDocumentsMirrorModelStoreContainer" CdmEntityContainer="DocumentMirror">
+    <EntitySetMapping Name="Mirrors">
+      <EntityTypeMapping TypeName="Portal.DocumentsMirrorModel.Mirror">
+        <MappingFragment StoreEntitySet="Mirror">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RowGuid" ColumnName="RowGuid" />
+          <ScalarProperty Name="Curator" ColumnName="Curator" />
+          <ScalarProperty Name="DocumentToken" ColumnName="DocumentToken" />
+          <ScalarProperty Name="OriginalName" ColumnName="OriginalName" />
+          <ScalarProperty Name="Extension" ColumnName="Extension" />
+          <ScalarProperty Name="DocumentBytes" ColumnName="DocumentBytes" />
+          <ScalarProperty Name="DocumentEntityType" ColumnName="DocumentEntityType" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="Interface" ColumnName="Interface" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

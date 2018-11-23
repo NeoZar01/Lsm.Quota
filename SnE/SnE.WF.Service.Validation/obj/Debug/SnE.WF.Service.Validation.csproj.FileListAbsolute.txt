@@ -1,0 +1,8 @@
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Calculations\bin\Debug\DoE.SnE.WF.Service.Security.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Calculations\bin\Debug\DoE.SnE.WF.Service.Security.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Calculations\obj\Debug\DoE.SnE.WF.Service.Security.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Calculations\obj\Debug\DoE.SnE.WF.Service.Security.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Validation\bin\Debug\DoE.SnE.WF.Service.Security.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Validation\bin\Debug\DoE.SnE.WF.Service.Security.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Validation\obj\Debug\DoE.SnE.WF.Service.Security.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Validation\obj\Debug\DoE.SnE.WF.Service.Security.pdb

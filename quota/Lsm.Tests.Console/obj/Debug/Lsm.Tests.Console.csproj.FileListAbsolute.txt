@@ -1,8 +1,0 @@
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests.Console\bin\Debug\Lsm.Tests.Console.exe.config
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests.Console\bin\Debug\Lsm.Tests.Console.exe
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests.Console\bin\Debug\Lsm.Tests.Console.pdb
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests.Console\bin\Debug\Lsm.Generics.dll
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests.Console\bin\Debug\Lsm.Generics.pdb
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests.Console\obj\Debug\Lsm.Tests.Console.csprojResolveAssemblyReference.cache
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests.Console\obj\Debug\Lsm.Tests.Console.exe
-C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Tests.Console\obj\Debug\Lsm.Tests.Console.pdb
