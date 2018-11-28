@@ -19,10 +19,21 @@ SchoolsMigration job
 ProcessStatus 
 
 
+Section 1 Emis (Director)
+Step 1. Using standard and Norms - Emis Creates a Survey
+Step 2. Data Gets Loaded into the datawarehouse using the survey as a reference key.
+Step 3. Notify all interfaces about a new Survey Installation.
 
-Section 1. Curator Requisitions
 
-Step 1. Once standard and norms Migrated my school - its gonna send me the school name 
+
+
+Section 1.1  Requisitions (Curator)
+
+Step 1. Create a bookYear that should match an already installed survey
+Step 2. Book Year must have a report of which schools were installed into the survey. 
+Step 3. 
+
+Once standard and norms Migrated my school - its gonna send me the school name 
 Step 2. I am gonna respond by requesting to activate a process 
 Step 3. After receiving a token, I am gonna send a MigrationRequest to norms and standards 
 Step 4. A batch will run at a specific time. and load the new data to the Requisitions database. 
@@ -64,3 +75,9 @@ Process orders
 Send
 
 Section 5. Report 
+
+Someone is gonna create a Parent Process in standard and norms.
+
+
+
+
