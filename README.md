@@ -22,23 +22,26 @@ ProcessStatus
 Section 1 Emis (Director)
 Step 1. Using standard and Norms - Emis Creates a Survey
 Step 2. Data Gets Loaded into the datawarehouse using the survey as a reference key.
-Step 3. Notify all interfaces about a new Survey Installation.
+Step 3. Notify all interfaces about a new Survey Installation with a Report of all installed schools
+Step 4. 
 
 
 
 
 Section 1.1  Requisitions (Curator)
 
-Step 1. Create a bookYear that should match an already installed survey
-Step 2. Book Year must have a report of which schools were installed into the survey. 
-Step 3. 
+Step 1. Create a bookYear based on the installed survey.
+Step 2. Run a batch that loads all the schools in the surveyLog.
+Step 3. Book Year must have a report of which schools were installed into the survey. 
 
-Once standard and norms Migrated my school - its gonna send me the school name 
-Step 2. I am gonna respond by requesting to activate a process 
-Step 3. After receiving a token, I am gonna send a MigrationRequest to norms and standards 
-Step 4. A batch will run at a specific time. and load the new data to the Requisitions database. 
-Step 5. And a notification will be amended to notify the client about the outcome of the process. 
-Step 6. The client will proceed with the next step.
+***************
+
+Step 4. Once standard and norms Migrated my school - its gonna send me the school name 
+Step 5. I am gonna respond by requesting to activate a process 
+Step 6. After receiving a token, I am gonna send a MigrationRequest to norms and standards 
+Step 7. A batch will run at a specific time. and load the new data to the Requisitions database. 
+Step 8. And a notification will be amended to notify the client about the outcome of the process. 
+Step 9. The client will proceed with the next step.
 
 
 *************\
