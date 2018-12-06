@@ -7,7 +7,7 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="RowGuid" Type="uniqueidentifier" Nullable="false" />
-    <Property Name="Curator" Type="int" Nullable="false" />
+    <Property Name="Curator" Type="nvarchar" MaxLength="64" Nullable="false" />
     <Property Name="DocumentToken" Type="nvarchar" MaxLength="256" Nullable="false" />
     <Property Name="OriginalName" Type="nvarchar" MaxLength="800" Nullable="false" />
     <Property Name="Extension" Type="nvarchar(max)" Nullable="false" />

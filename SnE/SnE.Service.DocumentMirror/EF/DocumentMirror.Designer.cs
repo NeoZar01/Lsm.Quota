@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\SnE.WF.CService.DocumentsManager\EF\DocumentMirror.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Service.DocumentMirror\EF\DocumentMirror.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

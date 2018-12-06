@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace DoE.SnE.WF.Service.Validation.Api
 {
+
     public interface IValidationCallbacksContainer
     {
-
-
     }
+
 }

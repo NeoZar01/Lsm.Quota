@@ -15,9 +15,43 @@ namespace SnE.Component.DocumentsManager.Repositories
         public MirrorRepository(DbContext context) : base(context)
         {}
 
-        public  async Task<string> MapMirror(string curator, string documentToken, string originalName, string extension, byte[] bytes, string entityType, string interfaceKey)
+
+        public  async Task<string> MapMirror(string curator, string originalName, string extension, byte[] bytes, string entityType, string interfaceKey, string documentToken)
         {
-            return await Task.FromResult("FAILED");
+
+            var rowGuid = Guid.NewGuid();
+
+            var mirror = new Mirror
+            {
+                CreationDate        = DateTime.Now,
+                Curator             = curator,
+                DocumentBytes       = bytes,
+                DocumentEntityType  = entityType,
+                DocumentToken       = documentToken,
+                Extension           = extension,
+                Interface           = interfaceKey,
+                OriginalName        = originalName,
+                RowGuid             = rowGuid
+            };
+
+            try
+            {
+
+                Db.Mirrors.Add(mirror);
+
+                await Db.SaveChangesAsync();
+
+                return documentToken;
+
+            }catch
+            {
+                throw;
+            }
+
         }
+
+
+        protected DocumentMirror Db { get { return this._DbContext as DocumentMirror;  } }
+
     }
 }

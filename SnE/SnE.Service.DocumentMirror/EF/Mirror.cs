@@ -16,7 +16,7 @@ namespace SnE.Component.DocumentsManager.EF
     {
         public int Id { get; set; }
         public System.Guid RowGuid { get; set; }
-        public int Curator { get; set; }
+        public string Curator { get; set; }
         public string DocumentToken { get; set; }
         public string OriginalName { get; set; }
         public string Extension { get; set; }

@@ -23,7 +23,8 @@ namespace SnE.Component.DocumentsManager.Api
 
         public string ResizeImageCallBack(string sourcePath, string destinationPath, int width, int height)
         {
-            if (File.Exists(sourcePath))
+
+            if (!File.Exists(sourcePath) || !Directory.GetParent(destinationPath).Exists)
             return "FAILED";
 
             try
@@ -42,11 +43,18 @@ namespace SnE.Component.DocumentsManager.Api
             }
         }
 
-
-        public async Task<string> MapMirror(string curator, string documentToken, string originalName, string extension, byte[] bytes, string entityType, string interfaceKey)
+        public async Task<string> MapToMirrorCallBack(string curator, string documentToken, string originalName, string extension, byte[] bytes, string entityType, string interfaceKey)
         {
-            return await _repositoryManager.MirrorStore.MapMirror( curator , documentToken, originalName, extension, bytes, entityType, interfaceKey);
-        }
 
+            try
+            {
+                var documentSystemName = await _repositoryManager.MirrorStore.MapMirror(curator, originalName, extension, bytes, entityType, interfaceKey, documentToken);
+                return documentSystemName;
+            }
+            catch
+            {
+                throw new ApplicationException("There was an error createing a mirror to your file. Please contact administrator for more information.");
+            }
+       }
     }
 }

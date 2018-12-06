@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Core\AssemblyEnvironment.cs" />
     <Compile Include="Core\Command.cs" />
+    <Compile Include="Core\Extension.DateTime.cs" />
     <Compile Include="Core\Extentions.Array.cs" />
     <Compile Include="Core\Extentions.String.cs" />
     <Compile Include="Core\ProcessInstanceSecurityToken.cs" />

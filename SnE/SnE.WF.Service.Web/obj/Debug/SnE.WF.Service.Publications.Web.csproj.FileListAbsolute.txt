@@ -36,7 +36,6 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\DoE.Lsm.WF.En
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\Lsm.Generics.pdb
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\Castle.Facilities.WcfIntegration.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\Castle.Windsor.xml
-C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\PostSharp.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\log4net.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\Microsoft.AspNet.SignalR.Core.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\LimpEmisPortal.Notify.pdb

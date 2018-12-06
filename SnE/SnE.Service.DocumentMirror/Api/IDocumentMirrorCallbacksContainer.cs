@@ -20,10 +20,10 @@ namespace SnE.Component.DocumentsManager.Api
         /// <param name="height"></param>
         /// <param name="newSaveLocation"></param>
         /// <returns></returns>
-        Task<string> MapMirror(string curator, string documentToken, string originalName, string extension, byte[] bytes, string entityType, string interfaceKey);
+        Task<string> MapToMirrorCallBack(string curator, string documentToken, string originalName, string extension, byte[] bytes, string entityType, string interfaceKey);
 
         /// <summary>
-        ///     Resized an image and copies it to a new location using the alloted token.
+        ///     Resized an image and copies the new sized image to the desinationPath.
         /// </summary>
         /// <param name="sourcePath"></param>
         /// <param name="destinationPath"></param>

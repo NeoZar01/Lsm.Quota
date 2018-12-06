@@ -95,7 +95,6 @@
     <Compile Include="Api\IActionTaskFactory.cs" />
     <Compile Include="Api\IProcessRequestQueueManager.cs" />
     <Compile Include="Api\INormsStandardManager.cs" />
-    <Compile Include="Api\Norm.cs" />
     <Compile Include="Api\NormProcess.cs" />
     <Compile Include="Api\StepInstanceFactory.cs" />
     <Compile Include="Api\ProcessManager.cs" />

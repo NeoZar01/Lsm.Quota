@@ -134,7 +134,7 @@ namespace DoE.Lsm
         /// <param name="pattern"></param>
         /// <param name="token"></param>
         /// <returns></returns>
-        public static string Match(this string source, string command, string pattern, string token)
+        internal static string Match(this string source, string command, string pattern, string token)
         {
             Match result = Regex.Match(command, pattern);
             if (result.Success)

@@ -4,16 +4,16 @@
     <EntitySetMapping Name="Mirrors">
       <EntityTypeMapping TypeName="Portal.DocumentsMirrorModel.Mirror">
         <MappingFragment StoreEntitySet="Mirror">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="RowGuid" ColumnName="RowGuid" />
-          <ScalarProperty Name="Curator" ColumnName="Curator" />
-          <ScalarProperty Name="DocumentToken" ColumnName="DocumentToken" />
-          <ScalarProperty Name="OriginalName" ColumnName="OriginalName" />
-          <ScalarProperty Name="Extension" ColumnName="Extension" />
-          <ScalarProperty Name="DocumentBytes" ColumnName="DocumentBytes" />
-          <ScalarProperty Name="DocumentEntityType" ColumnName="DocumentEntityType" />
-          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
           <ScalarProperty Name="Interface" ColumnName="Interface" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="DocumentEntityType" ColumnName="DocumentEntityType" />
+          <ScalarProperty Name="DocumentBytes" ColumnName="DocumentBytes" />
+          <ScalarProperty Name="Extension" ColumnName="Extension" />
+          <ScalarProperty Name="OriginalName" ColumnName="OriginalName" />
+          <ScalarProperty Name="DocumentToken" ColumnName="DocumentToken" />
+          <ScalarProperty Name="Curator" ColumnName="Curator" />
+          <ScalarProperty Name="RowGuid" ColumnName="RowGuid" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

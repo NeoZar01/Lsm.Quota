@@ -21,3 +21,4 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Email\bin\Debug\Micro
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Email\bin\Debug\Microsoft.Exchange.WebServices.Auth.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Email\obj\Debug\DoE.WF.Email.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Email\obj\Debug\DoE.WF.Email.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Email\obj\Debug\SnE.WF.Service.Email.csprojResolveAssemblyReference.cache

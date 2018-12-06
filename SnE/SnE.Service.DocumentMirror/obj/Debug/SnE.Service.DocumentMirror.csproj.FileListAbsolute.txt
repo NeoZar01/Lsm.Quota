@@ -17,3 +17,4 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Service.DocumentMirror\bin\Debug
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Service.DocumentMirror\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Service.DocumentMirror\obj\Debug\SnE.WF.CService.DocumentsManager.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Service.DocumentMirror\obj\Debug\SnE.WF.CService.DocumentsManager.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Service.DocumentMirror\obj\Debug\SnE.Service.DocumentMirror.csprojResolveAssemblyReference.cache

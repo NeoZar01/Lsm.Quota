@@ -1,47 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Symbols LinesOfCode="617" PostSharpLinesOfCode="0" EnhancedTypesCount="2" SchemaVersion="1" PostSharpVersion="6.0.25.0" xmlns="http://schemas.postsharp.org/2.0/symbols">
   <Class Class="#1=T:[DoE.Lsm.Annotations]DoE.Lsm.Annotations.Exceptions.WatchException">
-    <Instance Declaration="#2=M:[DoE.Lsm.Data.Repositories]DoE.Lsm.Data.Repositories.Workflow.Engine.ProcessManagerRepository::CreateProcessInstance{T}(System.String, System.String, System.String, System.String, System.String, out System.DateTime, out System.String)" Id="b0b15a294895feb5">
+    <Instance Declaration="#2=M:[DoE.Lsm.Data.Repositories]DoE.Lsm.Data.Repositories.Workflow.Engine.ProcessManagerRepository::CreateProcessInstance{T}(System.String, System.String, System.String, System.String, System.String, out System.DateTime, out System.String)" Id="b0b15a29b7a745bc">
       <Target LinesAvoided="2">
         <JoinPoint Advising="#1" Description="#3=Wrapped by advice(s) OnException" Ordinal="0" />
       </Target>
     </Instance>
-    <Instance Declaration="#4=M:[DoE.Lsm.Data.Repositories]DoE.Lsm.Data.Repositories.Workflow.Engine.ProcessManagerRepository::UpdateProcessToken{T}(System.Guid, System.String)" Id="b0b15a29a84949f3">
+    <Instance Declaration="#4=M:[DoE.Lsm.Data.Repositories]DoE.Lsm.Data.Repositories.Workflow.Engine.ProcessManagerRepository::UpdateProcessToken{T}(System.Guid, System.String)" Id="b0b15a29ca72d6e8">
       <Target LinesAvoided="2">
         <JoinPoint Advising="#1" Description="#3" />
       </Target>
     </Instance>
-    <Instance Declaration="#5=M:[DoE.Lsm.Data.Repositories]DoE.Lsm.Data.Repositories.Workflow.Engine.ProcessManagerRepository::CreateInstanceSnapShot{T}(T, System.String, System.String, System.String, System.String, System.String, System.String, System.String[])" Id="b0b15a2989480789">
+    <Instance Declaration="#5=M:[DoE.Lsm.Data.Repositories]DoE.Lsm.Data.Repositories.Workflow.Engine.ProcessManagerRepository::CreateInstanceSnapShot{T}(T, System.String, System.String, System.String, System.String, System.String, System.String, System.String[])" Id="b0b15a29c689c96c">
       <Target LinesAvoided="2">
         <JoinPoint Advising="#1" Description="#3" Ordinal="2" />
       </Target>
     </Instance>
-    <Instance Declaration="#6=M:[DoE.Lsm.Data.Repositories]DoE.Lsm.Data.Repositories.Workflow.Engine.ProcessManagerRepository::InstallRules(System.String, System.Int32[])" Id="b0b15a29554a0fe2">
+    <Instance Declaration="#6=M:[DoE.Lsm.Data.Repositories]DoE.Lsm.Data.Repositories.Workflow.Engine.ProcessManagerRepository::InstallRules(System.String, System.Int32[])" Id="b0b15a29d3adc5b5">
       <Target LinesAvoided="2">
         <JoinPoint Advising="#1" Description="#3" Ordinal="3" />
       </Target>
     </Instance>
-    <Instance Declaration="#7=M:[DoE.Lsm.Data.Repositories]DoE.Lsm.Data.Repositories.Workflow.Engine.ProcessManagerRepository::ResolveProcessInstance(System.String, out System.String)" Id="b0b15a2917ceb5df">
+    <Instance Declaration="#7=M:[DoE.Lsm.Data.Repositories]DoE.Lsm.Data.Repositories.Workflow.Engine.ProcessManagerRepository::ResolveProcessInstance(System.String, out System.String)" Id="b0b15a294ade9d44">
       <Target LinesAvoided="2">
         <JoinPoint Advising="#1" Description="#3" Ordinal="4" />
       </Target>
     </Instance>
-    <Instance Declaration="#8=M:[DoE.Lsm.Data.Repositories]DoE.Lsm.Data.Repositories.Workflow.Engine.ProcessManagerRepository::CheckProcessToken(System.String)" Id="b0b15a2932ce788f">
+    <Instance Declaration="#8=M:[DoE.Lsm.Data.Repositories]DoE.Lsm.Data.Repositories.Workflow.Engine.ProcessManagerRepository::CheckProcessToken(System.String)" Id="b0b15a2928022614">
       <Target LinesAvoided="2">
         <JoinPoint Advising="#1" Description="#3" Ordinal="5" />
       </Target>
     </Instance>
-    <Instance Declaration="#9=M:[DoE.Lsm.Data.Repositories]DoE.Lsm.Data.Repositories.Workflow.Engine.ProcessManagerRepository::SetupProcessStep(System.String, out System.String, out System.String)" Id="b0b15a2909f725b5">
+    <Instance Declaration="#9=M:[DoE.Lsm.Data.Repositories]DoE.Lsm.Data.Repositories.Workflow.Engine.ProcessManagerRepository::SetupProcessStep(System.String, out System.String, out System.String)" Id="b0b15a29315a73c4">
       <Target LinesAvoided="2">
         <JoinPoint Advising="#1" Description="#3" Ordinal="6" />
       </Target>
     </Instance>
-    <Instance Declaration="#10=M:[DoE.Lsm.Data.Repositories]DoE.Lsm.Data.Repositories.Lock.LockerRepository::Lock(System.String, System.String, System.String)" Id="b0b15a29ebcec951">
+    <Instance Declaration="#10=M:[DoE.Lsm.Data.Repositories]DoE.Lsm.Data.Repositories.Lock.LockerRepository::Lock(System.String, System.String, System.String)" Id="b0b15a29304bd2af">
       <Target LinesAvoided="2">
         <JoinPoint Advising="#1" Description="#3" Ordinal="7" />
       </Target>
     </Instance>
-    <Instance Declaration="#11=M:[DoE.Lsm.Data.Repositories]DoE.Lsm.Data.Repositories.Lock.LockerRepository::UnLock(System.String, System.String, System.String, System.String)" Id="b0b15a29ea4a01c2">
+    <Instance Declaration="#11=M:[DoE.Lsm.Data.Repositories]DoE.Lsm.Data.Repositories.Lock.LockerRepository::UnLock(System.String, System.String, System.String, System.String)" Id="b0b15a2990f7d44a">
       <Target LinesAvoided="2">
         <JoinPoint Advising="#1" Description="#3" Ordinal="8" />
       </Target>
