@@ -63,10 +63,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Api\RequisitionStep.cs" />
+    <Compile Include="Factories\RequisitionStepAction.cs" />
     <Compile Include="Api\SchoolRepository.cs" />
-    <Compile Include="ProcessSteps\PreliminaryVetting.cs" />
-    <Compile Include="ProcessSteps\RimitInstallation.cs" />
+    <Compile Include="RequisitionProcessImp.cs" />
+    <Compile Include="Steps\PreliminaryVetting.cs" />
+    <Compile Include="Steps\RimitInstallation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Role.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -83,18 +84,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Station.resx</DependentUpon>
     </Compile>
-    <Compile Include="Api\Custordian.cs" />
-    <Compile Include="RequisitionProcessImp.cs" />
     <Compile Include="Factories\AcceptFactory.cs" />
-    <Compile Include="ProcessSteps\Utils\Accept.cs" />
     <Compile Include="Factories\DiscardFactory.cs" />
-    <Compile Include="ProcessSteps\Utils\DiscardContext.cs" />
     <Compile Include="Factories\RejectFactory.cs" />
-    <Compile Include="ProcessSteps\Utils\RejectJob.cs" />
-    <Compile Include="ProcessSteps\MigrateSchool.cs" />
-    <Compile Include="ProcessSteps\Utils\Submit.cs" />
     <Compile Include="Factories\SubmitFactory.cs" />
-    <Compile Include="ProcessSteps\Utils\HaltableStep.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

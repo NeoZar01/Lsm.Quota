@@ -1,4 +1,3 @@
-C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\Lsm.Tests\obj\Debug\SnE.Tests.csprojResolveAssemblyReference.cache
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\Lsm.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
@@ -48,5 +47,6 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\Lsm.Tests\bin\Debug\DoE.Lsm.WF.Engin
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\Lsm.Tests\bin\Debug\Microsoft.Owin.Security.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\Lsm.Tests\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\Lsm.Tests\bin\Debug\Microsoft.Owin.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\Lsm.Tests\obj\Debug\SnE.Tests.csprojResolveAssemblyReference.cache
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\Lsm.Tests\obj\Debug\Lsm.Tests.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\Lsm.Tests\obj\Debug\Lsm.Tests.pdb

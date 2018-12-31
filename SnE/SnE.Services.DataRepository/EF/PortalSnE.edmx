@@ -6,8 +6,8 @@
     <edmx:StorageModels>
     <Schema Namespace="Portal.NormsStandardsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <!--Errors Found During Generation:
-warning 6002: The table/view 'Portal.NormsStandards.Application._Error' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="_Error">
+warning 6002: The table/view 'Portal.SnE.Application._Errors' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="_Errors">
           <Key>
             <PropertyRef Name="Id" />
             <PropertyRef Name="ReportDate" />
@@ -19,8 +19,8 @@ warning 6002: The table/view 'Portal.NormsStandards.Application._Error' does not
           <Property Name="ReportDate" Type="datetime" Nullable="false" />
         </EntityType>
         <!--Errors Found During Generation:
-warning 6002: The table/view 'Portal.NormsStandards.Application._WILock' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="_WILock">
+warning 6002: The table/view 'Portal.SnE.Application.WILock' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="WILock">
           <Key>
             <PropertyRef Name="Id" />
             <PropertyRef Name="EntityId" />
@@ -37,7 +37,7 @@ warning 6002: The table/view 'Portal.NormsStandards.Application._WILock' does no
           <Property Name="ReleasedBy" Type="nvarchar" MaxLength="36" />
           <Property Name="IsLocked" Type="nvarchar(max)" StoreGeneratedPattern="Computed" />
         </EntityType>
-        <EntityType Name="WIOutcome_Lookup">
+        <EntityType Name="WIOutcome">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
@@ -53,12 +53,11 @@ warning 6002: The table/view 'Portal.NormsStandards.Application._WILock' does no
           </Key>
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="InstanceId" Type="uniqueidentifier" Nullable="false" />
-          <Property Name="Name" Type="nvarchar" MaxLength="36" Nullable="false" />
-          <Property Name="Description" Type="nvarchar" MaxLength="36" Nullable="false" />
-          <Property Name="EntityType" Type="nvarchar" MaxLength="36" Nullable="false" />
-          <Property Name="EntityTypeCompletionDaysVariable" Type="nvarchar" MaxLength="36" Nullable="false" />
-          <Property Name="ExpectedCompletionDays" Type="varchar" MaxLength="255" StoreGeneratedPattern="Computed" />
-          <Property Name="ParentProcessId" Type="varchar" MaxLength="36" />
+          <Property Name="Key" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="EntityType" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="ParentProcessId" Type="varchar" MaxLength="64" />
         </EntityType>
         <EntityType Name="WIProcessInstance">
           <Key>
@@ -69,7 +68,7 @@ warning 6002: The table/view 'Portal.NormsStandards.Application._WILock' does no
           <Property Name="ProcessInstanceId" Type="uniqueidentifier" Nullable="false" />
           <Property Name="ProcessToken" Type="nvarchar" MaxLength="256" />
           <Property Name="ClaimsIdentity" Type="nvarchar" MaxLength="36" Nullable="false" />
-          <Property Name="FlowId" Type="nvarchar" MaxLength="36" Nullable="false" />
+          <Property Name="ProcessId" Type="nvarchar" MaxLength="36" Nullable="false" />
           <Property Name="SurveyKey" Type="nvarchar" MaxLength="36" Nullable="false" />
           <Property Name="InterfaceKey" Type="nvarchar" MaxLength="36" Nullable="false" />
           <Property Name="CommencementDate" Type="datetime" Nullable="false" />
@@ -108,66 +107,119 @@ warning 6002: The table/view 'Portal.NormsStandards.Application._WILock' does no
           <Property Name="Outcome" Type="nvarchar" MaxLength="36" />
           <Property Name="State" Type="nvarchar" MaxLength="36" />
         </EntityType>
+        <EntityType Name="WIProcessStepInstance_Snapshots">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CurrentStepInstanceId" Type="nvarchar" MaxLength="36" Nullable="false" />
+          <Property Name="PreceedingStepId" Type="nvarchar" MaxLength="36" Nullable="false" />
+          <Property Name="PreceedingStepInstanceId" Type="nvarchar" MaxLength="36" Nullable="false" />
+          <Property Name="UserToken" Type="nvarchar" MaxLength="36" Nullable="false" />
+          <Property Name="InstanceCaseId" Type="nvarchar" MaxLength="36" Nullable="false" />
+          <Property Name="InstanceEntityType" Type="nvarchar" MaxLength="36" Nullable="false" />
+          <Property Name="StartedAt" Type="datetime" Nullable="false" />
+          <Property Name="EndedAt" Type="datetime" />
+          <Property Name="Outcome" Type="nvarchar" MaxLength="150" Nullable="false" />
+          <Property Name="Param_0001" Type="nvarchar" MaxLength="140" />
+          <Property Name="Param_0002" Type="nvarchar" MaxLength="140" />
+          <Property Name="Param_0003" Type="nvarchar" MaxLength="140" />
+          <Property Name="Param_0004" Type="nvarchar" MaxLength="140" />
+          <Property Name="Param_0005" Type="nvarchar" MaxLength="140" />
+          <Property Name="Param_0006" Type="nvarchar" MaxLength="140" />
+          <Property Name="Param_0007" Type="nvarchar" MaxLength="140" />
+          <Property Name="Param_0008" Type="nvarchar" MaxLength="140" />
+          <Property Name="Param_0009" Type="nvarchar" MaxLength="140" />
+          <Property Name="Param_0010" Type="nvarchar" MaxLength="140" />
+        </EntityType>
+        <EntityType Name="DataExtracts">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="36" Nullable="false" />
+          <Property Name="SelectSQL" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="InsertSQL" Type="nvarchar(max)" />
+          <Property Name="DeleteCondition" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="ExtractSchedulerQueue">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ExtractId" Type="varchar" MaxLength="64" Nullable="false" />
+          <Property Name="SurveyId" Type="varchar" MaxLength="64" Nullable="false" />
+          <Property Name="ConsoriumGroupId" Type="varchar" MaxLength="64" Nullable="false" />
+          <Property Name="EntityType" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="EntityId" Type="varchar" MaxLength="64" Nullable="false" />
+          <Property Name="MemberId" Type="varchar" MaxLength="64" Nullable="false" />
+          <Property Name="DimensionSchema" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="Dimension" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+          <Property Name="LastModifiedDate" Type="datetime" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="KEY_001" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="DATA_001" Type="varchar" MaxLength="255" />
+          <Property Name="DATA_002" Type="varchar" MaxLength="255" />
+          <Property Name="DATA_003" Type="varchar" MaxLength="255" />
+          <Property Name="DATA_004" Type="varchar" MaxLength="255" />
+          <Property Name="DATA_005" Type="varchar" MaxLength="255" />
+          <Property Name="DATA_006" Type="varchar" MaxLength="255" />
+          <Property Name="DATA_007" Type="varchar" MaxLength="255" />
+          <Property Name="DATA_008" Type="varchar" MaxLength="255" />
+          <Property Name="DATA_009" Type="varchar" MaxLength="255" />
+          <Property Name="DATA_010" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="Surveys">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="SurveyGroupId" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="Label" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+        </EntityType>
         <Function Name="FN_InterfaceVariables" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
           <Parameter Name="Key" Type="varchar" Mode="In" />
           <Parameter Name="InterfaceKey" Type="varchar" Mode="In" />
           <Parameter Name="SurveyKey" Type="varchar" Mode="In" />
         </Function>
         <EntityContainer Name="PortalNormsStandardsModelStoreContainer">
-          <EntitySet Name="WIOutcome_Lookup" EntityType="Self.WIOutcome_Lookup" Schema="Application" store:Type="Tables" />
+          <EntitySet Name="WIOutcome" EntityType="Self.WIOutcome" Schema="Application" store:Type="Tables" />
           <EntitySet Name="WIProcess" EntityType="Self.WIProcess" Schema="Application" store:Type="Tables" />
           <EntitySet Name="WIProcessInstance" EntityType="Self.WIProcessInstance" Schema="Application" store:Type="Tables" />
           <EntitySet Name="WIProcessStep" EntityType="Self.WIProcessStep" Schema="Application" store:Type="Tables" />
           <EntitySet Name="WIProcessStepInstance" EntityType="Self.WIProcessStepInstance" Schema="Application" store:Type="Tables" />
-          <EntitySet Name="_Error" EntityType="Self._Error" store:Type="Tables" store:Schema="Application">
+          <EntitySet Name="WIProcessStepInstance_Snapshots" EntityType="Self.WIProcessStepInstance_Snapshots" Schema="Application" store:Type="Tables" />
+          <EntitySet Name="DataExtracts" EntityType="Self.DataExtracts" Schema="Production" store:Type="Tables" />
+          <EntitySet Name="ExtractSchedulerQueue" EntityType="Self.ExtractSchedulerQueue" Schema="Production" store:Type="Tables" />
+          <EntitySet Name="Surveys" EntityType="Self.Surveys" Schema="Production" store:Type="Tables" />
+          <EntitySet Name="_Errors" EntityType="Self._Errors" store:Type="Tables" store:Schema="Application">
             <DefiningQuery>SELECT 
-    [_Error].[Id] AS [Id], 
-    [_Error].[Entity] AS [Entity], 
-    [_Error].[EntityType] AS [EntityType], 
-    [_Error].[StackTrace] AS [StackTrace], 
-    [_Error].[ReportDate] AS [ReportDate]
-    FROM [Application].[_Error] AS [_Error]</DefiningQuery>
+    [_Errors].[Id] AS [Id], 
+    [_Errors].[Entity] AS [Entity], 
+    [_Errors].[EntityType] AS [EntityType], 
+    [_Errors].[StackTrace] AS [StackTrace], 
+    [_Errors].[ReportDate] AS [ReportDate]
+    FROM [Application].[_Errors] AS [_Errors]</DefiningQuery>
           </EntitySet>
-          <EntitySet Name="_WILock" EntityType="Self._WILock" store:Type="Tables" store:Schema="Application">
+          <EntitySet Name="WILock" EntityType="Self.WILock" store:Type="Tables" store:Schema="Application">
             <DefiningQuery>SELECT 
-    [_WILock].[Id] AS [Id], 
-    [_WILock].[EntityId] AS [EntityId], 
-    [_WILock].[EntityType] AS [EntityType], 
-    [_WILock].[LockedBy] AS [LockedBy], 
-    [_WILock].[LockedFrom] AS [LockedFrom], 
-    [_WILock].[ReleasedAt] AS [ReleasedAt], 
-    [_WILock].[ReleasedBy] AS [ReleasedBy], 
-    [_WILock].[IsLocked] AS [IsLocked]
-    FROM [Application].[_WILock] AS [_WILock]</DefiningQuery>
+    [WILock].[Id] AS [Id], 
+    [WILock].[EntityId] AS [EntityId], 
+    [WILock].[EntityType] AS [EntityType], 
+    [WILock].[LockedBy] AS [LockedBy], 
+    [WILock].[LockedFrom] AS [LockedFrom], 
+    [WILock].[ReleasedAt] AS [ReleasedAt], 
+    [WILock].[ReleasedBy] AS [ReleasedBy], 
+    [WILock].[IsLocked] AS [IsLocked]
+    FROM [Application].[WILock] AS [WILock]</DefiningQuery>
           </EntitySet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="Portal.NormsStandardsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="WIOutcome_Lookup">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Guid" Nullable="false" />
-          <Property Name="Name" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Value" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
-        </EntityType>
-        <EntityType Name="WIProcess">
-          <Key>
-            <PropertyRef Name="id" />
-            <PropertyRef Name="InstanceId" />
-          </Key>
-          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="InstanceId" Type="Guid" Nullable="false" />
-          <Property Name="Name" Type="String" MaxLength="36" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Description" Type="String" MaxLength="36" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="EntityType" Type="String" MaxLength="36" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="EntityTypeCompletionDaysVariable" Type="String" MaxLength="36" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="ExpectedCompletionDays" Type="String" MaxLength="255" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
-          <Property Name="ParentProcessId" Type="String" MaxLength="36" FixedLength="false" Unicode="false" />
-        </EntityType>
         <EntityType Name="WIProcessStep">
           <Key>
             <PropertyRef Name="id" />
@@ -200,7 +252,149 @@ warning 6002: The table/view 'Portal.NormsStandards.Application._WILock' does no
           <Property Name="Outcome" Type="String" MaxLength="36" FixedLength="false" Unicode="true" />
           <Property Name="State" Type="String" MaxLength="36" FixedLength="false" Unicode="true" />
         </EntityType>
-        <EntityType Name="C_Error">
+        <EntityContainer Name="PortalSnE" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="WIProcessSteps" EntityType="Self.WIProcessStep" />
+          <EntitySet Name="WIProcessStepInstances" EntityType="Self.WIProcessStepInstance" />
+          <FunctionImport Name="sp_MigrateData_Merge">
+            <Parameter Name="TempTable_PK" Mode="In" Type="String" />
+            <Parameter Name="ExtractName" Mode="In" Type="String" />
+            <Parameter Name="SurveyKey" Mode="In" Type="String" />
+            <Parameter Name="ConsoriumGroupName" Mode="In" Type="String" />
+            <Parameter Name="EntityId" Mode="In" Type="String" />
+            <Parameter Name="MemberId" Mode="In" Type="String" />
+            <Parameter Name="StagingTable" Mode="In" Type="String" />
+            <Parameter Name="DATA_001" Mode="In" Type="String" />
+            <Parameter Name="DATA_002" Mode="In" Type="String" />
+            <Parameter Name="DATA_003" Mode="In" Type="String" />
+            <Parameter Name="DATA_004" Mode="In" Type="String" />
+            <Parameter Name="DATA_005" Mode="In" Type="String" />
+            <Parameter Name="DATA_006" Mode="In" Type="String" />
+            <Parameter Name="DATA_007" Mode="In" Type="String" />
+            <Parameter Name="DATA_008" Mode="In" Type="String" />
+            <Parameter Name="DATA_009" Mode="In" Type="String" />
+            <Parameter Name="DATA_010" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="WIProcesses" EntityType="Portal.NormsStandardsModel.WIProcess" />
+          <EntitySet Name="WIProcessInstances" EntityType="Portal.NormsStandardsModel.WIProcessInstance" />
+          <EntitySet Name="WIProcessStepInstance_Snapshots" EntityType="Portal.NormsStandardsModel.WIProcessStepInstance_Snapshots" />
+          <EntitySet Name="ExtractSchedulerQueues" EntityType="Portal.NormsStandardsModel.ExtractSchedulerQueue" />
+          <EntitySet Name="Surveys" EntityType="Portal.NormsStandardsModel.Survey" />
+          <EntitySet Name="DataExtracts" EntityType="Portal.NormsStandardsModel.DataExtract" />
+          <EntitySet Name="WIOutcomes" EntityType="Portal.NormsStandardsModel.WIOutcome" />
+          <EntitySet Name="C_Errors" EntityType="Portal.NormsStandardsModel.C_Errors" />
+          <EntitySet Name="WILocks" EntityType="Portal.NormsStandardsModel.WILock" />
+        </EntityContainer>
+        <EntityType Name="WIProcess">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="InstanceId" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="InstanceId" Type="Guid" Nullable="false" />
+          <Property Name="Key" Type="String" Nullable="false" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="EntityType" Type="String" Nullable="false" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="ParentProcessId" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="WIProcessInstance">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="ProcessInstanceId" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProcessInstanceId" Type="Guid" Nullable="false" />
+          <Property Name="ProcessToken" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="ClaimsIdentity" Type="String" Nullable="false" MaxLength="36" FixedLength="false" Unicode="true" />
+          <Property Name="ProcessId" Type="String" Nullable="false" MaxLength="36" FixedLength="false" Unicode="true" />
+          <Property Name="SurveyKey" Type="String" Nullable="false" MaxLength="36" FixedLength="false" Unicode="true" />
+          <Property Name="InterfaceKey" Type="String" Nullable="false" MaxLength="36" FixedLength="false" Unicode="true" />
+          <Property Name="CommencementDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastModifiedDate" Type="DateTime" Precision="3" />
+          <Property Name="ExpiryDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="WIProcessStepInstance_Snapshots">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="CurrentStepInstanceId" Type="String" Nullable="false" MaxLength="36" FixedLength="false" Unicode="true" />
+          <Property Name="PreceedingStepId" Type="String" Nullable="false" MaxLength="36" FixedLength="false" Unicode="true" />
+          <Property Name="PreceedingStepInstanceId" Type="String" Nullable="false" MaxLength="36" FixedLength="false" Unicode="true" />
+          <Property Name="UserToken" Type="String" Nullable="false" MaxLength="36" FixedLength="false" Unicode="true" />
+          <Property Name="InstanceCaseId" Type="String" Nullable="false" MaxLength="36" FixedLength="false" Unicode="true" />
+          <Property Name="InstanceEntityType" Type="String" Nullable="false" MaxLength="36" FixedLength="false" Unicode="true" />
+          <Property Name="StartedAt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="EndedAt" Type="DateTime" Precision="3" />
+          <Property Name="Outcome" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Param_0001" Type="String" MaxLength="140" FixedLength="false" Unicode="true" />
+          <Property Name="Param_0002" Type="String" MaxLength="140" FixedLength="false" Unicode="true" />
+          <Property Name="Param_0003" Type="String" MaxLength="140" FixedLength="false" Unicode="true" />
+          <Property Name="Param_0004" Type="String" MaxLength="140" FixedLength="false" Unicode="true" />
+          <Property Name="Param_0005" Type="String" MaxLength="140" FixedLength="false" Unicode="true" />
+          <Property Name="Param_0006" Type="String" MaxLength="140" FixedLength="false" Unicode="true" />
+          <Property Name="Param_0007" Type="String" MaxLength="140" FixedLength="false" Unicode="true" />
+          <Property Name="Param_0008" Type="String" MaxLength="140" FixedLength="false" Unicode="true" />
+          <Property Name="Param_0009" Type="String" MaxLength="140" FixedLength="false" Unicode="true" />
+          <Property Name="Param_0010" Type="String" MaxLength="140" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="ExtractSchedulerQueue">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="ExtractId" Type="String" Nullable="false" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="SurveyId" Type="String" Nullable="false" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="ConsoriumGroupId" Type="String" Nullable="false" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="EntityType" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="EntityId" Type="String" Nullable="false" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="MemberId" Type="String" Nullable="false" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="DimensionSchema" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Dimension" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Status" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="KEY_001" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="DATA_001" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="DATA_002" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="DATA_003" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="DATA_004" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="DATA_005" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="DATA_006" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="DATA_007" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="DATA_008" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="DATA_009" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="DATA_010" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Survey">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="SurveyGroupId" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Label" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="DataExtract">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="36" FixedLength="false" Unicode="false" />
+          <Property Name="SelectSQL" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="InsertSQL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DeleteCondition" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="WIOutcome">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Value" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="C_Errors">
           <Key>
             <PropertyRef Name="Id" />
             <PropertyRef Name="ReportDate" />
@@ -211,7 +405,7 @@ warning 6002: The table/view 'Portal.NormsStandards.Application._WILock' does no
           <Property Name="StackTrace" Type="String" MaxLength="36" FixedLength="false" Unicode="true" />
           <Property Name="ReportDate" Type="DateTime" Nullable="false" Precision="3" />
         </EntityType>
-        <EntityType Name="C_WILock">
+        <EntityType Name="WILock">
           <Key>
             <PropertyRef Name="Id" />
             <PropertyRef Name="EntityId" />
@@ -220,38 +414,13 @@ warning 6002: The table/view 'Portal.NormsStandards.Application._WILock' does no
             <PropertyRef Name="LockedFrom" />
           </Key>
           <Property Name="Id" Type="Guid" Nullable="false" />
-          <Property Name="EntityId" Type="String" MaxLength="36" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="EntityType" Type="String" MaxLength="36" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="LockedBy" Type="String" MaxLength="36" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EntityId" Type="String" Nullable="false" MaxLength="36" FixedLength="false" Unicode="true" />
+          <Property Name="EntityType" Type="String" Nullable="false" MaxLength="36" FixedLength="false" Unicode="true" />
+          <Property Name="LockedBy" Type="String" Nullable="false" MaxLength="36" FixedLength="false" Unicode="true" />
           <Property Name="LockedFrom" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="ReleasedAt" Type="DateTime" Precision="3" />
           <Property Name="ReleasedBy" Type="String" MaxLength="36" FixedLength="false" Unicode="true" />
           <Property Name="IsLocked" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" annotation:StoreGeneratedPattern="Computed" />
-        </EntityType>
-        <EntityContainer Name="PortalSnE" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="WIOutcome_Lookup" EntityType="Self.WIOutcome_Lookup" />
-          <EntitySet Name="WIProcesses" EntityType="Self.WIProcess" />
-          <EntitySet Name="WIProcessSteps" EntityType="Self.WIProcessStep" />
-          <EntitySet Name="WIProcessStepInstances" EntityType="Self.WIProcessStepInstance" />
-          <EntitySet Name="C_Error" EntityType="Self.C_Error" />
-          <EntitySet Name="C_WILock" EntityType="Self.C_WILock" />
-          <EntitySet Name="WIProcessInstances" EntityType="Portal.NormsStandardsModel.WIProcessInstance" />
-        </EntityContainer>
-        <EntityType Name="WIProcessInstance">
-          <Key>
-            <PropertyRef Name="id" />
-            <PropertyRef Name="ProcessInstanceId" />
-          </Key>
-          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="ProcessInstanceId" Type="Guid" Nullable="false" />
-          <Property Name="ProcessToken" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
-          <Property Name="ClaimsIdentity" Type="String" Nullable="false" MaxLength="36" FixedLength="false" Unicode="true" />
-          <Property Name="FlowId" Type="String" Nullable="false" MaxLength="36" FixedLength="false" Unicode="true" />
-          <Property Name="SurveyKey" Type="String" Nullable="false" MaxLength="36" FixedLength="false" Unicode="true" />
-          <Property Name="InterfaceKey" Type="String" Nullable="false" MaxLength="36" FixedLength="false" Unicode="true" />
-          <Property Name="CommencementDate" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="LastModifiedDate" Type="DateTime" Precision="3" />
-          <Property Name="ExpiryDate" Type="DateTime" Precision="3" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -259,30 +428,6 @@ warning 6002: The table/view 'Portal.NormsStandards.Application._WILock' does no
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="PortalNormsStandardsModelStoreContainer" CdmEntityContainer="PortalSnE">
-          <EntitySetMapping Name="WIOutcome_Lookup">
-            <EntityTypeMapping TypeName="Portal.NormsStandardsModel.WIOutcome_Lookup">
-              <MappingFragment StoreEntitySet="WIOutcome_Lookup">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="Description" ColumnName="Description" />
-                <ScalarProperty Name="Value" ColumnName="Value" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="WIProcesses">
-            <EntityTypeMapping TypeName="Portal.NormsStandardsModel.WIProcess">
-              <MappingFragment StoreEntitySet="WIProcess">
-                <ScalarProperty Name="id" ColumnName="id" />
-                <ScalarProperty Name="InstanceId" ColumnName="InstanceId" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="Description" ColumnName="Description" />
-                <ScalarProperty Name="EntityType" ColumnName="EntityType" />
-                <ScalarProperty Name="EntityTypeCompletionDaysVariable" ColumnName="EntityTypeCompletionDaysVariable" />
-                <ScalarProperty Name="ExpectedCompletionDays" ColumnName="ExpectedCompletionDays" />
-                <ScalarProperty Name="ParentProcessId" ColumnName="ParentProcessId" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="WIProcessSteps">
             <EntityTypeMapping TypeName="Portal.NormsStandardsModel.WIProcessStep">
               <MappingFragment StoreEntitySet="WIProcessStep">
@@ -316,28 +461,16 @@ warning 6002: The table/view 'Portal.NormsStandards.Application._WILock' does no
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="C_Error">
-            <EntityTypeMapping TypeName="Portal.NormsStandardsModel.C_Error">
-              <MappingFragment StoreEntitySet="_Error">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Entity" ColumnName="Entity" />
+          <EntitySetMapping Name="WIProcesses">
+            <EntityTypeMapping TypeName="Portal.NormsStandardsModel.WIProcess">
+              <MappingFragment StoreEntitySet="WIProcess">
+                <ScalarProperty Name="ParentProcessId" ColumnName="ParentProcessId" />
                 <ScalarProperty Name="EntityType" ColumnName="EntityType" />
-                <ScalarProperty Name="StackTrace" ColumnName="StackTrace" />
-                <ScalarProperty Name="ReportDate" ColumnName="ReportDate" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="C_WILock">
-            <EntityTypeMapping TypeName="Portal.NormsStandardsModel.C_WILock">
-              <MappingFragment StoreEntitySet="_WILock">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="EntityId" ColumnName="EntityId" />
-                <ScalarProperty Name="EntityType" ColumnName="EntityType" />
-                <ScalarProperty Name="LockedBy" ColumnName="LockedBy" />
-                <ScalarProperty Name="LockedFrom" ColumnName="LockedFrom" />
-                <ScalarProperty Name="ReleasedAt" ColumnName="ReleasedAt" />
-                <ScalarProperty Name="ReleasedBy" ColumnName="ReleasedBy" />
-                <ScalarProperty Name="IsLocked" ColumnName="IsLocked" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Key" ColumnName="Key" />
+                <ScalarProperty Name="InstanceId" ColumnName="InstanceId" />
+                <ScalarProperty Name="id" ColumnName="id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -349,11 +482,122 @@ warning 6002: The table/view 'Portal.NormsStandards.Application._WILock' does no
                 <ScalarProperty Name="CommencementDate" ColumnName="CommencementDate" />
                 <ScalarProperty Name="InterfaceKey" ColumnName="InterfaceKey" />
                 <ScalarProperty Name="SurveyKey" ColumnName="SurveyKey" />
-                <ScalarProperty Name="FlowId" ColumnName="FlowId" />
+                <ScalarProperty Name="ProcessId" ColumnName="ProcessId" />
                 <ScalarProperty Name="ClaimsIdentity" ColumnName="ClaimsIdentity" />
                 <ScalarProperty Name="ProcessToken" ColumnName="ProcessToken" />
                 <ScalarProperty Name="ProcessInstanceId" ColumnName="ProcessInstanceId" />
                 <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WIProcessStepInstance_Snapshots">
+            <EntityTypeMapping TypeName="Portal.NormsStandardsModel.WIProcessStepInstance_Snapshots">
+              <MappingFragment StoreEntitySet="WIProcessStepInstance_Snapshots">
+                <ScalarProperty Name="Param_0010" ColumnName="Param_0010" />
+                <ScalarProperty Name="Param_0009" ColumnName="Param_0009" />
+                <ScalarProperty Name="Param_0008" ColumnName="Param_0008" />
+                <ScalarProperty Name="Param_0007" ColumnName="Param_0007" />
+                <ScalarProperty Name="Param_0006" ColumnName="Param_0006" />
+                <ScalarProperty Name="Param_0005" ColumnName="Param_0005" />
+                <ScalarProperty Name="Param_0004" ColumnName="Param_0004" />
+                <ScalarProperty Name="Param_0003" ColumnName="Param_0003" />
+                <ScalarProperty Name="Param_0002" ColumnName="Param_0002" />
+                <ScalarProperty Name="Param_0001" ColumnName="Param_0001" />
+                <ScalarProperty Name="Outcome" ColumnName="Outcome" />
+                <ScalarProperty Name="EndedAt" ColumnName="EndedAt" />
+                <ScalarProperty Name="StartedAt" ColumnName="StartedAt" />
+                <ScalarProperty Name="InstanceEntityType" ColumnName="InstanceEntityType" />
+                <ScalarProperty Name="InstanceCaseId" ColumnName="InstanceCaseId" />
+                <ScalarProperty Name="UserToken" ColumnName="UserToken" />
+                <ScalarProperty Name="PreceedingStepInstanceId" ColumnName="PreceedingStepInstanceId" />
+                <ScalarProperty Name="PreceedingStepId" ColumnName="PreceedingStepId" />
+                <ScalarProperty Name="CurrentStepInstanceId" ColumnName="CurrentStepInstanceId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ExtractSchedulerQueues">
+            <EntityTypeMapping TypeName="Portal.NormsStandardsModel.ExtractSchedulerQueue">
+              <MappingFragment StoreEntitySet="ExtractSchedulerQueue">
+                <ScalarProperty Name="DATA_010" ColumnName="DATA_010" />
+                <ScalarProperty Name="DATA_009" ColumnName="DATA_009" />
+                <ScalarProperty Name="DATA_008" ColumnName="DATA_008" />
+                <ScalarProperty Name="DATA_007" ColumnName="DATA_007" />
+                <ScalarProperty Name="DATA_006" ColumnName="DATA_006" />
+                <ScalarProperty Name="DATA_005" ColumnName="DATA_005" />
+                <ScalarProperty Name="DATA_004" ColumnName="DATA_004" />
+                <ScalarProperty Name="DATA_003" ColumnName="DATA_003" />
+                <ScalarProperty Name="DATA_002" ColumnName="DATA_002" />
+                <ScalarProperty Name="DATA_001" ColumnName="DATA_001" />
+                <ScalarProperty Name="KEY_001" ColumnName="KEY_001" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="Dimension" ColumnName="Dimension" />
+                <ScalarProperty Name="DimensionSchema" ColumnName="DimensionSchema" />
+                <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+                <ScalarProperty Name="EntityId" ColumnName="EntityId" />
+                <ScalarProperty Name="EntityType" ColumnName="EntityType" />
+                <ScalarProperty Name="ConsoriumGroupId" ColumnName="ConsoriumGroupId" />
+                <ScalarProperty Name="SurveyId" ColumnName="SurveyId" />
+                <ScalarProperty Name="ExtractId" ColumnName="ExtractId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Surveys">
+            <EntityTypeMapping TypeName="Portal.NormsStandardsModel.Survey">
+              <MappingFragment StoreEntitySet="Surveys">
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="Label" ColumnName="Label" />
+                <ScalarProperty Name="SurveyGroupId" ColumnName="SurveyGroupId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DataExtracts">
+            <EntityTypeMapping TypeName="Portal.NormsStandardsModel.DataExtract">
+              <MappingFragment StoreEntitySet="DataExtracts">
+                <ScalarProperty Name="DeleteCondition" ColumnName="DeleteCondition" />
+                <ScalarProperty Name="InsertSQL" ColumnName="InsertSQL" />
+                <ScalarProperty Name="SelectSQL" ColumnName="SelectSQL" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WIOutcomes">
+            <EntityTypeMapping TypeName="Portal.NormsStandardsModel.WIOutcome">
+              <MappingFragment StoreEntitySet="WIOutcome">
+                <ScalarProperty Name="Value" ColumnName="Value" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="C_Errors">
+            <EntityTypeMapping TypeName="Portal.NormsStandardsModel.C_Errors">
+              <MappingFragment StoreEntitySet="_Errors">
+                <ScalarProperty Name="ReportDate" ColumnName="ReportDate" />
+                <ScalarProperty Name="StackTrace" ColumnName="StackTrace" />
+                <ScalarProperty Name="EntityType" ColumnName="EntityType" />
+                <ScalarProperty Name="Entity" ColumnName="Entity" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WILocks">
+            <EntityTypeMapping TypeName="Portal.NormsStandardsModel.WILock">
+              <MappingFragment StoreEntitySet="WILock">
+                <ScalarProperty Name="IsLocked" ColumnName="IsLocked" />
+                <ScalarProperty Name="ReleasedBy" ColumnName="ReleasedBy" />
+                <ScalarProperty Name="ReleasedAt" ColumnName="ReleasedAt" />
+                <ScalarProperty Name="LockedFrom" ColumnName="LockedFrom" />
+                <ScalarProperty Name="LockedBy" ColumnName="LockedBy" />
+                <ScalarProperty Name="EntityType" ColumnName="EntityType" />
+                <ScalarProperty Name="EntityId" ColumnName="EntityId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

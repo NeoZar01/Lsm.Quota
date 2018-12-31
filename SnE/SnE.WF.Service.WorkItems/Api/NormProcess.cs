@@ -13,6 +13,6 @@ namespace DoE.Lsm.WF.WI.Api
         /// <param name="processModel"></param>
         /// <param name="NIHandler"></param>
         /// <returns></returns>
-       Task<ProcessRequestModelProxy> ExecuteStep(ProcessRequestModelProxy processModel, INormsStandardManager NIHandler);
+       Task<ProcessRequestModelProxy> Run(ProcessRequestModelProxy processModel, IStandardNormsRepository NIHandler);
     }
 }

@@ -6,17 +6,17 @@ namespace DoE.Lsm.Annotations.Exceptions
     using Logger.Context;
     using System.Text;
 
-    [Serializable] public class FailedTransactionException : Exception
+    [Serializable] public class FailedBatchTransactionException : Exception
     {
 
         private readonly bool _hasToLog;
         private Error _error;
         private ILogger _logger;
 
-        public FailedTransactionException() {}
-        public FailedTransactionException(string exceptionMessage) :base(exceptionMessage) { }
+        public FailedBatchTransactionException() {}
+        public FailedBatchTransactionException(string exceptionMessage) :base(exceptionMessage) { }
 
-        public FailedTransactionException(string UIMessage, string stackTrace, bool hasToLog, ILogger logger)  : base(UIMessage)
+        public FailedBatchTransactionException(string UIMessage, string stackTrace, bool hasToLog, ILogger logger)  : base(UIMessage)
         {
             this._hasToLog = hasToLog;
             this._logger = logger;
@@ -43,7 +43,7 @@ namespace DoE.Lsm.Annotations.Exceptions
 
                 if (_hasToLog == true)
                 {
-                    var thread = _logger.InitiateAlertInstance;
+                    var thread = _logger.ConfigureAlert;
                         thread.Report = record.ToString();
                 }
                 _error = value;  //throw a user friendly error message to the end user.

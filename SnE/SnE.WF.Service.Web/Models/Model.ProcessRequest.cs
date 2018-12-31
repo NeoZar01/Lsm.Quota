@@ -6,7 +6,7 @@ namespace DoE.Lsm.WF.Service.Web.Models
     using WI.Proxies;
     using WI.Proxies.Models;
 
-    using static StringExtension.ValidationFlavor;
+    using static StringExtension.ConditionFlavor;
 
     [DataContract(Namespace = "")]
     public partial class ProcessRequestModel : ProcessRequestModelFactory
@@ -15,19 +15,19 @@ namespace DoE.Lsm.WF.Service.Web.Models
         public override string RequestToken { get; set; }
 
         [DataMember]
-        public override string InterfaceKey { get; set; }
+        public override string InterfaceId { get; set; }
 
         [DataMember]
-        public override string InterfaceEntityType { get; set; }
+        public override string EntityType { get; set; }
 
         [DataMember]
-        public override string ClaimsIdentityId { get; set; }
+        public override string ClaimsId { get; set; }
 
         [DataMember]
-        public override string Norm { get; set; }
+        public override string SurveyId { get; set; }
 
         [DataMember]
-        public override string InterfaceEntityId { get; set; }
+        public override string EntityId { get; set; }
 
         [DataMember]
         public override string param_001 { get; set; }
@@ -59,7 +59,14 @@ namespace DoE.Lsm.WF.Service.Web.Models
         [DataMember]
         public override string param_0010 { get; set; }
 
+        [DataMember]
+        public override string ConsortiumGroupId { get; set; }
+
+        [DataMember]
+        public override string ProcessCD { get; set; }
+
     }
+
 
         public partial class ProcessRequestModel
         {
@@ -76,14 +83,14 @@ namespace DoE.Lsm.WF.Service.Web.Models
             try
             {
                 ProcessRequestModel proxy = new ProcessRequestModel();
-                proxy.RequestToken          = model.RequestToken.IsRequired(null, Null);
-                proxy.ProcessInstanceId     = model.ProcessInstanceId;
-                proxy.InterfaceKey          = model.InterfaceKey.IsRequired(null, Null);
-                proxy.InterfaceEntityType   = model.InterfaceEntityType.IsRequired(null, Null);
-                proxy.InterfaceEntityId     = model.InterfaceEntityId.IsRequired(null, Null);
-                proxy.ClaimsIdentityId      = model.ClaimsIdentityId.IsRequired(null, Null);
-                proxy.Norm                  = model.Norm.IsRequired(null, Null);
-
+                proxy.RequestToken      = model.SecurityToken.IsRequired(null, Null);
+                proxy.ProcessInstanceId = model.ProcessInstanceId;
+                proxy.InterfaceId       = model.InterfaceId.IsRequired(null, Null);
+                proxy.EntityType        = model.EntityType.IsRequired(null, Null);
+                proxy.EntityId          = model.EntityId.IsRequired(null, Null);
+                proxy.ClaimsId          = model.PersonId.IsRequired(null, Null);
+                proxy.SurveyId         = model.SurveyId.IsRequired(null, Null);
+                proxy.ConsortiumGroupId = model.ConsortiumGroupId;
                 return proxy;
             }
             catch

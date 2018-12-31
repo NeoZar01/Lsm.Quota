@@ -52,7 +52,7 @@
     <Compile Include="Core\Extension.DateTime.cs" />
     <Compile Include="Core\Extentions.Array.cs" />
     <Compile Include="Core\Extentions.String.cs" />
-    <Compile Include="Core\ProcessInstanceSecurityToken.cs" />
+    <Compile Include="Core\PISecurityToken.cs" />
     <Compile Include="Core\ServiceComponent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -80,7 +80,7 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
-    <Compile Include="Core\ServiceComponent_Tests.cs" />
+    <Compile Include="Common\ServiceComponent_Tests.cs" />
     <Compile Include="DataRepository\Unit\UT.Locker.cs" />
     <Compile Include="DataRepository\Unit\UT.ProcessManager.cs" />
     <Compile Include="Logger\UT.Logger.cs" />

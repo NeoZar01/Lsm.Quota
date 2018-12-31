@@ -8,6 +8,7 @@ namespace DoE.Lsm.Data.Repositories
     using Logger;
     using Persons;
     using Workflow.Engine;
+    using Repositories;
 
     public class RepositoryStoreManager : IRepositoryStoreManager
    {
@@ -25,16 +26,23 @@ namespace DoE.Lsm.Data.Repositories
                         _applicationSnEDbContext = new PortalSnE();
 
                         IdentityManager = new IdentityAuthRepository(_authenticationDbContext, logger);
-                        Processes = new ProcessManagerRepository(_applicationSnEDbContext, logger);
+                        Processes       = new ProcessManagerRepository(_applicationSnEDbContext, logger);
+                        ExtractScheduler = new DataExtractRepository(_applicationSnEDbContext , logger);
         }
 
         public ProcessManagerRepository Processes
         { get; set; }
 
+
         public IdentityAuthRepository IdentityManager
         { get; set; }
 
+
         public UIManagerRepository UI
+        { set; get; }
+
+
+        public DataExtractRepository ExtractScheduler
         { set; get; }
 
         #region GC

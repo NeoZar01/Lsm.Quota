@@ -18,7 +18,7 @@ namespace DoE.Lsm.Data.Repositories.EF
         public System.Guid ProcessInstanceId { get; set; }
         public string ProcessToken { get; set; }
         public string ClaimsIdentity { get; set; }
-        public string FlowId { get; set; }
+        public string ProcessId { get; set; }
         public string SurveyKey { get; set; }
         public string InterfaceKey { get; set; }
         public System.DateTime CommencementDate { get; set; }

@@ -25,11 +25,6 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Logger\obj\Debug\DoE.Lsm.Logge
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Logger\obj\Debug\SnE.Logger.csproj.GenerateResource.Cache
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Logger\obj\Debug\DoE.Lsm.Logger.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Logger\obj\Debug\DoE.Lsm.Logger.pdb
-C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Logger\obj\Debug\SnE.Logger.csprojResolveAssemblyReference.cache
-C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Logger\obj\Debug\DoE.Lsm.Logger.DefaultFolder.resources
-C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Logger\obj\Debug\SnE.Logger.csproj.GenerateResource.Cache
-C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Logger\obj\Debug\DoE.Lsm.Logger.dll
-C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Logger\obj\Debug\DoE.Lsm.Logger.pdb
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Logger\bin\Debug\DoE.Lsm.Logger.dll.config
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Logger\bin\Debug\DoE.Lsm.Logger.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Logger\bin\Debug\DoE.Lsm.Logger.pdb
@@ -50,3 +45,8 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Logger\bin\Debug\Microsoft.Owin.
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Logger\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Logger\bin\Debug\Microsoft.Owin.Security.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Logger\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Logger\obj\Debug\SnE.Logger.csprojResolveAssemblyReference.cache
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Logger\obj\Debug\DoE.Lsm.Logger.DefaultFolder.resources
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Logger\obj\Debug\SnE.Logger.csproj.GenerateResource.Cache
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Logger\obj\Debug\DoE.Lsm.Logger.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Logger\obj\Debug\DoE.Lsm.Logger.pdb

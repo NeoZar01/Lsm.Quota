@@ -3,11 +3,10 @@
 namespace DoE.Lsm.Data.Repositories
 {
     using UI;
-    using Lock;
     using Persons;
+    using Repositories;
     using Workflow.Engine;
-
-
+ 
     public interface IRepositoryStoreManager : IDisposable
     {
 
@@ -29,6 +28,13 @@ namespace DoE.Lsm.Data.Repositories
         /// 
         /// </summary>
         UIManagerRepository UI
+        { get; set; }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        DataExtractRepository ExtractScheduler
         { get; set; }
     }
 }

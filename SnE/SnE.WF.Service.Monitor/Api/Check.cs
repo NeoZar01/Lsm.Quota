@@ -39,7 +39,7 @@ namespace DoE.Lsm.WF.Component.Monitor.Annotations
         public override void OnEntry(MethodExecutionArgs args)
         {
             // EntityType = _estimatedMinutes
-            args.MethodExecutionTag = new TokenProvisionerModelProxy {   ProcessInstanceToken =  Guid.NewGuid().ToString()};
+            args.MethodExecutionTag = new TokenProvisionerModelProxy {   SecurityToken =  Guid.NewGuid().ToString()};
             base.OnEntry(args);
         }
 

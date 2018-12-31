@@ -117,17 +117,20 @@
     <Compile Include="EF\Contact.cs">
       <DependentUpon>Auth.tt</DependentUpon>
     </Compile>
-    <Compile Include="EF\C_Error.cs">
-      <DependentUpon>PortalSnE.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EF\C_WILock.cs">
+    <Compile Include="EF\C_Errors.cs">
       <DependentUpon>PortalSnE.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\C__MigrationHistory.cs">
       <DependentUpon>Auth.tt</DependentUpon>
     </Compile>
+    <Compile Include="EF\DataExtract.cs">
+      <DependentUpon>PortalSnE.tt</DependentUpon>
+    </Compile>
     <Compile Include="EF\Directorate.cs">
       <DependentUpon>Auth.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\ExtractSchedulerQueue.cs">
+      <DependentUpon>PortalSnE.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\Group.cs">
       <DependentUpon>Auth.tt</DependentUpon>
@@ -171,6 +174,9 @@
     <Compile Include="EF\spMailbox_Result.cs">
       <DependentUpon>Auth.tt</DependentUpon>
     </Compile>
+    <Compile Include="EF\Survey.cs">
+      <DependentUpon>PortalSnE.tt</DependentUpon>
+    </Compile>
     <Compile Include="EF\sysdiagram.cs">
       <DependentUpon>Auth.tt</DependentUpon>
     </Compile>
@@ -195,7 +201,10 @@
     <Compile Include="EF\vwPositionDetail.cs">
       <DependentUpon>Auth.tt</DependentUpon>
     </Compile>
-    <Compile Include="EF\WIOutcome_Lookup.cs">
+    <Compile Include="EF\WILock.cs">
+      <DependentUpon>PortalSnE.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\WIOutcome.cs">
       <DependentUpon>PortalSnE.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\WIProcess.cs">
@@ -210,17 +219,20 @@
     <Compile Include="EF\WIProcessStepInstance.cs">
       <DependentUpon>PortalSnE.tt</DependentUpon>
     </Compile>
-    <Compile Include="Production\LockerRepository.cs" />
+    <Compile Include="EF\WIProcessStepInstance_Snapshots.cs">
+      <DependentUpon>PortalSnE.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\LockerRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Api\IRepository.cs" />
     <Compile Include="Api\RepositoryFactory.cs" />
     <Compile Include="Api\Repository.IUI.cs" />
-    <Compile Include="Production\UIManagerRepository.cs" />
+    <Compile Include="Repositories\UIManagerRepository.cs" />
     <Compile Include="Api\Repository.IProcessManager.cs" />
-    <Compile Include="Production\ProcessManagerRepository.cs" />
-    <Compile Include="Api\Repository.IProfile.cs" />
+    <Compile Include="Repositories\ProcessManagerRepository.cs" />
+    <Compile Include="Api\Repository.IDataExtract.cs" />
     <Compile Include="Api\Repository.IIdentityAuth.cs" />
-    <Compile Include="Production\IdentityAuthRepository.cs" />
+    <Compile Include="Repositories\IdentityAuthRepository.cs" />
     <Compile Include="Api\IRepositoryStoreManager.cs" />
     <Compile Include="Api\RepositoryStoreManager.cs" />
   </ItemGroup>
@@ -265,6 +277,7 @@
       <DependentUpon>PortalSnE.edmx</DependentUpon>
       <LastGenOutput>PortalSnE.cs</LastGenOutput>
     </Content>
+    <Compile Include="Repositories\DataExtractRepository.cs" />
     <Content Include="_favicon.ico" />
   </ItemGroup>
   <ItemGroup>

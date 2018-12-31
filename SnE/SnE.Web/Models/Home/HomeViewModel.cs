@@ -8,7 +8,7 @@ namespace DoE.Lsm.Web.Models
 
     using Annotations;
     using Data.Repositories;
-    using static DoE.Web.Mvc.Api.EntityType;
+    using static DoE.Web.Mvc.Api.RoleType;
     /// <summary>
     ///     
     /// </summary>

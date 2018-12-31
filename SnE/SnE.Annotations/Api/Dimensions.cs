@@ -21,6 +21,6 @@ namespace DoE.Lsm.Annotations
     [AttributeUsage(AttributeTargets.All, AllowMultiple = true)]
     public class Dimensions : Attribute
     {
-        public Dimensions(Flavours dimensionOptions) { }        
+        public Dimensions(Flavours dimensionOptions) {}        
     }
 }

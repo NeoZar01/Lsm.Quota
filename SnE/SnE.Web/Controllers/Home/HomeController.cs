@@ -22,8 +22,8 @@ namespace DoE.Lsm.Web.Controllers
 
         public HomeController(ILogger logger, IRepositoryStoreManager dataStore) : base(logger, dataStore)
         {
-            _dashboardModels.Add(EntityType.CircuitManager, new CircuitDashboardViewModel());
-            _dashboardModels.Add(EntityType.Administrator,  new AdministratorDashboardViewModel());
+            _dashboardModels.Add(RoleType.CircuitManager, new CircuitDashboardViewModel());
+            _dashboardModels.Add(RoleType.Administrator,  new AdministratorDashboardViewModel());
         }
 
         /// <summary>
@@ -48,7 +48,7 @@ namespace DoE.Lsm.Web.Controllers
         [ChildActionOnly]
         public ActionResult BuildDashboard(DashboardFactoryViewModel model)
         {
-            return PartialView(model.Page.IsNullReplaceWith("_mainpagedashboard_error"), model);
+            return PartialView(model.Page.IsNull("_mainpagedashboard_error"), model);
         }
     }
 }

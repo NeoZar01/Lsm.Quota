@@ -5,7 +5,7 @@ namespace DoE.Lsm.WF.Web.Models
 {
     using Service.WI.Proxies;
     using Service.WI.Proxies.Models;
-    using static StringExtension.ValidationFlavor;
+    using static StringExtension.ConditionFlavor;
 
     [DataContract(Namespace = "")]
     public partial class TokenProvisionerModel : TokenProvisionerModelFactory
@@ -54,12 +54,12 @@ namespace DoE.Lsm.WF.Web.Models
             try
             {
                 TokenProvisionerModel proxy = new TokenProvisionerModel();
-                proxy.ClaimsIdentity        = model.ClaimsIdentity.IsRequired(null, Null);
-                proxy.InterfaceKey          = model.InterfaceKey.IsRequired(null, Null);
-                proxy.ProcessEntityType     = model.ProcessEntityType.IsRequired(null, Null);
-                proxy.ProcessInstanceId     = model.ProcessInstanceId;
-                proxy.ProcessInstanceToken  = model.ProcessInstanceToken;
-                proxy.ProcessSuveryKey      = model.ProcessSuveryKey.IsRequired(null, Null);
+                proxy.ClaimsIdentity        = model.PersonId.IsRequired(null, Null);
+                proxy.InterfaceKey          = model.interfaceCode.IsRequired(null, Null);
+                proxy.ProcessEntityType     = model.EntityType.IsRequired(null, Null);
+                proxy.ProcessInstanceId     = model.InstanceId;
+                proxy.ProcessInstanceToken  = model.SecurityToken;
+                proxy.ProcessSuveryKey      = model.SurveyId.IsRequired(null, Null);
                 proxy.StatusCode            = model.StatusCode;             
                 return proxy;
             }

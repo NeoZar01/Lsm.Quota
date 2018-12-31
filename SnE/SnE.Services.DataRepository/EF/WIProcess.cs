@@ -16,11 +16,10 @@ namespace DoE.Lsm.Data.Repositories.EF
     {
         public int id { get; set; }
         public System.Guid InstanceId { get; set; }
+        public string Key { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public string EntityType { get; set; }
-        public string EntityTypeCompletionDaysVariable { get; set; }
-        public string ExpectedCompletionDays { get; set; }
         public string ParentProcessId { get; set; }
     }
 }

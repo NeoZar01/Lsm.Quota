@@ -54,10 +54,6 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\bin\Debug\DoE.SnE.WF.Service.Security.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\bin\Debug\DoE.SnE.WF.Service.Security.pdb
-C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.WorkItems\bin\Debug\DoE.Lsm.WF.Engine.Service.WorkItem.pssym
-C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.WorkItems\bin\Debug\DoE.Lsm.WF.Engine.Service.WorkItem.dll.config
-C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.WorkItems\bin\Debug\DoE.Lsm.WF.Engine.Service.WorkItem.dll
-C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.WorkItems\bin\Debug\DoE.Lsm.WF.Engine.Service.WorkItem.pdb
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.WorkItems\bin\Debug\DoE.Lsm.Annotations.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.WorkItems\bin\Debug\DoE.Lsm.Data.Repositories.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.WorkItems\bin\Debug\DoE.Lsm.Logger.dll
@@ -107,6 +103,10 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.WorkItems\bin\Debug\M
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.WorkItems\obj\Debug\SnE.WF.Service.WorkItems.csprojResolveAssemblyReference.cache
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.WorkItems\obj\Debug\PostSharp\touch
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.WorkItems\obj\Debug\PostSharp\dependencies.txt
-C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.WorkItems\obj\Debug\DoE.Lsm.WF.Engine.Service.WorkItem.dll
-C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.WorkItems\obj\Debug\DoE.Lsm.WF.Engine.Service.WorkItem.pdb
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.WorkItems\obj\Debug\PostSharp\postsharp.app.config
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.WorkItems\bin\Debug\DoE.Lsm.WF.WI.pssym
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.WorkItems\bin\Debug\DoE.Lsm.WF.WI.dll.config
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.WorkItems\bin\Debug\DoE.Lsm.WF.WI.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.WorkItems\bin\Debug\DoE.Lsm.WF.WI.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.WorkItems\obj\Debug\DoE.Lsm.WF.WI.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.WorkItems\obj\Debug\DoE.Lsm.WF.WI.pdb

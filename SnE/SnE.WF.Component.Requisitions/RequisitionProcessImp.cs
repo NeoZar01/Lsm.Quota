@@ -7,7 +7,6 @@ using System.Collections.Generic;
 namespace DoE.Lsm.WF.Component.Requisitions
 {
     using Api;
-    using Steps;
     using Logger;
     using Annotations;
 
@@ -20,24 +19,23 @@ namespace DoE.Lsm.WF.Component.Requisitions
 
     using Service.WI.Proxies;
     using static WF.Component.Requisitions.Role;
-    using ProcessSteps;
+    using Steps;
     using SnE.WF.Service.Validation.Api;
 
     [Interface(Key = "Lsm.Requisitions", Name = "Requisitions - Learning Teaching Support Material")]
     public class RequisitionProcessImp : StepInstanceFactory , NormProcess
     {
 
-        protected readonly IActionWorker      _actionFactory;
-        protected readonly Dictionary<string, RequisitionStep> processSteps = new Dictionary<string, RequisitionStep>();
+        protected readonly ITaskActionWorker      _actionFactory;
+        protected readonly Dictionary<string, RequisitionStepAction> processSteps = new Dictionary<string, RequisitionStepAction>();
         protected readonly ValidationCallbacksContainer validationCallbackContainer;
 
         #region Process Steps
-        protected readonly MigrateSchool      migrateSchool;
         protected readonly PreliminaryVetting preliminaryVetting;
         protected readonly RimitInstallation  rimitInstallation;
         #endregion
 
-        public override ProcessStepsFactory BeginAction(INormsStandardManager normsHandler)
+        public override ProcessStepsFactory BeginAction(IStandardNormsRepository normsHandler)
         {
             processSteps[stepName].ProcessRequestedTask(validationCallbackContainer, payload, normsHandler, out outcome);
             return this;
@@ -45,13 +43,13 @@ namespace DoE.Lsm.WF.Component.Requisitions
 
         [Trace(request: "async", estimate: 2)]
         [WatchException(For: typeof(InvalidDatabaseOperationException), code: 1055, exception: "There was an error processing your workflow step instance.Please contact technical support for this issue.")]
-        public async Task<ProcessRequestModelProxy> ExecuteStep(ProcessRequestModelProxy ticket, INormsStandardManager niManager)
+        public async Task<ProcessRequestModelProxy> Run(ProcessRequestModelProxy ticket, IStandardNormsRepository standardNormsRepository)
         {
             try
             {
                 var stepProcess = await Config(ticket, "enableEscalation:0;escalationPeriod:0;").Start
                                                                                                 .PreAction()
-                                                                                                .BeginAction(niManager)
+                                                                                                .BeginAction(standardNormsRepository)
                                                                                                 .PostAction()
                                                                                                 .Stop;
                 return stepProcess;
@@ -62,12 +60,11 @@ namespace DoE.Lsm.WF.Component.Requisitions
             }
         }
 
-        public RequisitionProcessImp(ILogger logger, IRepositoryStoreManager repositoryManager, IActionWorker actionFactory) : base(logger, repositoryManager)
+        public RequisitionProcessImp(ILogger logger, IRepositoryStoreManager repositoryManager, ITaskActionWorker actionFactory) : base(logger, repositoryManager)
         {
             this._actionFactory         = actionFactory;
             validationCallbackContainer = new ValidationCallbacksContainer();
 
-            processSteps.Add("MigrateSchool",       migrateSchool        = new MigrateSchool(logger, repositoryManager));
             processSteps.Add("PreliminaryVetting",  preliminaryVetting   = new PreliminaryVetting(logger, repositoryManager));
             processSteps.Add("RimitInstallation",   rimitInstallation    = new RimitInstallation(logger, repositoryManager));
 

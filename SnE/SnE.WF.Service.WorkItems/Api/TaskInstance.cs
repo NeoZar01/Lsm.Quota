@@ -1,10 +1,8 @@
-﻿using System.Threading.Tasks;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 using System;
 
 namespace DoE.Lsm.WF.WI.Tools
 {
-
     /// <summary>
     ///    Every tasks should inherit this class.This will enabled a dynamic carryover of your EF DbContexts.And in turn enables dirty read transactions.
     /// </summary>

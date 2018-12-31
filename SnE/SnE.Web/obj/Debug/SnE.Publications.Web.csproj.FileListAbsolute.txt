@@ -1,9 +1,3 @@
-C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Web\obj\Debug\SnE.Publications.Web.csprojResolveAssemblyReference.cache
-C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Web\obj\Debug\DoE.Web.Mvc.Api.EntityType.resources
-C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Web\obj\Debug\DoE.Web.Mvc.Api.Resources.resources
-C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Web\obj\Debug\SnE.Publications.Web.csproj.GenerateResource.Cache
-C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Web\obj\Debug\DoE.Lsm.Web.Mvc.dll
-C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Web\obj\Debug\DoE.Lsm.Web.Mvc.pdb
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Web\bin\DoE.Lsm.Web.Mvc.dll.config
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Web\bin\DoE.Lsm.Web.Mvc.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Web\bin\DoE.Lsm.Web.Mvc.pdb
@@ -96,3 +90,10 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Web\bin\Microsoft.Owin.Security.
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Web\bin\log4net.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Web\bin\LimpEmisPortal.Notify.pdb
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Web\bin\DoE.Lsm.WF.Engine.Context.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Web\obj\Debug\SnE.Publications.Web.csprojResolveAssemblyReference.cache
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Web\obj\Debug\DoE.Web.Mvc.Api.EntityType.resources
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Web\obj\Debug\DoE.Web.Mvc.Api.Resources.resources
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Web\obj\Debug\SnE.Publications.Web.csproj.GenerateResource.Cache
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Web\obj\Debug\DoE.Lsm.Web.Mvc.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Web\obj\Debug\DoE.Lsm.Web.Mvc.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Web\obj\Debug\DoE.Web.Mvc.Api.RoleType.resources

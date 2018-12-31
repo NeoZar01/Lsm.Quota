@@ -19,9 +19,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BB1F53C4-5F1
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{87E89F4A-C1CD-4734-928E-DB4263D7B3AD}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tz.old", "tz.old", "{65C333A3-8A1A-4018-AE6D-471181C3B11D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "code.old", "code.old", "{65C333A3-8A1A-4018-AE6D-471181C3B11D}"
 	ProjectSection(SolutionItems) = preProject
 		Lsm.Web\Models\Requisitions\CircuitRequisitionViewModel.cs = Lsm.Web\Models\Requisitions\CircuitRequisitionViewModel.cs
+		ReadMe.txt = ReadMe.txt
 		Lsm.Web\Models\Requisitions\RequisitionsViewModel.cs = Lsm.Web\Models\Requisitions\RequisitionsViewModel.cs
 	EndProjectSection
 EndProject
@@ -66,9 +67,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.Service.DocumentMirror"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.Service.DataRepository", "SnE.Services.DataRepository\SnE.Service.DataRepository.csproj", "{7E8C0842-0FE6-47DE-8F70-A9533A7C5C09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.Publications.Web", "SnE.Web\SnE.Publications.Web.csproj", "{6DA356C9-5D1F-4018-9631-43AA0CDB6FCB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.Portal.Web", "SnE.Web\SnE.Portal.Web.csproj", "{6DA356C9-5D1F-4018-9631-43AA0CDB6FCB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.WF.Component.Billing", "SnE.WF.Component.Billing\SnE.WF.Component.Billing.csproj", "{BA7C79C7-4414-4AC2-A434-5713684AF921}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.WF.Component.Requisitions.Preliminary", "SnE.WF.Component.Billing\SnE.WF.Component.Requisitions.Preliminary.csproj", "{BA7C79C7-4414-4AC2-A434-5713684AF921}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.WF.Component.Requisitions", "SnE.WF.Component.Requisitions\SnE.WF.Component.Requisitions.csproj", "{A331DB1E-E1EE-41A5-8D9C-079F98C50FCC}"
 EndProject
@@ -82,9 +83,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.WF.Service.Reports", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.WF.Service.Validation", "SnE.WF.Service.Validation\SnE.WF.Service.Validation.csproj", "{9A53438B-EFB5-4617-9EAA-3A1A0805E5AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.WF.Service.Publications.Web", "SnE.WF.Service.Web\SnE.WF.Service.Publications.Web.csproj", "{EC31E6F3-E9DD-4F6E-AB12-7BC94A3D0682}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.WF.Service.Web", "SnE.WF.Service.Web\SnE.WF.Service.Web.csproj", "{EC31E6F3-E9DD-4F6E-AB12-7BC94A3D0682}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnE.WF.Service.WorkItems", "SnE.WF.Service.WorkItems\SnE.WF.Service.WorkItems.csproj", "{99FC2389-0425-4BA2-BBA4-7CBFA3059B51}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{C1EFE264-3330-4185-9326-56E2945DE984}"
+	ProjectSection(SolutionItems) = preProject
+		SnE.WF.Component.Requisitions\Steps\Utils\Accept.cs = SnE.WF.Component.Requisitions\Steps\Utils\Accept.cs
+		SnE.WF.Component.Requisitions\Api\Custordian.cs = SnE.WF.Component.Requisitions\Api\Custordian.cs
+		SnE.WF.Component.Requisitions\Steps\Utils\DiscardContext.cs = SnE.WF.Component.Requisitions\Steps\Utils\DiscardContext.cs
+		SnE.WF.Component.Requisitions\Steps\Utils\RejectJob.cs = SnE.WF.Component.Requisitions\Steps\Utils\RejectJob.cs
+		SnE.WF.Component.Requisitions\Steps\Utils\Submit.cs = SnE.WF.Component.Requisitions\Steps\Utils\Submit.cs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -193,5 +203,6 @@ Global
 		{9A53438B-EFB5-4617-9EAA-3A1A0805E5AC} = {BB1F53C4-5F1E-4886-A3DF-902F933FC50B}
 		{EC31E6F3-E9DD-4F6E-AB12-7BC94A3D0682} = {BB1F53C4-5F1E-4886-A3DF-902F933FC50B}
 		{99FC2389-0425-4BA2-BBA4-7CBFA3059B51} = {BB1F53C4-5F1E-4886-A3DF-902F933FC50B}
+		{C1EFE264-3330-4185-9326-56E2945DE984} = {65C333A3-8A1A-4018-AE6D-471181C3B11D}
 	EndGlobalSection
 EndGlobal

@@ -37,9 +37,6 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Service.Client\bin\Debug\Newto
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Service.Client\bin\Debug\Microsoft.Owin.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Service.Client\obj\Debug\Education.Services.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Service.Client\obj\Debug\Education.Services.pdb
-C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Service.Container\obj\Debug\SnE.Service.Container.csprojResolveAssemblyReference.cache
-C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Service.Container\obj\Debug\Education.Services.dll
-C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Service.Container\obj\Debug\Education.Services.pdb
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Service.Container\bin\Debug\Education.Services.dll.config
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Service.Container\bin\Debug\Education.Services.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Service.Container\bin\Debug\Education.Services.pdb
@@ -76,3 +73,6 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Service.Container\bin\Debug\DoE.
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Service.Container\bin\Debug\Microsoft.Owin.Security.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Service.Container\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Service.Container\bin\Debug\Microsoft.Owin.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Service.Container\obj\Debug\SnE.Service.Container.csprojResolveAssemblyReference.cache
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Service.Container\obj\Debug\Education.Services.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Service.Container\obj\Debug\Education.Services.pdb

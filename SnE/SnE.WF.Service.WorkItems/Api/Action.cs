@@ -5,7 +5,7 @@ namespace DoE.Lsm.WF.WI.Api
     using WI.Api;
     using Data.Repositories;
 
-    public class Action  : IActionWorker , IDisposable
+    public class Action  : ITaskActionWorker , IDisposable
     {
 
         protected readonly IRepositoryStoreManager _repositoryManager;
@@ -16,7 +16,7 @@ namespace DoE.Lsm.WF.WI.Api
         }
 
 
-        public IActionWorker GetWorker(string StepName, string precedingStepId, string precedingStepInstanceId, string currentStepInstanceId)
+        public ITaskActionWorker GetWorker(string StepName, string precedingStepId, string precedingStepInstanceId, string currentStepInstanceId)
         {
             return this;
         }

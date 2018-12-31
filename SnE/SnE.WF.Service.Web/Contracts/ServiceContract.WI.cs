@@ -23,7 +23,7 @@ namespace DoE.Lsm.WF.Service.Web.Contracts
                    BodyStyle = WebMessageBodyStyle.Bare,
                    RequestFormat = WebMessageFormat.Json,
                    ResponseFormat = WebMessageFormat.Json,
-                   UriTemplate = "/Services/rest/Tokens/Register/{payload}")]
+                   UriTemplate = "/Services/Rest/Tokens/Register/{payload}")]
         TokenProvisionerModel Register(TokenProvisionerModel payload);
 
 
@@ -36,7 +36,7 @@ namespace DoE.Lsm.WF.Service.Web.Contracts
                    BodyStyle = WebMessageBodyStyle.Bare,
                    RequestFormat = WebMessageFormat.Json,
                    ResponseFormat = WebMessageFormat.Json,
-                   UriTemplate = "/Services/rest/Processes/Request/{payload}")]
+                   UriTemplate = "/Services/Rest/Processes/Request/{payload}")]
         Task<ProcessRequestModel> RequestAsync(ProcessRequestModel payload);
 
     }

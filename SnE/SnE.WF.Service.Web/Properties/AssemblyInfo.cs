@@ -38,4 +38,4 @@ using System.Runtime.InteropServices;
 
 //Assembles service components
 //This names must be unique for every service
-[assembly: ServiceComponent( "0", "Requisitions" , "1" , "Reports" , "2" , "Validations")]
+[assembly: ServiceComponent( "0", "Requisitions" , "1" , "Reports" , "2" , "Validations", "3","Requisitions.Pre")]

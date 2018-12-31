@@ -11,7 +11,8 @@ namespace DoE.Lsm
     {
 
 
-        public enum ValidationFlavor {
+        public enum ConditionFlavor
+        {
             Null,
             Equal
         }
@@ -116,7 +117,7 @@ namespace DoE.Lsm
         /// <param name="source"></param>
         /// <param name="replacement"></param>
         /// <returns></returns>
-        public static string IsNullReplaceWith(this string source, string replacement) {
+        public static string IsNull(this string source, string replacement) {
 
             if (source == null) return replacement;
 
@@ -145,14 +146,14 @@ namespace DoE.Lsm
         }
 
 
-        public static string IsRequired(this string source , string text,  ValidationFlavor flavor)
+        public static string IsRequired(this string source , string text,  ConditionFlavor flavor)
         {
             switch (flavor)
             {
-                case ValidationFlavor.Null:
+                case ConditionFlavor.Null:
                 if (string.IsNullOrEmpty(source) || string.IsNullOrEmpty(source))  throw new InvalidCastException("Failed to Merge Property [" + source + "] ");
                 break;
-                case ValidationFlavor.Equal:
+                case ConditionFlavor.Equal:
                 if (!source.Equals(text)) throw new InvalidCastException("Failed to Merge Property [" + source + "] ");
                 break;
                 default: throw new InvalidCastException("Failed to Merge Property [" + source + "] ");

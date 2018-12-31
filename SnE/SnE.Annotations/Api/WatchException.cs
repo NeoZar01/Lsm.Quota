@@ -41,7 +41,7 @@ namespace DoE.Lsm.Annotations.Exceptions
 
                 args.FlowBehavior = FlowBehavior.ThrowException;
 
-            }else if (args.Exception.GetType() == typeof(FailedTransactionException))
+            }else if (args.Exception.GetType() == typeof(FailedBatchTransactionException))
             {
             
                 args.Exception = new UIException(_enduserMessage);

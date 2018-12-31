@@ -29,16 +29,16 @@ namespace DoE.Lsm.WF.WI.Tools
 
         public override ProcessStepsFactory Config(ProcessRequestModelProxy model, string command)
         {
-             escalationRule = new StepRuleInstallationWorker(model.InterfaceEntityType, _repositoryManager).EscationRules(Command.ResolveCommandExpressions(@"([1-9][0-9]{0,2});", command, "enableEscalation", "escalationPeriod"));
+             escalationRule = new StepRuleInstallationWorker(model.EntityType, _repositoryManager).EscationRules(Command.ResolveCommandExpressions(@"([1-9][0-9]{0,2});", command, "enableEscalation", "escalationPeriod"));
 
             _repositoryManager.Processes.SetupProcessStep(model.ProcessInstanceId, out preceedingStepId, out preceedingStepInstanceId);
 
             if(preceedingStepId.Equals("") || preceedingStepInstanceId.Equals(""))
             {
-                throw new FailedTransactionException("Failed to initialise global variables for the preceeding step");
+                throw new FailedBatchTransactionException("Failed to initialise global variables for the preceeding step");
             }
 
-            _repositoryManager.Processes.CreateInstanceSnapShot<ProcessRequestModelProxy>(model, currentStepInstanceId, preceedingStepId, preceedingStepInstanceId, model.ClaimsIdentityId, model.InterfaceEntityId, model.InterfaceEntityType,
+            _repositoryManager.Processes.CreateInstanceSnapShot<ProcessRequestModelProxy>(model, currentStepInstanceId, preceedingStepId, preceedingStepInstanceId, model.PersonId, model.EntityId, model.EntityType,
                         model.param_001, model.param_002, model.param_003, model.param_004, model.param_005, model.param_006, model.param_007, model.param_008, model.param_009, model.param_0010);
 
             payload = model;
@@ -63,7 +63,7 @@ namespace DoE.Lsm.WF.WI.Tools
             }
         }
 
-        public override ProcessStepsFactory BeginAction(INormsStandardManager niHandler)
+        public override ProcessStepsFactory BeginAction(IStandardNormsRepository niHandler)
         {
             return action.Invoke;
         }

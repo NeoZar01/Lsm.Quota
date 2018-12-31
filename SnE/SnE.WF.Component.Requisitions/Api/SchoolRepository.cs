@@ -8,7 +8,7 @@ namespace DoE.Lsm.WF.Component.Requisitions.Api
 {
     using WI.Api;
 
-    public class SchoolRepository : IActionWorker
+    public class SchoolRepository : ITaskActionWorker
     {
 
         public ProcessStepsFactory Invoke

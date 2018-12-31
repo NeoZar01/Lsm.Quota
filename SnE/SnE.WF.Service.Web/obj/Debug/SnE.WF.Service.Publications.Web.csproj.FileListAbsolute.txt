@@ -1,6 +1,3 @@
-C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\obj\Debug\SnE.WF.Service.Publications.Web.csprojResolveAssemblyReference.cache
-C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\obj\Debug\Lsm.WF.Engine.Svc.dll
-C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\obj\Debug\Lsm.WF.Engine.Svc.pdb
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\Lsm.WF.Engine.Svc.dll.config
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\Lsm.WF.Engine.Svc.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\Lsm.WF.Engine.Svc.pdb
@@ -14,6 +11,7 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\DoE.Lsm.WF.En
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\DoE.Lsm.WF.Engine.Service.WorkItem.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\DoE.SnE.WF.Service.Security.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\Lsm.Generics.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\PostSharp.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\Unity.Abstractions.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\Unity.Container.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\log4net.dll
@@ -36,6 +34,7 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\DoE.Lsm.WF.En
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\Lsm.Generics.pdb
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\Castle.Facilities.WcfIntegration.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\Castle.Windsor.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\PostSharp.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\log4net.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\Microsoft.AspNet.SignalR.Core.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\LimpEmisPortal.Notify.pdb
@@ -46,3 +45,6 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\DoE.Lsm.WF.En
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\Microsoft.Owin.Security.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\Newtonsoft.Json.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\bin\Microsoft.Owin.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\obj\Debug\SnE.WF.Service.Publications.Web.csprojResolveAssemblyReference.cache
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\obj\Debug\Lsm.WF.Engine.Svc.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.WF.Service.Web\obj\Debug\Lsm.WF.Engine.Svc.pdb

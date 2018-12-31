@@ -19,7 +19,7 @@ namespace DoE.Lsm.Logger
         private static WebAppenderHub  webHub;
         private static Level level;
 
-        public ILogger InitiateWarningInstace
+        public ILogger ConfigureWarning
         {
             get
             {
@@ -44,7 +44,7 @@ namespace DoE.Lsm.Logger
             }
         }
 
-        public ILogger InitiateAlertInstance
+        public ILogger ConfigureAlert
         {
             get
             {

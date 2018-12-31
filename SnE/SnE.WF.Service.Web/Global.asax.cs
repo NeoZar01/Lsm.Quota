@@ -29,8 +29,8 @@ namespace DoE.Lsm.WF.Services
                         Castle.MicroKernel.Registration.Component.For<ILogger>().ImplementedBy<BaseLogger>(),
                         Castle.MicroKernel.Registration.Component.For<IRepositoryStoreManager>().ImplementedBy<RepositoryStoreManager>(),
                         Castle.MicroKernel.Registration.Component.For<IValidationCallbacksContainer>().ImplementedBy<ValidationCallbacksContainer>(),
-                        Castle.MicroKernel.Registration.Component.For<INormsStandardManager>().ImplementedBy<NormsStandardManager>(),
-                        Castle.MicroKernel.Registration.Component.For<IProcessQueueWorker>().ImplementedBy<ProcessRequestQueueManager>());
+                        Castle.MicroKernel.Registration.Component.For<IStandardNormsRepository>().ImplementedBy<StandardNormsRepository>(),
+                        Castle.MicroKernel.Registration.Component.For<IRequestPoolWorker>().ImplementedBy<RequestPoolWorker>());
         }
     }
 }

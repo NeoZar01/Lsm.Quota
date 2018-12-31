@@ -8,8 +8,8 @@
     <ProjectGuid>{99FC2389-0425-4BA2-BBA4-7CBFA3059B51}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DoE.Lsm.WF.Engine.Service.WorkItem</RootNamespace>
-    <AssemblyName>DoE.Lsm.WF.Engine.Service.WorkItem</AssemblyName>
+    <RootNamespace>DoE.Lsm.WF.WI</RootNamespace>
+    <AssemblyName>DoE.Lsm.WF.WI</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -93,8 +93,8 @@
   <ItemGroup>
     <Compile Include="Api\Action.cs" />
     <Compile Include="Api\IActionTaskFactory.cs" />
-    <Compile Include="Api\IProcessRequestQueueManager.cs" />
-    <Compile Include="Api\INormsStandardManager.cs" />
+    <Compile Include="Api\IRequestPoolWorker.cs" />
+    <Compile Include="Api\IStandardNormsRepository.cs" />
     <Compile Include="Api\NormProcess.cs" />
     <Compile Include="Api\StepInstanceFactory.cs" />
     <Compile Include="Api\ProcessManager.cs" />
@@ -103,12 +103,13 @@
     <Compile Include="Api\StepInstance.cs" />
     <Compile Include="Api\StepInstanceRule.cs" />
     <Compile Include="Api\TaskInstance.cs" />
-    <Compile Include="App_Start\NormsStandardManager.cs" />
-    <Compile Include="Context\Norms\Role.Administrator.cs" />
-    <Compile Include="Context\Norms\Role.CircuitManager.cs" />
-    <Compile Include="Context\Norms\Role.SubjectAnalyst.cs" />
-    <Compile Include="Context\Norms\Role.cs" />
-    <Compile Include="Context\Norms\Role.School.cs" />
+    <Compile Include="App_Start\StandardNormsRepository.cs" />
+    <Compile Include="Common\Norms\Role.EducationSpecialist.cs" />
+    <Compile Include="Common\Norms\Role.Administrator.cs" />
+    <Compile Include="Common\Norms\Role.CircuitManager.cs" />
+    <Compile Include="Common\Norms\Role.SubjectAnalyst.cs" />
+    <Compile Include="Common\Norms\Role.cs" />
+    <Compile Include="Common\Norms\Role.School.cs" />
     <Compile Include="Proxies\ProcessRequestModelFactory.cs" />
     <Compile Include="Proxies\ProcessRequestModelProxy.cs" />
     <Compile Include="Proxies\TokenProvisionerModelFactory.cs" />

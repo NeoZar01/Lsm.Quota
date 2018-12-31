@@ -37,9 +37,6 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.DataAccessLayer\obj\Debug\Post
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.DataAccessLayer\obj\Debug\DoE.Lsm.Data.Repositories.dll
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.DataAccessLayer\obj\Debug\DoE.Lsm.Data.Repositories.pdb
 C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.DataAccessLayer\obj\Debug\PostSharp\postsharp.app.config
-C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Services.DataRepository\obj\Debug\SnE.Service.DataRepository.csprojResolveAssemblyReference.cache
-C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Services.DataRepository\obj\Debug\DoE.Lsm.Data.Repositories.dll
-C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Services.DataRepository\obj\Debug\DoE.Lsm.Data.Repositories.pdb
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Services.DataRepository\bin\Debug\DoE.Lsm.Data.Repositories.pssym
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Services.DataRepository\bin\Debug\DoE.Lsm.Data.Repositories.dll.config
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Services.DataRepository\bin\Debug\DoE.Lsm.Data.Repositories.dll
@@ -73,6 +70,9 @@ C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Services.DataRepository\bin\Debu
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Services.DataRepository\bin\Debug\Microsoft.Owin.Security.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Services.DataRepository\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Services.DataRepository\bin\Debug\Microsoft.Owin.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Services.DataRepository\obj\Debug\SnE.Service.DataRepository.csprojResolveAssemblyReference.cache
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Services.DataRepository\obj\Debug\PostSharp\touch
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Services.DataRepository\obj\Debug\PostSharp\dependencies.txt
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Services.DataRepository\obj\Debug\DoE.Lsm.Data.Repositories.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Services.DataRepository\obj\Debug\DoE.Lsm.Data.Repositories.pdb
 C:\Users\Falcorp\Source\repos\Lsm.Quota\SnE\SnE.Services.DataRepository\obj\Debug\PostSharp\postsharp.app.config
