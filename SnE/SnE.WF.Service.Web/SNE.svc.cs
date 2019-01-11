@@ -40,7 +40,8 @@ namespace DoE.Lsm.WF.Service.Web
         public async Task<ProcessRequestModel> RequestAsync(ProcessRequestModel payload)
         {
             try
-            {
+            { 
+            //Rename  ProcessRequestStep to ProcessInquest
                 return (ProcessRequestModel) await _normsStandardsHandler.ProcessRequestStep(payload.RequestToken, (ProcessRequestModelProxy)payload, _processQueueWorker);
             } 
             catch (TimeoutException e)
