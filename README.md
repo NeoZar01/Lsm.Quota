@@ -7,3 +7,8 @@
 6. Execute a string as code. 
 7. Add variables to text.
 8. Process Figures.
+
+
+---->
+
+1. Instantiate all the rules without hardcoding the classes.
