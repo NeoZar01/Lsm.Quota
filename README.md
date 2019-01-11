@@ -12,3 +12,5 @@
 ---->
 
 1. Instantiate all the rules without hardcoding the classes.
+
+Check the URL :: https://stackoverflow.com/questions/4800267/how-to-execute-code-that-is-in-a-string
