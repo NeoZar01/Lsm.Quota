@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BA7C79C7-4414-4AC2-A434-5713684AF921}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SnE.WF.Component.Requisitions.Preliminary</RootNamespace>
+    <AssemblyName>SnE.WF.Component.Requisitions.Preliminary</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PostSharp">
+      <HintPath>..\..\..\..\..\.nuget\packages\PostSharp.Redist\6.0.25\lib\net35-client\PostSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Api\SchoolRepository.cs" />
+    <Compile Include="Factories\AcceptFactory.cs" />
+    <Compile Include="Factories\DiscardFactory.cs" />
+    <Compile Include="Factories\RejectFactory.cs" />
+    <Compile Include="Factories\SubmitFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequisitionsPreliminaryProcessImp.cs" />
+    <Compile Include="Steps\InstallSurvey.cs" />
+    <Compile Include="Steps\MigrateSchool.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SnE.Annotations\SnE.Annotations.csproj">
+      <Project>{ff0e45f2-1dc7-483d-89f8-09006c6b35ea}</Project>
+      <Name>SnE.Annotations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SnE.Logger\SnE.Logger.csproj">
+      <Project>{b68fa39f-01a8-4382-b3f6-37307186d92a}</Project>
+      <Name>SnE.Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SnE.Services.DataRepository\SnE.Service.DataRepository.csproj">
+      <Project>{7e8c0842-0fe6-47de-8f70-a9533a7c5c09}</Project>
+      <Name>SnE.Service.DataRepository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SnE.WF.Component.Requisitions\SnE.WF.Component.Requisitions.csproj">
+      <Project>{a331db1e-e1ee-41a5-8d9c-079f98c50fcc}</Project>
+      <Name>SnE.WF.Component.Requisitions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SnE.WF.Service.Monitor\SnE.WF.Service.Monitor.csproj">
+      <Project>{771b5229-3aa8-40e8-b2c0-2a4587c4cdbe}</Project>
+      <Name>SnE.WF.Service.Monitor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SnE.WF.Service.Validation\SnE.WF.Service.Validation.csproj">
+      <Project>{9a53438b-efb5-4617-9eaa-3a1a0805e5ac}</Project>
+      <Name>SnE.WF.Service.Validation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SnE.WF.Service.WorkItems\SnE.WF.Service.WorkItems.csproj">
+      <Project>{99fc2389-0425-4ba2-bba4-7cbfa3059b51}</Project>
+      <Name>SnE.WF.Service.WorkItems</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SnE\SnE.csproj">
+      <Project>{664fa002-aec7-45c2-9033-66b197886719}</Project>
+      <Name>SnE</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

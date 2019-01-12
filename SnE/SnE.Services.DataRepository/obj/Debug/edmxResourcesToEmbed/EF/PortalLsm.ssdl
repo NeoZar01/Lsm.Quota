@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Portal.LsmModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Schools">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="RowGuid" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RowGuid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="EmisCode" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Phase" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Sector" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Type" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Initials" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="PrincipalLastName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PrincipalCellphone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TownshipVillage" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Suburb" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Town" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Telephone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Email" Type="nvarchar(max)" />
+    <Property Name="Quintile" Type="int" />
+    <Property Name="EICircuit" Type="varchar(max)" Nullable="false" />
+    <Property Name="EIDistrict" Type="varchar(max)" Nullable="false" />
+    <Property Name="Manucipality" Type="varchar(max)" />
+    <Property Name="Term" Type="int" Nullable="false" />
+    <Property Name="DataYear" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="datetime" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CircuitCD" Type="int" />
+    <Property Name="PhaseDescription" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Requisition">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="InstanceId" />
+      <PropertyRef Name="ReqNO" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="InstanceId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ReqNO" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="EmisToken" Type="nvarchar" MaxLength="36" Nullable="false" />
+    <Property Name="Calendar" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="GrFrom" Type="tinyint" />
+    <Property Name="GrTo" Type="tinyint" />
+    <Property Name="State" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="TotalPrice" Type="money" StoreGeneratedPattern="Computed" />
+    <Property Name="WINumber" Type="varchar" MaxLength="64" />
+  </EntityType>
+  <EntityContainer Name="PortalLsmModelStoreContainer">
+    <EntitySet Name="Schools" EntityType="Self.Schools" Schema="MasterFile" store:Type="Tables" />
+    <EntitySet Name="Requisition" EntityType="Self.Requisition" Schema="Production" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

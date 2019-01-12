@@ -1,3 +1,20 @@
+[ReportCode]
+1. Declare school to be under admnistration. 
+2. Load different type of payments. (Payment Confirmation) 
+3. Working with Funds...(Fund Administrator, Fund-Group)
+4. Working with assets...attach an (ensurance/warantee) to an asset.Computer/laptop
+5. Add a policy to an asset/catalogue.
+6. Execute a string as code. 
+7. Add variables to text.
+8. Process Figures.
+
+
+---->
+
+1. Instantiate all the rules without hardcoding the classes.
+
+Check the URL :: https://stackoverflow.com/questions/4800267/how-to-execute-code-that-is-in-a-string
+=======
 # SNE.Portal
 This project should allow schools to create requisitions and submit them to their reporting circuit officials.
 
@@ -80,7 +97,4 @@ Send
 Section 5. Report 
 
 Someone is gonna create a Parent Process in standard and norms.
-
-
-
 

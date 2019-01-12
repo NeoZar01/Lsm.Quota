@@ -1,0 +1,318 @@
+﻿@model RegisterViewModel
+
+@{
+    ViewBag.Title = "";
+
+    int rownum = 1;
+}
+
+<br />
+<div class="row">
+    <hr />
+    <!-- Roles :Dash Board -->
+    <div class="col-md-10">
+        <div class="clearfix">
+            <table>
+                <tr>
+                    @*@foreach (var role in Model.MembersPerRole)
+                            {
+
+                                var circleminidash = string.Concat("c100", " p", Math.Round((decimal)role.Percentage, 0, MidpointRounding.AwayFromZero).ToString(), " small ", "orange");
+
+                                <td>
+                                    <table style="margin-right: 50px">
+                                        <tr>
+                                            <td>
+                                                <div class="@circleminidash">
+                                                    <span>@string.Concat(Math.Round((decimal)role.Percentage, 0, MidpointRounding.AwayFromZero), "%")</span>
+                                                    <div class="slice">
+                                                        <div class="bar"></div>
+                                                        <div class="fill"></div>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">
+                                                <small>
+                                                    @role.Role
+                                                </small>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-top-lighter ">
+                                            <td class="text-center">
+                                                <h2>
+                                                    @Math.Round((decimal)role.MemberTotal, 0, MidpointRounding.AwayFromZero)
+                                                </h2>
+                                            </td>
+                                        </tr>
+
+
+                                    </table>
+                                </td>
+                            }
+                        </tr>*@
+            </table>
+
+        </div>
+    </div>
+    <!-- End Dashboard-->
+    <!-- User Manager Toolbox -->
+    <div class="col-md-2">
+        <div class="btn-group btn-group-sm" role="group">
+            <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-plus"></span></button>
+            <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#SearchModalDialog"><span class="glyphicon glyphicon-search"></span></button>
+        </div>
+        <div class="text-center">
+            <hr />
+            <p><small>Total Number of Users</small></p>
+    @*        <h1><ins>@(Model.MemberTotal)</ins></h1>*@
+        </div>
+    </div>
+    <!-- End User Manager Toolbox-->
+
+    <div class="col-md-12" style="clear:both">
+        <br /><br />
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#masterlist" aria-controls="masterlist" role="tab" data-toggle="tab"><small><span class="glyphicon glyphicon-list-alt"></span> &nbsp; Master List </small></a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"> <small><span class="glyphicon glyphicon-envelope"></span> &nbsp; Mail box</small></a></li>
+            <li role="presentation">
+                <a class="btn btn-default btn-sm" data-toggle="modal" data-target="#MailboxModalDialog"><span class="glyphicon glyphicon-th"></span> &nbsp; Mail Options</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="masterlist">...</div>
+            <div role="tabpanel" class="tab-pane fade" id="profile">
+
+                <div class="row">
+                    <br />
+                    <div class="col-md-12">
+                        <div class="col-md-7"></div>
+                        <div class="col-md-5"></div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="col-md-12">
+                            <table class="table-condensed  table-hover table-responsive col-md-12">
+                                <tr style="background-color:#ecf0f1;border-bottom:1px solid #f2f2f2">
+                                    <th><small></small></th>
+                                    <th colspan="3" class="text-center"><small>Mailbox</small></th>
+                                    <td colspan="3" class="text-center"><small></small></td>
+                                    <th colspan="2" class="text-center"><small>Group</small></th>
+                                    <th class="text-center"><small></small></th>
+                                    <th colspan="2" class="text-center"><small>Directorate</small></th>
+                                </tr>
+                                <tr style="background-color:#ecf0f1">
+                                    <td><small></small></td>
+                                    <th><small> &nbsp;&nbsp; Name</small></th>
+                                    <th class="text-center"><small>Owner</small></th>
+                                    <th class="text-center"><small>Administrator</small></th>
+                                    <th class="text-center" colspan="3"><small></small></th>
+                                    <th class="text-center"><small>Name</small></th>
+                                    <th class="text-center"><small>Administrator</small></th>
+                                    <th class="text-center"><small>Name</small></th>
+                                    <th class="text-center"><small>Senior Manager</small></th>
+                                </tr>
+                                @*@foreach (var mb in Model.ActiveMailBoxes)
+                                {
+                                    <tr>
+                                        <td><small>@(rownum).</small></td>
+                                        <td><small>@mb.Name</small></td>
+                                        <td><small>@(mb.MailboxOwner)</small></td>
+                                        <td><small>@(mb.MailboxAdministrator)</small></td>
+                                        <td><small><span class="mini-pie-chart">@(string.Concat(mb.ActiveUsers, "/", (mb.ActiveUsers + mb.NonActiveUsers)))</span></small></td>
+                                        <td><small><span class="glyphicon glyphicon-envelope"></span></small></td>
+                                        <td><small><span class="glyphicon glyphicon-user"></span></small></td>
+                                        <td>
+                                            <a tabindex="0" class="btn btn-link" role="button" data-toggle="popover" data-trigger="focus" title="Description" data-content="This Mailbox is managed by @(mb.GroupAdministrator)" data-placement="top">
+                                                <small>
+                                                    @(mb.GroupName)
+                                                </small>
+                                            </a>
+                                        </td>
+                                        <td><small>@(mb.GroupAdministrator)</small></td>
+                                        <td><small>@(mb.DirectorateName)</small></td>
+                                        <td><small>@(mb.DirectorateManager)</small></td>
+                                    </tr>
+                                    rownum += 1;
+                                }*@
+                            </table>
+                            @{
+                                rownum = 1;
+                            }
+                        </div>
+                    </div>
+                </div>
+                @*<div role="tabpanel" class="tab-pane fade" id="messages">...</div>
+                    <div role="tabpanel" class="tab-pane fade" id="settings">...</div>*@
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h5 class="modal-title" id="myModalLabel"> <img src="~/Content/Images/_438185.png" width="18" height="18" /></h5>
+
+            </div>
+            <div class="modal-body">
+                @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "col-md-12 panel-default", role = "form" }))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary("", new { @class = "text-danger" })
+                    <div class="input-group col-md-12">
+                  @*      @Html.LabelFor(m => m.UserName, new { @class = "col-md-2 control-label" })*@
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" name="UserName" id="UserName" placeholder="Emis Code" data-autocomplete-source="@Url.Action("GetEmisCodeByCononicalName", "Account")">
+                        </div>
+                    </div><br />
+                    <div class="input-group col-md-12">
+                        @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                        </div>
+                    </div><br />
+                    <div class="input-group col-md-12">
+                        @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
+                        <div class="col-md-10">
+                            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                        </div>
+                    </div><br />
+                    <div class="input-group col-md-12">
+                        @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })
+                        <div class="col-md-10">
+                            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+                        </div>
+                    </div><br />
+
+                    <div class="input-group col-md-12">
+                        @Html.Label("Role", new { @class = "col-md-2 control-label" })
+                        <div class="col-md-10">
+                            @Html.DropDownList("UserRoles", (SelectList)(ViewBag.RoleUsers), "", new { @class = "form-control" })
+                        </div>
+
+                    </div><br />
+                    <hr />
+                    <div class="input-group-btn col-md-12">
+                        <div class="col-md-10">
+                        </div>
+                        <div class="col-md-2">
+                            <button type="submit" class="btn btn-primary btn-sm">  <span class="glyphicon glyphicon-plus"></span> &nbsp; Register</button>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ======================== Modal Dialog For Searching for Users  =========================   -->
+
+<div class="modal fade" id="SearchModalDialog" tabindex="-1" role="dialog" aria-labelledby="SearchModalDialog">
+    <div class="modal-dialog  rd-modal-dialog-700pt" role="document" style="width:86%">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <p class="modal-title" id="myModalLabel">Search For Users</p>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-12">
+                    @using (Ajax.BeginForm("SearchPerson", "Account", new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "Person_Search_ResultSet", InsertionMode = InsertionMode.Replace, LoadingElementId = "search_ajax_loading_anim_icon" }, new { role = "form", @class = "col-md-12" }))
+                    {
+                        <div class="col-md-7">
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <input type="text" class="form-control adjust-area-box-width" name="keyword" id="keyword" placeholder="Enter Person Details">
+                                    <button class="btn btn-primary" type="submit">
+                                        <span class="glyphicon glyphicon-search"></span> &nbsp; Search &nbsp;
+                                        <img src="~/Content/Images/ajax-loader.gif" id="search_ajax_loading_anim_icon" style="display:none; width:20px; height:20px " />
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+
+                        </div>
+                    }
+                </div>
+                <br />
+                <br />
+                <br />
+                <div class="col-md-12" id="Person_Search_ResultSet">
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                @*<button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>*@
+                <br />
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Dialog for Mailbox Options-->
+<div class="modal fade" id="MailboxModalDialog" tabindex="-1" role="dialog" aria-labelledby="MailboxModalDialog">
+    <div class="modal-dialog  rd-modal-dialog-700pt" role="document" style="width:45%">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <p class="modal-title" id="myModalLabel"> <span class="glyphicon glyphicon-th"></span> &nbsp; Mailbox Options</p>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-12">
+                    <br /><br />
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#MailBox" aria-controls="MailBox" role="tab" data-toggle="tab"><small><span class="glyphicon glyphicon-envelope"></span> &nbsp; Mail Box </small></a></li>
+                        <li role="presentation"><a href="#Group" aria-controls="Group" role="tab" data-toggle="tab"> <small><span class="glyphicon glyphicon-user"></span> &nbsp; Mail Group</small></a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in active" id="MailBox">..1.</div>
+                        <div role="tabpanel" class="tab-pane fade" id="Group">2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <link href="~/Content/circle.css" rel="stylesheet" />
+    <script src="~/Scripts/Plugins/jquery.peity.min.js"></script>
+    <script>
+
+       $(document).ready(function () {
+
+            $(function () {
+                  $('[data-toggle="popover"]').popover()
+            });
+
+
+           //piety charts
+
+            $("span.mini-pie-chart").peity("pie", {
+                fill: ["#1ab394", "#ecf0f1"]
+            });
+
+            //setInterval(function () {
+            //    var random = Math.round(Math.random() * 10);
+            //    var values = updatingChart.text().split(",");
+            //    values.shift();
+            //    values.push(random);
+
+            //    updatingChart
+            //      .text(values.join(","))
+            //      .change();
+            //}, 1000)
+         });
+    </script>
+
+}

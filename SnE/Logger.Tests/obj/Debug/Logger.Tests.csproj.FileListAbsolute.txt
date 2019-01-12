@@ -1,0 +1,10 @@
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Logger.Tests\bin\Debug\Logger.Tests.dll
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Logger.Tests\bin\Debug\Logger.Tests.pdb
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Logger.Tests\bin\Debug\DoE.Lsm.Logger.dll
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Logger.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Logger.Tests\bin\Debug\log4net.dll
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Logger.Tests\bin\Debug\DoE.Lsm.Logger.pdb
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Logger.Tests\bin\Debug\log4net.xml
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Logger.Tests\obj\Debug\Logger.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Logger.Tests\obj\Debug\Logger.Tests.dll
+C:\Users\Falcorp\Source\Repos\Lsm.Quota\quota\Logger.Tests\obj\Debug\Logger.Tests.pdb

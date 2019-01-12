@@ -1,0 +1,250 @@
+﻿@using DoE.Lsm.Web.Api
+
+@if (Request.IsAuthenticated)
+{
+    <li class="" role="presentation">
+            <a class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                @User.Identity.GetName()  &nbsp;  <img src="@Url.Content("~/Content/Images/img.jpg")" alt="school-default-image">               
+            </a>
+            <ul class="dropdown-menu dropdown-usermenu pull-right">
+                <li>@Html.ActionLink("Profile", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })</li>
+                <li>
+                    <a href="javascript:;">
+                        <span class="badge bg-red pull-right">25%</span>
+                        <span>Submissions</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <a href="javascript:document.getElementById('logoutForm').submit()"> Log Out  <i class="fa fa-sign-out pull-right" style="margin-right:40px"></i> </a>
+                        <br/>
+                    }
+                </li>
+                <li><a href="javascript:;"></a></li>
+            </ul>
+       </li>
+
+    <li role="presentation" class="dropdown">
+        <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+            <i class="fa fa-envelope-o"></i>
+            <span class="badge bg-green">6</span>
+        </a>
+        <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+            <li>
+                <a>
+                    <span class="image"><img src="@Url.Content("~/Content/Images/img.jpg")" alt="Profile Image" /></span>
+                    <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                    </span>
+                    <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                    <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                    </span>
+                    <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                    <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                    </span>
+                    <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                    <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                    </span>
+                    <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                    </span>
+                </a>
+            </li>
+            <li>
+                <div class="text-center">
+                    <a>
+                        <strong>See All Alerts</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </li>
+
+     
+    <li role="presentation" class="dropdown">
+        <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+            <i class="fa fa-shopping-cart"></i>
+            <span class="badge bg-green">4</span>
+        </a>
+        <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+            <li>
+                <a>
+                    <span class="image"><img src="@Url.Content("~/Content/Images/img.jpg")" alt="Profile Image" /></span>
+                    <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                    </span>
+                    <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                    <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                    </span>
+                    <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                    <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                    </span>
+                    <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                    <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                    </span>
+                    <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                    </span>
+                </a>
+            </li>
+            <li>
+                <div class="text-center">
+                    <a data-placement="top" title="Logout" class="btn-sm pull-left" data-toggle="modal" data-target="#shoppingcard-modal-dialog">
+                        <strong>View Shopping Card</strong>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </li>
+      <li role="presentation" class="dropdown">
+        <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+            <i class="fa fa-bell-o"></i>
+            <span class="badge bg-green">1</span>
+        </a>
+        <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+            <li>
+                <a>
+                    <span class="image"><img src="@Url.Content("~/Content/Images/img.jpg")" alt="Profile Image" /></span>
+                    <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                    </span>
+                    <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                    <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                    </span>
+                    <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                    <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                    </span>
+                    <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                    <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                    </span>
+                    <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                    </span>
+                </a>
+            </li>
+            <li>
+                <div class="text-center">
+                    <a>
+                        <strong>See All Alerts</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </li>
+    <!-- Shopping Card modal dialog
+    -->
+    <div class="modal fade" id="shoppingcard-modal-dialog" tabindex="-1" role="dialog" aria-labelledby="shoppingcard-modal-dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">[(2018/2019)] Shopping Card  - [(Requisition Number)]</h5>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-default btn-sm pull-right">
+                        <span class="glyphicon glyphicon-credit-card text-dark"></span> &nbsp;  Check Out
+                    </button>
+                    <button type="button" class="btn btn-default btn-sm pull-right">
+                        <span class="glyphicon glyphicon-print text-dark"></span> &nbsp;  Print
+                    </button>
+                    <button type="button" class="btn btn-default btn-sm pull-right" data-dismiss="modal" aria-label="Close">
+                        <span class="glyphicon glyphicon-credit-card text-dark"></span> &nbsp;  Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+}

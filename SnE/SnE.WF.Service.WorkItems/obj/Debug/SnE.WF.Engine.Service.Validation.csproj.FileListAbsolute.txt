@@ -1,0 +1,5 @@
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\bin\Debug\DoE.Lsm.WF.Engine.Service.WorkItem.dll.config
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\bin\Debug\DoE.Lsm.WF.Engine.Service.WorkItem.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\bin\Debug\DoE.Lsm.WF.Engine.Service.WorkItem.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\obj\Debug\DoE.Lsm.WF.Engine.Service.WorkItem.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.WF.Engine.Component.Validation\obj\Debug\DoE.Lsm.WF.Engine.Service.WorkItem.pdb

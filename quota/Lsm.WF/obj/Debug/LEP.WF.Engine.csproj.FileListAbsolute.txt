@@ -1,5 +1,0 @@
-C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LEP.WF.Engine\bin\Debug\LEP.WF.Engine.dll
-C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LEP.WF.Engine\bin\Debug\LEP.WF.Engine.pdb
-C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LEP.WF.Engine\obj\Debug\LEP.WF.Engine.dll
-C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LEP.WF.Engine\obj\Debug\LEP.WF.Engine.pdb
-C:\Users\NeoL\Desktop\Project.EP\Portal.dev\src\Live.Portal\LimpEmisPortal\LEP.WF.Engine\obj\Debug\LEP.WF.Engine.csprojResolveAssemblyReference.cache

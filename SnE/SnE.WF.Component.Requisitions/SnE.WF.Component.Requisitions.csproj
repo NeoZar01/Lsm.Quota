@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\PostSharp.6.0.25\build\PostSharp.props" Condition="Exists('..\packages\PostSharp.6.0.25\build\PostSharp.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A331DB1E-E1EE-41A5-8D9C-079F98C50FCC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DoE.Lsm.WF.Component.Requisitions</RootNamespace>
+    <AssemblyName>DoE.Lsm.WF.Component.Requisitions</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PostSharp, Version=6.0.25.0, Culture=neutral, PublicKeyToken=b13fd38b8f9c99d7, processorArchitecture=MSIL">
+      <HintPath>..\packages\PostSharp.Redist.6.0.25\lib\net45\PostSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Factories\RequisitionStepAction.cs" />
+    <Compile Include="Api\SchoolRepository.cs" />
+    <Compile Include="RequisitionProcessImp.cs" />
+    <Compile Include="Steps\PreliminaryVetting.cs" />
+    <Compile Include="Steps\RimitInstallation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Role.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Role.resx</DependentUpon>
+    </Compile>
+    <Compile Include="State.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>State.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Station.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Station.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Factories\AcceptFactory.cs" />
+    <Compile Include="Factories\DiscardFactory.cs" />
+    <Compile Include="Factories\RejectFactory.cs" />
+    <Compile Include="Factories\SubmitFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SnE.Annotations\SnE.Annotations.csproj">
+      <Project>{ff0e45f2-1dc7-483d-89f8-09006c6b35ea}</Project>
+      <Name>SnE.Annotations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SnE.Logger\SnE.Logger.csproj">
+      <Project>{b68fa39f-01a8-4382-b3f6-37307186d92a}</Project>
+      <Name>SnE.Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SnE.Services.DataRepository\SnE.Service.DataRepository.csproj">
+      <Project>{7e8c0842-0fe6-47de-8f70-a9533a7c5c09}</Project>
+      <Name>SnE.Service.DataRepository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SnE.WF.Service.Monitor\SnE.WF.Service.Monitor.csproj">
+      <Project>{771b5229-3aa8-40e8-b2c0-2a4587c4cdbe}</Project>
+      <Name>SnE.WF.Service.Monitor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SnE.WF.Service.Validation\SnE.WF.Service.Validation.csproj">
+      <Project>{9a53438b-efb5-4617-9eaa-3a1a0805e5ac}</Project>
+      <Name>SnE.WF.Service.Validation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SnE.WF.Service.WorkItems\SnE.WF.Service.WorkItems.csproj">
+      <Project>{99fc2389-0425-4ba2-bba4-7cbfa3059b51}</Project>
+      <Name>SnE.WF.Service.WorkItems</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Role.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Role.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="State.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>State.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Station.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Station.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\PostSharp.6.0.25\build\PostSharp.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\PostSharp.6.0.25\build\PostSharp.props'))" />
+    <Error Condition="!Exists('..\packages\PostSharp.6.0.25\build\PostSharp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\PostSharp.6.0.25\build\PostSharp.targets'))" />
+  </Target>
+  <Import Project="..\packages\PostSharp.6.0.25\build\PostSharp.targets" Condition="Exists('..\packages\PostSharp.6.0.25\build\PostSharp.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

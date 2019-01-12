@@ -1,0 +1,257 @@
+﻿
+<div class="row">
+    <!-- Dashboard Section -->
+    <div class="col-md-12">
+        <div class="row tile_count">
+
+            <!-- -->
+            <div class="col-md-1 col-sm-1 col-xs-1 tile_stats_count"></div>
+                <!-- -->
+                <!-- -->
+                <div class="col-md-3 col-sm-4 col-xs-6 tile_stats_count">
+                    <span class="count_top"><i class="fa fa-folder"></i> &nbsp; Submitted</span>
+                    <div class="count">3</div>
+                    <span class="count_bottom"><i class="green">4% </i> &nbsp; <small>(Monday, 23 - Wednesday , 25 - 2018) </small>  </span>
+                </div>
+                <!-- -->
+                <!-- -->
+                <div class="col-md-3 col-sm-4 col-xs-6 tile_stats_count">
+                    <span class="count_top"><i class="fa fa-folder-open"></i> &nbsp; Approved </span>
+                    <div class="count">1</div>
+                    <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>3% </i>  &nbsp; <small>(Monday, 23 - Wednesday , 25 - 2018) </small> </span>
+                </div>
+                <!-- -->
+                <!-- -->
+                <div class="col-md-3 col-sm-4 col-xs-6 tile_stats_count">
+                    <span class="count_top"><i class="fa fa-times"></i> &nbsp; Rejected</span>
+                    <div class="count">0</div>
+                    <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i>  &nbsp;  <small>(Monday, 23 - Wednesday , 25 - 2018) </small> </span>
+                </div>
+                <!-- -->
+                <!-- Overall -->
+                <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+                    <span class="count_top"><i class="fa fa-language"></i> &nbsp; Overall</span>
+                    <div class="count green">3</div>
+                    <span class="count_bottom"><i class="red"><i class="fa fa-sort-desc"></i>12% </i>  &nbsp;  <small>@Model.BookYear </small> </span>
+                </div>
+                <!-- -->
+
+            </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="col-md-12">
+
+
+            <div class="col-md-7 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>Orders Per Subject Enrolment</h2>
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li><button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#in-memory-requisitions-check" role="button">Create Requisition</button> </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        <iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;"></iframe>
+                        <canvas id="canvasRadar" width="441" height="220" style="width: 441px; height: 220px;"></canvas>
+                    </div>
+                    <div class="x_panel ">
+                        <button class="btn btn-default btn-sm" type="button"  data-toggle="modal" data-target=".school-upload-stats-modal-dialog" >  <span class="fa fa-bar-chart"></span> </button>
+                        <span class="text-with-readable-faint"> <small class="pull-right"> January Rollout  &nbsp;  (@Model.BookYear)   &nbsp;  &nbsp; </small></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5 col-sm-12 col-xs-12">
+                <div class="widget widget_tally_box">
+                    <div class="x_panel ui-ribbon-container fixed_height_390">
+                        <div class="ui-ribbon-wrapper">
+                            <div class="ui-ribbon">
+                                38 Days
+                            </div>
+                        </div>
+                        <div class="x_title">
+                            <h2>LTSM N&S</h2>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="x_content">
+                            <div style="text-align: center; margin-bottom: 17px">
+                                <span class="chart" data-percent="14">
+                                    <span class="percent">14</span>
+                                    <canvas height="110" width="110"></canvas>
+                                </span>
+                            </div>
+
+                            <h3 class="name_title">Deficit</h3>
+                            <p>Short Description</p>
+
+                            <div class="divider"></div>
+
+                            <p>If you've decided to go in development mode and tweak all of this a bit, there are few things you should do.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>Button Example <small>Users</small></h2>
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li>
+                                <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="#">Settings 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Settings 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="close-link"><i class="fa fa-close"></i></a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        <p class="text-muted font-13 m-b-30">
+                            The Buttons extension for DataTables provides a common set of options, API methods and styling to display buttons on a page that will interact with a DataTable. The core library provides the based framework upon which plug-ins can built.
+                        </p>
+                        <div id="datatable-buttons_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                            <div class="dt-buttons btn-group"><a class="btn btn-default buttons-copy buttons-html5 btn-sm" tabindex="0" aria-controls="datatable-buttons" href="#"><span>Copy</span></a><a class="btn btn-default buttons-csv buttons-html5 btn-sm" tabindex="0" aria-controls="datatable-buttons" href="#"><span>CSV</span></a><a class="btn btn-default buttons-print btn-sm" tabindex="0" aria-controls="datatable-buttons" href="#"><span>Print</span></a></div><div class="dataTables_length" id="datatable-buttons_length"><label>Show <select name="datatable-buttons_length" aria-controls="datatable-buttons" class="form-control input-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div><div id="datatable-buttons_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control input-sm" placeholder="" aria-controls="datatable-buttons"></label></div><table id="datatable-buttons" class="table table-striped table-bordered dataTable no-footer dtr-inline collapsed" role="grid" aria-describedby="datatable-buttons_info" style="width: 1031px;">
+                                <thead>
+                                    <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="datatable-buttons" rowspan="1" colspan="1" style="width: 158px;" aria-sort="ascending" aria-label="Name: activate to sort column descending">Name</th><th class="sorting" tabindex="0" aria-controls="datatable-buttons" rowspan="1" colspan="1" style="width: 251px;" aria-label="Position: activate to sort column ascending">Position</th><th class="sorting" tabindex="0" aria-controls="datatable-buttons" rowspan="1" colspan="1" style="width: 119px;" aria-label="Office: activate to sort column ascending">Office</th><th class="sorting" tabindex="0" aria-controls="datatable-buttons" rowspan="1" colspan="1" style="width: 61px;" aria-label="Age: activate to sort column ascending">Age</th><th class="sorting" tabindex="0" aria-controls="datatable-buttons" rowspan="1" colspan="1" style="width: 117px;" aria-label="Start date: activate to sort column ascending">Start date</th><th class="sorting" tabindex="0" aria-controls="datatable-buttons" rowspan="1" colspan="1" style="width: 92px; display: none;" aria-label="Salary: activate to sort column ascending">Salary</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr role="row" class="odd">
+                                        <td tabindex="0" class="sorting_1">Airi Satou</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>33</td>
+                                        <td>2008/11/28</td>
+                                        <td style="display: none;">$162,700</td>
+                                    </tr>
+                                    <tr role="row" class="even">
+                                        <td class="sorting_1" tabindex="0">Angelica Ramos</td>
+                                        <td>Chief Executive Officer (CEO)</td>
+                                        <td>London</td>
+                                        <td>47</td>
+                                        <td>2009/10/09</td>
+                                        <td style="display: none;">$1,200,000</td>
+                                    </tr>
+                                    <tr role="row" class="odd">
+                                        <td tabindex="0" class="sorting_1">Ashton Cox</td>
+                                        <td>Junior Technical Author</td>
+                                        <td>San Francisco</td>
+                                        <td>66</td>
+                                        <td>2009/01/12</td>
+                                        <td style="display: none;">$86,000</td>
+                                    </tr>
+                                    <tr role="row" class="even">
+                                        <td class="sorting_1" tabindex="0">Bradley Greer</td>
+                                        <td>Software Engineer</td>
+                                        <td>London</td>
+                                        <td>41</td>
+                                        <td>2012/10/13</td>
+                                        <td style="display: none;">$132,000</td>
+                                    </tr>
+                                    <tr role="row" class="odd">
+                                        <td class="sorting_1" tabindex="0">Brenden Wagner</td>
+                                        <td>Software Engineer</td>
+                                        <td>San Francisco</td>
+                                        <td>28</td>
+                                        <td>2011/06/07</td>
+                                        <td style="display: none;">$206,850</td>
+                                    </tr>
+                                    <tr role="row" class="even">
+                                        <td tabindex="0" class="sorting_1">Brielle Williamson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>New York</td>
+                                        <td>61</td>
+                                        <td>2012/12/02</td>
+                                        <td style="display: none;">$372,000</td>
+                                    </tr>
+                                    <tr role="row" class="odd">
+                                        <td class="sorting_1" tabindex="0">Bruno Nash</td>
+                                        <td>Software Engineer</td>
+                                        <td>London</td>
+                                        <td>38</td>
+                                        <td>2011/05/03</td>
+                                        <td style="display: none;">$163,500</td>
+                                    </tr>
+                                    <tr role="row" class="even">
+                                        <td class="sorting_1" tabindex="0">Caesar Vance</td>
+                                        <td>Pre-Sales Support</td>
+                                        <td>New York</td>
+                                        <td>21</td>
+                                        <td>2011/12/12</td>
+                                        <td style="display: none;">$106,450</td>
+                                    </tr>
+                                    <tr role="row" class="odd">
+                                        <td class="sorting_1" tabindex="0">Cara Stevens</td>
+                                        <td>Sales Assistant</td>
+                                        <td>New York</td>
+                                        <td>46</td>
+                                        <td>2011/12/06</td>
+                                        <td style="display: none;">$145,600</td>
+                                    </tr>
+                                    <tr role="row" class="even">
+                                        <td tabindex="0" class="sorting_1">Cedric Kelly</td>
+                                        <td>Senior Javascript Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2012/03/29</td>
+                                        <td style="display: none;">$433,060</td>
+                                    </tr>
+                                </tbody>
+                            </table><div class="dataTables_info" id="datatable-buttons_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div><div class="dataTables_paginate paging_simple_numbers" id="datatable-buttons_paginate"><ul class="pagination"><li class="paginate_button previous disabled" id="datatable-buttons_previous"><a href="#" aria-controls="datatable-buttons" data-dt-idx="0" tabindex="0">Previous</a></li><li class="paginate_button active"><a href="#" aria-controls="datatable-buttons" data-dt-idx="1" tabindex="0">1</a></li><li class="paginate_button "><a href="#" aria-controls="datatable-buttons" data-dt-idx="2" tabindex="0">2</a></li><li class="paginate_button "><a href="#" aria-controls="datatable-buttons" data-dt-idx="3" tabindex="0">3</a></li><li class="paginate_button "><a href="#" aria-controls="datatable-buttons" data-dt-idx="4" tabindex="0">4</a></li><li class="paginate_button "><a href="#" aria-controls="datatable-buttons" data-dt-idx="5" tabindex="0">5</a></li><li class="paginate_button "><a href="#" aria-controls="datatable-buttons" data-dt-idx="6" tabindex="0">6</a></li><li class="paginate_button next" id="datatable-buttons_next"><a href="#" aria-controls="datatable-buttons" data-dt-idx="7" tabindex="0">Next</a></li></ul></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- In-memory requisitons Modal Dialog -->
+<div class="modal fade" id="in-memory-requisitions-check" tabindex="-1" role="dialog" aria-labelledby="in-memory-requisitions-check">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                @Html.ActionLink("Create New", "Index", "Capture", new { Area = "Requisitions" }, new { id = "" , @class = "btn btn-success btn-sm pull-right"   })
+                <br/>
+            </div>
+            <div class="modal-body">
+                    We have noticed that you have a requisition that you have not submitted. Do you wish to continue with this requisition?
+            </div>
+            <div class="modal-footer">
+@*                <a role="button" class="btn btn-default btn-sm" href="@Url.Action("Index", "SchoolCapture", new { Area = "Requisitions" }, new {id=""})">Create New</a>*@
+
+                [Populate a list of in-memory items]
+            </div>
+        </div>
+    </div>
+</div>
+<!--End-->
+
+
+<!-- School Statistics requisitons Modal Dialog -->
+<div class="modal fade school-upload-stats-modal-dialog" tabindex="-1" role="dialog" aria-labelledby="school-upload-stats-modal-dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            ...<h1>B</h1>
+        </div>
+    </div>
+</div>
+<!--End-->

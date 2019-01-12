@@ -1,0 +1,5 @@
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\SnE.WF.CService.DocumentsManager\bin\Debug\SnE.WF.CService.DocumentsManager.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\SnE.WF.CService.DocumentsManager\bin\Debug\SnE.WF.CService.DocumentsManager.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\SnE.WF.CService.DocumentsManager\obj\Debug\SnE.WF.CService.DocumentsManager.csprojResolveAssemblyReference.cache
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\SnE.WF.CService.DocumentsManager\obj\Debug\SnE.WF.CService.DocumentsManager.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\SnE.WF.CService.DocumentsManager\obj\Debug\SnE.WF.CService.DocumentsManager.pdb

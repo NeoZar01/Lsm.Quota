@@ -1,0 +1,113 @@
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Logger\bin\Debug\DoE.Lsm.Logger.dll.config
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Logger\bin\Debug\DoE.Lsm.Logger.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Logger\bin\Debug\DoE.Lsm.Logger.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Logger\bin\Debug\DoE.Lsm.Files.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Logger\bin\Debug\DoE.Lsm.Files.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Logger\obj\Debug\Lsm.Logger.csprojResolveAssemblyReference.cache
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Logger\obj\Debug\DoE.Lsm.Logger.dll
+C:\LsmPortal\Env.Dev\src\Live.Portal\LimpEmisPortal\LsmPortal.Logger\obj\Debug\DoE.Lsm.Logger.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Logger\bin\Debug\DoE.Lsm.Logger.dll.config
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Logger\bin\Debug\DoE.Lsm.Logger.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Logger\bin\Debug\DoE.Lsm.Logger.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Logger\bin\Debug\DoE.Lsm.Files.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Logger\bin\Debug\DoE.Lsm.Files.pdb
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Logger\obj\Debug\Lsm.Logger.csprojResolveAssemblyReference.cache
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Logger\obj\Debug\DoE.Lsm.Logger.dll
+C:\LsmPortal\Env.Dev\src\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Logger\obj\Debug\DoE.Lsm.Logger.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Logger\bin\Debug\DoE.Lsm.Logger.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Logger\bin\Debug\DoE.Lsm.Logger.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Logger\bin\Debug\DoE.Lsm.Logger.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Logger\bin\Debug\DoE.Lsm.Files.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Logger\bin\Debug\DoE.Lsm.Files.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Logger\obj\Debug\Lsm.Logger.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Logger\obj\Debug\DoE.Lsm.Logger.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Live.Portalv.1.1\LimpEmisPortal\LsmPortal.Logger\obj\Debug\DoE.Lsm.Logger.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Logger\bin\Debug\DoE.Lsm.Logger.dll.config
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Logger\bin\Debug\DoE.Lsm.Logger.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Logger\bin\Debug\DoE.Lsm.Logger.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Logger\bin\Debug\DoE.Lsm.Files.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Logger\bin\Debug\DoE.Lsm.Files.pdb
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Logger\obj\Debug\Lsm.Logger.csprojResolveAssemblyReference.cache
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Logger\obj\Debug\DoE.Lsm.Logger.dll
+C:\POC-Projs\Env.Dev\src\Project-Dev1.2\LimpEmisPortal\LsmPortal.Logger\obj\Debug\DoE.Lsm.Logger.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Logger\bin\Debug\DoE.Lsm.Logger.dll.config
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Logger\bin\Debug\DoE.Lsm.Logger.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Logger\bin\Debug\DoE.Lsm.Logger.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Logger\bin\Debug\DoE.Lsm.Files.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Logger\bin\Debug\DoE.Lsm.Files.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Logger\obj\Debug\Lsm.Logger.csprojResolveAssemblyReference.cache
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Logger\obj\Debug\DoE.Lsm.Logger.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LsmPortal.Logger\obj\Debug\DoE.Lsm.Logger.pdb
+C:\Homework\Quota\QuotaPortal\LsmPortal.Logger\bin\Debug\DoE.Lsm.Logger.dll.config
+C:\Homework\Quota\QuotaPortal\LsmPortal.Logger\bin\Debug\DoE.Lsm.Logger.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.Logger\bin\Debug\DoE.Lsm.Logger.pdb
+C:\Homework\Quota\QuotaPortal\LsmPortal.Logger\bin\Debug\DoE.Lsm.Files.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.Logger\bin\Debug\DoE.Lsm.Files.pdb
+C:\Homework\Quota\QuotaPortal\LsmPortal.Logger\obj\Debug\Lsm.Logger.csprojResolveAssemblyReference.cache
+C:\Homework\Quota\QuotaPortal\LsmPortal.Logger\obj\Debug\DoE.Lsm.Logger.dll
+C:\Homework\Quota\QuotaPortal\LsmPortal.Logger\obj\Debug\DoE.Lsm.Logger.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.Logger\bin\Debug\DoE.Lsm.Logger.dll.config
+C:\Homework\Quota\QuotaPortal\Lsm.Logger\bin\Debug\DoE.Lsm.Logger.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Logger\bin\Debug\DoE.Lsm.Logger.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.Logger\bin\Debug\DoE.Lsm.Files.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Logger\bin\Debug\DoE.Lsm.Files.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.Logger\obj\Debug\Lsm.Logger.csprojResolveAssemblyReference.cache
+C:\Homework\Quota\QuotaPortal\Lsm.Logger\obj\Debug\DoE.Lsm.Logger.Folder.resources
+C:\Homework\Quota\QuotaPortal\Lsm.Logger\obj\Debug\Lsm.Logger.csproj.GenerateResource.Cache
+C:\Homework\Quota\QuotaPortal\Lsm.Logger\obj\Debug\DoE.Lsm.Logger.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Logger\obj\Debug\DoE.Lsm.Logger.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Logger\bin\Debug\DoE.Lsm.Logger.dll.config
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Logger\bin\Debug\DoE.Lsm.Logger.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Logger\bin\Debug\DoE.Lsm.Logger.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Logger\bin\Debug\DoE.Lsm.Files.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Logger\bin\Debug\DoE.Lsm.Files.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Logger\obj\Debug\Lsm.Logger.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Logger\obj\Debug\DoE.Lsm.Logger.Folder.resources
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Logger\obj\Debug\Lsm.Logger.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Logger\obj\Debug\DoE.Lsm.Logger.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Logger\obj\Debug\DoE.Lsm.Logger.pdb
+F:\Development - Rest\QuotaPortal\Lsm.Logger\obj\Debug\Lsm.Logger.csprojResolveAssemblyReference.cache
+F:\Development - Rest\QuotaPortal\Lsm.Logger\obj\Debug\DoE.Lsm.Logger.Folder.resources
+F:\Development - Rest\QuotaPortal\Lsm.Logger\obj\Debug\Lsm.Logger.csproj.GenerateResource.Cache
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Logger\bin\Debug\DoE.Lsm.Logger.dll.config
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Logger\bin\Debug\DoE.Lsm.Logger.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Logger\bin\Debug\DoE.Lsm.Logger.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Logger\bin\Debug\DoE.Lsm.Files.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Logger\bin\Debug\DoE.Lsm.Files.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Logger\obj\Debug\Lsm.Logger.csprojResolveAssemblyReference.cache
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Logger\obj\Debug\DoE.Lsm.Logger.DefaultFolder.resources
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Logger\obj\Debug\Lsm.Logger.csproj.GenerateResource.Cache
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Logger\obj\Debug\DoE.Lsm.Logger.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Logger\obj\Debug\DoE.Lsm.Logger.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Logger\bin\Debug\DoE.Lsm.Logger.dll.config
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Logger\bin\Debug\DoE.Lsm.Logger.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Logger\bin\Debug\DoE.Lsm.Logger.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Logger\bin\Debug\DoE.Lsm.Files.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Logger\bin\Debug\DoE.Lsm.Files.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Logger\obj\Debug\Lsm.Logger.csprojResolveAssemblyReference.cache
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Logger\obj\Debug\DoE.Lsm.Logger.DefaultFolder.resources
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Logger\obj\Debug\Lsm.Logger.csproj.GenerateResource.Cache
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Logger\obj\Debug\DoE.Lsm.Logger.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Logger\obj\Debug\DoE.Lsm.Logger.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Logger\bin\Debug\DoE.Lsm.Logger.dll.config
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Logger\bin\Debug\DoE.Lsm.Logger.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Logger\bin\Debug\DoE.Lsm.Logger.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Logger\bin\Debug\DoE.Lsm.Files.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Logger\bin\Debug\DoE.Lsm.Files.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Logger\obj\Debug\Lsm.Logger.csprojResolveAssemblyReference.cache
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Logger\obj\Debug\DoE.Lsm.Logger.DefaultFolder.resources
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Logger\obj\Debug\Lsm.Logger.csproj.GenerateResource.Cache
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Logger\obj\Debug\DoE.Lsm.Logger.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Logger\obj\Debug\DoE.Lsm.Logger.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Logger\bin\Debug\DoE.Lsm.Logger.dll.config
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Logger\bin\Debug\DoE.Lsm.Logger.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Logger\bin\Debug\DoE.Lsm.Logger.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Logger\bin\Debug\DoE.Lsm.Files.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Logger\bin\Debug\log4net.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Logger\bin\Debug\DoE.Lsm.Files.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Logger\bin\Debug\log4net.xml
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Logger\obj\Debug\Lsm.Logger.csprojResolveAssemblyReference.cache
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Logger\obj\Debug\DoE.Lsm.Logger.DefaultFolder.resources
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Logger\obj\Debug\Lsm.Logger.csproj.GenerateResource.Cache
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Logger\obj\Debug\DoE.Lsm.Logger.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Logger\obj\Debug\DoE.Lsm.Logger.pdb

@@ -1,0 +1,46 @@
+C:\Personal Work Drive\Quota\LimpEmisPortal\LimpEmisPortal.Email\bin\Debug\DoE.WF.Email.dll.config
+C:\Personal Work Drive\Quota\LimpEmisPortal\LimpEmisPortal.Email\bin\Debug\DoE.WF.Email.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LimpEmisPortal.Email\bin\Debug\DoE.WF.Email.pdb
+C:\Personal Work Drive\Quota\LimpEmisPortal\LimpEmisPortal.Email\obj\Debug\DoE.WF.Email.dll
+C:\Personal Work Drive\Quota\LimpEmisPortal\LimpEmisPortal.Email\obj\Debug\DoE.WF.Email.pdb
+C:\Homework\Quota\QuotaPortal\LimpEmisPortal.Email\bin\Debug\DoE.WF.Email.dll.config
+C:\Homework\Quota\QuotaPortal\LimpEmisPortal.Email\bin\Debug\DoE.WF.Email.dll
+C:\Homework\Quota\QuotaPortal\LimpEmisPortal.Email\bin\Debug\DoE.WF.Email.pdb
+C:\Homework\Quota\QuotaPortal\LimpEmisPortal.Email\obj\Debug\DoE.WF.Email.dll
+C:\Homework\Quota\QuotaPortal\LimpEmisPortal.Email\obj\Debug\DoE.WF.Email.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.Email\bin\Debug\DoE.WF.Email.dll.config
+C:\Homework\Quota\QuotaPortal\Lsm.Email\bin\Debug\DoE.WF.Email.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Email\bin\Debug\DoE.WF.Email.pdb
+C:\Homework\Quota\QuotaPortal\Lsm.Email\obj\Debug\DoE.WF.Email.dll
+C:\Homework\Quota\QuotaPortal\Lsm.Email\obj\Debug\DoE.WF.Email.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Email\bin\Debug\DoE.WF.Email.dll.config
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Email\bin\Debug\DoE.WF.Email.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Email\bin\Debug\DoE.WF.Email.pdb
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Email\obj\Debug\DoE.WF.Email.dll
+C:\Users\Administrator\Desktop\Development - Rest\QuotaPortal\Lsm.Email\obj\Debug\DoE.WF.Email.pdb
+F:\Development - Rest\QuotaPortal\Lsm.Email\bin\Debug\DoE.WF.Email.dll.config
+F:\Development - Rest\QuotaPortal\Lsm.Email\bin\Debug\DoE.WF.Email.dll
+F:\Development - Rest\QuotaPortal\Lsm.Email\bin\Debug\DoE.WF.Email.pdb
+F:\Development - Rest\QuotaPortal\Lsm.Email\obj\Debug\DoE.WF.Email.dll
+F:\Development - Rest\QuotaPortal\Lsm.Email\obj\Debug\DoE.WF.Email.pdb
+F:\Development - Rest\QuotaPortal\Lsm.Email\obj\Debug\Lsm.Email.csprojResolveAssemblyReference.cache
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Email\bin\Debug\DoE.WF.Email.dll.config
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Email\bin\Debug\DoE.WF.Email.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Email\bin\Debug\DoE.WF.Email.pdb
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Email\obj\Debug\DoE.WF.Email.dll
+D:\Archive 2018\2018-2019.August\Development - Rest\QuotaPortal\Lsm.Email\obj\Debug\DoE.WF.Email.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Email\bin\Debug\DoE.WF.Email.dll.config
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Email\bin\Debug\DoE.WF.Email.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Email\bin\Debug\DoE.WF.Email.pdb
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Email\obj\Debug\DoE.WF.Email.dll
+C:\Users\Falcorp\Desktop\QuotaPortal\Lsm.Email\obj\Debug\DoE.WF.Email.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Email\bin\Debug\DoE.WF.Email.dll.config
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Email\bin\Debug\DoE.WF.Email.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Email\bin\Debug\DoE.WF.Email.pdb
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Email\obj\Debug\DoE.WF.Email.dll
+C:\Users\Falcorp\Desktop\bin-pr\Quota Repository\Quota\Lsm.Email\obj\Debug\DoE.WF.Email.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Email\bin\Debug\DoE.WF.Email.dll.config
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Email\bin\Debug\DoE.WF.Email.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Email\bin\Debug\DoE.WF.Email.pdb
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Email\obj\Debug\DoE.WF.Email.dll
+C:\Users\Falcorp\Source\repos\Lsm.Quota\quota\Lsm.Email\obj\Debug\DoE.WF.Email.pdb
